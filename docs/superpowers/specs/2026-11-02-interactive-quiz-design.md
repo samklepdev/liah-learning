@@ -2,7 +2,7 @@
 
 **Date:** 2026-11-02
 **Status:** Approved
-**Source material:** `~/Documents/LIAH-classes/*.pdf` (8 subjects, outside the repo)
+**Source material:** `~/Documents/LIAH-classes/quizzes/*.pdf` (8 subjects, outside the repo)
 
 ## Goal
 

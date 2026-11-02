@@ -230,7 +230,7 @@ git commit -m "test: add node:test harness, test database, and build/test config
 ```bash
 cd /Users/sam/Projects/liah-wellness/liah-learning
 mkdir -p backend/src/test/fixtures
-pdftotext -layout "$HOME/Documents/LIAH-classes/Chassis Pop Quizzes.pdf" \
+pdftotext -layout "$HOME/Documents/LIAH-classes/quizzes/Chassis Pop Quizzes.pdf" \
           backend/src/test/fixtures/chassis.txt
 wc -l backend/src/test/fixtures/chassis.txt
 ```
@@ -1071,7 +1071,7 @@ import { parseQuizPack, slugify, QuizParseError } from '../lib/quiz-parser.ts';
 function usage(): never {
   console.error(
     'Usage: npm run quiz:parse -w backend -- <path-to-pdf> [subject-title]\n' +
-      'Example: npm run quiz:parse -w backend -- "$HOME/Documents/LIAH-classes/Chassis Pop Quizzes.pdf"',
+      'Example: npm run quiz:parse -w backend -- "$HOME/Documents/LIAH-classes/quizzes/Chassis Pop Quizzes.pdf"',
   );
   process.exit(1);
 }
@@ -1127,7 +1127,7 @@ npm pkg set scripts.quiz:parse="npm run quiz:parse -w backend --"
 - [ ] **Step 3: Run it against the real PDF**
 
 ```bash
-npm run quiz:parse -w backend -- "$HOME/Documents/LIAH-classes/Chassis Pop Quizzes.pdf"
+npm run quiz:parse -w backend -- "$HOME/Documents/LIAH-classes/quizzes/Chassis Pop Quizzes.pdf"
 ```
 
 Expected: `Parsed 11 courses, 110 questions -> src/data/chassis.quiz.json`
@@ -3882,7 +3882,7 @@ reviewable JSON file in between.
 
 ## Adding a subject
 
-    npm run quiz:parse -w backend -- "$HOME/Documents/LIAH-classes/Engine Pop Quizzes.pdf"
+    npm run quiz:parse -w backend -- "$HOME/Documents/LIAH-classes/quizzes/Engine Pop Quizzes.pdf"
     # review the git diff on backend/src/data/engine.quiz.json
     npm run quiz:seed
 
