@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
 import { CoursesPage } from './pages/CoursesPage';
+import { QuizPage } from './pages/QuizPage';
 
 function RequireAuth({ children }: { children: ReactNode }) {
   const { user, loading } = useAuth();
@@ -21,6 +22,14 @@ export function AppRouter() {
           element={
             <RequireAuth>
               <CoursesPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/courses/:slug/quiz"
+          element={
+            <RequireAuth>
+              <QuizPage />
             </RequireAuth>
           }
         />
