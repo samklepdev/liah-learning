@@ -4,6 +4,13 @@ export type User = {
   createdAt: string;
 };
 
+/**
+ * Mirrors the `credentials` schema in
+ * backend/src/controllers/auth.controller.ts — keep the two in step, or the
+ * form rejects passwords the API would accept.
+ */
+export const MIN_PASSWORD_LENGTH = 8;
+
 export class ApiError extends Error {
   status: number;
 
