@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, type SubmitEvent } from 'react';
+import { MIN_PASSWORD_LENGTH } from './api';
 import { useAuth } from './useAuth';
 
 type Mode = 'login' | 'register';
@@ -11,7 +12,7 @@ export function LoginForm() {
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
     setSubmitting(true);
@@ -46,7 +47,10 @@ export function LoginForm() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           autoComplete={mode === 'login' ? 'current-password' : 'new-password'}
-          minLength={12}
+          // Only constrain when choosing a password. On sign-in the server is
+          // the authority, and a native "lengthen this text" popup would just
+          // get in the way of a legitimate attempt.
+          minLength={mode === 'register' ? MIN_PASSWORD_LENGTH : undefined}
           required
         />
       </label>

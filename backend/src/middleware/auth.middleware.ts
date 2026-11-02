@@ -1,11 +1,16 @@
 import type { NextFunction, Request, Response } from 'express';
-import { SESSION_COOKIE, resolveSession } from './sessions.ts';
+import { SESSION_COOKIE } from '../lib/cookies.ts';
+import { hashToken } from '../lib/tokens.ts';
+import { findUserBySessionId } from '../models/session.model.ts';
 
 /** Attaches req.user when a valid session cookie is present; never rejects. */
 export async function attachUser(req: Request, _res: Response, next: NextFunction) {
   try {
-    const user = await resolveSession(req.cookies?.[SESSION_COOKIE]);
-    if (user) req.user = user;
+    const token: unknown = req.cookies?.[SESSION_COOKIE];
+    if (typeof token === 'string') {
+      const user = await findUserBySessionId(hashToken(token));
+      if (user) req.user = user;
+    }
     next();
   } catch (err) {
     next(err);
