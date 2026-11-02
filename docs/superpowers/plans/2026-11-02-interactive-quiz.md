@@ -94,9 +94,11 @@ Tests live beside source so `typecheck` covers them, but they must not reach `di
 ```bash
 cd /Users/sam/Projects/liah-wellness/liah-learning
 npm pkg set scripts.build="tsc -p tsconfig.build.json" -w backend
-npm pkg set scripts.test="node --import tsx --env-file=.env.test --test \"src/**/*.test.ts\"" -w backend
+npm pkg set scripts.test="node --import tsx --env-file=.env.test --test --test-concurrency=1 \"src/**/*.test.ts\"" -w backend
 npm pkg set scripts.db:push:test="node --env-file=.env.test ../node_modules/drizzle-kit/bin.cjs push" -w backend
 ```
+
+**`--test-concurrency=1` is required, not a preference.** `node:test` runs test *files* in parallel by default. Every database-backed test file here truncates shared tables in its `before`/`beforeEach`, so running two in parallel makes them delete each other's fixtures — producing failures in a file you did not touch. Serial execution is the price of one shared test database.
 
 `drizzle-kit` is hoisted to the repo-root `node_modules`, hence the `../` path. Invoking its binary directly (rather than `npx drizzle-kit`) is what lets `--env-file` apply.
 
