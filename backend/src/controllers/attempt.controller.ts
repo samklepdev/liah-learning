@@ -1,5 +1,6 @@
 import type { Request, Response } from 'express';
 import { z } from 'zod';
+import { param } from '../lib/http.ts';
 import { findQuizByCourseSlug } from '../models/quiz.model.ts';
 import {
   findAttemptById,
@@ -17,7 +18,7 @@ const answerBody = z.object({ optionId: z.uuid() });
  * attempt are both 404 — a 403 would confirm the id exists.
  */
 async function loadOwnedAttempt(req: Request, res: Response): Promise<AttemptRow | null> {
-  const attempt = await findAttemptById(req.params.id!);
+  const attempt = await findAttemptById(param(req, 'id'));
   if (!attempt || attempt.userId !== req.user!.id) {
     res.status(404).json({ error: 'Attempt not found' });
     return null;
@@ -26,7 +27,7 @@ async function loadOwnedAttempt(req: Request, res: Response): Promise<AttemptRow
 }
 
 export async function startAttempt(req: Request, res: Response): Promise<void> {
-  const quiz = await findQuizByCourseSlug(req.params.slug!);
+  const quiz = await findQuizByCourseSlug(param(req, 'slug'));
   if (!quiz) {
     res.status(404).json({ error: 'Course not found' });
     return;
@@ -71,7 +72,7 @@ export async function putAnswer(req: Request, res: Response): Promise<void> {
     return;
   }
 
-  const option = await findOptionForQuestion(req.params.questionId!, parsed.data.optionId);
+  const option = await findOptionForQuestion(param(req, 'questionId'), parsed.data.optionId);
   if (!option) {
     res.status(400).json({ error: 'That option does not belong to that question' });
     return;
@@ -81,6 +82,6 @@ export async function putAnswer(req: Request, res: Response): Promise<void> {
     return;
   }
 
-  await saveAnswer(attempt.id, req.params.questionId!, parsed.data.optionId, option.isCorrect);
+  await saveAnswer(attempt.id, param(req, 'questionId'), parsed.data.optionId, option.isCorrect);
   res.status(204).end();
 }

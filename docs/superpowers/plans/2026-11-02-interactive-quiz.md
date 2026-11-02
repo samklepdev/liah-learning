@@ -23,6 +23,8 @@
 - Postgres runs in Docker on host port **54330**. Dev database `liah_learning`, test database `liah_learning_test`.
 - The API runs on port **3000**. Port 5000 is unusable on macOS (AirPlay Receiver).
 - Run `npm install` from the repo root only — this is an npm workspaces monorepo.
+- **Run `npm run typecheck -w backend` at the end of every backend task.** Tests execute through `tsx`, which strips types without checking them, so a type error passes the test suite silently. Do not rely on green tests to mean the code compiles.
+- **Never read `req.params.x` directly.** Express 5 types every route param as `string | string[]`. Use `param(req, 'x')` from `src/lib/http.ts`, which narrows it.
 
 ## Verified Facts
 
