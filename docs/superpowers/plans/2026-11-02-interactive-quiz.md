@@ -56,13 +56,16 @@ Establishes the test runner, a test database, and a build config that excludes t
 
 - [ ] **Step 1: Create the test database (idempotent)**
 
+`CREATE DATABASE` cannot run inside a transaction or an `IF NOT EXISTS`, and `\gexec` is a psql meta-command that does not work through `psql -c`. Test for the database first, then create it:
+
 ```bash
-docker exec liah-postgres psql -U liah -d postgres \
-  -c "SELECT 'CREATE DATABASE liah_learning_test OWNER liah'
-      WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname='liah_learning_test')\gexec"
+docker exec liah-postgres psql -U liah -d postgres -tAc \
+  "select 1 from pg_database where datname='liah_learning_test'" | grep -q 1 \
+  && echo "liah_learning_test already exists" \
+  || docker exec liah-postgres createdb -U liah -O liah liah_learning_test
 ```
 
-Expected: `CREATE DATABASE` or no output if it already exists.
+Expected: either `liah_learning_test already exists` or no output (created).
 
 - [ ] **Step 2: Create `backend/.env.test`**
 
