@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: liah-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: liah
+      POSTGRES_PASSWORD: liah_dev_password
+      POSTGRES_DB: liah_learning
+    # Host 5432 is already taken by another project's container, so expose on
+    # 54330 and bind to loopback only.
+    ports:
+      - '127.0.0.1:54330:5432'
+    volumes:
+      - liah_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U liah -d liah_learning']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  liah_pgdata:

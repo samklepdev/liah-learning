@@ -1,13 +1,27 @@
 {
   "name": "liah-learning",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An e-learning platform for LIAH Wellness, providing a comprehensive and interactive learning experience for users seeking to learn and take tests about various subjects.",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm run dev -w backend",
+    "dev:web": "npm run dev -w frontend",
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "db:push": "npm run db:push -w backend",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:generate": "npm run db:generate -w backend",
+    "typecheck": "npm run typecheck -w backend && npm run build -w frontend"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sam Klepper",
   "license": "ISC",
-  "type": "commonjs"
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
 }

@@ -1,0 +1,75 @@
+/* Minimal functional styling for the auth screens — placeholder, not a design. */
+
+.auth-loading {
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  opacity: 0.7;
+}
+
+.auth-form,
+.dashboard {
+  max-width: 22rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  border: 1px solid rgb(128 128 128 / 0.3);
+  border-radius: 0.75rem;
+}
+
+.auth-form h1,
+.dashboard h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.auth-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+}
+
+.auth-form input {
+  padding: 0.6rem 0.7rem;
+  font: inherit;
+  border: 1px solid rgb(128 128 128 / 0.4);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: inherit;
+}
+
+.auth-form button,
+.dashboard button {
+  padding: 0.6rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.auth-form button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.auth-toggle {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-size: 0.8125rem;
+  opacity: 0.8;
+}
+
+.auth-error {
+  margin: 0;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.8125rem;
+  white-space: pre-wrap;
+  color: #b3261e;
+  background: rgb(179 38 30 / 0.08);
+  border-radius: 0.5rem;
+}
