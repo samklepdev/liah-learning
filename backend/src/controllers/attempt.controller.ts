@@ -4,10 +4,12 @@ import { param } from '../lib/http.ts';
 import { findQuizByCourseSlug } from '../models/quiz.model.ts';
 import {
   findAttemptById,
+  findGradedAttempt,
   findOptionForQuestion,
   listAnswers,
   saveAnswer,
   startOrResumeAttempt,
+  submitAttempt,
   type AttemptRow,
 } from '../models/attempt.model.ts';
 
@@ -42,7 +44,12 @@ export async function getAttempt(req: Request, res: Response): Promise<void> {
   if (!attempt) return;
 
   if (attempt.submittedAt) {
-    res.status(409).json({ error: 'Attempt is submitted; fetch the graded result instead' });
+    const graded = await findGradedAttempt(attempt.id);
+    if (!graded) {
+      res.status(404).json({ error: 'Attempt not found' });
+      return;
+    }
+    res.json({ attempt: graded });
     return;
   }
 
@@ -55,6 +62,23 @@ export async function getAttempt(req: Request, res: Response): Promise<void> {
       answers: await listAnswers(attempt.id),
     },
   });
+}
+
+export async function submit(req: Request, res: Response): Promise<void> {
+  const attempt = await loadOwnedAttempt(req, res);
+  if (!attempt) return;
+
+  // Idempotent: a second submit returns the existing grade rather than regrading.
+  if (!attempt.submittedAt) {
+    await submitAttempt(attempt.id);
+  }
+
+  const graded = await findGradedAttempt(attempt.id);
+  if (!graded) {
+    res.status(500).json({ error: 'Attempt could not be graded' });
+    return;
+  }
+  res.json({ attempt: graded });
 }
 
 export async function putAnswer(req: Request, res: Response): Promise<void> {
