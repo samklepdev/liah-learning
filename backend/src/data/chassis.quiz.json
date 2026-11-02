@@ -1,0 +1,3239 @@
+{
+  "slug": "chassis",
+  "title": "Chassis",
+  "courses": [
+    {
+      "position": 1,
+      "slug": "chassis-tire-and-rim-essentials",
+      "title": "Tire and Rim Essentials",
+      "moduleTitles": [
+        "Tire Technology",
+        "Tread and Rim Technology",
+        "Run Flat Tires",
+        "Tire Pressure Monitoring"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "What does the 'R' in a tire size such as 225/65R17 mean?",
+          "moduleTitle": "Tire Technology",
+          "explanation": "The R stands for radial construction, where the ply cords run radially across the tire.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Radial construction",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Run flat rated",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Reinforced sidewall",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Rear fitment only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "In the size 225/65R17, what does 65 represent?",
+          "moduleTitle": "Tire Technology",
+          "explanation": "65 is the aspect ratio: sidewall height is 65 percent of the section width.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The tread width in millimetres",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The aspect ratio - sidewall height as 65% of width",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The load index",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The speed rating",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A tire's DOT date code ends in '24' for its last two digits. What does that indicate?",
+          "moduleTitle": "Tire Technology",
+          "explanation": "The last two digits of the DOT code are the year of manufacture.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The tire's speed rating",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The week it was made",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The year it was manufactured - 2024",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "The maximum pressure in bar",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "What is the main purpose of the tread pattern's circumferential grooves?",
+          "moduleTitle": "Tread and Rim Technology",
+          "explanation": "Circumferential grooves evacuate water from the contact patch to maintain grip in the wet.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To increase sidewall stiffness",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To make the tire quieter only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "To add weight",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To channel water away and resist hydroplaning",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "What does a rim's offset describe?",
+          "moduleTitle": "Tread and Rim Technology",
+          "explanation": "Offset is the distance from the hub mounting surface to the rim's centreline.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The distance between the mounting surface and the rim centreline",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The diameter of the centre bore only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The number of lug holes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The width of the tire bead",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Tread wear bars level with the tread surface indicate the tire is:",
+          "moduleTitle": "Tread and Rim Technology",
+          "explanation": "Wear bars flush with the tread mean the tread is worn to its minimum usable depth.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Brand new",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "At or near the legal minimum tread depth and due for replacement",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Overinflated",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "In need of balancing only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "How does a self-supporting run flat tire keep working after a puncture?",
+          "moduleTitle": "Run Flat Tires",
+          "explanation": "Run flat sidewalls are reinforced so they can carry the load for a limited distance at reduced speed with zero pressure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It seals itself with liquid inside",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Its reinforced, stiff sidewalls support the vehicle load with no air pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It has a solid rubber core",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The rim locks the bead so air cannot escape",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "After driving on a deflated run flat tire, best practice is generally to:",
+          "moduleTitle": "Run Flat Tires",
+          "explanation": "Run flats driven deflated can suffer hidden structural damage, so replacement is the safe best practice.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Repair it like any standard tire in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Drive indefinitely if it still holds shape",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Replace it, because internal sidewall damage may not be visible",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Increase its pressure above maximum",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A direct TPMS system measures pressure using:",
+          "moduleTitle": "Tire Pressure Monitoring",
+          "explanation": "Direct TPMS uses a pressure sensor inside each wheel that transmits actual pressure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The ABS wheel speed sensors",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Sensors mounted inside each wheel/tire assembly",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Engine vacuum",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The brake fluid level sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "After rotating tires on a vehicle with direct TPMS, what may be required?",
+          "moduleTitle": "Tire Pressure Monitoring",
+          "explanation": "A relearn matches each sensor ID to its new wheel position so the display shows the correct corner.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Nothing, ever",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A relearn procedure so the system knows each sensor's new position",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removal of all sensors",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Deflating every tire to zero",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "slug": "chassis-best-practice-tire-fitment",
+      "title": "Best Practice Tire Fitment",
+      "moduleTitles": [
+        "Best Practice Standard Wheel Balancing",
+        "Best Practice Standard Tire Strip and Fitment",
+        "Best Practice Low Profile / Run Flat Tire Strip and Fit"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Static imbalance in a wheel assembly will most likely cause:",
+          "moduleTitle": "Best Practice Standard Wheel Balancing",
+          "explanation": "Static imbalance makes the heavy spot lift and drop each revolution, causing a hop.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A side-to-side steering shimmy only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A vertical hop or bounce as speed increases",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A constant pull to one side",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Excessive camber wear only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Before balancing a wheel, best practice is to:",
+          "moduleTitle": "Best Practice Standard Wheel Balancing",
+          "explanation": "Old weights and dirt change the result, so the assembly is cleaned and old weights removed first.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Add extra weights to compensate for dirt",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Remove old weights and clean the rim and tire",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Balance with the tire deflated",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Spin it with the valve cap removed only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A balancer asks for weights in two planes. This corrects:",
+          "moduleTitle": "Best Practice Standard Wheel Balancing",
+          "explanation": "Two-plane balancing corrects dynamic imbalance, which produces a wobbling couple force.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Static imbalance only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Runout",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Dynamic (couple) imbalance that causes wobble",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Bead seating",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "When stripping a tire from a rim, the bead must first be:",
+          "moduleTitle": "Best Practice Standard Tire Strip and Fitment",
+          "explanation": "Both beads must be broken free from their seats before the tire can be levered off safely.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cut with a knife",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Fully inflated",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Pushed off the bead seat (broken) on both sides",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Heated until soft",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Why is lubricant applied to tire beads during fitment?",
+          "moduleTitle": "Best Practice Standard Tire Strip and Fitment",
+          "explanation": "Bead lubricant reduces friction so the bead passes over the rim flange and seats evenly.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To glue the bead to the rim",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To help the bead slide over the rim and seat without damage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To balance the wheel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To stop the tire rotating on the rim permanently",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "When seating beads during inflation, the technician should:",
+          "moduleTitle": "Best Practice Standard Tire Strip and Fitment",
+          "explanation": "Bead seating is done with restraint/clip-on chuck and never above the maker's maximum seating pressure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Stand directly over the tire with no restraint",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Exceed maximum pressure until the beads pop, whatever it takes",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Use a safety cage or clip-on chuck and stay within the stated maximum seating pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Remove the valve core permanently",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "The yellow dot on many new tires marks:",
+          "moduleTitle": "Best Practice Standard Tire Strip and Fitment",
+          "explanation": "The yellow dot marks the lightest point and is commonly aligned with the valve stem.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The heaviest point",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The lightest point, often aligned with the valve stem",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A puncture repair",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The maximum speed point",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Low profile and run flat tires are harder to strip and fit mainly because:",
+          "moduleTitle": "Best Practice Low Profile / Run Flat Tire Strip and Fit",
+          "explanation": "Short, stiff sidewalls resist the flexing needed to clear the rim flange, so technique and machine helpers matter.",
+          "options": [
+            {
+              "label": "A",
+              "body": "They are much heavier",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Their stiff, short sidewalls flex far less over the rim",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "They use a different valve type only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "They cannot be lubricated",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "When fitting a run flat tire, the TPMS sensor is at risk during:",
+          "moduleTitle": "Best Practice Low Profile / Run Flat Tire Strip and Fit",
+          "explanation": "Levers and the bead passing the sensor area can crack the sensor if its position is ignored.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Balancing only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Bead breaking and lever work near the valve/sensor position",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Final torque of the wheel nuts",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Road testing",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Using press/roller helper arms on the changer for a stiff low profile tire helps to:",
+          "moduleTitle": "Best Practice Low Profile / Run Flat Tire Strip and Fit",
+          "explanation": "Helpers hold the bead in the drop centre, giving the slack needed to fit a stiff tire safely.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Inflate the tire faster",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Keep the bead in the drop centre so it can pass over the flange without overstretching",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Remove the need for lubricant",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Measure tread depth",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "slug": "chassis-introducing-suspension-components",
+      "title": "Introducing Suspension Components",
+      "moduleTitles": [
+        "Suspension System Principles",
+        "Suspension Component Springs",
+        "Suspension Component Shocks",
+        "Suspension Component Linkage",
+        "Suspension Component Anti-Roll",
+        "Suspension Component Bushes"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Sprung mass refers to:",
+          "moduleTitle": "Suspension System Principles",
+          "explanation": "Sprung mass is everything the springs carry; wheels and brakes below the springs are unsprung mass.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only the wheels and tires",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The mass supported by the springs, such as body and engine",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The mass below the springs only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel in the tank only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Reducing unsprung mass generally helps the tire to:",
+          "moduleTitle": "Suspension System Principles",
+          "explanation": "Lighter unsprung parts follow road bumps more easily, keeping the tire planted.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Wear faster",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Stay in contact with the road over bumps",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increase body roll",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Raise the ride height",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A coil spring's rate describes:",
+          "moduleTitle": "Suspension Component Springs",
+          "explanation": "Spring rate is force per unit of deflection, for example newtons per millimetre.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Its colour coding only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "How much force is needed to compress it a given distance",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Its maximum extended length",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The number of coils only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A broken or sagging spring will most directly affect:",
+          "moduleTitle": "Suspension Component Springs",
+          "explanation": "A weak spring lowers ride height, which changes camber and other alignment angles.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ride height and wheel alignment angles",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Engine power",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Brake fluid level",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Tire pressure readings",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "The shock absorber's job is to:",
+          "moduleTitle": "Suspension Component Shocks",
+          "explanation": "Shocks damp spring movement by converting motion into heat in the oil; springs carry the load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Carry the vehicle's weight",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Hold the wheel alignment",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Control (damp) spring oscillation after a bump",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Replace the spring",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A worn shock absorber will most likely cause:",
+          "moduleTitle": "Suspension Component Shocks",
+          "explanation": "Weak damping lets the wheel keep bouncing, which cups the tread and hurts control.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A single bounce then stop",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Continued bouncing after a bump and uneven (cupped) tire wear",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No change in handling",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A lower engine idle",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Excess play in a suspension ball joint is best checked by:",
+          "moduleTitle": "Suspension Component Linkage",
+          "explanation": "Ball joint wear is measured as movement under the maker's specified load condition.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Looking at it only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Loading/unloading the joint as directed and measuring movement against specification",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Checking tire pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Turning the steering to full lock only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Control arms locate the wheel by:",
+          "moduleTitle": "Suspension Component Linkage",
+          "explanation": "Arms and links position the hub and define how it moves through suspension travel.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Holding brake fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Connecting the knuckle/hub to the body or subframe and controlling its movement path",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Driving the wheel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cooling the brakes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "An anti-roll (stabilizer) bar reduces body roll by:",
+          "moduleTitle": "Suspension Component Anti-Roll",
+          "explanation": "The bar resists one side compressing more than the other, which is what body roll is.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Stiffening both springs permanently",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Twisting to transfer load between the two sides when they move differently",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Locking the steering",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Lowering the centre of gravity",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Worn suspension bushes commonly cause:",
+          "moduleTitle": "Suspension Component Bushes",
+          "explanation": "Perished or split bushes allow excess movement, causing noise, play and alignment shift under load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Higher fuel pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Clunks over bumps, vague handling and uneven tire wear",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A brighter headlamp beam",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Faster wheel speed sensor signals",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "slug": "chassis-understanding-suspension-systems",
+      "title": "Understanding Suspension Systems",
+      "moduleTitles": [
+        "MACPERSON Strut System Components and Operation",
+        "MACPERSON Strut Inspection Procedures",
+        "Torsion Bar System Components and Operations",
+        "Torsion Bar Inspection Procedures",
+        "Double Wishbone System Components and Operations",
+        "Double Wishbone Inspection Procedures",
+        "Electronic Kinetic Dynamic Suspension"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In a MacPherson strut system, the strut itself:",
+          "moduleTitle": "MACPERSON Strut System Components and Operation",
+          "explanation": "The strut is a structural member: it locates the wheel, carries the spring, and steers with the knuckle.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Is only a shock absorber and carries no load path",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Forms part of the steering/suspension location, with the spring around it and a top mount to the body",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Is mounted to the exhaust",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replaces the wheel bearing",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "The strut top mount bearing allows:",
+          "moduleTitle": "MACPERSON Strut System Components and Operation",
+          "explanation": "The top bearing lets the whole strut assembly pivot smoothly during steering.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The wheel to change diameter",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The strut to rotate as the steering turns",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The spring to detach",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The brake disc to float",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Before removing a strut spring, the spring must be:",
+          "moduleTitle": "MACPERSON Strut Inspection Procedures",
+          "explanation": "A loaded coil spring stores dangerous energy and must be compressed with the correct tool first.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cut in half",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Heated",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Safely compressed with a proper spring compressor",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Left fully loaded while bolts are removed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Oil misting/leaking from a strut body and a failed bounce test indicate:",
+          "moduleTitle": "MACPERSON Strut Inspection Procedures",
+          "explanation": "Leakage plus poor damping means the strut is worn; struts are normally renewed in pairs.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A normal strut",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A worn strut needing replacement, normally in axle pairs",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only a tire fault",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A steering rack fault only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A torsion bar spring works by:",
+          "moduleTitle": "Torsion Bar System Components and Operations",
+          "explanation": "The bar twists to provide spring force, anchored at one end and driven by the arm at the other.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Compressing like a coil",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Twisting along its length as the control arm moves",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Bending a leaf pack",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Trapping air",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Ride height on a torsion bar system is commonly adjusted by:",
+          "moduleTitle": "Torsion Bar System Components and Operations",
+          "explanation": "The adjuster changes the bar's preload angle, raising or lowering ride height.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Changing tire size",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Turning the anchor adjuster bolt to add or reduce bar preload (twist)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Replacing the shocks",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Adding wheel weights",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "During torsion bar inspection, cracking or heavy corrosion on the bar is serious because:",
+          "moduleTitle": "Torsion Bar Inspection Procedures",
+          "explanation": "The bar works under high torsional stress, so cracks can lead to sudden failure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It only affects paint finish",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A fatigued bar can snap suddenly under its torsional load",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It changes tire pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It makes the bar quieter",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A double wishbone system uses:",
+          "moduleTitle": "Double Wishbone System Components and Operations",
+          "explanation": "Two arms of different effective length control how camber changes as the wheel rises and falls.",
+          "options": [
+            {
+              "label": "A",
+              "body": "One arm per wheel",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Upper and lower arms, which control camber change through travel",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A solid beam only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A torsion beam only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Play found at the wheel on a double wishbone system could come from:",
+          "moduleTitle": "Double Wishbone Inspection Procedures",
+          "explanation": "Several joints can produce play, so each is checked separately under the right load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ball joints, arm bushes or the wheel bearing - each must be isolated to find the source",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The brake fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The tire valve",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The spring colour",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "An electronic kinetic dynamic suspension system improves both roll control and off-road articulation by:",
+          "moduleTitle": "Electronic Kinetic Dynamic Suspension",
+          "explanation": "It varies anti-roll bar resistance: stiff against roll on road, relaxed for wheel articulation off road.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Fitting stiffer bars permanently",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Hydraulically/electronically controlling the anti-roll bars so they can stiffen on road and free up off road",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removing the anti-roll bars",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Locking all dampers solid",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "slug": "chassis-advanced-suspension-technology",
+      "title": "Advanced Suspension Technology",
+      "moduleTitles": [
+        "Air Suspension Overview",
+        "Suspension Components Active Shocks"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In an air suspension system, the steel coil spring is replaced by:",
+          "moduleTitle": "Air Suspension Overview",
+          "explanation": "Air springs use pressurised air in a rubber bellows to support the load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A solid rubber block",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A flexible air spring (air bag) filled with compressed air",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A torsion bar",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A leaf spring",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Ride height in an air suspension system is monitored by:",
+          "moduleTitle": "Air Suspension Overview",
+          "explanation": "Height sensors report body position and the module commands the compressor or exhaust valve to correct it.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Height sensors linked to the control module, which adds or vents air to correct height",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The driver guessing",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Tire pressure sensors only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The speedometer only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "The air compressor in this system primarily:",
+          "moduleTitle": "Air Suspension Overview",
+          "explanation": "The compressor provides the air needed to inflate the springs and restore ride height.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cools the engine",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Supplies pressurised air to fill the springs/reservoir when height must rise",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Pumps brake fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Charges the battery",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A vehicle that sags at one corner overnight most likely has:",
+          "moduleTitle": "Air Suspension Overview",
+          "explanation": "A slow overnight drop at one corner points to an air leak in that corner's circuit.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A faulty headlamp",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An air leak at that corner's spring, line or valve",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Too much fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A worn wiper blade",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Before jacking or lifting an air suspension vehicle, best practice is to:",
+          "moduleTitle": "Air Suspension Overview",
+          "explanation": "Service/jack mode stops the system levelling while lifted, which could move the vehicle or damage parts.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ignore the system completely",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Follow the maker's procedure - often selecting jack/service mode or disabling the system",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Deflate the tires",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Remove the battery from the car and discard it",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A dryer unit is fitted in many air suspension systems to:",
+          "moduleTitle": "Air Suspension Overview",
+          "explanation": "Removing moisture prevents corrosion and freezing inside valves and air lines.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Dry the brake discs",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Remove moisture from the compressed air to protect valves and springs",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Dry the cabin air only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Filter engine oil",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "An active/adaptive shock absorber changes its damping by:",
+          "moduleTitle": "Suspension Components Active Shocks",
+          "explanation": "Adaptive dampers vary their valving electrically so damping can change in milliseconds.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The driver swapping the shocks",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Varying oil flow through an electrically controlled valve (or changing fluid properties) in response to",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Changing spring rate",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Moving the wheel",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Inputs an active suspension module commonly uses include:",
+          "moduleTitle": "Suspension Components Active Shocks",
+          "explanation": "The module blends sensor inputs and the selected mode to set damping for each corner.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Radio volume",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Steering angle, wheel/body movement, vehicle speed and drive mode",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fuel brand",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Paint colour",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "In a firmer sport drive mode, active shocks will generally:",
+          "moduleTitle": "Suspension Components Active Shocks",
+          "explanation": "Sport mode firms damping to control body movement more tightly.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Reduce damping to minimum",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Increase damping to limit body roll, pitch and dive",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Turn off completely",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Lock the springs solid",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A failed active shock electrical connector will most likely:",
+          "moduleTitle": "Suspension Components Active Shocks",
+          "explanation": "With no control signal the damper defaults to a preset rate and the system logs a fault.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Have no effect at all",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Set a fault code and cause that damper to default to a fixed (failsafe) damping setting",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increase engine power",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Change tire size",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "slug": "chassis-complete-steering-systems",
+      "title": "Complete Steering Systems",
+      "moduleTitles": [
+        "Manual Steering Principles",
+        "Hydraulic Power Steering",
+        "Electro Hydraulic Power Steering",
+        "Electric Power Steering",
+        "Electric Power Steering Diagnostics"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In a manual rack and pinion, turning the steering wheel moves the rack by:",
+          "moduleTitle": "Manual Steering Principles",
+          "explanation": "The pinion rotates against the rack teeth, sliding the rack side to side to steer the wheels.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A hydraulic pump",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The pinion gear meshing with teeth on the rack, converting rotation into linear movement",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A belt drive",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "An electric motor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Steering ratio describes:",
+          "moduleTitle": "Manual Steering Principles",
+          "explanation": "Ratio compares steering wheel input to road wheel output; higher ratios need more turns.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Tire pressure front to rear",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "How many degrees the steering wheel turns for a given degree of road wheel movement",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The size of the steering wheel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Power steering fluid capacity",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "In hydraulic power steering, assistance comes from:",
+          "moduleTitle": "Hydraulic Power Steering",
+          "explanation": "The pump supplies pressurised fluid that helps move the rack when the wheel is turned.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Engine vacuum only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Pressurised fluid from an engine-driven pump acting in the rack or box",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "An electric motor on the column",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The alternator",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Heavy steering with whining noise from the pump most often indicates:",
+          "moduleTitle": "Hydraulic Power Steering",
+          "explanation": "Low or aerated fluid starves the pump, causing noise and loss of assistance.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Too much fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Low fluid level or air in the system (aeration)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A new belt",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Normal operation in all cases",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A rotary control valve in the steering gear works to:",
+          "moduleTitle": "Hydraulic Power Steering",
+          "explanation": "The valve senses torsion bar twist from driver effort and ports fluid to assist in that direction.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Direct pressurised fluid to the correct side of the piston in proportion to steering effort",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Filter the fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Cool the fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Drive the pump",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Electro hydraulic power steering differs from conventional hydraulic steering because:",
+          "moduleTitle": "Electro Hydraulic Power Steering",
+          "explanation": "An electric motor drives the hydraulic pump, so assistance can be provided without the engine driving a belt pump.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It uses no fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Its pump is driven by an electric motor rather than directly by the engine",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It has no rack",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It only works when parked",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "One advantage of electro hydraulic steering is that the module can:",
+          "moduleTitle": "Electro Hydraulic Power Steering",
+          "explanation": "Demand-based pump speed cuts parasitic load compared with a constantly driven pump.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Vary pump speed with demand - running slower when no assistance is needed, saving energy",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Remove the steering wheel",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Change tire tread",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Eliminate alignment checks",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "In electric power steering (EPS), assistance is provided by:",
+          "moduleTitle": "Electric Power Steering",
+          "explanation": "EPS uses a motor, controlled by a module using torque sensor input, to add steering assistance.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Hydraulic fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An electric motor acting on the column, pinion or rack",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Engine vacuum",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A second steering box",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "The steering torque sensor in an EPS system measures:",
+          "moduleTitle": "Electric Power Steering",
+          "explanation": "Torque sensor input tells the module how much assistance to apply and in which direction.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Road speed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "How hard and in which direction the driver is turning the wheel",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Tire temperature",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Brake pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "After replacing an EPS component or performing an alignment, a scan tool procedure often required is:",
+          "moduleTitle": "Electric Power Steering Diagnostics",
+          "explanation": "The steering angle sensor must be recalibrated so EPS and stability systems know true straight-ahead.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Deleting all keys",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Steering angle sensor calibration / zero point relearn",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Draining the fuel tank",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Resetting the radio",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "slug": "chassis-mastering-wheel-alignments",
+      "title": "Mastering Wheel Alignments",
+      "moduleTitles": [
+        "Understanding Steering Angles"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Camber is defined as:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "Camber is the wheel's tilt from vertical viewed from the front; top out is positive.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The forward tilt of the steering axis",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The inward or outward tilt of the top of the wheel when viewed from the front",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The difference in angle between the two front wheels in a turn",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The direction the rear wheels point",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Excessive negative camber will wear the tire mainly on its:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "Negative camber loads the inner shoulder, so that edge wears fastest.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Outer shoulder",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Centre",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Inner shoulder",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Both shoulders equally",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Caster mainly affects:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "Positive caster helps the wheels self-centre and improves stability.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Tire pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Steering returnability and straight-line stability",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Brake bias",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Turning radius only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Toe is best described as:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "Toe compares the direction of the front and rear edges of a pair of tires from above.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The tilt of the wheel from the front",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Whether the fronts of the tires point in toward each other, out, or straight ahead, viewed from above",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The height of the vehicle",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The angle of the driveshaft",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Excess toe-in or toe-out will most quickly cause:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "Incorrect toe scrubs the tread sideways as the vehicle travels, wearing it rapidly.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Engine wear",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Feathered/scuffed tire tread wear and possible steering pull or wander",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Brake fade",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A dead battery",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Steering axis inclination (SAI) is:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "SAI is a built-in angle used diagnostically to spot bent parts when it differs side to side.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Adjustable on every car with shims",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The inward tilt of the steering axis from vertical, viewed from the front, largely set by design",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The same as toe",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Measured only on the rear axle",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Included angle is the combination of:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "Included angle = SAI + camber, and helps identify bent struts, knuckles or arms.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Camber plus toe",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "SAI plus camber",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Caster plus toe",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Ride height plus camber",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Thrust angle describes:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "Thrust angle is the rear toe direction relative to centreline; the vehicle tends to travel along it.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The angle of the steering wheel only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The direction the rear axle points compared with the vehicle centreline",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The pitch of the body under braking",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The angle of the front bumper",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Ackermann (toe-out on turns) allows:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "Ackermann geometry matches each front wheel to its different turning radius, reducing scrub.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Both front wheels to turn at exactly the same angle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The inside wheel to turn more sharply than the outside wheel, because it follows a smaller radius",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The rear wheels to steer",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The steering wheel to lock",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Before measuring any alignment angles, the technician should first check:",
+          "moduleTitle": "Understanding Steering Angles",
+          "explanation": "Alignment readings are meaningless if ride height, pressures or worn parts are wrong, so these are checked first.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Radio presets",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Ride height, tire pressures and sizes, and for worn or loose steering/suspension parts",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fuel level only and nothing else",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Headlamp aim only",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "slug": "chassis-braking-system-essentials",
+      "title": "Braking System Essentials",
+      "moduleTitles": [
+        "Automotive Braking Principles",
+        "Understanding Brake Fluid",
+        "Brake Master Cylinder Operation",
+        "Disc Brake Systems",
+        "Drum Brake Systems Components and Operations",
+        "Drum Brake Systems Configuration and Maintenance"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Brakes slow the vehicle by converting kinetic energy into:",
+          "moduleTitle": "Automotive Braking Principles",
+          "explanation": "Friction between pad/lining and disc/drum turns motion energy into heat.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Electrical energy",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Heat through friction",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Sound only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Hydraulic brake force works on Pascal's principle, which states:",
+          "moduleTitle": "Automotive Braking Principles",
+          "explanation": "Pascal's principle is why pedal force at the master cylinder reaches every wheel.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Pressure in a confined fluid acts only downward",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Pressure applied to a confined fluid is transmitted equally in all directions",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fluid pressure disappears in long lines",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Air in the lines improves pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Brake fluid must be hygroscopic-managed because it:",
+          "moduleTitle": "Understanding Brake Fluid",
+          "explanation": "Absorbed water drops the boiling point, risking vapour and a spongy pedal under hard braking.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Repels all water forever",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Absorbs moisture over time, which lowers its boiling point and can corrode parts",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Is the same as engine oil",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Never needs changing",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Mixing or using the wrong specification of brake fluid can cause:",
+          "moduleTitle": "Understanding Brake Fluid",
+          "explanation": "Fluids and seals are matched by specification; wrong fluid can damage rubber parts.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Better braking in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Seal swelling/damage and reduced performance - only the specified DOT grade should be used",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No possible harm",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The brakes to self-bleed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A tandem master cylinder has two separate hydraulic circuits so that:",
+          "moduleTitle": "Brake Master Cylinder Operation",
+          "explanation": "Splitting the system into two circuits provides a failsafe if one circuit leaks.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The brakes work twice as fast",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "If one circuit fails, the other can still provide braking on its wheels",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only the front brakes work",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fluid never needs topping up",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "The compensating (bypass) port in the master cylinder allows:",
+          "moduleTitle": "Brake Master Cylinder Operation",
+          "explanation": "The port keeps the circuit filled and fully released when the pedal is up.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Air into the system",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Fluid to return to the reservoir and release pressure when the pedal is released, and make up for pad",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The pedal to lock down",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Exhaust gas into the fluid",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "In a disc brake, braking force is produced when:",
+          "moduleTitle": "Disc Brake Systems",
+          "explanation": "Hydraulic pressure drives the caliper piston(s) to clamp the pads onto the disc.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Shoes expand into a drum",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The caliper squeezes pads against both faces of a rotating disc",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fluid boils",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The handbrake cable pulls only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A floating caliper moves on its slides so that:",
+          "moduleTitle": "Disc Brake Systems",
+          "explanation": "As the piston pushes the inner pad in, the sliding caliper pulls the outer pad into the disc.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only the inner pad ever touches the disc",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Both pads apply evenly - piston pushes one pad and the caliper reaction pulls the other in",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The disc can wobble freely",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The wheel can be removed without tools",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "In a drum brake, the shoes are forced outward against the drum by:",
+          "moduleTitle": "Drum Brake Systems Components and Operations",
+          "explanation": "Hydraulic pressure in the wheel cylinder pushes its pistons and the shoes into the drum.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The return springs",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The wheel cylinder pistons",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The adjuster only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Centrifugal force",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Self-adjusters on drum brakes maintain:",
+          "moduleTitle": "Drum Brake Systems Configuration and Maintenance",
+          "explanation": "The adjuster takes up lining wear so pedal travel and parking brake action stay correct.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Tire pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Correct shoe-to-drum clearance as the linings wear",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Brake fluid level",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disc thickness",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 9,
+      "slug": "chassis-advanced-braking-system",
+      "title": "Advanced Braking System",
+      "moduleTitles": [
+        "Hydraulic Pressure Control and Safety Valves",
+        "Brake Booster Vacuum Suspended"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "A proportioning valve in the brake system:",
+          "moduleTitle": "Hydraulic Pressure Control and Safety Valves",
+          "explanation": "As weight transfers forward, the rears need less pressure; the valve reduces it to avoid lockup.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Increases rear pressure without limit",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Limits/reduces hydraulic pressure to the rear brakes under hard braking to help prevent rear lockup",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Supplies vacuum to the booster",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Bleeds the system automatically",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A metering (hold-off) valve on some front disc / rear drum systems:",
+          "moduleTitle": "Hydraulic Pressure Control and Safety Valves",
+          "explanation": "Metering holds off the front discs briefly so front and rear brakes apply together.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Blocks all front braking",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Delays pressure to the front disc brakes slightly until the rear drums overcome return spring pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Controls tire pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replaces the master cylinder",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "The pressure differential (warning) valve's main job is to:",
+          "moduleTitle": "Hydraulic Pressure Control and Safety Valves",
+          "explanation": "A piston shifts when one circuit loses pressure and operates the warning lamp switch.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Adjust toe",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Detect a pressure loss difference between the two circuits and turn on the brake warning lamp",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Add fluid automatically",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cool overheated brakes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A combination valve packages together functions such as:",
+          "moduleTitle": "Hydraulic Pressure Control and Safety Valves",
+          "explanation": "Many vehicles combine those three valve functions in a single combination valve.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cruise control and lighting",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Metering, proportioning and pressure differential warning in one body",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Steering and braking",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel and brake control",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "If a proportioning valve sticks and sends full pressure to the rear brakes, the likely symptom is:",
+          "moduleTitle": "Hydraulic Pressure Control and Safety Valves",
+          "explanation": "Excess rear pressure lets the lightly loaded rear wheels lock and skid first.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Rear wheels lock early under firm braking",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "No braking at all",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Only the parking brake works",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The pedal becomes electric",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "In a vacuum-suspended booster, at rest both sides of the diaphragm are:",
+          "moduleTitle": "Brake Booster Vacuum Suspended",
+          "explanation": "Vacuum-suspended means vacuum acts on both sides at rest; applying the pedal admits air to one side to create assist.",
+          "options": [
+            {
+              "label": "A",
+              "body": "At atmospheric pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Under vacuum, suspended - pressure difference is only created when braking",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Filled with brake fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disconnected from the engine",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "When the pedal is applied in a vacuum booster, assistance is produced because:",
+          "moduleTitle": "Brake Booster Vacuum Suspended",
+          "explanation": "The pressure difference across the diaphragm provides the extra push on the master cylinder.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Brake fluid enters the booster",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Atmospheric pressure admitted to the rear chamber pushes the diaphragm against the vacuum in the",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The engine speeds up",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The master cylinder gets larger",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A failed booster vacuum check valve or hose will most likely cause:",
+          "moduleTitle": "Brake Booster Vacuum Suspended",
+          "explanation": "Without stored vacuum the booster cannot assist, so pedal effort rises sharply.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A soft, low pedal",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A hard pedal with little or no assistance, especially after the engine stops or on repeated applications",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Excessive rear braking only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A leaking wheel cylinder",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A hissing sound at the pedal inside the cabin when braking can indicate:",
+          "moduleTitle": "Brake Booster Vacuum Suspended",
+          "explanation": "Hissing with poor assist points to a booster air leak or diaphragm fault.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal tyre noise",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Air leaking into the booster past a torn diaphragm or faulty air valve",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A worn brake pad only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low tire pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A booster with a ruptured diaphragm will typically show:",
+          "moduleTitle": "Brake Booster Vacuum Suspended",
+          "explanation": "The leak loses assist and upsets engine vacuum, so idle can suffer too.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Perfect assistance",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Hard pedal, poor assist and possibly rough idle from the vacuum leak",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Faster acceleration",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Lower brake fluid level only",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "slug": "chassis-abs-operations-and-testing",
+      "title": "ABS Operations and Testing",
+      "moduleTitles": [
+        "Anti-Lock Brakes",
+        "Wheel Speed Sensor Operation and Testing",
+        "Wheel Speed Sensor Circuit Fault",
+        "ABS Pump Motor Circuit Diagnostics"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "The main purpose of ABS is to:",
+          "moduleTitle": "Anti-Lock Brakes",
+          "explanation": "By modulating pressure to a wheel about to lock, ABS preserves steering ability.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Shorten every stop on every surface",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Prevent wheel lockup during braking so the driver keeps steering control",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Replace the brake pads",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Increase pedal effort",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "During an ABS event the hydraulic modulator can, for each controlled wheel:",
+          "moduleTitle": "Anti-Lock Brakes",
+          "explanation": "ABS cycles pressure - hold, release, reapply - many times per second to keep the wheel near peak grip.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only apply pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Hold, release (dump) and reapply pressure in rapid cycles",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Drain all fluid to the reservoir",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disconnect the pedal",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Pedal pulsation and noise during a hard ABS stop on a slippery surface are:",
+          "moduleTitle": "Anti-Lock Brakes",
+          "explanation": "Pulsation is expected during ABS operation; the driver should keep firm pedal pressure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Always a fault",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Normal signs that the modulator and pump are working",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Caused by low tire pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A reason to release the pedal completely",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A passive (inductive) wheel speed sensor generates:",
+          "moduleTitle": "Wheel Speed Sensor Operation and Testing",
+          "explanation": "Passive sensors produce an AC signal that grows in frequency and voltage as speed increases.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A constant 5 volt reference",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An AC voltage signal whose frequency and amplitude rise with wheel speed, as teeth pass the sensor",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A digital square wave of fixed amplitude",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "No signal at any speed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "An active wheel speed sensor differs because it:",
+          "moduleTitle": "Wheel Speed Sensor Operation and Testing",
+          "explanation": "Active sensors are supplied with power and can detect very low and even directional wheel speed.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Needs no power supply",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Is powered by the module and produces a switching (digital-type) signal that can be read down to near",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only works above 100 km/h",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Uses brake fluid pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Excessive air gap or a damaged tone ring on a passive sensor will most likely cause:",
+          "moduleTitle": "Wheel Speed Sensor Operation and Testing",
+          "explanation": "Too large a gap or missing teeth weakens/interrupts the signal, worst at low wheel speed.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A stronger signal",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A weak or dropout signal, especially at low speed, and a possible ABS fault",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Higher engine power",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A firmer pedal at all times",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A wheel speed sensor circuit fault code with an open circuit would be confirmed by:",
+          "moduleTitle": "Wheel Speed Sensor Circuit Fault",
+          "explanation": "Circuit testing - resistance, continuity and wiring checks - confirms an open before parts are replaced.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Guessing and replacing the module first",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Measuring sensor circuit continuity/resistance and checking for opens or high resistance against",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only clearing the code repeatedly",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replacing all four sensors",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A sensor signal that drops out only over bumps most suggests:",
+          "moduleTitle": "Wheel Speed Sensor Circuit Fault",
+          "explanation": "Movement-related dropouts point to intermittent connections, found by wiggling the harness while watching live data or a scope.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A completely failed sensor element only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An intermittent wiring/connector fault that opens with movement - confirmed with a wiggle test while",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A faulty brake disc",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Normal operation",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "The ABS pump motor's job during an ABS event is to:",
+          "moduleTitle": "ABS Pump Motor Circuit Diagnostics",
+          "explanation": "The pump restores the pressure that the release solenoids dumped so braking can be reapplied.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cool the fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Return released brake fluid pressure to the circuit / build pressure for reapply",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Drive the wheels",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Pump fuel",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "If the pump motor does not run when commanded in a scan tool active test, the next checks should include:",
+          "moduleTitle": "ABS Pump Motor Circuit Diagnostics",
+          "explanation": "A no-run pump is diagnosed electrically: feed, ground, relay control and the motor itself.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Replacing the tires",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Pump motor power feed, ground, relay and motor resistance/current against specification",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Adjusting the alignment",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Changing brake fluid colour",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 11,
+      "slug": "chassis-park-brake-technology",
+      "title": "Park Brake Technology",
+      "moduleTitles": [
+        "Caliper Type Electric Park Brake",
+        "Cable Acuted Electric Park Brake",
+        "Cable Acuted Electric Park Brake Adjustment"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "On a caliper type electric park brake, the parking brake is applied by:",
+          "moduleTitle": "Caliper Type Electric Park Brake",
+          "explanation": "A motor and spindle mechanism in the caliper drives the piston to apply the pads mechanically.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A hand lever and long cable only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An electric motor on the caliper driving the piston out to clamp the pads",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Engine vacuum",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The ABS pump only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Before servicing rear pads on a caliper type EPB, the technician must:",
+          "moduleTitle": "Caliper Type Electric Park Brake",
+          "explanation": "Service mode winds the motor back safely; forcing it can damage the mechanism.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Force the piston back with a clamp straight away",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Place the EPB in service/maintenance mode with a scan tool (or maker's procedure) to retract the",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Cut the motor wires",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Remove the caliper from the car permanently",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "After pad replacement on a caliper type EPB, the system typically needs:",
+          "moduleTitle": "Caliper Type Electric Park Brake",
+          "explanation": "A calibration cycle sets the piston travel and confirms correct apply and release.",
+          "options": [
+            {
+              "label": "A",
+              "body": "No further action ever",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An apply/release or calibration cycle so the module relearns piston position and clamp force",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A wheel alignment only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "New brake fluid in the booster",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "An automatic apply feature on some EPB systems applies the park brake when:",
+          "moduleTitle": "Caliper Type Electric Park Brake",
+          "explanation": "Auto-apply uses programmed conditions to set the brake without the driver pulling the switch.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The radio is turned off",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Conditions such as engine off / door open / vehicle stopped are met, as programmed",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The headlamps are on",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel is low",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A cable actuated (cable puller) electric park brake works by:",
+          "moduleTitle": "Cable Acuted Electric Park Brake",
+          "explanation": "One motorised actuator tensions the existing cables to apply drum or caliper parking brakes.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Motors inside each caliper",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An electric actuator unit that pulls the conventional parking brake cables",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Hydraulic pressure in the calipers",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A vacuum servo pulling the hand lever",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A seized or stretched cable in a cable actuated EPB system will most likely cause:",
+          "moduleTitle": "Cable Acuted Electric Park Brake",
+          "explanation": "Cable condition decides how evenly actuator force reaches each wheel.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Equal braking on both sides always",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Uneven application, weak holding on one side, or an actuator overload fault",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Better fuel economy",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Faster ABS cycling",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Holding ability of any park brake is finally tested by:",
+          "moduleTitle": "Cable Acuted Electric Park Brake",
+          "explanation": "The real test is whether the vehicle stays held on a slope on the park brake alone.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Listening to the motor only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Confirming the vehicle holds securely on a gradient with the service brake released",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Checking the switch lamp only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Measuring tire pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Cable actuated EPB adjustment matters because:",
+          "moduleTitle": "Cable Acuted Electric Park Brake Adjustment",
+          "explanation": "Too slack gives weak holding; too tight leaves the brakes dragging and overheating.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It changes tire size",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Correct cable free play/tension ensures full application without dragging when released",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It sets engine idle",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It replaces pad replacement",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A park brake that drags after adjustment - hot wheel and poor rolling - indicates:",
+          "moduleTitle": "Cable Acuted Electric Park Brake Adjustment",
+          "explanation": "Dragging means the brake is not fully releasing, commonly from over-tight or seized cables.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Adjustment too tight or a cable not fully releasing",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Adjustment is perfect",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The pads are new",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The fluid is low",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "After adjusting a cable actuated EPB, best practice is to:",
+          "moduleTitle": "Cable Acuted Electric Park Brake Adjustment",
+          "explanation": "Cycling settles the cables, so adjustment and release are rechecked before the job is finished.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Never test it again",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Cycle the brake several times, recheck adjustment and holding, and confirm both wheels release freely",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Paint the cables",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Remove the actuator fuse permanently",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
