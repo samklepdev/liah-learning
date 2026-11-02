@@ -446,7 +446,9 @@ test('parseQuestionBlocks rejoins a tag split across lines', () => {
 
 test('parseQuestionBlocks rejoins a prompt that wraps before its tag', () => {
   const { body } = splitSections(fixture);
-  const q = parseQuestionBlocks(body).get(5)?.find((x) => x.position === 10);
+  // Course 4 "Understanding Suspension Systems" — Electronic Kinetic Dynamic
+  // Suspension is its 7th module, per the PDF's own MODULES COVERED list.
+  const q = parseQuestionBlocks(body).get(4)?.find((x) => x.position === 10);
   assert.equal(q?.moduleTag, 'ELECTRONIC KINETIC DYNAMIC SUSPENSION');
   assert.match(q?.prompt ?? '', /roll control and off-road articulation by:/);
 });
