@@ -214,3 +214,151 @@ export function parseQuestionBlocks(body: string[]): Map<number, RawQuestion[]> 
 
   return out;
 }
+
+export type OptionLabel = 'A' | 'B' | 'C' | 'D';
+
+export type ParsedOption = { label: OptionLabel; body: string; isCorrect: boolean };
+
+export type ParsedQuestion = {
+  position: number;
+  prompt: string;
+  moduleTitle: string;
+  explanation: string;
+  options: ParsedOption[];
+};
+
+export type ParsedCourse = {
+  position: number;
+  slug: string;
+  title: string;
+  moduleTitles: string[];
+  questionCount: number;
+  questions: ParsedQuestion[];
+};
+
+export type ParsedSubject = { slug: string; title: string; courses: ParsedCourse[] };
+
+type KeyEntry = { letter: OptionLabel; explanation: string };
+
+const KEY_HEADER_RE = /^\s*Quiz (\d+):.*- Answer Key\s*$/;
+const KEY_ENTRY_RE = /^\s*(\d{1,2})\.\s+([A-D])\s+-\s+(.+)$/;
+
+/** Answer-key explanations wrap constantly - 101 of 110 in the Chassis pack. */
+export function parseAnswerKey(key: string[]): Map<number, Map<number, KeyEntry>> {
+  const out = new Map<number, Map<number, KeyEntry>>();
+  let quiz: number | null = null;
+  let current: KeyEntry | null = null;
+
+  for (const line of key) {
+    const header = KEY_HEADER_RE.exec(line);
+    if (header) {
+      quiz = Number(header[1]);
+      current = null;
+      continue;
+    }
+
+    const entry = KEY_ENTRY_RE.exec(line);
+    if (entry && quiz !== null) {
+      current = { letter: entry[2] as OptionLabel, explanation: entry[3]!.trim() };
+      const perQuiz = out.get(quiz) ?? new Map<number, KeyEntry>();
+      perQuiz.set(Number(entry[1]), current);
+      out.set(quiz, perQuiz);
+      continue;
+    }
+
+    if (current && line.trim() && !isFurniture(line) && !KEY_HEADER_RE.test(line)) {
+      current.explanation = `${current.explanation} ${line.trim()}`.trim();
+    }
+  }
+
+  for (const perQuiz of out.values()) {
+    for (const e of perQuiz.values()) {
+      e.explanation = e.explanation
+        .replace(/\s*\[[^\]]*\]?\s*$/, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+  }
+  return out;
+}
+
+const normalize = (s: string): string => s.replace(/\s+/g, ' ').trim().toLowerCase();
+
+export function parseQuizPack(
+  text: string,
+  opts: { subjectSlug: string; subjectTitle: string },
+): ParsedSubject {
+  const { body, key } = splitSections(text);
+  const cover = parseCoverList(body);
+  const moduleLists = parseModuleLists(body, cover);
+  const questionBlocks = parseQuestionBlocks(body);
+  const answerKey = parseAnswerKey(key);
+
+  const courses: ParsedCourse[] = cover.map((entry) => {
+    const where = `Course ${entry.position} (${entry.title})`;
+    const moduleTitles = moduleLists.get(entry.position);
+    if (!moduleTitles) throw new QuizParseError(`${where}: no module list found.`);
+
+    const byTitle = new Map(moduleTitles.map((t) => [normalize(t), t]));
+    const raws = questionBlocks.get(entry.position) ?? [];
+    if (raws.length !== entry.questionCount) {
+      throw new QuizParseError(
+        `${where}: cover page declared ${entry.questionCount} questions, found ${raws.length}.`,
+      );
+    }
+
+    const keyForQuiz = answerKey.get(entry.position);
+    if (!keyForQuiz) throw new QuizParseError(`${where}: no answer key section found.`);
+
+    const questions: ParsedQuestion[] = raws.map((raw) => {
+      const at = `${where} question ${raw.position}`;
+
+      if (raw.options.size !== 4) {
+        throw new QuizParseError(
+          `${at}: expected 4 options, found ${raw.options.size}.`,
+        );
+      }
+
+      const moduleTitle = byTitle.get(normalize(raw.moduleTag));
+      if (!moduleTitle) {
+        throw new QuizParseError(
+          `${at}: module tag [${raw.moduleTag}] does not match any listed module ` +
+            `(${moduleTitles.join(', ')}).`,
+        );
+      }
+
+      const entryForQ = keyForQuiz.get(raw.position);
+      if (!entryForQ) throw new QuizParseError(`${at}: no answer-key entry.`);
+      if (!raw.options.has(entryForQ.letter)) {
+        throw new QuizParseError(
+          `${at}: answer key says ${entryForQ.letter} but that option does not exist.`,
+        );
+      }
+
+      const options: ParsedOption[] = (['A', 'B', 'C', 'D'] as const).map((label) => ({
+        label,
+        body: raw.options.get(label)!,
+        isCorrect: label === entryForQ.letter,
+      }));
+
+      return {
+        position: raw.position,
+        prompt: raw.prompt,
+        moduleTitle,
+        explanation: entryForQ.explanation,
+        options,
+      };
+    });
+
+    return {
+      position: entry.position,
+      slug: `${opts.subjectSlug}-${slugify(entry.title)}`,
+      title: entry.title,
+      moduleTitles,
+      questionCount: entry.questionCount,
+      questions,
+    };
+  });
+
+  return { slug: opts.subjectSlug, title: opts.subjectTitle, courses };
+}

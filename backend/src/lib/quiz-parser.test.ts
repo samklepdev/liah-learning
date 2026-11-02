@@ -7,10 +7,16 @@ import {
   parseCoverList,
   parseModuleLists,
   parseQuestionBlocks,
+  parseQuizPack,
 } from './quiz-parser.ts';
 
 const fixture = readFileSync(
   new URL('../test/fixtures/chassis.txt', import.meta.url),
+  'utf8',
+);
+
+const malformed = readFileSync(
+  new URL('../test/fixtures/malformed.txt', import.meta.url),
   'utf8',
 );
 
@@ -109,4 +115,75 @@ test('parseQuestionBlocks rejoins a prompt that wraps before its tag', () => {
   const q = parseQuestionBlocks(body).get(4)?.find((x) => x.position === 10);
   assert.equal(q?.moduleTag, 'ELECTRONIC KINETIC DYNAMIC SUSPENSION');
   assert.match(q?.prompt ?? '', /roll control and off-road articulation by:/);
+});
+
+test('parseQuizPack assembles the whole Chassis pack', () => {
+  const subject = parseQuizPack(fixture, {
+    subjectSlug: 'chassis',
+    subjectTitle: 'Chassis',
+  });
+
+  assert.equal(subject.slug, 'chassis');
+  assert.equal(subject.courses.length, 11);
+
+  const total = subject.courses.reduce((n, c) => n + c.questions.length, 0);
+  assert.equal(total, 110);
+
+  for (const course of subject.courses) {
+    assert.equal(course.questions.length, course.questionCount);
+    for (const q of course.questions) {
+      assert.equal(
+        q.options.filter((o) => o.isCorrect).length,
+        1,
+        `${course.slug} q${q.position}`,
+      );
+      assert.ok(q.explanation.length > 0);
+      assert.ok(!q.explanation.includes('['), 'explanation must not retain the tag');
+      assert.ok(course.moduleTitles.includes(q.moduleTitle));
+    }
+  }
+});
+
+test('parseQuizPack slugs courses with the subject prefix', () => {
+  const subject = parseQuizPack(fixture, {
+    subjectSlug: 'chassis',
+    subjectTitle: 'Chassis',
+  });
+  assert.equal(subject.courses[0]?.slug, 'chassis-tire-and-rim-essentials');
+});
+
+test('parseQuizPack resolves tags to title-case module names', () => {
+  const subject = parseQuizPack(fixture, {
+    subjectSlug: 'chassis',
+    subjectTitle: 'Chassis',
+  });
+  const q = subject.courses[0]?.questions.find((x) => x.position === 4);
+  assert.equal(q?.moduleTitle, 'Tread and Rim Technology');
+});
+
+test('parseQuizPack marks the answer-key letter as the correct option', () => {
+  const subject = parseQuizPack(fixture, {
+    subjectSlug: 'chassis',
+    subjectTitle: 'Chassis',
+  });
+  const q = subject.courses[0]?.questions.find((x) => x.position === 1);
+  assert.equal(q?.options.find((o) => o.isCorrect)?.label, 'A');
+  assert.match(q?.explanation ?? '', /radial construction/i);
+});
+
+test('parseQuizPack joins an explanation that wraps across lines', () => {
+  const subject = parseQuizPack(fixture, {
+    subjectSlug: 'chassis',
+    subjectTitle: 'Chassis',
+  });
+  const q = subject.courses[0]?.questions.find((x) => x.position === 7);
+  assert.match(q?.explanation ?? '', /reduced speed with zero pressure\.?$/);
+});
+
+test('parseQuizPack rejects a pack with a missing question', () => {
+  assert.throws(
+    () => parseQuizPack(malformed, { subjectSlug: 'broken', subjectTitle: 'Broken' }),
+    (err: Error) =>
+      err.name === 'QuizParseError' && /declared 10 questions, found 1/.test(err.message),
+  );
 });
