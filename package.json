@@ -17,7 +17,8 @@
     "db:down": "docker compose down",
     "db:generate": "npm run db:generate -w backend",
     "typecheck": "npm run typecheck -w backend && npm run build -w frontend",
-    "quiz:parse": "npm run quiz:parse -w backend --"
+    "quiz:parse": "npm run quiz:parse -w backend --",
+    "quiz:seed": "npm run quiz:seed -w backend"
   },
   "keywords": [],
   "author": "Sam Klepper",

@@ -12,7 +12,8 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "node --import tsx --env-file=.env.test --test \"src/**/*.test.ts\"",
     "db:push:test": "node --env-file=.env.test ../node_modules/drizzle-kit/bin.cjs push",
-    "quiz:parse": "tsx src/scripts/parse-quiz-pdf.ts"
+    "quiz:parse": "tsx src/scripts/parse-quiz-pdf.ts",
+    "quiz:seed": "node --import tsx --env-file-if-exists=.env src/scripts/seed-quizzes.ts"
   },
   "dependencies": {
     "argon2": "^0.44.0",
