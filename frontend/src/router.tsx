@@ -2,11 +2,11 @@ import { type ReactNode } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
-import { CatalogLayout } from './pages/CatalogLayout';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { QuizPage } from './pages/QuizPage';
 import { ResultsPage } from './pages/ResultsPage';
 import { SubjectCoursesPage, SubjectsIndexPage } from './pages/SubjectCoursesPage';
+import { AppShell } from './shell/AppShell';
 
 function RequireAuth({ children }: { children: ReactNode }) {
   const { user, loading } = useAuth();
@@ -23,37 +23,21 @@ export function AppRouter() {
         {/* Kept so older links and bookmarks don't land on the 404 page. */}
         <Route path="/courses" element={<Navigate to="/subjects" replace />} />
 
-        {/* Sidebar of subjects, with the selected subject's quizzes beside it. */}
+        {/* Everything signed-in shares the shell, so the sidebar is always
+            reachable. Collapsing it — not routing around it — is how you get a
+            distraction-free quiz. */}
         <Route
-          path="/subjects"
           element={
             <RequireAuth>
-              <CatalogLayout />
+              <AppShell />
             </RequireAuth>
           }
         >
-          <Route index element={<SubjectsIndexPage />} />
-          <Route path=":subjectSlug" element={<SubjectCoursesPage />} />
+          <Route path="/subjects" element={<SubjectsIndexPage />} />
+          <Route path="/subjects/:subjectSlug" element={<SubjectCoursesPage />} />
+          <Route path="/courses/:slug/quiz" element={<QuizPage />} />
+          <Route path="/courses/:slug/results/:attemptId" element={<ResultsPage />} />
         </Route>
-
-        {/* Taking a quiz and reading a result are full-width: no sidebar, so
-            nothing competes with the question in front of you. */}
-        <Route
-          path="/courses/:slug/quiz"
-          element={
-            <RequireAuth>
-              <QuizPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="/courses/:slug/results/:attemptId"
-          element={
-            <RequireAuth>
-              <ResultsPage />
-            </RequireAuth>
-          }
-        />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
