@@ -1,15 +1,25 @@
+/* Palette taken from liahwellnesscenter.com:
+   #AD6243 terracotta (links, buttons, icons), #4C3128 deep brown (headings),
+   #FFF6F0 warm cream (tinted surfaces), #E3E3E3 borders, #5F5F5F body text. */
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+  --text: #5f5f5f;
+  --text-h: #4c3128;
+  --bg: #ffffff;
+  /* Tinted surface for the sidebar, so regions read by colour not by rules. */
+  --surface: #fff6f0;
+  --border: #e3e3e3;
+  --code-bg: #fff6f0;
+  --accent: #ad6243;
+  --accent-bg: rgba(173, 98, 67, 0.1);
+  --accent-border: rgba(173, 98, 67, 0.45);
+  --on-accent: #ffffff;
+  --success: #27ae60;
+  --warning: #9a6700;
+  --danger: #b3261e;
+  --danger-bg: rgba(179, 38, 30, 0.08);
+  --social-bg: rgba(255, 246, 240, 0.6);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgba(76, 49, 40, 0.1) 0 10px 15px -3px, rgba(76, 49, 40, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -30,19 +40,28 @@
   }
 }
 
+/* Dark mode derived from the same hues: the brown becomes the ground, and the
+   terracotta is lifted to #d08a66 so it still carries contrast on it. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
+    --text: #c6b8b1;
+    --text-h: #f7f0eb;
+    --bg: #1c1512;
+    --surface: #241a16;
+    --border: #3a2b25;
+    --code-bg: #241a16;
+    --accent: #d08a66;
+    --accent-bg: rgba(208, 138, 102, 0.16);
+    --accent-border: rgba(208, 138, 102, 0.45);
+    --on-accent: #241a16;
+    /* Lifted for contrast on the dark brown ground. */
+    --success: #4ecb84;
+    --warning: #e0a750;
+    --danger: #ef7a72;
+    --danger-bg: rgba(239, 122, 114, 0.14);
+    --social-bg: rgba(36, 26, 22, 0.6);
     --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+      rgba(0, 0, 0, 0.45) 0 10px 15px -3px, rgba(0, 0, 0, 0.3) 0 4px 6px -2px;
   }
 
   #social .button-icon {
@@ -50,16 +69,13 @@
   }
 }
 
+/* Full width, no frame. The 1126px centred column with border-inline and
+   text-align:center was Vite scaffold styling — that border was the faint grey
+   line down each side, and the centring fought every left-aligned layout. */
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 body {
@@ -73,23 +89,19 @@ h2 {
   color: var(--text-h);
 }
 
+/* Scaffold values were hero-sized (56px); page headings inside a content area
+   next to a sidebar need to be page headings, not splash text. */
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+  margin: 0 0 0.35rem;
 }
 h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+  font-size: 1.15rem;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
+  margin: 0 0 0.5rem;
 }
 p {
   margin: 0;

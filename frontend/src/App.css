@@ -16,7 +16,7 @@
   flex-direction: column;
   gap: 1rem;
   text-align: left;
-  border: 1px solid rgb(128 128 128 / 0.3);
+  border: 1px solid var(--border);
   border-radius: 0.75rem;
 }
 
@@ -36,7 +36,7 @@
 .auth-form input {
   padding: 0.6rem 0.7rem;
   font: inherit;
-  border: 1px solid rgb(128 128 128 / 0.4);
+  border: 1px solid var(--border);
   border-radius: 0.5rem;
   background: transparent;
   color: inherit;
@@ -69,8 +69,8 @@
   padding: 0.6rem 0.7rem;
   font-size: 0.8125rem;
   white-space: pre-wrap;
-  color: #b3261e;
-  background: rgb(179 38 30 / 0.08);
+  color: var(--danger);
+  background: var(--danger-bg);
   border-radius: 0.5rem;
 }
 
@@ -100,7 +100,7 @@
   align-items: center;
   gap: 1rem;
   padding: 0.85rem 0;
-  border-bottom: 1px solid rgb(128 128 128 / 0.2);
+  border-bottom: 1px solid var(--border);
 }
 
 .course-position {
@@ -113,8 +113,8 @@
 
 .course-score { font-size: 0.85rem; white-space: nowrap; }
 .course-untaken { opacity: 0.55; }
-.course-passed { color: #1a7f37; }
-.course-below { color: #9a6700; }
+.course-passed { color: var(--success); }
+.course-below { color: var(--warning); }
 
 .quiz-page { max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; text-align: left; }
 
@@ -125,7 +125,7 @@
 
 .progress-track {
   height: 6px; border-radius: 3px;
-  background: rgb(128 128 128 / 0.25); margin-bottom: 1.5rem; overflow: hidden;
+  background: var(--border); margin-bottom: 1.5rem; overflow: hidden;
 }
 .progress-fill { height: 100%; background: currentColor; opacity: 0.55; transition: width 0.2s; }
 
@@ -143,9 +143,9 @@
 .option {
   display: flex; align-items: flex-start; gap: 0.6rem;
   padding: 0.7rem 0.85rem; cursor: pointer;
-  border: 1px solid rgb(128 128 128 / 0.35); border-radius: 0.5rem;
+  border: 1px solid var(--border); border-radius: 0.5rem;
 }
-.option.selected { border-color: currentColor; background: rgb(128 128 128 / 0.1); }
+.option.selected { border-color: currentColor; background: var(--accent-bg); }
 .option input { margin-top: 0.2rem; }
 .option-label { font-weight: 600; min-width: 1.2rem; }
 
@@ -155,16 +155,16 @@
 .quiz-saving { font-size: 0.78rem; opacity: 0.6; }
 
 .review-grid h2 { font-size: 1.1rem; margin: 0 0 0.5rem; }
-.review-warning { color: #9a6700; font-size: 0.875rem; }
-.review-ok { color: #1a7f37; font-size: 0.875rem; }
+.review-warning { color: var(--warning); font-size: 0.875rem; }
+.review-ok { color: var(--success); font-size: 0.875rem; }
 .review-cells { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1rem 0 1.25rem; }
 
 .review-cell {
   width: 2.2rem; height: 2.2rem; cursor: pointer;
-  border-radius: 0.4rem; border: 1px solid rgb(128 128 128 / 0.4);
+  border-radius: 0.4rem; border: 1px solid var(--border);
   background: transparent; color: inherit;
 }
-.review-cell.answered { border-color: currentColor; background: rgb(128 128 128 / 0.15); }
+.review-cell.answered { border-color: currentColor; background: var(--accent-bg); }
 .review-cell.blank { border-style: dashed; opacity: 0.6; }
 
 button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
@@ -173,7 +173,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .score-block {
   text-align: center; padding: 1.25rem 0 1.5rem;
-  border-bottom: 1px solid rgb(128 128 128 / 0.25); margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border); margin-bottom: 1.25rem;
 }
 .score-number { font-size: 2.6rem; font-weight: 700; line-height: 1; }
 .score-of { font-size: 1.1rem; opacity: 0.6; }
@@ -181,7 +181,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .modules-block {
   padding: 0.85rem 1rem; margin-bottom: 1.5rem;
-  border-radius: 0.5rem; background: rgb(128 128 128 / 0.1);
+  border-radius: 0.5rem; background: var(--accent-bg);
 }
 
 .label {
@@ -192,7 +192,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .result-list { list-style: none; padding: 0; margin: 0; }
 
 .result-missed {
-  border-left: 3px solid #b3261e; padding: 0.6rem 0 0.6rem 0.75rem; margin: 0.6rem 0;
+  border-left: 3px solid var(--danger); padding: 0.6rem 0 0.6rem 0.75rem; margin: 0.6rem 0;
 }
 .result-q { font-weight: 600; font-size: 0.95rem; margin: 0 0 0.3rem; }
 .result-line { font-size: 0.86rem; margin: 0 0 0.2rem; }
@@ -200,10 +200,10 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .result-module {
   display: inline-block; padding: 0.15rem 0.5rem;
-  font-size: 0.72rem; border-radius: 0.3rem; background: rgb(128 128 128 / 0.18);
+  font-size: 0.72rem; border-radius: 0.3rem; background: var(--accent-bg);
 }
 
-.result-correct { border-bottom: 1px solid rgb(128 128 128 / 0.15); }
+.result-correct { border-bottom: 1px solid var(--border); }
 .result-toggle {
   width: 100%; display: flex; justify-content: space-between; gap: 1rem;
   padding: 0.5rem 0; background: none; border: none; cursor: pointer;
@@ -248,7 +248,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .notfound-path code {
   padding: 0.1rem 0.35rem;
   border-radius: 0.3rem;
-  background: rgb(128 128 128 / 0.18);
+  background: var(--accent-bg);
   font-size: 0.85em;
 }
 
@@ -274,8 +274,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   height: 3.5rem;
   flex: 0 0 auto;
   padding: 0 1rem;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg);
+  background: var(--surface);
   position: sticky;
   top: 0;
   z-index: 30;
@@ -327,7 +326,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   border-radius: 0.4rem;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--on-accent);
   background: var(--accent);
 }
 
@@ -350,8 +349,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .shell-sidebar {
   flex: 0 0 16rem;
-  border-right: 1px solid var(--border);
-  background: var(--bg);
+  background: var(--surface);
   overflow-y: auto;
 }
 /* `hidden` has to beat the flex display above. */
@@ -455,7 +453,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .sidebar-footer-email { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-.shell-main { flex: 1 1 auto; min-width: 0; }
+.shell-main { flex: 1 1 auto; min-width: 0; background: var(--bg); }
 
 .shell-scrim { display: none; }
 
