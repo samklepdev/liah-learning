@@ -1,6 +1,7 @@
 import { useId } from 'react';
 import { NavLink, useLocation } from 'react-router';
 import { BookIcon, ChevronRightIcon, SubjectIcon } from './icons';
+import { hasPassed } from '../quiz/passed';
 import type { SubjectNavState } from './useSubjectNav';
 
 /**
@@ -59,6 +60,11 @@ function SubjectGroup({
             >
               <span className="nav-sublink-pos">{c.position}</span>
               <span>{c.title}</span>
+              {hasPassed(c.bestScore, c.passScore) && (
+                <span className="nav-sublink-pass" role="img" aria-label="Passed">
+                  ✓
+                </span>
+              )}
             </NavLink>
           </li>
         ))}

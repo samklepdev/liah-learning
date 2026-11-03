@@ -449,6 +449,10 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .nav-sublink.active { background: var(--accent-bg); color: var(--text-h); font-weight: 600; }
 .nav-sublink-pos { opacity: 0.5; font-variant-numeric: tabular-nums; }
 
+/* margin-left:auto pushes the tick to the row's end; .nav-sublink is a flex
+   row, so this needs no fixed width and tolerates long titles. */
+.nav-sublink-pass { margin-left: auto; color: var(--success); }
+
 .nav-panel-note {
   padding: 0.35rem 0.6rem 0.35rem 1.5rem;
   font-size: 0.8rem;
