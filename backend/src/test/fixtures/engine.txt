@@ -1,0 +1,1581 @@
+PRACTICE MATERIAL - ENGINE PROGRAM
+
+
+
+Engine Pop Quizzes
+11 quizzes - one per course - covering all 85 modules in the engine completion sheet.
+
+Name:                                                       Date:
+
+
+
+   How to use: Take one quiz after finishing a course. Circle the best answer (A-D), then check your answers in
+   the separate Answer Key section at the back of this pack. Review the module named under any question you
+   missed. Untimed on the first run; repeat the quiz later and aim for 9/10 or better.
+
+
+
+COURSES IN THIS PACK
+
+    1. Course 1 - Engine Mechanical Essentials (9 modules, 10 questions)
+    2. Course 2 - Cooling System Principles (6 modules, 10 questions)
+    3. Course 3 - Forced Introduction Fundamentals (6 modules, 10 questions)
+    4. Course 4 - Engine Management Essentials (10 modules, 10 questions)
+    5. Course 5 - Understanding Engine Sensors (9 modules, 10 questions)
+    6. Course 6 - Mastering Ignition Systems (8 modules, 10 questions)
+    7. Course 7 - Fuel Delivery Essentials (7 modules, 10 questions)
+    8. Course 8 - Emissions Control Fundamentals (8 modules, 10 questions)
+    9. Course 9 - Understanding Diesel Systems (9 modules, 10 questions)
+  10. Course 10 - Common Rail Diesel Explained (6 modules, 10 questions)
+   11. Course 11 - Diesel Emissions Technology (7 modules, 10 questions)
+
+Total: 110 questions | Each quiz scored ___ / 10 | Answer keys are separate, in the Answer Key section at the
+back, so the quizzes can be printed without the answers.
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                                            Cover
+COURSE 1 OF 11 - POP QUIZ
+
+
+Course 1: Engine Mechanical Essentials
+Name:                                    Date:
+                                                                                  Score: ___ / 10
+
+
+
+  Modules covered (9): Stroke Engine Principles, Relative Compression Testing, Gasoline Engine Mechanical Checks,
+  Best Practice Head and Gasket Testing, Understanding Valve Timing, VVT Cam Phase Type, VVT Cam Changing Type,
+  Valve Adjustment Shim Type, Valve Adjustment Rocker Type
+
+
+Circle the best answer for each question.
+
+1. In a four-stroke engine, which sequence is correct? [STROKE ENGINE PRINCIPLES]
+    A. Intake, power, compression, exhaust
+    B. Intake, compression, power, exhaust
+    C. Compression, intake, exhaust, power
+    D. Power, intake, compression, exhaust
+
+2. How many crankshaft degrees does one complete four-stroke cycle take? [STROKE ENGINE PRINCIPLES]
+    A. 180 degrees
+    B. 360 degrees
+    C. 540 degrees
+    D. 720 degrees
+
+3. A relative compression test using starter current draw shows one cylinder low. What does that indicate?
+[RELATIVE COMPRESSION TESTING]
+    A. That cylinder builds less compression, so the starter works less hard on its stroke
+    B. The battery is fully charged
+    C. That cylinder has higher compression than the others
+    D. The starter is overheating
+
+4. Before condemning low compression, which check helps separate ring leakage from valve leakage?
+[GASOLINE ENGINE MECHANICAL CHECKS]
+    A. A wet compression test - oil added to the cylinder
+    B. A fuel pressure test
+    C. A cooling system pressure test
+    D. A spark output test
+
+5. A chemical block test fluid changes from blue to yellow/combustion colour. What does that suggest?
+[BEST PRACTICE HEAD AND GASKET TESTING]
+    A. Normal coolant
+    B. Combustion gases in the cooling system, such as from a head gasket leak
+    C. Low coolant level only
+    D. A faulty radiator cap only
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                         Course 1 - Questions 1-5
+COURSE 1 - POP QUIZ, CONTINUED
+
+
+Course 1: Engine Mechanical Essentials - Questions 6-10
+6. If a timing chain stretches, valve timing will generally: [UNDERSTANDING VALVE TIMING]
+    A. Advance
+    B. Retard
+    C. Stay exactly at specification
+    D. Reverse direction
+
+7. A phaser-type VVT system changes valve timing by: [VVT CAM PHASE TYPE]
+    A. Swapping to a different cam lobe
+    B. Rotating the cam relative to its sprocket
+    C. Changing valve lift only
+    D. Disconnecting the camshaft
+
+8. A cam-changing (lift/duration switching) system primarily changes: [VVT CAM CHANGING TYPE]
+    A. Crankshaft stroke
+    B. Which cam lobe profile the valve follows
+    C. Compression ratio mechanically
+    D. Spark plug gap
+
+9. On a shim-type valvetrain, clearance is too tight. To increase clearance you need a: [VALVE ADJUSTMENT
+SHIM TYPE]
+    A. Thicker shim
+    B. Thinner shim
+    C. Longer pushrod
+    D. Weaker valve spring
+
+10. On a rocker-type adjustable valvetrain, valve clearance is set with the piston at: [VALVE ADJUSTMENT
+ROCKER TYPE]
+    A. BDC on the power stroke
+    B. TDC on the compression stroke for that cylinder, valves closed
+    C. Any position, it does not matter
+    D. TDC on the exhaust stroke
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                      Course 1 - Questions 6-10
+COURSE 2 OF 11 - POP QUIZ
+
+
+Course 2: Cooling System Principles
+Name:                                    Date:
+                                                                                 Score: ___ / 10
+
+
+
+  Modules covered (6): Cooling System Principles, Drive Belt Systems, Cooling System Diagnostics, Cooling Fan Relay
+  Control, Thermostat ECM Controlled, Investigating Stray Current Corrosion
+
+
+Circle the best answer for each question.
+
+1. The thermostat's main job is to: [COOLING SYSTEM PRINCIPLES]
+    A. Pump coolant
+    B. Control minimum operating temperature by blocking flow to the radiator until warm-up
+    C. Create coolant pressure
+    D. Filter the coolant
+
+2. Raising cooling system pressure with the cap mainly: [COOLING SYSTEM PRINCIPLES]
+    A. Lowers the boiling point
+    B. Raises the boiling point of the coolant
+    C. Stops all corrosion
+    D. Increases thermostat opening speed only
+
+3. A chirp that changes with accessory load and a glazed, cracked belt most likely needs: [DRIVE BELT
+SYSTEMS]
+    A. More tension only, never replacement
+    B. Belt replacement and pulley alignment check
+    C. A shorter belt of any type
+    D. Water sprayed on it permanently
+
+4. An engine overheats only at highway speed. A likely cause is: [COOLING SYSTEM DIAGNOSTICS]
+    A. A cooling fan fault
+    B. A partially restricted radiator or collapsing lower hose
+    C. A thermostat stuck open
+    D. Cold coolant
+
+5. Pressure-testing the system and the cap checks for: [COOLING SYSTEM DIAGNOSTICS]
+    A. Fuel leaks
+    B. External/internal leaks and whether the cap holds rated pressure
+    C. Spark strength
+    D. Oil pressure
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                           Course 2 - Questions 1-5
+COURSE 2 - POP QUIZ, CONTINUED
+
+
+Course 2: Cooling System Principles - Questions 6-10
+6. The ECM turns the electric fan on mainly based on: [COOLING FAN RELAY CONTROL]
+    A. Radio volume
+    B. Engine coolant temperature (and A/C request/pressure)
+    C. Odometer reading
+    D. Fuel level
+
+7. A fan relay coil tests open. The fan will: [COOLING FAN RELAY CONTROL]
+    A. Run at high speed
+    B. Not run when commanded through that relay
+    C. Run continuously
+    D. Run only in reverse
+
+8. On an ECM-controlled (map-controlled) thermostat, the ECM can: [THERMOSTAT ECM CONTROLLED]
+    A. Move the radiator
+    B. Heat the thermostat electrically to open it earlier under load
+    C. Disable the water pump permanently
+    D. Change coolant colour
+
+9. Stray-current (electrolysis) corrosion in coolant is checked by measuring: [INVESTIGATING STRAY CURRENT
+CORROSION]
+    A. Voltage between the coolant and battery negative with a voltmeter
+    B. Resistance of a spark plug
+    C. Fuel pressure
+    D. Tyre pressure
+
+10. A common cause of stray current in coolant is: [INVESTIGATING STRAY CURRENT CORROSION]
+    A. A missing or corroded engine ground strap
+    B. Fresh coolant
+    C. A new radiator cap
+    D. Correct belt tension
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                Course 2 - Questions 6-10
+COURSE 3 OF 11 - POP QUIZ
+
+
+Course 3: Forced Introduction Fundamentals
+Name:                                    Date:
+                                                                                  Score: ___ / 10
+
+
+
+  Modules covered (6): Forced Introduction System Principles, Turbocharger Components Bearings, Twin Scroll
+  Turbocharging System Principles, Twin Charge Systems, Understanding Turbo Surge and Flutter, 48 Volt Electric Turbo
+  Technology
+
+
+Circle the best answer for each question.
+
+1. Forced induction increases power mainly by: [FORCED INTRODUCTION SYSTEM PRINCIPLES]
+    A. Reducing air density
+    B. Increasing the mass of air (and matching fuel) in the cylinder
+    C. Raising exhaust backpressure
+    D. Slowing the crankshaft
+
+2. A turbocharger shaft is most commonly supported by: [TURBOCHARGER COMPONENTS BEARINGS]
+    A. Ball bearings only in all cases
+    B. Floating journal (oil-film) bearings fed with pressurised engine oil
+    C. Dry plastic bushings
+    D. Magnetic levitation with no oil
+
+3. Blue smoke and shaft play after oil starvation most likely mean: [TURBOCHARGER COMPONENTS BEARINGS]
+    A. A healthy turbo
+    B. Bearing wear - inspect/replace the turbo and fix the oil feed cause
+    C. A dirty air filter only
+    D. Normal break-in
+
+4. A twin-scroll turbo improves response by: [TWIN SCROLL TURBOCHARGING SYSTEM PRINCIPLES]
+    A. Mixing all exhaust pulses together
+    B. Keeping exhaust pulses from paired cylinders separate to preserve pulse energy
+    C. Removing the wastegate
+    D. Cooling the intake with fuel
+
+5. A twin-charged engine combines: [TWIN CHARGE SYSTEMS]
+    A. Two alternators
+    B. A supercharger and a turbocharger
+    C. Two radiators
+    D. A turbo and a larger exhaust
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                            Course 3 - Questions 1-5
+COURSE 3 - POP QUIZ, CONTINUED
+
+
+Course 3: Forced Introduction Fundamentals - Questions
+6-10
+6. Compressor surge happens when: [UNDERSTANDING TURBO SURGE AND FLUTTER]
+    A. Boost is too low at idle
+    B. The compressor is asked for pressure the airflow cannot support, so flow stalls/reverses
+    C. The wastegate opens normally
+    D. Oil pressure rises
+
+7. Flutter/chatter on throttle lift-off can be reduced by a: [UNDERSTANDING TURBO SURGE AND FLUTTER]
+    A. Blocked intake
+    B. Diverter/blow-off valve that vents or recirculates pressurised air
+    C. Tighter wastegate with no control
+    D. Removed air filter
+
+8. A 48-volt electric turbo/e-assist mainly helps by: [48 VOLT ELECTRIC TURBO TECHNOLOGY]
+    A. Replacing engine oil
+    B. Spinning the compressor electrically to cut turbo lag before exhaust energy builds
+    C. Powering the headlights only
+    D. Charging the 12V battery directly with boost
+
+9. The wastegate controls maximum boost by: [FORCED INTRODUCTION SYSTEM PRINCIPLES]
+    A. Closing the throttle
+    B. Bypassing exhaust gas around the turbine
+    C. Blocking the intercooler
+    D. Advancing spark
+
+10. An intercooler's purpose is to: [TURBOCHARGER COMPONENTS BEARINGS]
+    A. Heat intake air
+    B. Cool the compressed intake air, increasing its density
+    C. Filter exhaust gas
+    D. Store boost pressure for later
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                            Course 3 - Questions 6-10
+COURSE 4 OF 11 - POP QUIZ
+
+
+Course 4: Engine Management Essentials
+Name:                                    Date:
+                                                                                    Score: ___ / 10
+
+
+
+  Modules covered (10): Port Fuel Injection Delivery System, Gasoline Injection Fuel Control, Inducing Gasoline Direct
+  Injection, Dual Injection Fuel Systems, Understanding Fuel Trims, Understanding Gasoline Scan Tool Data, Throttle
+  Actuator Control Systems, Cylinder Deactivation OHV Type, Intake Runner Control System, Intake Runner Control
+  Solenoid Type Diagnosis
+
+
+Circle the best answer for each question.
+
+1. In port fuel injection, fuel is sprayed: [PORT FUEL INJECTION DELIVERY SYSTEM]
+    A. Directly into the combustion chamber
+    B. Into the intake port, just behind the intake valve
+    C. Into the exhaust manifold
+    D. Into the throttle bore only on all systems
+
+2. In closed loop, the ECM mainly uses which sensor to trim fuel? [GASOLINE INJECTION FUEL CONTROL]
+    A. Oil pressure sensor
+    B. Oxygen sensor
+    C. Knock sensor only
+    D. Vehicle speed sensor
+
+3. Gasoline direct injection differs from PFI because fuel is injected: [INDUCING GASOLINE DIRECT INJECTION]
+    A. Before the air filter
+    B. Directly into the cylinder at high pressure
+    C. Only during the exhaust stroke
+    D. Through the spark plug
+
+4. A dual-injection (PFI + GDI) system uses PFI at low load mainly to: [DUAL INJECTION FUEL SYSTEMS]
+    A. Increase carbon on intake valves
+    B. Reduce particulates and intake-valve deposits and improve low-load running
+    C. Disable direct injection permanently
+    D. Use more fuel on purpose
+
+5. A large positive long-term fuel trim means the ECM is: [UNDERSTANDING FUEL TRIMS]
+    A. Removing fuel
+    B. Adding fuel to compensate for a lean condition (e.g. vacuum leak, low pressure)
+    C. Seeing a rich condition
+    D. In open loop forever
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                               Course 4 - Questions 1-5
+COURSE 4 - POP QUIZ, CONTINUED
+
+
+Course 4: Engine Management Essentials - Questions 6-
+10
+6. Total trim (STFT + LTFT) near +25% at idle but near 0% at cruise suggests: [UNDERSTANDING FUEL TRIMS]
+    A. A MAF fault that scales with airflow
+    B. An unmetered air/vacuum leak, proportionally biggest at idle
+    C. A stuck-open injector
+    D. Low tyre pressure
+
+7. Freeze-frame data records: [UNDERSTANDING GASOLINE SCAN TOOL DATA]
+    A. Live radio presets
+    B. Sensor conditions captured when a DTC set
+    C. Only cleared codes
+    D. The service history
+
+8. In electronic throttle control, if APP and TPS signals disagree beyond limits, the ECM will typically:
+[THROTTLE ACTUATOR CONTROL SYSTEMS]
+    A. Ignore it
+    B. Enter a reduced-power/limp mode and set a DTC
+    C. Open the throttle fully
+    D. Disable the brakes
+
+9. OHV cylinder deactivation keeps valves closed on deactivated cylinders by: [CYLINDER DEACTIVATION OHV
+TYPE]
+    A. Removing the pushrods
+    B. Collapsing/special lifters that decouple from the cam lobe
+    C. Closing the throttle only
+    D. Cutting spark only
+
+10. Intake runner control changes effective runner length to: [INTAKE RUNNER CONTROL SYSTEM]
+    A. Only make noise
+    B. Use a short path for high rpm and a long path for low-rpm torque
+    C. Cool the intake
+    D. Meter fuel
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                     Course 4 - Questions 6-10
+COURSE 5 OF 11 - POP QUIZ
+
+
+Course 5: Understanding Engine Sensors
+Name:                                    Date:
+                                                                                   Score: ___ / 10
+
+
+
+  Modules covered (9): Gasoline Injection Sensors, Narrow Band Oxygen Sensors, Wide Band Oxygen Sensors, Mass
+  Airflow Sensors, Hot Film Type Mass Airflow Sensor, Eight Wire Type Mass Airflow Sensor, Wire and Circuits Pull Up and
+  Down Circuits, Accelerator Pedal Position Sensor, Throttle Position Sensor
+
+
+Circle the best answer for each question.
+
+1. The ECM calculates engine load for fueling mainly from: [GASOLINE INJECTION SENSORS]
+    A. MAF or MAP plus rpm and temperature inputs
+    B. Fuel level only
+    C. Ambient light
+    D. Brake switch only
+
+2. A healthy narrow-band O2 sensor in closed loop should: [NARROW BAND OXYGEN SENSORS]
+    A. Stay fixed at 0.45V
+    B. Switch repeatedly above and below about 0.45V, roughly 0.1-0.9V
+    C. Stay at 5V
+    D. Read battery voltage
+
+3. A wide-band (air-fuel ratio) sensor differs because it can: [WIDE BAND OXYGEN SENSORS]
+    A. Only switch rich/lean
+    B. Measure the exact air-fuel ratio over a wide range, e.g. 10:1 to 20:1
+    C. Replace the MAF
+    D. Measure oil pressure
+
+4. A MAF sensor measures: [MASS AIRFLOW SENSORS]
+    A. Exhaust volume
+    B. The mass of air entering the engine
+    C. Fuel mass directly
+    D. Intake vacuum only
+
+5. A hot-film MAF stays accurate by keeping its film at a constant temperature. More airflow means: [HOT
+FILM TYPE MASS AIRFLOW SENSOR]
+    A. Less current needed
+    B. More current needed to maintain temperature, which the ECM reads as more airflow
+    C. No change in current
+    D. The film is switched off
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                              Course 5 - Questions 1-5
+COURSE 5 - POP QUIZ, CONTINUED
+
+
+Course 5: Understanding Engine Sensors - Questions 6-
+10
+6. An 8-wire MAF assembly commonly combines MAF with: [EIGHT WIRE TYPE MASS AIRFLOW SENSOR]
+    A. A fuel pump
+    B. Intake air temperature and sometimes humidity/barometric sensing in one housing
+    C. An oxygen sensor
+    D. A knock sensor
+
+7. In a pull-up circuit, the ECM internal resistor pulls the signal voltage up, and the sensor typically: [WIRE
+AND CIRCUITS PULL UP AND DOWN CIRCUITS]
+    A. Pulls it down toward ground to create the signal
+    B. Shorts battery voltage to the ECM
+    C. Supplies 12V to the sensor
+    D. Disconnects the ground permanently
+
+8. APP sensors use two (or more) tracks mainly to: [ACCELERATOR PEDAL POSITION SENSOR]
+    A. Make the pedal heavier
+    B. Provide redundancy so the ECM can cross-check for safety
+    C. Double the throttle opening
+    D. Replace the TPS
+
+9. A TPS signal that drops to 0V briefly while sweeping the throttle indicates: [THROTTLE POSITION SENSOR]
+    A. A normal glitch
+    B. A worn/open spot in the sensor track - replace the sensor
+    C. Low fuel pressure
+    D. A good sensor
+
+10. A coolant temperature sensor reading -40 degrees on a warm engine most likely indicates: [GASOLINE
+INJECTION SENSORS]
+    A. A short to ground
+    B. An open circuit (high resistance reads as very cold)
+    C. Normal operation
+    D. A rich-only fault with no other effect
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                      Course 5 - Questions 6-10
+COURSE 6 OF 11 - POP QUIZ
+
+
+Course 6: Mastering Ignition Systems
+Name:                                    Date:
+                                                                                       Score: ___ / 10
+
+
+
+  Modules covered (8): Kettering Type Ignition Systems, Spark Plugs, Spark Timing and Dwell Control, Spark Plug and
+  Lead Diagnosis, Magneto and CDI, Electronic Switching Ignition Systems, COP and Wasted Spark, Ignition Coil Pack
+  Diagnostics
+
+
+Circle the best answer for each question.
+
+1. In a Kettering (points) system, the condenser/capacitor across the points mainly: [KETTERING TYPE
+IGNITION SYSTEMS]
+    A. Creates the spark directly
+    B. Reduces arcing at the points and speeds primary current collapse
+    C. Times the distributor
+    D. Charges the battery
+
+2. A plug with a worn, rounded centre electrode and wide gap will: [SPARK PLUGS]
+    A. Need less voltage
+    B. Require higher firing voltage and may misfire under load
+    C. Fire earlier
+    D. Run cooler
+
+3. Dwell is best defined as: [SPARK TIMING AND DWELL CONTROL]
+    A. Spark duration in the cylinder
+    B. The time/angle the primary circuit is on, building coil current before firing
+    C. The gap of the plug
+    D. Exhaust valve timing
+
+4. A plug lead with carbon tracking on its insulation indicates: [SPARK PLUG AND LEAD DIAGNOSIS]
+    A. Normal wear only
+    B. Spark leaking to ground along a damaged/contaminated path - replace the lead/plug as needed
+    C. High fuel pressure
+    D. A good secondary circuit
+
+5. A CDI system differs from inductive ignition because it: [MAGNETO AND CDI]
+    A. Stores energy in a capacitor and discharges it rapidly into the coil primary
+    B. Uses points only
+    C. Has no coil
+    D. Fires only at idle
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                              Course 6 - Questions 1-5
+COURSE 6 - POP QUIZ, CONTINUED
+
+
+Course 6: Mastering Ignition Systems - Questions 6-10
+6. In electronic (transistor-switched) ignition, the module switches primary current based on: [ELECTRONIC
+SWITCHING IGNITION SYSTEMS]
+    A. The driver's input only
+    B. A crank/cam position pickup signal
+    C. Intake vacuum only
+    D. Coolant colour
+
+7. In a wasted-spark system, one coil fires two plugs at once. The 'waste' spark occurs on the: [COP AND
+WASTED SPARK]
+    A. Compression stroke
+    B. Exhaust stroke of the companion cylinder
+    C. Intake stroke
+    D. Power stroke
+
+8. Coil-on-plug (COP) gives an advantage because each coil has: [COP AND WASTED SPARK]
+    A. Less dwell time available
+    B. More time to saturate between firings and no plug leads to lose energy
+    C. Only one cylinder to fire at any speed with no control
+    D. No primary circuit
+
+9. A coil pack secondary that reads open/infinite resistance most likely means: [IGNITION COIL PACK
+DIAGNOSTICS]
+    A. A good coil
+    B. An open secondary winding - the coil will not fire that output
+    C. Low primary resistance only
+    D. A fouled plug only
+
+10. Advancing spark timing too far under load is most likely to cause: [SPARK TIMING AND DWELL CONTROL]
+    A. Retarded combustion
+    B. Detonation/knock and possible engine damage
+    C. A weaker alternator
+    D. Low oil pressure
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                  Course 6 - Questions 6-10
+COURSE 7 OF 11 - POP QUIZ
+
+
+Course 7: Fuel Delivery Essentials
+Name:                                    Date:
+                                                                                 Score: ___ / 10
+
+
+
+  Modules covered (7): Fuel Delivery System Mechanical Checks, Fuel Delivery System Electrical Checks, Injector
+  Diagnostics, Fuel Pump Control Module Checks, Fuel Pressure Regulator Performance, Introducing Ethanol Fuel, E85
+  Fuel Flex Vehicles
+
+
+Circle the best answer for each question.
+
+1. Low fuel pressure with good pump voltage - the next mechanical check is: [FUEL DELIVERY SYSTEM
+MECHANICAL CHECKS]
+    A. Replace the ECM
+    B. Check for a restricted filter, kinked line or weak pump, and check volume/flow as well as pressure
+    C. Advance the timing
+    D. Replace the spark plugs
+
+2. Voltage-drop testing the pump ground while the pump runs shows 1.2V. That means: [FUEL DELIVERY
+SYSTEM ELECTRICAL CHECKS]
+    A. A perfect ground
+    B. Excessive resistance in the ground - the pump is losing 1.2V it needs
+    C. The pump is new
+    D. Normal on all vehicles, ignore it
+
+3. An injector that clicks but delivers no fuel could have: [INJECTOR DIAGNOSTICS]
+    A. A clogged inlet screen/nozzle or no fuel pressure to it
+    B. Perfect delivery
+    C. Too much fuel pressure only
+    D. A good spray pattern by definition
+
+4. Comparing injector current ramps, one injector shows a much lower, slower rise. That suggests:
+[INJECTOR DIAGNOSTICS]
+    A. A shorted coil
+    B. Higher circuit resistance or a partially open injector coil
+    C. A good injector
+    D. Low battery state of charge only
+
+5. A fuel pump control module varies pump speed mainly by: [FUEL PUMP CONTROL MODULE CHECKS]
+    A. Changing fuel octane
+    B. Pulse-width modulating voltage to the pump to match demand
+    C. Blocking the return line permanently
+    D. Switching the injectors off
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                           Course 7 - Questions 1-5
+COURSE 7 - POP QUIZ, CONTINUED
+
+
+Course 7: Fuel Delivery Essentials - Questions 6-10
+6. On a vacuum-referenced regulator, fuel pressure at idle (high vacuum) should be: [FUEL PRESSURE
+REGULATOR PERFORMANCE]
+    A. Higher than at wide-open throttle
+    B. Lower than with the vacuum hose disconnected
+    C. Exactly battery voltage
+    D. Zero
+
+7. Fuel found inside the regulator's vacuum hose means: [FUEL PRESSURE REGULATOR PERFORMANCE]
+    A. Normal operation
+    B. A ruptured regulator diaphragm - replace the regulator
+    C. A clogged air filter
+    D. Good fuel pressure
+
+8. Compared with pure gasoline, ethanol contains: [INTRODUCING ETHANOL FUEL]
+    A. More energy per gallon
+    B. Less energy per gallon, so more volume is needed for the same work
+    C. No oxygen
+    D. Twice the energy
+
+9. A flex-fuel vehicle knows the ethanol percentage mainly by: [E85 FUEL FLEX VEHICLES]
+    A. The fuel cap colour
+    B. A fuel composition (ethanol content) sensor or calculated/virtual sensing from O2 feedback
+    C. The odometer
+    D. Intake air temperature alone
+
+10. Running E85 in a non-flex-fuel vehicle is risky mainly because: [E85 FUEL FLEX VEHICLES]
+    A. It has too much energy
+    B. The system may not add enough fuel (lean running) and materials may not be ethanol-compatible
+    C. It instantly raises compression
+    D. It disables the fuel pump relay
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                        Course 7 - Questions 6-10
+COURSE 8 OF 11 - POP QUIZ
+
+
+Course 8: Emissions Control Fundamentals
+Name:                                       Date:
+                                                                                 Score: ___ / 10
+
+
+
+  Modules covered (8): Vehicle Emissions Principles, Exhaust Gas Recirculation, Vented Evaporative System, Gasoline
+  Exhaust Emission Diagnostics, Two-Way Catalytic Converters, Three-Way Catalytic Converters, Catalytic Converter
+  Efficiency, Catalytic Efficiency Diagnostics
+
+
+Circle the best answer for each question.
+
+1. NOx forms mainly when: [VEHICLE EMISSIONS PRINCIPLES]
+    A. Combustion is very cold
+    B. Combustion temperatures are very high
+    C. The engine is off
+    D. Fuel is unburned only
+
+2. Unburned hydrocarbons (HC) rise most directly with: [VEHICLE EMISSIONS PRINCIPLES]
+    A. A perfect burn
+    B. Misfire or incomplete combustion
+    C. Normal closed-loop control
+    D. A hot catalytic converter
+
+3. EGR reduces NOx by: [EXHAUST GAS RECIRCULATION]
+    A. Adding oxygen
+    B. Recirculating inert exhaust to lower peak combustion temperature
+    C. Enriching the mixture heavily
+    D. Raising combustion temperature
+
+4. EGR stuck open at idle will typically cause: [EXHAUST GAS RECIRCULATION]
+    A. Smooth idle
+    B. Rough idle, stalling or hesitation
+    C. Higher NOx only
+    D. No drivability effect
+
+5. The EVAP system's job is to: [VENTED EVAPORATIVE SYSTEM]
+    A. Vent fuel vapours freely to air
+    B. Capture fuel vapours in a charcoal canister and purge them into the engine to burn
+    C. Cool the fuel tank
+    D. Meter liquid fuel to the injectors
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                           Course 8 - Questions 1-5
+COURSE 8 - POP QUIZ, CONTINUED
+
+
+Course 8: Emissions Control Fundamentals - Questions 6-
+10
+6. High CO on a gas analyser most directly indicates: [GASOLINE EXHAUST EMISSION DIAGNOSTICS]
+    A. A lean mixture
+    B. A rich mixture / incomplete combustion with excess fuel
+    C. A vacuum leak only
+    D. Low HC
+
+7. A two-way (oxidation) converter converts: [TWO-WAY CATALYTIC CONVERTERS]
+    A. NOx to nitrogen
+    B. HC and CO into water and CO2
+    C. CO2 into oxygen
+    D. Fuel into HC
+
+8. A three-way converter can reduce NOx and oxidise HC/CO at the same time only when: [THREE-WAY
+CATALYTIC CONVERTERS]
+    A. The mixture is always rich
+    B. The air-fuel ratio cycles tightly around stoichiometry (14.7:1)
+    C. The engine is cold
+    D. Oxygen sensors are disconnected
+
+9. A converter stores and releases which gas to work over the rich/lean swing? [CATALYTIC CONVERTER
+EFFICIENCY]
+    A. Nitrogen
+    B. Oxygen (in its cerium washcoat)
+    C. Carbon monoxide
+    D. Fuel vapour
+
+10. The ECM judges converter efficiency mainly by comparing: [CATALYTIC EFFICIENCY DIAGNOSTICS]
+    A. Front and rear MAF signals
+    B. Upstream and downstream O2 sensor switching activity
+    C. Fuel pressure to oil pressure
+    D. Intake and exhaust temperature only
+
+
+
+
+Engine Pop Quizzes - Practice Material                                               Course 8 - Questions 6-10
+COURSE 9 OF 11 - POP QUIZ
+
+
+Course 9: Understanding Diesel Systems
+Name:                                    Date:
+                                                                                      Score: ___ / 10
+
+
+
+  Modules covered (9): Diesel Unit Injection, Hydraulic Electronic Unit Injection, Diesel Fuel Delivery Low Pressure
+  Supply, Diesel Fuel Delivery High Pressure Supply, Two Stroke Diesel Technology, Diesel Engine Mechanical Checks,
+  Glow Plug Operation, Indirect Glow Plug System Testing Procedures, Direct Glow Plug System Testing Procedures
+
+
+Circle the best answer for each question.
+
+1. In a unit injector system, each injector: [DIESEL UNIT INJECTION]
+    A. Only meters fuel, pressure comes from the rail
+    B. Combines pump and injector in one unit, usually cam-driven, per cylinder
+    C. Is powered by spark
+    D. Feeds all cylinders from one body
+
+2. HEUI injectors are actuated for injection pressure by: [HYDRAULIC ELECTRONIC UNIT INJECTION]
+    A. High-pressure engine oil acting on an intensifier piston
+    B. A spark plug
+    C. Vacuum
+    D. The alternator
+
+3. Air entering the low-pressure diesel supply most commonly causes: [DIESEL FUEL DELIVERY LOW
+PRESSURE SUPPLY]
+    A. Smooth running
+    B. Hard starting, stalling or no-start - diesels need a solid, air-free fuel supply
+    C. Higher power
+    D. Lower emissions only
+
+4. On a high-pressure diesel pump system, a failed pressure control will most likely show as: [DIESEL FUEL
+DELIVERY HIGH PRESSURE SUPPLY]
+    A. Normal pressure always
+    B. Rail/injection pressure too low (hard start, low power) or too high (rough, noisy running)
+    C. A tyre fault
+    D. A coolant leak
+
+5. A two-stroke diesel gets its intake air mainly by: [TWO STROKE DIESEL TECHNOLOGY]
+    A. Natural vacuum only
+    B. A blower/supercharger (and often a turbo) forcing air through ports, with exhaust valves in the head
+    C. A carburettor
+    D. Glow plugs
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                              Course 9 - Questions 1-5
+COURSE 9 - POP QUIZ, CONTINUED
+
+
+Course 9: Understanding Diesel Systems - Questions 6-10
+6. A diesel needs much higher compression than a gasoline engine mainly because: [DIESEL ENGINE
+MECHANICAL CHECKS]
+    A. It has spark plugs
+    B. Compression heat alone must ignite the fuel
+    C. Its fuel ignites easily when cold
+    D. It runs at lower temperature
+
+7. Glow plugs help a cold diesel start by: [GLOW PLUG OPERATION]
+    A. Sparking the fuel
+    B. Heating the air in/near the chamber so injected fuel ignites reliably
+    C. Pumping fuel
+    D. Turning the starter
+
+8. On an indirect (pre-chamber) system, one glow plug tests open with an ohmmeter. The likely symptom is:
+[INDIRECT GLOW PLUG SYSTEM TESTING PROCEDURES]
+    A. No effect on any engine
+    B. Rough, smoky cold starting on that cylinder until it warms up
+    C. Instant overheating
+    D. A charging fault
+
+9. For a direct-injection glow plug system, a current-draw (amp clamp) test is useful because it: [DIRECT
+GLOW PLUG SYSTEM TESTING PROCEDURES]
+    A. Measures fuel pressure
+    B. Shows each plug is actually drawing current/heating without removing the plugs
+    C. Tests the starter only
+    D. Replaces all other tests in every case
+
+10. White smoke and extended cranking on a cold morning, clearing as the engine warms, points first to:
+[GLOW PLUG OPERATION]
+    A. A good glow system
+    B. Glow plug or glow control faults (or low compression) on one or more cylinders
+    C. A hot thermostat
+    D. Excess fuel octane
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                   Course 9 - Questions 6-10
+COURSE 10 OF 11 - POP QUIZ
+
+
+Course 10: Common Rail Diesel Explained
+Name:                                    Date:
+                                                                                   Score: ___ / 10
+
+
+
+  Modules covered (6): Introducing Common Rail Diesel, CRD Fuel Delivery, CRD Electronic Controls, CRD Injector
+  Coding, CRD Intake and Exhaust System, CRD Injector Leak Back Testing
+
+
+Circle the best answer for each question.
+
+1. 'Common rail' means: [INTRODUCING COMMON RAIL DIESEL]
+    A. All injectors share one high-pressure accumulator (the rail) separate from injection timing
+    B. Injectors are driven by the cam only
+    C. Fuel is delivered by gravity
+    D. There is one injector for all cylinders
+
+2. Typical common-rail pressures are in the range of: [CRD FUEL DELIVERY]
+    A. 30-60 psi
+    B. About 5,000-30,000 psi (roughly 350-2,000+ bar) depending on system and load
+    C. 500 psi maximum on all systems
+    D. Vacuum
+
+3. If rail pressure cannot build while cranking, a common cause is: [CRD FUEL DELIVERY]
+    A. A good high-pressure pump by definition
+    B. Excessive injector leak-back, a weak pump or a suction/supply fault starving the pump
+    C. High tyre pressure
+    D. A clean fuel filter guaranteed
+
+4. A key advantage of electronic CRD control is multiple injection events per cycle, used to: [CRD
+ELECTRONIC CONTROLS]
+    A. Waste fuel
+    B. Use pilot injection to soften combustion noise, main injection for power, and post injection for aftertreatment
+    C. Disable the turbo
+    D. Replace glow plugs on all engines
+
+5. The rail pressure sensor and pressure regulator work together so the ECM can: [CRD ELECTRONIC
+CONTROLS]
+    A. Ignore rail pressure
+    B. Hold actual rail pressure at the target for load and speed
+    C. Set tyre pressure
+    D. Control the cooling fan only
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                            Course 10 - Questions 1-5
+COURSE 10 - POP QUIZ, CONTINUED
+
+
+Course 10: Common Rail Diesel Explained - Questions 6-
+10
+6. When a CRD injector is replaced, its code must be entered into the ECM because: [CRD INJECTOR CODING]
+    A. The code is only a serial number for warranty
+    B. Each injector's flow correction/classification differs slightly, and the ECM trims delivery using that code
+    C. Coding changes the rail pressure mechanically
+    D. Coding is never needed on CRD
+
+7. Skipping injector coding after replacement can cause: [CRD INJECTOR CODING]
+    A. Nothing at all
+    B. Rough idle, uneven cylinder balance, smoke or DTCs from incorrect per-cylinder fueling
+    C. A flat tyre
+    D. Low coolant
+
+8. Swirl/throttle flaps in a CRD intake mainly help to: [CRD INTAKE AND EXHAUST SYSTEM]
+    A. Block air permanently
+    B. Control air motion and EGR mixing at low load for cleaner, more stable combustion
+    C. Increase rail pressure
+    D. Cool the fuel rail
+
+9. A leak-back (return flow) test compares injectors. One injector returning far more fuel than the others
+indicates: [CRD INJECTOR LEAK BACK TESTING]
+    A. The healthiest injector
+    B. Internal wear/leakage in that injector - it is stealing rail pressure
+    C. A good seal
+    D. A blocked return line to all injectors
+
+10. Leak-back is usually measured: [CRD INJECTOR LEAK BACK TESTING]
+    A. With the engine at full power on the road only
+    B. At cranking or idle into graduated containers over a set time, comparing cylinders
+    C. By listening to the exhaust
+    D. With a tyre gauge
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                            Course 10 - Questions 6-10
+COURSE 11 OF 11 - POP QUIZ
+
+
+Course 11: Diesel Emissions Technology
+Name:                                     Date:
+                                                                                 Score: ___ / 10
+
+
+
+  Modules covered (7): Vehicle Emission Principles, Exhaust Gas Recirculation, NOx Type Catalytic Converters, DPF
+  Diesel Particular Filter, DPF Flow Diagnostics, Selective Catalytic Reduction, DPF Regeneration
+
+
+Circle the best answer for each question.
+
+1. Diesel exhaust aftertreatment has to deal mainly with which two pollutants that trade off against each
+other? [VEHICLE EMISSION PRINCIPLES]
+    A. CO and HC only
+    B. NOx and particulate matter (soot)
+    C. Oxygen and nitrogen
+    D. Water and CO2
+
+2. On a diesel, high-rate or cooled EGR lowers NOx but can increase: [EXHAUST GAS RECIRCULATION]
+    A. Soot/particulate loading and DPF burden
+    B. Tyre wear
+    C. Rail pressure automatically
+    D. Glow plug life
+
+3. A lean NOx trap (NOx storage catalyst) works by: [NOX TYPE CATALYTIC CONVERTERS]
+    A. Burning soot only
+    B. Storing NOx during lean running, then releasing and reducing it during a brief rich purge
+    C. Adding DEF
+    D. Filtering particulates
+
+4. A DPF (diesel particulate filter) does what? [DPF DIESEL PARTICULAR FILTER]
+    A. Converts NOx to nitrogen
+    B. Traps soot in a wall-flow filter until it is burned off in regeneration
+    C. Stores fuel vapour
+    D. Cools exhaust gas only
+
+5. DPF soot loading is estimated mainly from: [DPF FLOW DIAGNOSTICS]
+    A. Exhaust colour alone
+    B. Differential pressure across the DPF (plus a model) - higher pressure drop means more loading/restriction
+    C. Fuel level
+    D. Intake air temperature only
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                             Course 11 - Questions 1-5
+COURSE 11 - POP QUIZ, CONTINUED
+
+
+Course 11: Diesel Emissions Technology - Questions 6-10
+6. A differential pressure sensor hose that is split or blocked will cause: [DPF FLOW DIAGNOSTICS]
+    A. Accurate readings
+    B. False loading readings, failed or unnecessary regenerations, and related DTCs
+    C. Better fuel economy guaranteed
+    D. No symptoms ever
+
+7. SCR reduces NOx using: [SELECTIVE CATALYTIC REDUCTION]
+    A. Gasoline
+    B. DEF (urea/AdBlue), which forms ammonia that converts NOx to nitrogen and water over the SCR catalyst
+    C. Engine oil
+    D. Coolant
+
+8. If DEF runs empty or quality is poor, the system will typically: [SELECTIVE CATALYTIC REDUCTION]
+    A. Run normally with no warning
+    B. Warn the driver, then limit torque/speed or prevent restart until corrected
+    C. Increase power
+    D. Disable the DPF only
+
+9. Active DPF regeneration cleans the filter by: [DPF REGENERATION]
+    A. Washing it with water while driving
+    B. Raising exhaust temperature (often with post-injected fuel) to burn soot to ash/CO2
+    C. Removing and shaking it at every stop
+    D. Cooling the exhaust
+
+10. Repeatedly interrupting regeneration with short trips most likely leads to: [DPF REGENERATION]
+    A. A cleaner filter
+    B. Rising soot load, more frequent regens, oil dilution from post-injection, and eventually a forced/service regen
+    or warning light
+    C. Instant engine failure in all cases
+    D. Lower soot forever
+
+
+
+
+Engine Pop Quizzes - Practice Material                                                          Course 11 - Questions 6-10
+SEPARATE SECTION - DO NOT PRINT WITH THE QUIZZES
+
+
+
+Answer Key
+Answer keys for all 11 engine pop quizzes, grouped Quiz 1 through Quiz 11.
+
+
+  Printing: This section starts here, after every quiz. Print the pages before this one if you want the quizzes
+  without the answers. Each key gives the correct letter and a brief explanation, with a retake date and second-
+  score line.
+
+
+
+KEYS IN THIS SECTION
+
+    1. Quiz 1 - Engine Mechanical Essentials
+    2. Quiz 2 - Cooling System Principles
+    3. Quiz 3 - Forced Introduction Fundamentals
+    4. Quiz 4 - Engine Management Essentials
+    5. Quiz 5 - Understanding Engine Sensors
+    6. Quiz 6 - Mastering Ignition Systems
+    7. Quiz 7 - Fuel Delivery Essentials
+    8. Quiz 8 - Emissions Control Fundamentals
+    9. Quiz 9 - Understanding Diesel Systems
+  10. Quiz 10 - Common Rail Diesel Explained
+  11. Quiz 11 - Diesel Emissions Technology
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                    Answer Key - Divider
+ANSWER KEY - QUIZ 1 OF 11
+
+
+Quiz 1: Engine Mechanical Essentials - Answer Key
+Retake date:                                                  Second score: ___ / 10
+
+
+1. B - One cycle needs intake, compression, power and exhaust - two crank revolutions, 720 degrees. [STROKE
+ENGINE PRINCIPLES]
+
+
+2. D - Each stroke is 180 degrees; four strokes total 720 degrees. [STROKE ENGINE PRINCIPLES]
+
+3. A - Less compression means less load, so current dips on that cylinder's compression stroke. [RELATIVE
+COMPRESSION TESTING]
+
+
+4. A - If wet compression rises sharply, oil helped the rings seal, pointing to ring/bore wear. [GASOLINE ENGINE
+MECHANICAL CHECKS]
+
+
+5. B - The fluid reacts to CO2 from combustion gases entering the coolant. [BEST PRACTICE HEAD AND GASKET
+TESTING]
+
+
+6. B - Stretch delays cam rotation relative to the crank, retarding valve events. [UNDERSTANDING VALVE TIMING]
+
+7. B - A cam phaser advances or retards the whole cam by rotating it relative to drive. [VVT CAM PHASE TYPE]
+
+8. B - It switches between lobe profiles to change lift and duration, not just phase. [VVT CAM CHANGING TYPE]
+
+9. B - A thinner shim leaves more gap between cam lobe and follower. [VALVE ADJUSTMENT SHIM TYPE]
+
+10. B - Both valves must be fully closed on the base circle - TDC compression. [VALVE ADJUSTMENT ROCKER TYPE]
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                      Quiz 1 - Answer Key
+ANSWER KEY - QUIZ 2 OF 11
+
+
+Quiz 2: Cooling System Principles - Answer Key
+Retake date:                                                 Second score: ___ / 10
+
+
+1. B - It stays closed during warm-up, then opens to regulate temperature. [COOLING SYSTEM PRINCIPLES]
+
+2. B - About 3 degrees F boiling-point rise per psi of pressure. [COOLING SYSTEM PRINCIPLES]
+
+3. B - Glazing and cracks mean the belt is worn; misalignment causes chirp and repeat wear. [DRIVE BELT SYSTEMS]
+
+4. B - Fans matter most at low speed; high-speed overheating points to flow restriction. [COOLING SYSTEM
+DIAGNOSTICS]
+
+
+5. B - A system that will not hold pressure leaks; a cap that vents early lowers boiling point. [COOLING SYSTEM
+DIAGNOSTICS]
+
+
+6. B - ECT is the primary input, with A/C request as another common trigger. [COOLING FAN RELAY CONTROL]
+
+7. B - An open coil cannot create the magnetic field that closes the relay contacts. [COOLING FAN RELAY CONTROL]
+
+8. B - A heater element lets the ECM open the thermostat sooner than wax alone would. [THERMOSTAT ECM
+CONTROLLED]
+
+
+9. A - Voltage in the coolant above a small threshold indicates electrical current damaging metals. [INVESTIGATING
+STRAY CURRENT CORROSION]
+
+
+10. A - Poor grounds force current to find a path through the coolant and heater core/radiator. [INVESTIGATING
+STRAY CURRENT CORROSION]
+
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                     Quiz 2 - Answer Key
+ANSWER KEY - QUIZ 3 OF 11
+
+
+Quiz 3: Forced Introduction Fundamentals - Answer Key
+Retake date:                                                  Second score: ___ / 10
+
+
+1. B - More air mass allows more fuel to burn per cycle. [FORCED INTRODUCTION SYSTEM PRINCIPLES]
+
+2. B - Most turbos float the shaft on pressurised oil films; oil supply and drain are critical. [TURBOCHARGER
+COMPONENTS BEARINGS]
+
+
+3. B - Oil starvation destroys turbo bearings quickly; the root cause must be fixed. [TURBOCHARGER COMPONENTS
+BEARINGS]
+
+
+4. B - Separate scrolls keep pulse energy and reduce interference, spooling the turbo sooner. [TWIN SCROLL
+TURBOCHARGING SYSTEM PRINCIPLES]
+
+
+5. B - The supercharger gives low-speed boost; the turbo takes over at higher speed/flow. [TWIN CHARGE SYSTEMS]
+
+6. B - Surge is an unstable stall - often heard as chattering when the throttle closes under boost. [UNDERSTANDING
+TURBO SURGE AND FLUTTER]
+
+
+7. B - Venting the pressure spike keeps the compressor out of surge. [UNDERSTANDING TURBO SURGE AND
+FLUTTER]
+
+
+8. B - Electric drive spools the compressor at low rpm where exhaust energy is weak. [48 VOLT ELECTRIC TURBO
+TECHNOLOGY]
+
+
+9. B - Bypassing exhaust limits turbine speed and therefore boost. [FORCED INTRODUCTION SYSTEM PRINCIPLES]
+
+10. B - Compression heats air; cooling it restores density and reduces knock tendency. [TURBOCHARGER
+COMPONENTS BEARINGS]
+
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                       Quiz 3 - Answer Key
+ANSWER KEY - QUIZ 4 OF 11
+
+
+Quiz 4: Engine Management Essentials - Answer Key
+Retake date:                                                   Second score: ___ / 10
+
+
+1. B - PFI injectors sit in the intake port/runner aimed at the back of the intake valve. [PORT FUEL INJECTION
+DELIVERY SYSTEM]
+
+
+2. B - O2 feedback drives short-term correction around stoichiometry in closed loop. [GASOLINE INJECTION FUEL
+CONTROL]
+
+
+3. B - GDI uses a high-pressure pump and injectors in the chamber, often 500-3,000+ psi. [INDUCING GASOLINE
+DIRECT INJECTION]
+
+
+4. B - Port fuel washes the intake valves and helps low-load emissions; GDI dominates at higher load. [DUAL
+INJECTION FUEL SYSTEMS]
+
+
+5. B - Positive trim = adding fuel because the system was running lean. [UNDERSTANDING FUEL TRIMS]
+
+6. B - A fixed vacuum leak is a large share of idle airflow but a small share at cruise. [UNDERSTANDING FUEL TRIMS]
+
+7. B - Freeze frame snapshots key PIDs at the moment the fault matured. [UNDERSTANDING GASOLINE SCAN TOOL
+DATA]
+
+
+8. B - Redundant, opposing sensors are cross-checked; disagreement triggers a safe default. [THROTTLE ACTUATOR
+CONTROL SYSTEMS]
+
+
+9. B - Switching lifters collapse so pushrods do not lift the valves, while fuel and spark are also cut. [CYLINDER
+DEACTIVATION OHV TYPE]
+
+
+10. B - Long runners favour low-speed torque; short runners favour high-speed breathing. [INTAKE RUNNER
+CONTROL SYSTEM]
+
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                        Quiz 4 - Answer Key
+ANSWER KEY - QUIZ 5 OF 11
+
+
+Quiz 5: Understanding Engine Sensors - Answer Key
+Retake date:                                                  Second score: ___ / 10
+
+
+1. A - Airflow/air pressure, rpm and temperatures define how much fuel a cylinder fill needs. [GASOLINE INJECTION
+SENSORS]
+
+
+2. B - Switching shows it sensing rich/lean crossings around stoichiometry. [NARROW BAND OXYGEN SENSORS]
+
+3. B - Its pump-cell current is proportional to lambda across a broad range. [WIDE BAND OXYGEN SENSORS]
+
+4. B - Fuel is matched to air mass, so MAF is a primary fueling input. [MASS AIRFLOW SENSORS]
+
+5. B - Moving air cools the film; the heating current needed is the airflow signal. [HOT FILM TYPE MASS AIRFLOW
+SENSOR]
+
+
+6. B - Extra wires serve the additional sensing elements built into the housing. [EIGHT WIRE TYPE MASS AIRFLOW
+SENSOR]
+
+
+7. A - Many thermistor/switch circuits work this way: the sensor pulls the 5V reference down. [WIRE AND CIRCUITS
+PULL UP AND DOWN CIRCUITS]
+
+
+8. B - If the two APP signals do not agree in their set ratio, a fault is set. [ACCELERATOR PEDAL POSITION SENSOR]
+
+9. B - Dropouts during a smooth sweep show a dead spot in the resistive track. [THROTTLE POSITION SENSOR]
+
+10. B - On an NTC thermistor circuit, open/high resistance = the coldest reading; it also causes over-fueling.
+[GASOLINE INJECTION SENSORS]
+
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                      Quiz 5 - Answer Key
+ANSWER KEY - QUIZ 6 OF 11
+
+
+Quiz 6: Mastering Ignition Systems - Answer Key
+Retake date:                                                 Second score: ___ / 10
+
+
+1. B - It absorbs the primary surge as points open, sharpening the magnetic collapse. [KETTERING TYPE IGNITION
+SYSTEMS]
+
+
+2. B - A larger, worn gap takes more voltage to jump, especially under cylinder pressure. [SPARK PLUGS]
+
+3. B - Enough dwell saturates the coil; too little weakens the spark, too much overheats it. [SPARK TIMING AND
+DWELL CONTROL]
+
+
+4. B - Tracking is a leakage path that steals spark energy, usually under load. [SPARK PLUG AND LEAD DIAGNOSIS]
+
+5. A - Capacitor discharge gives a very fast, high-voltage rise, common on small engines. [MAGNETO AND CDI]
+
+6. B - The pickup tells the module when to turn primary current off and fire the coil. [ELECTRONIC SWITCHING
+IGNITION SYSTEMS]
+
+
+7. B - Companion cylinders are at TDC together; one is on compression, the other wastes its spark on exhaust. [COP
+AND WASTED SPARK]
+
+
+8. B - One coil per cylinder means long dwell availability and no secondary leads. [COP AND WASTED SPARK]
+
+9. B - No continuity in the secondary means no complete high-voltage path. [IGNITION COIL PACK DIAGNOSTICS]
+
+10. B - Too-early ignition raises peak pressure and temperature, promoting knock. [SPARK TIMING AND DWELL
+CONTROL]
+
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                     Quiz 6 - Answer Key
+ANSWER KEY - QUIZ 7 OF 11
+
+
+Quiz 7: Fuel Delivery Essentials - Answer Key
+Retake date:                                                   Second score: ___ / 10
+
+
+1. B - Pressure alone can mislead; a restriction or worn pump fails on volume under demand. [FUEL DELIVERY
+SYSTEM MECHANICAL CHECKS]
+
+
+2. B - More than about 0.2-0.5V drop on a ground under load is excessive. [FUEL DELIVERY SYSTEM ELECTRICAL
+CHECKS]
+
+
+3. A - Electrical operation does not prove hydraulic delivery; check pressure and spray/flow. [INJECTOR
+DIAGNOSTICS]
+
+
+4. B - Current ramp shape reveals coil resistance and pintle movement faults. [INJECTOR DIAGNOSTICS]
+
+5. B - PWM control delivers only the needed flow, cutting noise, heat and current draw. [FUEL PUMP CONTROL
+MODULE CHECKS]
+
+
+6. B - Vacuum helps pull fuel through the injector, so rail pressure drops to keep the differential constant. [FUEL
+PRESSURE REGULATOR PERFORMANCE]
+
+
+7. B - Fuel should never cross into the vacuum side; it also causes rich running. [FUEL PRESSURE REGULATOR
+PERFORMANCE]
+
+
+8. B - Ethanol is oxygenated but energy-poor per gallon versus gasoline. [INTRODUCING ETHANOL FUEL]
+
+9. B - Content sensing lets the ECM adjust fuel volume, spark and cold-start strategy. [E85 FUEL FLEX VEHICLES]
+
+10. B - Non-flex systems lack the trim range, sensing and compatible seals/hoses for high ethanol. [E85 FUEL FLEX
+VEHICLES]
+
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                        Quiz 7 - Answer Key
+ANSWER KEY - QUIZ 8 OF 11
+
+
+Quiz 8: Emissions Control Fundamentals - Answer Key
+Retake date:                                                Second score: ___ / 10
+
+
+1. B - High temperature and pressure combine nitrogen and oxygen into NOx. [VEHICLE EMISSIONS PRINCIPLES]
+
+2. B - Fuel that does not burn leaves as HC - misfire is the classic cause. [VEHICLE EMISSIONS PRINCIPLES]
+
+3. B - Diluted, cooler combustion produces far less NOx. [EXHAUST GAS RECIRCULATION]
+
+4. B - Idle needs no dilution; excess EGR destabilises combustion. [EXHAUST GAS RECIRCULATION]
+
+5. B - Vapours are stored, then purged under ECM control instead of escaping. [VENTED EVAPORATIVE SYSTEM]
+
+6. B - CO is partially burned fuel - a rich-running signature. [GASOLINE EXHAUST EMISSION DIAGNOSTICS]
+
+7. B - Two-way cats oxidise HC and CO; they do not reduce NOx. [TWO-WAY CATALYTIC CONVERTERS]
+
+8. B - The 14.7:1 window is where both reduction and oxidation work together. [THREE-WAY CATALYTIC
+CONVERTERS]
+
+
+9. B - Oxygen storage smooths the swings and is the basis of efficiency monitoring. [CATALYTIC CONVERTER
+EFFICIENCY]
+
+
+10. B - A good cat makes the rear O2 switch much slower/flatter than the front. [CATALYTIC EFFICIENCY
+DIAGNOSTICS]
+
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                   Quiz 8 - Answer Key
+ANSWER KEY - QUIZ 9 OF 11
+
+
+Quiz 9: Understanding Diesel Systems - Answer Key
+Retake date:                                                   Second score: ___ / 10
+
+
+1. B - The pumping element and nozzle are one unit per cylinder - no common rail. [DIESEL UNIT INJECTION]
+
+2. A - HEUI uses high-pressure oil to intensify fuel pressure inside the injector. [HYDRAULIC ELECTRONIC UNIT
+INJECTION]
+
+
+3. B - Diesel injection cannot compress air in the lines; leaks on the suction side are critical. [DIESEL FUEL DELIVERY
+LOW PRESSURE SUPPLY]
+
+
+4. B - Injection pressure defines atomisation and quantity; control faults hit starting and power first. [DIESEL FUEL
+DELIVERY HIGH PRESSURE SUPPLY]
+
+
+5. B - Two-stroke diesels cannot breathe on piston vacuum alone, so they are scavenged by a blower. [TWO STROKE
+DIESEL TECHNOLOGY]
+
+
+6. B - Compression ignition typically needs roughly 16:1-22:1 and healthy cranking compression. [DIESEL ENGINE
+MECHANICAL CHECKS]
+
+
+7. B - They pre-heat and often post-heat for smoother, cleaner cold running. [GLOW PLUG OPERATION]
+
+8. B - That cylinder lacks pre-heat, so it misfires cold and makes white smoke. [INDIRECT GLOW PLUG SYSTEM
+TESTING PROCEDURES]
+
+
+9. B - Comparing per-plug current finds open or weak plugs quickly. [DIRECT GLOW PLUG SYSTEM TESTING
+PROCEDURES]
+
+
+10. B - Unburned fuel vapour from cold cylinders is white; it clears with heat. [GLOW PLUG OPERATION]
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                         Quiz 9 - Answer Key
+ANSWER KEY - QUIZ 10 OF 11
+
+
+Quiz 10: Common Rail Diesel Explained - Answer Key
+Retake date:                                                    Second score: ___ / 10
+
+
+1. A - Pressure generation and injection are separated - the rail stores pressurised fuel for all injectors.
+[INTRODUCING COMMON RAIL DIESEL]
+
+
+2. B - Modern CRD runs into the thousands of bar for fine atomisation and multiple injections. [CRD FUEL DELIVERY]
+
+3. B - The pump cannot build pressure if fuel leaks back or never reaches it. [CRD FUEL DELIVERY]
+
+4. B - Pilot/post events cut diesel knock and support DPF regeneration. [CRD ELECTRONIC CONTROLS]
+
+5. B - It is a closed loop: sensor feedback, regulator/pump control correction. [CRD ELECTRONIC CONTROLS]
+
+6. B - The IMA/C2I-type code tells the ECM that injector's measured flow deviation. [CRD INJECTOR CODING]
+
+7. B - Without its correction, that cylinder is over- or under-fueled relative to the others. [CRD INJECTOR CODING]
+
+8. B - Air-motion control improves mixing, especially with EGR at part load. [CRD INTAKE AND EXHAUST SYSTEM]
+
+9. B - Excess return flow is a worn injector bypassing fuel instead of injecting it. [CRD INJECTOR LEAK BACK TESTING]
+
+10. B - Equal-time graduated bottles make the faulty injector obvious by volume. [CRD INJECTOR LEAK BACK
+TESTING]
+
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                         Quiz 10 - Answer Key
+ANSWER KEY - QUIZ 11 OF 11
+
+
+Quiz 11: Diesel Emissions Technology - Answer Key
+Retake date:                                                  Second score: ___ / 10
+
+
+1. B - Cutting NOx in-cylinder tends to raise soot, and vice versa - hence DPF plus NOx aftertreatment. [VEHICLE
+EMISSION PRINCIPLES]
+
+
+2. A - Cooler, diluted combustion makes less NOx but more particulates to trap. [EXHAUST GAS RECIRCULATION]
+
+3. B - It stores NOx as nitrates, then a rich excursion converts it to nitrogen. [NOX TYPE CATALYTIC CONVERTERS]
+
+4. B - Soot accumulates in the filter and must be oxidised periodically. [DPF DIESEL PARTICULAR FILTER]
+
+5. B - Pressure before vs. after the filter rises as soot and ash restrict flow. [DPF FLOW DIAGNOSTICS]
+
+6. B - The ECM trusts that pressure signal - a hose fault corrupts every DPF decision. [DPF FLOW DIAGNOSTICS]
+
+7. B - Dosed urea is the reductant that makes lean NOx conversion possible. [SELECTIVE CATALYTIC REDUCTION]
+
+8. B - Emissions rules require inducement - warnings escalating to derate/no-restart. [SELECTIVE CATALYTIC
+REDUCTION]
+
+
+9. B - Temperatures around 600C oxidise the trapped soot. [DPF REGENERATION]
+
+10. B - The filter never finishes cleaning, so load climbs and fuel ends up in the oil. [DPF REGENERATION]
+
+
+
+  Review rule: For every missed question, re-read the module named in brackets, then retake this quiz. Target:
+  9/10 or better before moving on.
+
+
+
+
+Engine Pop Quizzes - Answer Key                                                                      Quiz 11 - Answer Key
+

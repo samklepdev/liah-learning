@@ -1,0 +1,639 @@
+P R A C T I C E M AT E R I A L
+
+
+
+HVAC
+Pop Quizzes
+5 quizzes — one per course — 10 multiple-choice questions each, 50 questions total.
+
+
+     How to use these quizzes
+     Take one quiz at a time, closed book. Circle your answer for each question. Every question is tagged with
+     the module it tests, so a miss points straight back to what to review.
+
+     Target: 9 / 10 before moving on to the next course. If you score below 9, review the missed modules
+     and retake the quiz.
+
+     Answer key is separate. No answers appear after the individual quizzes. All answers are grouped in a
+     separate Answer Key section at the very back, after a clear page break, so you can print the quizzes
+     without the answers.
+
+
+Courses covered
+ Quiz                Course                                                              Modules
+
+ 1                   HVAC System Essentials                                              4
+
+ 2                   HVAC System Operation                                               4
+
+ 3                   HVAC Best Practice Servicing                                        1
+
+ 4                   HVAC Mechanical Diagnostics                                         2
+
+ 5                   HVAC Electrical Diagnostics                                         3
+
+
+Name: ________________________________              Start date: ________________
+
+
+
+
+HVAC Pop Quizzes — Practice Material                                                                        Cover
+Quiz 1 — HVAC System Essentials
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+  Modules Covered
+     Introducing Air Conditioning
+     Introducing Air Conditioning High Side Components
+     Air Conditioning Low Side Components
+     Air Conditioning Servicing
+
+INTRODUCING AIR CONDITIONING
+1. What does vehicle air conditioning mainly do to cabin air?
+   A. Heats the air and raises its humidity
+   B. Moves heat from inside the cabin to outside the vehicle, cooling and dehumidifying the air
+   C. Creates cold air inside the compressor
+   D. Removes all oxygen from the cabin
+INTRODUCING AIR CONDITIONING
+2. In the refrigeration cycle, refrigerant absorbs heat in the cabin and releases heat outside when it:
+   A. Stays as a liquid at constant pressure throughout
+   B. Evaporates at low pressure in the evaporator, then is compressed and condenses at high pressure in the
+   condenser
+   C. Freezes in the condenser
+   D. Burns in the compressor
+INTRODUCING AIR CONDITIONING
+3. Why is the change of state of the refrigerant so important to A/C operation?
+   A. It changes the colour of the refrigerant
+   B. A liquid boiling to vapour absorbs a large amount of heat, and vapour condensing back to liquid releases
+   that heat
+   C. It makes the refrigerant heavier
+   D. It stops the compressor from turning
+INTRODUCING AIR CONDITIONING HIGH SIDE COMPONENTS
+4. The high side of the system runs from:
+   A. The evaporator outlet back to the expansion device
+   B. The compressor discharge, through the condenser, to the inlet of the expansion device / orifice
+   C. The cabin filter to the blower motor
+   D. The radiator to the heater core
+INTRODUCING AIR CONDITIONING HIGH SIDE COMPONENTS
+5. What is the job of the condenser?
+   A. To absorb heat from cabin air
+   B. To reject heat to outside air, changing hot high-pressure vapour into high-pressure liquid
+   C. To expand the refrigerant and drop its pressure
+   D. To store liquid refrigerant for the low side only
+
+
+
+Quiz 1 — HVAC System Essentials                                                                         Page 1 of 2
+Quiz 1 — continued
+INTRODUCING AIR CONDITIONING HIGH SIDE COMPONENTS
+6. A blocked condenser airflow (debris, failed fan) will most directly cause:
+    A. Low-side pressure to fall to zero at all times
+    B. High-side pressure and temperature to rise, with poor cooling
+    C. The evaporator to flood with liquid
+    D. The compressor clutch air gap to increase
+AIR CONDITIONING LOW SIDE COMPONENTS
+7. What happens inside the evaporator?
+    A. High-pressure liquid is stored
+    B. Low-pressure liquid refrigerant boils and absorbs heat from air passing over the fins
+    C. Refrigerant is compressed
+    D. Refrigerant gives up heat to outside air
+AIR CONDITIONING LOW SIDE COMPONENTS
+8. Just before the evaporator, the expansion device (TXV or fixed orifice) causes:
+    A. A rise in pressure and temperature
+    B. A sharp drop in pressure, so the refrigerant entering the evaporator is cold and low-pressure
+    C. The refrigerant to become a superheated vapour
+    D. The compressor to stop
+A I R C O N D I T I O N I N G S E RV I C I N G
+9. Before opening any A/C system, refrigerant must be:
+    A. Vented to the atmosphere
+    B. Recovered into approved equipment, then the system can be opened, repaired, evacuated, and
+    recharged by weight
+    C. Diluted with water
+    D. Mixed with engine oil and drained
+A I R C O N D I T I O N I N G S E RV I C I N G
+10. Why is a deep vacuum (evacuation) held on an opened system before recharging?
+    A. To inflate the hoses
+    B. To remove air and boil off moisture, which would otherwise form acids, cause icing, and reduce cooling
+    C. To add oil to the compressor
+    D. To test the cabin filter
+
+End of Quiz 1. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 1 — HVAC System Essentials                                                                        Page 2 of 2
+Quiz 2 — HVAC System Operation
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered
+       HVAC System Sensor Inputs
+       HVAC System Controls
+       HVAC System Outputs
+       Introducing R1234YF
+
+H VA C S Y S T E M S E N S O R I N P U T S
+1. Which set is correctly all HVAC sensor inputs?
+    A. Blower motor, blend door actuator, compressor clutch
+    B. In-car temperature, ambient temperature, evaporator temperature, sun load, and refrigerant pressure
+    sensors
+    C. Radiator fan, heater valve, recirculation flap motor
+    D. Windshield washer level and fuel level
+H VA C S Y S T E M S E N S O R I N P U T S
+2. The evaporator temperature sensor is used mainly to:
+    A. Measure engine coolant temperature
+    B. Prevent evaporator icing by cycling or controlling the compressor before the evaporator freezes
+    C. Lock the doors automatically
+    D. Measure road speed
+H VA C S Y S T E M S E N S O R I N P U T S
+3. A faulty refrigerant pressure sensor signal can cause the HVAC module to:
+    A. Increase tire pressure
+    B. Inhibit compressor engagement if pressure reads too high or too low, to protect the system
+    C. Turn off the headlights only
+    D. Open the thermostat
+H VA C S Y S T E M C O N T R O L S
+4. In automatic climate control, the HVAC control module decides blower speed, air distribution, and
+temperature by:
+    A. Guessing randomly each time the engine starts
+    B. Combining the set temperature with sensor inputs and then driving the outputs to reach and hold that
+    temperature
+    C. Following only the position of the blower switch
+    D. Turning every output fully on at all times
+H VA C S Y S T E M C O N T R O L S
+5. Selecting recirculation instead of fresh air helps most when:
+    A. Maximum cooling is needed on a very hot day or outside air is smoky/dirty, because cabin air is reused
+    B. The windshield needs demisting in wet weather
+    C. The engine is cold and needs warming
+    D. The vehicle is being pressure washed
+
+Quiz 2 — HVAC System Operation                                                                           Page 1 of 2
+Quiz 2 — continued
+H VA C S Y S T E M C O N T R O L S
+6. A blend (temperature) door that does not respond to a temperature change request is a fault in which
+part of the control loop?
+    A. Only the refrigerant charge
+    B. The link between the control decision and the output - the blend door actuator, its circuit, or the door itself
+    C. The condenser fan only
+    D. The sun load sensor lens colour
+H VA C S Y S T E M O U T P U T S
+7. Which of these is an HVAC output controlled by the module?
+    A. Ambient temperature sensor
+    B. Blower motor speed, mode/blend door actuators, and compressor clutch or variable compressor control
+    C. Refrigerant pressure sensor
+    D. Sun load sensor
+H VA C S Y S T E M O U T P U T S
+8. On a variable-displacement compressor with no clutch, cooling output is varied by:
+    A. Removing the drive belt
+    B. A control valve/solenoid that changes compressor displacement in response to module command
+    C. The cabin filter
+    D. Changing tire size
+INTRODUCING R1234YF
+9. R1234YF was introduced mainly as a replacement for R134a because it has:
+    A. Much higher global warming potential
+    B. A much lower global warming potential, while working at similar pressures
+    C. No need for any oil
+    D. A completely different refrigeration cycle with no condenser
+INTRODUCING R1234YF
+10. Which servicing point about R1234YF is correct?
+    A. It can be freely mixed with R134a in any system
+    B. It is mildly flammable (A2L), uses its own service fittings and dedicated recovery/recharge equipment,
+    and must not be mixed with R134a
+    C. It needs no leak testing
+    D. Any R134a machine can be used with no changes
+
+End of Quiz 2. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 2 — HVAC System Operation                                                                              Page 2 of 2
+Quiz 3 — HVAC Best Practice Servicing
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered
+       HVAC Performance Checking
+
+H VA C P E R F O R M A N C E C H E C K I N G
+1. A correct performance check starts by:
+    A. Immediately adding refrigerant
+    B. Setting the controls as specified (usually max/cold A/C, recirculation, set blower and engine RPM), noting
+    ambient temperature and humidity, and letting pressures and vent temperature stabilise
+    C. Removing the condenser fan
+    D. Driving at motorway speed with the windows open
+H VA C P E R F O R M A N C E C H E C K I N G
+2. Centre vent temperature is measured best with:
+    A. An infrared gun pointed at the dashboard plastic
+    B. A probe thermometer inserted in the centre vent, compared with the specified value for the ambient
+    temperature
+    C. A finger held in front of the vent
+    D. The engine coolant gauge
+H VA C P E R F O R M A N C E C H E C K I N G
+3. Vent temperature is warmer than specified but both gauge pressures are near normal. A good next
+check is:
+    A. Condemn the compressor at once
+    B. Check for a blend door not reaching full cold, heater valve/heater bleed-through, or a restricted cabin
+    filter/airflow fault
+    C. Add double the specified charge
+    D. Replace the condenser without testing
+H VA C P E R F O R M A N C E C H E C K I N G
+4. Why must ambient temperature and humidity be recorded during a performance check?
+    A. They change the colour of the gauges
+    B. Expected vent temperature and pressures rise with ambient heat and humidity, so a reading can only be
+    judged against its conditions
+    C. They determine the engine oil grade
+    D. They have no effect on A/C performance
+H VA C P E R F O R M A N C E C H E C K I N G
+5. During the check, the condenser fan does not run with A/C on. The likely effect on the readings is:
+    A. Lower high-side pressure and colder vent air
+    B. Higher high-side pressure and warmer vent air, especially at idle
+    C. No change at any speed
+    D. Low-side pressure only, with no other change
+
+
+Quiz 3 — HVAC Best Practice Servicing                                                                    Page 1 of 2
+Quiz 3 — continued
+H VA C P E R F O R M A N C E C H E C K I N G
+6. A system passes the vent-temperature check at fast idle but is poor in slow traffic. This pattern most
+suggests:
+    A. A fault that appears only under load - check condenser airflow/fan operation and air in the system
+    B. The system is fully normal and needs no checks
+    C. The cabin filter is new
+    D. The refrigerant is overcharged with oil only
+H VA C P E R F O R M A N C E C H E C K I N G
+7. Touch/temperature checks along the lines during a performance test can help locate:
+    A. A radio fault
+    B. A restriction - a sharp temperature drop or frosting at one point where there should not be one
+    C. Low tire pressure
+    D. A worn wheel bearing
+H VA C P E R F O R M A N C E C H E C K I N G
+8. After a repair, the correct way to confirm the fix is to:
+    A. Ask the customer to test it over the next month
+    B. Repeat the full performance check under the same conditions and confirm vent temperature and
+    pressures are now within specification
+    C. Only check that the clutch engages
+    D. Clear the fault codes and release the vehicle
+H VA C P E R F O R M A N C E C H E C K I N G
+9. Superheat/subcooling or line temperatures well outside the expected range during a check most
+likely indicate:
+    A. A fault with charge level or a component/restriction in the refrigeration loop - investigate before re-gassing
+    by guesswork
+    B. That the thermometer battery is flat in all cases
+    C. A fault in the audio system
+    D. That performance checking is not needed
+H VA C P E R F O R M A N C E C H E C K I N G
+10. A very cold suction line with frost back to the compressor during the check can indicate:
+    A. Normal operation on every system
+    B. Overfeeding / expansion device stuck open or incorrect charge, risking liquid returning to the compressor
+    C. A blocked condenser
+    D. A flat battery
+
+End of Quiz 3. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 3 — HVAC Best Practice Servicing                                                                      Page 2 of 2
+Quiz 4 — HVAC Mechanical Diagnostics
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+  Modules Covered
+     Air Conditioning System Pressure Diagnostics
+     Air Conditioning Compressor Clutch Diagnostics
+
+AIR CONDITIONING SYSTEM PRESSURE DIAGNOSTICS
+1. With the system running, BOTH low-side and high-side pressures are lower than normal and cooling
+is poor. The most likely cause is:
+   A. Overcharge
+   B. Undercharge (low refrigerant, often from a leak)
+   C. A blocked condenser
+   D. Air in the system
+AIR CONDITIONING SYSTEM PRESSURE DIAGNOSTICS
+2. Both pressures are HIGHER than normal with poor cooling on a hot day. Which cause fits best?
+   A. Undercharge
+   B. Overcharge, air in the system, or poor condenser airflow/cooling
+   C. A completely empty system
+   D. A failed evaporator blower only
+AIR CONDITIONING SYSTEM PRESSURE DIAGNOSTICS
+3. Low-side pressure is very low (near vacuum) while high-side is low/normal and the evaporator outlet
+is cold at one spot. This points to:
+   A. A restriction in the low side / metering device or a moisture-iced expansion device
+   B. An overcharge
+   C. A slipping clutch only
+   D. A faulty sun load sensor
+AIR CONDITIONING SYSTEM PRESSURE DIAGNOSTICS
+4. High-side pressure is very high but low-side is near normal, with the liquid line hot. A likely cause is:
+   A. A restriction on the high side, such as a blocked condenser or kinked liquid line
+   B. A system with no compressor drive
+   C. A blown cabin fuse
+   D. A worn blower resistor
+AIR CONDITIONING SYSTEM PRESSURE DIAGNOSTICS
+5. Static (engine off, system equalised) pressure is far below the value expected for the ambient
+temperature. That tells you:
+   A. The compressor is faulty
+   B. There is little or no refrigerant charge - leak-test before any running tests
+   C. The TXV is stuck open
+   D. The clutch gap is too wide
+
+
+
+
+Quiz 4 — HVAC Mechanical Diagnostics                                                               Page 1 of 2
+Quiz 4 — continued
+AIR CONDITIONING COMPRESSOR CLUTCH DIAGNOSTICS
+6. The compressor clutch will not engage. Before condemning the clutch coil, first confirm:
+   A. The tire pressures
+   B. That the module is commanding engagement and that power and ground actually reach the clutch
+   connector
+   C. The radio volume
+   D. The cabin filter condition
+AIR CONDITIONING COMPRESSOR CLUTCH DIAGNOSTICS
+7. Power and ground are present at the clutch, but it still does not pull in. Measuring the coil shows an
+open circuit. The diagnosis is:
+   A. A faulty condenser fan
+   B. A failed (open) clutch coil - replace the coil/clutch assembly as specified
+   C. Low refrigerant charge
+   D. A blocked receiver drier
+AIR CONDITIONING COMPRESSOR CLUTCH DIAGNOSTICS
+8. The clutch engages but slips, squeals, and gets hot, with a burnt face. A common mechanical cause
+to check is:
+   A. Excessive clutch air gap, a worn/contaminated clutch face, or a partially seizing compressor raising the
+   load
+   B. Too much refrigerant oil in the cabin
+   C. A new drive belt
+   D. High blower speed
+AIR CONDITIONING COMPRESSOR CLUTCH DIAGNOSTICS
+9. What does the clutch air gap measurement check?
+   A. The distance between the condenser and radiator
+   B. The gap between the clutch plate and pulley - too wide weakens magnetic pull-in, too narrow can cause
+   drag when disengaged
+   C. The gap in the spark plugs
+   D. The evaporator fin spacing
+AIR CONDITIONING COMPRESSOR CLUTCH DIAGNOSTICS
+10. The clutch cycles on and off very rapidly (short-cycling). Which checks belong in the diagnosis?
+   A. Only the clutch relay paint colour
+   B. Refrigerant charge / pressure readings and the evaporator temperature and pressure switch/sensor
+   signals that command cycling
+   C. Wiper blade size
+   D. Wheel alignment
+
+End of Quiz 4. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 4 — HVAC Mechanical Diagnostics                                                                   Page 2 of 2
+Quiz 5 — HVAC Electrical Diagnostics
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered
+       Air Conditioning Thermal Mistore Diagnostics
+       Sun Load Sensor Voltage Low
+       Sun Load Sensor Voltage High
+
+A I R C O N D I T I O N I N G T H E R M A L M I S TO R E D I A G N O S T I C S
+1. An air conditioning thermistor (thermal mistore) is:
+    A. A fixed resistor that never changes value
+    B. A temperature-sensitive resistor whose resistance changes in a known way with temperature, used to
+    sense evaporator or cabin air temperature
+    C. A type of compressor clutch
+    D. A pressure switch with two fixed contacts
+A I R C O N D I T I O N I N G T H E R M A L M I S TO R E D I A G N O S T I C S
+2. Most automotive temperature thermistors are NTC type. NTC means that as temperature rises:
+    A. Resistance rises sharply
+    B. Resistance falls
+    C. Resistance stays exactly the same
+    D. The sensor produces its own voltage like a battery
+A I R C O N D I T I O N I N G T H E R M A L M I S TO R E D I A G N O S T I C S
+3. An evaporator thermistor reads open circuit. The HVAC module will most likely interpret this as:
+    A. An extremely cold or extremely warm evaporator (depending on circuit design) and may inhibit or mis-
+    control the compressor - compare scan temperature with actual measured temperature
+    B. A correct reading needing no action
+    C. Low refrigerant pressure
+    D. A condenser fan fault
+A I R C O N D I T I O N I N G T H E R M A L M I S TO R E D I A G N O S T I C S
+4. To test a thermistor properly, you should:
+    A. Only check that its connector is plugged in
+    B. Measure its resistance at a known temperature (or compare scan-tool temperature with a thermometer at
+    the sensor) and check it changes smoothly as temperature changes
+    C. Apply battery voltage directly across it
+    D. Short it to ground and watch for sparks
+S U N L O A D S E N S O R V O LTA G E L O W
+5. A 'sun load sensor voltage low' fault means the module sees the signal:
+    A. Above its 5V reference at all times
+    B. Below the expected minimum - near 0V - suggesting a short to ground in the signal wire, a failed sensor
+    pulling the signal down, or a lost reference/ground fault, depending on circuit design
+    C. Exactly at the correct value for bright sun
+    D. Only when the headlights are on
+
+Quiz 5 — HVAC Electrical Diagnostics                                                                  Page 1 of 2
+Quiz 5 — continued
+S U N L O A D S E N S O R V O LTA G E L O W
+6. The sun load sensor's normal job is to:
+    A. Measure refrigerant pressure
+    B. Measure sunlight intensity on the cabin so automatic climate control can add cooling for the side/load the
+    sun is heating
+    C. Measure vehicle speed
+    D. Sense rain on the windshield
+S U N L O A D S E N S O R V O LTA G E L O W
+7. With the sensor unplugged, the signal wire measures a good reference voltage and ground is good,
+but plugged in the signal collapses to near 0V. This points to:
+    A. A faulty sensor itself shorting the signal internally
+    B. An open signal wire
+    C. A faulty blower motor
+    D. Low refrigerant charge
+S U N L O A D S E N S O R V O LTA G E H I G H
+8. A 'sun load sensor voltage high' fault means the module sees the signal:
+    A. Stuck at the value for total darkness and correct
+    B. At or near the reference voltage / above the expected maximum - suggesting an open signal or ground
+    circuit, an unplugged sensor, or a short to voltage
+    C. Below 0.2V at all times
+    D. Only on cloudy days
+S U N L O A D S E N S O R V O LTA G E H I G H
+9. A sun load sensor is unplugged during other work and the A/C is then tested. The most likely result
+is:
+    A. No fault of any kind
+    B. A voltage high fault may set, and automatic climate loses sun compensation until the sensor is
+    reconnected and the code cleared/retested
+    C. The compressor will seize
+    D. The evaporator will freeze solid immediately
+S U N L O A D S E N S O R V O LTA G E H I G H
+10. To distinguish a wiring fault from a sensor fault on a voltage-high code, the best test is:
+    A. Replace the HVAC module first
+    B. Check the signal, reference, and ground at the sensor connector, then test/replace the sensor only if
+    wiring values are correct, and confirm the live signal changes when the sensor is covered and uncovered
+    C. Add refrigerant
+    D. Replace the compressor clutch
+
+End of Quiz 5. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 5 — HVAC Electrical Diagnostics                                                                    Page 2 of 2
+                      S E PA R AT E S E C T I O N — D O N O T P R I N T W I T H T H E Q U I Z Z E S
+
+
+
+                                          Answer Key
+              The pages that follow contain the answers for all 5 quizzes, grouped Quiz 1
+             through Quiz 5, with a brief explanation for each question and a retake line for
+                                                      each quiz.
+
+             Print the quiz pages on their own if you want to take them without the answers.
+
+
+
+
+HVAC Pop Quizzes — Answer Key                                                                         Divider
+Answer Key — Quiz 1: HVAC System Essentials
+
+Retake date: ________________       Second score: ___ / 10
+
+1. B — A/C transfers heat out of the cabin; evaporator cooling also condenses moisture from the air.
+
+2. B — Low-pressure evaporation absorbs heat; compression and high-pressure condensation reject it outside.
+
+3. B — Latent heat in boiling/condensing moves far more heat than temperature change alone.
+
+4. B — The high side is the high-pressure, hot section: compressor outlet to metering device inlet.
+
+5. B — The condenser cools the discharge vapour so it condenses, giving up its heat to outside air.
+
+6. B — If the condenser cannot reject heat, pressure and temperature climb and cooling suffers.
+
+7. B — The evaporator is where cold low-pressure refrigerant evaporates and cools cabin air.
+
+8. B — Metering the liquid creates the pressure drop that makes the evaporator cold.
+
+9. B — Refrigerant is recovered, never vented; recharge is by the specified weight after evacuation.
+
+10. B — Evacuation removes non-condensables and moisture that harm performance and components.
+
+
+
+
+Answer Key — Quiz 1                                                                            Separate Key Section
+Answer Key — Quiz 2: HVAC System Operation
+
+Retake date: ________________        Second score: ___ / 10
+
+1. B — Sensors report temperatures, sun load, and pressure to the HVAC module; motors and clutches are
+outputs.
+
+2. B — If the evaporator gets too cold, frost blocks airflow; its sensor lets the module prevent freeze-up.
+
+3. B — Out-of-range pressure readings lead the module to disable the compressor for protection.
+
+4. B — Automatic control compares target vs. measured conditions and adjusts outputs continuously.
+
+5. A — Recirculating already-cooled cabin air speeds pull-down; fresh air is better for demisting.
+
+6. B — The module may command correctly, but a failed actuator/circuit/door prevents the output moving.
+
+7. B — Blower, doors, and compressor control are driven outputs; sensors are inputs.
+
+8. B — Clutchless compressors vary stroke/displacement electrically instead of cycling a clutch.
+
+9. B — R1234yf has very low GWP compared with R134a and similar operating characteristics.
+
+10. B — R1234yf is A2L mildly flammable, has distinct fittings, and requires dedicated equipment and
+procedures.
+
+
+
+
+Answer Key — Quiz 2                                                                              Separate Key Section
+Answer Key — Quiz 3: HVAC Best Practice Servicing
+
+Retake date: ________________       Second score: ___ / 10
+
+1. B — Comparable results need the manufacturer's test conditions and stabilised readings.
+
+2. B — A probe in the vent airstream, judged against the ambient-based spec, is the reliable check.
+
+3. B — Near-normal pressures point away from the refrigeration loop toward air-side and door faults.
+
+4. B — A vent temp that is normal at 35C ambient would be poor at 20C; conditions set the expectation.
+
+5. B — Without condenser airflow at idle, heat rejection falls, head pressure rises, and cooling drops.
+
+6. A — Speed-dependent cooling points to airflow over the condenser, which road speed provides but traffic
+does not.
+
+7. B — An unexpected cold spot or frost marks a restriction creating a pressure drop.
+
+8. B — Repeating the standardised check proves the repair restored specified performance.
+
+9. A — Abnormal superheat/subcooling points to charge or loop faults that gauges and temps together help
+isolate.
+
+10. B — Frost to the compressor risks liquid slugging; metering device and charge must be checked.
+
+
+
+
+Answer Key — Quiz 3                                                                             Separate Key Section
+Answer Key — Quiz 4: HVAC Mechanical Diagnostics
+
+Retake date: ________________        Second score: ___ / 10
+
+1. B — Low charge starves both sides; find and repair the leak, then recharge by weight.
+
+2. B — Excess charge, non-condensables, or poor heat rejection all drive both pressures up.
+
+3. A — Starved evaporator flow pulls suction down; a restriction or icing metering device is likely.
+
+4. A — A high-side blockage backs pressure up ahead of it while the low side can still look near normal.
+
+5. B — Equalised static pressure vs. ambient reveals a low/empty system before the engine is started.
+
+6. B — Many no-engage faults are missing command, feed, or ground - not a failed coil.
+
+7. B — Feed and ground proven good plus an open coil confirms the coil itself has failed.
+
+8. A — Wide gap, worn faces, and high compressor torque all make the clutch slip and overheat.
+
+9. B — Air gap must be in specification for reliable engagement without dragging.
+
+10. B — Short-cycling is usually commanded in response to pressure or evaporator temperature signals, or low
+charge.
+
+
+
+
+Answer Key — Quiz 4                                                                              Separate Key Section
+Answer Key — Quiz 5: HVAC Electrical Diagnostics
+
+Retake date: ________________           Second score: ___ / 10
+
+1. B — Thermistors convert temperature into a resistance/voltage signal the module can read.
+
+2. B — Negative Temperature Coefficient: hotter = lower resistance, which the module reads as a rising signal
+voltage in a typical pull-up circuit.
+
+3. A — An open sensor drives the signal to one extreme; live data vs. actual temperature exposes the fault.
+
+4. B — Resistance-at-temperature against the spec chart, plus a smooth change, proves or condemns the
+sensor.
+
+5. B — Voltage low codes set when the signal sits below the plausible window, typically a short to ground or
+sensor failure.
+
+6. B — Sun load lets auto climate compensate for solar heating before cabin temperature drifts.
+
+7. A — Feed and ground proven good unplugged, signal pulled down when connected, implicates the sensor.
+
+8. B — Voltage high codes set when the signal is pulled up toward reference by an open/short-to-voltage fault.
+
+9. B — An open connector is a classic voltage-high cause; restore the connection and retest the live signal in
+light and shade.
+
+10. B — Prove the three wires first; a good sensor signal must vary between covered (dark) and bright light.
+
+End of Answer Key. Practice Material — HVAC Pop Quizzes, 5 quizzes, 50 questions.
+
+
+
+
+Answer Key — Quiz 5                                                                            Separate Key Section
+

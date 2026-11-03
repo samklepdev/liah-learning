@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { eq } from 'drizzle-orm';
 import { db, pool } from '../db/index.ts';
 import { courses, modules, questionOptions, questions, subjects } from '../models/schema.ts';
@@ -89,11 +89,17 @@ export async function seedSubject(
   });
 }
 
-/** CLI entry: seeds every *.quiz.json passed, defaulting to Chassis. */
+/** CLI entry: seeds every *.quiz.json passed, defaulting to all of them. */
 async function main(): Promise<void> {
   const files = process.argv.slice(2);
+  const dataDir = new URL('../data/', import.meta.url);
   const paths: Array<string | URL> =
-    files.length > 0 ? files : [new URL('../data/chassis.quiz.json', import.meta.url)];
+    files.length > 0
+      ? files
+      : readdirSync(dataDir)
+          .filter((f) => f.endsWith('.quiz.json'))
+          .sort()
+          .map((f) => new URL(f, dataDir));
 
   for (const path of paths) {
     const parsed: ParsedSubject = JSON.parse(readFileSync(path, 'utf8'));

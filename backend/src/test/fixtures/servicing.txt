@@ -1,0 +1,568 @@
+  PRACTICE MATERIAL
+
+
+
+Servicing
+Pop Quizzes
+4 quizzes • 10 questions each • 40 questions total
+Answer key separate at the back
+
+
+  How to use these quizzes
+       Do one quiz at a time, without looking at the key.
+       Target:
+       9 / 10 before moving on
+       to the next course.
+       Mark your score at the top of each quiz. If you score under 9, review that course, then retake it.
+       Print pages 2-9 for the quizzes only. The Answer Key starts after a clear page break, so you can print it separately
+       or leave it out.
+
+
+
+  Quiz            Course                                                              Modules               Score
+
+  1               Vehicle Servicing and Safety Checks                                 3                     ___ / 10
+
+  2               Cooling System Servicing                                            5                     ___ / 10
+
+  3               Engine Oil Essentials                                               5                     ___ / 10
+
+  4               Transmission Servicing                                              4                     ___ / 10
+
+
+Name: ________________________________________                   Date started: ____________________
+
+Total modules covered: 17 | Total score across all 4 quizzes: ___ / 40
+
+
+
+
+Servicing Pop Quizzes - Practice Material                                                                                Cover
+Quiz 1 - Vehicle Servicing and Safety Checks                              Name: __________________ Date: __________
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on
+
+
+  Modules Covered
+  1. High Voltage Awareness | 2. Best Practice Vehicle Servicing | 3. Best Practice Vehicle Safety Checks
+
+
+1. How are high-voltage cables on a hybrid or electric vehicle usually identified? [High Voltage Awareness]
+    A. Blue insulation
+    B. Orange insulation or orange conduit
+    C. Green insulation
+    D. Plain black insulation with no marking
+
+2. What must be done before working near a high-voltage system? [High Voltage Awareness]
+    A. Just switch the ignition off and start work
+    B. Rev the engine to discharge the battery
+    C. Follow the manufacturer isolation procedure, wear rated PPE, and verify the system is powered down
+    D. Disconnect the 12-volt battery only, with no other checks
+
+3. Which gloves are required for high-voltage work? [High Voltage Awareness]
+    A. Ordinary disposable workshop gloves
+    B. Electrically insulated gloves of the correct class, checked and in test date, with leather protectors
+    C. Heat-resistant welding gloves
+    D. No gloves, so you can feel components better
+
+4. Why should servicing follow the manufacturer schedule and specification? [Best Practice Vehicle Servicing]
+    A. It is only needed to keep a service stamp in the book
+    B. Any parts and fluids will do if they look similar
+    C. It keeps the vehicle safe and reliable and protects warranty, using the correct parts, fluids, and intervals
+    D. It lets you skip items that look clean
+
+5. When lifting a vehicle for servicing, you should: [Best Practice Vehicle Servicing]
+    A. Lift on any flat part of the floor pan
+    B. Use the manufacturer lifting points, check the lift is secure, and use stands where required
+    C. Work under a vehicle supported only by a jack
+    D. Lift as fast as possible to save time
+
+
+
+
+Quiz 1 - Vehicle Servicing and Safety Checks (1 of 2)                                                          Practice Material
+Quiz 1 - Vehicle Servicing and Safety Checks (continued)                                                   Score: ___ / 10
+
+
+6. Before returning a serviced vehicle, the final checks should include: [Best Practice Vehicle Servicing]
+    A. Only washing the vehicle
+    B. Fluid levels, leaks, wheel nut torque, warning lights, and a road test where required
+    C. Resetting the trip meter only
+    D. Nothing, if no fault was reported
+
+7. A brake safety check should include: [Best Practice Vehicle Safety Checks]
+    A. Pedal feel and travel, fluid level and condition, pad and disc condition, and hoses and lines for leaks or
+    damage
+    B. Only whether the brake lights work
+    C. Only the handbrake holding on a hill
+    D. Only a visual look through the wheel spokes
+
+8. A tyre safety check should include: [Best Practice Vehicle Safety Checks]
+    A. Colour and brand only
+    B. Tread depth, pressures, cuts, bulges, uneven wear, and age or damage
+    C. Only whether the tyre holds air
+    D. Only the spare tyre
+
+9. During a safety check, lights and signalling should be checked for: [Best Practice Vehicle Safety Checks]
+    A. Brightness only
+    B. Operation of all lamps, indicators, brake lights, and the horn, plus lens damage
+    C. Headlamp aim only, with no bulb check
+    D. Nothing if the vehicle passed last time
+
+10. If a safety check finds a safety-critical defect, you should: [Best Practice Vehicle Safety Checks]
+    A. Ignore it if the customer is in a hurry
+    B. Clear it without recording it
+    C. Record it clearly, report it, and advise that the vehicle should not be used until it is repaired
+    D. Mention it only if the customer asks
+
+
+   Finished? Score yourself from the Answer Key at the back. Target 9 / 10 before moving on. Note any module to
+   review: ________________________________________
+
+
+
+
+Quiz 1 - Vehicle Servicing and Safety Checks (2 of 2)                                                      Practice Material
+Quiz 2 - Cooling System Servicing                                         Name: __________________ Date: __________
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on
+
+
+  Modules Covered
+  1. Understanding Engine Coolants | 2. Engine Coolant Testing | 3. Best Practice Coolant Drain and Flush | 4.
+  Engine Coolant Temperature Sensor Diagnostics | 5. Drive Belt Diagnostics
+
+
+1. What does engine coolant do besides preventing freezing? [Understanding Engine Coolants]
+    A. It raises the boiling point and contains corrosion inhibitors that protect the engine and radiator
+    B. It lubricates the water pump bearings only
+    C. It cleans the engine oil
+    D. Nothing - plain water does the same job in all conditions
+
+2. Why should different coolant types (for example OAT and older IAT types) generally not be mixed?
+[Understanding Engine Coolants]
+
+    A. Mixing changes the colour only, with no other effect
+    B. The additives can react, reducing corrosion protection and forming deposits or gel
+    C. Mixing makes the coolant freeze-proof forever
+    D. Mixing is required at every service
+
+3. Which tool measures coolant freezing protection by how much the coolant bends light? [Engine Coolant
+Testing]
+
+    A. A multimeter
+    B. A refractometer
+    C. A torque wrench
+    D. A stethoscope
+
+4. Coolant test strips are mainly used to check: [Engine Coolant Testing]
+    A. Tyre pressure and tread depth
+    B. Freeze protection, pH, and the remaining corrosion-inhibitor level
+    C. Engine oil viscosity
+    D. Battery voltage
+
+5. Best practice when draining and flushing a cooling system includes: [Best Practice Coolant Drain and Flush]
+    A. Opening the cap on a hot engine to drain faster
+    B. Pouring old coolant down a drain
+    C. Working on a cold engine, catching and disposing of old coolant correctly, flushing as directed, and refilling
+    with the correct coolant
+    D. Refilling with plain water only
+
+
+
+
+Quiz 2 - Cooling System Servicing (1 of 2)                                                                  Practice Material
+Quiz 2 - Cooling System Servicing (continued)                                                            Score: ___ / 10
+
+
+6. After refilling a cooling system, why must air be bled out correctly? [Best Practice Coolant Drain and Flush]
+    A. Air pockets can cause overheating, poor heater output, and false temperature readings
+    B. Air improves cooling, so it should be left in
+    C. Bleeding is only done for appearance
+    D. Air pockets only affect the air conditioning
+
+7. Most engine coolant temperature (ECT) sensors are NTC thermistors. This means their resistance: [Engine
+Coolant Temperature Sensor Diagnostics]
+    A. Rises as temperature rises
+    B. Falls as temperature rises
+    C. Never changes
+    D. Is always zero
+
+8. An ECT sensor circuit reads a very cold temperature on a fully warmed engine. A likely cause is: [Engine
+Coolant Temperature Sensor Diagnostics]
+
+    A. A perfect sensor
+    B. Low tyre pressure
+    C. An open circuit or high resistance in the sensor or its wiring, keeping the signal voltage high
+    D. A new thermostat
+
+9. A drive belt should be replaced if inspection shows: [Drive Belt Diagnostics]
+    A. Cracks, glazing, fraying, chunking, or contamination with oil or coolant
+    B. Only a little dust on the surface
+    C. The printed brand name has faded
+    D. Nothing - belts last the life of the vehicle
+
+10. A belt squeal on start-up most often points to: [Drive Belt Diagnostics]
+    A. A faulty spark plug
+    B. Low fuel level
+    C. A worn or glazed belt, weak tensioner, or pulley misalignment slipping under load
+    D. Worn brake pads
+
+
+   Finished? Score yourself from the Answer Key at the back. Target 9 / 10 before moving on. Note any module to
+   review: ________________________________________
+
+
+
+
+Quiz 2 - Cooling System Servicing (2 of 2)                                                               Practice Material
+Quiz 3 - Engine Oil Essentials                                                 Name: __________________ Date: __________
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on
+
+
+   Modules Covered
+   1. Oil Filterization Principles | 2. Engine Oil Velocity and Performance Classifications | 3. Engine Oil Basis Additives
+   and Compositions | 4. Engine Oil Synthetic Versus Mineral | 5. Engine Oil Selections
+
+
+1. What is the job of the bypass valve in an oil filter? [Oil Filterization Principles]
+    A. To stop all oil flow when the filter is new
+    B. To let oil bypass a blocked filter so the engine still gets oil, even if it is unfiltered
+    C. To increase oil pressure at idle only
+    D. To drain oil back to the sump overnight
+
+2. What does the anti-drainback valve in a filter prevent? [Oil Filterization Principles]
+    A. Oil draining out of the filter and galleries when the engine is off, which would delay oil pressure on start-up
+    B. Fuel entering the oil
+    C. Coolant mixing with oil
+    D. Oil being filtered too well
+
+3. On a 5W-30 oil, what does the "5W" describe? [Engine Oil Velocity and Performance Classifications]
+    A. The oil's fuel economy rating
+    B. Its cold-temperature (winter) viscosity rating - how it flows when cold
+    C. The size of the container
+    D. The oil change interval in weeks
+
+4. Performance classifications such as API and ACEA categories tell you: [Engine Oil Velocity and Performance
+Classifications]
+
+    A. Only the colour of the oil
+    B. Whether the oil meets the required performance level for that engine type and emissions equipment
+    C. That any oil with a higher price is approved
+    D. Nothing - viscosity grade is the only thing that matters
+
+5. What do detergent and dispersant additives in engine oil do? [Engine Oil Basis Additives and Compositions]
+    A. Make the oil foam on purpose
+    B. Wash the outside of the engine
+    C. Detergents clean deposits from surfaces and dispersants keep particles suspended so the filter can remove
+    them
+    D. Replace the need for an oil filter
+
+
+
+
+Quiz 3 - Engine Oil Essentials (1 of 2)                                                                        Practice Material
+Quiz 3 - Engine Oil Essentials (continued)                                                                 Score: ___ / 10
+
+
+6. Anti-wear additives such as ZDDP protect the engine mainly by: [Engine Oil Basis Additives and Compositions]
+    A. Thickening the oil when hot
+    B. Forming a protective film on metal surfaces where the oil film is thinnest, such as cam lobes
+    C. Cooling the coolant
+    D. Sealing tyre punctures
+
+7. Compared with mineral oil, synthetic oil generally offers: [Engine Oil Synthetic Versus Mineral]
+    A. Worse cold starting flow
+    B. More uniform molecules, better cold flow, and better resistance to heat and oxidation
+    C. No difference at all
+    D. A shorter life in every engine
+
+8. Which statement about mineral oil is correct? [Engine Oil Synthetic Versus Mineral]
+    A. It is made in a laboratory with no crude oil involved in any grade
+    B. It never needs changing
+    C. It is refined from crude oil, costs less, and can be suitable where the manufacturer specifies it
+    D. It is always better than synthetic at high temperature
+
+9. When selecting engine oil for a service, the deciding source is: [Engine Oil Selections]
+    A. Whatever oil is already open in the workshop
+    B. The manufacturer specification - viscosity grade and approval / performance category for that engine
+    C. The colour of the old oil
+    D. The cheapest oil on the shelf
+
+10. A vehicle used mainly for short trips should have its oil: [Engine Oil Selections]
+    A. Changed less often, because the engine does fewer miles
+    B. Never changed if the level looks full
+    C. Topped up with any grade available
+    D. Changed on the severe-service schedule, because short trips cause moisture and fuel contamination and the
+    oil rarely gets fully hot
+
+
+   Finished? Score yourself from the Answer Key at the back. Target 9 / 10 before moving on. Note any module to
+   review: ________________________________________
+
+
+
+
+Quiz 3 - Engine Oil Essentials (2 of 2)                                                                    Practice Material
+Quiz 4 - Transmission Servicing                                          Name: __________________ Date: __________
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on
+
+
+  Modules Covered
+  1. Six Speed Hydramatic Services | 2. Mercedes-Benz Seven Seven Point Nine Transmission Service | 3. VW Audi
+  DSG Service | 4. VF Four Horsepower 16 Transmission Service Checks
+
+
+1. Why must the correct specified fluid be used in a 6-speed Hydramatic automatic? [Six Speed Hydramatic
+Services]
+
+    A. Any automatic fluid shifts the same way
+    B. Friction characteristics are matched to the clutches and shift calibration - the wrong fluid can cause harsh or
+    slipping shifts
+    C. Fluid type only affects the colour in the pan
+    D. The fluid is only there to cool the casing
+
+2. On many modern automatics with no dipstick, fluid level is checked by: [Six Speed Hydramatic Services]
+    A. Guessing from the amount drained out
+    B. Removing the wheels
+    C. Bringing the fluid to a specified temperature and checking flow from the level / overflow plug as directed
+    D. Overfilling, then driving until the excess escapes
+
+3. A Hydramatic pan service should include: [Six Speed Hydramatic Services]
+    A. Reusing the old fluid to save cost
+    B. Inspecting the pan and magnet for debris, fitting a new filter and gasket where specified, and refilling with fresh
+    specified fluid
+    C. Tightening pan bolts as tight as possible in any order
+    D. Skipping the filter if the fluid looks clean
+
+4. The Mercedes-Benz 722.9 (7G-Tronic) transmission fluid level is set by: [Mercedes-Benz Seven Seven Point Nine
+Transmission Service]
+
+    A. A conventional dipstick at any temperature
+    B. Filling until fluid pours out cold
+    C. Guesswork based on road feel
+    D. The overflow method at a specified fluid temperature, using only the approved-specification fluid
+
+5. Why is using only the approved fluid specification critical on the 722.9 service? [Mercedes-Benz Seven Seven
+Point Nine Transmission Service]
+
+    A. Unapproved fluid can upset shift quality and clutch friction and may damage the transmission
+    B. It only changes the service invoice wording
+    C. Any red automatic fluid is identical
+    D. Approved fluid is only needed under warranty for paperwork
+
+
+
+
+Quiz 4 - Transmission Servicing (1 of 2)                                                                   Practice Material
+Quiz 4 - Transmission Servicing (continued)                                                                Score: ___ / 10
+
+
+6. Debris on the pan magnet or in the filter during a transmission service tells you: [Mercedes-Benz Seven Seven
+Point Nine Transmission Service]
+
+    A. Nothing - it should always be ignored
+    B. To add more fluid and return the vehicle
+    C. About internal wear - heavy friction material or metal can point to clutch or component wear that needs further
+    diagnosis
+    D. That the fluid was overfilled at the factory
+
+7. On a wet-clutch VW / Audi DSG, routine service centres on: [VW Audi DSG Service]
+    A. Changing the DSG fluid and filter at the specified interval, because the fluid cools and operates the clutches
+    and mechatronics
+    B. Never changing the fluid - it is sealed for life in all versions
+    C. Adjusting a clutch cable
+    D. Replacing the torque converter
+
+8. How is a DSG different from a conventional automatic? [VW Audi DSG Service]
+    A. It has no gears at all
+    B. It uses two clutches and two gear sets, preselecting the next gear for very fast shifts, and has no torque
+    converter in most versions
+    C. It is a manual gearbox with no electronics
+    D. It only works in reverse
+
+9. Transmission service checks on the ZF-type unit in this course should include: [VF Four Horsepower 16
+Transmission Service Checks]
+
+    A. Only a wash of the casing
+    B. Fluid level and condition, leaks, fault-code scan, cooler lines, and a road test of shift quality
+    C. Removing the transmission for every service
+    D. Checking only the engine oil
+
+10. Burnt-smelling, dark transmission fluid found during service checks most likely indicates: [VF Four
+Horsepower 16 Transmission Service Checks]
+
+    A. Normal fluid that needs no action
+    B. Too much coolant in the system
+    C. A recently changed filter
+    D. Overheating and clutch wear - the cause should be diagnosed, not just the fluid changed and returned
+
+
+   Finished? Score yourself from the Answer Key at the back. Target 9 / 10 before moving on. Note any module to
+   review: ________________________________________
+
+
+
+
+Quiz 4 - Transmission Servicing (2 of 2)                                                                   Practice Material
+                                               STOP - PRINT SEPARATELY
+
+
+
+                                             Answer Key
+                                     Separate section - do not print with the quizzes
+
+                    This section starts after a clear page break so the 4 quizzes (pages 2-9) can be
+                 printed on their own. Each quiz key gives the correct letter, a brief explanation, and a
+                                                        retake line.
+
+                                             Target: 9 / 10 before moving on.
+
+     If you score under 9 on a quiz, review that course, then use the retake date and second-score line in its key.
+
+
+
+
+Servicing Pop Quizzes - Answer Key                                                                               Divider
+Answer Key - Quiz 1: Vehicle Servicing and Safety Checks
+
+Retake date: ____________________           Second score: ___ / 10
+
+1. B - High-voltage cables and connectors are identified by orange insulation or conduit.
+
+2. C - Isolate and power down following the manufacturer procedure, wear rated PPE, and verify the system is safe
+before work.
+
+3. B - Electrically insulated gloves of the correct class, in test date, with leather over-gloves for protection.
+
+4. C - The manufacturer schedule uses the correct parts, fluids, and intervals, keeping the vehicle safe and protecting
+warranty.
+
+5. B - Use the specified lifting points, confirm the lift is secure, and use stands where required. Never rely on a jack
+alone.
+
+6. B - Final checks cover fluid levels, leaks, wheel nut torque, warning lights, and a road test where required.
+
+7. A - A brake check covers pedal feel, fluid, pads and discs, and hoses and lines for leaks or damage.
+
+8. B - Check tread depth, pressures, cuts, bulges, uneven wear, and age or damage - including the spare where
+fitted.
+
+9. B - All lamps, indicators, brake lights, and the horn must work, with no lens damage affecting output.
+
+10. C - Record and report safety-critical defects clearly and advise the vehicle should not be used until repaired.
+
+
+
+
+Answer Key - Quiz 1                                                                                           Practice Material
+Answer Key - Quiz 2: Cooling System Servicing
+
+Retake date: ____________________          Second score: ___ / 10
+
+1. A - Coolant raises the boiling point, lowers the freezing point, and carries corrosion inhibitors.
+
+2. B - Mixing different additive types can reduce protection and form deposits or gel. Use the specified type.
+
+3. B - A refractometer measures freeze protection from how the coolant bends light.
+
+4. B - Test strips check freeze protection, pH, and remaining inhibitor (reserve alkalinity) level.
+
+5. C - Work cold, catch and dispose of old coolant correctly, flush as directed, and refill with the correct coolant and
+mix.
+
+6. A - Trapped air causes overheating, poor heater output, and false temperature readings, so bleeding matters.
+
+7. B - An NTC sensor's resistance falls as temperature rises.
+
+8. C - An open or high-resistance circuit keeps signal voltage high, which the control unit reads as very cold.
+
+9. A - Cracks, glazing, fraying, chunking, or oil/coolant contamination all mean the belt should be replaced.
+
+10. C - Start-up squeal usually means the belt is slipping: worn or glazed belt, weak tensioner, or misalignment.
+
+
+
+
+Answer Key - Quiz 2                                                                                        Practice Material
+Answer Key - Quiz 3: Engine Oil Essentials
+
+Retake date: ____________________          Second score: ___ / 10
+
+1. B - The bypass valve opens if the filter blocks, so the engine still receives oil rather than none.
+
+2. A - The anti-drainback valve keeps oil in the filter and galleries when off, giving faster pressure on start-up.
+
+3. B - The number before W is the winter (cold) viscosity rating; 30 is the hot viscosity grade in 5W-30.
+
+4. B - API / ACEA categories confirm the oil meets the performance level that engine and its emissions equipment
+require.
+
+5. C - Detergents clean surfaces; dispersants keep particles in suspension so the filter can trap them.
+
+6. B - Anti-wear additives form a protective film on loaded metal surfaces where the oil film is thinnest.
+
+7. B - Synthetic oil has more uniform molecules, with better cold flow and heat / oxidation resistance.
+
+8. C - Mineral oil is refined from crude, costs less, and is suitable where the manufacturer specifies it.
+
+9. B - Always select by the manufacturer specification: viscosity grade plus the required approval / category.
+
+10. D - Short trips contaminate oil with moisture and fuel and rarely get it fully hot - use the severe-service interval.
+
+
+
+
+Answer Key - Quiz 3                                                                                          Practice Material
+Answer Key - Quiz 4: Transmission Servicing
+
+Retake date: ____________________          Second score: ___ / 10
+
+1. B - Fluid friction characteristics are matched to the clutches and shift calibration; wrong fluid causes shift faults.
+
+2. C - With no dipstick, level is set at a specified fluid temperature using the level / overflow plug procedure.
+
+3. B - Inspect pan and magnet, renew filter and gasket where specified, and refill with fresh specified fluid.
+
+4. D - The 722.9 level is set by the overflow method at a specified temperature with approved-specification fluid only.
+
+5. A - Unapproved fluid can upset friction and shift quality and may damage the transmission.
+
+6. C - Heavy debris signals internal wear and needs further diagnosis, not just a fluid change.
+
+7. A - Wet-clutch DSG fluid cools and operates the clutches and mechatronics, so fluid and filter changes are
+scheduled service items.
+
+8. B - A DSG uses two clutches and two gear sets, preselecting the next gear, with no torque converter in most
+versions.
+
+9. B - Service checks cover fluid level and condition, leaks, fault codes, cooler lines, and shift quality on road test.
+
+10. D - Burnt, dark fluid points to overheating and clutch wear; find the cause instead of only changing the fluid.
+
+Progress Summary
+
+ Quiz                                                       First score         Retake date           Second score
+
+ 1 - Vehicle Servicing and Safety Checks                    ___ / 10                                  ___ / 10
+
+ 2 - Cooling System Servicing                               ___ / 10                                  ___ / 10
+
+ 3 - Engine Oil Essentials                                  ___ / 10                                  ___ / 10
+
+ 4 - Transmission Servicing                                 ___ / 10                                  ___ / 10
+
+
+TOTAL: ___ / 40 Target: 9 / 10 on each quiz before moving on.
+
+
+
+
+Answer Key - Quiz 4                                                                                          Practice Material
+

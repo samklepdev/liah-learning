@@ -1,0 +1,3309 @@
+  PRACTICE MATERIAL
+
+
+
+Diagnostics Pop Quizzes
+21 quizzes - one per course - 10 multiple-choice questions each. 210 questions total.
+
+Quizzes follow the course and module order on the diagnostics completion sheet (21 courses, 89 modules).
+Each question is tagged with the module it tests. All answer keys are separate - they are grouped at the
+back of this pack, after all 21 quizzes, so the quizzes can be printed without the answers.
+
+How to use: Take one quiz after finishing a course. Score it using the separate Answer Key section at the
+back, review every miss, then retake it on a later date. Target: 9 / 10 before moving on.
+
+COURSES COVERED
+Quiz 1. Mastering Onboard Diagnostics - 8 modules        Quiz 13. Diesel Pressure Regulator Diagnostics - 3
+Quiz 2. Engine Misfire Diagnostics - 4 modules           modules
+
+Quiz 3. NVH Principles and Diagnostics - 4 modules       Quiz 14. Turbocharger Diagnostics - 4 modules
+
+Quiz 4. Starter Relay Diagnostics - 3 modules            Quiz 15. Oxygen Sensor Diagnostics - 3 modules
+
+Quiz 5. Oil Pressure Sensor Diagnostics - 3 modules      Quiz 16. EGR Diagnostics - 4 modules
+
+Quiz 6. Crankshaft Sensor Diagnostics - 4 modules        Quiz 17. DPF Pressure Sensor Diagnostics - 4 modules
+
+Quiz 7. Camshaft Sensor Diagnostics - 4 modules          Quiz 18. Vehicle Network Diagnostics - 6 modules
+
+Quiz 8. MAF Sensor Diagnostics - 3 modules               Quiz 19. Accelerator Pedal Position Diagnostics - 4
+                                                         modules
+Quiz 9. MAP and BARO Sensor Diagnostics - 7 modules
+                                                         Quiz 20. Electronic Stability Program Diagnostics - 3
+Quiz 10. IAT Sensor Diagnostics - 3 modules
+                                                         modules
+Quiz 11. Fuel System Diagnostics - 7 modules
+                                                         Quiz 21. SRS Diagnostics - 4 modules
+Quiz 12. FRP Sensor Diagnostics - 4 modules
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                                    Cover
+QUIZ 1 OF 21
+
+Course 1: Mastering Onboard Diagnostics
+
+Name:                      Date:                  Score: ___ / 10
+
+  Modules covered (8):
+     Strategy Based Diagnostics
+     Onboard Diagnostics Generation One
+     Onboard Diagnostics Key Elements
+     Onboard Diagnostics Key Elements Two
+     Understanding Diagnostic Trouble Codes
+     Understanding Drive Cycles
+     Drive Cycles Diagnostics
+     Control Module Power and Ground Circuit Checks
+
+1. In Strategy Based Diagnostics, what does the diagnostic trouble code actually tell you?
+Module: Strategy Based Diagnostics
+  A. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  B. The exact part to replace without further testing
+  C. That the fault is intermittent and can be ignored
+  D. That the wiring has already been proven good
+2. You start work on a case covered by Onboard Diagnostics Generation One. What is the correct first
+step?
+Module: Onboard Diagnostics Generation One
+  A. Replace the most commonly failed part for that code
+  B. Clear the codes and return the vehicle
+  C. Disconnect the battery and wait for the relearn
+  D. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+3. When testing for Onboard Diagnostics Key Elements, which measurement approach gives a trustworthy
+result?
+Module: Onboard Diagnostics Key Elements
+  A. Rely on the code description instead of measuring
+  B. Back-probe every wire until one reads battery voltage
+  C. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  D. Measure once, key off, on a cold engine only
+4. A confirmed fault in Onboard Diagnostics Key Elements Two most directly points to which cause?
+Module: Onboard Diagnostics Key Elements Two
+  A. Old engine oil changing the electrical signal
+  B. A circuit, connection or component fault in that system, proven by measuring the circuit rather than guessing
+  from the code alone
+  C. A discharged battery on every vehicle with this code
+  D. Low tire pressure changing the module calculation
+5. On a scan tool, what should you check first for Understanding Diagnostic Trouble Codes?
+Module: Understanding Diagnostic Trouble Codes
+   A. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+   same time
+   B. Only the odometer reading
+Diagnostics Pop Quizzes - Practice Material                                                     Quiz 1 - Questions 1-5
+   C. The radio volume PID
+   D. Whether the code can be cleared from the home screen
+QUIZ 1 - CONTINUED
+
+Course 1: Mastering Onboard Diagnostics
+
+6. Before condemning a component in Understanding Drive Cycles, which wiring check is essential?
+Module: Understanding Drive Cycles
+  A. Wiggle the harness once and replace the part if nothing changes
+  B. Check only the fuse and stop there
+  C. Spray every connector with water and watch for a change
+  D. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+7. What component-level test best supports a diagnosis in Drive Cycles Diagnostics?
+Module: Drive Cycles Diagnostics
+  A. Hit the component lightly and listen for a rattle only
+  B. Read the part number and order a replacement on that alone
+  C. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  D. Swap in a part from another vehicle and hope the code stays away
+8. During a Control Module Power and Ground Circuit Checks case, which practice should be avoided?
+Module: Control Module Power and Ground Circuit Checks
+  A. Road testing after a repair
+  B. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  C. Recording measurements before clearing codes
+  D. Checking service information and TSBs
+9. After repairing a fault found under Strategy Based Diagnostics, how do you verify the repair?
+Module: Strategy Based Diagnostics
+  A. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  B. Clear the codes in the bay and release the vehicle immediately
+  C. Drive around the block once with the scan tool disconnected
+  D. Turn the warning lamp bulb check off
+10. Two tests disagree during Onboard Diagnostics Generation One - the live data looks normal but the
+fault returns under load. What is the best next move?
+Module: Onboard Diagnostics Generation One
+  A. Replace both the sensor and the module at once
+  B. Tell the customer the fault is normal
+  C. Erase the code history so it cannot return
+  D. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                     Quiz 1 - Questions 6-10
+QUIZ 2 OF 21
+
+Course 2: Engine Misfire Diagnostics
+
+Name:                       Date:                    Score: ___ / 10
+
+  Modules covered (4):
+      Engine Misfire Monitoring
+      Under Minded Misfire Diagnostics
+      Automotive Thermal Imaging and Diagnostics
+      Knock Sensor Voltage High
+
+1. You start work on a case covered by Engine Misfire Monitoring. What is the correct first step?
+Module: Engine Misfire Monitoring
+  A. Clear the codes and return the vehicle
+  B. Disconnect the battery and wait for the relearn
+  C. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  D. Replace the most commonly failed part for that code
+2. When testing for Under Minded Misfire Diagnostics, which measurement approach gives a trustworthy
+result?
+Module: Under Minded Misfire Diagnostics
+  A. Back-probe every wire until one reads battery voltage
+  B. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  C. Measure once, key off, on a cold engine only
+  D. Rely on the code description instead of measuring
+3. A confirmed fault in Automotive Thermal Imaging and Diagnostics most directly points to which cause?
+Module: Automotive Thermal Imaging and Diagnostics
+  A. A circuit, connection or component fault in that system, proven by measuring the circuit rather than guessing
+  from the code alone
+  B. A discharged battery on every vehicle with this code
+  C. Low tire pressure changing the module calculation
+  D. Old engine oil changing the electrical signal
+4. On a scan tool, what should you check first for Knock Sensor Voltage High?
+Module: Knock Sensor Voltage High
+  A. Only the odometer reading
+  B. The radio volume PID
+  C. Whether the code can be cleared from the home screen
+  D. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+5. Before condemning a component in Engine Misfire Monitoring, which wiring check is essential?
+Module: Engine Misfire Monitoring
+  A. Check only the fuse and stop there
+  B. Spray every connector with water and watch for a change
+  C. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  D. Wiggle the harness once and replace the part if nothing changes
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                      Quiz 2 - Questions 1-5
+QUIZ 2 - CONTINUED
+
+Course 2: Engine Misfire Diagnostics
+
+6. What component-level test best supports a diagnosis in Under Minded Misfire Diagnostics?
+Module: Under Minded Misfire Diagnostics
+  A. Read the part number and order a replacement on that alone
+  B. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  C. Swap in a part from another vehicle and hope the code stays away
+  D. Hit the component lightly and listen for a rattle only
+7. During a Automotive Thermal Imaging and Diagnostics case, which practice should be avoided?
+Module: Automotive Thermal Imaging and Diagnostics
+  A. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  B. Recording measurements before clearing codes
+  C. Checking service information and TSBs
+  D. Road testing after a repair
+8. After repairing a fault found under Knock Sensor Voltage High, how do you verify the repair?
+Module: Knock Sensor Voltage High
+  A. Clear the codes in the bay and release the vehicle immediately
+  B. Drive around the block once with the scan tool disconnected
+  C. Turn the warning lamp bulb check off
+  D. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+9. Two tests disagree during Engine Misfire Monitoring - the live data looks normal but the fault returns
+under load. What is the best next move?
+Module: Engine Misfire Monitoring
+  A. Tell the customer the fault is normal
+  B. Erase the code history so it cannot return
+  C. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  D. Replace both the sensor and the module at once
+10. In Under Minded Misfire Diagnostics, what does the diagnostic trouble code actually tell you?
+Module: Under Minded Misfire Diagnostics
+  A. The exact part to replace without further testing
+  B. That the fault is intermittent and can be ignored
+  C. That the wiring has already been proven good
+  D. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 2 - Questions 6-10
+QUIZ 3 OF 21
+
+Course 3: NVH Principles and Diagnostics
+
+Name:                       Date:               Score: ___ / 10
+
+  Modules covered (4):
+      Understanding NVH Noise
+      Understanding NVH Vibration
+      Understanding NVH Harshness
+      Understanding NVH Diagnostics
+
+1. When testing for Understanding NVH Noise, which measurement approach gives a trustworthy result?
+Module: Understanding NVH Noise
+  A. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  B. Measure once, key off, on a cold engine only
+  C. Rely on the code description instead of measuring
+  D. Back-probe every wire until one reads battery voltage
+2. A confirmed fault in Understanding NVH Vibration most directly points to which cause?
+Module: Understanding NVH Vibration
+  A. A discharged battery on every vehicle with this code
+  B. Low tire pressure changing the module calculation
+  C. Old engine oil changing the electrical signal
+  D. A circuit, connection or component fault in that system, proven by measuring the circuit rather than guessing
+  from the code alone
+3. On a scan tool, what should you check first for Understanding NVH Harshness?
+Module: Understanding NVH Harshness
+  A. The radio volume PID
+  B. Whether the code can be cleared from the home screen
+  C. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  D. Only the odometer reading
+4. Before condemning a component in Understanding NVH Diagnostics, which wiring check is essential?
+Module: Understanding NVH Diagnostics
+  A. Spray every connector with water and watch for a change
+  B. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  C. Wiggle the harness once and replace the part if nothing changes
+  D. Check only the fuse and stop there
+5. What component-level test best supports a diagnosis in Understanding NVH Noise?
+Module: Understanding NVH Noise
+  A. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  B. Swap in a part from another vehicle and hope the code stays away
+  C. Hit the component lightly and listen for a rattle only
+  D. Read the part number and order a replacement on that alone
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                      Quiz 3 - Questions 1-5
+QUIZ 3 - CONTINUED
+
+Course 3: NVH Principles and Diagnostics
+
+6. During a Understanding NVH Vibration case, which practice should be avoided?
+Module: Understanding NVH Vibration
+  A. Recording measurements before clearing codes
+  B. Checking service information and TSBs
+  C. Road testing after a repair
+  D. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+7. After repairing a fault found under Understanding NVH Harshness, how do you verify the repair?
+Module: Understanding NVH Harshness
+  A. Drive around the block once with the scan tool disconnected
+  B. Turn the warning lamp bulb check off
+  C. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  D. Clear the codes in the bay and release the vehicle immediately
+8. Two tests disagree during Understanding NVH Diagnostics - the live data looks normal but the fault
+returns under load. What is the best next move?
+Module: Understanding NVH Diagnostics
+  A. Erase the code history so it cannot return
+  B. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  C. Replace both the sensor and the module at once
+  D. Tell the customer the fault is normal
+9. In Understanding NVH Noise, what does the diagnostic trouble code actually tell you?
+Module: Understanding NVH Noise
+  A. That the fault is intermittent and can be ignored
+  B. That the wiring has already been proven good
+  C. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  D. The exact part to replace without further testing
+10. You start work on a case covered by Understanding NVH Vibration. What is the correct first step?
+Module: Understanding NVH Vibration
+  A. Disconnect the battery and wait for the relearn
+  B. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  C. Replace the most commonly failed part for that code
+  D. Clear the codes and return the vehicle
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 3 - Questions 6-10
+QUIZ 4 OF 21
+
+Course 4: Starter Relay Diagnostics
+
+Name:                       Date:                        Score: ___ / 10
+
+  Modules covered (3):
+      Starter Relay Circuit Malfunction Diagnostics
+      Starter Relay Circuit Voltage Low Diagnostics
+      Starter Relay Circuit Voltage High Diagnostics
+
+1. A confirmed fault in Starter Relay Circuit Malfunction Diagnostics most directly points to which cause?
+Module: Starter Relay Circuit Malfunction Diagnostics
+  A. Low tire pressure changing the module calculation
+  B. Old engine oil changing the electrical signal
+  C. A biased, drifting or intermittent signal that stays in range electrically but does not match actual operating
+  conditions
+  D. A discharged battery on every vehicle with this code
+2. On a scan tool, what should you check first for Starter Relay Circuit Voltage Low Diagnostics?
+Module: Starter Relay Circuit Voltage Low Diagnostics
+  A. Whether the code can be cleared from the home screen
+  B. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  C. Only the odometer reading
+  D. The radio volume PID
+3. Before condemning a component in Starter Relay Circuit Voltage High Diagnostics, which wiring check
+is essential?
+Module: Starter Relay Circuit Voltage High Diagnostics
+  A. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  B. Wiggle the harness once and replace the part if nothing changes
+  C. Check only the fuse and stop there
+  D. Spray every connector with water and watch for a change
+4. What component-level test best supports a diagnosis in Starter Relay Circuit Malfunction Diagnostics?
+Module: Starter Relay Circuit Malfunction Diagnostics
+  A. Swap in a part from another vehicle and hope the code stays away
+  B. Hit the component lightly and listen for a rattle only
+  C. Read the part number and order a replacement on that alone
+  D. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+5. During a Starter Relay Circuit Voltage Low Diagnostics case, which practice should be avoided?
+Module: Starter Relay Circuit Voltage Low Diagnostics
+  A. Checking service information and TSBs
+  B. Road testing after a repair
+  C. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  D. Recording measurements before clearing codes
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 4 - Questions 1-5
+QUIZ 4 - CONTINUED
+
+Course 4: Starter Relay Diagnostics
+
+6. After repairing a fault found under Starter Relay Circuit Voltage High Diagnostics, how do you verify the
+repair?
+Module: Starter Relay Circuit Voltage High Diagnostics
+  A. Turn the warning lamp bulb check off
+  B. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  C. Clear the codes in the bay and release the vehicle immediately
+  D. Drive around the block once with the scan tool disconnected
+7. Two tests disagree during Starter Relay Circuit Malfunction Diagnostics - the live data looks normal but
+the fault returns under load. What is the best next move?
+Module: Starter Relay Circuit Malfunction Diagnostics
+  A. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  B. Replace both the sensor and the module at once
+  C. Tell the customer the fault is normal
+  D. Erase the code history so it cannot return
+8. In Starter Relay Circuit Voltage Low Diagnostics, what does the diagnostic trouble code actually tell you?
+Module: Starter Relay Circuit Voltage Low Diagnostics
+  A. That the wiring has already been proven good
+  B. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  C. The exact part to replace without further testing
+  D. That the fault is intermittent and can be ignored
+9. You start work on a case covered by Starter Relay Circuit Voltage High Diagnostics. What is the correct
+first step?
+Module: Starter Relay Circuit Voltage High Diagnostics
+  A. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  B. Replace the most commonly failed part for that code
+  C. Clear the codes and return the vehicle
+  D. Disconnect the battery and wait for the relearn
+10. When testing for Starter Relay Circuit Malfunction Diagnostics, which measurement approach gives a
+trustworthy result?
+Module: Starter Relay Circuit Malfunction Diagnostics
+  A. Measure once, key off, on a cold engine only
+  B. Rely on the code description instead of measuring
+  C. Back-probe every wire until one reads battery voltage
+  D. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 4 - Questions 6-10
+QUIZ 5 OF 21
+
+Course 5: Oil Pressure Sensor Diagnostics
+
+Name:                       Date:                     Score: ___ / 10
+
+  Modules covered (3):
+      Oil Pressure Sensor Circuit Voltage Low Diagnostics
+      Oil Pressure Sensor Circuit Voltage High Diagnostics
+      Oil Pressure Sensor Signal Performance
+
+1. On a scan tool, what should you check first for Oil Pressure Sensor Circuit Voltage Low Diagnostics?
+Module: Oil Pressure Sensor Circuit Voltage Low Diagnostics
+  A. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  B. Only the odometer reading
+  C. The radio volume PID
+  D. Whether the code can be cleared from the home screen
+2. Before condemning a component in Oil Pressure Sensor Circuit Voltage High Diagnostics, which wiring
+check is essential?
+Module: Oil Pressure Sensor Circuit Voltage High Diagnostics
+  A. Wiggle the harness once and replace the part if nothing changes
+  B. Check only the fuse and stop there
+  C. Spray every connector with water and watch for a change
+  D. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+3. What component-level test best supports a diagnosis in Oil Pressure Sensor Signal Performance?
+Module: Oil Pressure Sensor Signal Performance
+  A. Hit the component lightly and listen for a rattle only
+  B. Read the part number and order a replacement on that alone
+  C. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  D. Swap in a part from another vehicle and hope the code stays away
+4. During a Oil Pressure Sensor Circuit Voltage Low Diagnostics case, which practice should be avoided?
+Module: Oil Pressure Sensor Circuit Voltage Low Diagnostics
+  A. Road testing after a repair
+  B. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  C. Recording measurements before clearing codes
+  D. Checking service information and TSBs
+5. After repairing a fault found under Oil Pressure Sensor Circuit Voltage High Diagnostics, how do you
+verify the repair?
+Module: Oil Pressure Sensor Circuit Voltage High Diagnostics
+  A. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  B. Clear the codes in the bay and release the vehicle immediately
+  C. Drive around the block once with the scan tool disconnected
+  D. Turn the warning lamp bulb check off
+
+Diagnostics Pop Quizzes - Practice Material                                                      Quiz 5 - Questions 1-5
+QUIZ 5 - CONTINUED
+
+Course 5: Oil Pressure Sensor Diagnostics
+
+6. Two tests disagree during Oil Pressure Sensor Signal Performance - the live data looks normal but the
+fault returns under load. What is the best next move?
+Module: Oil Pressure Sensor Signal Performance
+  A. Replace both the sensor and the module at once
+  B. Tell the customer the fault is normal
+  C. Erase the code history so it cannot return
+  D. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+7. In Oil Pressure Sensor Circuit Voltage Low Diagnostics, what does the diagnostic trouble code actually
+tell you?
+Module: Oil Pressure Sensor Circuit Voltage Low Diagnostics
+  A. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  B. The exact part to replace without further testing
+  C. That the fault is intermittent and can be ignored
+  D. That the wiring has already been proven good
+8. You start work on a case covered by Oil Pressure Sensor Circuit Voltage High Diagnostics. What is the
+correct first step?
+Module: Oil Pressure Sensor Circuit Voltage High Diagnostics
+  A. Replace the most commonly failed part for that code
+  B. Clear the codes and return the vehicle
+  C. Disconnect the battery and wait for the relearn
+  D. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+9. When testing for Oil Pressure Sensor Signal Performance, which measurement approach gives a
+trustworthy result?
+Module: Oil Pressure Sensor Signal Performance
+  A. Rely on the code description instead of measuring
+  B. Back-probe every wire until one reads battery voltage
+  C. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  D. Measure once, key off, on a cold engine only
+10. A confirmed fault in Oil Pressure Sensor Circuit Voltage Low Diagnostics most directly points to which
+cause?
+Module: Oil Pressure Sensor Circuit Voltage Low Diagnostics
+  A. Old engine oil changing the electrical signal
+  B. A short to ground on the signal circuit, a lost reference feed, or the component pulling the signal down to
+  ground
+  C. A discharged battery on every vehicle with this code
+  D. Low tire pressure changing the module calculation
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 5 - Questions 6-10
+QUIZ 6 OF 21
+
+Course 6: Crankshaft Sensor Diagnostics
+
+Name:                      Date:                         Score: ___ / 10
+
+  Modules covered (4):
+     Crankshaft Position Sensor Signal Performance
+     Crankshaft Position Sensor Signal Voltage Low
+     Crankshaft Position Sensor Signal Voltage High
+     Crankshaft Position Sensor Intermediate Signal
+
+1. Before condemning a component in Crankshaft Position Sensor Signal Performance, which wiring check
+is essential?
+Module: Crankshaft Position Sensor Signal Performance
+  A. Check only the fuse and stop there
+  B. Spray every connector with water and watch for a change
+  C. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  D. Wiggle the harness once and replace the part if nothing changes
+2. What component-level test best supports a diagnosis in Crankshaft Position Sensor Signal Voltage Low?
+Module: Crankshaft Position Sensor Signal Voltage Low
+  A. Read the part number and order a replacement on that alone
+  B. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  C. Swap in a part from another vehicle and hope the code stays away
+  D. Hit the component lightly and listen for a rattle only
+3. During a Crankshaft Position Sensor Signal Voltage High case, which practice should be avoided?
+Module: Crankshaft Position Sensor Signal Voltage High
+  A. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  B. Recording measurements before clearing codes
+  C. Checking service information and TSBs
+  D. Road testing after a repair
+4. After repairing a fault found under Crankshaft Position Sensor Intermediate Signal, how do you verify the
+repair?
+Module: Crankshaft Position Sensor Intermediate Signal
+  A. Clear the codes in the bay and release the vehicle immediately
+  B. Drive around the block once with the scan tool disconnected
+  C. Turn the warning lamp bulb check off
+  D. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+5. Two tests disagree during Crankshaft Position Sensor Signal Performance - the live data looks normal
+but the fault returns under load. What is the best next move?
+Module: Crankshaft Position Sensor Signal Performance
+   A. Tell the customer the fault is normal
+   B. Erase the code history so it cannot return
+   C. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+   dropouts and intermittent connections
+   D. Replace
+Diagnostics  Pop both the- sensor
+                 Quizzes   Practice and the module at once
+                                    Material                                                     Quiz 6 - Questions 1-5
+QUIZ 6 - CONTINUED
+
+Course 6: Crankshaft Sensor Diagnostics
+
+6. In Crankshaft Position Sensor Signal Voltage Low, what does the diagnostic trouble code actually tell
+you?
+Module: Crankshaft Position Sensor Signal Voltage Low
+  A. The exact part to replace without further testing
+  B. That the fault is intermittent and can be ignored
+  C. That the wiring has already been proven good
+  D. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+7. You start work on a case covered by Crankshaft Position Sensor Signal Voltage High. What is the correct
+first step?
+Module: Crankshaft Position Sensor Signal Voltage High
+  A. Clear the codes and return the vehicle
+  B. Disconnect the battery and wait for the relearn
+  C. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  D. Replace the most commonly failed part for that code
+8. When testing for Crankshaft Position Sensor Intermediate Signal, which measurement approach gives a
+trustworthy result?
+Module: Crankshaft Position Sensor Intermediate Signal
+  A. Back-probe every wire until one reads battery voltage
+  B. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  C. Measure once, key off, on a cold engine only
+  D. Rely on the code description instead of measuring
+9. A confirmed fault in Crankshaft Position Sensor Signal Performance most directly points to which
+cause?
+Module: Crankshaft Position Sensor Signal Performance
+  A. A biased, drifting or intermittent signal that stays in range electrically but does not match actual operating
+  conditions
+  B. A discharged battery on every vehicle with this code
+  C. Low tire pressure changing the module calculation
+  D. Old engine oil changing the electrical signal
+10. On a scan tool, what should you check first for Crankshaft Position Sensor Signal Voltage Low?
+Module: Crankshaft Position Sensor Signal Voltage Low
+  A. Only the odometer reading
+  B. The radio volume PID
+  C. Whether the code can be cleared from the home screen
+  D. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 6 - Questions 6-10
+QUIZ 7 OF 21
+
+Course 7: Camshaft Sensor Diagnostics
+
+Name:                       Date:                      Score: ___ / 10
+
+  Modules covered (4):
+      Cam Position Actuator Valve Negative Control
+      Cam Position Actuator Valve Positive Control
+      Camshaft Position Sensor Voltage Low
+      Camshaft Position Sensor Voltage High
+
+1. What component-level test best supports a diagnosis in Cam Position Actuator Valve Negative Control?
+Module: Cam Position Actuator Valve Negative Control
+  A. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  B. Swap in a part from another vehicle and hope the code stays away
+  C. Hit the component lightly and listen for a rattle only
+  D. Read the part number and order a replacement on that alone
+2. During a Cam Position Actuator Valve Positive Control case, which practice should be avoided?
+Module: Cam Position Actuator Valve Positive Control
+  A. Recording measurements before clearing codes
+  B. Checking service information and TSBs
+  C. Road testing after a repair
+  D. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+3. After repairing a fault found under Camshaft Position Sensor Voltage Low, how do you verify the repair?
+Module: Camshaft Position Sensor Voltage Low
+  A. Drive around the block once with the scan tool disconnected
+  B. Turn the warning lamp bulb check off
+  C. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  D. Clear the codes in the bay and release the vehicle immediately
+4. Two tests disagree during Camshaft Position Sensor Voltage High - the live data looks normal but the
+fault returns under load. What is the best next move?
+Module: Camshaft Position Sensor Voltage High
+  A. Erase the code history so it cannot return
+  B. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  C. Replace both the sensor and the module at once
+  D. Tell the customer the fault is normal
+5. In Cam Position Actuator Valve Negative Control, what does the diagnostic trouble code actually tell
+you?
+Module: Cam Position Actuator Valve Negative Control
+  A. That the fault is intermittent and can be ignored
+  B. That the wiring has already been proven good
+  C. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  D. The exact part to replace without further testing
+Diagnostics Pop Quizzes - Practice Material                                                          Quiz 7 - Questions 1-5
+QUIZ 7 - CONTINUED
+
+Course 7: Camshaft Sensor Diagnostics
+
+6. You start work on a case covered by Cam Position Actuator Valve Positive Control. What is the correct
+first step?
+Module: Cam Position Actuator Valve Positive Control
+  A. Disconnect the battery and wait for the relearn
+  B. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  C. Replace the most commonly failed part for that code
+  D. Clear the codes and return the vehicle
+7. When testing for Camshaft Position Sensor Voltage Low, which measurement approach gives a
+trustworthy result?
+Module: Camshaft Position Sensor Voltage Low
+  A. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  B. Measure once, key off, on a cold engine only
+  C. Rely on the code description instead of measuring
+  D. Back-probe every wire until one reads battery voltage
+8. A confirmed fault in Camshaft Position Sensor Voltage High most directly points to which cause?
+Module: Camshaft Position Sensor Voltage High
+  A. A discharged battery on every vehicle with this code
+  B. Low tire pressure changing the module calculation
+  C. Old engine oil changing the electrical signal
+  D. An open signal ground/return, a short to voltage on the signal circuit, or a lost sensor ground holding the signal
+  high
+9. On a scan tool, what should you check first for Cam Position Actuator Valve Negative Control?
+Module: Cam Position Actuator Valve Negative Control
+  A. The radio volume PID
+  B. Whether the code can be cleared from the home screen
+  C. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  D. Only the odometer reading
+10. Before condemning a component in Cam Position Actuator Valve Positive Control, which wiring check
+is essential?
+Module: Cam Position Actuator Valve Positive Control
+  A. Spray every connector with water and watch for a change
+  B. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  C. Wiggle the harness once and replace the part if nothing changes
+  D. Check only the fuse and stop there
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                       Quiz 7 - Questions 6-10
+QUIZ 8 OF 21
+
+Course 8: MAF Sensor Diagnostics
+
+Name:                       Date:                 Score: ___ / 10
+
+  Modules covered (3):
+      Mass Airflow Sensor Signal Performance
+      Mass Airflow Sensor Short to Ground
+      Mass Airflow Sensor Signal Voltage High
+
+1. During a Mass Airflow Sensor Signal Performance case, which practice should be avoided?
+Module: Mass Airflow Sensor Signal Performance
+  A. Checking service information and TSBs
+  B. Road testing after a repair
+  C. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  D. Recording measurements before clearing codes
+2. After repairing a fault found under Mass Airflow Sensor Short to Ground, how do you verify the repair?
+Module: Mass Airflow Sensor Short to Ground
+  A. Turn the warning lamp bulb check off
+  B. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  C. Clear the codes in the bay and release the vehicle immediately
+  D. Drive around the block once with the scan tool disconnected
+3. Two tests disagree during Mass Airflow Sensor Signal Voltage High - the live data looks normal but the
+fault returns under load. What is the best next move?
+Module: Mass Airflow Sensor Signal Voltage High
+  A. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  B. Replace both the sensor and the module at once
+  C. Tell the customer the fault is normal
+  D. Erase the code history so it cannot return
+4. In Mass Airflow Sensor Signal Performance, what does the diagnostic trouble code actually tell you?
+Module: Mass Airflow Sensor Signal Performance
+  A. That the wiring has already been proven good
+  B. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  C. The exact part to replace without further testing
+  D. That the fault is intermittent and can be ignored
+5. You start work on a case covered by Mass Airflow Sensor Short to Ground. What is the correct first step?
+Module: Mass Airflow Sensor Short to Ground
+  A. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  B. Replace the most commonly failed part for that code
+  C. Clear the codes and return the vehicle
+  D. Disconnect the battery and wait for the relearn
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                          Quiz 8 - Questions 1-5
+QUIZ 8 - CONTINUED
+
+Course 8: MAF Sensor Diagnostics
+
+6. When testing for Mass Airflow Sensor Signal Voltage High, which measurement approach gives a
+trustworthy result?
+Module: Mass Airflow Sensor Signal Voltage High
+  A. Measure once, key off, on a cold engine only
+  B. Rely on the code description instead of measuring
+  C. Back-probe every wire until one reads battery voltage
+  D. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+7. A confirmed fault in Mass Airflow Sensor Signal Performance most directly points to which cause?
+Module: Mass Airflow Sensor Signal Performance
+  A. Low tire pressure changing the module calculation
+  B. Old engine oil changing the electrical signal
+  C. A biased, drifting or intermittent signal that stays in range electrically but does not match actual operating
+  conditions
+  D. A discharged battery on every vehicle with this code
+8. On a scan tool, what should you check first for Mass Airflow Sensor Short to Ground?
+Module: Mass Airflow Sensor Short to Ground
+  A. Whether the code can be cleared from the home screen
+  B. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  C. Only the odometer reading
+  D. The radio volume PID
+9. Before condemning a component in Mass Airflow Sensor Signal Voltage High, which wiring check is
+essential?
+Module: Mass Airflow Sensor Signal Voltage High
+  A. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  B. Wiggle the harness once and replace the part if nothing changes
+  C. Check only the fuse and stop there
+  D. Spray every connector with water and watch for a change
+10. What component-level test best supports a diagnosis in Mass Airflow Sensor Signal Performance?
+Module: Mass Airflow Sensor Signal Performance
+  A. Swap in a part from another vehicle and hope the code stays away
+  B. Hit the component lightly and listen for a rattle only
+  C. Read the part number and order a replacement on that alone
+  D. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                        Quiz 8 - Questions 6-10
+QUIZ 9 OF 21
+
+Course 9: MAP and BARO Sensor Diagnostics
+
+Name:                     Date:                   Score: ___ / 10
+
+  Modules covered (7):
+     MAP Sensor Signal Performance
+     MAP Sensor Pull Up Voltage Low
+     MAP Sensor Pull Up Voltage High
+     MAP Sensor Pull Down Type Voltage Low
+     MAP Sensor Pull Down Type Voltage High
+     Barometric Sensor Signal Faults
+     Barometric Sensor Shorts to Volt and Ground
+
+1. After repairing a fault found under MAP Sensor Signal Performance, how do you verify the repair?
+Module: MAP Sensor Signal Performance
+  A. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  B. Clear the codes in the bay and release the vehicle immediately
+  C. Drive around the block once with the scan tool disconnected
+  D. Turn the warning lamp bulb check off
+2. Two tests disagree during MAP Sensor Pull Up Voltage Low - the live data looks normal but the fault
+returns under load. What is the best next move?
+Module: MAP Sensor Pull Up Voltage Low
+  A. Replace both the sensor and the module at once
+  B. Tell the customer the fault is normal
+  C. Erase the code history so it cannot return
+  D. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+3. In MAP Sensor Pull Up Voltage High, what does the diagnostic trouble code actually tell you?
+Module: MAP Sensor Pull Up Voltage High
+  A. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  B. The exact part to replace without further testing
+  C. That the fault is intermittent and can be ignored
+  D. That the wiring has already been proven good
+4. You start work on a case covered by MAP Sensor Pull Down Type Voltage Low. What is the correct first
+step?
+Module: MAP Sensor Pull Down Type Voltage Low
+  A. Replace the most commonly failed part for that code
+  B. Clear the codes and return the vehicle
+  C. Disconnect the battery and wait for the relearn
+  D. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+5. When testing for MAP Sensor Pull Down Type Voltage High, which measurement approach gives a
+trustworthy result?
+Module: MAP Sensor Pull Down Type Voltage High
+   A. Rely on the code description instead of measuring
+   B. Back-probe every wire until one reads battery voltage
+   C. Measure under the conditions that set the fault, compare to specification, and watch the liveQuiz
+Diagnostics Pop Quizzes - Practice Material
+                                                                                                    reading  change
+                                                                                                        9 - Questions 1-5
+   as conditions change
+   D. Measure once, key off, on a cold engine only
+QUIZ 9 - CONTINUED
+
+Course 9: MAP and BARO Sensor Diagnostics
+
+6. A confirmed fault in Barometric Sensor Signal Faults most directly points to which cause?
+Module: Barometric Sensor Signal Faults
+  A. Old engine oil changing the electrical signal
+  B. A biased, drifting or intermittent signal that stays in range electrically but does not match actual operating
+  conditions
+  C. A discharged battery on every vehicle with this code
+  D. Low tire pressure changing the module calculation
+7. On a scan tool, what should you check first for Barometric Sensor Shorts to Volt and Ground?
+Module: Barometric Sensor Shorts to Volt and Ground
+  A. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  B. Only the odometer reading
+  C. The radio volume PID
+  D. Whether the code can be cleared from the home screen
+8. Before condemning a component in MAP Sensor Signal Performance, which wiring check is essential?
+Module: MAP Sensor Signal Performance
+  A. Wiggle the harness once and replace the part if nothing changes
+  B. Check only the fuse and stop there
+  C. Spray every connector with water and watch for a change
+  D. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+9. What component-level test best supports a diagnosis in MAP Sensor Pull Up Voltage Low?
+Module: MAP Sensor Pull Up Voltage Low
+  A. Hit the component lightly and listen for a rattle only
+  B. Read the part number and order a replacement on that alone
+  C. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  D. Swap in a part from another vehicle and hope the code stays away
+10. During a MAP Sensor Pull Up Voltage High case, which practice should be avoided?
+Module: MAP Sensor Pull Up Voltage High
+  A. Road testing after a repair
+  B. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  C. Recording measurements before clearing codes
+  D. Checking service information and TSBs
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                        Quiz 9 - Questions 6-10
+QUIZ 10 OF 21
+
+Course 10: IAT Sensor Diagnostics
+
+Name:                       Date:                 Score: ___ / 10
+
+  Modules covered (3):
+      IAT Sensor Circuit Voltage Low
+      IAT Sensor Circuit Voltage High
+      IAT Sensor Signal Performance
+
+1. Two tests disagree during IAT Sensor Circuit Voltage Low - the live data looks normal but the fault
+returns under load. What is the best next move?
+Module: IAT Sensor Circuit Voltage Low
+  A. Tell the customer the fault is normal
+  B. Erase the code history so it cannot return
+  C. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  D. Replace both the sensor and the module at once
+2. In IAT Sensor Circuit Voltage High, what does the diagnostic trouble code actually tell you?
+Module: IAT Sensor Circuit Voltage High
+  A. The exact part to replace without further testing
+  B. That the fault is intermittent and can be ignored
+  C. That the wiring has already been proven good
+  D. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+3. You start work on a case covered by IAT Sensor Signal Performance. What is the correct first step?
+Module: IAT Sensor Signal Performance
+  A. Clear the codes and return the vehicle
+  B. Disconnect the battery and wait for the relearn
+  C. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  D. Replace the most commonly failed part for that code
+4. When testing for IAT Sensor Circuit Voltage Low, which measurement approach gives a trustworthy
+result?
+Module: IAT Sensor Circuit Voltage Low
+  A. Back-probe every wire until one reads battery voltage
+  B. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  C. Measure once, key off, on a cold engine only
+  D. Rely on the code description instead of measuring
+5. A confirmed fault in IAT Sensor Circuit Voltage High most directly points to which cause?
+Module: IAT Sensor Circuit Voltage High
+  A. An open signal ground/return, a short to voltage on the signal circuit, or a lost sensor ground holding the signal
+  high
+  B. A discharged battery on every vehicle with this code
+  C. Low tire pressure changing the module calculation
+  D. Old engine oil changing the electrical signal
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 10 - Questions 1-5
+QUIZ 10 - CONTINUED
+
+Course 10: IAT Sensor Diagnostics
+
+6. On a scan tool, what should you check first for IAT Sensor Signal Performance?
+Module: IAT Sensor Signal Performance
+  A. Only the odometer reading
+  B. The radio volume PID
+  C. Whether the code can be cleared from the home screen
+  D. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+7. Before condemning a component in IAT Sensor Circuit Voltage Low, which wiring check is essential?
+Module: IAT Sensor Circuit Voltage Low
+  A. Check only the fuse and stop there
+  B. Spray every connector with water and watch for a change
+  C. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  D. Wiggle the harness once and replace the part if nothing changes
+8. What component-level test best supports a diagnosis in IAT Sensor Circuit Voltage High?
+Module: IAT Sensor Circuit Voltage High
+  A. Read the part number and order a replacement on that alone
+  B. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  C. Swap in a part from another vehicle and hope the code stays away
+  D. Hit the component lightly and listen for a rattle only
+9. During a IAT Sensor Signal Performance case, which practice should be avoided?
+Module: IAT Sensor Signal Performance
+  A. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  B. Recording measurements before clearing codes
+  C. Checking service information and TSBs
+  D. Road testing after a repair
+10. After repairing a fault found under IAT Sensor Circuit Voltage Low, how do you verify the repair?
+Module: IAT Sensor Circuit Voltage Low
+  A. Clear the codes in the bay and release the vehicle immediately
+  B. Drive around the block once with the scan tool disconnected
+  C. Turn the warning lamp bulb check off
+  D. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                    Quiz 10 - Questions 6-10
+QUIZ 11 OF 21
+
+Course 11: Fuel System Diagnostics
+
+Name:                        Date:                Score: ___ / 10
+
+  Modules covered (7):
+      Fuel Injector Circuit Low
+      Fuel Injector Circuit High
+      Fuel Trim System Too Rich
+      Fuel Trim System Too Lean
+      Evaporative System Open Circuit
+      Evaporative System Short to Ground
+      Evaporative System Short to Voltage
+
+1. In Fuel Injector Circuit Low, what does the diagnostic trouble code actually tell you?
+Module: Fuel Injector Circuit Low
+  A. That the fault is intermittent and can be ignored
+  B. That the wiring has already been proven good
+  C. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  D. The exact part to replace without further testing
+2. You start work on a case covered by Fuel Injector Circuit High. What is the correct first step?
+Module: Fuel Injector Circuit High
+  A. Disconnect the battery and wait for the relearn
+  B. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  C. Replace the most commonly failed part for that code
+  D. Clear the codes and return the vehicle
+3. When testing for Fuel Trim System Too Rich, which measurement approach gives a trustworthy result?
+Module: Fuel Trim System Too Rich
+  A. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  B. Measure once, key off, on a cold engine only
+  C. Rely on the code description instead of measuring
+  D. Back-probe every wire until one reads battery voltage
+4. A confirmed fault in Fuel Trim System Too Lean most directly points to which cause?
+Module: Fuel Trim System Too Lean
+  A. A discharged battery on every vehicle with this code
+  B. Low tire pressure changing the module calculation
+  C. Old engine oil changing the electrical signal
+  D. Too little fuel or unmetered air - for example low fuel pressure, a vacuum leak, or a biased MAF/MAP reading
+5. On a scan tool, what should you check first for Evaporative System Open Circuit?
+Module: Evaporative System Open Circuit
+  A. The radio volume PID
+  B. Whether the code can be cleared from the home screen
+  C. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  D. Only the odometer reading
+
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 11 - Questions 1-5
+QUIZ 11 - CONTINUED
+
+Course 11: Fuel System Diagnostics
+
+6. Before condemning a component in Evaporative System Short to Ground, which wiring check is
+essential?
+Module: Evaporative System Short to Ground
+  A. Spray every connector with water and watch for a change
+  B. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  C. Wiggle the harness once and replace the part if nothing changes
+  D. Check only the fuse and stop there
+7. What component-level test best supports a diagnosis in Evaporative System Short to Voltage?
+Module: Evaporative System Short to Voltage
+  A. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  B. Swap in a part from another vehicle and hope the code stays away
+  C. Hit the component lightly and listen for a rattle only
+  D. Read the part number and order a replacement on that alone
+8. During a Fuel Injector Circuit Low case, which practice should be avoided?
+Module: Fuel Injector Circuit Low
+  A. Recording measurements before clearing codes
+  B. Checking service information and TSBs
+  C. Road testing after a repair
+  D. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+9. After repairing a fault found under Fuel Injector Circuit High, how do you verify the repair?
+Module: Fuel Injector Circuit High
+  A. Drive around the block once with the scan tool disconnected
+  B. Turn the warning lamp bulb check off
+  C. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  D. Clear the codes in the bay and release the vehicle immediately
+10. Two tests disagree during Fuel Trim System Too Rich - the live data looks normal but the fault returns
+under load. What is the best next move?
+Module: Fuel Trim System Too Rich
+  A. Erase the code history so it cannot return
+  B. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  C. Replace both the sensor and the module at once
+  D. Tell the customer the fault is normal
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                    Quiz 11 - Questions 6-10
+QUIZ 12 OF 21
+
+Course 12: FRP Sensor Diagnostics
+
+Name:                       Date:                Score: ___ / 10
+
+  Modules covered (4):
+      FRP Sensor Voltage High Pull Up Type
+      FRP Sensor Voltage High Pull Down Type
+      FRP Sensor Voltage Low Pull Up Type
+      FRP Sensor Voltage Low Pull Down Type
+
+1. You start work on a case covered by FRP Sensor Voltage High Pull Up Type. What is the correct first
+step?
+Module: FRP Sensor Voltage High Pull Up Type
+  A. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  B. Replace the most commonly failed part for that code
+  C. Clear the codes and return the vehicle
+  D. Disconnect the battery and wait for the relearn
+2. When testing for FRP Sensor Voltage High Pull Down Type, which measurement approach gives a
+trustworthy result?
+Module: FRP Sensor Voltage High Pull Down Type
+  A. Measure once, key off, on a cold engine only
+  B. Rely on the code description instead of measuring
+  C. Back-probe every wire until one reads battery voltage
+  D. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+3. A confirmed fault in FRP Sensor Voltage Low Pull Up Type most directly points to which cause?
+Module: FRP Sensor Voltage Low Pull Up Type
+  A. Low tire pressure changing the module calculation
+  B. Old engine oil changing the electrical signal
+  C. A short to ground on the signal circuit, a lost reference feed, or the component pulling the signal down to
+  ground
+  D. A discharged battery on every vehicle with this code
+4. On a scan tool, what should you check first for FRP Sensor Voltage Low Pull Down Type?
+Module: FRP Sensor Voltage Low Pull Down Type
+  A. Whether the code can be cleared from the home screen
+  B. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  C. Only the odometer reading
+  D. The radio volume PID
+5. Before condemning a component in FRP Sensor Voltage High Pull Up Type, which wiring check is
+essential?
+Module: FRP Sensor Voltage High Pull Up Type
+  A. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  B. Wiggle the harness once and replace the part if nothing changes
+  C. Check only the fuse and stop there
+  D. Spray every connector with water and watch for a change
+Diagnostics Pop Quizzes - Practice Material                                                      Quiz 12 - Questions 1-5
+QUIZ 12 - CONTINUED
+
+Course 12: FRP Sensor Diagnostics
+
+6. What component-level test best supports a diagnosis in FRP Sensor Voltage High Pull Down Type?
+Module: FRP Sensor Voltage High Pull Down Type
+  A. Swap in a part from another vehicle and hope the code stays away
+  B. Hit the component lightly and listen for a rattle only
+  C. Read the part number and order a replacement on that alone
+  D. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+7. During a FRP Sensor Voltage Low Pull Up Type case, which practice should be avoided?
+Module: FRP Sensor Voltage Low Pull Up Type
+  A. Checking service information and TSBs
+  B. Road testing after a repair
+  C. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  D. Recording measurements before clearing codes
+8. After repairing a fault found under FRP Sensor Voltage Low Pull Down Type, how do you verify the
+repair?
+Module: FRP Sensor Voltage Low Pull Down Type
+  A. Turn the warning lamp bulb check off
+  B. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  C. Clear the codes in the bay and release the vehicle immediately
+  D. Drive around the block once with the scan tool disconnected
+9. Two tests disagree during FRP Sensor Voltage High Pull Up Type - the live data looks normal but the fault
+returns under load. What is the best next move?
+Module: FRP Sensor Voltage High Pull Up Type
+  A. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  B. Replace both the sensor and the module at once
+  C. Tell the customer the fault is normal
+  D. Erase the code history so it cannot return
+10. In FRP Sensor Voltage High Pull Down Type, what does the diagnostic trouble code actually tell you?
+Module: FRP Sensor Voltage High Pull Down Type
+  A. That the wiring has already been proven good
+  B. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  C. The exact part to replace without further testing
+  D. That the fault is intermittent and can be ignored
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                        Quiz 12 - Questions 6-10
+QUIZ 13 OF 21
+
+Course 13: Diesel Pressure Regulator Diagnostics
+
+Name:                       Date:                Score: ___ / 10
+
+  Modules covered (3):
+      Diesel Pressure Regulator Performance
+      Diesel Pressure Regulator Voltage Low
+      Diesel Pressure Regulator Voltage High
+
+1. When testing for Diesel Pressure Regulator Performance, which measurement approach gives a
+trustworthy result?
+Module: Diesel Pressure Regulator Performance
+  A. Rely on the code description instead of measuring
+  B. Back-probe every wire until one reads battery voltage
+  C. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  D. Measure once, key off, on a cold engine only
+2. A confirmed fault in Diesel Pressure Regulator Voltage Low most directly points to which cause?
+Module: Diesel Pressure Regulator Voltage Low
+  A. Old engine oil changing the electrical signal
+  B. A short to ground on the signal circuit, a lost reference feed, or the component pulling the signal down to
+  ground
+  C. A discharged battery on every vehicle with this code
+  D. Low tire pressure changing the module calculation
+3. On a scan tool, what should you check first for Diesel Pressure Regulator Voltage High?
+Module: Diesel Pressure Regulator Voltage High
+  A. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  B. Only the odometer reading
+  C. The radio volume PID
+  D. Whether the code can be cleared from the home screen
+4. Before condemning a component in Diesel Pressure Regulator Performance, which wiring check is
+essential?
+Module: Diesel Pressure Regulator Performance
+  A. Wiggle the harness once and replace the part if nothing changes
+  B. Check only the fuse and stop there
+  C. Spray every connector with water and watch for a change
+  D. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+5. What component-level test best supports a diagnosis in Diesel Pressure Regulator Voltage Low?
+Module: Diesel Pressure Regulator Voltage Low
+  A. Hit the component lightly and listen for a rattle only
+  B. Read the part number and order a replacement on that alone
+  C. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  D. Swap in a part from another vehicle and hope the code stays away
+
+Diagnostics Pop Quizzes - Practice Material                                                      Quiz 13 - Questions 1-5
+QUIZ 13 - CONTINUED
+
+Course 13: Diesel Pressure Regulator Diagnostics
+
+6. During a Diesel Pressure Regulator Voltage High case, which practice should be avoided?
+Module: Diesel Pressure Regulator Voltage High
+  A. Road testing after a repair
+  B. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  C. Recording measurements before clearing codes
+  D. Checking service information and TSBs
+7. After repairing a fault found under Diesel Pressure Regulator Performance, how do you verify the repair?
+Module: Diesel Pressure Regulator Performance
+  A. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  B. Clear the codes in the bay and release the vehicle immediately
+  C. Drive around the block once with the scan tool disconnected
+  D. Turn the warning lamp bulb check off
+8. Two tests disagree during Diesel Pressure Regulator Voltage Low - the live data looks normal but the
+fault returns under load. What is the best next move?
+Module: Diesel Pressure Regulator Voltage Low
+  A. Replace both the sensor and the module at once
+  B. Tell the customer the fault is normal
+  C. Erase the code history so it cannot return
+  D. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+9. In Diesel Pressure Regulator Voltage High, what does the diagnostic trouble code actually tell you?
+Module: Diesel Pressure Regulator Voltage High
+  A. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  B. The exact part to replace without further testing
+  C. That the fault is intermittent and can be ignored
+  D. That the wiring has already been proven good
+10. You start work on a case covered by Diesel Pressure Regulator Performance. What is the correct first
+step?
+Module: Diesel Pressure Regulator Performance
+  A. Replace the most commonly failed part for that code
+  B. Clear the codes and return the vehicle
+  C. Disconnect the battery and wait for the relearn
+  D. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                        Quiz 13 - Questions 6-10
+QUIZ 14 OF 21
+
+Course 14: Turbocharger Diagnostics
+
+Name:                       Date:                 Score: ___ / 10
+
+  Modules covered (4):
+      Turbocharger Wastegate Type Under Boost
+      Turbocharger Wastegate Type Overboost
+      Turbocharger VGT Type Under Boost
+      Turbocharger VGT Type Overboost
+
+1. A confirmed fault in Turbocharger Wastegate Type Under Boost most directly points to which cause?
+Module: Turbocharger Wastegate Type Under Boost
+  A. A boost leak, restricted intake/exhaust, or a wastegate/VGT stuck open so boost cannot build
+  B. A discharged battery on every vehicle with this code
+  C. Low tire pressure changing the module calculation
+  D. Old engine oil changing the electrical signal
+2. On a scan tool, what should you check first for Turbocharger Wastegate Type Overboost?
+Module: Turbocharger Wastegate Type Overboost
+  A. Only the odometer reading
+  B. The radio volume PID
+  C. Whether the code can be cleared from the home screen
+  D. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+3. Before condemning a component in Turbocharger VGT Type Under Boost, which wiring check is
+essential?
+Module: Turbocharger VGT Type Under Boost
+  A. Check only the fuse and stop there
+  B. Spray every connector with water and watch for a change
+  C. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  D. Wiggle the harness once and replace the part if nothing changes
+4. What component-level test best supports a diagnosis in Turbocharger VGT Type Overboost?
+Module: Turbocharger VGT Type Overboost
+  A. Read the part number and order a replacement on that alone
+  B. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  C. Swap in a part from another vehicle and hope the code stays away
+  D. Hit the component lightly and listen for a rattle only
+5. During a Turbocharger Wastegate Type Under Boost case, which practice should be avoided?
+Module: Turbocharger Wastegate Type Under Boost
+  A. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  B. Recording measurements before clearing codes
+  C. Checking service information and TSBs
+  D. Road testing after a repair
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                    Quiz 14 - Questions 1-5
+QUIZ 14 - CONTINUED
+
+Course 14: Turbocharger Diagnostics
+
+6. After repairing a fault found under Turbocharger Wastegate Type Overboost, how do you verify the
+repair?
+Module: Turbocharger Wastegate Type Overboost
+  A. Clear the codes in the bay and release the vehicle immediately
+  B. Drive around the block once with the scan tool disconnected
+  C. Turn the warning lamp bulb check off
+  D. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+7. Two tests disagree during Turbocharger VGT Type Under Boost - the live data looks normal but the fault
+returns under load. What is the best next move?
+Module: Turbocharger VGT Type Under Boost
+  A. Tell the customer the fault is normal
+  B. Erase the code history so it cannot return
+  C. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  D. Replace both the sensor and the module at once
+8. In Turbocharger VGT Type Overboost, what does the diagnostic trouble code actually tell you?
+Module: Turbocharger VGT Type Overboost
+  A. The exact part to replace without further testing
+  B. That the fault is intermittent and can be ignored
+  C. That the wiring has already been proven good
+  D. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+9. You start work on a case covered by Turbocharger Wastegate Type Under Boost. What is the correct first
+step?
+Module: Turbocharger Wastegate Type Under Boost
+  A. Clear the codes and return the vehicle
+  B. Disconnect the battery and wait for the relearn
+  C. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  D. Replace the most commonly failed part for that code
+10. When testing for Turbocharger Wastegate Type Overboost, which measurement approach gives a
+trustworthy result?
+Module: Turbocharger Wastegate Type Overboost
+  A. Back-probe every wire until one reads battery voltage
+  B. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  C. Measure once, key off, on a cold engine only
+  D. Rely on the code description instead of measuring
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                        Quiz 14 - Questions 6-10
+QUIZ 15 OF 21
+
+Course 15: Oxygen Sensor Diagnostics
+
+Name:                       Date:                  Score: ___ / 10
+
+  Modules covered (3):
+      Narrow Band Oxygen Sensor Poor Performance
+      Narrow Band Oxygen Sensor Heater Circuit
+      Wide Band Oxygen Sensor Pump Circuit Low
+
+1. On a scan tool, what should you check first for Narrow Band Oxygen Sensor Poor Performance?
+Module: Narrow Band Oxygen Sensor Poor Performance
+  A. The radio volume PID
+  B. Whether the code can be cleared from the home screen
+  C. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  D. Only the odometer reading
+2. Before condemning a component in Narrow Band Oxygen Sensor Heater Circuit, which wiring check is
+essential?
+Module: Narrow Band Oxygen Sensor Heater Circuit
+  A. Spray every connector with water and watch for a change
+  B. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  C. Wiggle the harness once and replace the part if nothing changes
+  D. Check only the fuse and stop there
+3. What component-level test best supports a diagnosis in Wide Band Oxygen Sensor Pump Circuit Low?
+Module: Wide Band Oxygen Sensor Pump Circuit Low
+  A. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  B. Swap in a part from another vehicle and hope the code stays away
+  C. Hit the component lightly and listen for a rattle only
+  D. Read the part number and order a replacement on that alone
+4. During a Narrow Band Oxygen Sensor Poor Performance case, which practice should be avoided?
+Module: Narrow Band Oxygen Sensor Poor Performance
+  A. Recording measurements before clearing codes
+  B. Checking service information and TSBs
+  C. Road testing after a repair
+  D. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+5. After repairing a fault found under Narrow Band Oxygen Sensor Heater Circuit, how do you verify the
+repair?
+Module: Narrow Band Oxygen Sensor Heater Circuit
+  A. Drive around the block once with the scan tool disconnected
+  B. Turn the warning lamp bulb check off
+  C. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  D. Clear the codes in the bay and release the vehicle immediately
+
+Diagnostics Pop Quizzes - Practice Material                                                     Quiz 15 - Questions 1-5
+QUIZ 15 - CONTINUED
+
+Course 15: Oxygen Sensor Diagnostics
+
+6. Two tests disagree during Wide Band Oxygen Sensor Pump Circuit Low - the live data looks normal but
+the fault returns under load. What is the best next move?
+Module: Wide Band Oxygen Sensor Pump Circuit Low
+  A. Erase the code history so it cannot return
+  B. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  C. Replace both the sensor and the module at once
+  D. Tell the customer the fault is normal
+7. In Narrow Band Oxygen Sensor Poor Performance, what does the diagnostic trouble code actually tell
+you?
+Module: Narrow Band Oxygen Sensor Poor Performance
+  A. That the fault is intermittent and can be ignored
+  B. That the wiring has already been proven good
+  C. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  D. The exact part to replace without further testing
+8. You start work on a case covered by Narrow Band Oxygen Sensor Heater Circuit. What is the correct first
+step?
+Module: Narrow Band Oxygen Sensor Heater Circuit
+  A. Disconnect the battery and wait for the relearn
+  B. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  C. Replace the most commonly failed part for that code
+  D. Clear the codes and return the vehicle
+9. When testing for Wide Band Oxygen Sensor Pump Circuit Low, which measurement approach gives a
+trustworthy result?
+Module: Wide Band Oxygen Sensor Pump Circuit Low
+  A. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  B. Measure once, key off, on a cold engine only
+  C. Rely on the code description instead of measuring
+  D. Back-probe every wire until one reads battery voltage
+10. A confirmed fault in Narrow Band Oxygen Sensor Poor Performance most directly points to which
+cause?
+Module: Narrow Band Oxygen Sensor Poor Performance
+  A. A discharged battery on every vehicle with this code
+  B. Low tire pressure changing the module calculation
+  C. Old engine oil changing the electrical signal
+  D. A biased, drifting or intermittent signal that stays in range electrically but does not match actual operating
+  conditions
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                        Quiz 15 - Questions 6-10
+QUIZ 16 OF 21
+
+Course 16: EGR Diagnostics
+
+Name:                       Date:               Score: ___ / 10
+
+  Modules covered (4):
+      EGR Flow Diagnostics
+      EGR Position Signal Voltage Low
+      EGR Position Signal Voltage High
+      EGR Signal Performance
+
+1. Before condemning a component in EGR Flow Diagnostics, which wiring check is essential?
+Module: EGR Flow Diagnostics
+  A. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  B. Wiggle the harness once and replace the part if nothing changes
+  C. Check only the fuse and stop there
+  D. Spray every connector with water and watch for a change
+2. What component-level test best supports a diagnosis in EGR Position Signal Voltage Low?
+Module: EGR Position Signal Voltage Low
+  A. Swap in a part from another vehicle and hope the code stays away
+  B. Hit the component lightly and listen for a rattle only
+  C. Read the part number and order a replacement on that alone
+  D. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+3. During a EGR Position Signal Voltage High case, which practice should be avoided?
+Module: EGR Position Signal Voltage High
+  A. Checking service information and TSBs
+  B. Road testing after a repair
+  C. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  D. Recording measurements before clearing codes
+4. After repairing a fault found under EGR Signal Performance, how do you verify the repair?
+Module: EGR Signal Performance
+  A. Turn the warning lamp bulb check off
+  B. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  C. Clear the codes in the bay and release the vehicle immediately
+  D. Drive around the block once with the scan tool disconnected
+5. Two tests disagree during EGR Flow Diagnostics - the live data looks normal but the fault returns under
+load. What is the best next move?
+Module: EGR Flow Diagnostics
+  A. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  B. Replace both the sensor and the module at once
+  C. Tell the customer the fault is normal
+  D. Erase the code history so it cannot return
+
+Diagnostics Pop Quizzes - Practice Material                                                     Quiz 16 - Questions 1-5
+QUIZ 16 - CONTINUED
+
+Course 16: EGR Diagnostics
+
+6. In EGR Position Signal Voltage Low, what does the diagnostic trouble code actually tell you?
+Module: EGR Position Signal Voltage Low
+  A. That the wiring has already been proven good
+  B. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  C. The exact part to replace without further testing
+  D. That the fault is intermittent and can be ignored
+7. You start work on a case covered by EGR Position Signal Voltage High. What is the correct first step?
+Module: EGR Position Signal Voltage High
+  A. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  B. Replace the most commonly failed part for that code
+  C. Clear the codes and return the vehicle
+  D. Disconnect the battery and wait for the relearn
+8. When testing for EGR Signal Performance, which measurement approach gives a trustworthy result?
+Module: EGR Signal Performance
+  A. Measure once, key off, on a cold engine only
+  B. Rely on the code description instead of measuring
+  C. Back-probe every wire until one reads battery voltage
+  D. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+9. A confirmed fault in EGR Flow Diagnostics most directly points to which cause?
+Module: EGR Flow Diagnostics
+  A. Low tire pressure changing the module calculation
+  B. Old engine oil changing the electrical signal
+  C. A circuit, connection or component fault in that system, proven by measuring the circuit rather than guessing
+  from the code alone
+  D. A discharged battery on every vehicle with this code
+10. On a scan tool, what should you check first for EGR Position Signal Voltage Low?
+Module: EGR Position Signal Voltage Low
+  A. Whether the code can be cleared from the home screen
+  B. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  C. Only the odometer reading
+  D. The radio volume PID
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                        Quiz 16 - Questions 6-10
+QUIZ 17 OF 21
+
+Course 17: DPF Pressure Sensor Diagnostics
+
+Name:                     Date:                    Score: ___ / 10
+
+  Modules covered (4):
+     DPF Pressure Sensor Voltage High Pull Up Type
+     DPF Pressure Sensor Voltage High Pull Down Type
+     DPF Pressure Sensor Voltage Low Pull Up Type
+     DPF Pressure Sensor Voltage Low Pull Down Type
+
+1. What component-level test best supports a diagnosis in DPF Pressure Sensor Voltage High Pull Up
+Type?
+Module: DPF Pressure Sensor Voltage High Pull Up Type
+  A. Hit the component lightly and listen for a rattle only
+  B. Read the part number and order a replacement on that alone
+  C. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  D. Swap in a part from another vehicle and hope the code stays away
+2. During a DPF Pressure Sensor Voltage High Pull Down Type case, which practice should be avoided?
+Module: DPF Pressure Sensor Voltage High Pull Down Type
+  A. Road testing after a repair
+  B. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  C. Recording measurements before clearing codes
+  D. Checking service information and TSBs
+3. After repairing a fault found under DPF Pressure Sensor Voltage Low Pull Up Type, how do you verify the
+repair?
+Module: DPF Pressure Sensor Voltage Low Pull Up Type
+  A. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  B. Clear the codes in the bay and release the vehicle immediately
+  C. Drive around the block once with the scan tool disconnected
+  D. Turn the warning lamp bulb check off
+4. Two tests disagree during DPF Pressure Sensor Voltage Low Pull Down Type - the live data looks normal
+but the fault returns under load. What is the best next move?
+Module: DPF Pressure Sensor Voltage Low Pull Down Type
+  A. Replace both the sensor and the module at once
+  B. Tell the customer the fault is normal
+  C. Erase the code history so it cannot return
+  D. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+5. In DPF Pressure Sensor Voltage High Pull Up Type, what does the diagnostic trouble code actually tell
+you?
+Module: DPF Pressure Sensor Voltage High Pull Up Type
+   A. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+   named part has failed
+   B. The exact part to replace without further testing
+   C. That the
+Diagnostics Pop fault is intermittent
+                Quizzes                and can be ignored
+                          - Practice Material                                                        Quiz 17 - Questions 1-5
+   D. That the wiring has already been proven good
+QUIZ 17 - CONTINUED
+
+Course 17: DPF Pressure Sensor Diagnostics
+
+6. You start work on a case covered by DPF Pressure Sensor Voltage High Pull Down Type. What is the
+correct first step?
+Module: DPF Pressure Sensor Voltage High Pull Down Type
+  A. Replace the most commonly failed part for that code
+  B. Clear the codes and return the vehicle
+  C. Disconnect the battery and wait for the relearn
+  D. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+7. When testing for DPF Pressure Sensor Voltage Low Pull Up Type, which measurement approach gives a
+trustworthy result?
+Module: DPF Pressure Sensor Voltage Low Pull Up Type
+  A. Rely on the code description instead of measuring
+  B. Back-probe every wire until one reads battery voltage
+  C. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  D. Measure once, key off, on a cold engine only
+8. A confirmed fault in DPF Pressure Sensor Voltage Low Pull Down Type most directly points to which
+cause?
+Module: DPF Pressure Sensor Voltage Low Pull Down Type
+  A. Old engine oil changing the electrical signal
+  B. A short to ground on the signal circuit, a lost reference feed, or the component pulling the signal down to
+  ground
+  C. A discharged battery on every vehicle with this code
+  D. Low tire pressure changing the module calculation
+9. On a scan tool, what should you check first for DPF Pressure Sensor Voltage High Pull Up Type?
+Module: DPF Pressure Sensor Voltage High Pull Up Type
+  A. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  B. Only the odometer reading
+  C. The radio volume PID
+  D. Whether the code can be cleared from the home screen
+10. Before condemning a component in DPF Pressure Sensor Voltage High Pull Down Type, which wiring
+check is essential?
+Module: DPF Pressure Sensor Voltage High Pull Down Type
+  A. Wiggle the harness once and replace the part if nothing changes
+  B. Check only the fuse and stop there
+  C. Spray every connector with water and watch for a change
+  D. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                     Quiz 17 - Questions 6-10
+QUIZ 18 OF 21
+
+Course 18: Vehicle Network Diagnostics
+
+Name:                      Date:                    Score: ___ / 10
+
+  Modules covered (6):
+     CAN HS Short Circuit to Diagnostics
+     CAN HS Short to Ground or Voltage Diagnostics
+     CAN HS Open Circuit Diagnostics
+     LIN Bus Diagnostics
+     MOST Optical Diagnostics
+     Low Speed Bus Diagnostics
+
+1. During a CAN HS Short Circuit to Diagnostics case, which practice should be avoided?
+Module: CAN HS Short Circuit to Diagnostics
+  A. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  B. Recording measurements before clearing codes
+  C. Checking service information and TSBs
+  D. Road testing after a repair
+2. After repairing a fault found under CAN HS Short to Ground or Voltage Diagnostics, how do you verify
+the repair?
+Module: CAN HS Short to Ground or Voltage Diagnostics
+  A. Clear the codes in the bay and release the vehicle immediately
+  B. Drive around the block once with the scan tool disconnected
+  C. Turn the warning lamp bulb check off
+  D. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+3. Two tests disagree during CAN HS Open Circuit Diagnostics - the live data looks normal but the fault
+returns under load. What is the best next move?
+Module: CAN HS Open Circuit Diagnostics
+  A. Tell the customer the fault is normal
+  B. Erase the code history so it cannot return
+  C. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  D. Replace both the sensor and the module at once
+4. In LIN Bus Diagnostics, what does the diagnostic trouble code actually tell you?
+Module: LIN Bus Diagnostics
+  A. The exact part to replace without further testing
+  B. That the fault is intermittent and can be ignored
+  C. That the wiring has already been proven good
+  D. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+5. You start work on a case covered by MOST Optical Diagnostics. What is the correct first step?
+Module: MOST Optical Diagnostics
+   A. Clear the codes and return the vehicle
+   B. Disconnect the battery and wait for the relearn
+   C. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+   D. Replace
+Diagnostics Pop the most- Practice
+                Quizzes   commonly     failed part for that code
+                                   Material                                                    Quiz 18 - Questions 1-5
+QUIZ 18 - CONTINUED
+
+Course 18: Vehicle Network Diagnostics
+
+6. When testing for Low Speed Bus Diagnostics, which measurement approach gives a trustworthy result?
+Module: Low Speed Bus Diagnostics
+  A. Back-probe every wire until one reads battery voltage
+  B. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  C. Measure once, key off, on a cold engine only
+  D. Rely on the code description instead of measuring
+7. A confirmed fault in CAN HS Short Circuit to Diagnostics most directly points to which cause?
+Module: CAN HS Short Circuit to Diagnostics
+  A. A wiring, terminating-resistor, power/ground or module fault on the network that stops clean data transfer
+  B. A discharged battery on every vehicle with this code
+  C. Low tire pressure changing the module calculation
+  D. Old engine oil changing the electrical signal
+8. On a scan tool, what should you check first for CAN HS Short to Ground or Voltage Diagnostics?
+Module: CAN HS Short to Ground or Voltage Diagnostics
+  A. Only the odometer reading
+  B. The radio volume PID
+  C. Whether the code can be cleared from the home screen
+  D. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+9. Before condemning a component in CAN HS Open Circuit Diagnostics, which wiring check is essential?
+Module: CAN HS Open Circuit Diagnostics
+  A. Check only the fuse and stop there
+  B. Spray every connector with water and watch for a change
+  C. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  D. Wiggle the harness once and replace the part if nothing changes
+10. What component-level test best supports a diagnosis in LIN Bus Diagnostics?
+Module: LIN Bus Diagnostics
+  A. Read the part number and order a replacement on that alone
+  B. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  C. Swap in a part from another vehicle and hope the code stays away
+  D. Hit the component lightly and listen for a rattle only
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                    Quiz 18 - Questions 6-10
+QUIZ 19 OF 21
+
+Course 19: Accelerator Pedal Position Diagnostics
+
+Name:                       Date:                         Score: ___ / 10
+
+  Modules covered (4):
+      Accelerator Pedal Position Diagnostics
+      Accelerator Pedal Position Signal Not Plausible
+      Accelerator Pedal Position Signal Voltage Low
+      Accelerator Pedal Position Signal Voltage High
+
+1. After repairing a fault found under Accelerator Pedal Position Diagnostics, how do you verify the repair?
+Module: Accelerator Pedal Position Diagnostics
+  A. Drive around the block once with the scan tool disconnected
+  B. Turn the warning lamp bulb check off
+  C. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  D. Clear the codes in the bay and release the vehicle immediately
+2. Two tests disagree during Accelerator Pedal Position Signal Not Plausible - the live data looks normal
+but the fault returns under load. What is the best next move?
+Module: Accelerator Pedal Position Signal Not Plausible
+  A. Erase the code history so it cannot return
+  B. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  C. Replace both the sensor and the module at once
+  D. Tell the customer the fault is normal
+3. In Accelerator Pedal Position Signal Voltage Low, what does the diagnostic trouble code actually tell
+you?
+Module: Accelerator Pedal Position Signal Voltage Low
+  A. That the fault is intermittent and can be ignored
+  B. That the wiring has already been proven good
+  C. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  D. The exact part to replace without further testing
+4. You start work on a case covered by Accelerator Pedal Position Signal Voltage High. What is the correct
+first step?
+Module: Accelerator Pedal Position Signal Voltage High
+  A. Disconnect the battery and wait for the relearn
+  B. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  C. Replace the most commonly failed part for that code
+  D. Clear the codes and return the vehicle
+5. When testing for Accelerator Pedal Position Diagnostics, which measurement approach gives a
+trustworthy result?
+Module: Accelerator Pedal Position Diagnostics
+   A. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+   as conditions change
+   B. Measure once, key off, on a cold engine only
+   C. Rely on the code description instead of measuring
+   D. Back-probe
+Diagnostics        every- Practice
+            Pop Quizzes   wire until one reads battery voltage
+                                   Material                                                       Quiz 19 - Questions 1-5
+QUIZ 19 - CONTINUED
+
+Course 19: Accelerator Pedal Position Diagnostics
+
+6. A confirmed fault in Accelerator Pedal Position Signal Not Plausible most directly points to which cause?
+Module: Accelerator Pedal Position Signal Not Plausible
+  A. A discharged battery on every vehicle with this code
+  B. Low tire pressure changing the module calculation
+  C. Old engine oil changing the electrical signal
+  D. A biased, drifting or intermittent signal that stays in range electrically but does not match actual operating
+  conditions
+7. On a scan tool, what should you check first for Accelerator Pedal Position Signal Voltage Low?
+Module: Accelerator Pedal Position Signal Voltage Low
+  A. The radio volume PID
+  B. Whether the code can be cleared from the home screen
+  C. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  D. Only the odometer reading
+8. Before condemning a component in Accelerator Pedal Position Signal Voltage High, which wiring check
+is essential?
+Module: Accelerator Pedal Position Signal Voltage High
+  A. Spray every connector with water and watch for a change
+  B. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  C. Wiggle the harness once and replace the part if nothing changes
+  D. Check only the fuse and stop there
+9. What component-level test best supports a diagnosis in Accelerator Pedal Position Diagnostics?
+Module: Accelerator Pedal Position Diagnostics
+  A. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  B. Swap in a part from another vehicle and hope the code stays away
+  C. Hit the component lightly and listen for a rattle only
+  D. Read the part number and order a replacement on that alone
+10. During a Accelerator Pedal Position Signal Not Plausible case, which practice should be avoided?
+Module: Accelerator Pedal Position Signal Not Plausible
+  A. Recording measurements before clearing codes
+  B. Checking service information and TSBs
+  C. Road testing after a repair
+  D. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                       Quiz 19 - Questions 6-10
+QUIZ 20 OF 21
+
+Course 20: Electronic Stability Program Diagnostics
+
+Name:                       Date:                    Score: ___ / 10
+
+  Modules covered (3):
+      Steering and Angle Sensor Voltage High Diagnostics
+      YAW Sensor Communication Fault
+      ESP Bus Diagnostics
+
+1. Two tests disagree during Steering and Angle Sensor Voltage High Diagnostics - the live data looks
+normal but the fault returns under load. What is the best next move?
+Module: Steering and Angle Sensor Voltage High Diagnostics
+  A. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+  B. Replace both the sensor and the module at once
+  C. Tell the customer the fault is normal
+  D. Erase the code history so it cannot return
+2. In YAW Sensor Communication Fault, what does the diagnostic trouble code actually tell you?
+Module: YAW Sensor Communication Fault
+  A. That the wiring has already been proven good
+  B. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  C. The exact part to replace without further testing
+  D. That the fault is intermittent and can be ignored
+3. You start work on a case covered by ESP Bus Diagnostics. What is the correct first step?
+Module: ESP Bus Diagnostics
+  A. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+  B. Replace the most commonly failed part for that code
+  C. Clear the codes and return the vehicle
+  D. Disconnect the battery and wait for the relearn
+4. When testing for Steering and Angle Sensor Voltage High Diagnostics, which measurement approach
+gives a trustworthy result?
+Module: Steering and Angle Sensor Voltage High Diagnostics
+  A. Measure once, key off, on a cold engine only
+  B. Rely on the code description instead of measuring
+  C. Back-probe every wire until one reads battery voltage
+  D. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+5. A confirmed fault in YAW Sensor Communication Fault most directly points to which cause?
+Module: YAW Sensor Communication Fault
+  A. Low tire pressure changing the module calculation
+  B. Old engine oil changing the electrical signal
+  C. A wiring, terminating-resistor, power/ground or module fault on the network that stops clean data transfer
+  D. A discharged battery on every vehicle with this code
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 20 - Questions 1-5
+QUIZ 20 - CONTINUED
+
+Course 20: Electronic Stability Program Diagnostics
+
+6. On a scan tool, what should you check first for ESP Bus Diagnostics?
+Module: ESP Bus Diagnostics
+  A. Whether the code can be cleared from the home screen
+  B. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  C. Only the odometer reading
+  D. The radio volume PID
+7. Before condemning a component in Steering and Angle Sensor Voltage High Diagnostics, which wiring
+check is essential?
+Module: Steering and Angle Sensor Voltage High Diagnostics
+  A. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+  B. Wiggle the harness once and replace the part if nothing changes
+  C. Check only the fuse and stop there
+  D. Spray every connector with water and watch for a change
+8. What component-level test best supports a diagnosis in YAW Sensor Communication Fault?
+Module: YAW Sensor Communication Fault
+  A. Swap in a part from another vehicle and hope the code stays away
+  B. Hit the component lightly and listen for a rattle only
+  C. Read the part number and order a replacement on that alone
+  D. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+9. During a ESP Bus Diagnostics case, which practice should be avoided?
+Module: ESP Bus Diagnostics
+  A. Checking service information and TSBs
+  B. Road testing after a repair
+  C. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  D. Recording measurements before clearing codes
+10. After repairing a fault found under Steering and Angle Sensor Voltage High Diagnostics, how do you
+verify the repair?
+Module: Steering and Angle Sensor Voltage High Diagnostics
+  A. Turn the warning lamp bulb check off
+  B. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  C. Clear the codes in the bay and release the vehicle immediately
+  D. Drive around the block once with the scan tool disconnected
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                    Quiz 20 - Questions 6-10
+QUIZ 21 OF 21
+
+Course 21: SRS Diagnostics
+
+Name:                       Date:                 Score: ___ / 10
+
+  Modules covered (4):
+      SRS Airbag Short to Ground Diagnostics
+      SRS Airbag Short to Voltage Diagnostics
+      SRS Airbag Open Circuit Diagnostics
+      SRS Pertinent Diagnostics
+
+1. In SRS Airbag Short to Ground Diagnostics, what does the diagnostic trouble code actually tell you?
+Module: SRS Airbag Short to Ground Diagnostics
+  A. The fault area and the conditions the module detected - it is the starting point for testing, not proof that a
+  named part has failed
+  B. The exact part to replace without further testing
+  C. That the fault is intermittent and can be ignored
+  D. That the wiring has already been proven good
+2. You start work on a case covered by SRS Airbag Short to Voltage Diagnostics. What is the correct first
+step?
+Module: SRS Airbag Short to Voltage Diagnostics
+  A. Replace the most commonly failed part for that code
+  B. Clear the codes and return the vehicle
+  C. Disconnect the battery and wait for the relearn
+  D. Verify the complaint, check for DTCs and freeze-frame data, and review service information for that system
+3. When testing for SRS Airbag Open Circuit Diagnostics, which measurement approach gives a
+trustworthy result?
+Module: SRS Airbag Open Circuit Diagnostics
+  A. Rely on the code description instead of measuring
+  B. Back-probe every wire until one reads battery voltage
+  C. Measure under the conditions that set the fault, compare to specification, and watch the live reading change
+  as conditions change
+  D. Measure once, key off, on a cold engine only
+4. A confirmed fault in SRS Pertinent Diagnostics most directly points to which cause?
+Module: SRS Pertinent Diagnostics
+  A. Old engine oil changing the electrical signal
+  B. A circuit, connection or component fault in that system, proven by measuring the circuit rather than guessing
+  from the code alone
+  C. A discharged battery on every vehicle with this code
+  D. Low tire pressure changing the module calculation
+5. On a scan tool, what should you check first for SRS Airbag Short to Ground Diagnostics?
+Module: SRS Airbag Short to Ground Diagnostics
+  A. The related live data PID against a known-good value, plus freeze frame and any related codes set at the
+  same time
+  B. Only the odometer reading
+  C. The radio volume PID
+  D. Whether the code can be cleared from the home screen
+
+Diagnostics Pop Quizzes - Practice Material                                                         Quiz 21 - Questions 1-5
+QUIZ 21 - CONTINUED
+
+Course 21: SRS Diagnostics
+
+6. Before condemning a component in SRS Airbag Short to Voltage Diagnostics, which wiring check is
+essential?
+Module: SRS Airbag Short to Voltage Diagnostics
+  A. Wiggle the harness once and replace the part if nothing changes
+  B. Check only the fuse and stop there
+  C. Spray every connector with water and watch for a change
+  D. Inspect the connector for spread, corroded or backed-out terminals, then load-test or voltage-drop the power,
+  ground and signal circuits
+7. What component-level test best supports a diagnosis in SRS Airbag Open Circuit Diagnostics?
+Module: SRS Airbag Open Circuit Diagnostics
+  A. Hit the component lightly and listen for a rattle only
+  B. Read the part number and order a replacement on that alone
+  C. Test the component against its specification - resistance, signal output or response to a commanded change -
+  and compare it with the circuit tests already done
+  D. Swap in a part from another vehicle and hope the code stays away
+8. During a SRS Pertinent Diagnostics case, which practice should be avoided?
+Module: SRS Pertinent Diagnostics
+  A. Road testing after a repair
+  B. Parts swapping without test results, because it can mask the fault, add new faults, and waste the customer's
+  money
+  C. Recording measurements before clearing codes
+  D. Checking service information and TSBs
+9. After repairing a fault found under SRS Airbag Short to Ground Diagnostics, how do you verify the
+repair?
+Module: SRS Airbag Short to Ground Diagnostics
+  A. Clear the codes, run the drive cycle or operating conditions that enable the monitor, and confirm the monitor
+  runs and passes with no code returning
+  B. Clear the codes in the bay and release the vehicle immediately
+  C. Drive around the block once with the scan tool disconnected
+  D. Turn the warning lamp bulb check off
+10. Two tests disagree during SRS Airbag Short to Voltage Diagnostics - the live data looks normal but the
+fault returns under load. What is the best next move?
+Module: SRS Airbag Short to Voltage Diagnostics
+  A. Replace both the sensor and the module at once
+  B. Tell the customer the fault is normal
+  C. Erase the code history so it cannot return
+  D. Recreate the exact freeze-frame conditions and graph or record the data through the fault, checking for
+  dropouts and intermittent connections
+
+
+
+
+Diagnostics Pop Quizzes - Practice Material                                                    Quiz 21 - Questions 6-10
+  SEPARATE SECTION - DO NOT PRINT WITH QUIZZES
+
+
+
+Answer Key
+All answer keys for the 21 diagnostics pop quizzes, grouped Quiz 1 through Quiz 21.
+
+This section starts after all 21 quizzes, on its own page, so the quiz pages can be printed on their own without
+the answers. Each quiz key gives the correct letter and a brief explanation for all 10 questions, plus a retake
+date and second-score line for that quiz.
+
+Target for every quiz: 9 / 10 before moving on. Review every miss against the module named in the key,
+then retake the full quiz - not just the missed questions.
+
+KEYS IN THIS SECTION
+Quiz 1. Mastering Onboard Diagnostics                      Quiz 11. Fuel System Diagnostics
+Quiz 2. Engine Misfire Diagnostics                         Quiz 12. FRP Sensor Diagnostics
+Quiz 3. NVH Principles and Diagnostics                     Quiz 13. Diesel Pressure Regulator Diagnostics
+Quiz 4. Starter Relay Diagnostics                          Quiz 14. Turbocharger Diagnostics
+Quiz 5. Oil Pressure Sensor Diagnostics                    Quiz 15. Oxygen Sensor Diagnostics
+Quiz 6. Crankshaft Sensor Diagnostics                      Quiz 16. EGR Diagnostics
+Quiz 7. Camshaft Sensor Diagnostics                        Quiz 17. DPF Pressure Sensor Diagnostics
+Quiz 8. MAF Sensor Diagnostics                             Quiz 18. Vehicle Network Diagnostics
+Quiz 9. MAP and BARO Sensor Diagnostics                    Quiz 19. Accelerator Pedal Position Diagnostics
+Quiz 10. IAT Sensor Diagnostics                            Quiz 20. Electronic Stability Program Diagnostics
+                                                           Quiz 21. SRS Diagnostics
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                            Answer Key - Start
+ANSWER KEY - QUIZ 1 OF 21
+
+Course 1: Mastering Onboard Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Strategy Based Diagnostics
+
+ 2       D          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Onboard Diagnostics Generation One
+
+ 3       C          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Onboard Diagnostics Key Elements
+
+ 4       B          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Onboard Diagnostics Key Elements Two
+
+ 5       A          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Understanding Diagnostic Trouble Codes
+
+ 6       D          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Understanding Drive Cycles
+
+ 7       C          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Drive Cycles Diagnostics
+
+ 8       B          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Control Module Power and Ground Circuit Checks
+
+ 9       A          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Strategy Based Diagnostics
+
+ 10      D          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Onboard Diagnostics Generation One
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                   Quiz 1 - Answer Key
+ANSWER KEY - QUIZ 2 OF 21
+
+Course 2: Engine Misfire Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Engine Misfire Monitoring
+
+ 2       B          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Under Minded Misfire Diagnostics
+
+ 3       A          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Automotive Thermal Imaging and Diagnostics
+
+ 4       D          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Knock Sensor Voltage High
+
+ 5       C          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Engine Misfire Monitoring
+
+ 6       B          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Under Minded Misfire Diagnostics
+
+ 7       A          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Automotive Thermal Imaging and Diagnostics
+
+ 8       D          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Knock Sensor Voltage High
+
+ 9       C          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Engine Misfire Monitoring
+
+ 10      D          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Under Minded Misfire Diagnostics
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                   Quiz 2 - Answer Key
+ANSWER KEY - QUIZ 3 OF 21
+
+Course 3: NVH Principles and Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Understanding NVH Noise
+
+ 2       D          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Understanding NVH Vibration
+
+ 3       C          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Understanding NVH Harshness
+
+ 4       B          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Understanding NVH Diagnostics
+
+ 5       A          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Understanding NVH Noise
+
+ 6       D          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Understanding NVH Vibration
+
+ 7       C          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Understanding NVH Harshness
+
+ 8       B          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Understanding NVH Diagnostics
+
+ 9       C          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Understanding NVH Noise
+
+ 10      B          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Understanding NVH Vibration
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                   Quiz 3 - Answer Key
+ANSWER KEY - QUIZ 4 OF 21
+
+Course 4: Starter Relay Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Starter Relay Circuit Malfunction Diagnostics
+
+ 2       B          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Starter Relay Circuit Voltage Low Diagnostics
+
+ 3       A          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Starter Relay Circuit Voltage High Diagnostics
+
+ 4       D          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Starter Relay Circuit Malfunction Diagnostics
+
+ 5       C          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Starter Relay Circuit Voltage Low Diagnostics
+
+ 6       B          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Starter Relay Circuit Voltage High Diagnostics
+
+ 7       A          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Starter Relay Circuit Malfunction Diagnostics
+
+ 8       B          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Starter Relay Circuit Voltage Low Diagnostics
+
+ 9       A          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Starter Relay Circuit Voltage High Diagnostics
+
+ 10      D          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Starter Relay Circuit Malfunction Diagnostics
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                   Quiz 4 - Answer Key
+ANSWER KEY - QUIZ 5 OF 21
+
+Course 5: Oil Pressure Sensor Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Oil Pressure Sensor Circuit Voltage Low Diagnostics
+
+ 2       D          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Oil Pressure Sensor Circuit Voltage High Diagnostics
+
+ 3       C          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Oil Pressure Sensor Signal Performance
+
+ 4       B          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Oil Pressure Sensor Circuit Voltage Low Diagnostics
+
+ 5       A          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Oil Pressure Sensor Circuit Voltage High Diagnostics
+
+ 6       D          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Oil Pressure Sensor Signal Performance
+
+ 7       A          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Oil Pressure Sensor Circuit Voltage Low Diagnostics
+
+ 8       D          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Oil Pressure Sensor Circuit Voltage High Diagnostics
+
+ 9       C          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Oil Pressure Sensor Signal Performance
+
+ 10      B          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Oil Pressure Sensor Circuit Voltage Low Diagnostics
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                   Quiz 5 - Answer Key
+ANSWER KEY - QUIZ 6 OF 21
+
+Course 6: Crankshaft Sensor Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Crankshaft Position Sensor Signal Performance
+
+ 2       B          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Crankshaft Position Sensor Signal Voltage Low
+
+ 3       A          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Crankshaft Position Sensor Signal Voltage High
+
+ 4       D          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Crankshaft Position Sensor Intermediate Signal
+
+ 5       C          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Crankshaft Position Sensor Signal Performance
+
+ 6       D          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Crankshaft Position Sensor Signal Voltage Low
+
+ 7       C          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Crankshaft Position Sensor Signal Voltage High
+
+ 8       B          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Crankshaft Position Sensor Intermediate Signal
+
+ 9       A          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Crankshaft Position Sensor Signal Performance
+
+ 10      D          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Crankshaft Position Sensor Signal Voltage Low
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                   Quiz 6 - Answer Key
+ANSWER KEY - QUIZ 7 OF 21
+
+Course 7: Camshaft Sensor Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Cam Position Actuator Valve Negative Control
+
+ 2       D          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Cam Position Actuator Valve Positive Control
+
+ 3       C          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Camshaft Position Sensor Voltage Low
+
+ 4       B          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Camshaft Position Sensor Voltage High
+
+ 5       C          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Cam Position Actuator Valve Negative Control
+
+ 6       B          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Cam Position Actuator Valve Positive Control
+
+ 7       A          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Camshaft Position Sensor Voltage Low
+
+ 8       D          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Camshaft Position Sensor Voltage High
+
+ 9       C          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Cam Position Actuator Valve Negative Control
+
+ 10      B          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Cam Position Actuator Valve Positive Control
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                   Quiz 7 - Answer Key
+ANSWER KEY - QUIZ 8 OF 21
+
+Course 8: MAF Sensor Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Mass Airflow Sensor Signal Performance
+
+ 2       B          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Mass Airflow Sensor Short to Ground
+
+ 3       A          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Mass Airflow Sensor Signal Voltage High
+
+ 4       B          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Mass Airflow Sensor Signal Performance
+
+ 5       A          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Mass Airflow Sensor Short to Ground
+
+ 6       D          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Mass Airflow Sensor Signal Voltage High
+
+ 7       C          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Mass Airflow Sensor Signal Performance
+
+ 8       B          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Mass Airflow Sensor Short to Ground
+
+ 9       A          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Mass Airflow Sensor Signal Voltage High
+
+ 10      D          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Mass Airflow Sensor Signal Performance
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                   Quiz 8 - Answer Key
+ANSWER KEY - QUIZ 9 OF 21
+
+Course 9: MAP and BARO Sensor Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: MAP Sensor Signal Performance
+
+ 2       D          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: MAP Sensor Pull Up Voltage Low
+
+ 3       A          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: MAP Sensor Pull Up Voltage High
+
+ 4       D          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: MAP Sensor Pull Down Type Voltage Low
+
+ 5       C          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: MAP Sensor Pull Down Type Voltage High
+
+ 6       B          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Barometric Sensor Signal Faults
+
+ 7       A          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Barometric Sensor Shorts to Volt and Ground
+
+ 8       D          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: MAP Sensor Signal Performance
+
+ 9       C          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: MAP Sensor Pull Up Voltage Low
+
+ 10      B          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: MAP Sensor Pull Up Voltage High
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                   Quiz 9 - Answer Key
+ANSWER KEY - QUIZ 10 OF 21
+
+Course 10: IAT Sensor Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: IAT Sensor Circuit Voltage Low
+
+ 2       D          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: IAT Sensor Circuit Voltage High
+
+ 3       C          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: IAT Sensor Signal Performance
+
+ 4       B          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: IAT Sensor Circuit Voltage Low
+
+ 5       A          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: IAT Sensor Circuit Voltage High
+
+ 6       D          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: IAT Sensor Signal Performance
+
+ 7       C          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: IAT Sensor Circuit Voltage Low
+
+ 8       B          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: IAT Sensor Circuit Voltage High
+
+ 9       A          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: IAT Sensor Signal Performance
+
+ 10      D          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: IAT Sensor Circuit Voltage Low
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 10 - Answer Key
+ANSWER KEY - QUIZ 11 OF 21
+
+Course 11: Fuel System Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Fuel Injector Circuit Low
+
+ 2       B          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Fuel Injector Circuit High
+
+ 3       A          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Fuel Trim System Too Rich
+
+ 4       D          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Fuel Trim System Too Lean
+
+ 5       C          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Evaporative System Open Circuit
+
+ 6       B          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Evaporative System Short to Ground
+
+ 7       A          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Evaporative System Short to Voltage
+
+ 8       D          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Fuel Injector Circuit Low
+
+ 9       C          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Fuel Injector Circuit High
+
+ 10      B          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Fuel Trim System Too Rich
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 11 - Answer Key
+ANSWER KEY - QUIZ 12 OF 21
+
+Course 12: FRP Sensor Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: FRP Sensor Voltage High Pull Up Type
+
+ 2       D          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: FRP Sensor Voltage High Pull Down Type
+
+ 3       C          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: FRP Sensor Voltage Low Pull Up Type
+
+ 4       B          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: FRP Sensor Voltage Low Pull Down Type
+
+ 5       A          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: FRP Sensor Voltage High Pull Up Type
+
+ 6       D          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: FRP Sensor Voltage High Pull Down Type
+
+ 7       C          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: FRP Sensor Voltage Low Pull Up Type
+
+ 8       B          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: FRP Sensor Voltage Low Pull Down Type
+
+ 9       A          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: FRP Sensor Voltage High Pull Up Type
+
+ 10      B          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: FRP Sensor Voltage High Pull Down Type
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 12 - Answer Key
+ANSWER KEY - QUIZ 13 OF 21
+
+Course 13: Diesel Pressure Regulator Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Diesel Pressure Regulator Performance
+
+ 2       B          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Diesel Pressure Regulator Voltage Low
+
+ 3       A          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Diesel Pressure Regulator Voltage High
+
+ 4       D          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Diesel Pressure Regulator Performance
+
+ 5       C          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Diesel Pressure Regulator Voltage Low
+
+ 6       B          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Diesel Pressure Regulator Voltage High
+
+ 7       A          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Diesel Pressure Regulator Performance
+
+ 8       D          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Diesel Pressure Regulator Voltage Low
+
+ 9       A          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Diesel Pressure Regulator Voltage High
+
+ 10      D          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Diesel Pressure Regulator Performance
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 13 - Answer Key
+ANSWER KEY - QUIZ 14 OF 21
+
+Course 14: Turbocharger Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Turbocharger Wastegate Type Under Boost
+
+ 2       D          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Turbocharger Wastegate Type Overboost
+
+ 3       C          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Turbocharger VGT Type Under Boost
+
+ 4       B          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Turbocharger VGT Type Overboost
+
+ 5       A          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Turbocharger Wastegate Type Under Boost
+
+ 6       D          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Turbocharger Wastegate Type Overboost
+
+ 7       C          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Turbocharger VGT Type Under Boost
+
+ 8       D          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Turbocharger VGT Type Overboost
+
+ 9       C          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Turbocharger Wastegate Type Under Boost
+
+ 10      B          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Turbocharger Wastegate Type Overboost
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 14 - Answer Key
+ANSWER KEY - QUIZ 15 OF 21
+
+Course 15: Oxygen Sensor Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Narrow Band Oxygen Sensor Poor Performance
+
+ 2       B          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Narrow Band Oxygen Sensor Heater Circuit
+
+ 3       A          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Wide Band Oxygen Sensor Pump Circuit Low
+
+ 4       D          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Narrow Band Oxygen Sensor Poor Performance
+
+ 5       C          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Narrow Band Oxygen Sensor Heater Circuit
+
+ 6       B          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Wide Band Oxygen Sensor Pump Circuit Low
+
+ 7       C          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Narrow Band Oxygen Sensor Poor Performance
+
+ 8       B          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Narrow Band Oxygen Sensor Heater Circuit
+
+ 9       A          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Wide Band Oxygen Sensor Pump Circuit Low
+
+ 10      D          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Narrow Band Oxygen Sensor Poor Performance
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 15 - Answer Key
+ANSWER KEY - QUIZ 16 OF 21
+
+Course 16: EGR Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: EGR Flow Diagnostics
+
+ 2       D          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: EGR Position Signal Voltage Low
+
+ 3       C          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: EGR Position Signal Voltage High
+
+ 4       B          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: EGR Signal Performance
+
+ 5       A          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: EGR Flow Diagnostics
+
+ 6       B          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: EGR Position Signal Voltage Low
+
+ 7       A          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: EGR Position Signal Voltage High
+
+ 8       D          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: EGR Signal Performance
+
+ 9       C          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: EGR Flow Diagnostics
+
+ 10      B          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: EGR Position Signal Voltage Low
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 16 - Answer Key
+ANSWER KEY - QUIZ 17 OF 21
+
+Course 17: DPF Pressure Sensor Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: DPF Pressure Sensor Voltage High Pull Up Type
+
+ 2       B          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: DPF Pressure Sensor Voltage High Pull Down Type
+
+ 3       A          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: DPF Pressure Sensor Voltage Low Pull Up Type
+
+ 4       D          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: DPF Pressure Sensor Voltage Low Pull Down Type
+
+ 5       A          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: DPF Pressure Sensor Voltage High Pull Up Type
+
+ 6       D          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: DPF Pressure Sensor Voltage High Pull Down Type
+
+ 7       C          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: DPF Pressure Sensor Voltage Low Pull Up Type
+
+ 8       B          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: DPF Pressure Sensor Voltage Low Pull Down Type
+
+ 9       A          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: DPF Pressure Sensor Voltage High Pull Up Type
+
+ 10      D          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: DPF Pressure Sensor Voltage High Pull Down Type
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 17 - Answer Key
+ANSWER KEY - QUIZ 18 OF 21
+
+Course 18: Vehicle Network Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: CAN HS Short Circuit to Diagnostics
+
+ 2       D          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: CAN HS Short to Ground or Voltage Diagnostics
+
+ 3       C          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: CAN HS Open Circuit Diagnostics
+
+ 4       D          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: LIN Bus Diagnostics
+
+ 5       C          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: MOST Optical Diagnostics
+
+ 6       B          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Low Speed Bus Diagnostics
+
+ 7       A          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: CAN HS Short Circuit to Diagnostics
+
+ 8       D          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: CAN HS Short to Ground or Voltage Diagnostics
+
+ 9       C          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: CAN HS Open Circuit Diagnostics
+
+ 10      B          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: LIN Bus Diagnostics
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 18 - Answer Key
+ANSWER KEY - QUIZ 19 OF 21
+
+Course 19: Accelerator Pedal Position Diagnostics
+
+ Q       Answer     Why
+
+ 1       C          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Accelerator Pedal Position Diagnostics
+
+ 2       B          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Accelerator Pedal Position Signal Not Plausible
+
+ 3       C          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: Accelerator Pedal Position Signal Voltage Low
+
+ 4       B          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: Accelerator Pedal Position Signal Voltage High
+
+ 5       A          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Accelerator Pedal Position Diagnostics
+
+ 6       D          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: Accelerator Pedal Position Signal Not Plausible
+
+ 7       C          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: Accelerator Pedal Position Signal Voltage Low
+
+ 8       B          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Accelerator Pedal Position Signal Voltage High
+
+ 9       A          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: Accelerator Pedal Position Diagnostics
+
+ 10      D          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: Accelerator Pedal Position Signal Not Plausible
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 19 - Answer Key
+ANSWER KEY - QUIZ 20 OF 21
+
+Course 20: Electronic Stability Program Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: Steering and Angle Sensor Voltage High Diagnostics
+
+ 2       B          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: YAW Sensor Communication Fault
+
+ 3       A          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: ESP Bus Diagnostics
+
+ 4       D          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: Steering and Angle Sensor Voltage High Diagnostics
+
+ 5       C          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: YAW Sensor Communication Fault
+
+ 6       B          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: ESP Bus Diagnostics
+
+ 7       A          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: Steering and Angle Sensor Voltage High Diagnostics
+
+ 8       D          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: YAW Sensor Communication Fault
+
+ 9       C          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: ESP Bus Diagnostics
+
+ 10      B          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: Steering and Angle Sensor Voltage High Diagnostics
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 20 - Answer Key
+ANSWER KEY - QUIZ 21 OF 21
+
+Course 21: SRS Diagnostics
+
+ Q       Answer     Why
+
+ 1       A          A code sets when a test fails under set conditions. It directs testing; it does not condemn a part by
+                    itself.
+                    Module: SRS Airbag Short to Ground Diagnostics
+
+ 2       D          Strategy-based work starts with verification and data. Freeze frame shows the conditions when the
+                    fault set.
+                    Module: SRS Airbag Short to Voltage Diagnostics
+
+ 3       C          Faults are condition-dependent. Testing under the set conditions and comparing to spec separates a
+                    real fault from a one-off reading.
+                    Module: SRS Airbag Open Circuit Diagnostics
+
+ 4       B          The fault description narrows the cause. Confirm it with voltage, resistance and live-data checks
+                    before replacing anything.
+                    Module: SRS Pertinent Diagnostics
+
+ 5       A          Related PIDs, freeze frame and companion codes show whether the fault is in the sensor, the circuit,
+                    or a shared power/ground.
+                    Module: SRS Airbag Short to Ground Diagnostics
+
+ 6       D          Many 'failed parts' are terminal and voltage-drop problems. A circuit that cannot carry load will make
+                    a good part read faulty.
+                    Module: SRS Airbag Short to Voltage Diagnostics
+
+ 7       C          A component is condemned only when its own measured output is out of specification on circuits
+                    already proven good.
+                    Module: SRS Airbag Open Circuit Diagnostics
+
+ 8       B          Untested parts swapping destroys the evidence in the original fault and makes the next diagnosis
+                    harder, not easier.
+                    Module: SRS Pertinent Diagnostics
+
+ 9       A          Verification means the enabling monitor actually ran. A cleared code that has not re-run its monitor is
+                    not a proven repair.
+                    Module: SRS Airbag Short to Ground Diagnostics
+
+ 10      D          Intermittent and load-dependent faults show up only under their set conditions. Graphing through the
+                    event captures the dropout.
+                    Module: SRS Airbag Short to Voltage Diagnostics
+
+
+Score: ___ / 10 Target: 9 / 10 before moving on.
+
+Retake date: ______________________               Second score: ___ / 10
+
+Review every miss against the module named in the key, then retake the full quiz - not just the missed questions.
+
+
+
+
+Diagnostics Pop Quizzes - Answer Key (Separate Section)                                                  Quiz 21 - Answer Key
+
