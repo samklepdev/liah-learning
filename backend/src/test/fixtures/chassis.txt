@@ -1,0 +1,1532 @@
+P R A C T I C E M AT E R I A L - C H A S S I S P R O G R A M
+
+
+Chassis Pop Quizzes
+11 quizzes - one per course - covering all 43 modules in the chassis completion sheet.
+
+Name:                                                          Date:
+
+How to use: Take one quiz after finishing a course. Circle the best answer (A-D), then check your
+answers in the separate Answer Key section at the back of this pack. Review the module named under
+any question you missed. Untimed on the first run; repeat the quiz later and aim for 9/10 or better before
+moving on.
+Answer keys are separate: all keys are grouped at the back, after Quiz 11, so the quizzes can be
+printed and taken without the answers.
+
+C O U R S E S I N T H I S PA C K
+
+1. Course 1 - Tire and Rim Essentials (4 modules, 10 questions)
+2. Course 2 - Best Practice Tire Fitment (3 modules, 10 questions)
+3. Course 3 - Introducing Suspension Components (6 modules, 10 questions)
+4. Course 4 - Understanding Suspension Systems (7 modules, 10 questions)
+5. Course 5 - Advanced Suspension Technology (2 modules, 10 questions)
+6. Course 6 - Complete Steering Systems (5 modules, 10 questions)
+7. Course 7 - Mastering Wheel Alignments (1 module, 10 questions)
+8. Course 8 - Braking System Essentials (6 modules, 10 questions)
+9. Course 9 - Advanced Braking System (2 modules, 10 questions)
+10. Course 10 - ABS Operations and Testing (4 modules, 10 questions)
+11. Course 11 - Park Brake Technology (3 modules, 10 questions)
+
+Total: 110 questions | Each quiz scored ___ / 10 | Target: 9/10 before moving on
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                               Cover
+C O U R S E 1 O F 11 - P O P Q U I Z
+
+Course 1: Tire and Rim Essentials
+Name:                                           Date:                                      Score: ___ / 10
+
+  MODULES COVERED (4)
+     Tire Technology
+     Tread and Rim Technology
+     Run Flat Tires
+     Tire Pressure Monitoring
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+
+1. What does the 'R' in a tire size such as 225/65R17 mean? [TIRE TECHNOLOGY]
+   A. Radial construction
+   B. Run flat rated
+   C. Reinforced sidewall
+   D. Rear fitment only
+
+2. In the size 225/65R17, what does 65 represent? [TIRE TECHNOLOGY]
+   A. The tread width in millimetres
+   B. The aspect ratio - sidewall height as 65% of width
+   C. The load index
+   D. The speed rating
+
+3. A tire's DOT date code ends in '24' for its last two digits. What does that indicate? [TIRE
+TECHNOLOGY]
+
+   A. The tire's speed rating
+   B. The week it was made
+   C. The year it was manufactured - 2024
+   D. The maximum pressure in bar
+
+4. What is the main purpose of the tread pattern's circumferential grooves? [TREAD AND RIM
+TECHNOLOGY]
+
+   A. To increase sidewall stiffness
+   B. To make the tire quieter only
+   C. To add weight
+   D. To channel water away and resist hydroplaning
+5. What does a rim's offset describe? [TREAD AND RIM TECHNOLOGY]
+   A. The distance between the mounting surface and the rim centreline
+   B. The diameter of the centre bore only
+   C. The number of lug holes
+   D. The width of the tire bead
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                Course 1 - Questions 1-5
+COURSE 1 - POP QUIZ, CONTINUED
+
+Course 1: Tire and Rim Essentials - Questions 6-10
+6. Tread wear bars level with the tread surface indicate the tire is: [TREAD AND RIM TECHNOLOGY]
+   A. Brand new
+   B. At or near the legal minimum tread depth and due for replacement
+   C. Overinflated
+   D. In need of balancing only
+
+7. How does a self-supporting run flat tire keep working after a puncture? [RUN FLAT TIRES]
+   A. It seals itself with liquid inside
+   B. Its reinforced, stiff sidewalls support the vehicle load with no air pressure
+   C. It has a solid rubber core
+   D. The rim locks the bead so air cannot escape
+
+8. After driving on a deflated run flat tire, best practice is generally to: [RUN FLAT TIRES]
+   A. Repair it like any standard tire in all cases
+   B. Drive indefinitely if it still holds shape
+   C. Replace it, because internal sidewall damage may not be visible
+   D. Increase its pressure above maximum
+
+9. A direct TPMS system measures pressure using: [TIRE PRESSURE MONITORING]
+   A. The ABS wheel speed sensors
+   B. Sensors mounted inside each wheel/tire assembly
+   C. Engine vacuum
+   D. The brake fluid level sensor
+
+10. After rotating tires on a vehicle with direct TPMS, what may be required? [TIRE PRESSURE
+MONITORING]
+
+   A. Nothing, ever
+   B. A relearn procedure so the system knows each sensor's new position
+   C. Removal of all sensors
+   D. Deflating every tire to zero
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                               Course 1 - Questions 6-10
+C O U R S E 2 O F 11 - P O P Q U I Z
+
+Course 2: Best Practice Tire Fitment
+Name:                                            Date:                                     Score: ___ / 10
+
+  MODULES COVERED (3)
+     Best Practice Standard Wheel Balancing
+     Best Practice Standard Tire Strip and Fitment
+     Best Practice Low Profile / Run Flat Tire Strip and Fit
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+
+1. Static imbalance in a wheel assembly will most likely cause: [BEST PRACTICE STANDARD WHEEL
+BALANCING]
+
+   A. A side-to-side steering shimmy only
+   B. A vertical hop or bounce as speed increases
+   C. A constant pull to one side
+   D. Excessive camber wear only
+
+2. Before balancing a wheel, best practice is to: [BEST PRACTICE STANDARD WHEEL BALANCING]
+   A. Add extra weights to compensate for dirt
+   B. Remove old weights and clean the rim and tire
+   C. Balance with the tire deflated
+   D. Spin it with the valve cap removed only
+
+3. A balancer asks for weights in two planes. This corrects: [BEST PRACTICE STANDARD WHEEL
+BALANCING]
+
+   A. Static imbalance only
+   B. Runout
+   C. Dynamic (couple) imbalance that causes wobble
+   D. Bead seating
+
+4. When stripping a tire from a rim, the bead must first be: [BEST PRACTICE STANDARD TIRE STRIP AND
+FITMENT]
+
+   A. Cut with a knife
+   B. Fully inflated
+   C. Pushed off the bead seat (broken) on both sides
+   D. Heated until soft
+
+5. Why is lubricant applied to tire beads during fitment? [BEST PRACTICE STANDARD TIRE STRIP AND
+FITMENT]
+
+   A. To glue the bead to the rim
+   B. To help the bead slide over the rim and seat without damage
+   C. To balance the wheel
+   D. To stop the tire rotating on the rim permanently
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                Course 2 - Questions 1-5
+COURSE 2 - POP QUIZ, CONTINUED
+
+Course 2: Best Practice Tire Fitment - Questions 6-10
+6. When seating beads during inflation, the technician should: [BEST PRACTICE STANDARD TIRE STRIP
+AND FITMENT]
+
+   A. Stand directly over the tire with no restraint
+   B. Exceed maximum pressure until the beads pop, whatever it takes
+   C. Use a safety cage or clip-on chuck and stay within the stated maximum seating pressure
+   D. Remove the valve core permanently
+
+7. The yellow dot on many new tires marks: [BEST PRACTICE STANDARD TIRE STRIP AND FITMENT]
+   A. The heaviest point
+   B. The lightest point, often aligned with the valve stem
+   C. A puncture repair
+   D. The maximum speed point
+
+8. Low profile and run flat tires are harder to strip and fit mainly because: [BEST PRACTICE LOW
+PROFILE / RUN FLAT TIRE STRIP AND FIT]
+
+   A. They are much heavier
+   B. Their stiff, short sidewalls flex far less over the rim
+   C. They use a different valve type only
+   D. They cannot be lubricated
+
+9. When fitting a run flat tire, the TPMS sensor is at risk during: [BEST PRACTICE LOW PROFILE / RUN
+FLAT TIRE STRIP AND FIT]
+
+   A. Balancing only
+   B. Bead breaking and lever work near the valve/sensor position
+   C. Final torque of the wheel nuts
+   D. Road testing
+
+10. Using press/roller helper arms on the changer for a stiff low profile tire helps to: [BEST
+PRACTICE LOW PROFILE / RUN FLAT TIRE STRIP AND FIT]
+
+   A. Inflate the tire faster
+   B. Keep the bead in the drop centre so it can pass over the flange without overstretching
+   C. Remove the need for lubricant
+   D. Measure tread depth
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                  Course 2 - Questions 6-10
+C O U R S E 3 O F 11 - P O P Q U I Z
+
+Course 3: Introducing Suspension Components
+Name:                                            Date:                                     Score: ___ / 10
+
+  MODULES COVERED (6)
+     Suspension System Principles
+     Suspension Component Springs
+     Suspension Component Shocks
+     Suspension Component Linkage
+     Suspension Component Anti-Roll
+     Suspension Component Bushes
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+1. Sprung mass refers to: [SUSPENSION SYSTEM PRINCIPLES]
+   A. Only the wheels and tires
+   B. The mass supported by the springs, such as body and engine
+   C. The mass below the springs only
+   D. Fuel in the tank only
+
+2. Reducing unsprung mass generally helps the tire to: [SUSPENSION SYSTEM PRINCIPLES]
+   A. Wear faster
+   B. Stay in contact with the road over bumps
+   C. Increase body roll
+   D. Raise the ride height
+
+3. A coil spring's rate describes: [SUSPENSION COMPONENT SPRINGS]
+   A. Its colour coding only
+   B. How much force is needed to compress it a given distance
+   C. Its maximum extended length
+   D. The number of coils only
+
+4. A broken or sagging spring will most directly affect: [SUSPENSION COMPONENT SPRINGS]
+   A. Ride height and wheel alignment angles
+   B. Engine power
+   C. Brake fluid level
+   D. Tire pressure readings
+
+5. The shock absorber's job is to: [SUSPENSION COMPONENT SHOCKS]
+   A. Carry the vehicle's weight
+   B. Hold the wheel alignment
+   C. Control (damp) spring oscillation after a bump
+   D. Replace the spring
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                Course 3 - Questions 1-5
+COURSE 3 - POP QUIZ, CONTINUED
+
+Course 3: Introducing Suspension Components - Questions 6-
+10
+6. A worn shock absorber will most likely cause: [SUSPENSION COMPONENT SHOCKS]
+   A. A single bounce then stop
+   B. Continued bouncing after a bump and uneven (cupped) tire wear
+   C. No change in handling
+   D. A lower engine idle
+
+7. Excess play in a suspension ball joint is best checked by: [SUSPENSION COMPONENT LINKAGE]
+   A. Looking at it only
+   B. Loading/unloading the joint as directed and measuring movement against specification
+   C. Checking tire pressure
+   D. Turning the steering to full lock only
+
+8. Control arms locate the wheel by: [SUSPENSION COMPONENT LINKAGE]
+   A. Holding brake fluid
+   B. Connecting the knuckle/hub to the body or subframe and controlling its movement path
+   C. Driving the wheel
+   D. Cooling the brakes
+
+9. An anti-roll (stabilizer) bar reduces body roll by: [SUSPENSION COMPONENT ANTI-ROLL]
+   A. Stiffening both springs permanently
+   B. Twisting to transfer load between the two sides when they move differently
+   C. Locking the steering
+   D. Lowering the centre of gravity
+
+10. Worn suspension bushes commonly cause: [SUSPENSION COMPONENT BUSHES]
+   A. Higher fuel pressure
+   B. Clunks over bumps, vague handling and uneven tire wear
+   C. A brighter headlamp beam
+   D. Faster wheel speed sensor signals
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                               Course 3 - Questions 6-10
+C O U R S E 4 O F 11 - P O P Q U I Z
+
+Course 4: Understanding Suspension Systems
+Name:                                             Date:                                       Score: ___ / 10
+
+  MODULES COVERED (7)
+     MACPERSON Strut System Components and Operation
+     MACPERSON Strut Inspection Procedures
+     Torsion Bar System Components and Operations
+     Torsion Bar Inspection Procedures
+     Double Wishbone System Components and Operations
+     Double Wishbone Inspection Procedures
+     Electronic Kinetic Dynamic Suspension
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+1. In a MacPherson strut system, the strut itself: [MACPERSON STRUT SYSTEM COMPONENTS AND
+OPERATION]
+
+   A. Is only a shock absorber and carries no load path
+   B. Forms part of the steering/suspension location, with the spring around it and a top mount to the body
+   C. Is mounted to the exhaust
+   D. Replaces the wheel bearing
+
+2. The strut top mount bearing allows: [MACPERSON STRUT SYSTEM COMPONENTS AND OPERATION]
+   A. The wheel to change diameter
+   B. The strut to rotate as the steering turns
+   C. The spring to detach
+   D. The brake disc to float
+
+3. Before removing a strut spring, the spring must be: [MACPERSON STRUT INSPECTION PROCEDURES]
+   A. Cut in half
+   B. Heated
+   C. Safely compressed with a proper spring compressor
+   D. Left fully loaded while bolts are removed
+
+4. Oil misting/leaking from a strut body and a failed bounce test indicate: [MACPERSON STRUT
+INSPECTION PROCEDURES]
+
+   A. A normal strut
+   B. A worn strut needing replacement, normally in axle pairs
+   C. Only a tire fault
+   D. A steering rack fault only
+
+5. A torsion bar spring works by: [TORSION BAR SYSTEM COMPONENTS AND OPERATIONS]
+   A. Compressing like a coil
+   B. Twisting along its length as the control arm moves
+   C. Bending a leaf pack
+   D. Trapping air
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                   Course 4 - Questions 1-5
+COURSE 4 - POP QUIZ, CONTINUED
+
+Course 4: Understanding Suspension Systems - Questions 6-
+10
+6. Ride height on a torsion bar system is commonly adjusted by: [TORSION BAR SYSTEM
+COMPONENTS AND OPERATIONS]
+
+   A. Changing tire size
+   B. Turning the anchor adjuster bolt to add or reduce bar preload (twist)
+   C. Replacing the shocks
+   D. Adding wheel weights
+
+7. During torsion bar inspection, cracking or heavy corrosion on the bar is serious because:
+[TORSION BAR INSPECTION PROCEDURES]
+
+   A. It only affects paint finish
+   B. A fatigued bar can snap suddenly under its torsional load
+   C. It changes tire pressure
+   D. It makes the bar quieter
+
+8. A double wishbone system uses: [DOUBLE WISHBONE SYSTEM COMPONENTS AND OPERATIONS]
+   A. One arm per wheel
+   B. Upper and lower arms, which control camber change through travel
+   C. A solid beam only
+   D. A torsion beam only
+9. Play found at the wheel on a double wishbone system could come from: [DOUBLE WISHBONE
+INSPECTION PROCEDURES]
+
+   A. Ball joints, arm bushes or the wheel bearing - each must be isolated to find the source
+   B. The brake fluid
+   C. The tire valve
+   D. The spring colour
+
+10. An electronic kinetic dynamic suspension system improves both roll control and off-road
+articulation by: [ELECTRONIC KINETIC DYNAMIC SUSPENSION]
+   A. Fitting stiffer bars permanently
+   B. Hydraulically/electronically controlling the anti-roll bars so they can stiffen on road and free up off road
+   C. Removing the anti-roll bars
+   D. Locking all dampers solid
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                       Course 4 - Questions 6-10
+C O U R S E 5 O F 11 - P O P Q U I Z
+
+Course 5: Advanced Suspension Technology
+Name:                                              Date:                                       Score: ___ / 10
+
+  MODULES COVERED (2)
+     Air Suspension Overview
+     Suspension Components Active Shocks
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+1. In an air suspension system, the steel coil spring is replaced by: [AIR SUSPENSION OVERVIEW]
+   A. A solid rubber block
+   B. A flexible air spring (air bag) filled with compressed air
+   C. A torsion bar
+   D. A leaf spring
+
+2. Ride height in an air suspension system is monitored by: [AIR SUSPENSION OVERVIEW]
+   A. Height sensors linked to the control module, which adds or vents air to correct height
+   B. The driver guessing
+   C. Tire pressure sensors only
+   D. The speedometer only
+
+3. The air compressor in this system primarily: [AIR SUSPENSION OVERVIEW]
+   A. Cools the engine
+   B. Supplies pressurised air to fill the springs/reservoir when height must rise
+   C. Pumps brake fluid
+   D. Charges the battery
+
+4. A vehicle that sags at one corner overnight most likely has: [AIR SUSPENSION OVERVIEW]
+   A. A faulty headlamp
+   B. An air leak at that corner's spring, line or valve
+   C. Too much fuel
+   D. A worn wiper blade
+
+5. Before jacking or lifting an air suspension vehicle, best practice is to: [AIR SUSPENSION
+OVERVIEW]
+
+   A. Ignore the system completely
+   B. Follow the maker's procedure - often selecting jack/service mode or disabling the system
+   C. Deflate the tires
+   D. Remove the battery from the car and discard it
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                    Course 5 - Questions 1-5
+COURSE 5 - POP QUIZ, CONTINUED
+
+Course 5: Advanced Suspension Technology - Questions 6-10
+6. A dryer unit is fitted in many air suspension systems to: [AIR SUSPENSION OVERVIEW]
+   A. Dry the brake discs
+   B. Remove moisture from the compressed air to protect valves and springs
+   C. Dry the cabin air only
+   D. Filter engine oil
+
+7. An active/adaptive shock absorber changes its damping by: [SUSPENSION COMPONENTS ACTIVE
+SHOCKS]
+
+   A. The driver swapping the shocks
+   B. Varying oil flow through an electrically controlled valve (or changing fluid properties) in response to
+   module commands
+   C. Changing spring rate
+   D. Moving the wheel
+
+8. Inputs an active suspension module commonly uses include: [SUSPENSION COMPONENTS ACTIVE
+SHOCKS]
+
+   A. Radio volume
+   B. Steering angle, wheel/body movement, vehicle speed and drive mode
+   C. Fuel brand
+   D. Paint colour
+
+9. In a firmer sport drive mode, active shocks will generally: [SUSPENSION COMPONENTS ACTIVE
+SHOCKS]
+
+   A. Reduce damping to minimum
+   B. Increase damping to limit body roll, pitch and dive
+   C. Turn off completely
+   D. Lock the springs solid
+10. A failed active shock electrical connector will most likely: [SUSPENSION COMPONENTS ACTIVE
+SHOCKS]
+
+   A. Have no effect at all
+   B. Set a fault code and cause that damper to default to a fixed (failsafe) damping setting
+   C. Increase engine power
+   D. Change tire size
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                     Course 5 - Questions 6-10
+C O U R S E 6 O F 11 - P O P Q U I Z
+
+Course 6: Complete Steering Systems
+Name:                                             Date:                                             Score: ___ / 10
+
+  MODULES COVERED (5)
+     Manual Steering Principles
+     Hydraulic Power Steering
+     Electro Hydraulic Power Steering
+     Electric Power Steering
+     Electric Power Steering Diagnostics
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+1. In a manual rack and pinion, turning the steering wheel moves the rack by: [MANUAL STEERING
+PRINCIPLES]
+
+   A. A hydraulic pump
+   B. The pinion gear meshing with teeth on the rack, converting rotation into linear movement
+   C. A belt drive
+   D. An electric motor
+
+2. Steering ratio describes: [MANUAL STEERING PRINCIPLES]
+   A. Tire pressure front to rear
+   B. How many degrees the steering wheel turns for a given degree of road wheel movement
+   C. The size of the steering wheel
+   D. Power steering fluid capacity
+
+3. In hydraulic power steering, assistance comes from: [HYDRAULIC POWER STEERING]
+   A. Engine vacuum only
+   B. Pressurised fluid from an engine-driven pump acting in the rack or box
+   C. An electric motor on the column
+   D. The alternator
+
+4. Heavy steering with whining noise from the pump most often indicates: [HYDRAULIC POWER
+STEERING]
+
+   A. Too much fluid
+   B. Low fluid level or air in the system (aeration)
+   C. A new belt
+   D. Normal operation in all cases
+
+5. A rotary control valve in the steering gear works to: [HYDRAULIC POWER STEERING]
+   A. Direct pressurised fluid to the correct side of the piston in proportion to steering effort
+   B. Filter the fluid
+   C. Cool the fluid
+   D. Drive the pump
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                         Course 6 - Questions 1-5
+COURSE 6 - POP QUIZ, CONTINUED
+
+Course 6: Complete Steering Systems - Questions 6-10
+6. Electro hydraulic power steering differs from conventional hydraulic steering because:
+[ELECTRO HYDRAULIC POWER STEERING]
+
+   A. It uses no fluid
+   B. Its pump is driven by an electric motor rather than directly by the engine
+   C. It has no rack
+   D. It only works when parked
+
+7. One advantage of electro hydraulic steering is that the module can: [ELECTRO HYDRAULIC POWER
+STEERING]
+
+   A. Vary pump speed with demand - running slower when no assistance is needed, saving energy
+   B. Remove the steering wheel
+   C. Change tire tread
+   D. Eliminate alignment checks
+
+8. In electric power steering (EPS), assistance is provided by: [ELECTRIC POWER STEERING]
+   A. Hydraulic fluid
+   B. An electric motor acting on the column, pinion or rack
+   C. Engine vacuum
+   D. A second steering box
+
+9. The steering torque sensor in an EPS system measures: [ELECTRIC POWER STEERING]
+   A. Road speed
+   B. How hard and in which direction the driver is turning the wheel
+   C. Tire temperature
+   D. Brake pressure
+
+10. After replacing an EPS component or performing an alignment, a scan tool procedure often
+required is: [ELECTRIC POWER STEERING DIAGNOSTICS]
+   A. Deleting all keys
+   B. Steering angle sensor calibration / zero point relearn
+   C. Draining the fuel tank
+   D. Resetting the radio
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                            Course 6 - Questions 6-10
+C O U R S E 7 O F 11 - P O P Q U I Z
+
+Course 7: Mastering Wheel Alignments
+Name:                                              Date:                                       Score: ___ / 10
+
+  MODULES COVERED (1)
+     Understanding Steering Angles
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+
+1. Camber is defined as: [UNDERSTANDING STEERING ANGLES]
+   A. The forward tilt of the steering axis
+   B. The inward or outward tilt of the top of the wheel when viewed from the front
+   C. The difference in angle between the two front wheels in a turn
+   D. The direction the rear wheels point
+
+2. Excessive negative camber will wear the tire mainly on its: [UNDERSTANDING STEERING ANGLES]
+   A. Outer shoulder
+   B. Centre
+   C. Inner shoulder
+   D. Both shoulders equally
+
+3. Caster mainly affects: [UNDERSTANDING STEERING ANGLES]
+   A. Tire pressure
+   B. Steering returnability and straight-line stability
+   C. Brake bias
+   D. Turning radius only
+
+4. Toe is best described as: [UNDERSTANDING STEERING ANGLES]
+   A. The tilt of the wheel from the front
+   B. Whether the fronts of the tires point in toward each other, out, or straight ahead, viewed from above
+   C. The height of the vehicle
+   D. The angle of the driveshaft
+
+5. Excess toe-in or toe-out will most quickly cause: [UNDERSTANDING STEERING ANGLES]
+   A. Engine wear
+   B. Feathered/scuffed tire tread wear and possible steering pull or wander
+   C. Brake fade
+   D. A dead battery
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                    Course 7 - Questions 1-5
+COURSE 7 - POP QUIZ, CONTINUED
+
+Course 7: Mastering Wheel Alignments - Questions 6-10
+6. Steering axis inclination (SAI) is: [UNDERSTANDING STEERING ANGLES]
+   A. Adjustable on every car with shims
+   B. The inward tilt of the steering axis from vertical, viewed from the front, largely set by design
+   C. The same as toe
+   D. Measured only on the rear axle
+
+7. Included angle is the combination of: [UNDERSTANDING STEERING ANGLES]
+   A. Camber plus toe
+   B. SAI plus camber
+   C. Caster plus toe
+   D. Ride height plus camber
+
+8. Thrust angle describes: [UNDERSTANDING STEERING ANGLES]
+   A. The angle of the steering wheel only
+   B. The direction the rear axle points compared with the vehicle centreline
+   C. The pitch of the body under braking
+   D. The angle of the front bumper
+
+9. Ackermann (toe-out on turns) allows: [UNDERSTANDING STEERING ANGLES]
+   A. Both front wheels to turn at exactly the same angle
+   B. The inside wheel to turn more sharply than the outside wheel, because it follows a smaller radius
+   C. The rear wheels to steer
+   D. The steering wheel to lock
+
+10. Before measuring any alignment angles, the technician should first check: [UNDERSTANDING
+STEERING ANGLES]
+
+   A. Radio presets
+   B. Ride height, tire pressures and sizes, and for worn or loose steering/suspension parts
+   C. Fuel level only and nothing else
+   D. Headlamp aim only
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                      Course 7 - Questions 6-10
+C O U R S E 8 O F 11 - P O P Q U I Z
+
+Course 8: Braking System Essentials
+Name:                                              Date:                                     Score: ___ / 10
+
+  MODULES COVERED (6)
+     Automotive Braking Principles
+     Understanding Brake Fluid
+     Brake Master Cylinder Operation
+     Disc Brake Systems
+     Drum Brake Systems Components and Operations
+     Drum Brake Systems Configuration and Maintenance
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+
+1. Brakes slow the vehicle by converting kinetic energy into: [AUTOMOTIVE BRAKING PRINCIPLES]
+   A. Electrical energy
+   B. Heat through friction
+   C. Fuel
+   D. Sound only
+
+2. Hydraulic brake force works on Pascal's principle, which states: [AUTOMOTIVE BRAKING
+PRINCIPLES]
+
+   A. Pressure in a confined fluid acts only downward
+   B. Pressure applied to a confined fluid is transmitted equally in all directions
+   C. Fluid pressure disappears in long lines
+   D. Air in the lines improves pressure
+
+3. Brake fluid must be hygroscopic-managed because it: [UNDERSTANDING BRAKE FLUID]
+   A. Repels all water forever
+   B. Absorbs moisture over time, which lowers its boiling point and can corrode parts
+   C. Is the same as engine oil
+   D. Never needs changing
+
+4. Mixing or using the wrong specification of brake fluid can cause: [UNDERSTANDING BRAKE FLUID]
+   A. Better braking in all cases
+   B. Seal swelling/damage and reduced performance - only the specified DOT grade should be used
+   C. No possible harm
+   D. The brakes to self-bleed
+
+5. A tandem master cylinder has two separate hydraulic circuits so that: [BRAKE MASTER CYLINDER
+OPERATION]
+
+   A. The brakes work twice as fast
+   B. If one circuit fails, the other can still provide braking on its wheels
+   C. Only the front brakes work
+   D. Fluid never needs topping up
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                  Course 8 - Questions 1-5
+COURSE 8 - POP QUIZ, CONTINUED
+
+Course 8: Braking System Essentials - Questions 6-10
+6. The compensating (bypass) port in the master cylinder allows: [BRAKE MASTER CYLINDER
+OPERATION]
+
+   A. Air into the system
+   B. Fluid to return to the reservoir and release pressure when the pedal is released, and make up for pad
+   wear
+   C. The pedal to lock down
+   D. Exhaust gas into the fluid
+
+7. In a disc brake, braking force is produced when: [DISC BRAKE SYSTEMS]
+   A. Shoes expand into a drum
+   B. The caliper squeezes pads against both faces of a rotating disc
+   C. Fluid boils
+   D. The handbrake cable pulls only
+
+8. A floating caliper moves on its slides so that: [DISC BRAKE SYSTEMS]
+   A. Only the inner pad ever touches the disc
+   B. Both pads apply evenly - piston pushes one pad and the caliper reaction pulls the other in
+   C. The disc can wobble freely
+   D. The wheel can be removed without tools
+
+9. In a drum brake, the shoes are forced outward against the drum by: [DRUM BRAKE SYSTEMS
+COMPONENTS AND OPERATIONS]
+
+   A. The return springs
+   B. The wheel cylinder pistons
+   C. The adjuster only
+   D. Centrifugal force
+
+10. Self-adjusters on drum brakes maintain: [DRUM BRAKE SYSTEMS CONFIGURATION AND
+MAINTENANCE]
+
+   A. Tire pressure
+   B. Correct shoe-to-drum clearance as the linings wear
+   C. Brake fluid level
+   D. Disc thickness
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                  Course 8 - Questions 6-10
+C O U R S E 9 O F 11 - P O P Q U I Z
+
+Course 9: Advanced Braking System
+Name:                                             Date:                                       Score: ___ / 10
+
+  MODULES COVERED (2)
+     Hydraulic Pressure Control and Safety Valves
+     Brake Booster Vacuum Suspended
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+
+1. A proportioning valve in the brake system: [HYDRAULIC PRESSURE CONTROL AND SAFETY VALVES]
+   A. Increases rear pressure without limit
+   B. Limits/reduces hydraulic pressure to the rear brakes under hard braking to help prevent rear lockup
+   C. Supplies vacuum to the booster
+   D. Bleeds the system automatically
+
+2. A metering (hold-off) valve on some front disc / rear drum systems: [HYDRAULIC PRESSURE
+CONTROL AND SAFETY VALVES]
+
+   A. Blocks all front braking
+   B. Delays pressure to the front disc brakes slightly until the rear drums overcome return spring pressure
+   C. Controls tire pressure
+   D. Replaces the master cylinder
+
+3. The pressure differential (warning) valve's main job is to: [HYDRAULIC PRESSURE CONTROL AND
+SAFETY VALVES]
+
+   A. Adjust toe
+   B. Detect a pressure loss difference between the two circuits and turn on the brake warning lamp
+   C. Add fluid automatically
+   D. Cool overheated brakes
+
+4. A combination valve packages together functions such as: [HYDRAULIC PRESSURE CONTROL AND
+SAFETY VALVES]
+
+   A. Cruise control and lighting
+   B. Metering, proportioning and pressure differential warning in one body
+   C. Steering and braking
+   D. Fuel and brake control
+
+5. If a proportioning valve sticks and sends full pressure to the rear brakes, the likely symptom is:
+[HYDRAULIC PRESSURE CONTROL AND SAFETY VALVES]
+
+   A. Rear wheels lock early under firm braking
+   B. No braking at all
+   C. Only the parking brake works
+   D. The pedal becomes electric
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                   Course 9 - Questions 1-5
+COURSE 9 - POP QUIZ, CONTINUED
+
+Course 9: Advanced Braking System - Questions 6-10
+6. In a vacuum-suspended booster, at rest both sides of the diaphragm are: [BRAKE BOOSTER
+VACUUM SUSPENDED]
+
+   A. At atmospheric pressure
+   B. Under vacuum, suspended - pressure difference is only created when braking
+   C. Filled with brake fluid
+   D. Disconnected from the engine
+
+7. When the pedal is applied in a vacuum booster, assistance is produced because: [BRAKE
+BOOSTER VACUUM SUSPENDED]
+
+   A. Brake fluid enters the booster
+   B. Atmospheric pressure admitted to the rear chamber pushes the diaphragm against the vacuum in the
+   front chamber
+   C. The engine speeds up
+   D. The master cylinder gets larger
+
+8. A failed booster vacuum check valve or hose will most likely cause: [BRAKE BOOSTER VACUUM
+SUSPENDED]
+
+   A. A soft, low pedal
+   B. A hard pedal with little or no assistance, especially after the engine stops or on repeated applications
+   C. Excessive rear braking only
+   D. A leaking wheel cylinder
+
+9. A hissing sound at the pedal inside the cabin when braking can indicate: [BRAKE BOOSTER
+VACUUM SUSPENDED]
+
+   A. Normal tyre noise
+   B. Air leaking into the booster past a torn diaphragm or faulty air valve
+   C. A worn brake pad only
+   D. Low tire pressure
+
+10. A booster with a ruptured diaphragm will typically show: [BRAKE BOOSTER VACUUM SUSPENDED]
+   A. Perfect assistance
+   B. Hard pedal, poor assist and possibly rough idle from the vacuum leak
+   C. Faster acceleration
+   D. Lower brake fluid level only
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                    Course 9 - Questions 6-10
+C O U R S E 1 0 O F 11 - P O P Q U I Z
+
+Course 10: ABS Operations and Testing
+Name:                                          Date:                                        Score: ___ / 10
+
+  MODULES COVERED (4)
+     Anti-Lock Brakes
+     Wheel Speed Sensor Operation and Testing
+     Wheel Speed Sensor Circuit Fault
+     ABS Pump Motor Circuit Diagnostics
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+
+1. The main purpose of ABS is to: [ANTI-LOCK BRAKES]
+   A. Shorten every stop on every surface
+   B. Prevent wheel lockup during braking so the driver keeps steering control
+   C. Replace the brake pads
+   D. Increase pedal effort
+
+2. During an ABS event the hydraulic modulator can, for each controlled wheel: [ANTI-LOCK
+BRAKES]
+
+   A. Only apply pressure
+   B. Hold, release (dump) and reapply pressure in rapid cycles
+   C. Drain all fluid to the reservoir
+   D. Disconnect the pedal
+
+3. Pedal pulsation and noise during a hard ABS stop on a slippery surface are: [ANTI-LOCK BRAKES]
+   A. Always a fault
+   B. Normal signs that the modulator and pump are working
+   C. Caused by low tire pressure
+   D. A reason to release the pedal completely
+
+4. A passive (inductive) wheel speed sensor generates: [WHEEL SPEED SENSOR OPERATION AND
+TESTING]
+
+   A. A constant 5 volt reference
+   B. An AC voltage signal whose frequency and amplitude rise with wheel speed, as teeth pass the sensor
+   tip
+   C. A digital square wave of fixed amplitude
+   D. No signal at any speed
+
+5. An active wheel speed sensor differs because it: [WHEEL SPEED SENSOR OPERATION AND TESTING]
+   A. Needs no power supply
+   B. Is powered by the module and produces a switching (digital-type) signal that can be read down to near
+   zero speed
+   C. Only works above 100 km/h
+   D. Uses brake fluid pressure
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                Course 10 - Questions 1-5
+COURSE 10 - POP QUIZ, CONTINUED
+
+Course 10: ABS Operations and Testing - Questions 6-10
+6. Excessive air gap or a damaged tone ring on a passive sensor will most likely cause: [WHEEL
+SPEED SENSOR OPERATION AND TESTING]
+
+   A. A stronger signal
+   B. A weak or dropout signal, especially at low speed, and a possible ABS fault
+   C. Higher engine power
+   D. A firmer pedal at all times
+
+7. A wheel speed sensor circuit fault code with an open circuit would be confirmed by: [WHEEL
+SPEED SENSOR CIRCUIT FAULT]
+
+   A. Guessing and replacing the module first
+   B. Measuring sensor circuit continuity/resistance and checking for opens or high resistance against
+   specification
+   C. Only clearing the code repeatedly
+   D. Replacing all four sensors
+
+8. A sensor signal that drops out only over bumps most suggests: [WHEEL SPEED SENSOR CIRCUIT
+FAULT]
+
+   A. A completely failed sensor element only
+   B. An intermittent wiring/connector fault that opens with movement - confirmed with a wiggle test while
+   monitoring the signal
+   C. A faulty brake disc
+   D. Normal operation
+
+9. The ABS pump motor's job during an ABS event is to: [ABS PUMP MOTOR CIRCUIT DIAGNOSTICS]
+   A. Cool the fluid
+   B. Return released brake fluid pressure to the circuit / build pressure for reapply
+   C. Drive the wheels
+   D. Pump fuel
+
+10. If the pump motor does not run when commanded in a scan tool active test, the next checks
+should include: [ABS PUMP MOTOR CIRCUIT DIAGNOSTICS]
+   A. Replacing the tires
+   B. Pump motor power feed, ground, relay and motor resistance/current against specification
+   C. Adjusting the alignment
+   D. Changing brake fluid colour
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                  Course 10 - Questions 6-10
+C O U R S E 11 O F 11 - P O P Q U I Z
+
+Course 11: Park Brake Technology
+Name:                                           Date:                                         Score: ___ / 10
+
+  MODULES COVERED (3)
+     Caliper Type Electric Park Brake
+     Cable Acuted Electric Park Brake
+     Cable Acuted Electric Park Brake Adjustment
+
+
+Circle the best answer for each question. Answer key: see the separate Answer Key section at the back.
+
+1. On a caliper type electric park brake, the parking brake is applied by: [CALIPER TYPE ELECTRIC
+PARK BRAKE]
+
+   A. A hand lever and long cable only
+   B. An electric motor on the caliper driving the piston out to clamp the pads
+   C. Engine vacuum
+   D. The ABS pump only
+
+2. Before servicing rear pads on a caliper type EPB, the technician must: [CALIPER TYPE ELECTRIC
+PARK BRAKE]
+
+   A. Force the piston back with a clamp straight away
+   B. Place the EPB in service/maintenance mode with a scan tool (or maker's procedure) to retract the
+   motors
+   C. Cut the motor wires
+   D. Remove the caliper from the car permanently
+
+3. After pad replacement on a caliper type EPB, the system typically needs: [CALIPER TYPE
+ELECTRIC PARK BRAKE]
+
+   A. No further action ever
+   B. An apply/release or calibration cycle so the module relearns piston position and clamp force
+   C. A wheel alignment only
+   D. New brake fluid in the booster
+
+4. An automatic apply feature on some EPB systems applies the park brake when: [CALIPER TYPE
+ELECTRIC PARK BRAKE]
+
+   A. The radio is turned off
+   B. Conditions such as engine off / door open / vehicle stopped are met, as programmed
+   C. The headlamps are on
+   D. Fuel is low
+
+5. A cable actuated (cable puller) electric park brake works by: [CABLE ACUTED ELECTRIC PARK
+BRAKE]
+
+   A. Motors inside each caliper
+   B. An electric actuator unit that pulls the conventional parking brake cables
+   C. Hydraulic pressure in the calipers
+   D. A vacuum servo pulling the hand lever
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                  Course 11 - Questions 1-5
+C O U R S E 11 - P O P Q U I Z , C O N T I N U E D
+
+Course 11: Park Brake Technology - Questions 6-10
+6. A seized or stretched cable in a cable actuated EPB system will most likely cause: [CABLE
+ACUTED ELECTRIC PARK BRAKE]
+
+   A. Equal braking on both sides always
+   B. Uneven application, weak holding on one side, or an actuator overload fault
+   C. Better fuel economy
+   D. Faster ABS cycling
+
+7. Holding ability of any park brake is finally tested by: [CABLE ACUTED ELECTRIC PARK BRAKE]
+   A. Listening to the motor only
+   B. Confirming the vehicle holds securely on a gradient with the service brake released
+   C. Checking the switch lamp only
+   D. Measuring tire pressure
+
+8. Cable actuated EPB adjustment matters because: [CABLE ACUTED ELECTRIC PARK BRAKE
+ADJUSTMENT]
+
+   A. It changes tire size
+   B. Correct cable free play/tension ensures full application without dragging when released
+   C. It sets engine idle
+   D. It replaces pad replacement
+
+9. A park brake that drags after adjustment - hot wheel and poor rolling - indicates: [CABLE ACUTED
+ELECTRIC PARK BRAKE ADJUSTMENT]
+
+   A. Adjustment too tight or a cable not fully releasing
+   B. Adjustment is perfect
+   C. The pads are new
+   D. The fluid is low
+
+10. After adjusting a cable actuated EPB, best practice is to: [CABLE ACUTED ELECTRIC PARK BRAKE
+ADJUSTMENT]
+
+   A. Never test it again
+   B. Cycle the brake several times, recheck adjustment and holding, and confirm both wheels release freely
+   C. Paint the cables
+   D. Remove the actuator fuse permanently
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                 Course 11 - Questions 6-10
+S E PA R AT E S E C T I O N - P R I N T S E PA R AT E LY I F N E E D E D
+
+
+Answer Key
+This section starts on its own page, after all 11 quizzes, so the quizzes can be
+printed without the keys.
+
+
+Each key is grouped by quiz (Quiz 1 through Quiz 11), with the correct letter and
+a brief explanation for every question. After checking a quiz, review the module
+named in that question, then use the retake line under each key to record your
+second attempt.
+
+
+Target: 9/10 before moving on.
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                             Answer Key - Divider
+A N S W E R K E Y - Q U I Z 1 O F 11
+
+Quiz 1: Tire and Rim Essentials - Answer Key
+1. A - The R stands for radial construction, where the ply cords run radially across the tire. [TIRE TECHNOLOGY]
+
+2. B - 65 is the aspect ratio: sidewall height is 65 percent of the section width. [TIRE TECHNOLOGY]
+
+3. C - The last two digits of the DOT code are the year of manufacture. [TIRE TECHNOLOGY]
+
+4. D - Circumferential grooves evacuate water from the contact patch to maintain grip in the wet. [TREAD AND RIM
+TECHNOLOGY]
+
+5. A - Offset is the distance from the hub mounting surface to the rim's centreline. [TREAD AND RIM TECHNOLOGY]
+
+6. B - Wear bars flush with the tread mean the tread is worn to its minimum usable depth. [TREAD AND RIM
+TECHNOLOGY]
+
+7. B - Run flat sidewalls are reinforced so they can carry the load for a limited distance at reduced speed with zero
+pressure. [RUN FLAT TIRES]
+8. C - Run flats driven deflated can suffer hidden structural damage, so replacement is the safe best practice. [RUN
+FLAT TIRES]
+
+9. B - Direct TPMS uses a pressure sensor inside each wheel that transmits actual pressure. [TIRE PRESSURE
+MONITORING]
+
+10. B - A relearn matches each sensor ID to its new wheel position so the display shows the correct corner. [TIRE
+PRESSURE MONITORING]
+
+
+  Retake date:                                                           Second score: ___ / 10        Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                             Answer Key - Quiz 1
+A N S W E R K E Y - Q U I Z 2 O F 11
+
+Quiz 2: Best Practice Tire Fitment - Answer Key
+1. B - Static imbalance makes the heavy spot lift and drop each revolution, causing a hop. [BEST PRACTICE
+STANDARD WHEEL BALANCING]
+
+2. B - Old weights and dirt change the result, so the assembly is cleaned and old weights removed first. [BEST
+PRACTICE STANDARD WHEEL BALANCING]
+
+3. C - Two-plane balancing corrects dynamic imbalance, which produces a wobbling couple force. [BEST PRACTICE
+STANDARD WHEEL BALANCING]
+
+4. C - Both beads must be broken free from their seats before the tire can be levered off safely. [BEST PRACTICE
+STANDARD TIRE STRIP AND FITMENT]
+
+5. B - Bead lubricant reduces friction so the bead passes over the rim flange and seats evenly. [BEST PRACTICE
+STANDARD TIRE STRIP AND FITMENT]
+
+6. C - Bead seating is done with restraint/clip-on chuck and never above the maker's maximum seating pressure.
+[BEST PRACTICE STANDARD TIRE STRIP AND FITMENT]
+
+7. B - The yellow dot marks the lightest point and is commonly aligned with the valve stem. [BEST PRACTICE
+STANDARD TIRE STRIP AND FITMENT]
+
+8. B - Short, stiff sidewalls resist the flexing needed to clear the rim flange, so technique and machine helpers
+matter. [BEST PRACTICE LOW PROFILE / RUN FLAT TIRE STRIP AND FIT]
+
+9. B - Levers and the bead passing the sensor area can crack the sensor if its position is ignored. [BEST PRACTICE
+LOW PROFILE / RUN FLAT TIRE STRIP AND FIT]
+
+10. B - Helpers hold the bead in the drop centre, giving the slack needed to fit a stiff tire safely. [BEST PRACTICE
+LOW PROFILE / RUN FLAT TIRE STRIP AND FIT]
+
+
+  Retake date:                                                            Second score: ___ / 10        Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                              Answer Key - Quiz 2
+A N S W E R K E Y - Q U I Z 3 O F 11
+
+Quiz 3: Introducing Suspension Components - Answer Key
+1. B - Sprung mass is everything the springs carry; wheels and brakes below the springs are unsprung mass.
+[SUSPENSION SYSTEM PRINCIPLES]
+
+2. B - Lighter unsprung parts follow road bumps more easily, keeping the tire planted. [SUSPENSION SYSTEM
+PRINCIPLES]
+
+3. B - Spring rate is force per unit of deflection, for example newtons per millimetre. [SUSPENSION COMPONENT
+SPRINGS]
+
+4. A - A weak spring lowers ride height, which changes camber and other alignment angles. [SUSPENSION
+COMPONENT SPRINGS]
+
+5. C - Shocks damp spring movement by converting motion into heat in the oil; springs carry the load.
+[SUSPENSION COMPONENT SHOCKS]
+
+6. B - Weak damping lets the wheel keep bouncing, which cups the tread and hurts control. [SUSPENSION
+COMPONENT SHOCKS]
+
+7. B - Ball joint wear is measured as movement under the maker's specified load condition. [SUSPENSION
+COMPONENT LINKAGE]
+
+8. B - Arms and links position the hub and define how it moves through suspension travel. [SUSPENSION
+COMPONENT LINKAGE]
+
+9. B - The bar resists one side compressing more than the other, which is what body roll is. [SUSPENSION
+COMPONENT ANTI-ROLL]
+
+10. B - Perished or split bushes allow excess movement, causing noise, play and alignment shift under load.
+[SUSPENSION COMPONENT BUSHES]
+
+
+  Retake date:                                                         Second score: ___ / 10       Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                          Answer Key - Quiz 3
+A N S W E R K E Y - Q U I Z 4 O F 11
+
+Quiz 4: Understanding Suspension Systems - Answer Key
+1. B - The strut is a structural member: it locates the wheel, carries the spring, and steers with the knuckle.
+[MACPERSON STRUT SYSTEM COMPONENTS AND OPERATION]
+
+2. B - The top bearing lets the whole strut assembly pivot smoothly during steering. [MACPERSON STRUT SYSTEM
+COMPONENTS AND OPERATION]
+
+3. C - A loaded coil spring stores dangerous energy and must be compressed with the correct tool first.
+[MACPERSON STRUT INSPECTION PROCEDURES]
+
+4. B - Leakage plus poor damping means the strut is worn; struts are normally renewed in pairs. [MACPERSON
+STRUT INSPECTION PROCEDURES]
+
+5. B - The bar twists to provide spring force, anchored at one end and driven by the arm at the other. [TORSION
+BAR SYSTEM COMPONENTS AND OPERATIONS]
+
+6. B - The adjuster changes the bar's preload angle, raising or lowering ride height. [TORSION BAR SYSTEM
+COMPONENTS AND OPERATIONS]
+
+7. B - The bar works under high torsional stress, so cracks can lead to sudden failure. [TORSION BAR INSPECTION
+PROCEDURES]
+
+8. B - Two arms of different effective length control how camber changes as the wheel rises and falls. [DOUBLE
+WISHBONE SYSTEM COMPONENTS AND OPERATIONS]
+
+9. A - Several joints can produce play, so each is checked separately under the right load. [DOUBLE WISHBONE
+INSPECTION PROCEDURES]
+
+10. B - It varies anti-roll bar resistance: stiff against roll on road, relaxed for wheel articulation off road.
+[ELECTRONIC KINETIC DYNAMIC SUSPENSION]
+
+
+  Retake date:                                                                Second score: ___ / 10           Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                                     Answer Key - Quiz 4
+A N S W E R K E Y - Q U I Z 5 O F 11
+
+Quiz 5: Advanced Suspension Technology - Answer Key
+1. B - Air springs use pressurised air in a rubber bellows to support the load. [AIR SUSPENSION OVERVIEW]
+
+2. A - Height sensors report body position and the module commands the compressor or exhaust valve to correct it.
+[AIR SUSPENSION OVERVIEW]
+
+3. B - The compressor provides the air needed to inflate the springs and restore ride height. [AIR SUSPENSION
+OVERVIEW]
+
+4. B - A slow overnight drop at one corner points to an air leak in that corner's circuit. [AIR SUSPENSION OVERVIEW]
+
+5. B - Service/jack mode stops the system levelling while lifted, which could move the vehicle or damage parts. [AIR
+SUSPENSION OVERVIEW]
+
+6. B - Removing moisture prevents corrosion and freezing inside valves and air lines. [AIR SUSPENSION
+OVERVIEW]
+
+7. B - Adaptive dampers vary their valving electrically so damping can change in milliseconds. [SUSPENSION
+COMPONENTS ACTIVE SHOCKS]
+
+8. B - The module blends sensor inputs and the selected mode to set damping for each corner. [SUSPENSION
+COMPONENTS ACTIVE SHOCKS]
+
+9. B - Sport mode firms damping to control body movement more tightly. [SUSPENSION COMPONENTS ACTIVE
+SHOCKS]
+
+10. B - With no control signal the damper defaults to a preset rate and the system logs a fault. [SUSPENSION
+COMPONENTS ACTIVE SHOCKS]
+
+
+  Retake date:                                                          Second score: ___ / 10       Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                           Answer Key - Quiz 5
+A N S W E R K E Y - Q U I Z 6 O F 11
+
+Quiz 6: Complete Steering Systems - Answer Key
+1. B - The pinion rotates against the rack teeth, sliding the rack side to side to steer the wheels. [MANUAL
+STEERING PRINCIPLES]
+
+2. B - Ratio compares steering wheel input to road wheel output; higher ratios need more turns. [MANUAL
+STEERING PRINCIPLES]
+
+3. B - The pump supplies pressurised fluid that helps move the rack when the wheel is turned. [HYDRAULIC POWER
+STEERING]
+
+4. B - Low or aerated fluid starves the pump, causing noise and loss of assistance. [HYDRAULIC POWER
+STEERING]
+
+5. A - The valve senses torsion bar twist from driver effort and ports fluid to assist in that direction. [HYDRAULIC
+POWER STEERING]
+
+6. B - An electric motor drives the hydraulic pump, so assistance can be provided without the engine driving a belt
+pump. [ELECTRO HYDRAULIC POWER STEERING]
+
+7. A - Demand-based pump speed cuts parasitic load compared with a constantly driven pump. [ELECTRO
+HYDRAULIC POWER STEERING]
+
+8. B - EPS uses a motor, controlled by a module using torque sensor input, to add steering assistance. [ELECTRIC
+POWER STEERING]
+
+9. B - Torque sensor input tells the module how much assistance to apply and in which direction. [ELECTRIC
+POWER STEERING]
+
+10. B - The steering angle sensor must be recalibrated so EPS and stability systems know true straight-ahead.
+[ELECTRIC POWER STEERING DIAGNOSTICS]
+
+
+  Retake date:                                                            Second score: ___ / 10         Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                               Answer Key - Quiz 6
+A N S W E R K E Y - Q U I Z 7 O F 11
+
+Quiz 7: Mastering Wheel Alignments - Answer Key
+1. B - Camber is the wheel's tilt from vertical viewed from the front; top out is positive. [UNDERSTANDING STEERING
+ANGLES]
+
+2. C - Negative camber loads the inner shoulder, so that edge wears fastest. [UNDERSTANDING STEERING
+ANGLES]
+
+3. B - Positive caster helps the wheels self-centre and improves stability. [UNDERSTANDING STEERING ANGLES]
+
+4. B - Toe compares the direction of the front and rear edges of a pair of tires from above. [UNDERSTANDING
+STEERING ANGLES]
+
+5. B - Incorrect toe scrubs the tread sideways as the vehicle travels, wearing it rapidly. [UNDERSTANDING
+STEERING ANGLES]
+
+6. B - SAI is a built-in angle used diagnostically to spot bent parts when it differs side to side. [UNDERSTANDING
+STEERING ANGLES]
+
+7. B - Included angle = SAI + camber, and helps identify bent struts, knuckles or arms. [UNDERSTANDING
+STEERING ANGLES]
+
+8. B - Thrust angle is the rear toe direction relative to centreline; the vehicle tends to travel along it.
+[UNDERSTANDING STEERING ANGLES]
+
+9. B - Ackermann geometry matches each front wheel to its different turning radius, reducing scrub.
+[UNDERSTANDING STEERING ANGLES]
+
+10. B - Alignment readings are meaningless if ride height, pressures or worn parts are wrong, so these are checked
+first. [UNDERSTANDING STEERING ANGLES]
+
+
+  Retake date:                                                               Second score: ___ / 10           Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                                   Answer Key - Quiz 7
+A N S W E R K E Y - Q U I Z 8 O F 11
+
+Quiz 8: Braking System Essentials - Answer Key
+1. B - Friction between pad/lining and disc/drum turns motion energy into heat. [AUTOMOTIVE BRAKING
+PRINCIPLES]
+
+2. B - Pascal's principle is why pedal force at the master cylinder reaches every wheel. [AUTOMOTIVE BRAKING
+PRINCIPLES]
+
+3. B - Absorbed water drops the boiling point, risking vapour and a spongy pedal under hard braking.
+[UNDERSTANDING BRAKE FLUID]
+
+4. B - Fluids and seals are matched by specification; wrong fluid can damage rubber parts. [UNDERSTANDING
+BRAKE FLUID]
+
+5. B - Splitting the system into two circuits provides a failsafe if one circuit leaks. [BRAKE MASTER CYLINDER
+OPERATION]
+
+6. B - The port keeps the circuit filled and fully released when the pedal is up. [BRAKE MASTER CYLINDER
+OPERATION]
+
+7. B - Hydraulic pressure drives the caliper piston(s) to clamp the pads onto the disc. [DISC BRAKE SYSTEMS]
+
+8. B - As the piston pushes the inner pad in, the sliding caliper pulls the outer pad into the disc. [DISC BRAKE
+SYSTEMS]
+
+9. B - Hydraulic pressure in the wheel cylinder pushes its pistons and the shoes into the drum. [DRUM BRAKE
+SYSTEMS COMPONENTS AND OPERATIONS]
+
+10. B - The adjuster takes up lining wear so pedal travel and parking brake action stay correct. [DRUM BRAKE
+SYSTEMS CONFIGURATION AND MAINTENANCE]
+
+
+  Retake date:                                                           Second score: ___ / 10         Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                              Answer Key - Quiz 8
+A N S W E R K E Y - Q U I Z 9 O F 11
+
+Quiz 9: Advanced Braking System - Answer Key
+1. B - As weight transfers forward, the rears need less pressure; the valve reduces it to avoid lockup. [HYDRAULIC
+PRESSURE CONTROL AND SAFETY VALVES]
+
+2. B - Metering holds off the front discs briefly so front and rear brakes apply together. [HYDRAULIC PRESSURE
+CONTROL AND SAFETY VALVES]
+
+3. B - A piston shifts when one circuit loses pressure and operates the warning lamp switch. [HYDRAULIC
+PRESSURE CONTROL AND SAFETY VALVES]
+
+4. B - Many vehicles combine those three valve functions in a single combination valve. [HYDRAULIC PRESSURE
+CONTROL AND SAFETY VALVES]
+
+5. A - Excess rear pressure lets the lightly loaded rear wheels lock and skid first. [HYDRAULIC PRESSURE CONTROL
+AND SAFETY VALVES]
+
+6. B - Vacuum-suspended means vacuum acts on both sides at rest; applying the pedal admits air to one side to
+create assist. [BRAKE BOOSTER VACUUM SUSPENDED]
+
+7. B - The pressure difference across the diaphragm provides the extra push on the master cylinder. [BRAKE
+BOOSTER VACUUM SUSPENDED]
+
+8. B - Without stored vacuum the booster cannot assist, so pedal effort rises sharply. [BRAKE BOOSTER VACUUM
+SUSPENDED]
+
+9. B - Hissing with poor assist points to a booster air leak or diaphragm fault. [BRAKE BOOSTER VACUUM
+SUSPENDED]
+
+10. B - The leak loses assist and upsets engine vacuum, so idle can suffer too. [BRAKE BOOSTER VACUUM
+SUSPENDED]
+
+
+  Retake date:                                                         Second score: ___ / 10        Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                           Answer Key - Quiz 9
+A N S W E R K E Y - Q U I Z 1 0 O F 11
+
+Quiz 10: ABS Operations and Testing - Answer Key
+1. B - By modulating pressure to a wheel about to lock, ABS preserves steering ability. [ANTI-LOCK BRAKES]
+
+2. B - ABS cycles pressure - hold, release, reapply - many times per second to keep the wheel near peak grip.
+[ANTI-LOCK BRAKES]
+
+3. B - Pulsation is expected during ABS operation; the driver should keep firm pedal pressure. [ANTI-LOCK
+BRAKES]
+
+4. B - Passive sensors produce an AC signal that grows in frequency and voltage as speed increases. [WHEEL
+SPEED SENSOR OPERATION AND TESTING]
+
+5. B - Active sensors are supplied with power and can detect very low and even directional wheel speed. [WHEEL
+SPEED SENSOR OPERATION AND TESTING]
+
+6. B - Too large a gap or missing teeth weakens/interrupts the signal, worst at low wheel speed. [WHEEL SPEED
+SENSOR OPERATION AND TESTING]
+
+7. B - Circuit testing - resistance, continuity and wiring checks - confirms an open before parts are replaced.
+[WHEEL SPEED SENSOR CIRCUIT FAULT]
+
+8. B - Movement-related dropouts point to intermittent connections, found by wiggling the harness while watching
+live data or a scope. [WHEEL SPEED SENSOR CIRCUIT FAULT]
+
+9. B - The pump restores the pressure that the release solenoids dumped so braking can be reapplied. [ABS PUMP
+MOTOR CIRCUIT DIAGNOSTICS]
+
+10. B - A no-run pump is diagnosed electrically: feed, ground, relay control and the motor itself. [ABS PUMP MOTOR
+CIRCUIT DIAGNOSTICS]
+
+
+  Retake date:                                                           Second score: ___ / 10         Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                             Answer Key - Quiz 10
+A N S W E R K E Y - Q U I Z 11 O F 11
+
+Quiz 11: Park Brake Technology - Answer Key
+1. B - A motor and spindle mechanism in the caliper drives the piston to apply the pads mechanically. [CALIPER
+TYPE ELECTRIC PARK BRAKE]
+
+2. B - Service mode winds the motor back safely; forcing it can damage the mechanism. [CALIPER TYPE ELECTRIC
+PARK BRAKE]
+
+3. B - A calibration cycle sets the piston travel and confirms correct apply and release. [CALIPER TYPE ELECTRIC
+PARK BRAKE]
+
+4. B - Auto-apply uses programmed conditions to set the brake without the driver pulling the switch. [CALIPER TYPE
+ELECTRIC PARK BRAKE]
+
+5. B - One motorised actuator tensions the existing cables to apply drum or caliper parking brakes. [CABLE
+ACUTED ELECTRIC PARK BRAKE]
+
+6. B - Cable condition decides how evenly actuator force reaches each wheel. [CABLE ACUTED ELECTRIC PARK
+BRAKE]
+
+7. B - The real test is whether the vehicle stays held on a slope on the park brake alone. [CABLE ACUTED
+ELECTRIC PARK BRAKE]
+
+8. B - Too slack gives weak holding; too tight leaves the brakes dragging and overheating. [CABLE ACUTED
+ELECTRIC PARK BRAKE ADJUSTMENT]
+
+9. A - Dragging means the brake is not fully releasing, commonly from over-tight or seized cables. [CABLE ACUTED
+ELECTRIC PARK BRAKE ADJUSTMENT]
+
+10. B - Cycling settles the cables, so adjustment and release are rechecked before the job is finished. [CABLE
+ACUTED ELECTRIC PARK BRAKE ADJUSTMENT]
+
+
+  Retake date:                                                         Second score: ___ / 10        Target: 9/10
+
+
+
+
+Chassis Pop Quizzes - Practice Material                                                          Answer Key - Quiz 11
+
