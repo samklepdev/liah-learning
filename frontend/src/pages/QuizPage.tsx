@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from 'react-router';
 import { QuestionCard } from '../quiz/QuestionCard';
 import { ReviewGrid } from '../quiz/ReviewGrid';
+import { QuizHistoryBanner } from '../quiz/QuizHistoryBanner';
 import { useQuizAttempt } from '../quiz/useQuizAttempt';
 
 export function QuizPage() {
@@ -24,7 +25,7 @@ export function QuizPage() {
     );
   }
 
-  const { quiz, index, answers } = state;
+  const { quiz, index, answers, history } = state;
   const total = quiz.questions.length;
   const onReview = index >= total;
 
@@ -35,6 +36,15 @@ export function QuizPage() {
 
   return (
     <div className="quiz-page">
+      {history && (
+        <QuizHistoryBanner
+          bestScore={history.bestScore}
+          attemptCount={history.attemptCount}
+          passScore={quiz.passScore}
+          questionCount={quiz.questionCount}
+        />
+      )}
+
       <div className="quiz-header">
         <span>{quiz.title}</span>
         <span>{onReview ? 'Review' : `Question ${index + 1} of ${total}`}</span>

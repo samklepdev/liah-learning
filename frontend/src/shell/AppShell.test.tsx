@@ -249,6 +249,27 @@ describe('AppShell — subject disclosure', () => {
     );
   });
 
+  test('ticks the quizzes you have passed', async () => {
+    listCourses.mockResolvedValue({
+      courses: [
+        makeCourse({ bestScore: 9 }),
+        makeCourse({ id: 'c2', slug: 'chassis-fitment', title: 'Tire Fitment', position: 2 }),
+      ],
+    });
+    renderAt();
+    const sidebar = await nav();
+
+    await userEvent.click(within(sidebar).getByRole('button', { name: /Chassis/ }));
+
+    // One tick, on the passed quiz only. Labelled, so it is not a
+    // glyph-and-colour-only signal.
+    const ticks = await within(sidebar).findAllByRole('img', { name: 'Passed' });
+    expect(ticks).toHaveLength(1);
+    expect(
+      within(sidebar).getByRole('link', { name: /Tire and Rim Essentials/ }),
+    ).toContainElement(ticks[0]!);
+  });
+
   test('a subject with no quizzes says so rather than spinning', async () => {
     listCourses.mockResolvedValue({ courses: [] });
     renderAt();

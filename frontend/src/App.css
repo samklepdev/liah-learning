@@ -116,11 +116,34 @@
 .course-passed { color: var(--success); }
 .course-below { color: var(--warning); }
 
+.course-badge {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--success);
+  background: color-mix(in srgb, var(--success) 14%, transparent);
+}
+
 .quiz-page { max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; text-align: left; }
 
 .quiz-header {
   display: flex; justify-content: space-between;
   font-size: 0.8rem; opacity: 0.75; margin-bottom: 0.5rem;
+}
+
+.quiz-history {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--accent-bg);
+  font-size: 0.8rem;
 }
 
 .progress-track {
@@ -178,6 +201,10 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .score-number { font-size: 2.6rem; font-weight: 700; line-height: 1; }
 .score-of { font-size: 1.1rem; opacity: 0.6; }
 .score-previous { font-size: 0.82rem; opacity: 0.7; margin: 0.25rem 0 0; }
+
+/* The row-level badge carries a right margin for inline use; inside the
+   centred score block that would knock it off centre. */
+.score-block .course-badge { margin: 0.4rem 0 0; }
 
 .modules-block {
   padding: 0.85rem 1rem; margin-bottom: 1.5rem;
@@ -421,6 +448,10 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .nav-sublink:hover { background: var(--accent-bg); color: var(--text-h); }
 .nav-sublink.active { background: var(--accent-bg); color: var(--text-h); font-weight: 600; }
 .nav-sublink-pos { opacity: 0.5; font-variant-numeric: tabular-nums; }
+
+/* margin-left:auto pushes the tick to the row's end; .nav-sublink is a flex
+   row, so this needs no fixed width and tolerates long titles. */
+.nav-sublink-pass { margin-left: auto; color: var(--success); }
 
 .nav-panel-note {
   padding: 0.35rem 0.6rem 0.35rem 1.5rem;

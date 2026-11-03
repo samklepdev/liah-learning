@@ -1,4 +1,5 @@
 import type {
+  CourseHistory,
   CourseSummary,
   GradedAttempt,
   GradedQuestion,
@@ -45,6 +46,12 @@ export function makeCourse(overrides: Partial<CourseSummary> = {}): CourseSummar
   };
 }
 
+export function makeCourseHistory(
+  overrides: Partial<CourseHistory> = {},
+): CourseHistory {
+  return { bestScore: null, attemptCount: 0, ...overrides };
+}
+
 /**
  * Two correct, one missed — the shape the results screen has to render both
  * branches of.
@@ -73,6 +80,7 @@ export function makeGradedAttempt(overrides: Partial<GradedAttempt> = {}): Grade
     id: 'attempt-1',
     courseSlug: 'chassis-tire-and-rim-essentials',
     courseTitle: 'Tire and Rim Essentials',
+    subjectSlug: 'chassis',
     score: 2,
     questionCount: 3,
     passScore: 3,

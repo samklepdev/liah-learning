@@ -1,6 +1,6 @@
 import { describe, expect, test, vi, beforeEach } from 'vitest';
 import { act, renderHook, waitFor } from '@testing-library/react';
-import { makeQuiz } from '../test/fixtures';
+import { makeCourseHistory, makeQuiz } from '../test/fixtures';
 import { ApiError } from './api';
 import { useQuizAttempt } from './useQuizAttempt';
 
@@ -28,7 +28,7 @@ vi.mock('./api', async (importOriginal) => {
 });
 
 beforeEach(() => {
-  getQuiz.mockResolvedValue({ quiz });
+  getQuiz.mockResolvedValue({ quiz, history: makeCourseHistory() });
   startAttempt.mockResolvedValue({ attempt: { id: 'attempt-1' } });
   getAttempt.mockResolvedValue({
     attempt: {
