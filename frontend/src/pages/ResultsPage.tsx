@@ -89,7 +89,7 @@ export function ResultsPage() {
         <Link className="primary" to={`/courses/${slug}/quiz`}>
           Retake quiz
         </Link>
-        <Link to="/courses">Back to courses</Link>
+        <Link to={`/subjects/${attempt.subjectSlug}`}>Back to quizzes</Link>
       </div>
     </div>
   );

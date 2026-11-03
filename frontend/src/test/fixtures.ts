@@ -73,6 +73,7 @@ export function makeGradedAttempt(overrides: Partial<GradedAttempt> = {}): Grade
     id: 'attempt-1',
     courseSlug: 'chassis-tire-and-rim-essentials',
     courseTitle: 'Tire and Rim Essentials',
+    subjectSlug: 'chassis',
     score: 2,
     questionCount: 3,
     passScore: 3,

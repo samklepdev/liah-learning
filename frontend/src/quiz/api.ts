@@ -60,6 +60,7 @@ export type GradedAttempt = {
   id: string;
   courseSlug: string;
   courseTitle: string;
+  subjectSlug: string;
   score: number;
   questionCount: number;
   passScore: number;

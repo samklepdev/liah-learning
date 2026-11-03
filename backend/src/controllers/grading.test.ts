@@ -69,6 +69,9 @@ test('submitting scores against the answer key', async () => {
   assert.equal(attempt.score, 8);
   assert.equal(attempt.questionCount, 10);
   assert.equal(attempt.passScore, 9);
+  // The results page links back to the subject's quiz list, so it needs the
+  // subject slug — the course slug alone cannot address that route.
+  assert.equal(attempt.subjectSlug, 'chassis');
 });
 
 test('the graded result carries explanations and modules to review', async () => {

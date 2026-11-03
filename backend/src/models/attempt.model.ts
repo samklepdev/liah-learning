@@ -7,6 +7,7 @@ import {
   modules,
   questionOptions,
   questions,
+  subjects,
 } from './schema.ts';
 
 export type AttemptRow = {
@@ -157,6 +158,8 @@ export type GradedAttempt = {
   id: string;
   courseSlug: string;
   courseTitle: string;
+  /** Addresses the subject's quiz list, which the results page links back to. */
+  subjectSlug: string;
   score: number;
   questionCount: number;
   passScore: number;
@@ -211,9 +214,19 @@ export async function findGradedAttempt(attemptId: string): Promise<GradedAttemp
   const attempt = await findAttemptById(attemptId);
   if (!attempt || attempt.submittedAt === null) return null;
 
+  // Explicit columns plus the subject join: the results page needs the subject
+  // slug to link back to its quiz list, and `select()` on courses alone cannot
+  // reach it.
   const [course] = await db
-    .select()
+    .select({
+      slug: courses.slug,
+      title: courses.title,
+      passScore: courses.passScore,
+      questionCount: courses.questionCount,
+      subjectSlug: subjects.slug,
+    })
     .from(courses)
+    .innerJoin(subjects, eq(subjects.id, courses.subjectId))
     .where(eq(courses.id, attempt.courseId))
     .limit(1);
   if (!course) return null;
@@ -279,6 +292,7 @@ export async function findGradedAttempt(attemptId: string): Promise<GradedAttemp
     id: attempt.id,
     courseSlug: course.slug,
     courseTitle: course.title,
+    subjectSlug: course.subjectSlug,
     score: attempt.score ?? 0,
     questionCount: course.questionCount,
     passScore: course.passScore,

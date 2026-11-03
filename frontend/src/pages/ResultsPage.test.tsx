@@ -106,9 +106,12 @@ describe('ResultsPage', () => {
 
     const retake = await screen.findByRole('link', { name: 'Retake quiz' });
     expect(retake).toHaveAttribute('href', `/courses/${SLUG}/quiz`);
-    expect(screen.getByRole('link', { name: 'Back to courses' })).toHaveAttribute(
+    // Must land on the subject's quiz list, which shows scores and pass
+    // badges. /courses only redirects to the subject *index*, which lists no
+    // quizzes at all, so a pass was invisible from here.
+    expect(screen.getByRole('link', { name: 'Back to quizzes' })).toHaveAttribute(
       'href',
-      '/courses',
+      '/subjects/chassis',
     );
   });
 
