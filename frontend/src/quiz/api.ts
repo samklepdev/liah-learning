@@ -1,3 +1,10 @@
+export type SubjectSummary = {
+  id: string;
+  slug: string;
+  title: string;
+  courseCount: number;
+};
+
 export type CourseSummary = {
   id: string;
   slug: string;
@@ -88,6 +95,8 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const quizApi = {
+  listSubjects: () => request<{ subjects: SubjectSummary[] }>('/subjects'),
+
   listCourses: (subject: string) =>
     request<{ courses: CourseSummary[] }>(`/courses?subject=${encodeURIComponent(subject)}`),
 

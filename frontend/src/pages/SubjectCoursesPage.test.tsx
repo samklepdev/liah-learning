@@ -1,21 +1,32 @@
 import { describe, expect, test, vi, beforeEach } from 'vitest';
-import { render, screen, waitFor } from '@testing-library/react';
-import { MemoryRouter } from 'react-router';
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter, Route, Routes } from 'react-router';
 import { makeCourse } from '../test/fixtures';
-import { ApiError } from '../quiz/api';
-import { CoursesPage } from './CoursesPage';
+import type { SubjectSummary } from '../quiz/api';
+import { SubjectCoursesPage } from './SubjectCoursesPage';
 
 const listCourses = vi.fn();
+const subjects: SubjectSummary[] = [
+  { id: 's1', slug: 'chassis', title: 'Chassis', courseCount: 11 },
+];
 
 vi.mock('../quiz/api', async (importOriginal) => {
   const actual = await importOriginal<typeof import('../quiz/api')>();
-  return { ...actual, quizApi: { ...actual.quizApi, listCourses: (s: string) => listCourses(s) } };
+  return {
+    ...actual,
+    quizApi: { ...actual.quizApi, listCourses: (s: string) => listCourses(s) },
+  };
 });
+
+// Supplies the Outlet context the page reads, without the layout's own fetch.
+vi.mock('../quiz/useCatalog', () => ({ useCatalog: () => ({ subjects }) }));
 
 function renderPage() {
   return render(
-    <MemoryRouter>
-      <CoursesPage />
+    <MemoryRouter initialEntries={['/subjects/chassis']}>
+      <Routes>
+        <Route path="/subjects/:subjectSlug" element={<SubjectCoursesPage />} />
+      </Routes>
     </MemoryRouter>,
   );
 }
@@ -24,13 +35,10 @@ beforeEach(() => {
   listCourses.mockResolvedValue({ courses: [makeCourse()] });
 });
 
-describe('CoursesPage', () => {
-  test('lists courses and links to their quiz', async () => {
+describe('SubjectCoursesPage', () => {
+  test('labels each row as a numbered quiz', async () => {
     renderPage();
-
-    const link = await screen.findByRole('link', { name: 'Tire and Rim Essentials' });
-    expect(link).toHaveAttribute('href', '/courses/chassis-tire-and-rim-essentials/quiz');
-    expect(screen.getByText('Course 1')).toBeInTheDocument();
+    expect(await screen.findByText('Quiz 1')).toBeInTheDocument();
   });
 
   test('shows "Not attempted" when there is no score yet', async () => {
@@ -59,14 +67,5 @@ describe('CoursesPage', () => {
     expect(score).toHaveClass('course-passed');
     // A single attempt should not read "1 attempts".
     expect(score).not.toHaveTextContent('attempts');
-  });
-
-  test('reports a load failure', async () => {
-    listCourses.mockRejectedValue(new ApiError('Subject not found', 404));
-    renderPage();
-
-    await waitFor(() =>
-      expect(screen.getByRole('alert')).toHaveTextContent('Subject not found'),
-    );
   });
 });

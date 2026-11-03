@@ -270,3 +270,71 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   text-decoration: none;
   color: inherit;
 }
+
+/* ---- Catalog: subject sidebar + quizzes ---- */
+
+.catalog {
+  display: flex;
+  gap: 2rem;
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+  align-items: flex-start;
+}
+
+.subject-sidebar {
+  flex: 0 0 13rem;
+  position: sticky;
+  top: 1.5rem;
+  text-align: left;
+}
+
+.subject-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.subject-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.subject-link:hover { background: rgb(128 128 128 / 0.1); }
+
+.subject-link.active {
+  background: rgb(128 128 128 / 0.16);
+  border-color: rgb(128 128 128 / 0.35);
+  font-weight: 600;
+}
+
+.subject-count {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
+}
+
+.catalog-main { flex: 1 1 auto; min-width: 0; }
+
+/* The sidebar's own margin handles spacing inside the catalog layout. */
+.catalog-main .course-list { margin: 0; padding: 0; max-width: none; }
+
+@media (max-width: 48rem) {
+  .catalog { flex-direction: column; gap: 1.25rem; }
+  .subject-sidebar { position: static; flex: none; width: 100%; }
+  .subject-sidebar ul {
+    display: flex;
+    gap: 0.4rem;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+  }
+  .subject-link { white-space: nowrap; }
+}
