@@ -1,0 +1,1183 @@
+{
+  "slug": "servicing",
+  "title": "Servicing",
+  "courses": [
+    {
+      "position": 1,
+      "slug": "servicing-vehicle-servicing-and-safety-checks",
+      "title": "Vehicle Servicing and Safety Checks",
+      "moduleTitles": [
+        "High Voltage Awareness",
+        "Best Practice Vehicle Servicing",
+        "Best Practice Vehicle Safety Checks"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "How are high-voltage cables on a hybrid or electric vehicle usually identified?",
+          "moduleTitle": "High Voltage Awareness",
+          "explanation": "High-voltage cables and connectors are identified by orange insulation or conduit.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Blue insulation",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Orange insulation or orange conduit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Green insulation",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Plain black insulation with no marking",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "What must be done before working near a high-voltage system?",
+          "moduleTitle": "High Voltage Awareness",
+          "explanation": "Isolate and power down following the manufacturer procedure, wear rated PPE, and verify the system is safe before work.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Just switch the ignition off and start work",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rev the engine to discharge the battery",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Follow the manufacturer isolation procedure, wear rated PPE, and verify the system is powered down",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Disconnect the 12-volt battery only, with no other checks",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Which gloves are required for high-voltage work?",
+          "moduleTitle": "High Voltage Awareness",
+          "explanation": "Electrically insulated gloves of the correct class, in test date, with leather over-gloves for protection.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ordinary disposable workshop gloves",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Electrically insulated gloves of the correct class, checked and in test date, with leather protectors",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Heat-resistant welding gloves",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "No gloves, so you can feel components better",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Why should servicing follow the manufacturer schedule and specification?",
+          "moduleTitle": "Best Practice Vehicle Servicing",
+          "explanation": "The manufacturer schedule uses the correct parts, fluids, and intervals, keeping the vehicle safe and protecting warranty.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It is only needed to keep a service stamp in the book",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Any parts and fluids will do if they look similar",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "It keeps the vehicle safe and reliable and protects warranty, using the correct parts, fluids, and intervals",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "It lets you skip items that look clean",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "When lifting a vehicle for servicing, you should:",
+          "moduleTitle": "Best Practice Vehicle Servicing",
+          "explanation": "Use the specified lifting points, confirm the lift is secure, and use stands where required. Never rely on a jack alone.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Lift on any flat part of the floor pan",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Use the manufacturer lifting points, check the lift is secure, and use stands where required",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Work under a vehicle supported only by a jack",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Lift as fast as possible to save time",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Before returning a serviced vehicle, the final checks should include:",
+          "moduleTitle": "Best Practice Vehicle Servicing",
+          "explanation": "Final checks cover fluid levels, leaks, wheel nut torque, warning lights, and a road test where required.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only washing the vehicle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Fluid levels, leaks, wheel nut torque, warning lights, and a road test where required",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Resetting the trip meter only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Nothing, if no fault was reported",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A brake safety check should include:",
+          "moduleTitle": "Best Practice Vehicle Safety Checks",
+          "explanation": "A brake check covers pedal feel, fluid, pads and discs, and hoses and lines for leaks or damage.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Pedal feel and travel, fluid level and condition, pad and disc condition, and hoses and lines for leaks or damage",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Only whether the brake lights work",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Only the handbrake holding on a hill",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only a visual look through the wheel spokes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A tyre safety check should include:",
+          "moduleTitle": "Best Practice Vehicle Safety Checks",
+          "explanation": "Check tread depth, pressures, cuts, bulges, uneven wear, and age or damage - including the spare where fitted.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Colour and brand only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Tread depth, pressures, cuts, bulges, uneven wear, and age or damage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only whether the tyre holds air",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only the spare tyre",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "During a safety check, lights and signalling should be checked for:",
+          "moduleTitle": "Best Practice Vehicle Safety Checks",
+          "explanation": "All lamps, indicators, brake lights, and the horn must work, with no lens damage affecting output.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Brightness only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Operation of all lamps, indicators, brake lights, and the horn, plus lens damage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Headlamp aim only, with no bulb check",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Nothing if the vehicle passed last time",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "If a safety check finds a safety-critical defect, you should:",
+          "moduleTitle": "Best Practice Vehicle Safety Checks",
+          "explanation": "Record and report safety-critical defects clearly and advise the vehicle should not be used until repaired.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ignore it if the customer is in a hurry",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Clear it without recording it",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Record it clearly, report it, and advise that the vehicle should not be used until it is repaired",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Mention it only if the customer asks",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "slug": "servicing-cooling-system-servicing",
+      "title": "Cooling System Servicing",
+      "moduleTitles": [
+        "Understanding Engine Coolants",
+        "Engine Coolant Testing",
+        "Best Practice Coolant Drain and Flush",
+        "Engine Coolant Temperature Sensor Diagnostics",
+        "Drive Belt Diagnostics"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "What does engine coolant do besides preventing freezing?",
+          "moduleTitle": "Understanding Engine Coolants",
+          "explanation": "Coolant raises the boiling point, lowers the freezing point, and carries corrosion inhibitors.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It raises the boiling point and contains corrosion inhibitors that protect the engine and radiator",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "It lubricates the water pump bearings only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "It cleans the engine oil",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Nothing - plain water does the same job in all conditions",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Why should different coolant types (for example OAT and older IAT types) generally not be mixed?",
+          "moduleTitle": "Understanding Engine Coolants",
+          "explanation": "Mixing different additive types can reduce protection and form deposits or gel. Use the specified type.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Mixing changes the colour only, with no other effect",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The additives can react, reducing corrosion protection and forming deposits or gel",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Mixing makes the coolant freeze-proof forever",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Mixing is required at every service",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Which tool measures coolant freezing protection by how much the coolant bends light?",
+          "moduleTitle": "Engine Coolant Testing",
+          "explanation": "A refractometer measures freeze protection from how the coolant bends light.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A multimeter",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A refractometer",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A torque wrench",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A stethoscope",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Coolant test strips are mainly used to check:",
+          "moduleTitle": "Engine Coolant Testing",
+          "explanation": "Test strips check freeze protection, pH, and remaining inhibitor (reserve alkalinity) level.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Tyre pressure and tread depth",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Freeze protection, pH, and the remaining corrosion-inhibitor level",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Engine oil viscosity",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Battery voltage",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Best practice when draining and flushing a cooling system includes:",
+          "moduleTitle": "Best Practice Coolant Drain and Flush",
+          "explanation": "Work cold, catch and dispose of old coolant correctly, flush as directed, and refill with the correct coolant and mix.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Opening the cap on a hot engine to drain faster",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Pouring old coolant down a drain",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Working on a cold engine, catching and disposing of old coolant correctly, flushing as directed, and refilling with the correct coolant",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Refilling with plain water only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "After refilling a cooling system, why must air be bled out correctly?",
+          "moduleTitle": "Best Practice Coolant Drain and Flush",
+          "explanation": "Trapped air causes overheating, poor heater output, and false temperature readings, so bleeding matters.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Air pockets can cause overheating, poor heater output, and false temperature readings",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Air improves cooling, so it should be left in",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Bleeding is only done for appearance",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Air pockets only affect the air conditioning",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Most engine coolant temperature (ECT) sensors are NTC thermistors. This means their resistance:",
+          "moduleTitle": "Engine Coolant Temperature Sensor Diagnostics",
+          "explanation": "An NTC sensor's resistance falls as temperature rises.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Rises as temperature rises",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Falls as temperature rises",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Never changes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Is always zero",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "An ECT sensor circuit reads a very cold temperature on a fully warmed engine. A likely cause is:",
+          "moduleTitle": "Engine Coolant Temperature Sensor Diagnostics",
+          "explanation": "An open or high-resistance circuit keeps signal voltage high, which the control unit reads as very cold.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A perfect sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Low tyre pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "An open circuit or high resistance in the sensor or its wiring, keeping the signal voltage high",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "A new thermostat",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A drive belt should be replaced if inspection shows:",
+          "moduleTitle": "Drive Belt Diagnostics",
+          "explanation": "Cracks, glazing, fraying, chunking, or oil/coolant contamination all mean the belt should be replaced.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cracks, glazing, fraying, chunking, or contamination with oil or coolant",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Only a little dust on the surface",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The printed brand name has faded",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Nothing - belts last the life of the vehicle",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A belt squeal on start-up most often points to:",
+          "moduleTitle": "Drive Belt Diagnostics",
+          "explanation": "Start-up squeal usually means the belt is slipping: worn or glazed belt, weak tensioner, or misalignment.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A faulty spark plug",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Low fuel level",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A worn or glazed belt, weak tensioner, or pulley misalignment slipping under load",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Worn brake pads",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "slug": "servicing-engine-oil-essentials",
+      "title": "Engine Oil Essentials",
+      "moduleTitles": [
+        "Oil Filterization Principles",
+        "Engine Oil Velocity and Performance Classifications",
+        "Engine Oil Basis Additives and Compositions",
+        "Engine Oil Synthetic Versus Mineral",
+        "Engine Oil Selections"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "What is the job of the bypass valve in an oil filter?",
+          "moduleTitle": "Oil Filterization Principles",
+          "explanation": "The bypass valve opens if the filter blocks, so the engine still receives oil rather than none.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To stop all oil flow when the filter is new",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To let oil bypass a blocked filter so the engine still gets oil, even if it is unfiltered",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To increase oil pressure at idle only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To drain oil back to the sump overnight",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "What does the anti-drainback valve in a filter prevent?",
+          "moduleTitle": "Oil Filterization Principles",
+          "explanation": "The anti-drainback valve keeps oil in the filter and galleries when off, giving faster pressure on start-up.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Oil draining out of the filter and galleries when the engine is off, which would delay oil pressure on start-up",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Fuel entering the oil",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Coolant mixing with oil",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Oil being filtered too well",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "On a 5W-30 oil, what does the \"5W\" describe?",
+          "moduleTitle": "Engine Oil Velocity and Performance Classifications",
+          "explanation": "The number before W is the winter (cold) viscosity rating; 30 is the hot viscosity grade in 5W-30.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The oil's fuel economy rating",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Its cold-temperature (winter) viscosity rating - how it flows when cold",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The size of the container",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The oil change interval in weeks",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Performance classifications such as API and ACEA categories tell you:",
+          "moduleTitle": "Engine Oil Velocity and Performance Classifications",
+          "explanation": "API / ACEA categories confirm the oil meets the performance level that engine and its emissions equipment require.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only the colour of the oil",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Whether the oil meets the required performance level for that engine type and emissions equipment",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "That any oil with a higher price is approved",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Nothing - viscosity grade is the only thing that matters",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "What do detergent and dispersant additives in engine oil do?",
+          "moduleTitle": "Engine Oil Basis Additives and Compositions",
+          "explanation": "Detergents clean surfaces; dispersants keep particles in suspension so the filter can trap them.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Make the oil foam on purpose",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Wash the outside of the engine",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Detergents clean deposits from surfaces and dispersants keep particles suspended so the filter can remove them",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Replace the need for an oil filter",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Anti-wear additives such as ZDDP protect the engine mainly by:",
+          "moduleTitle": "Engine Oil Basis Additives and Compositions",
+          "explanation": "Anti-wear additives form a protective film on loaded metal surfaces where the oil film is thinnest.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Thickening the oil when hot",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Forming a protective film on metal surfaces where the oil film is thinnest, such as cam lobes",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Cooling the coolant",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Sealing tyre punctures",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Compared with mineral oil, synthetic oil generally offers:",
+          "moduleTitle": "Engine Oil Synthetic Versus Mineral",
+          "explanation": "Synthetic oil has more uniform molecules, with better cold flow and heat / oxidation resistance.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Worse cold starting flow",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "More uniform molecules, better cold flow, and better resistance to heat and oxidation",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No difference at all",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A shorter life in every engine",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Which statement about mineral oil is correct?",
+          "moduleTitle": "Engine Oil Synthetic Versus Mineral",
+          "explanation": "Mineral oil is refined from crude, costs less, and is suitable where the manufacturer specifies it.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It is made in a laboratory with no crude oil involved in any grade",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "It never needs changing",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "It is refined from crude oil, costs less, and can be suitable where the manufacturer specifies it",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "It is always better than synthetic at high temperature",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "When selecting engine oil for a service, the deciding source is:",
+          "moduleTitle": "Engine Oil Selections",
+          "explanation": "Always select by the manufacturer specification: viscosity grade plus the required approval / category.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Whatever oil is already open in the workshop",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The manufacturer specification - viscosity grade and approval / performance category for that engine",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The colour of the old oil",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The cheapest oil on the shelf",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A vehicle used mainly for short trips should have its oil:",
+          "moduleTitle": "Engine Oil Selections",
+          "explanation": "Short trips contaminate oil with moisture and fuel and rarely get it fully hot - use the severe-service interval.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Changed less often, because the engine does fewer miles",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Never changed if the level looks full",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Topped up with any grade available",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Changed on the severe-service schedule, because short trips cause moisture and fuel contamination and the oil rarely gets fully hot",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "slug": "servicing-transmission-servicing",
+      "title": "Transmission Servicing",
+      "moduleTitles": [
+        "Six Speed Hydramatic Services",
+        "Mercedes-Benz Seven Seven Point Nine Transmission Service",
+        "VW Audi DSG Service",
+        "VF Four Horsepower 16 Transmission Service Checks"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Why must the correct specified fluid be used in a 6-speed Hydramatic automatic?",
+          "moduleTitle": "Six Speed Hydramatic Services",
+          "explanation": "Fluid friction characteristics are matched to the clutches and shift calibration; wrong fluid causes shift faults.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Any automatic fluid shifts the same way",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Friction characteristics are matched to the clutches and shift calibration - the wrong fluid can cause harsh or slipping shifts",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fluid type only affects the colour in the pan",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The fluid is only there to cool the casing",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "On many modern automatics with no dipstick, fluid level is checked by:",
+          "moduleTitle": "Six Speed Hydramatic Services",
+          "explanation": "With no dipstick, level is set at a specified fluid temperature using the level / overflow plug procedure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Guessing from the amount drained out",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Removing the wheels",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Bringing the fluid to a specified temperature and checking flow from the level / overflow plug as directed",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Overfilling, then driving until the excess escapes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A Hydramatic pan service should include:",
+          "moduleTitle": "Six Speed Hydramatic Services",
+          "explanation": "Inspect pan and magnet, renew filter and gasket where specified, and refill with fresh specified fluid.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Reusing the old fluid to save cost",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Inspecting the pan and magnet for debris, fitting a new filter and gasket where specified, and refilling with fresh specified fluid",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Tightening pan bolts as tight as possible in any order",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Skipping the filter if the fluid looks clean",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "The Mercedes-Benz 722.9 (7G-Tronic) transmission fluid level is set by:",
+          "moduleTitle": "Mercedes-Benz Seven Seven Point Nine Transmission Service",
+          "explanation": "The 722.9 level is set by the overflow method at a specified temperature with approved-specification fluid only.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A conventional dipstick at any temperature",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Filling until fluid pours out cold",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Guesswork based on road feel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The overflow method at a specified fluid temperature, using only the approved-specification fluid",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Why is using only the approved fluid specification critical on the 722.9 service?",
+          "moduleTitle": "Mercedes-Benz Seven Seven Point Nine Transmission Service",
+          "explanation": "Unapproved fluid can upset friction and shift quality and may damage the transmission.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Unapproved fluid can upset shift quality and clutch friction and may damage the transmission",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "It only changes the service invoice wording",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Any red automatic fluid is identical",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Approved fluid is only needed under warranty for paperwork",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Debris on the pan magnet or in the filter during a transmission service tells you:",
+          "moduleTitle": "Mercedes-Benz Seven Seven Point Nine Transmission Service",
+          "explanation": "Heavy debris signals internal wear and needs further diagnosis, not just a fluid change.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Nothing - it should always be ignored",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To add more fluid and return the vehicle",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "About internal wear - heavy friction material or metal can point to clutch or component wear that needs further diagnosis",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "That the fluid was overfilled at the factory",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "On a wet-clutch VW / Audi DSG, routine service centres on:",
+          "moduleTitle": "VW Audi DSG Service",
+          "explanation": "Wet-clutch DSG fluid cools and operates the clutches and mechatronics, so fluid and filter changes are scheduled service items.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Changing the DSG fluid and filter at the specified interval, because the fluid cools and operates the clutches and mechatronics",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Never changing the fluid - it is sealed for life in all versions",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Adjusting a clutch cable",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replacing the torque converter",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "How is a DSG different from a conventional automatic?",
+          "moduleTitle": "VW Audi DSG Service",
+          "explanation": "A DSG uses two clutches and two gear sets, preselecting the next gear, with no torque converter in most versions.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It has no gears at all",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "It uses two clutches and two gear sets, preselecting the next gear for very fast shifts, and has no torque converter in most versions",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It is a manual gearbox with no electronics",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It only works in reverse",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Transmission service checks on the ZF-type unit in this course should include:",
+          "moduleTitle": "VF Four Horsepower 16 Transmission Service Checks",
+          "explanation": "Service checks cover fluid level and condition, leaks, fault codes, cooler lines, and shift quality on road test.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only a wash of the casing",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Fluid level and condition, leaks, fault-code scan, cooler lines, and a road test of shift quality",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removing the transmission for every service",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Checking only the engine oil",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Burnt-smelling, dark transmission fluid found during service checks most likely indicates:",
+          "moduleTitle": "VF Four Horsepower 16 Transmission Service Checks",
+          "explanation": "Burnt, dark fluid points to overheating and clutch wear; find the cause instead of only changing the fluid.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal fluid that needs no action",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Too much coolant in the system",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A recently changed filter",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Overheating and clutch wear - the cause should be diagnosed, not just the fluid changed and returned",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

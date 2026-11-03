@@ -1,0 +1,3281 @@
+{
+  "slug": "engine",
+  "title": "Engine",
+  "courses": [
+    {
+      "position": 1,
+      "slug": "engine-engine-mechanical-essentials",
+      "title": "Engine Mechanical Essentials",
+      "moduleTitles": [
+        "Stroke Engine Principles",
+        "Relative Compression Testing",
+        "Gasoline Engine Mechanical Checks",
+        "Best Practice Head and Gasket Testing",
+        "Understanding Valve Timing",
+        "VVT Cam Phase Type",
+        "VVT Cam Changing Type",
+        "Valve Adjustment Shim Type",
+        "Valve Adjustment Rocker Type"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In a four-stroke engine, which sequence is correct?",
+          "moduleTitle": "Stroke Engine Principles",
+          "explanation": "One cycle needs intake, compression, power and exhaust - two crank revolutions, 720 degrees.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Intake, power, compression, exhaust",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Intake, compression, power, exhaust",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Compression, intake, exhaust, power",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Power, intake, compression, exhaust",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "How many crankshaft degrees does one complete four-stroke cycle take?",
+          "moduleTitle": "Stroke Engine Principles",
+          "explanation": "Each stroke is 180 degrees; four strokes total 720 degrees.",
+          "options": [
+            {
+              "label": "A",
+              "body": "180 degrees",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "360 degrees",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "540 degrees",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "720 degrees",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A relative compression test using starter current draw shows one cylinder low. What does that indicate?",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "Less compression means less load, so current dips on that cylinder's compression stroke.",
+          "options": [
+            {
+              "label": "A",
+              "body": "That cylinder builds less compression, so the starter works less hard on its stroke",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The battery is fully charged",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "That cylinder has higher compression than the others",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The starter is overheating",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Before condemning low compression, which check helps separate ring leakage from valve leakage?",
+          "moduleTitle": "Gasoline Engine Mechanical Checks",
+          "explanation": "If wet compression rises sharply, oil helped the rings seal, pointing to ring/bore wear.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A wet compression test - oil added to the cylinder",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "A fuel pressure test",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A cooling system pressure test",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A spark output test",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A chemical block test fluid changes from blue to yellow/combustion colour. What does that suggest?",
+          "moduleTitle": "Best Practice Head and Gasket Testing",
+          "explanation": "The fluid reacts to CO2 from combustion gases entering the coolant.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal coolant",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Combustion gases in the cooling system, such as from a head gasket leak",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low coolant level only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A faulty radiator cap only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "If a timing chain stretches, valve timing will generally:",
+          "moduleTitle": "Understanding Valve Timing",
+          "explanation": "Stretch delays cam rotation relative to the crank, retarding valve events.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Advance",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Retard",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Stay exactly at specification",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Reverse direction",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A phaser-type VVT system changes valve timing by:",
+          "moduleTitle": "VVT Cam Phase Type",
+          "explanation": "A cam phaser advances or retards the whole cam by rotating it relative to drive.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Swapping to a different cam lobe",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rotating the cam relative to its sprocket",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Changing valve lift only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disconnecting the camshaft",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A cam-changing (lift/duration switching) system primarily changes:",
+          "moduleTitle": "VVT Cam Changing Type",
+          "explanation": "It switches between lobe profiles to change lift and duration, not just phase.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Crankshaft stroke",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Which cam lobe profile the valve follows",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Compression ratio mechanically",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Spark plug gap",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "On a shim-type valvetrain, clearance is too tight. To increase clearance you need a:",
+          "moduleTitle": "Valve Adjustment Shim Type",
+          "explanation": "A thinner shim leaves more gap between cam lobe and follower.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Thicker shim",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Thinner shim",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Longer pushrod",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Weaker valve spring",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "On a rocker-type adjustable valvetrain, valve clearance is set with the piston at:",
+          "moduleTitle": "Valve Adjustment Rocker Type",
+          "explanation": "Both valves must be fully closed on the base circle - TDC compression.",
+          "options": [
+            {
+              "label": "A",
+              "body": "BDC on the power stroke",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "TDC on the compression stroke for that cylinder, valves closed",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Any position, it does not matter",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "TDC on the exhaust stroke",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "slug": "engine-cooling-system-principles",
+      "title": "Cooling System Principles",
+      "moduleTitles": [
+        "Cooling System Principles",
+        "Drive Belt Systems",
+        "Cooling System Diagnostics",
+        "Cooling Fan Relay Control",
+        "Thermostat ECM Controlled",
+        "Investigating Stray Current Corrosion"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "The thermostat's main job is to:",
+          "moduleTitle": "Cooling System Principles",
+          "explanation": "It stays closed during warm-up, then opens to regulate temperature.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Pump coolant",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Control minimum operating temperature by blocking flow to the radiator until warm-up",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Create coolant pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Filter the coolant",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Raising cooling system pressure with the cap mainly:",
+          "moduleTitle": "Cooling System Principles",
+          "explanation": "About 3 degrees F boiling-point rise per psi of pressure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Lowers the boiling point",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Raises the boiling point of the coolant",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Stops all corrosion",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Increases thermostat opening speed only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A chirp that changes with accessory load and a glazed, cracked belt most likely needs:",
+          "moduleTitle": "Drive Belt Systems",
+          "explanation": "Glazing and cracks mean the belt is worn; misalignment causes chirp and repeat wear.",
+          "options": [
+            {
+              "label": "A",
+              "body": "More tension only, never replacement",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Belt replacement and pulley alignment check",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A shorter belt of any type",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Water sprayed on it permanently",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "An engine overheats only at highway speed. A likely cause is:",
+          "moduleTitle": "Cooling System Diagnostics",
+          "explanation": "Fans matter most at low speed; high-speed overheating points to flow restriction.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A cooling fan fault",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A partially restricted radiator or collapsing lower hose",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A thermostat stuck open",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cold coolant",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Pressure-testing the system and the cap checks for:",
+          "moduleTitle": "Cooling System Diagnostics",
+          "explanation": "A system that will not hold pressure leaks; a cap that vents early lowers boiling point.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Fuel leaks",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "External/internal leaks and whether the cap holds rated pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Spark strength",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Oil pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "The ECM turns the electric fan on mainly based on:",
+          "moduleTitle": "Cooling Fan Relay Control",
+          "explanation": "ECT is the primary input, with A/C request as another common trigger.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Radio volume",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Engine coolant temperature (and A/C request/pressure)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Odometer reading",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel level",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A fan relay coil tests open. The fan will:",
+          "moduleTitle": "Cooling Fan Relay Control",
+          "explanation": "An open coil cannot create the magnetic field that closes the relay contacts.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Run at high speed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Not run when commanded through that relay",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Run continuously",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Run only in reverse",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "On an ECM-controlled (map-controlled) thermostat, the ECM can:",
+          "moduleTitle": "Thermostat ECM Controlled",
+          "explanation": "A heater element lets the ECM open the thermostat sooner than wax alone would.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Move the radiator",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Heat the thermostat electrically to open it earlier under load",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Disable the water pump permanently",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Change coolant colour",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Stray-current (electrolysis) corrosion in coolant is checked by measuring:",
+          "moduleTitle": "Investigating Stray Current Corrosion",
+          "explanation": "Voltage in the coolant above a small threshold indicates electrical current damaging metals.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Voltage between the coolant and battery negative with a voltmeter",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Resistance of a spark plug",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Fuel pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Tyre pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A common cause of stray current in coolant is:",
+          "moduleTitle": "Investigating Stray Current Corrosion",
+          "explanation": "Poor grounds force current to find a path through the coolant and heater core/radiator.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A missing or corroded engine ground strap",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Fresh coolant",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A new radiator cap",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Correct belt tension",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "slug": "engine-forced-introduction-fundamentals",
+      "title": "Forced Introduction Fundamentals",
+      "moduleTitles": [
+        "Forced Introduction System Principles",
+        "Turbocharger Components Bearings",
+        "Twin Scroll Turbocharging System Principles",
+        "Twin Charge Systems",
+        "Understanding Turbo Surge and Flutter",
+        "48 Volt Electric Turbo Technology"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Forced induction increases power mainly by:",
+          "moduleTitle": "Forced Introduction System Principles",
+          "explanation": "More air mass allows more fuel to burn per cycle.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Reducing air density",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Increasing the mass of air (and matching fuel) in the cylinder",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Raising exhaust backpressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Slowing the crankshaft",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A turbocharger shaft is most commonly supported by:",
+          "moduleTitle": "Turbocharger Components Bearings",
+          "explanation": "Most turbos float the shaft on pressurised oil films; oil supply and drain are critical.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ball bearings only in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Floating journal (oil-film) bearings fed with pressurised engine oil",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Dry plastic bushings",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Magnetic levitation with no oil",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Blue smoke and shaft play after oil starvation most likely mean:",
+          "moduleTitle": "Turbocharger Components Bearings",
+          "explanation": "Oil starvation destroys turbo bearings quickly; the root cause must be fixed.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A healthy turbo",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Bearing wear - inspect/replace the turbo and fix the oil feed cause",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A dirty air filter only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Normal break-in",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A twin-scroll turbo improves response by:",
+          "moduleTitle": "Twin Scroll Turbocharging System Principles",
+          "explanation": "Separate scrolls keep pulse energy and reduce interference, spooling the turbo sooner.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Mixing all exhaust pulses together",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Keeping exhaust pulses from paired cylinders separate to preserve pulse energy",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removing the wastegate",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cooling the intake with fuel",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A twin-charged engine combines:",
+          "moduleTitle": "Twin Charge Systems",
+          "explanation": "The supercharger gives low-speed boost; the turbo takes over at higher speed/flow.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Two alternators",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A supercharger and a turbocharger",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Two radiators",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A turbo and a larger exhaust",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Compressor surge happens when:",
+          "moduleTitle": "Understanding Turbo Surge and Flutter",
+          "explanation": "Surge is an unstable stall - often heard as chattering when the throttle closes under boost.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Boost is too low at idle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The compressor is asked for pressure the airflow cannot support, so flow stalls/reverses",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The wastegate opens normally",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Oil pressure rises",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Flutter/chatter on throttle lift-off can be reduced by a:",
+          "moduleTitle": "Understanding Turbo Surge and Flutter",
+          "explanation": "Venting the pressure spike keeps the compressor out of surge.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Blocked intake",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Diverter/blow-off valve that vents or recirculates pressurised air",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Tighter wastegate with no control",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Removed air filter",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A 48-volt electric turbo/e-assist mainly helps by:",
+          "moduleTitle": "48 Volt Electric Turbo Technology",
+          "explanation": "Electric drive spools the compressor at low rpm where exhaust energy is weak.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Replacing engine oil",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Spinning the compressor electrically to cut turbo lag before exhaust energy builds",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Powering the headlights only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Charging the 12V battery directly with boost",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "The wastegate controls maximum boost by:",
+          "moduleTitle": "Forced Introduction System Principles",
+          "explanation": "Bypassing exhaust limits turbine speed and therefore boost.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Closing the throttle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Bypassing exhaust gas around the turbine",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Blocking the intercooler",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Advancing spark",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "An intercooler's purpose is to:",
+          "moduleTitle": "Turbocharger Components Bearings",
+          "explanation": "Compression heats air; cooling it restores density and reduces knock tendency.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Heat intake air",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Cool the compressed intake air, increasing its density",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Filter exhaust gas",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Store boost pressure for later",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "slug": "engine-engine-management-essentials",
+      "title": "Engine Management Essentials",
+      "moduleTitles": [
+        "Port Fuel Injection Delivery System",
+        "Gasoline Injection Fuel Control",
+        "Inducing Gasoline Direct Injection",
+        "Dual Injection Fuel Systems",
+        "Understanding Fuel Trims",
+        "Understanding Gasoline Scan Tool Data",
+        "Throttle Actuator Control Systems",
+        "Cylinder Deactivation OHV Type",
+        "Intake Runner Control System",
+        "Intake Runner Control Solenoid Type Diagnosis"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In port fuel injection, fuel is sprayed:",
+          "moduleTitle": "Port Fuel Injection Delivery System",
+          "explanation": "PFI injectors sit in the intake port/runner aimed at the back of the intake valve.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Directly into the combustion chamber",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Into the intake port, just behind the intake valve",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Into the exhaust manifold",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Into the throttle bore only on all systems",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "In closed loop, the ECM mainly uses which sensor to trim fuel?",
+          "moduleTitle": "Gasoline Injection Fuel Control",
+          "explanation": "O2 feedback drives short-term correction around stoichiometry in closed loop.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Oil pressure sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Oxygen sensor",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Knock sensor only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Vehicle speed sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Gasoline direct injection differs from PFI because fuel is injected:",
+          "moduleTitle": "Inducing Gasoline Direct Injection",
+          "explanation": "GDI uses a high-pressure pump and injectors in the chamber, often 500-3,000+ psi.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Before the air filter",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Directly into the cylinder at high pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only during the exhaust stroke",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Through the spark plug",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A dual-injection (PFI + GDI) system uses PFI at low load mainly to:",
+          "moduleTitle": "Dual Injection Fuel Systems",
+          "explanation": "Port fuel washes the intake valves and helps low-load emissions; GDI dominates at higher load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Increase carbon on intake valves",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Reduce particulates and intake-valve deposits and improve low-load running",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Disable direct injection permanently",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Use more fuel on purpose",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A large positive long-term fuel trim means the ECM is:",
+          "moduleTitle": "Understanding Fuel Trims",
+          "explanation": "Positive trim = adding fuel because the system was running lean.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Removing fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Adding fuel to compensate for a lean condition (e.g. vacuum leak, low pressure)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Seeing a rich condition",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "In open loop forever",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Total trim (STFT + LTFT) near +25% at idle but near 0% at cruise suggests:",
+          "moduleTitle": "Understanding Fuel Trims",
+          "explanation": "A fixed vacuum leak is a large share of idle airflow but a small share at cruise.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A MAF fault that scales with airflow",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An unmetered air/vacuum leak, proportionally biggest at idle",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A stuck-open injector",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low tyre pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Freeze-frame data records:",
+          "moduleTitle": "Understanding Gasoline Scan Tool Data",
+          "explanation": "Freeze frame snapshots key PIDs at the moment the fault matured.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Live radio presets",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Sensor conditions captured when a DTC set",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only cleared codes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The service history",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "In electronic throttle control, if APP and TPS signals disagree beyond limits, the ECM will typically:",
+          "moduleTitle": "Throttle Actuator Control Systems",
+          "explanation": "Redundant, opposing sensors are cross-checked; disagreement triggers a safe default.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ignore it",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Enter a reduced-power/limp mode and set a DTC",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Open the throttle fully",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disable the brakes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "OHV cylinder deactivation keeps valves closed on deactivated cylinders by:",
+          "moduleTitle": "Cylinder Deactivation OHV Type",
+          "explanation": "Switching lifters collapse so pushrods do not lift the valves, while fuel and spark are also cut.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Removing the pushrods",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Collapsing/special lifters that decouple from the cam lobe",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Closing the throttle only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cutting spark only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Intake runner control changes effective runner length to:",
+          "moduleTitle": "Intake Runner Control System",
+          "explanation": "Long runners favour low-speed torque; short runners favour high-speed breathing.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only make noise",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Use a short path for high rpm and a long path for low-rpm torque",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Cool the intake",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Meter fuel",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "slug": "engine-understanding-engine-sensors",
+      "title": "Understanding Engine Sensors",
+      "moduleTitles": [
+        "Gasoline Injection Sensors",
+        "Narrow Band Oxygen Sensors",
+        "Wide Band Oxygen Sensors",
+        "Mass Airflow Sensors",
+        "Hot Film Type Mass Airflow Sensor",
+        "Eight Wire Type Mass Airflow Sensor",
+        "Wire and Circuits Pull Up and Down Circuits",
+        "Accelerator Pedal Position Sensor",
+        "Throttle Position Sensor"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "The ECM calculates engine load for fueling mainly from:",
+          "moduleTitle": "Gasoline Injection Sensors",
+          "explanation": "Airflow/air pressure, rpm and temperatures define how much fuel a cylinder fill needs.",
+          "options": [
+            {
+              "label": "A",
+              "body": "MAF or MAP plus rpm and temperature inputs",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Fuel level only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Ambient light",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Brake switch only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A healthy narrow-band O2 sensor in closed loop should:",
+          "moduleTitle": "Narrow Band Oxygen Sensors",
+          "explanation": "Switching shows it sensing rich/lean crossings around stoichiometry.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Stay fixed at 0.45V",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Switch repeatedly above and below about 0.45V, roughly 0.1-0.9V",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Stay at 5V",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Read battery voltage",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A wide-band (air-fuel ratio) sensor differs because it can:",
+          "moduleTitle": "Wide Band Oxygen Sensors",
+          "explanation": "Its pump-cell current is proportional to lambda across a broad range.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only switch rich/lean",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Measure the exact air-fuel ratio over a wide range, e.g. 10:1 to 20:1",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Replace the MAF",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Measure oil pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A MAF sensor measures:",
+          "moduleTitle": "Mass Airflow Sensors",
+          "explanation": "Fuel is matched to air mass, so MAF is a primary fueling input.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Exhaust volume",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The mass of air entering the engine",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fuel mass directly",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Intake vacuum only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A hot-film MAF stays accurate by keeping its film at a constant temperature. More airflow means:",
+          "moduleTitle": "Hot Film Type Mass Airflow Sensor",
+          "explanation": "Moving air cools the film; the heating current needed is the airflow signal.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Less current needed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "More current needed to maintain temperature, which the ECM reads as more airflow",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No change in current",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The film is switched off",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "An 8-wire MAF assembly commonly combines MAF with:",
+          "moduleTitle": "Eight Wire Type Mass Airflow Sensor",
+          "explanation": "Extra wires serve the additional sensing elements built into the housing.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A fuel pump",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Intake air temperature and sometimes humidity/barometric sensing in one housing",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "An oxygen sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A knock sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "In a pull-up circuit, the ECM internal resistor pulls the signal voltage up, and the sensor typically:",
+          "moduleTitle": "Wire and Circuits Pull Up and Down Circuits",
+          "explanation": "Many thermistor/switch circuits work this way: the sensor pulls the 5V reference down.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Pulls it down toward ground to create the signal",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Shorts battery voltage to the ECM",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Supplies 12V to the sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disconnects the ground permanently",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "APP sensors use two (or more) tracks mainly to:",
+          "moduleTitle": "Accelerator Pedal Position Sensor",
+          "explanation": "If the two APP signals do not agree in their set ratio, a fault is set.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Make the pedal heavier",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Provide redundancy so the ECM can cross-check for safety",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Double the throttle opening",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replace the TPS",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A TPS signal that drops to 0V briefly while sweeping the throttle indicates:",
+          "moduleTitle": "Throttle Position Sensor",
+          "explanation": "Dropouts during a smooth sweep show a dead spot in the resistive track.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A normal glitch",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A worn/open spot in the sensor track - replace the sensor",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low fuel pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A good sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A coolant temperature sensor reading -40 degrees on a warm engine most likely indicates:",
+          "moduleTitle": "Gasoline Injection Sensors",
+          "explanation": "On an NTC thermistor circuit, open/high resistance = the coldest reading; it also causes over-fueling.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A short to ground",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An open circuit (high resistance reads as very cold)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Normal operation",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A rich-only fault with no other effect",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "slug": "engine-mastering-ignition-systems",
+      "title": "Mastering Ignition Systems",
+      "moduleTitles": [
+        "Kettering Type Ignition Systems",
+        "Spark Plugs",
+        "Spark Timing and Dwell Control",
+        "Spark Plug and Lead Diagnosis",
+        "Magneto and CDI",
+        "Electronic Switching Ignition Systems",
+        "COP and Wasted Spark",
+        "Ignition Coil Pack Diagnostics"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In a Kettering (points) system, the condenser/capacitor across the points mainly:",
+          "moduleTitle": "Kettering Type Ignition Systems",
+          "explanation": "It absorbs the primary surge as points open, sharpening the magnetic collapse.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Creates the spark directly",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Reduces arcing at the points and speeds primary current collapse",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Times the distributor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Charges the battery",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A plug with a worn, rounded centre electrode and wide gap will:",
+          "moduleTitle": "Spark Plugs",
+          "explanation": "A larger, worn gap takes more voltage to jump, especially under cylinder pressure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Need less voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Require higher firing voltage and may misfire under load",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fire earlier",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Run cooler",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Dwell is best defined as:",
+          "moduleTitle": "Spark Timing and Dwell Control",
+          "explanation": "Enough dwell saturates the coil; too little weakens the spark, too much overheats it.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Spark duration in the cylinder",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The time/angle the primary circuit is on, building coil current before firing",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The gap of the plug",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Exhaust valve timing",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A plug lead with carbon tracking on its insulation indicates:",
+          "moduleTitle": "Spark Plug and Lead Diagnosis",
+          "explanation": "Tracking is a leakage path that steals spark energy, usually under load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal wear only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Spark leaking to ground along a damaged/contaminated path - replace the lead/plug as needed",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "High fuel pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A good secondary circuit",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A CDI system differs from inductive ignition because it:",
+          "moduleTitle": "Magneto and CDI",
+          "explanation": "Capacitor discharge gives a very fast, high-voltage rise, common on small engines.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Stores energy in a capacitor and discharges it rapidly into the coil primary",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Uses points only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Has no coil",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fires only at idle",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "In electronic (transistor-switched) ignition, the module switches primary current based on:",
+          "moduleTitle": "Electronic Switching Ignition Systems",
+          "explanation": "The pickup tells the module when to turn primary current off and fire the coil.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The driver's input only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A crank/cam position pickup signal",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Intake vacuum only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Coolant colour",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "In a wasted-spark system, one coil fires two plugs at once. The 'waste' spark occurs on the:",
+          "moduleTitle": "COP and Wasted Spark",
+          "explanation": "Companion cylinders are at TDC together; one is on compression, the other wastes its spark on exhaust.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Compression stroke",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Exhaust stroke of the companion cylinder",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Intake stroke",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Power stroke",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Coil-on-plug (COP) gives an advantage because each coil has:",
+          "moduleTitle": "COP and Wasted Spark",
+          "explanation": "One coil per cylinder means long dwell availability and no secondary leads.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Less dwell time available",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "More time to saturate between firings and no plug leads to lose energy",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only one cylinder to fire at any speed with no control",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "No primary circuit",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A coil pack secondary that reads open/infinite resistance most likely means:",
+          "moduleTitle": "Ignition Coil Pack Diagnostics",
+          "explanation": "No continuity in the secondary means no complete high-voltage path.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A good coil",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An open secondary winding - the coil will not fire that output",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low primary resistance only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A fouled plug only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Advancing spark timing too far under load is most likely to cause:",
+          "moduleTitle": "Spark Timing and Dwell Control",
+          "explanation": "Too-early ignition raises peak pressure and temperature, promoting knock.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Retarded combustion",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Detonation/knock and possible engine damage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A weaker alternator",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low oil pressure",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "slug": "engine-fuel-delivery-essentials",
+      "title": "Fuel Delivery Essentials",
+      "moduleTitles": [
+        "Fuel Delivery System Mechanical Checks",
+        "Fuel Delivery System Electrical Checks",
+        "Injector Diagnostics",
+        "Fuel Pump Control Module Checks",
+        "Fuel Pressure Regulator Performance",
+        "Introducing Ethanol Fuel",
+        "E85 Fuel Flex Vehicles"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Low fuel pressure with good pump voltage - the next mechanical check is:",
+          "moduleTitle": "Fuel Delivery System Mechanical Checks",
+          "explanation": "Pressure alone can mislead; a restriction or worn pump fails on volume under demand.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Replace the ECM",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Check for a restricted filter, kinked line or weak pump, and check volume/flow as well as pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Advance the timing",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replace the spark plugs",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Voltage-drop testing the pump ground while the pump runs shows 1.2V. That means:",
+          "moduleTitle": "Fuel Delivery System Electrical Checks",
+          "explanation": "More than about 0.2-0.5V drop on a ground under load is excessive.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A perfect ground",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Excessive resistance in the ground - the pump is losing 1.2V it needs",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The pump is new",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Normal on all vehicles, ignore it",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "An injector that clicks but delivers no fuel could have:",
+          "moduleTitle": "Injector Diagnostics",
+          "explanation": "Electrical operation does not prove hydraulic delivery; check pressure and spray/flow.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A clogged inlet screen/nozzle or no fuel pressure to it",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Perfect delivery",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Too much fuel pressure only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A good spray pattern by definition",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Comparing injector current ramps, one injector shows a much lower, slower rise. That suggests:",
+          "moduleTitle": "Injector Diagnostics",
+          "explanation": "Current ramp shape reveals coil resistance and pintle movement faults.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A shorted coil",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Higher circuit resistance or a partially open injector coil",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A good injector",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low battery state of charge only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A fuel pump control module varies pump speed mainly by:",
+          "moduleTitle": "Fuel Pump Control Module Checks",
+          "explanation": "PWM control delivers only the needed flow, cutting noise, heat and current draw.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Changing fuel octane",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Pulse-width modulating voltage to the pump to match demand",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Blocking the return line permanently",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Switching the injectors off",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "On a vacuum-referenced regulator, fuel pressure at idle (high vacuum) should be:",
+          "moduleTitle": "Fuel Pressure Regulator Performance",
+          "explanation": "Vacuum helps pull fuel through the injector, so rail pressure drops to keep the differential constant.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Higher than at wide-open throttle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Lower than with the vacuum hose disconnected",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Exactly battery voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Zero",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Fuel found inside the regulator's vacuum hose means:",
+          "moduleTitle": "Fuel Pressure Regulator Performance",
+          "explanation": "Fuel should never cross into the vacuum side; it also causes rich running.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal operation",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A ruptured regulator diaphragm - replace the regulator",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A clogged air filter",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Good fuel pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Compared with pure gasoline, ethanol contains:",
+          "moduleTitle": "Introducing Ethanol Fuel",
+          "explanation": "Ethanol is oxygenated but energy-poor per gallon versus gasoline.",
+          "options": [
+            {
+              "label": "A",
+              "body": "More energy per gallon",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Less energy per gallon, so more volume is needed for the same work",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No oxygen",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Twice the energy",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A flex-fuel vehicle knows the ethanol percentage mainly by:",
+          "moduleTitle": "E85 Fuel Flex Vehicles",
+          "explanation": "Content sensing lets the ECM adjust fuel volume, spark and cold-start strategy.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The fuel cap colour",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A fuel composition (ethanol content) sensor or calculated/virtual sensing from O2 feedback",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The odometer",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Intake air temperature alone",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Running E85 in a non-flex-fuel vehicle is risky mainly because:",
+          "moduleTitle": "E85 Fuel Flex Vehicles",
+          "explanation": "Non-flex systems lack the trim range, sensing and compatible seals/hoses for high ethanol.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It has too much energy",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The system may not add enough fuel (lean running) and materials may not be ethanol-compatible",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It instantly raises compression",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It disables the fuel pump relay",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "slug": "engine-emissions-control-fundamentals",
+      "title": "Emissions Control Fundamentals",
+      "moduleTitles": [
+        "Vehicle Emissions Principles",
+        "Exhaust Gas Recirculation",
+        "Vented Evaporative System",
+        "Gasoline Exhaust Emission Diagnostics",
+        "Two-Way Catalytic Converters",
+        "Three-Way Catalytic Converters",
+        "Catalytic Converter Efficiency",
+        "Catalytic Efficiency Diagnostics"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "NOx forms mainly when:",
+          "moduleTitle": "Vehicle Emissions Principles",
+          "explanation": "High temperature and pressure combine nitrogen and oxygen into NOx.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Combustion is very cold",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Combustion temperatures are very high",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The engine is off",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel is unburned only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Unburned hydrocarbons (HC) rise most directly with:",
+          "moduleTitle": "Vehicle Emissions Principles",
+          "explanation": "Fuel that does not burn leaves as HC - misfire is the classic cause.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A perfect burn",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Misfire or incomplete combustion",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Normal closed-loop control",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A hot catalytic converter",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "EGR reduces NOx by:",
+          "moduleTitle": "Exhaust Gas Recirculation",
+          "explanation": "Diluted, cooler combustion produces far less NOx.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Adding oxygen",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Recirculating inert exhaust to lower peak combustion temperature",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Enriching the mixture heavily",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Raising combustion temperature",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "EGR stuck open at idle will typically cause:",
+          "moduleTitle": "Exhaust Gas Recirculation",
+          "explanation": "Idle needs no dilution; excess EGR destabilises combustion.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Smooth idle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rough idle, stalling or hesitation",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Higher NOx only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "No drivability effect",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "The EVAP system's job is to:",
+          "moduleTitle": "Vented Evaporative System",
+          "explanation": "Vapours are stored, then purged under ECM control instead of escaping.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Vent fuel vapours freely to air",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Capture fuel vapours in a charcoal canister and purge them into the engine to burn",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Cool the fuel tank",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Meter liquid fuel to the injectors",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "High CO on a gas analyser most directly indicates:",
+          "moduleTitle": "Gasoline Exhaust Emission Diagnostics",
+          "explanation": "CO is partially burned fuel - a rich-running signature.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A lean mixture",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A rich mixture / incomplete combustion with excess fuel",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A vacuum leak only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low HC",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A two-way (oxidation) converter converts:",
+          "moduleTitle": "Two-Way Catalytic Converters",
+          "explanation": "Two-way cats oxidise HC and CO; they do not reduce NOx.",
+          "options": [
+            {
+              "label": "A",
+              "body": "NOx to nitrogen",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "HC and CO into water and CO2",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "CO2 into oxygen",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel into HC",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A three-way converter can reduce NOx and oxidise HC/CO at the same time only when:",
+          "moduleTitle": "Three-Way Catalytic Converters",
+          "explanation": "The 14.7:1 window is where both reduction and oxidation work together.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The mixture is always rich",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The air-fuel ratio cycles tightly around stoichiometry (14.7:1)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The engine is cold",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Oxygen sensors are disconnected",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A converter stores and releases which gas to work over the rich/lean swing?",
+          "moduleTitle": "Catalytic Converter Efficiency",
+          "explanation": "Oxygen storage smooths the swings and is the basis of efficiency monitoring.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Nitrogen",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Oxygen (in its cerium washcoat)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Carbon monoxide",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel vapour",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "The ECM judges converter efficiency mainly by comparing:",
+          "moduleTitle": "Catalytic Efficiency Diagnostics",
+          "explanation": "A good cat makes the rear O2 switch much slower/flatter than the front.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Front and rear MAF signals",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Upstream and downstream O2 sensor switching activity",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fuel pressure to oil pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Intake and exhaust temperature only",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 9,
+      "slug": "engine-understanding-diesel-systems",
+      "title": "Understanding Diesel Systems",
+      "moduleTitles": [
+        "Diesel Unit Injection",
+        "Hydraulic Electronic Unit Injection",
+        "Diesel Fuel Delivery Low Pressure Supply",
+        "Diesel Fuel Delivery High Pressure Supply",
+        "Two Stroke Diesel Technology",
+        "Diesel Engine Mechanical Checks",
+        "Glow Plug Operation",
+        "Indirect Glow Plug System Testing Procedures",
+        "Direct Glow Plug System Testing Procedures"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In a unit injector system, each injector:",
+          "moduleTitle": "Diesel Unit Injection",
+          "explanation": "The pumping element and nozzle are one unit per cylinder - no common rail.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only meters fuel, pressure comes from the rail",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Combines pump and injector in one unit, usually cam-driven, per cylinder",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Is powered by spark",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Feeds all cylinders from one body",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "HEUI injectors are actuated for injection pressure by:",
+          "moduleTitle": "Hydraulic Electronic Unit Injection",
+          "explanation": "HEUI uses high-pressure oil to intensify fuel pressure inside the injector.",
+          "options": [
+            {
+              "label": "A",
+              "body": "High-pressure engine oil acting on an intensifier piston",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "A spark plug",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Vacuum",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The alternator",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Air entering the low-pressure diesel supply most commonly causes:",
+          "moduleTitle": "Diesel Fuel Delivery Low Pressure Supply",
+          "explanation": "Diesel injection cannot compress air in the lines; leaks on the suction side are critical.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Smooth running",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Hard starting, stalling or no-start - diesels need a solid, air-free fuel supply",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Higher power",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Lower emissions only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "On a high-pressure diesel pump system, a failed pressure control will most likely show as:",
+          "moduleTitle": "Diesel Fuel Delivery High Pressure Supply",
+          "explanation": "Injection pressure defines atomisation and quantity; control faults hit starting and power first.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal pressure always",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rail/injection pressure too low (hard start, low power) or too high (rough, noisy running)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A tyre fault",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A coolant leak",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A two-stroke diesel gets its intake air mainly by:",
+          "moduleTitle": "Two Stroke Diesel Technology",
+          "explanation": "Two-stroke diesels cannot breathe on piston vacuum alone, so they are scavenged by a blower.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Natural vacuum only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A blower/supercharger (and often a turbo) forcing air through ports, with exhaust valves in the head",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A carburettor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Glow plugs",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A diesel needs much higher compression than a gasoline engine mainly because:",
+          "moduleTitle": "Diesel Engine Mechanical Checks",
+          "explanation": "Compression ignition typically needs roughly 16:1-22:1 and healthy cranking compression.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It has spark plugs",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Compression heat alone must ignite the fuel",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Its fuel ignites easily when cold",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It runs at lower temperature",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Glow plugs help a cold diesel start by:",
+          "moduleTitle": "Glow Plug Operation",
+          "explanation": "They pre-heat and often post-heat for smoother, cleaner cold running.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Sparking the fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Heating the air in/near the chamber so injected fuel ignites reliably",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Pumping fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Turning the starter",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "On an indirect (pre-chamber) system, one glow plug tests open with an ohmmeter. The likely symptom is:",
+          "moduleTitle": "Indirect Glow Plug System Testing Procedures",
+          "explanation": "That cylinder lacks pre-heat, so it misfires cold and makes white smoke.",
+          "options": [
+            {
+              "label": "A",
+              "body": "No effect on any engine",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rough, smoky cold starting on that cylinder until it warms up",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Instant overheating",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A charging fault",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "For a direct-injection glow plug system, a current-draw (amp clamp) test is useful because it:",
+          "moduleTitle": "Direct Glow Plug System Testing Procedures",
+          "explanation": "Comparing per-plug current finds open or weak plugs quickly.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Measures fuel pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Shows each plug is actually drawing current/heating without removing the plugs",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Tests the starter only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replaces all other tests in every case",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "White smoke and extended cranking on a cold morning, clearing as the engine warms, points first to:",
+          "moduleTitle": "Glow Plug Operation",
+          "explanation": "Unburned fuel vapour from cold cylinders is white; it clears with heat.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A good glow system",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Glow plug or glow control faults (or low compression) on one or more cylinders",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A hot thermostat",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Excess fuel octane",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "slug": "engine-common-rail-diesel-explained",
+      "title": "Common Rail Diesel Explained",
+      "moduleTitles": [
+        "Introducing Common Rail Diesel",
+        "CRD Fuel Delivery",
+        "CRD Electronic Controls",
+        "CRD Injector Coding",
+        "CRD Intake and Exhaust System",
+        "CRD Injector Leak Back Testing"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "'Common rail' means:",
+          "moduleTitle": "Introducing Common Rail Diesel",
+          "explanation": "Pressure generation and injection are separated - the rail stores pressurised fuel for all injectors.",
+          "options": [
+            {
+              "label": "A",
+              "body": "All injectors share one high-pressure accumulator (the rail) separate from injection timing",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Injectors are driven by the cam only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Fuel is delivered by gravity",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "There is one injector for all cylinders",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Typical common-rail pressures are in the range of:",
+          "moduleTitle": "CRD Fuel Delivery",
+          "explanation": "Modern CRD runs into the thousands of bar for fine atomisation and multiple injections.",
+          "options": [
+            {
+              "label": "A",
+              "body": "30-60 psi",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "About 5,000-30,000 psi (roughly 350-2,000+ bar) depending on system and load",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "500 psi maximum on all systems",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Vacuum",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "If rail pressure cannot build while cranking, a common cause is:",
+          "moduleTitle": "CRD Fuel Delivery",
+          "explanation": "The pump cannot build pressure if fuel leaks back or never reaches it.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A good high-pressure pump by definition",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Excessive injector leak-back, a weak pump or a suction/supply fault starving the pump",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "High tyre pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A clean fuel filter guaranteed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A key advantage of electronic CRD control is multiple injection events per cycle, used to:",
+          "moduleTitle": "CRD Electronic Controls",
+          "explanation": "Pilot/post events cut diesel knock and support DPF regeneration.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Waste fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Use pilot injection to soften combustion noise, main injection for power, and post injection for aftertreatment",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Disable the turbo",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replace glow plugs on all engines",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "The rail pressure sensor and pressure regulator work together so the ECM can:",
+          "moduleTitle": "CRD Electronic Controls",
+          "explanation": "It is a closed loop: sensor feedback, regulator/pump control correction.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ignore rail pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Hold actual rail pressure at the target for load and speed",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Set tyre pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Control the cooling fan only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "When a CRD injector is replaced, its code must be entered into the ECM because:",
+          "moduleTitle": "CRD Injector Coding",
+          "explanation": "The IMA/C2I-type code tells the ECM that injector's measured flow deviation.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The code is only a serial number for warranty",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Each injector's flow correction/classification differs slightly, and the ECM trims delivery using that code",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Coding changes the rail pressure mechanically",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Coding is never needed on CRD",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Skipping injector coding after replacement can cause:",
+          "moduleTitle": "CRD Injector Coding",
+          "explanation": "Without its correction, that cylinder is over- or under-fueled relative to the others.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Nothing at all",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rough idle, uneven cylinder balance, smoke or DTCs from incorrect per-cylinder fueling",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A flat tyre",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low coolant",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Swirl/throttle flaps in a CRD intake mainly help to:",
+          "moduleTitle": "CRD Intake and Exhaust System",
+          "explanation": "Air-motion control improves mixing, especially with EGR at part load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Block air permanently",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Control air motion and EGR mixing at low load for cleaner, more stable combustion",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increase rail pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cool the fuel rail",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A leak-back (return flow) test compares injectors. One injector returning far more fuel than the others indicates:",
+          "moduleTitle": "CRD Injector Leak Back Testing",
+          "explanation": "Excess return flow is a worn injector bypassing fuel instead of injecting it.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The healthiest injector",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Internal wear/leakage in that injector - it is stealing rail pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A good seal",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A blocked return line to all injectors",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Leak-back is usually measured:",
+          "moduleTitle": "CRD Injector Leak Back Testing",
+          "explanation": "Equal-time graduated bottles make the faulty injector obvious by volume.",
+          "options": [
+            {
+              "label": "A",
+              "body": "With the engine at full power on the road only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "At cranking or idle into graduated containers over a set time, comparing cylinders",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "By listening to the exhaust",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "With a tyre gauge",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 11,
+      "slug": "engine-diesel-emissions-technology",
+      "title": "Diesel Emissions Technology",
+      "moduleTitles": [
+        "Vehicle Emission Principles",
+        "Exhaust Gas Recirculation",
+        "NOx Type Catalytic Converters",
+        "DPF Diesel Particular Filter",
+        "DPF Flow Diagnostics",
+        "Selective Catalytic Reduction",
+        "DPF Regeneration"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Diesel exhaust aftertreatment has to deal mainly with which two pollutants that trade off against each other?",
+          "moduleTitle": "Vehicle Emission Principles",
+          "explanation": "Cutting NOx in-cylinder tends to raise soot, and vice versa - hence DPF plus NOx aftertreatment.",
+          "options": [
+            {
+              "label": "A",
+              "body": "CO and HC only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "NOx and particulate matter (soot)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Oxygen and nitrogen",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Water and CO2",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "On a diesel, high-rate or cooled EGR lowers NOx but can increase:",
+          "moduleTitle": "Exhaust Gas Recirculation",
+          "explanation": "Cooler, diluted combustion makes less NOx but more particulates to trap.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Soot/particulate loading and DPF burden",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Tyre wear",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Rail pressure automatically",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Glow plug life",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A lean NOx trap (NOx storage catalyst) works by:",
+          "moduleTitle": "NOx Type Catalytic Converters",
+          "explanation": "It stores NOx as nitrates, then a rich excursion converts it to nitrogen.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Burning soot only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Storing NOx during lean running, then releasing and reducing it during a brief rich purge",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Adding DEF",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Filtering particulates",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A DPF (diesel particulate filter) does what?",
+          "moduleTitle": "DPF Diesel Particular Filter",
+          "explanation": "Soot accumulates in the filter and must be oxidised periodically.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Converts NOx to nitrogen",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Traps soot in a wall-flow filter until it is burned off in regeneration",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Stores fuel vapour",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cools exhaust gas only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "DPF soot loading is estimated mainly from:",
+          "moduleTitle": "DPF Flow Diagnostics",
+          "explanation": "Pressure before vs. after the filter rises as soot and ash restrict flow.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Exhaust colour alone",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Differential pressure across the DPF (plus a model) - higher pressure drop means more loading/restriction",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fuel level",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Intake air temperature only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A differential pressure sensor hose that is split or blocked will cause:",
+          "moduleTitle": "DPF Flow Diagnostics",
+          "explanation": "The ECM trusts that pressure signal - a hose fault corrupts every DPF decision.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Accurate readings",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "False loading readings, failed or unnecessary regenerations, and related DTCs",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Better fuel economy guaranteed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "No symptoms ever",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "SCR reduces NOx using:",
+          "moduleTitle": "Selective Catalytic Reduction",
+          "explanation": "Dosed urea is the reductant that makes lean NOx conversion possible.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Gasoline",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "DEF (urea/AdBlue), which forms ammonia that converts NOx to nitrogen and water over the SCR catalyst",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Engine oil",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Coolant",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "If DEF runs empty or quality is poor, the system will typically:",
+          "moduleTitle": "Selective Catalytic Reduction",
+          "explanation": "Emissions rules require inducement - warnings escalating to derate/no-restart.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Run normally with no warning",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Warn the driver, then limit torque/speed or prevent restart until corrected",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increase power",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disable the DPF only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Active DPF regeneration cleans the filter by:",
+          "moduleTitle": "DPF Regeneration",
+          "explanation": "Temperatures around 600C oxidise the trapped soot.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Washing it with water while driving",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Raising exhaust temperature (often with post-injected fuel) to burn soot to ash/CO2",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removing and shaking it at every stop",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cooling the exhaust",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Repeatedly interrupting regeneration with short trips most likely leads to:",
+          "moduleTitle": "DPF Regeneration",
+          "explanation": "The filter never finishes cleaning, so load climbs and fuel ends up in the oil.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A cleaner filter",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rising soot load, more frequent regens, oil dilution from post-injection, and eventually a forced/service regen or warning light",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Instant engine failure in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Lower soot forever",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

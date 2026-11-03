@@ -1373,7 +1373,7 @@
             },
             {
               "label": "B",
-              "body": "Varying oil flow through an electrically controlled valve (or changing fluid properties) in response to",
+              "body": "Varying oil flow through an electrically controlled valve (or changing fluid properties) in response to module commands",
               "isCorrect": true
             },
             {
@@ -2227,7 +2227,7 @@
             },
             {
               "label": "B",
-              "body": "Fluid to return to the reservoir and release pressure when the pedal is released, and make up for pad",
+              "body": "Fluid to return to the reservoir and release pressure when the pedal is released, and make up for pad wear",
               "isCorrect": true
             },
             {
@@ -2547,7 +2547,7 @@
             },
             {
               "label": "B",
-              "body": "Atmospheric pressure admitted to the rear chamber pushes the diaphragm against the vacuum in the",
+              "body": "Atmospheric pressure admitted to the rear chamber pushes the diaphragm against the vacuum in the front chamber",
               "isCorrect": true
             },
             {
@@ -2757,7 +2757,7 @@
             },
             {
               "label": "B",
-              "body": "An AC voltage signal whose frequency and amplitude rise with wheel speed, as teeth pass the sensor",
+              "body": "An AC voltage signal whose frequency and amplitude rise with wheel speed, as teeth pass the sensor tip",
               "isCorrect": true
             },
             {
@@ -2785,7 +2785,7 @@
             },
             {
               "label": "B",
-              "body": "Is powered by the module and produces a switching (digital-type) signal that can be read down to near",
+              "body": "Is powered by the module and produces a switching (digital-type) signal that can be read down to near zero speed",
               "isCorrect": true
             },
             {
@@ -2841,7 +2841,7 @@
             },
             {
               "label": "B",
-              "body": "Measuring sensor circuit continuity/resistance and checking for opens or high resistance against",
+              "body": "Measuring sensor circuit continuity/resistance and checking for opens or high resistance against specification",
               "isCorrect": true
             },
             {
@@ -2869,7 +2869,7 @@
             },
             {
               "label": "B",
-              "body": "An intermittent wiring/connector fault that opens with movement - confirmed with a wiggle test while",
+              "body": "An intermittent wiring/connector fault that opens with movement - confirmed with a wiggle test while monitoring the signal",
               "isCorrect": true
             },
             {
@@ -2994,7 +2994,7 @@
             },
             {
               "label": "B",
-              "body": "Place the EPB in service/maintenance mode with a scan tool (or maker's procedure) to retract the",
+              "body": "Place the EPB in service/maintenance mode with a scan tool (or maker's procedure) to retract the motors",
               "isCorrect": true
             },
             {
