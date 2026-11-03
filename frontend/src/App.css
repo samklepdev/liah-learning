@@ -191,6 +191,10 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .score-of { font-size: 1.1rem; opacity: 0.6; }
 .score-previous { font-size: 0.82rem; opacity: 0.7; margin: 0.25rem 0 0; }
 
+/* The row-level badge carries a right margin for inline use; inside the
+   centred score block that would knock it off centre. */
+.score-block .course-badge { margin: 0.4rem 0 0; }
+
 .modules-block {
   padding: 0.85rem 1rem; margin-bottom: 1.5rem;
   border-radius: 0.5rem; background: var(--accent-bg);

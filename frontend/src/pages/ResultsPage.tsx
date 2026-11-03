@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import { quizApi, type GradedAttempt } from '../quiz/api';
 import { ResultsBreakdown } from '../quiz/ResultsBreakdown';
+import { PassBadge } from '../quiz/PassBadge';
+import { hasPassed } from '../quiz/passed';
 
 type State =
   | { kind: 'ready'; attemptId: string; attempt: GradedAttempt }
@@ -56,22 +58,30 @@ export function ResultsPage() {
   }
 
   const { attempt } = current;
-  const passed = attempt.score >= attempt.passScore;
+  // Best-ever, so a weaker retake never replaces a better number nor revokes
+  // the badge. previousBest excludes the attempt being viewed, hence the max.
+  const bestScore = Math.max(attempt.score, attempt.previousBest ?? attempt.score);
+  const passed = hasPassed(bestScore, attempt.passScore);
 
   return (
     <div className="results-page">
       <div className="score-block">
         <div className="score-number">
-          {attempt.score}
+          {bestScore}
           <span className="score-of">/{attempt.questionCount}</span>
         </div>
+        <PassBadge bestScore={bestScore} passScore={attempt.passScore} />
         <p className={passed ? 'course-passed' : 'course-below'}>
           {passed
             ? `Target of ${attempt.passScore}/${attempt.questionCount} met`
             : `Target is ${attempt.passScore}/${attempt.questionCount} — not there yet`}
         </p>
-        {attempt.previousBest !== null && (
-          <p className="score-previous">Your previous best was {attempt.previousBest}</p>
+        {/* Only when it differs from the headline, so a first attempt shows no
+            redundant line. */}
+        {bestScore > attempt.score && (
+          <p className="score-previous">
+            This attempt: {attempt.score}/{attempt.questionCount}
+          </p>
         )}
       </div>
 
@@ -82,7 +92,7 @@ export function ResultsPage() {
         </div>
       )}
 
-      <p className="label">All {attempt.questionCount} questions</p>
+      <p className="label">All {attempt.questionCount} questions from this attempt</p>
       <ResultsBreakdown questions={attempt.questions} />
 
       <div className="results-actions">

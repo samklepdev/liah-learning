@@ -50,14 +50,44 @@ describe('ResultsPage', () => {
     expect(await screen.findByText(/Target of 3\/3 met/)).toBeInTheDocument();
   });
 
-  test('shows the previous best only when there is one', async () => {
+  test('shows this attempt only when a better one exists', async () => {
     renderPage();
     await screen.findByText(/not there yet/);
-    expect(screen.queryByText(/previous best/)).not.toBeInTheDocument();
+    // Best-ever equals this attempt, so there is nothing to distinguish.
+    expect(screen.queryByText(/This attempt/)).not.toBeInTheDocument();
+  });
 
-    getAttempt.mockResolvedValue({ attempt: makeGradedAttempt({ previousBest: 1 }) });
+  test('keeps the badge when this attempt is below a target already met', async () => {
+    getAttempt.mockResolvedValue({
+      attempt: makeGradedAttempt({ score: 2, previousBest: 3 }),
+    });
     renderPage();
-    expect(await screen.findByText('Your previous best was 1')).toBeInTheDocument();
+
+    expect(await screen.findByText('Passed')).toBeInTheDocument();
+    expect(screen.getByText(/Target of 3\/3 met/)).toBeInTheDocument();
+    expect(screen.getByText('This attempt: 2/3')).toBeInTheDocument();
+  });
+
+  test('headlines the best score, not a weaker retake', async () => {
+    getAttempt.mockResolvedValue({
+      attempt: makeGradedAttempt({ score: 2, previousBest: 3 }),
+    });
+    renderPage();
+
+    const block = (await screen.findByText(/Target of/)).closest('.score-block');
+    expect(block).not.toBeNull();
+    // The headline reads 3, not the 2 scored on this attempt.
+    expect(within(block as HTMLElement).getByText('3')).toBeInTheDocument();
+    expect(within(block as HTMLElement).queryByText('2')).not.toBeInTheDocument();
+  });
+
+  test('shows the badge for a passing attempt', async () => {
+    getAttempt.mockResolvedValue({
+      attempt: makeGradedAttempt({ score: 3, modulesToReview: [] }),
+    });
+    renderPage();
+
+    expect(await screen.findByText('Passed')).toBeInTheDocument();
   });
 
   test('lists the modules to review', async () => {
