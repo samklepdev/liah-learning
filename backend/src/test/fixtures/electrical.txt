@@ -1,0 +1,2058 @@
+Electrical Pop Quizzes
+Practice Material - 16 Courses • 71 Modules
+
+
+
+      16 quizzes, one per course. 10 multiple-choice questions per quiz - 160 questions in total.
+
+      Answer key separate: No answers follow each quiz. Print pages 2-33 for the quizzes only. The
+      Answer Key is in a separate section at the back, grouped Quiz 1 through Quiz 16.
+
+      How to use: Complete one quiz at a time. Score it from the key at the back. Target 9/10 before
+      moving on. Record your retake date and second score in the Answer Key section.
+
+
+
+
+ Quiz             Course                                                                Modules
+
+ 1                Mastering Electric Principles                                         6
+ 2                Essential Multimeter Skills                                           4
+
+ 3                Advanced Multimeter Skills                                            2
+ 4                Diagnosing Circuit Faults                                             7
+
+ 5                Wiring Harness Fundamentals                                           6
+ 6                Automotive Relays Explained                                           3
+
+ 7                Vehicle Lighting Technology                                           5
+ 8                Understanding Sensors                                                 5
+
+ 9                Master Control Modules                                                4
+
+ 10               Electrical Waveforms Explained                                        7
+ 11               Advanced Oscilloscope Techniques                                      1
+
+ 12               Testing and Charging Batteries                                        5
+ 13               Understanding Charging Systems                                        4
+
+ 14               Smart Charging Technology                                             2
+ 15               Mastering Starter Systems                                             5
+
+ 16               Modern Vehicle Networks                                               5
+
+
+Name: ________________________________               Start date: ________________
+Quiz 1 - Mastering Electric Principles
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (6): Electronic Theory • Conductivity and Ohm's Laws • Understanding Electrical Principles Water
+   Analogy • Practical Use of Ohm's Laws • Elements That Every Circuit Must Have • Understanding Circuit Protection Series
+   and Partial Circuits
+
+
+
+1. In conventional current flow theory, current is said to flow:
+Module: Electronic Theory
+    A. From negative to positive through the load
+    B. From positive to negative through the external circuit
+    C. Only inside the battery
+    D. From ground directly to the load
+
+2. An atom with electrons that move easily between atoms is best described as:
+Module: Electronic Theory
+    A. An insulator
+    B. A semiconductor only when cold
+    C. A conductor
+    D. A capacitor
+
+3. According to Ohm's Law, if voltage stays the same and resistance doubles, current will:
+Module: Conductivity and Ohm's Laws
+    A. Double
+    B. Stay the same
+    C. Fall to half
+    D. Increase four times
+
+4. A 12 V circuit has 4 ohms of resistance. How much current flows?
+Module: Conductivity and Ohm's Laws
+    A. 0.33 A
+    B. 3 A
+    C. 16 A
+    D. 48 A
+
+5. In the water analogy for electricity, water pressure is most like:
+Module: Understanding Electrical Principles Water Analogy
+    A. Resistance
+    B. Current flow
+    C. Voltage
+    D. Capacitance
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 1 - Mastering Electric Principles • Page 2
+Quiz 1 - Mastering Electric Principles (continued)
+
+6. In the water analogy, a partly closed valve that restricts flow is most like:
+Module: Understanding Electrical Principles Water Analogy
+    A. A battery
+    B. Resistance in the circuit
+    C. A fuse
+    D. Voltage drop only at the source
+
+7. A bulb draws 2 A from a 12 V supply. Its resistance is:
+Module: Practical Use of Ohm's Laws
+    A. 24 ohms
+    B. 10 ohms
+    C. 6 ohms
+    D. 0.17 ohms
+
+8. A motor uses 120 W on a 12 V system. Approximately how much current does it draw?
+Module: Practical Use of Ohm's Laws
+    A. 0.1 A
+    B. 10 A
+    C. 12 A
+    D. 1440 A
+
+9. Which set lists elements every complete circuit must have?
+Module: Elements That Every Circuit Must Have
+    A. Source, protection, load and return path
+    B. Only a battery and a switch
+    C. Relay, sensor and module only
+    D. Fuse, capacitor and resistor only
+
+10. In a series circuit, if one load opens, what happens?
+Module: Understanding Circuit Protection Series and Partial Circuits
+    A. Other loads work brighter
+    B. Current stops through the whole series path
+    C. Voltage doubles at each load
+    D. Resistance falls to zero
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 1 - Mastering Electric Principles • Page 3
+Quiz 2 - Essential Multimeter Skills
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (4): Fundamental Multimeter Functions • Measuring Amps and Volts and Resistance • Understanding
+   Duty Cycles and PWM • Testing Diodes and Continuity
+
+
+
+1. To measure voltage, the meter leads are connected:
+Module: Fundamental Multimeter Functions
+    A. In series with the load
+    B. In parallel across the component or circuit
+    C. With power off across a fuse only
+    D. Red to ground only, black removed
+
+2. Before measuring resistance on a component, you should:
+Module: Fundamental Multimeter Functions
+    A. Leave the circuit powered
+    B. Disconnect power and isolate the component where needed
+    C. Set the meter to amps
+    D. Short the leads together permanently
+
+3. To measure current with a standard multimeter, the meter is placed:
+Module: Measuring Amps and Volts and Resistance
+    A. In parallel with the load
+    B. In series in the circuit
+    C. Across the battery posts
+    D. On the resistance scale
+
+4. A meter on the 20 V DC scale reads 12.6 on a resting battery. This indicates:
+Module: Measuring Amps and Volts and Resistance
+    A. A discharged battery
+    B. Approximately full charge at rest
+    C. Overcharging
+    D. An open cell in every case
+
+5. When checking resistance, infinite or OL on the display most likely means:
+Module: Measuring Amps and Volts and Resistance
+    A. Zero resistance
+    B. An open circuit or resistance beyond the range
+    C. A short to ground
+    D. Correct continuity
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 2 - Essential Multimeter Skills • Page 4
+Quiz 2 - Essential Multimeter Skills (continued)
+
+6. Duty cycle describes:
+Module: Understanding Duty Cycles and PWM
+    A. Battery voltage only
+    B. The percentage of time a signal is on during one cycle
+    C. The frequency in hertz only
+    D. Resistance of a solenoid
+
+7. A PWM solenoid at 75% duty cycle is:
+Module: Understanding Duty Cycles and PWM
+    A. On 25% of the time
+    B. Off all the time
+    C. On 75% of the time
+    D. Operating only on AC
+
+8. If frequency increases but duty cycle stays the same, what happens?
+Module: Understanding Duty Cycles and PWM
+    A. Each cycle gets shorter, but the on proportion stays the same
+    B. Duty becomes voltage
+    C. Current must fall to zero
+    D. The signal becomes DC
+
+9. In diode test mode, a good silicon diode tested in forward bias typically shows about:
+Module: Testing Diodes and Continuity
+    A. 0 V
+    B. 0.5 to 0.7 V
+    C. 12 V
+    D. OL in both directions
+
+10. A continuity beeper sounding does NOT by itself prove:
+Module: Testing Diodes and Continuity
+    A. The path has very high resistance
+    B. The circuit can carry full load current without voltage drop
+    C. The fuse is the correct rating
+    D. The battery is charged
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 2 - Essential Multimeter Skills • Page 5
+Quiz 3 - Advanced Multimeter Skills
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (2): Getting the Most From a Multimeter • Advanced Multimeter Functions
+
+
+
+1. Using a meter's MIN/MAX recording is most useful for:
+Module: Getting the Most From a Multimeter
+    A. Polishing terminals
+    B. Catching intermittent voltage drops or glitches over time
+    C. Measuring tyre pressure
+    D. Replacing a fuse rating
+
+2. Why select a manual range instead of autoranging during a fast-changing test?
+Module: Getting the Most From a Multimeter
+    A. Autoranging always reads AC
+    B. Manual range avoids range-hunting delays and unstable readings
+    C. Manual range increases battery voltage
+    D. It disables the leads
+
+3. A low-impedance meter mode is preferred when checking for unwanted 'ghost' voltage because it:
+Module: Getting the Most From a Multimeter
+    A. Raises circuit voltage
+    B. Loads the circuit slightly so induced voltage collapses
+    C. Measures resistance with power on
+    D. Disables continuity
+
+4. Relative (REL) mode is used to:
+Module: Getting the Most From a Multimeter
+    A. Zero out lead resistance or a reference value
+    B. Convert AC to DC
+    C. Test diodes only
+    D. Increase the fuse rating
+
+5. When measuring a small parasitic draw, the best practice is to:
+Module: Getting the Most From a Multimeter
+    A. Open the circuit suddenly and lose module memory settings where avoidable
+    B. Use an inductive clamp or a shunt method that keeps the circuit powered while modules sleep
+    C. Rev the engine continuously
+    D. Disconnect every module at once
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 3 - Advanced Multimeter Skills • Page 6
+Quiz 3 - Advanced Multimeter Skills (continued)
+
+6. A meter with True RMS is important when measuring:
+Module: Advanced Multimeter Functions
+    A. Only pure DC battery voltage
+    B. Non-sinusoidal AC waveforms accurately
+    C. Resistance of a bulb
+    D. Continuity
+
+7. Frequency measurement on a multimeter reports:
+Module: Advanced Multimeter Functions
+    A. Duty cycle only
+    B. Cycles per second in hertz
+    C. Voltage drop in millivolts
+    D. Diode forward voltage
+
+8. A bar graph on a digital meter helps the technician to:
+Module: Advanced Multimeter Functions
+    A. See rapid fluctuations that digits update too slowly to show
+    B. Read tyre tread depth
+    C. Charge the battery
+    D. Decode CAN messages
+
+9. Using a temperature probe with a multimeter is useful for:
+Module: Advanced Multimeter Functions
+    A. Checking a thermostat, radiator or connector for abnormal heating
+    B. Setting ignition timing
+    C. Measuring current directly
+    D. Testing CAN resistance
+
+10. Capacitance mode on a multimeter should be used:
+Module: Advanced Multimeter Functions
+    A. On a live 12 V circuit
+    B. On a discharged, isolated capacitor
+    C. While cranking only
+    D. Instead of a scope for all waveforms
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 3 - Advanced Multimeter Skills • Page 7
+Quiz 4 - Diagnosing Circuit Faults
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (7): Open and Short Circuits • Terminal Tension and Back Probing • Wire Repair Best Practice •
+   Locating Harness Faults • What is Voltage Drop • Signal Circuit Voltage Drop Checks • Using Voltage Drops as an
+   Electrical Diagnostic Tool
+
+
+
+1. A short to ground before the load will most likely:
+Module: Open and Short Circuits
+    A. Reduce voltage drop across the load to normal
+    B. Blow the fuse or trip protection
+    C. Make the load brighter
+    D. Increase resistance in a controlled way
+
+2. An open circuit is best defined as:
+Module: Open and Short Circuits
+    A. Too much current
+    B. A break that stops current flow in the path
+    C. A path to ground after the load
+    D. Low resistance everywhere
+
+3. Back probing a sealed connector is preferred to piercing insulation because it:
+Module: Terminal Tension and Back Probing
+    A. Damages the weather seal
+    B. Avoids exposing copper to corrosion
+    C. Increases terminal drag
+    D. Bypasses the fuse
+
+4. Poor terminal tension (drag) can cause:
+Module: Terminal Tension and Back Probing
+    A. Perfect signal transfer
+    B. Intermittent opens and heat at the connection
+    C. Higher fuel pressure
+    D. A stronger ground
+
+5. The preferred repair for a critical harness wire is generally:
+Module: Wire Repair Best Practice
+    A. Twist wires and tape only
+    B. Solder or sealed crimp splice with heat-shrink, following manufacturer guidance
+    C. Any household connector
+    D. Leave strands cut if most remain
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 4 - Diagnosing Circuit Faults • Page 8
+Quiz 4 - Diagnosing Circuit Faults (continued)
+6. A wiggle test while monitoring a meter or scope helps to:
+Module: Locating Harness Faults
+    A. Set fuse ratings
+    B. Reveal intermittent opens or shorts when the harness moves
+    C. Charge a battery
+    D. Measure tread wear
+
+7. Voltage drop is:
+Module: What is Voltage Drop
+    A. Voltage used as current passes through resistance in a loaded circuit
+    B. Battery voltage with everything off only
+    C. Voltage created by a magnet
+    D. The same as an open circuit voltage reading
+
+8. Voltage drop testing must be done:
+Module: What is Voltage Drop
+    A. With the circuit off and disconnected
+    B. With the circuit operating under load
+    C. Only with an ohmmeter
+    D. After removing the load
+
+9. On a 5 V sensor signal circuit, an unwanted drop is most concerning because:
+Module: Signal Circuit Voltage Drop Checks
+    A. Signal circuits carry high starter current
+    B. Small drops represent a large percentage error in the signal
+    C. It only affects the ground side
+    D. Modules ignore signal voltage
+
+10. A ground side voltage drop of 0.8 V on a cranking circuit indicates:
+Module: Using Voltage Drops as an Electrical Diagnostic Tool
+    A. A perfect ground
+    B. Excessive resistance in the ground path
+    C. Low battery state of charge only
+    D. A faulty starter relay rating
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 4 - Diagnosing Circuit Faults • Page 9
+Quiz 5 - Wiring Harness Fundamentals
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (6): Automotive Cable Selection • Automotive Cable Size • Automotive Cable Crimping • DETSC
+   Connectors • Understanding Automotive Soldering • Automotive Soldering Best Practice
+
+
+
+1. When selecting replacement cable, the most important factors are:
+Module: Automotive Cable Selection
+    A. Colour only
+    B. Current capacity, length, insulation and environment
+    C. Price only
+    D. Diameter of the connector shell only
+
+2. A cable run near exhaust heat requires:
+Module: Automotive Cable Selection
+    A. Thinner insulation
+    B. Insulation rated for the higher temperature
+    C. No protection at all
+    D. Household flex cable
+
+3. If a circuit's cable is too thin for its length and current, the result is:
+Module: Automotive Cable Size
+    A. Less voltage drop
+    B. Excessive voltage drop and heating
+    C. Higher charging voltage
+    D. No effect if the fuse is large
+
+4. Doubling a cable's length, with the same gauge and current, will:
+Module: Automotive Cable Size
+    A. Halve its resistance
+    B. Increase total resistance and voltage drop
+    C. Remove voltage drop
+    D. Increase fuse rating automatically
+
+5. A correct crimp should:
+Module: Automotive Cable Crimping
+    A. Cut most strands for a tight fit
+    B. Compress the terminal evenly, gripping conductor and insulation support without cutting strands
+    C. Be loose enough to rotate
+    D. Be covered without inspection
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 5 - Wiring Harness Fundamentals • Page 10
+Quiz 5 - Wiring Harness Fundamentals (continued)
+
+6. The pull test after crimping checks:
+Module: Automotive Cable Crimping
+    A. Insulation colour
+    B. Mechanical strength of the crimp joint
+    C. Battery voltage
+    D. Fuse rating
+
+7. A sealed automotive connector's weather seals are there to:
+Module: DETSC Connectors
+    A. Increase resistance
+    B. Keep moisture and contamination out of the terminal area
+    C. Make terminals looser
+    D. Replace terminal locks
+
+8. A terminal position assurance (TPA) lock does what?
+Module: DETSC Connectors
+    A. Raises system voltage
+    B. Confirms and holds terminals fully seated in the housing
+    C. Tests the circuit
+    D. Acts as a fuse
+
+9. In soldering, flux is used to:
+Module: Understanding Automotive Soldering
+    A. Insulate the finished joint permanently
+    B. Clean oxides and help solder flow and wet the metals
+    C. Cool the joint
+    D. Increase resistance
+
+10. A dull, grainy solder joint that moved while cooling is called a:
+Module: Automotive Soldering Best Practice
+    A. Cold / dry joint, and it should be remade
+    B. Perfect joint
+    C. Crimp joint
+    D. Sealed joint
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 5 - Wiring Harness Fundamentals • Page 11
+Quiz 6 - Automotive Relays Explained
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (3): Automotive Relays • Circuit Relays • Monitored Relay Circuits
+
+
+
+1. A relay allows:
+Module: Automotive Relays
+    A. A high-current circuit to be controlled by a low-current switch or module
+    B. Voltage to be created without a source
+    C. Resistance to disappear
+    D. A fuse to be bypassed safely
+
+2. On a typical ISO relay, terminals 85 and 86 are:
+Module: Automotive Relays
+    A. The load contacts
+    B. The coil terminals
+    C. Both grounds only
+    D. The fuse terminals
+
+3. On a typical 4-pin relay, terminal 30 is commonly:
+Module: Automotive Relays
+    A. Coil ground
+    B. Common contact feed (power in)
+    C. Signal ground
+    D. Diode cathode only
+
+4. When the coil is energised on a normally open relay, terminals 30 and 87:
+Module: Automotive Relays
+    A. Disconnect
+    B. Connect, feeding the load
+    C. Both go to ground
+    D. Become the coil
+
+5. A relay that clicks but the load does not work could have:
+Module: Circuit Relays
+    A. Only a good contact set
+    B. Burnt or high-resistance contacts
+    C. Too much terminal tension
+    D. A charged battery in every case
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 6 - Automotive Relays Explained • Page 12
+Quiz 6 - Automotive Relays Explained (continued)
+
+6. Testing a relay circuit is best done by checking:
+Module: Circuit Relays
+    A. Coil feed, coil ground/control, contact feed and output under load
+    B. Colour of the relay only
+    C. Fuse rating only
+    D. Battery brand
+
+7. A suppression diode or resistor across a relay coil is used to:
+Module: Circuit Relays
+    A. Increase coil current sharply
+    B. Control the voltage spike when the coil switches off
+    C. Act as the load
+    D. Replace the contacts
+
+8. In a monitored relay circuit, the control module can detect a fault by:
+Module: Monitored Relay Circuits
+    A. Guessing
+    B. Watching expected voltage/current feedback on the circuit
+    C. Measuring tyre pressure
+    D. Reading the relay colour
+
+9. If a module commands a relay on but sees no voltage change on the monitor line, it will likely:
+Module: Monitored Relay Circuits
+    A. Ignore it forever
+    B. Log a circuit fault
+    C. Increase alternator output
+    D. Disable the brakes
+
+10. An open in a monitored relay's coil circuit would be detected as:
+Module: Monitored Relay Circuits
+    A. Normal operation
+    B. No coil current / incorrect feedback when commanded
+    C. High fuel trim
+    D. Low oil pressure
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 6 - Automotive Relays Explained • Page 13
+Quiz 7 - Vehicle Lighting Technology
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (5): Introduction to Automotive Lighting • Incandescent and Halogen Lighting Technology • High
+   Intensity Discharge Lighting Technology • LED Lighting Technology • Laser Lighting Technology
+
+
+
+1. A headlamp circuit fault causing one dim lamp most often points to:
+Module: Introduction to Automotive Lighting
+    A. High resistance or poor ground on that lamp's circuit
+    B. Excess alternator voltage for all lamps
+    C. Correct operation
+    D. Low fuel level
+
+2. Daytime running lights are intended to:
+Module: Introduction to Automotive Lighting
+    A. Replace headlamps at night
+    B. Make the vehicle more visible during the day
+    C. Increase battery drain as a test
+    D. Signal braking
+
+3. A halogen bulb should not be touched with bare fingers because:
+Module: Incandescent and Halogen Lighting Technology
+    A. Fingerprints change its colour
+    B. Oils create hot spots that shorten bulb life
+    C. It will not fit afterwards
+    D. It becomes an LED
+
+4. In an incandescent bulb, light is produced by:
+Module: Incandescent and Halogen Lighting Technology
+    A. A gas arc
+    B. Heating a filament until it glows
+    C. A laser diode
+    D. A phosphor only
+
+5. HID lamps produce light by:
+Module: High Intensity Discharge Lighting Technology
+    A. A heated filament
+    B. An electric arc through xenon gas and metal salts
+    C. A single LED chip
+    D. Burning a wick
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 7 - Vehicle Lighting Technology • Page 14
+Quiz 7 - Vehicle Lighting Technology (continued)
+
+6. The ballast in an HID system is needed to:
+Module: High Intensity Discharge Lighting Technology
+    A. Lower voltage to 3 V only
+    B. Provide high ignition voltage and then regulate lamp current
+    C. Charge the battery
+    D. Control the wipers
+
+7. A key advantage of LED lighting is:
+Module: LED Lighting Technology
+    A. High heat at the lens in all designs
+    B. Low current draw, long life and instant on
+    C. It never needs a driver circuit
+    D. It works with any voltage without control
+
+8. If polarity is reversed to a standard LED lamp, it will typically:
+Module: LED Lighting Technology
+    A. Work brighter
+    B. Not light, because LEDs allow current in one direction
+    C. Become a halogen lamp
+    D. Blow every fuse instantly in all cases
+
+9. Laser headlights actually produce white light visible on the road by:
+Module: Laser Lighting Technology
+    A. Shining a raw blue laser directly with no conversion
+    B. Using laser diodes to excite a phosphor that emits white light
+    C. Burning fuel
+    D. Reflecting sunlight only
+
+10. Compared with LED, a main claimed benefit of laser high beam is:
+Module: Laser Lighting Technology
+    A. Lower cost in every vehicle
+    B. Longer range from a very small, intense light source
+    C. No electronics needed
+    D. Wider use as brake lights
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 7 - Vehicle Lighting Technology • Page 15
+Quiz 8 - Understanding Sensors
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (5): Electronic Components • Piezo Resistive Sensor Explained • Piezo Electric Sensor Explained •
+   Capacitive Sensing • Ultrasonic Sensor Technology
+
+
+
+1. A thermistor used for temperature sensing changes what with temperature?
+Module: Electronic Components
+    A. Its resistance
+    B. Its capacitance only
+    C. System voltage
+    D. Fuse rating
+
+2. An NTC thermistor's resistance as temperature rises:
+Module: Electronic Components
+    A. Increases
+    B. Decreases
+    C. Stays exactly the same
+    D. Becomes infinite
+
+3. A piezo resistive sensor works because applied pressure:
+Module: Piezo Resistive Sensor Explained
+    A. Changes the resistance of a silicon diaphragm element
+    B. Creates a large AC voltage
+    C. Melts a filament
+    D. Opens a switch only
+
+4. MAP and many pressure sensors using piezo resistive elements typically output:
+Module: Piezo Resistive Sensor Explained
+    A. A varying analogue voltage proportional to pressure
+    B. Only a beep
+    C. CAN messages with no voltage
+    D. A fixed 12 V at all pressures
+
+5. A piezo electric sensor differs because it:
+Module: Piezo Electric Sensor Explained
+    A. Generates a charge/voltage when mechanically stressed
+    B. Needs no movement or vibration ever to produce a signal
+    C. Measures only static pressure perfectly with no decay
+    D. Is a type of fuse
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 8 - Understanding Sensors • Page 16
+Quiz 8 - Understanding Sensors (continued)
+
+6. A knock sensor is a common example of:
+Module: Piezo Electric Sensor Explained
+    A. A capacitive touch sensor
+    B. A piezoelectric sensor
+    C. A halogen sensor
+    D. An ultrasonic parking sensor only
+
+7. Capacitive sensing detects change in:
+Module: Capacitive Sensing
+    A. Magnetism only
+    B. Capacitance as distance or dielectric changes
+    C. Exhaust temperature
+    D. Fuel pressure directly
+
+8. Capacitive sensors are commonly used for:
+Module: Capacitive Sensing
+    A. Crankshaft teeth only
+    B. Occupant detection, fluid level and touch/proximity sensing
+    C. Ignition spark generation
+    D. Starter current
+
+9. Ultrasonic parking sensors measure distance by:
+Module: Ultrasonic Sensor Technology
+    A. Timing an echo of a high-frequency sound pulse
+    B. Measuring resistance of air
+    C. Reading GPS only
+    D. Timing a light flash
+
+10. A dirty or ice-covered ultrasonic sensor may cause:
+Module: Ultrasonic Sensor Technology
+    A. Perfect long-range detection
+    B. False or missed distance warnings
+    C. Higher engine power
+    D. A blown headlamp fuse
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 8 - Understanding Sensors • Page 17
+Quiz 9 - Master Control Modules
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (4): Circuit Operation and Voltage Dividers • Pull Up and Pull Down Circuits • Control Module Logics
+   and Programming • Pass Through Communications
+
+
+
+1. A voltage divider with two equal resistors fed by 10 V will have about how much at the midpoint?
+Module: Circuit Operation and Voltage Dividers
+    A. 10 V
+    B. 0 V
+    C. 5 V
+    D. 20 V
+
+2. Many sensor circuits work as voltage dividers where the sensor changes:
+Module: Circuit Operation and Voltage Dividers
+    A. Only the wire colour
+    B. Resistance, changing the signal voltage the module reads
+    C. Battery capacity
+    D. Fuse rating
+
+3. In a pull-up circuit, the module's internal resistor pulls the signal:
+Module: Pull Up and Pull Down Circuits
+    A. Toward ground at all times
+    B. Toward reference voltage, and the sensor/switch pulls it down
+    C. To battery negative only
+    D. To AC voltage
+
+4. In a pull-down circuit, with the switch open the signal at the module is typically:
+Module: Pull Up and Pull Down Circuits
+    A. Pulled to ground / low
+    B. Pulled to 12 V
+    C. Floating with no control
+    D. Shorted to the starter circuit
+
+5. If a pull-up type sensor circuit is shorted to ground, the signal will read:
+Module: Pull Up and Pull Down Circuits
+    A. High at all times
+    B. Low at all times
+    C. Normal varying signal
+    D. Exactly half supply always
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 9 - Master Control Modules • Page 18
+Quiz 9 - Master Control Modules (continued)
+6. A control module makes decisions by following the pattern:
+Module: Control Module Logics and Programming
+    A. Input - process - output
+    B. Output only, with no inputs
+    C. Guess and ignore sensors
+    D. Charge - discharge - park
+
+7. After replacing certain modules, what may be required before the vehicle works correctly?
+Module: Control Module Logics and Programming
+    A. Nothing in any case
+    B. Programming, coding and/or configuration to the vehicle
+    C. Only washing the vehicle
+    D. A larger fuse
+
+8. A module that loses its ground may cause:
+Module: Control Module Logics and Programming
+    A. Perfect operation
+    B. Multiple unrelated-looking faults and communication errors
+    C. Higher compression
+    D. Better fuel economy guaranteed
+
+9. Pass-through programming (J2534 style) means:
+Module: Pass Through Communications
+    A. Programming a module through the diagnostic connector using a pass-through device and manufacturer
+    software
+    B. Passing a wire through a bulkhead
+    C. Skipping software updates
+    D. Using a test light as a module
+
+10. During module programming, the most critical supply requirement is:
+Module: Pass Through Communications
+    A. Radio volume up
+    B. Stable battery voltage maintained with a suitable power supply
+    C. Lights flashing
+    D. Engine revving at all times
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 9 - Master Control Modules • Page 19
+Quiz 10 - Electrical Waveforms Explained
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (7): Oscilloscope Essentials • Current Limiting Technology • Pulse Width Modulation Explained •
+   Interpreting Position Sensor Waveforms • Interpreting Sensor Pressure Waveforms • Interpreting Primary Ignition
+   Waveforms • Interpreting Secondary Ignition Waveforms
+
+
+
+1. On an oscilloscope, the vertical axis represents:
+Module: Oscilloscope Essentials
+    A. Time
+    B. Voltage
+    C. Resistance
+    D. Temperature
+
+2. If the time base is set too slow for a fast signal, the waveform may:
+Module: Oscilloscope Essentials
+    A. Always be more accurate
+    B. Be compressed and lose detail
+    C. Turn into DC
+    D. Damage the sensor
+
+3. Current limiting in a driver circuit protects it by:
+Module: Current Limiting Technology
+    A. Allowing unlimited current
+    B. Capping current to a safe level if a load shorts or overloads
+    C. Removing the ground permanently
+    D. Increasing voltage without limit
+
+4. Pulse width modulation controls average power by:
+Module: Pulse Width Modulation Explained
+    A. Changing only wire size
+    B. Varying the on-time / duty cycle of a fixed-frequency signal
+    C. Removing the ground
+    D. Using AC mains voltage
+
+5. A Hall-effect crank position sensor normally produces:
+Module: Interpreting Position Sensor Waveforms
+    A. A clean square-wave switching between low and high
+    B. A sine wave growing with speed only
+    C. No signal when cranking
+    D. A random noise pattern when good
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 10 - Electrical Waveforms Explained • Page 20
+Quiz 10 - Electrical Waveforms Explained (continued)
+
+6. An inductive (variable reluctance) crank sensor produces:
+Module: Interpreting Position Sensor Waveforms
+    A. A square wave of constant height
+    B. An AC sine-like wave whose amplitude and frequency rise with speed
+    C. A steady 5 V DC
+    D. A PWM lamp signal
+
+7. A missing or distorted tooth gap in a crank waveform will affect:
+Module: Interpreting Position Sensor Waveforms
+    A. Only the radio
+    B. The module's ability to locate crank position / TDC reference
+    C. Tyre balance
+    D. Alternator ripple only
+
+8. An in-cylinder pressure waveform can reveal:
+Module: Interpreting Sensor Pressure Waveforms
+    A. Only battery state
+    B. Valve timing, sealing and pumping problems from pressure changes
+    C. Radio codes
+    D. Wheel alignment
+
+9. On a primary ignition waveform, the dwell section is when:
+Module: Interpreting Primary Ignition Waveforms
+    A. The coil is switched off and spark occurs
+    B. Current is building in the coil primary
+    C. The plug lead is disconnected
+    D. The battery is removed
+
+10. On a secondary waveform, a very high firing line with a short burn line can indicate:
+Module: Interpreting Secondary Ignition Waveforms
+    A. A rich, easy-to-fire mixture in all cases
+    B. High secondary resistance such as a wide plug gap or open lead
+    C. A perfect low-resistance path
+    D. Low compression only
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 10 - Electrical Waveforms Explained • Page 21
+Quiz 11 - Advanced Oscilloscope Techniques
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (1): Relative Compression Testing
+
+
+
+1. Relative compression testing compares cylinders by watching:
+Module: Relative Compression Testing
+    A. Starter current draw or battery voltage dip as each cylinder comes up on compression
+    B. Fuel pressure only
+    C. Exhaust colour
+    D. Spark colour only
+
+2. Relative compression is performed during:
+Module: Relative Compression Testing
+    A. Highway driving
+    B. Cranking with fuelling/ignition disabled as directed
+    C. Idle only with AC on
+    D. Charging
+
+3. On a starter-current relative compression trace, a noticeably lower current peak for one cylinder suggests:
+Module: Relative Compression Testing
+    A. That cylinder has higher compression than the others
+    B. That cylinder has lower compression than the others
+    C. A fault in the radio
+    D. Normal variation that proves a valve fault by itself
+
+4. A sync signal (for example cylinder 1 ignition or injection) is used during relative compression to:
+Module: Relative Compression Testing
+    A. Charge the battery
+    B. Identify which peak belongs to which cylinder
+    C. Increase compression
+    D. Disable the scope
+
+5. Relative compression tells you:
+Module: Relative Compression Testing
+    A. The exact psi of each cylinder
+    B. How cylinders compare with each other, not absolute pressure
+    C. The cause of low compression by itself
+    D. Valve clearance in millimetres
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 11 - Advanced Oscilloscope Techniques • Page 22
+Quiz 11 - Advanced Oscilloscope Techniques (continued)
+
+6. Before a relative compression test, an important check is:
+Module: Relative Compression Testing
+    A. That the battery and starter circuit are in good condition and fully charged
+    B. That the fuel tank is empty
+    C. That all tyres match
+    D. That the AC is on full
+
+7. If ALL cylinders show evenly low starter current humps, suspect:
+Module: Relative Compression Testing
+    A. One burnt valve only
+    B. A generally weak battery/starter, incorrect cranking speed, or a global engine issue - not one cylinder
+    C. A single faulty plug lead
+    D. A blocked radio aerial
+
+8. A follow-up test after finding one low cylinder on relative compression is:
+Module: Relative Compression Testing
+    A. No follow-up needed
+    B. A conventional compression test and/or cylinder leakage test on that cylinder
+    C. A wheel alignment
+    D. A parasitic draw test only
+
+9. Using battery voltage (instead of a current clamp) for relative compression works because:
+Module: Relative Compression Testing
+    A. Voltage rises on compression
+    B. Battery voltage dips as starter load rises on each compression stroke
+    C. Voltage stays perfectly flat
+    D. The alternator charges while cranking
+
+10. Disabling fuel and ignition before cranking for the test is important to:
+Module: Relative Compression Testing
+    A. Stop the engine starting and to get a clean, even cranking pattern
+    B. Drain the battery faster
+    C. Test the radio
+    D. Heat the starter
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 11 - Advanced Oscilloscope Techniques • Page 23
+Quiz 12 - Testing and Charging Batteries
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (5): Battery Lead Flooded • Lithium Battery Technology • Battery Testing Maintenance and Recharge •
+   Locating Parasitic Drain • Smart Battery Charger Technology
+
+
+
+1. In a flooded lead-acid battery, the electrolyte is:
+Module: Battery Lead Flooded
+    A. Pure water only
+    B. Dilute sulphuric acid
+    C. Engine oil
+    D. Lithium polymer gel in every case
+
+2. A fully charged flooded cell has a specific gravity of about:
+Module: Battery Lead Flooded
+    A. 1.000
+    B. 1.265 - 1.280
+    C. 2.500
+    D. 0.900
+
+3. A key difference of lithium 12 V / EV batteries compared with lead-acid is:
+Module: Lithium Battery Technology
+    A. They need no management at all
+    B. They require a battery management system to monitor cell voltage, temperature and current
+    C. They use sulphuric acid and lead only
+    D. They cannot be recharged
+
+4. Lithium batteries generally offer, for the same capacity:
+Module: Lithium Battery Technology
+    A. Greater weight than lead-acid
+    B. Lower weight and higher energy density
+    C. No voltage at rest
+    D. Unlimited short-circuit safety
+
+5. A conductance battery test estimates:
+Module: Battery Testing Maintenance and Recharge
+    A. Only terminal colour
+    B. Battery capacity / cranking ability from its internal conductance
+    C. Exact remaining years of life
+    D. Alternator diode pattern only
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 12 - Testing and Charging Batteries • Page 24
+Quiz 12 - Testing and Charging Batteries (continued)
+
+6. Before load testing a battery, you should ensure it is:
+Module: Battery Testing Maintenance and Recharge
+    A. Fully discharged
+    B. Reasonably charged and terminals are clean and tight
+    C. Removed and shaken
+    D. Filled with tap water to the top
+
+7. A parasitic drain test is performed:
+Module: Locating Parasitic Drain
+    A. With all modules awake and doors being opened repeatedly
+    B. After modules have gone to sleep, measuring key-off current draw
+    C. Only while cranking
+    D. With the engine at full revs
+
+8. To locate which circuit causes excess parasitic drain, a good method is:
+Module: Locating Parasitic Drain
+    A. Remove the battery
+    B. Measure voltage drop across fuses or pull fuses one at a time while watching draw fall
+    C. Replace the starter first
+    D. Disconnect the alternator belt only
+
+9. A smart charger differs from a basic charger because it:
+Module: Smart Battery Charger Technology
+    A. Always charges at maximum rate
+    B. Uses multi-stage charging and can adapt rate and mode to battery condition and type
+    C. Never switches off
+    D. Only works on lithium batteries
+
+10. Charging a deeply discharged AGM battery with the wrong mode may:
+Module: Smart Battery Charger Technology
+    A. Have no effect ever
+    B. Undercharge it or damage it if voltage limits are wrong
+    C. Convert it to flooded type
+    D. Increase its CCA permanently
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 12 - Testing and Charging Batteries • Page 25
+Quiz 13 - Understanding Charging Systems
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (4): Alternators Explained • Alternators Current Reflections • Alternator Voltage Recirculation • Best
+   Practice Alternator Testing Guide
+
+
+
+1. An alternator produces electricity by:
+Module: Alternators Explained
+    A. Spinning a magnetic field inside stationary stator windings
+    B. A battery inside the housing
+    C. Burning fuel in the rotor
+    D. A permanent DC motor only
+
+2. The rectifier (diode pack) in an alternator:
+Module: Alternators Explained
+    A. Converts AC from the stator to DC for the vehicle
+    B. Converts DC to AC for the headlights
+    C. Regulates fuel pressure
+    D. Stores charge like a battery
+
+3. The voltage regulator controls charging by:
+Module: Alternators Explained
+    A. Changing stator size
+    B. Controlling rotor field current
+    C. Opening the battery terminals
+    D. Changing engine compression
+
+4. Excessive AC ripple in alternator output most likely indicates:
+Module: Alternators Current Reflections
+    A. A healthy diode pack in all cases
+    B. A faulty diode or stator winding
+    C. Low tyre pressure
+    D. A good regulator only
+
+5. Ripple can be checked with:
+Module: Alternators Current Reflections
+    A. A scope on the output or a meter on AC volts
+    B. A torque wrench
+    C. A hydrometer only
+    D. A timing light only
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 13 - Understanding Charging Systems • Page 26
+Quiz 13 - Understanding Charging Systems (continued)
+
+6. If charging voltage is too high for a long period, a likely result is:
+Module: Alternator Voltage Recirculation
+    A. Battery undercharge
+    B. Battery overheating, gassing and damage to electronics
+    C. Improved bulb life
+    D. Lower current everywhere
+
+7. A loose or slipping drive belt can cause:
+Module: Alternator Voltage Recirculation
+    A. Overcharging at idle
+    B. Low/intermittent charging, noise and battery warning under load
+    C. Perfect charging
+    D. Higher compression
+
+8. A correct charging test sequence starts with:
+Module: Best Practice Alternator Testing Guide
+    A. Replacing the alternator immediately
+    B. Checking battery condition, terminals, belt and grounds first
+    C. Removing all fuses
+    D. Testing at full revs only
+
+9. Charging voltage on a conventional 12 V system at running idle is commonly about:
+Module: Best Practice Alternator Testing Guide
+    A. 6 V
+    B. 12.0 V exactly with no rise
+    C. 13.5 - 14.5 V (system dependent)
+    D. 18 - 20 V
+
+10. Voltage drop testing the alternator output and ground paths under load finds:
+Module: Best Practice Alternator Testing Guide
+    A. Only open circuits with no current
+    B. High resistance that a voltage-at-battery reading alone can hide
+    C. Correct belt tension
+    D. Diode colour
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 13 - Understanding Charging Systems • Page 27
+Quiz 14 - Smart Charging Technology
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (2): Charging Systems ECM Controlled • ECM Controlled Charging Diagnostics
+
+
+
+1. In an ECM-controlled charging system, the module varies alternator output to:
+Module: Charging Systems ECM Controlled
+    A. Keep voltage at maximum always
+    B. Match electrical load, battery state, temperature and fuel-economy goals
+    C. Disable charging on deceleration only
+    D. Run the starter motor
+
+2. Smart charging may deliberately lower voltage during steady cruise because:
+Module: Charging Systems ECM Controlled
+    A. The battery is faulty in all such cases
+    B. A fully charged battery needs less, and reducing alternator load saves fuel
+    C. The alternator has failed
+    D. The regulator is removed
+
+3. During deceleration, some smart systems increase charging voltage to:
+Module: Charging Systems ECM Controlled
+    A. Waste energy deliberately with no benefit
+    B. Recover energy (regenerative-style charging) while engine braking
+    C. Cool the battery
+    D. Test the headlights
+
+4. A battery current sensor on the negative lead allows the module to:
+Module: Charging Systems ECM Controlled
+    A. Measure battery temperature only
+    B. Monitor charge/discharge current to calculate battery state
+    C. Control the starter directly
+    D. Read tyre pressure
+
+5. If the communication/control line to a smart alternator fails, many systems will:
+Module: Charging Systems ECM Controlled
+    A. Stop charging forever in all designs
+    B. Default to a fixed fallback charging voltage
+    C. Charge at 20 V
+    D. Turn off the engine
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 14 - Smart Charging Technology • Page 28
+Quiz 14 - Smart Charging Technology (continued)
+
+6. When diagnosing smart charging, a measured 12.8 V while running does NOT automatically mean failure
+because:
+Module: ECM Controlled Charging Diagnostics
+    A. Voltage is never measurable
+    B. The module may be intentionally commanding a lower voltage at that moment
+    C. The meter is always wrong
+    D. Alternators do not charge at idle
+
+7. The first scan-tool checks for a smart charging complaint should include:
+Module: ECM Controlled Charging Diagnostics
+    A. Only fault codes for the radio
+    B. Battery state data, commanded/desired voltage, generator feedback and related codes
+    C. Airbag codes only
+    D. Wheel speed only
+
+8. After replacing a battery on a smart charging vehicle, you may need to:
+Module: ECM Controlled Charging Diagnostics
+    A. Do nothing in every case
+    B. Register/reset the battery monitoring system so charging adapts to the new battery
+    C. Fit a larger alternator
+    D. Remove the current sensor
+
+9. A faulty battery temperature or current sensor input can cause:
+Module: ECM Controlled Charging Diagnostics
+    A. Correct charging in all cases
+    B. Incorrect charging voltage decisions and warning lights
+    C. A flat tyre
+    D. Misfire on one cylinder only
+
+10. A voltage drop in the alternator ground on a smart system can cause:
+Module: ECM Controlled Charging Diagnostics
+    A. No symptoms
+    B. The module to misread or the alternator to undercharge despite a good unit
+    C. Overcharging guaranteed
+    D. Better fuel economy
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 14 - Smart Charging Technology • Page 29
+Quiz 15 - Mastering Starter Systems
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (5): Starter Motor Explained • Direct Current Motors • Starter Circuit Voltage Drop Testing • Starter
+   Stop Battery Technology • Start Stop Operations
+
+
+
+1. The starter solenoid has two main jobs:
+Module: Starter Motor Explained
+    A. Charge the battery and run the lights
+    B. Engage the pinion with the ring gear and close the motor contacts
+    C. Regulate voltage and control fuel
+    D. Cool the motor and time the spark
+
+2. A single click and no crank most often points to:
+Module: Starter Motor Explained
+    A. A perfect starter circuit
+    B. Poor heavy-current contacts, low battery, bad connections or a seized/faulty motor - not the signal alone
+    C. Low fuel pressure only
+    D. A faulty oxygen sensor
+
+3. In a DC starter motor, torque is produced by:
+Module: Direct Current Motors
+    A. Magnetic interaction between armature and field windings/coils
+    B. Hydraulic pressure
+    C. Exhaust pulses
+    D. Capacitor discharge only
+
+4. Worn brushes or a dirty commutator in a DC motor cause:
+Module: Direct Current Motors
+    A. Higher torque
+    B. Intermittent or no operation and arcing
+    C. Better cranking in all cases
+    D. Overcharging
+
+5. Starter circuit voltage drop tests are done:
+Module: Starter Circuit Voltage Drop Testing
+    A. With the circuit disconnected and an ohmmeter
+    B. While cranking, measuring across each cable and connection
+    C. Only after removing the starter
+    D. With the battery disconnected
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 15 - Mastering Starter Systems • Page 30
+Quiz 15 - Mastering Starter Systems (continued)
+
+6. A 0.9 V drop across the positive starter cable while cranking indicates:
+Module: Starter Circuit Voltage Drop Testing
+    A. A good cable
+    B. Excessive resistance in that cable or its connections
+    C. Low compression
+    D. A faulty ignition switch only
+
+7. Total starter circuit drop (positive plus ground) should generally be:
+Module: Starter Circuit Voltage Drop Testing
+    A. As high as possible
+    B. Kept low - typically under about 0.5 V total in a healthy system (check specifications)
+    C. Exactly battery voltage
+    D. Ignored if the engine starts once
+
+8. Start-stop vehicles need enhanced batteries (AGM/EFB) because they must handle:
+Module: Starter Stop Battery Technology
+    A. Only one start per day
+    B. Frequent restarts and deeper cycling while supporting loads engine-off
+    C. No charging at all
+    D. Higher tyre loads
+
+9. A start-stop system will typically inhibit auto-stop when:
+Module: Start Stop Operations
+    A. The cabin is at a comfortable temperature and battery is full in all cases
+    B. Battery state is low, engine is cold, or a large electrical/HVAC load demands the engine
+    C. The vehicle is stopped at lights with all conditions met
+    D. The brake pedal is pressed normally
+
+10. On restart, a start-stop system needs:
+Module: Start Stop Operations
+    A. A conventional slow crank with no support
+    B. A starter/battery and management system designed for fast, repeated restarts
+    C. The driver to use a hand crank
+    D. The alternator disconnected
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 15 - Mastering Starter Systems • Page 31
+Quiz 16 - Modern Vehicle Networks
+Name: ________________________________ Date: ________________ Score: ___ / 10
+
+   Modules Covered (5): Low Speed Bus • CAN High Speed Bus • Understanding Flex Ray • MOST Bus • LIN Bus
+
+
+
+1. Low-speed / fault-tolerant CAN is typically used for:
+Module: Low Speed Bus
+    A. Engine torque control at the fastest rates
+    B. Body and comfort functions where speed is less critical
+    C. Only fibre-optic audio
+    D. Starter motor current
+
+2. A feature of fault-tolerant low-speed CAN is that it can:
+Module: Low Speed Bus
+    A. Never fault
+    B. Continue communicating on one wire in some fault conditions
+    C. Run without power
+    D. Replace the battery
+
+3. High-speed CAN uses two wires, CAN-H and CAN-L, which carry:
+Module: CAN High Speed Bus
+    A. Identical 12 V signals
+    B. Differential signals that are mirror images, improving noise immunity
+    C. One power and one ground only
+    D. Audio left and right
+
+4. With the system off, resistance between CAN-H and CAN-L on a healthy terminated high-speed bus is
+about:
+Module: CAN High Speed Bus
+    A. 0 ohms
+    B. 60 ohms
+    C. 120 ohms only at one end measured alone on the bus
+    D. Infinite in all cases
+
+5. If CAN-H is shorted to ground, the likely result is:
+Module: CAN High Speed Bus
+    A. Normal communication
+    B. Loss or severe disruption of communication on that bus
+    C. Faster messages
+    D. Better diagnostics
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 16 - Modern Vehicle Networks • Page 32
+Quiz 16 - Modern Vehicle Networks (continued)
+
+6. FlexRay was designed for:
+Module: Understanding Flex Ray
+    A. Low-cost single-wire body switches only
+    B. Deterministic, high-speed, fault-tolerant communication for chassis/safety systems
+    C. Fibre-optic entertainment only
+    D. Battery charging
+
+7. A key FlexRay concept is:
+Module: Understanding Flex Ray
+    A. Messages sent only when a switch is pressed, with no timing
+    B. Static time slots in a repeating cycle for guaranteed message timing
+    C. Random voltage on one wire
+    D. No synchronisation between nodes
+
+8. MOST bus is a network mainly used for:
+Module: MOST Bus
+    A. Engine injection timing
+    B. Infotainment / multimedia data, often over optical fibre
+    C. ABS wheel speed only
+    D. Starter control
+
+9. In a MOST ring, an open or broken fibre at one point will:
+Module: MOST Bus
+    A. Have no effect
+    B. Interrupt the ring and can take down the infotainment network
+    C. Increase radio volume
+    D. Only affect one speaker wire
+
+10. LIN bus is best described as:
+Module: LIN Bus
+    A. A dual-wire high-speed safety network
+    B. A low-cost single-wire sub-bus where a master controls slave nodes such as switches, motors and
+    sensors
+    C. An optical ring for video
+    D. A starter cable network
+
+
+
+
+Electrical Pop Quizzes - Practice Material • Quiz 16 - Modern Vehicle Networks • Page 33
+Answer Key
+Separate Section - Do Not Print With the Quizzes
+
+
+
+   This section begins after all 16 quizzes. Each quiz is grouped separately with the correct letter and
+   a brief explanation for every question.
+
+   After marking, record your retake date and second score on each quiz's key page. Target: 9/10
+   before moving on.
+Answer Key - Quiz 1 - Mastering Electric Principles
+Retake date: ________________ Second score: ___ / 10
+
+1. B - From positive to negative through the external circuit
+    Conventional flow is described as positive to negative through the external circuit; electron flow is the opposite direction.
+
+2. C - A conductor
+    Conductors have free electrons that move easily, allowing current flow.
+
+3. C - Fall to half
+    I = V / R, so doubling R at fixed V halves current.
+
+4. B - 3 A
+    I = 12 / 4 = 3 A.
+
+5. C - Voltage
+    Pressure pushes water as voltage pushes charge through a circuit.
+
+6. B - Resistance in the circuit
+    Restriction to flow models resistance restricting current.
+
+7. C - 6 ohms
+    R = V / I = 12 / 2 = 6 ohms.
+
+8. B - 10 A
+    I = P / V = 120 / 12 = 10 A.
+
+9. A - Source, protection, load and return path
+    A working circuit needs a power source, protection, a load, conductors and a return path, usually with control.
+
+10. B - Current stops through the whole series path
+    A series path has one route for current, so an open stops current everywhere in that path.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 1 - Mastering Electric Principles
+Answer Key - Quiz 2 - Essential Multimeter Skills
+Retake date: ________________ Second score: ___ / 10
+
+1. B - In parallel across the component or circuit
+    A voltmeter connects in parallel across the part being measured.
+
+2. B - Disconnect power and isolate the component where needed
+    Resistance is measured on an unpowered, preferably isolated component, or readings will be wrong and the meter may be
+    damaged.
+
+3. B - In series in the circuit
+    Current measurement puts the meter in series so circuit current flows through it, within its rating.
+
+4. B - Approximately full charge at rest
+    About 12.6 V at rest is the expected fully charged lead-acid battery voltage.
+
+5. B - An open circuit or resistance beyond the range
+    OL means overload/open - no measurable continuity within the selected range.
+
+6. B - The percentage of time a signal is on during one cycle
+    Duty cycle is on-time as a percentage of the total cycle time.
+
+7. C - On 75% of the time
+    75% duty means energised for 75% of each cycle.
+
+8. A - Each cycle gets shorter, but the on proportion stays the same
+    Higher frequency shortens cycle time; the percentage on stays the same.
+
+9. B - 0.5 to 0.7 V
+    A silicon diode drops roughly 0.5-0.7 V when forward biased.
+
+10. B - The circuit can carry full load current without voltage drop
+    Continuity only shows a path exists; a single strand can beep yet drop voltage badly under load.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 2 - Essential Multimeter Skills
+Answer Key - Quiz 3 - Advanced Multimeter Skills
+Retake date: ________________ Second score: ___ / 10
+
+1. B - Catching intermittent voltage drops or glitches over time
+   MIN/MAX captures the lowest and highest values seen during monitoring, helping find intermittents.
+
+2. B - Manual range avoids range-hunting delays and unstable readings
+   Fixing the range stops the meter hunting between ranges while the value changes quickly.
+
+3. B - Loads the circuit slightly so induced voltage collapses
+   Low impedance loads the circuit, so capacitively coupled ghost voltage disappears while real supply remains.
+
+4. A - Zero out lead resistance or a reference value
+   REL subtracts a reference, such as lead resistance, from later readings.
+
+5. B - Use an inductive clamp or a shunt method that keeps the circuit powered while modules sleep
+   Keeping the circuit intact with a clamp or shunt avoids waking modules and losing settings.
+
+6. B - Non-sinusoidal AC waveforms accurately
+   True RMS gives accurate AC readings on distorted or non-sine waveforms.
+
+7. B - Cycles per second in hertz
+   Frequency is measured in hertz, the number of cycles per second.
+
+8. A - See rapid fluctuations that digits update too slowly to show
+   The fast-updating bar graph shows trends and flicker the numeric display misses.
+
+9. A - Checking a thermostat, radiator or connector for abnormal heating
+   Temperature comparison finds restrictions, poor connections and cooling faults.
+
+10. B - On a discharged, isolated capacitor
+   Capacitors must be discharged and isolated before capacitance testing for safety and accuracy.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 3 - Advanced Multimeter Skills
+Answer Key - Quiz 4 - Diagnosing Circuit Faults
+Retake date: ________________ Second score: ___ / 10
+
+1. B - Blow the fuse or trip protection
+   A pre-load short to ground creates excessive current, opening the fuse or protection.
+
+2. B - A break that stops current flow in the path
+   An open is a break in the path so current cannot flow.
+
+3. B - Avoids exposing copper to corrosion
+   Back probing tests the circuit without breaking insulation and inviting corrosion.
+
+4. B - Intermittent opens and heat at the connection
+   Loose terminals make poor contact, causing intermittents, voltage drop and heat.
+
+5. B - Solder or sealed crimp splice with heat-shrink, following manufacturer guidance
+   A sealed solder or crimp splice restores strength, conductivity and corrosion protection.
+
+6. B - Reveal intermittent opens or shorts when the harness moves
+   Moving the harness while watching readings exposes movement-sensitive faults.
+
+7. A - Voltage used as current passes through resistance in a loaded circuit
+   Voltage drop is the voltage consumed across resistance while current flows.
+
+8. B - With the circuit operating under load
+   No current means no meaningful voltage drop, so the circuit must be loaded and operating.
+
+9. B - Small drops represent a large percentage error in the signal
+   Low-current signal circuits need accuracy; even small unwanted drops distort sensor information.
+
+10. B - Excessive resistance in the ground path
+   A high ground drop under load points to resistance in cables, connections or ground points.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 4 - Diagnosing Circuit Faults
+Answer Key - Quiz 5 - Wiring Harness Fundamentals
+Retake date: ________________ Second score: ___ / 10
+
+1. B - Current capacity, length, insulation and environment
+   Cable must carry the current over its length and suit heat, oil and abrasion conditions.
+
+2. B - Insulation rated for the higher temperature
+   Heat-rated insulation prevents melting, shorting and premature failure.
+
+3. B - Excessive voltage drop and heating
+   Undersized cable has more resistance, causing drop and heat under load.
+
+4. B - Increase total resistance and voltage drop
+   Longer conductors have more resistance, so drop increases.
+
+5. B - Compress the terminal evenly, gripping conductor and insulation support without cutting strands
+   A good crimp is gas-tight, mechanically strong and does not damage strands.
+
+6. B - Mechanical strength of the crimp joint
+   A gentle pull confirms the terminal is securely attached.
+
+7. B - Keep moisture and contamination out of the terminal area
+   Seals protect against water ingress and corrosion at the connection.
+
+8. B - Confirms and holds terminals fully seated in the housing
+   TPA secondary locks keep terminals from backing out.
+
+9. B - Clean oxides and help solder flow and wet the metals
+   Flux removes oxides so solder bonds properly to the conductors.
+
+10. A - Cold / dry joint, and it should be remade
+   Movement or insufficient heat makes a weak, high-resistance cold joint.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 5 - Wiring Harness Fundamentals
+Answer Key - Quiz 6 - Automotive Relays Explained
+Retake date: ________________ Second score: ___ / 10
+
+1. A - A high-current circuit to be controlled by a low-current switch or module
+   The coil (low current) controls contacts that switch the high-current load circuit.
+
+2. B - The coil terminals
+   85 and 86 are the relay coil connections.
+
+3. B - Common contact feed (power in)
+   Terminal 30 is the common contact, usually the power feed to the contacts.
+
+4. B - Connect, feeding the load
+   Energising the coil closes 30 to 87 on a normally open relay.
+
+5. B - Burnt or high-resistance contacts
+   Clicking proves coil operation, not that the contacts carry current cleanly.
+
+6. A - Coil feed, coil ground/control, contact feed and output under load
+   All four legs - control and load sides - must be verified, ideally loaded.
+
+7. B - Control the voltage spike when the coil switches off
+   Suppression protects electronics from the inductive kickback when the coil de-energises.
+
+8. B - Watching expected voltage/current feedback on the circuit
+   Modules monitor feedback voltage or current and set a fault if it does not match the commanded state.
+
+9. B - Log a circuit fault
+   A mismatch between command and feedback triggers diagnostic trouble codes and possibly a fallback.
+
+10. B - No coil current / incorrect feedback when commanded
+   The module expects current or a voltage change; an open prevents it and is flagged.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 6 - Automotive Relays Explained
+Answer Key - Quiz 7 - Vehicle Lighting Technology
+Retake date: ________________ Second score: ___ / 10
+
+1. A - High resistance or poor ground on that lamp's circuit
+   One dim lamp usually means voltage drop or a poor ground in that branch.
+
+2. B - Make the vehicle more visible during the day
+   DRLs improve daytime conspicuity, often at reduced intensity.
+
+3. B - Oils create hot spots that shorten bulb life
+   Skin oils cause uneven heating of the quartz envelope and early failure.
+
+4. B - Heating a filament until it glows
+   Current heats the filament to incandescence.
+
+5. B - An electric arc through xenon gas and metal salts
+   HID uses an arc discharge, requiring a ballast/igniter for high starting voltage.
+
+6. B - Provide high ignition voltage and then regulate lamp current
+   The ballast/igniter starts the arc and controls current once lit.
+
+7. B - Low current draw, long life and instant on
+   LEDs are efficient, durable and switch instantly, though they need proper drivers and heat management.
+
+8. B - Not light, because LEDs allow current in one direction
+   LEDs are diodes, so reverse polarity blocks normal operation.
+
+9. B - Using laser diodes to excite a phosphor that emits white light
+   Laser diodes stimulate a phosphor, producing bright white light with safety controls.
+
+10. B - Longer range from a very small, intense light source
+   Laser systems achieve long range from a compact source, usually supplementing LED high beam.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 7 - Vehicle Lighting Technology
+Answer Key - Quiz 8 - Understanding Sensors
+Retake date: ________________ Second score: ___ / 10
+
+1. A - Its resistance
+   Thermistors change resistance with temperature; most automotive ones are NTC.
+
+2. B - Decreases
+   Negative temperature coefficient means resistance falls as temperature rises.
+
+3. A - Changes the resistance of a silicon diaphragm element
+   Strain changes the resistance of the sensing element, converted to a signal voltage.
+
+4. A - A varying analogue voltage proportional to pressure
+   Pressure changes the bridge output voltage in proportion to pressure.
+
+5. A - Generates a charge/voltage when mechanically stressed
+   Piezoelectric materials generate charge under stress, ideal for knock and dynamic events.
+
+6. B - A piezoelectric sensor
+   Knock sensors use piezoelectric elements to convert vibration into a voltage signal.
+
+7. B - Capacitance as distance or dielectric changes
+   Movement or material change alters capacitance, which electronics convert to a signal.
+
+8. B - Occupant detection, fluid level and touch/proximity sensing
+   Capacitance suits non-contact level, occupancy and proximity detection.
+
+9. A - Timing an echo of a high-frequency sound pulse
+   Distance is calculated from the time of flight of the reflected ultrasonic pulse.
+
+10. B - False or missed distance warnings
+   Contamination blocks or distorts the pulse, causing unreliable detection.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 8 - Understanding Sensors
+Answer Key - Quiz 9 - Master Control Modules
+Retake date: ________________ Second score: ___ / 10
+
+1. C - 5 V
+   Equal resistors split the supply equally, giving half at the junction.
+
+2. B - Resistance, changing the signal voltage the module reads
+   As sensor resistance changes, the divider ratio and signal voltage change.
+
+3. B - Toward reference voltage, and the sensor/switch pulls it down
+   The pull-up holds the line high until the device pulls it toward ground.
+
+4. A - Pulled to ground / low
+   A pull-down resistor holds the input low until a device pulls it high.
+
+5. B - Low at all times
+   A short to ground overcomes the pull-up and holds the signal low.
+
+6. A - Input - process - output
+   Modules read inputs, process them using logic/maps, then command outputs.
+
+7. B - Programming, coding and/or configuration to the vehicle
+   Many modules need software, VIN/configuration coding and relearns.
+
+8. B - Multiple unrelated-looking faults and communication errors
+   Poor power or ground makes module behaviour erratic and can affect a whole network.
+
+9. A - Programming a module through the diagnostic connector using a pass-through device and manufacturer
+software
+   A pass-through interface lets a PC and OEM software reprogram modules via the DLC.
+
+10. B - Stable battery voltage maintained with a suitable power supply
+   Voltage must stay stable throughout programming or the module can be corrupted.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 9 - Master Control Modules
+Answer Key - Quiz 10 - Electrical Waveforms Explained
+Retake date: ________________ Second score: ___ / 10
+
+1. B - Voltage
+   Vertical is voltage (amplitude); horizontal is time.
+
+2. B - Be compressed and lose detail
+   A slow time base squeezes cycles together so detail is hidden.
+
+3. B - Capping current to a safe level if a load shorts or overloads
+   Limiting protects module drivers from overheating on overload or short.
+
+4. B - Varying the on-time / duty cycle of a fixed-frequency signal
+   Changing duty cycle changes average voltage/current delivered to the load.
+
+5. A - A clean square-wave switching between low and high
+   Hall sensors switch digitally, giving a square wave.
+
+6. B - An AC sine-like wave whose amplitude and frequency rise with speed
+   VR sensors generate AC; faster rotation means higher frequency and amplitude.
+
+7. B - The module's ability to locate crank position / TDC reference
+   The gap is the reference; distortion can cause sync and misfire faults.
+
+8. B - Valve timing, sealing and pumping problems from pressure changes
+   Pressure traces show compression, power, exhaust and intake events.
+
+9. B - Current is building in the coil primary
+   Dwell is coil-on time, building the magnetic field and primary current.
+
+10. B - High secondary resistance such as a wide plug gap or open lead
+   High resistance demands higher firing voltage and leaves less energy for spark duration.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 10 - Electrical Waveforms Explained
+Answer Key - Quiz 11 - Advanced Oscilloscope Techniques
+Retake date: ________________ Second score: ___ / 10
+
+1. A - Starter current draw or battery voltage dip as each cylinder comes up on compression
+   Each compression stroke loads the starter; a weak cylinder draws less current.
+
+2. B - Cranking with fuelling/ignition disabled as directed
+   The engine is cranked without starting so starter load reflects compression.
+
+3. B - That cylinder has lower compression than the others
+   Less compression means less starter load, so a smaller current hump.
+
+4. B - Identify which peak belongs to which cylinder
+   Sync links each peak in firing order to a specific cylinder.
+
+5. B - How cylinders compare with each other, not absolute pressure
+   It is a comparison test; a low cylinder needs follow-up testing for cause and absolute value.
+
+6. A - That the battery and starter circuit are in good condition and fully charged
+   A weak battery or starter distorts the pattern and can mimic compression differences.
+
+7. B - A generally weak battery/starter, incorrect cranking speed, or a global engine issue - not one cylinder
+   A uniform pattern points to a common cause rather than one cylinder.
+
+8. B - A conventional compression test and/or cylinder leakage test on that cylinder
+   Wet/dry compression and leakage testing locate rings, valves or gasket leakage.
+
+9. B - Battery voltage dips as starter load rises on each compression stroke
+   Higher starter load pulls battery voltage down, creating a corresponding voltage trace.
+
+10. A - Stop the engine starting and to get a clean, even cranking pattern
+   Preventing a start keeps cranking even and safe for comparison.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 11 - Advanced Oscilloscope Techniques
+Answer Key - Quiz 12 - Testing and Charging Batteries
+Retake date: ________________ Second score: ___ / 10
+
+1. B - Dilute sulphuric acid
+   Flooded lead-acid cells use sulphuric acid electrolyte covering lead plates.
+
+2. B - 1.265 - 1.280
+   Around 1.265-1.280 at reference temperature indicates full charge.
+
+3. B - They require a battery management system to monitor cell voltage, temperature and current
+   Lithium chemistry needs BMS protection against overcharge, over-discharge and thermal issues.
+
+4. B - Lower weight and higher energy density
+   Lithium packs store more energy per kilogram.
+
+5. B - Battery capacity / cranking ability from its internal conductance
+   Conductance testing infers health and CCA capability without a full load test.
+
+6. B - Reasonably charged and terminals are clean and tight
+   Testing a discharged or badly connected battery gives misleading failures.
+
+7. B - After modules have gone to sleep, measuring key-off current draw
+   Normal sleep current is measured after the vehicle fully powers down.
+
+8. B - Measure voltage drop across fuses or pull fuses one at a time while watching draw fall
+   Fuse voltage-drop or sequential fuse removal isolates the draining branch without waking modules where possible.
+
+9. B - Uses multi-stage charging and can adapt rate and mode to battery condition and type
+   Smart chargers bulk, absorb and float, and often have AGM/lithium modes and maintenance.
+
+10. B - Undercharge it or damage it if voltage limits are wrong
+   Battery type settings matter; AGM and lithium have different voltage limits.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 12 - Testing and Charging Batteries
+Answer Key - Quiz 13 - Understanding Charging Systems
+Retake date: ________________ Second score: ___ / 10
+
+1. A - Spinning a magnetic field inside stationary stator windings
+   The rotating rotor field induces AC in the stator, rectified to DC.
+
+2. A - Converts AC from the stator to DC for the vehicle
+   Diodes rectify stator AC into usable DC output.
+
+3. B - Controlling rotor field current
+   More field current makes a stronger field and higher output.
+
+4. B - A faulty diode or stator winding
+   Failed diodes/windings let AC ripple through and reduce output.
+
+5. A - A scope on the output or a meter on AC volts
+   A scope pattern or AC voltage measurement reveals abnormal ripple.
+
+6. B - Battery overheating, gassing and damage to electronics
+   Overvoltage damages the battery and sensitive electronics.
+
+7. B - Low/intermittent charging, noise and battery warning under load
+   The alternator cannot reach required speed/output if the belt slips.
+
+8. B - Checking battery condition, terminals, belt and grounds first
+   A weak battery or bad connection mimics alternator failure, so basics come first.
+
+9. C - 13.5 - 14.5 V (system dependent)
+   Conventional systems regulate roughly in the mid-13 to mid-14 volt range; smart systems vary.
+
+10. B - High resistance that a voltage-at-battery reading alone can hide
+   Loaded drop tests reveal cable and connection resistance between alternator and battery.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 13 - Understanding Charging Systems
+Answer Key - Quiz 14 - Smart Charging Technology
+Retake date: ________________ Second score: ___ / 10
+
+1. B - Match electrical load, battery state, temperature and fuel-economy goals
+   Smart control balances charge needs with engine load and emissions/economy targets.
+
+2. B - A fully charged battery needs less, and reducing alternator load saves fuel
+   Reducing field when charge is not needed cuts engine drag.
+
+3. B - Recover energy (regenerative-style charging) while engine braking
+   Raising output on overrun uses vehicle momentum to recharge the battery.
+
+4. B - Monitor charge/discharge current to calculate battery state
+   Current, voltage and temperature data let the module estimate state of charge and health.
+
+5. B - Default to a fixed fallback charging voltage
+   Most designs fail-safe to a conventional default voltage so the vehicle stays powered.
+
+6. B - The module may be intentionally commanding a lower voltage at that moment
+   Commanded voltage varies; compare scan data, command and battery state before condemning parts.
+
+7. B - Battery state data, commanded/desired voltage, generator feedback and related codes
+   Desired vs actual generator data shows whether control or the alternator is at fault.
+
+8. B - Register/reset the battery monitoring system so charging adapts to the new battery
+   Battery registration resets learned age/type data; without it charging can be wrong.
+
+9. B - Incorrect charging voltage decisions and warning lights
+   Bad inputs lead the module to command inappropriate charging.
+
+10. B - The module to misread or the alternator to undercharge despite a good unit
+   Ground resistance affects both output and sensing, mimicking alternator failure.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 14 - Smart Charging Technology
+Answer Key - Quiz 15 - Mastering Starter Systems
+Retake date: ________________ Second score: ___ / 10
+
+1. B - Engage the pinion with the ring gear and close the motor contacts
+   The solenoid shifts the pinion into mesh and switches heavy motor current.
+
+2. B - Poor heavy-current contacts, low battery, bad connections or a seized/faulty motor - not the signal alone
+   The signal is arriving (click) but heavy current is not turning the motor.
+
+3. A - Magnetic interaction between armature and field windings/coils
+   Current in the armature and field creates magnetic forces that rotate the armature.
+
+4. B - Intermittent or no operation and arcing
+   Poor brush contact interrupts armature current.
+
+5. B - While cranking, measuring across each cable and connection
+   High starter current reveals resistance; drops are measured during cranking.
+
+6. B - Excessive resistance in that cable or its connections
+   That drop is far above a healthy cable's small drop under cranking load.
+
+7. B - Kept low - typically under about 0.5 V total in a healthy system (check specifications)
+   Excess total drop starves the starter of voltage; always compare with manufacturer specs.
+
+8. B - Frequent restarts and deeper cycling while supporting loads engine-off
+   Start-stop duty cycles a normal flooded battery too hard, shortening its life.
+
+9. B - Battery state is low, engine is cold, or a large electrical/HVAC load demands the engine
+   Inhibit conditions protect battery, emissions, comfort and safety.
+
+10. B - A starter/battery and management system designed for fast, repeated restarts
+   Reinforced starters, suitable batteries and control logic make restarts quick and reliable.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 15 - Mastering Starter Systems
+Answer Key - Quiz 16 - Modern Vehicle Networks
+Retake date: ________________ Second score: ___ / 10
+
+1. B - Body and comfort functions where speed is less critical
+   Low-speed CAN suits doors, seats, lighting and other body systems.
+
+2. B - Continue communicating on one wire in some fault conditions
+   Fault-tolerant transceivers can operate single-wire in limited faults.
+
+3. B - Differential signals that are mirror images, improving noise immunity
+   Differential signalling rejects common-mode noise.
+
+4. B - 60 ohms
+   Two 120-ohm terminators in parallel measure about 60 ohms.
+
+5. B - Loss or severe disruption of communication on that bus
+   A short collapses differential signalling and modules cannot communicate reliably.
+
+6. B - Deterministic, high-speed, fault-tolerant communication for chassis/safety systems
+   FlexRay provides time-determined, redundant communication for critical systems.
+
+7. B - Static time slots in a repeating cycle for guaranteed message timing
+   Time-triggered slots guarantee when critical messages are sent.
+
+8. B - Infotainment / multimedia data, often over optical fibre
+   MOST carries audio, video and infotainment data around a ring.
+
+9. B - Interrupt the ring and can take down the infotainment network
+   A ring break stops data circulating past the break.
+
+10. B - A low-cost single-wire sub-bus where a master controls slave nodes such as switches, motors and sensors
+   LIN handles simple body slaves under a master module at low cost.
+
+
+
+
+Electrical Pop Quizzes - Answer Key • Quiz 16 - Modern Vehicle Networks
+

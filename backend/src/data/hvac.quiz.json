@@ -1,0 +1,1470 @@
+{
+  "slug": "hvac",
+  "title": "HVAC",
+  "courses": [
+    {
+      "position": 1,
+      "slug": "hvac-hvac-system-essentials",
+      "title": "HVAC System Essentials",
+      "moduleTitles": [
+        "Introducing Air Conditioning",
+        "Introducing Air Conditioning High Side Components",
+        "Air Conditioning Low Side Components",
+        "Air Conditioning Servicing"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "What does vehicle air conditioning mainly do to cabin air?",
+          "moduleTitle": "Introducing Air Conditioning",
+          "explanation": "A/C transfers heat out of the cabin; evaporator cooling also condenses moisture from the air.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Heats the air and raises its humidity",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Moves heat from inside the cabin to outside the vehicle, cooling and dehumidifying the air",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Creates cold air inside the compressor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Removes all oxygen from the cabin",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "In the refrigeration cycle, refrigerant absorbs heat in the cabin and releases heat outside when it:",
+          "moduleTitle": "Introducing Air Conditioning",
+          "explanation": "Low-pressure evaporation absorbs heat; compression and high-pressure condensation reject it outside.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Stays as a liquid at constant pressure throughout",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Evaporates at low pressure in the evaporator, then is compressed and condenses at high pressure in the condenser",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Freezes in the condenser",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Burns in the compressor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Why is the change of state of the refrigerant so important to A/C operation?",
+          "moduleTitle": "Introducing Air Conditioning",
+          "explanation": "Latent heat in boiling/condensing moves far more heat than temperature change alone.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It changes the colour of the refrigerant",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A liquid boiling to vapour absorbs a large amount of heat, and vapour condensing back to liquid releases that heat",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It makes the refrigerant heavier",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It stops the compressor from turning",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "The high side of the system runs from:",
+          "moduleTitle": "Introducing Air Conditioning High Side Components",
+          "explanation": "The high side is the high-pressure, hot section: compressor outlet to metering device inlet.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The evaporator outlet back to the expansion device",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The compressor discharge, through the condenser, to the inlet of the expansion device / orifice",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The cabin filter to the blower motor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The radiator to the heater core",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "What is the job of the condenser?",
+          "moduleTitle": "Introducing Air Conditioning High Side Components",
+          "explanation": "The condenser cools the discharge vapour so it condenses, giving up its heat to outside air.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To absorb heat from cabin air",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To reject heat to outside air, changing hot high-pressure vapour into high-pressure liquid",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To expand the refrigerant and drop its pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To store liquid refrigerant for the low side only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A blocked condenser airflow (debris, failed fan) will most directly cause:",
+          "moduleTitle": "Introducing Air Conditioning High Side Components",
+          "explanation": "If the condenser cannot reject heat, pressure and temperature climb and cooling suffers.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Low-side pressure to fall to zero at all times",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "High-side pressure and temperature to rise, with poor cooling",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The evaporator to flood with liquid",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The compressor clutch air gap to increase",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "What happens inside the evaporator?",
+          "moduleTitle": "Air Conditioning Low Side Components",
+          "explanation": "The evaporator is where cold low-pressure refrigerant evaporates and cools cabin air.",
+          "options": [
+            {
+              "label": "A",
+              "body": "High-pressure liquid is stored",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Low-pressure liquid refrigerant boils and absorbs heat from air passing over the fins",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Refrigerant is compressed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Refrigerant gives up heat to outside air",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Just before the evaporator, the expansion device (TXV or fixed orifice) causes:",
+          "moduleTitle": "Air Conditioning Low Side Components",
+          "explanation": "Metering the liquid creates the pressure drop that makes the evaporator cold.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A rise in pressure and temperature",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A sharp drop in pressure, so the refrigerant entering the evaporator is cold and low-pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The refrigerant to become a superheated vapour",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The compressor to stop",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Before opening any A/C system, refrigerant must be:",
+          "moduleTitle": "Air Conditioning Servicing",
+          "explanation": "Refrigerant is recovered, never vented; recharge is by the specified weight after evacuation.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Vented to the atmosphere",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Recovered into approved equipment, then the system can be opened, repaired, evacuated, and recharged by weight",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Diluted with water",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Mixed with engine oil and drained",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Why is a deep vacuum (evacuation) held on an opened system before recharging?",
+          "moduleTitle": "Air Conditioning Servicing",
+          "explanation": "Evacuation removes non-condensables and moisture that harm performance and components.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To inflate the hoses",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To remove air and boil off moisture, which would otherwise form acids, cause icing, and reduce cooling",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To add oil to the compressor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To test the cabin filter",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "slug": "hvac-hvac-system-operation",
+      "title": "HVAC System Operation",
+      "moduleTitles": [
+        "HVAC System Sensor Inputs",
+        "HVAC System Controls",
+        "HVAC System Outputs",
+        "Introducing R1234YF"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Which set is correctly all HVAC sensor inputs?",
+          "moduleTitle": "HVAC System Sensor Inputs",
+          "explanation": "Sensors report temperatures, sun load, and pressure to the HVAC module; motors and clutches are outputs.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Blower motor, blend door actuator, compressor clutch",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "In-car temperature, ambient temperature, evaporator temperature, sun load, and refrigerant pressure sensors",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Radiator fan, heater valve, recirculation flap motor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Windshield washer level and fuel level",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "The evaporator temperature sensor is used mainly to:",
+          "moduleTitle": "HVAC System Sensor Inputs",
+          "explanation": "If the evaporator gets too cold, frost blocks airflow; its sensor lets the module prevent freeze-up.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Measure engine coolant temperature",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Prevent evaporator icing by cycling or controlling the compressor before the evaporator freezes",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Lock the doors automatically",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Measure road speed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A faulty refrigerant pressure sensor signal can cause the HVAC module to:",
+          "moduleTitle": "HVAC System Sensor Inputs",
+          "explanation": "Out-of-range pressure readings lead the module to disable the compressor for protection.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Increase tire pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Inhibit compressor engagement if pressure reads too high or too low, to protect the system",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Turn off the headlights only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Open the thermostat",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "In automatic climate control, the HVAC control module decides blower speed, air distribution, and temperature by:",
+          "moduleTitle": "HVAC System Controls",
+          "explanation": "Automatic control compares target vs. measured conditions and adjusts outputs continuously.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Guessing randomly each time the engine starts",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Combining the set temperature with sensor inputs and then driving the outputs to reach and hold that temperature",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Following only the position of the blower switch",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Turning every output fully on at all times",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Selecting recirculation instead of fresh air helps most when:",
+          "moduleTitle": "HVAC System Controls",
+          "explanation": "Recirculating already-cooled cabin air speeds pull-down; fresh air is better for demisting.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Maximum cooling is needed on a very hot day or outside air is smoky/dirty, because cabin air is reused",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The windshield needs demisting in wet weather",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The engine is cold and needs warming",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The vehicle is being pressure washed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A blend (temperature) door that does not respond to a temperature change request is a fault in which part of the control loop?",
+          "moduleTitle": "HVAC System Controls",
+          "explanation": "The module may command correctly, but a failed actuator/circuit/door prevents the output moving.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only the refrigerant charge",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The link between the control decision and the output - the blend door actuator, its circuit, or the door itself",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The condenser fan only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The sun load sensor lens colour",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Which of these is an HVAC output controlled by the module?",
+          "moduleTitle": "HVAC System Outputs",
+          "explanation": "Blower, doors, and compressor control are driven outputs; sensors are inputs.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ambient temperature sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Blower motor speed, mode/blend door actuators, and compressor clutch or variable compressor control",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Refrigerant pressure sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Sun load sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "On a variable-displacement compressor with no clutch, cooling output is varied by:",
+          "moduleTitle": "HVAC System Outputs",
+          "explanation": "Clutchless compressors vary stroke/displacement electrically instead of cycling a clutch.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Removing the drive belt",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A control valve/solenoid that changes compressor displacement in response to module command",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The cabin filter",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Changing tire size",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "R1234YF was introduced mainly as a replacement for R134a because it has:",
+          "moduleTitle": "Introducing R1234YF",
+          "explanation": "R1234yf has very low GWP compared with R134a and similar operating characteristics.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Much higher global warming potential",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A much lower global warming potential, while working at similar pressures",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No need for any oil",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A completely different refrigeration cycle with no condenser",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Which servicing point about R1234YF is correct?",
+          "moduleTitle": "Introducing R1234YF",
+          "explanation": "R1234yf is A2L mildly flammable, has distinct fittings, and requires dedicated equipment and procedures.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It can be freely mixed with R134a in any system",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "It is mildly flammable (A2L), uses its own service fittings and dedicated recovery/recharge equipment, and must not be mixed with R134a",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It needs no leak testing",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Any R134a machine can be used with no changes",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "slug": "hvac-hvac-best-practice-servicing",
+      "title": "HVAC Best Practice Servicing",
+      "moduleTitles": [
+        "HVAC Performance Checking"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "A correct performance check starts by:",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "Comparable results need the manufacturer's test conditions and stabilised readings.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Immediately adding refrigerant",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Setting the controls as specified (usually max/cold A/C, recirculation, set blower and engine RPM), noting ambient temperature and humidity, and letting pressures and vent temperature stabilise",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removing the condenser fan",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Driving at motorway speed with the windows open",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Centre vent temperature is measured best with:",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "A probe in the vent airstream, judged against the ambient-based spec, is the reliable check.",
+          "options": [
+            {
+              "label": "A",
+              "body": "An infrared gun pointed at the dashboard plastic",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A probe thermometer inserted in the centre vent, compared with the specified value for the ambient temperature",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A finger held in front of the vent",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The engine coolant gauge",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Vent temperature is warmer than specified but both gauge pressures are near normal. A good next check is:",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "Near-normal pressures point away from the refrigeration loop toward air-side and door faults.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Condemn the compressor at once",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Check for a blend door not reaching full cold, heater valve/heater bleed-through, or a restricted cabin filter/airflow fault",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Add double the specified charge",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replace the condenser without testing",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Why must ambient temperature and humidity be recorded during a performance check?",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "A vent temp that is normal at 35C ambient would be poor at 20C; conditions set the expectation.",
+          "options": [
+            {
+              "label": "A",
+              "body": "They change the colour of the gauges",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Expected vent temperature and pressures rise with ambient heat and humidity, so a reading can only be judged against its conditions",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "They determine the engine oil grade",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "They have no effect on A/C performance",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "During the check, the condenser fan does not run with A/C on. The likely effect on the readings is:",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "Without condenser airflow at idle, heat rejection falls, head pressure rises, and cooling drops.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Lower high-side pressure and colder vent air",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Higher high-side pressure and warmer vent air, especially at idle",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No change at any speed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low-side pressure only, with no other change",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A system passes the vent-temperature check at fast idle but is poor in slow traffic. This pattern most suggests:",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "Speed-dependent cooling points to airflow over the condenser, which road speed provides but traffic does not.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A fault that appears only under load - check condenser airflow/fan operation and air in the system",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The system is fully normal and needs no checks",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The cabin filter is new",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The refrigerant is overcharged with oil only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Touch/temperature checks along the lines during a performance test can help locate:",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "An unexpected cold spot or frost marks a restriction creating a pressure drop.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A radio fault",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A restriction - a sharp temperature drop or frosting at one point where there should not be one",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low tire pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A worn wheel bearing",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "After a repair, the correct way to confirm the fix is to:",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "Repeating the standardised check proves the repair restored specified performance.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ask the customer to test it over the next month",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Repeat the full performance check under the same conditions and confirm vent temperature and pressures are now within specification",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only check that the clutch engages",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Clear the fault codes and release the vehicle",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Superheat/subcooling or line temperatures well outside the expected range during a check most likely indicate:",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "Abnormal superheat/subcooling points to charge or loop faults that gauges and temps together help isolate.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A fault with charge level or a component/restriction in the refrigeration loop - investigate before re-gassing by guesswork",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "That the thermometer battery is flat in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A fault in the audio system",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "That performance checking is not needed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A very cold suction line with frost back to the compressor during the check can indicate:",
+          "moduleTitle": "HVAC Performance Checking",
+          "explanation": "Frost to the compressor risks liquid slugging; metering device and charge must be checked.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal operation on every system",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Overfeeding / expansion device stuck open or incorrect charge, risking liquid returning to the compressor",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A blocked condenser",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A flat battery",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "slug": "hvac-hvac-mechanical-diagnostics",
+      "title": "HVAC Mechanical Diagnostics",
+      "moduleTitles": [
+        "Air Conditioning System Pressure Diagnostics",
+        "Air Conditioning Compressor Clutch Diagnostics"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "With the system running, BOTH low-side and high-side pressures are lower than normal and cooling is poor. The most likely cause is:",
+          "moduleTitle": "Air Conditioning System Pressure Diagnostics",
+          "explanation": "Low charge starves both sides; find and repair the leak, then recharge by weight.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Overcharge",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Undercharge (low refrigerant, often from a leak)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A blocked condenser",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Air in the system",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Both pressures are HIGHER than normal with poor cooling on a hot day. Which cause fits best?",
+          "moduleTitle": "Air Conditioning System Pressure Diagnostics",
+          "explanation": "Excess charge, non-condensables, or poor heat rejection all drive both pressures up.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Undercharge",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Overcharge, air in the system, or poor condenser airflow/cooling",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A completely empty system",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A failed evaporator blower only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Low-side pressure is very low (near vacuum) while high-side is low/normal and the evaporator outlet is cold at one spot. This points to:",
+          "moduleTitle": "Air Conditioning System Pressure Diagnostics",
+          "explanation": "Starved evaporator flow pulls suction down; a restriction or icing metering device is likely.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A restriction in the low side / metering device or a moisture-iced expansion device",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "An overcharge",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A slipping clutch only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A faulty sun load sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "High-side pressure is very high but low-side is near normal, with the liquid line hot. A likely cause is:",
+          "moduleTitle": "Air Conditioning System Pressure Diagnostics",
+          "explanation": "A high-side blockage backs pressure up ahead of it while the low side can still look near normal.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A restriction on the high side, such as a blocked condenser or kinked liquid line",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "A system with no compressor drive",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A blown cabin fuse",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A worn blower resistor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Static (engine off, system equalised) pressure is far below the value expected for the ambient temperature. That tells you:",
+          "moduleTitle": "Air Conditioning System Pressure Diagnostics",
+          "explanation": "Equalised static pressure vs. ambient reveals a low/empty system before the engine is started.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The compressor is faulty",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "There is little or no refrigerant charge - leak-test before any running tests",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The TXV is stuck open",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The clutch gap is too wide",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "The compressor clutch will not engage. Before condemning the clutch coil, first confirm:",
+          "moduleTitle": "Air Conditioning Compressor Clutch Diagnostics",
+          "explanation": "Many no-engage faults are missing command, feed, or ground - not a failed coil.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The tire pressures",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "That the module is commanding engagement and that power and ground actually reach the clutch connector",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The radio volume",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The cabin filter condition",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Power and ground are present at the clutch, but it still does not pull in. Measuring the coil shows an open circuit. The diagnosis is:",
+          "moduleTitle": "Air Conditioning Compressor Clutch Diagnostics",
+          "explanation": "Feed and ground proven good plus an open coil confirms the coil itself has failed.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A faulty condenser fan",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A failed (open) clutch coil - replace the coil/clutch assembly as specified",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low refrigerant charge",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A blocked receiver drier",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "The clutch engages but slips, squeals, and gets hot, with a burnt face. A common mechanical cause to check is:",
+          "moduleTitle": "Air Conditioning Compressor Clutch Diagnostics",
+          "explanation": "Wide gap, worn faces, and high compressor torque all make the clutch slip and overheat.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Excessive clutch air gap, a worn/contaminated clutch face, or a partially seizing compressor raising the load",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Too much refrigerant oil in the cabin",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A new drive belt",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "High blower speed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "What does the clutch air gap measurement check?",
+          "moduleTitle": "Air Conditioning Compressor Clutch Diagnostics",
+          "explanation": "Air gap must be in specification for reliable engagement without dragging.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The distance between the condenser and radiator",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The gap between the clutch plate and pulley - too wide weakens magnetic pull-in, too narrow can cause drag when disengaged",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The gap in the spark plugs",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The evaporator fin spacing",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "The clutch cycles on and off very rapidly (short-cycling). Which checks belong in the diagnosis?",
+          "moduleTitle": "Air Conditioning Compressor Clutch Diagnostics",
+          "explanation": "Short-cycling is usually commanded in response to pressure or evaporator temperature signals, or low charge.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only the clutch relay paint colour",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Refrigerant charge / pressure readings and the evaporator temperature and pressure switch/sensor signals that command cycling",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Wiper blade size",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Wheel alignment",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "slug": "hvac-hvac-electrical-diagnostics",
+      "title": "HVAC Electrical Diagnostics",
+      "moduleTitles": [
+        "Air Conditioning Thermal Mistore Diagnostics",
+        "Sun Load Sensor Voltage Low",
+        "Sun Load Sensor Voltage High"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "An air conditioning thermistor (thermal mistore) is:",
+          "moduleTitle": "Air Conditioning Thermal Mistore Diagnostics",
+          "explanation": "Thermistors convert temperature into a resistance/voltage signal the module can read.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A fixed resistor that never changes value",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A temperature-sensitive resistor whose resistance changes in a known way with temperature, used to sense evaporator or cabin air temperature",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A type of compressor clutch",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A pressure switch with two fixed contacts",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Most automotive temperature thermistors are NTC type. NTC means that as temperature rises:",
+          "moduleTitle": "Air Conditioning Thermal Mistore Diagnostics",
+          "explanation": "Negative Temperature Coefficient: hotter = lower resistance, which the module reads as a rising signal voltage in a typical pull-up circuit.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Resistance rises sharply",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Resistance falls",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Resistance stays exactly the same",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The sensor produces its own voltage like a battery",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "An evaporator thermistor reads open circuit. The HVAC module will most likely interpret this as:",
+          "moduleTitle": "Air Conditioning Thermal Mistore Diagnostics",
+          "explanation": "An open sensor drives the signal to one extreme; live data vs. actual temperature exposes the fault.",
+          "options": [
+            {
+              "label": "A",
+              "body": "An extremely cold or extremely warm evaporator (depending on circuit design) and may inhibit or mis- control the compressor - compare scan temperature with actual measured temperature",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "A correct reading needing no action",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Low refrigerant pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A condenser fan fault",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "To test a thermistor properly, you should:",
+          "moduleTitle": "Air Conditioning Thermal Mistore Diagnostics",
+          "explanation": "Resistance-at-temperature against the spec chart, plus a smooth change, proves or condemns the sensor.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only check that its connector is plugged in",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Measure its resistance at a known temperature (or compare scan-tool temperature with a thermometer at the sensor) and check it changes smoothly as temperature changes",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Apply battery voltage directly across it",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Short it to ground and watch for sparks",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A 'sun load sensor voltage low' fault means the module sees the signal:",
+          "moduleTitle": "Sun Load Sensor Voltage Low",
+          "explanation": "Voltage low codes set when the signal sits below the plausible window, typically a short to ground or sensor failure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Above its 5V reference at all times",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Below the expected minimum - near 0V - suggesting a short to ground in the signal wire, a failed sensor pulling the signal down, or a lost reference/ground fault, depending on circuit design",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Exactly at the correct value for bright sun",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only when the headlights are on",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "The sun load sensor's normal job is to:",
+          "moduleTitle": "Sun Load Sensor Voltage Low",
+          "explanation": "Sun load lets auto climate compensate for solar heating before cabin temperature drifts.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Measure refrigerant pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Measure sunlight intensity on the cabin so automatic climate control can add cooling for the side/load the sun is heating",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Measure vehicle speed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Sense rain on the windshield",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "With the sensor unplugged, the signal wire measures a good reference voltage and ground is good, but plugged in the signal collapses to near 0V. This points to:",
+          "moduleTitle": "Sun Load Sensor Voltage Low",
+          "explanation": "Feed and ground proven good unplugged, signal pulled down when connected, implicates the sensor.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A faulty sensor itself shorting the signal internally",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "An open signal wire",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A faulty blower motor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low refrigerant charge",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A 'sun load sensor voltage high' fault means the module sees the signal:",
+          "moduleTitle": "Sun Load Sensor Voltage High",
+          "explanation": "Voltage high codes set when the signal is pulled up toward reference by an open/short-to-voltage fault.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Stuck at the value for total darkness and correct",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "At or near the reference voltage / above the expected maximum - suggesting an open signal or ground circuit, an unplugged sensor, or a short to voltage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Below 0.2V at all times",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only on cloudy days",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A sun load sensor is unplugged during other work and the A/C is then tested. The most likely result is:",
+          "moduleTitle": "Sun Load Sensor Voltage High",
+          "explanation": "An open connector is a classic voltage-high cause; restore the connection and retest the live signal in light and shade.",
+          "options": [
+            {
+              "label": "A",
+              "body": "No fault of any kind",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A voltage high fault may set, and automatic climate loses sun compensation until the sensor is reconnected and the code cleared/retested",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The compressor will seize",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The evaporator will freeze solid immediately",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "To distinguish a wiring fault from a sensor fault on a voltage-high code, the best test is:",
+          "moduleTitle": "Sun Load Sensor Voltage High",
+          "explanation": "Prove the three wires first; a good sensor signal must vary between covered (dark) and bright light.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Replace the HVAC module first",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Check the signal, reference, and ground at the sensor connector, then test/replace the sensor only if wiring values are correct, and confirm the live signal changes when the sensor is covered and uncovered",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Add refrigerant",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replace the compressor clutch",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

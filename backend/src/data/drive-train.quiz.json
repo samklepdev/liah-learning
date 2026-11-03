@@ -1,0 +1,2054 @@
+{
+  "slug": "drive-train",
+  "title": "Drive Train",
+  "courses": [
+    {
+      "position": 1,
+      "slug": "drive-train-complete-clutch-essentials",
+      "title": "Complete Clutch Essentials",
+      "moduleTitles": [
+        "Clutch System Principles",
+        "Multi-Plate Clutch Systems",
+        "Dual Mass Flywheel Design and Operation",
+        "Conventional Clutch Diagnostics"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "What is the main purpose of the clutch in a manual transmission vehicle?",
+          "moduleTitle": "Clutch System Principles",
+          "explanation": "The clutch connects/disconnects engine drive for starting, stopping, and gear changes.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To increase engine power at high speed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To connect and disconnect engine drive to the transmission so gears can be changed and the vehicle can stop with the engine running",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To cool the transmission oil",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To charge the battery while driving",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "In a typical single-plate clutch, the friction disc is splined to which part and clamped between which two parts?",
+          "moduleTitle": "Clutch System Principles",
+          "explanation": "The disc drives the input shaft and is clamped between flywheel and pressure plate.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The crankshaft; the gearbox casing and bell housing",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The transmission input shaft; the flywheel and the pressure plate",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The driveshaft; the differential and axle",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The release bearing; the pedal and cable",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "What does a diaphragm spring in the pressure plate do when the clutch pedal is pressed?",
+          "moduleTitle": "Clutch System Principles",
+          "explanation": "Pressing the pedal moves the diaphragm fingers and lifts clamping load to release the disc.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It clamps the disc harder to the flywheel",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Its fingers are pushed in, pulling the pressure plate away so the disc is released",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It locks the differential",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It pumps hydraulic fluid to the brakes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Why use a multi-plate clutch instead of a single-plate clutch?",
+          "moduleTitle": "Multi-Plate Clutch Systems",
+          "explanation": "Stacked plates multiply friction surfaces, giving high torque capacity in a small diameter.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It needs no release bearing",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "More friction surfaces transmit more torque in a compact size",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It eliminates the flywheel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It works without any friction material",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A wet multi-plate clutch differs from a dry multi-plate clutch because it:",
+          "moduleTitle": "Multi-Plate Clutch Systems",
+          "explanation": "Wet clutches run in oil for cooling and durability; dry clutches run in air.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Runs in oil, which cools the plates and gives smoother, longer-lasting engagement",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Has no plates at all",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Only works on electric vehicles",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Uses air pressure to clamp the plates",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "What is the main job of a dual mass flywheel (DMF)?",
+          "moduleTitle": "Dual Mass Flywheel Design and Operation",
+          "explanation": "The DMF damps crankshaft torsional pulses, reducing gearbox rattle and vibration.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To increase top speed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To absorb and damp engine torsional vibration before it reaches the gearbox",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To double the clutch clamping force",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To replace the starter motor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Inside a DMF, the primary and secondary masses are connected by:",
+          "moduleTitle": "Dual Mass Flywheel Design and Operation",
+          "explanation": "Arc springs between the two masses allow movement that absorbs vibration.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A rigid solid bolted joint with no movement",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Arc springs that allow controlled relative movement between the masses",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A rubber drive belt",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Hydraulic fluid only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Which symptom most points to a worn or failing DMF?",
+          "moduleTitle": "Dual Mass Flywheel Design and Operation",
+          "explanation": "Idle and start/stop rattle plus vibration are classic DMF failure symptoms.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A flat tire vibration at motorway speed only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rattle or knocking at idle and on start-up/shut-down, with vibration through the vehicle",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The headlights flickering",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low engine oil pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A clutch is slipping. Which test result confirms slip?",
+          "moduleTitle": "Conventional Clutch Diagnostics",
+          "explanation": "Rising RPM without matching road speed under load confirms the disc is slipping.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Engine RPM rises under load in a high gear but road speed does not rise with it",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The pedal feels very heavy",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "First gear is hard to select at a standstill",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The release bearing is noisy with the pedal up",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A clutch drags (does not fully release), often due to air in the hydraulic system or incorrect adjustment. The driver will most likely report:",
+          "moduleTitle": "Conventional Clutch Diagnostics",
+          "explanation": "Incomplete release keeps the input shaft turning, making first/reverse selection hard.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Difficulty selecting first and reverse gear, with crunching",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The engine overheating",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A slipping clutch smell at high speed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Loss of power steering",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "slug": "drive-train-manual-transmission-explained",
+      "title": "Manual Transmission Explained",
+      "moduleTitles": [
+        "Manual Transmission Operation",
+        "Understanding Manual Transaxles"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Why does a vehicle need different gear ratios?",
+          "moduleTitle": "Manual Transmission Operation",
+          "explanation": "Low gears multiply torque to pull away; high gears suit cruising speed.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To keep the radio tuned to different stations",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To multiply engine torque for pulling away and allow higher road speed with lower engine load as speed rises",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To change the direction of the exhaust",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To recharge the gearbox oil",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "In a constant-mesh manual gearbox, the gear pairs are:",
+          "moduleTitle": "Manual Transmission Operation",
+          "explanation": "Constant-mesh gears stay meshed; a sliding hub locks the chosen gear to its shaft.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only meshed when the driver moves the gear lever",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Always in mesh; drive is locked in by dog teeth / synchromesh hubs sliding onto the selected gear",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Driven by a rubber belt",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Connected by a chain only in reverse",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "What does the synchromesh (synchronizer) do during a gear change?",
+          "moduleTitle": "Manual Transmission Operation",
+          "explanation": "Synchromesh matches speeds by friction first, so engagement is smooth and quiet.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It cools the gear oil",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "It uses friction to match the speed of the gear and shaft before the dog teeth engage, preventing crunching",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It locks both axles together",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It measures road speed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "How is reverse gear usually obtained in a manual gearbox?",
+          "moduleTitle": "Manual Transmission Operation",
+          "explanation": "A reverse idler reverses output direction without reversing the engine.",
+          "options": [
+            {
+              "label": "A",
+              "body": "By reversing engine rotation",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "By adding an idler gear that reverses the direction of the output shaft",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "By turning the steering wheel fully",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "By switching the clutch off",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Worn synchromesh on second gear will most likely cause:",
+          "moduleTitle": "Manual Transmission Operation",
+          "explanation": "Worn synchro rings cannot match speeds in time, so second gear crunches.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Crunching when changing into second gear, especially when rushed or cold",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The clutch to slip in fifth gear",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Loss of reverse gear only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The speedometer to stop working",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A transaxle differs from a separate transmission and final drive because it:",
+          "moduleTitle": "Understanding Manual Transaxles",
+          "explanation": "A transaxle packages gearbox, final drive, and differential together in one casing.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Has no gears at all",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Combines the gearbox, final drive, and differential in one housing",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Is only used on rear-wheel-drive trucks",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Uses no lubricant",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Manual transaxles are most commonly used on:",
+          "moduleTitle": "Understanding Manual Transaxles",
+          "explanation": "Transaxles suit front-wheel drive, keeping the powertrain compact at the driven end.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Front-wheel-drive cars, where the engine and driven wheels are at the same end",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Steam locomotives",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Aircraft",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Rear-engine buses only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "In a front-wheel-drive transaxle, power leaves the differential to the wheels through:",
+          "moduleTitle": "Understanding Manual Transaxles",
+          "explanation": "Half shafts with CV joints carry drive from the transaxle differential to the front wheels.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A long propshaft to the rear axle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Drive shafts (half shafts) with constant velocity joints",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A chain drive to each wheel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The steering rack",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Why must the correct specified oil be used in a manual transaxle?",
+          "moduleTitle": "Understanding Manual Transaxles",
+          "explanation": "Shared gear/diff oil must suit synchro friction and gear protection — wrong oil causes shift problems.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The same oil often lubricates both the gears and the differential, and the wrong grade/additives can harm synchromesh and bearings",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Oil type makes no difference in any gearbox",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "To change the colour of the casing",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only automatic transmissions need oil",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A transaxle whines in all gears and the noise changes with road speed, not engine speed in a single gear. This most likely points to:",
+          "moduleTitle": "Understanding Manual Transaxles",
+          "explanation": "Noise tied to road speed across gears points to the final drive/differential side.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Worn clutch release bearing",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Final drive / differential or wheel-side components in the transaxle",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A slipping drive belt",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low coolant level",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "slug": "drive-train-dual-clutch-transmission-essentials",
+      "title": "Dual Clutch Transmission Essentials",
+      "moduleTitles": [
+        "Introducing DCT"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "A dual clutch transmission (DCT) is best described as:",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "A DCT splits odd and even gears between two clutches/sub-transmissions.",
+          "options": [
+            {
+              "label": "A",
+              "body": "An automatic with only one clutch and a torque converter",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Two manual sub-transmissions in one unit, one for odd gears and one for even gears, each with its own clutch",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A CVT with a belt and pulleys",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A manual gearbox with no clutches",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "How does a DCT achieve such fast gear changes?",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "Preselection plus a clutch-to-clutch swap gives very fast shifts.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The driver changes gear twice as fast",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The next gear is preselected on the other sub-transmission, so the change is a swap of clutches",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It skips every second gear",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It turns the engine off during the shift",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "In a DCT, while first gear is driving through clutch 1, the control system will normally:",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "The idle sub-transmission preselects the likely next gear.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Leave all other gears disengaged",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Preselect second gear on the other sub-transmission ready for the upshift",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Preselect reverse gear",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disconnect the engine completely",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A wet-clutch DCT differs from a dry-clutch DCT because the wet type:",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "Oil-cooled wet clutches suit higher torque/heat; dry clutches are simpler and more efficient.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cannot be used in cars",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Runs its clutches in oil, handling higher torque and heat better, at some cost to efficiency",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Has no mechatronics unit",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only has two gears",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "What is the mechatronics unit in a DCT?",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "Mechatronics combines valves, actuators, sensors, and control electronics for the DCT.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The driver's gear lever",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The combined hydraulic/electronic control unit that operates the clutches and shift actuators from TCM commands",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A second engine",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The parking brake module",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Why can a DCT feel hesitant or jerky at very low speed and in stop-start traffic?",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "Creeping slips a clutch; sustained creep overheats it, so protection strategies intervene.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It has no first gear",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Clutches are being slipped to creep like a torque converter, and repeated low-speed slipping builds heat",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The belt stretches at low speed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It only works above 30 mph",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "What does DCT clutch overheating protection most likely do?",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "Thermal protection warns and reduces slip/drive until the clutches cool.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Turns off the headlights",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Warns the driver and may limit clutch slip, change shift strategy, or disengage drive until temperatures fall",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increases clutch slip deliberately",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Locks the steering",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Compared with a conventional torque-converter automatic, a DCT generally offers:",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "Direct mechanical drive and clutch-swap shifts give DCTs speed and efficiency.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Slower shifts and higher fuel use",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Fast shifts and good efficiency because there is a direct mechanical connection, with no torque converter slip in normal driving",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No gear changes at all",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Unlimited creep with no wear",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A DCT will not engage drive and stores clutch actuator faults. The best first checks are:",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "Fluid, power/grounds, and clutch position/temperature scan data lead DCT diagnosis.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Tire pressures and wheel alignment",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "DCT fluid level/condition, mechatronics supply and grounds, and scan data for clutch position/temperature",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Engine coolant colour only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The radio fuse",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Why is the specified DCT fluid and service interval especially important?",
+          "moduleTitle": "Introducing DCT",
+          "explanation": "DCT fluid serves clutches and hydraulics; wrong/degraded fluid harms control and shift feel.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The same fluid may cool/lubricate clutches and operate the mechatronics, so wrong or degraded fluid affects shift quality and clutch control",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Fluid never affects a DCT",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Any engine oil works the same",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "DCTs are sealed and contain no fluid",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "slug": "drive-train-mastering-automatic-transmissions",
+      "title": "Mastering Automatic Transmissions",
+      "moduleTitles": [
+        "Automatic Transmission Operations",
+        "Torque Converter Operations",
+        "Planetary Gear Sets",
+        "Automatic Transmission Hydraulics",
+        "Automatic Transmission Fluids",
+        "Electronic Transmission Control"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In a conventional automatic transmission, gear changes are made by:",
+          "moduleTitle": "Automatic Transmission Operations",
+          "explanation": "Automatics shift by applying/releasing friction elements on planetary members.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The driver sliding gears along a shaft by hand",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Applying and releasing clutches and brakes (bands/multi-plate packs) to change which planetary members are held or driven",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Moving a belt between pulleys",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Turning the torque converter around",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "What does the 'P' (Park) position engage that the other positions do not?",
+          "moduleTitle": "Automatic Transmission Operations",
+          "explanation": "Park adds a pawl locking the output; other ranges are hydraulic/electronic selections.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The torque converter lock-up clutch",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A parking pawl that mechanically locks the output shaft",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The highest gear",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The radiator fan",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "The three main elements inside a torque converter are:",
+          "moduleTitle": "Torque Converter Operations",
+          "explanation": "Impeller, turbine, and stator are the converter's three main elements.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ring gear, planet gears, and carrier",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Impeller (pump), turbine, and stator",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Rotor, stator, and brushes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Input shaft, layshaft, and mainshaft",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "What does the stator do at low speed / high slip in a torque converter?",
+          "moduleTitle": "Torque Converter Operations",
+          "explanation": "At high slip the stator redirects flow to multiply torque; it freewheels near coupling speed.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It disconnects the engine",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "It redirects fluid returning from the turbine so the converter multiplies torque",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It locks the converter solid",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It cools the fluid in the radiator",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A simple planetary gear set consists of:",
+          "moduleTitle": "Planetary Gear Sets",
+          "explanation": "Sun, planets/carrier, and ring gear make up a simple planetary set.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Two bevel gears and a cross pin",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A sun gear, planet gears on a carrier, and an outer ring (annulus) gear",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A worm and a wheel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A chain and two sprockets",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "In a planetary set, different ratios (including reverse and overdrive) are obtained by:",
+          "moduleTitle": "Planetary Gear Sets",
+          "explanation": "Holding/driving different members gives reduction, direct drive, overdrive, or reverse.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Changing the size of the gears while driving",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Holding one member, driving another, and taking output from the third in different combinations",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Adding more fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Reversing the engine",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "What is the main role of the hydraulic system and valve body in a conventional automatic?",
+          "moduleTitle": "Automatic Transmission Hydraulics",
+          "explanation": "The valve body routes line pressure to friction elements and controls shift quality.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To steer the vehicle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To direct pressurised fluid to apply/release the correct clutches and brakes for each gear, and to control shift pressure and feel",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To pump fuel to the engine",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To operate the windshield wipers",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Line pressure that is too low will most likely cause:",
+          "moduleTitle": "Automatic Transmission Hydraulics",
+          "explanation": "Low line pressure cannot clamp friction elements firmly, so they slip and wear.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Harsh, violent shifts only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Clutch/band slip, delayed or flared shifts, and rapid friction wear",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The engine to stall at idle every time",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Loss of brake pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Why must the exact specified ATF be used?",
+          "moduleTitle": "Automatic Transmission Fluids",
+          "explanation": "ATF friction/viscosity specs are matched to the clutches and controls of each unit.",
+          "options": [
+            {
+              "label": "A",
+              "body": "All ATF is identical, so it does not matter",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Friction characteristics, viscosity, and additives differ; the wrong ATF can cause shudder, harsh or slipping shifts, and damage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only the colour matters",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "ATF is the same as engine oil",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "The transmission control module (TCM) decides shift points mainly from inputs such as:",
+          "moduleTitle": "Electronic Transmission Control",
+          "explanation": "Load, speed, temperatures, and demand drive the TCM shift schedule and pressure control.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Radio volume and seat position",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Engine load/throttle, vehicle speed, engine and fluid temperatures, and driver demand",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Tire tread depth only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Windshield washer level",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "slug": "drive-train-cvt-fundamentals",
+      "title": "CVT Fundamentals",
+      "moduleTitles": [
+        "Continuously Variable Transmission Overview"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "A continuously variable transmission (CVT) differs from a stepped automatic because it:",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "A CVT varies ratio continuously instead of stepping through fixed gears.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Has only neutral and reverse",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Provides a seamless range of ratios with no fixed gear steps",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Uses a manual clutch pedal",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Has exactly three forward gears",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "In the most common automotive CVT, ratio is changed by:",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "Variable pulleys change effective diameter to vary the ratio seamlessly.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Sliding gears along a splined shaft",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Moving the sides of two variable-diameter pulleys so the belt/chain rides higher on one and lower on the other",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Switching planetary members on and off",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Changing tire size while driving",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "The drive element between the CVT pulleys is usually:",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "Car CVTs use a steel push belt or chain matched to the pulley design.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A multi-plate clutch pack",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A steel push belt or a chain designed for the pulleys",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A rubber V-belt like an accessory drive belt on most car CVTs",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A set of bevel gears",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Why does a CVT improve fuel economy in normal driving?",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "Continuous ratios keep the engine near its efficient operating point.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It removes the engine from the car",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "It lets the engine stay near its most efficient speed for the load instead of being tied to fixed gear steps",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It turns the engine off at all speeds",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It makes the vehicle lighter",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Many CVTs use a torque converter or start clutch at low speed mainly to:",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "A converter/start clutch gives smooth launch and creep before the belt drive takes over.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Provide smooth pull-away and creep, and isolate vibration at a standstill",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Lock the differential",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Charge the battery",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cool the belt",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Why is the specified CVT fluid critical and not interchangeable with regular ATF?",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "Belt/pulley friction is controlled by the fluid — wrong fluid causes slip and scoring.",
+          "options": [
+            {
+              "label": "A",
+              "body": "CVT fluid is only a different colour",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "It must provide the exact metal-to-metal friction between belt/chain and pulleys plus hydraulic control; wrong fluid can cause belt slip and pulley damage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "CVTs contain no fluid",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Any gear oil gives the same result",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A CVT vehicle shudders on pull-away and the fluid is dark and burnt-smelling. The most likely concern is:",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "Shudder plus burnt fluid points to slip/wear; verify fluid, pressure, and data first.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal operation needing no checks",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Belt/chain slip and wear from degraded fluid or low pressure — check fluid, pressures, and scan data before condemning the unit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A flat spot on a tire",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low windshield washer fluid",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "What protects a CVT if the belt begins to slip excessively?",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "The TCM raises clamping pressure and can limit torque/limp to protect the pulleys.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Nothing — slip has no effect",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Control strategies raise clamping pressure and may limit engine torque / enter a limp mode to prevent pulley damage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The driver must select Park immediately in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The pulleys lock together permanently",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "The 'rubber band' feel drivers report in some CVTs is:",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "RPM flare/hold while speed builds is normal CVT ratio behaviour, within limits.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A slipping accessory belt",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Engine RPM rising and holding while vehicle speed catches up, because ratio changes separately from road speed",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The tires stretching under load",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A faulty accelerator cable in all cases",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Some CVTs offer simulated 'steps' in manual/sport mode. These are:",
+          "moduleTitle": "Continuously Variable Transmission Overview",
+          "explanation": "Stepped feel is software — the pulleys jump between preset ratios.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Real additional fixed gears fitted inside",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Programmed pulley ratio jumps that imitate stepped shifts for driver feel",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Changes to the final drive gearing",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Produced by the torque converter only",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "slug": "drive-train-introducing-transfer-cases",
+      "title": "Introducing Transfer Cases",
+      "moduleTitles": [
+        "Transfer Case Overview"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "What is the main purpose of a transfer case?",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "The transfer case distributes drive to front and rear axles.",
+          "options": [
+            {
+              "label": "A",
+              "body": "To boost engine power",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "To split drive between the front and rear axles on four-wheel-drive / all-wheel-drive vehicles",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To replace the main gearbox",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To operate the parking brake",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Where is the transfer case normally fitted?",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "It sits after the transmission and feeds both propshafts.",
+          "options": [
+            {
+              "label": "A",
+              "body": "In front of the engine",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Behind (after) the main transmission, before the front and rear propshafts",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Inside the fuel tank",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "On the steering column",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "What does low range (4L) provide compared with high range (4H)?",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "Low range adds a reduction gear for high torque at low speed.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Higher top speed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A deep extra reduction — much more wheel torque at lower speed for climbing, towing, and off-road work",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No drive to the front axle",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Automatic tire inflation",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Inside many transfer cases, drive to one output is carried by:",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "Many transfer cases use a chain drive (some use gears) to the second output.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A timing belt",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A wide chain (or gear drive) between the input and the second output shaft",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A hydraulic motor only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The exhaust system",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Part-time 4WD with a locked centre (no centre differential action) should not be used on dry paved roads because:",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "Locked front/rear speeds on high-grip surfaces cause wind-up and scrub in turns.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It uses too much fuel only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Front and rear axles are forced to turn at the same speed, causing driveline wind-up, tire scrub, and strain in turns",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It disengages the brakes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It overheats the radio",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "What is driveline wind-up (binding)?",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "Wind-up is stored torsional load when locked axles travel different distances in a turn.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A loose propshaft bolt",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Torsional stress built up when front and rear wheels are forced to rotate at different-path speeds with no centre differential to allow it",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A worn wheel bearing noise",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The transfer case oil foaming",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "An electronically controlled transfer case changes range/mode using:",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "Electronic cases use a shift motor and position feedback under module control.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The driver's hand on a lever in all modern cases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An electric shift motor/actuator commanded by a control module, often with position sensors to confirm the shift",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Engine vacuum only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The ABS pump",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A transfer case will not shift into low range. A common requirement that must be met first is:",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "Most systems require stop/near-stop and Neutral before a low-range shift.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Vehicle at motorway speed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Vehicle stopped or nearly stopped, transmission in Neutral, foot brake applied (per manufacturer procedure)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Headlights switched on",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel tank full",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Why is the specified transfer case fluid and level important?",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "Correct fluid/level protects the chain, bearings, and any clutch pack inside.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It only affects the paint on the casing",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The chain, bearings, clutches, and shift components rely on it; low or wrong fluid causes noise, poor shifting, and wear",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Transfer cases are dry inside",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Any fluid level is acceptable",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A vehicle with an active (on-demand) transfer case mainly drives one axle and engages the other when:",
+          "moduleTitle": "Transfer Case Overview",
+          "explanation": "On-demand systems apply an internal clutch to add the second axle when slip demands it.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The headlights are on",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Wheel slip or driving conditions are detected and the module applies a clutch pack to send torque to the second axle",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The driver opens a door",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Engine temperature is low only",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "slug": "drive-train-understanding-final-drives",
+      "title": "Understanding Final Drives",
+      "moduleTitles": [
+        "Understanding Final Drives",
+        "Limited Slip Differentials",
+        "Drive Shaft Universal and Consistent Velocity Joint Operation"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "The final drive performs two main jobs. They are:",
+          "moduleTitle": "Understanding Final Drives",
+          "explanation": "The final drive gives the last reduction and the differential splits drive/speed.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cooling the engine and charging the battery",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Providing the last gear reduction and, through the differential, turning drive through 90 degrees on a conventional rear axle while allowing wheels to turn at different speeds",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Filtering the oil and pumping fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Locking both wheels permanently together",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A final drive ratio of 4.1:1 means:",
+          "moduleTitle": "Understanding Final Drives",
+          "explanation": "4.1:1 = propshaft turns 4.1 times per wheel/ring-gear turn.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The wheels turn 4.1 times for each propshaft turn",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The pinion/propshaft turns 4.1 times for each turn of the ring gear and wheels",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Top speed is 4.1 mph",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "There are 4.1 gears in the axle",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Why does an open differential allow the driven wheels to turn at different speeds in a turn?",
+          "moduleTitle": "Understanding Final Drives",
+          "explanation": "Differential pinions walk between side gears to allow a speed difference.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It disconnects one wheel completely",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Its planet pinions rotate on their pin, dividing speed between the side gears while still delivering drive",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It locks the axles with a chain",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It changes the final drive ratio",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Incorrect ring gear and pinion backlash / contact pattern after axle work will most likely cause:",
+          "moduleTitle": "Understanding Final Drives",
+          "explanation": "Wrong backlash/mesh gives noise on drive/coast and rapid wear.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Improved fuel economy",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Whine or clonk on drive/coast and accelerated gear wear",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The clutch to slip",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Loss of steering assistance",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A limited slip differential (LSD) improves on an open differential by:",
+          "moduleTitle": "Limited Slip Differentials",
+          "explanation": "An LSD biases torque toward the gripping wheel when slip begins.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Removing the need for axle oil",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Transferring some torque to the wheel with grip when the other wheel starts to spin, instead of sending nearly all speed to the spinning wheel",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Locking the steering in a straight line",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Increasing tire tread depth",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "In a clutch-pack LSD, the limiting action comes from:",
+          "moduleTitle": "Limited Slip Differentials",
+          "explanation": "Clutch packs, loaded by ramps/preload, resist differential action.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Brake pads on the wheels",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Friction clutch packs compressed as torque is applied (often with preload), resisting a speed difference between the wheels",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Magnets in the axle tubes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The ABS module only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A Torsen-type LSD gets its name and action from:",
+          "moduleTitle": "Limited Slip Differentials",
+          "explanation": "Torsen = torque sensing; its worm gearing biases torque mechanically.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Torque sensing — worm-type gearing that biases torque to the slower, gripping wheel",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Temperature sensing in the oil",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A torsion bar in the suspension",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Total lock at all times",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A single universal (Cardan) joint working at an angle produces:",
+          "moduleTitle": "Drive Shaft Universal and Consistent Velocity Joint Operation",
+          "explanation": "An angled UJ speeds and slows the output twice per turn; phasing/CVs cancel it.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Perfectly constant output speed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A twice-per-revolution speed fluctuation in the output shaft, which is why joints are phased/paired or CV joints are used",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No movement at all",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only noise, with no speed change",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A constant velocity (CV) joint differs from a simple UJ because it:",
+          "moduleTitle": "Drive Shaft Universal and Consistent Velocity Joint Operation",
+          "explanation": "CV joints keep output speed constant through steering/drive angles.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cannot transmit drive at an angle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Transmits drive at a constant output speed even at an angle, as used on front-wheel-drive shafts",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only works in a straight line",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Needs no grease or boot",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A clicking noise on full steering lock at low speed most likely indicates:",
+          "moduleTitle": "Drive Shaft Universal and Consistent Velocity Joint Operation",
+          "explanation": "Clicking on lock is the classic worn outer CV joint symptom, usually after boot failure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A worn outer CV joint, often after a split boot let grease out and dirt/water in",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Low engine oil",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A slipping clutch",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Worn brake pads",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

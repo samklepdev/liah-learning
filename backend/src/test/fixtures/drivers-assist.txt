@@ -1,0 +1,775 @@
+  PRACTICE MATERIAL
+
+
+
+
+Driver Assist
+Pop Quizzes
+6 quizzes — one per course — 10 multiple-choice questions each, 60 questions total.
+
+
+      How to use these quizzes
+
+      Take one quiz at a time, closed book. Circle your answer for each question. Every question is tagged
+      with the module it tests, so a miss points straight back to what to review.
+
+      Target: 9 / 10 before moving on to the next course. If you score below 9, review the missed modules
+      and retake the quiz.
+
+      Answer key is separate. No answers appear after the individual quizzes. All answers are grouped in a
+      separate Answer Key section at the very back, after a clear page break, so you can print the quizzes
+      without the answers.
+
+
+
+Courses covered
+
+  Quiz               Course                                                              Modules
+
+  1                  Passive Assist Technology                                           3
+
+  2                  Advanced Driver Assist System                                       9
+
+  3                  ADAS Calibration Guide                                              3
+
+  4                  Understanding Stability Control                                     4
+
+  5                  Safety and Comfort Systems                                          11
+
+  6                  SRS Airbag Essentials                                               3
+
+Name: ________________________________          Start date: ________________
+
+
+
+
+Driver Assist Pop Quizzes — Practice Material                                                                Cover
+Quiz 1 — Passive Assist Technology
+  Name: ________________________________ Date: ________________ Score: ___ / 10
+
+
+  Modules Covered
+      Collision Avoidance Camera Type
+      Lane Departure Passive Type
+      Blind Spot and Cross Traffic Alerts
+
+
+COLLISION AVOIDANCE CAMERA TYPE
+1. What does a forward-facing collision avoidance camera primarily detect ahead of the vehicle?
+    A. Tire pressure and tread depth
+    B. Vehicles, pedestrians, and lane markings
+    C. Exhaust gas composition
+    D. Brake fluid level
+
+COLLISION AVOIDANCE CAMERA TYPE
+2. In a camera-type collision avoidance system, what usually happens first as a collision risk rises?
+    A. The airbags deploy
+    B. The engine stalls
+    C. A visual/audible warning is given, then braking support if needed
+    D. The headlights turn off
+
+COLLISION AVOIDANCE CAMERA TYPE
+3. Which condition most reduces forward camera collision detection accuracy?
+    A. A clean, dry windshield
+    B. Dirt, fog, or heavy rain obscuring the camera view
+    C. Driving in daylight
+    D. Correct tire pressures
+
+LANE DEPARTURE PASSIVE TYPE
+4. A passive lane departure system differs from an active system because it:
+    A. Steers the vehicle back into the lane automatically
+    B. Only warns the driver and does not apply steering correction
+    C. Brakes the vehicle to a stop
+    D. Changes lanes for the driver
+
+LANE DEPARTURE PASSIVE TYPE
+5. How does a passive lane departure system typically alert the driver?
+    A. Horn, high beams, and hazard lights
+    B. Warning lamp/chime and often steering wheel or seat vibration
+    C. Cutting fuel to the engine
+    D. Locking the steering wheel
+
+
+
+
+Quiz 1 — Passive Assist Technology                                                                      Page 1 of 2
+Quiz 1 — continued
+LANE DEPARTURE PASSIVE TYPE
+6. A passive lane departure system will normally NOT warn when:
+    A. The turn signal is on for an intended lane change
+    B. The vehicle is travelling in a straight line
+    C. Lane markings are clearly visible
+    D. The driver is awake
+
+BLIND SPOT AND CROSS TRAFFIC ALERTS
+7. Blind spot monitoring sensors are most commonly located:
+    A. In the front grille
+    B. On the roof
+    C. At the rear bumper corners
+    D. Inside the exhaust pipe
+
+BLIND SPOT AND CROSS TRAFFIC ALERTS
+8. When a vehicle is detected in the blind spot, the driver is usually warned by:
+    A. An indicator in or near the side mirror, often with a chime if signalling
+    B. The brake pedal pulsing
+    C. The wipers activating
+    D. A drop in engine RPM
+
+BLIND SPOT AND CROSS TRAFFIC ALERTS
+9. Rear cross traffic alert is most useful when:
+    A. Cruising on a highway
+    B. Reversing out of a parking space with limited side visibility
+    C. Idling at a traffic light
+    D. Driving up a steep hill
+
+BLIND SPOT AND CROSS TRAFFIC ALERTS
+10. Rear cross traffic alert warns about:
+    A. Low engine oil pressure
+    B. Vehicles approaching from the left or right behind the vehicle
+    C. A flat front tire only
+    D. Pedestrians directly in front of the grille
+End of Quiz 1. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 1 — Passive Assist Technology                                                        Page 2 of 2
+Quiz 2 — Advanced Driver Assist System
+  Name: ________________________________ Date: ________________ Score: ___ / 10
+
+
+  Modules Covered
+      Introducing Advanced Driver Assist Systems
+      Understanding the Operation Principles of ADAS
+      Ultrasonic ADAS Sensors Explained
+      Radar Technology in Depth
+      Understanding ADAS Camera Systems
+      Automotive LIDAR Explained
+      Principles of Automated Vehicle Localization
+      Connected Vehicles
+      The Autonomous Vehicle Brain ADAS and Artificial Intelligence
+
+
+INTRODUCING ADVANCED DRIVER ASSIST SYSTEMS
+1. ADAS features are best described as systems that:
+    A. Replace the driver completely on all roads
+    B. Assist the driver with sensing, warnings, and partial control tasks
+    C. Only control the audio system
+    D. Remove the need for driver attention
+
+UNDERSTANDING THE OPERATION PRINCIPLES OF ADAS
+2. The basic ADAS operating cycle is:
+    A. Charge, discharge, repeat
+    B. Sense, process/decide, then warn or act
+    C. Heat, cool, lubricate
+    D. Start, idle, shut off
+
+ULTRASONIC ADAS SENSORS EXPLAINED
+3. Ultrasonic sensors are best suited to:
+    A. Long-range highway target tracking
+    B. Short-range, low-speed detection such as parking
+    C. Reading traffic signs
+    D. Measuring exhaust temperature
+
+RADAR TECHNOLOGY IN DEPTH
+4. Automotive radar determines a target's speed mainly by using:
+    A. The Doppler effect on reflected radio waves
+    B. The colour of the target vehicle
+    C. Tire rotation speed
+    D. Ambient light level
+
+
+
+
+Quiz 2 — Advanced Driver Assist System                                            Page 1 of 2
+Quiz 2 — continued
+UNDERSTANDING ADAS CAMERA SYSTEMS
+5. A key strength of ADAS cameras compared with radar is:
+    A. Seeing through dense fog
+    B. Classifying what an object is, such as a sign, pedestrian, or lane line
+    C. Measuring distance most accurately at long range
+    D. Working with the lens fully blocked
+
+AUTOMOTIVE LIDAR EXPLAINED
+6. LIDAR builds a 3D view of surroundings by:
+    A. Timing reflected laser pulses (time of flight)
+    B. Listening for engine sounds
+    C. Measuring brake pressure
+    D. Reading GPS signals only
+
+PRINCIPLES OF AUTOMATED VEHICLE LOCALIZATION
+7. Vehicle localization means determining:
+    A. The driver's home address
+    B. The vehicle's precise position within its environment/map
+    C. The nearest fuel station price
+    D. Tire manufacturing location
+
+CONNECTED VEHICLES
+8. V2X communication allows a vehicle to exchange information with:
+    A. Only its own radio
+    B. Other vehicles, infrastructure, and networks
+    C. The exhaust system
+    D. Manual paper maps
+
+THE AUTONOMOUS VEHICLE BRAIN ADAS AND ARTIFICIAL INTELLIGENCE
+9. In an autonomous/ADAS control unit, artificial intelligence is mainly used to:
+    A. Inflate the tires
+    B. Interpret sensor data, predict behaviour, and support driving decisions
+    C. Replace all sensors
+    D. Charge the 12V battery
+
+THE AUTONOMOUS VEHICLE BRAIN ADAS AND ARTIFICIAL INTELLIGENCE
+10. Sensor fusion means:
+    A. Melting sensors together during repair
+    B. Combining camera, radar, and other sensor inputs into one reliable picture
+    C. Using only one sensor for every task
+    D. Turning sensors off at highway speed
+
+End of Quiz 2. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 2 — Advanced Driver Assist System                                                    Page 2 of 2
+Quiz 3 — ADAS Calibration Guide
+  Name: ________________________________ Date: ________________ Score: ___ / 10
+
+
+  Modules Covered
+      ADAS Front Camera Calibration
+      ADAS Rear Camera and All Round Vision Calibration
+      ADAS Front Radar Calibration
+
+
+ADAS FRONT CAMERA CALIBRATION
+1. Front camera calibration is typically required after:
+    A. An oil change
+    B. Windshield replacement or camera removal/refit
+    C. A tire rotation only
+    D. Refuelling
+
+ADAS FRONT CAMERA CALIBRATION
+2. Static camera calibration is performed:
+    A. While driving at highway speed
+    B. Stationary, using targets placed at specified positions
+    C. With the camera disconnected
+    D. Only at night
+
+ADAS FRONT CAMERA CALIBRATION
+3. Before static calibration, the workshop area should be:
+    A. Sloped and cluttered
+    B. Level, with correct lighting and space for targets
+    C. Dark with the vehicle on a lift at full height
+    D. Outdoors in heavy rain
+
+ADAS FRONT CAMERA CALIBRATION
+4. Dynamic camera calibration differs because it is completed:
+    A. On a dynamometer only
+    B. During a specified road drive while the system learns lane markings
+    C. With the engine off
+    D. Without a scan tool connected
+
+ADAS REAR CAMERA AND ALL ROUND VISION CALIBRATION
+5. All-round (360-degree) vision systems create a bird's-eye view by:
+    A. Using a single roof antenna
+    B. Stitching together images from multiple cameras
+    C. Using only the rear camera zoomed out
+    D. Projecting a hologram
+
+
+
+
+Quiz 3 — ADAS Calibration Guide                                                   Page 1 of 2
+Quiz 3 — continued
+ADAS REAR CAMERA AND ALL ROUND VISION CALIBRATION
+6. If rear camera calibration is incorrect, the most likely symptom is:
+    A. Distorted image or parking guide lines that do not match vehicle path
+    B. Engine misfire
+    C. Low brake fluid warning
+    D. Horn failure
+
+ADAS FRONT RADAR CALIBRATION
+7. Front radar calibration mainly ensures:
+    A. The radar aims correctly relative to the vehicle's thrust line
+    B. The radio receives FM stations
+    C. The headlights are brighter
+    D. Tire balance is correct
+
+ADAS FRONT RADAR CALIBRATION
+8. Front radar calibration should be checked after:
+    A. Front bumper / radar bracket repair or collision work
+    B. Cabin filter replacement
+    C. Spark plug replacement
+    D. A software-free wash
+
+ADAS FRONT RADAR CALIBRATION
+9. A scan tool is used during radar calibration to:
+    A. Start the calibration routine and read alignment values / fault codes
+    B. Inflate the tires
+    C. Bleed the brakes
+    D. Program keys only
+
+ADAS FRONT CAMERA CALIBRATION
+10. If calibration is skipped after windshield replacement, the lane/forward systems may:
+    A. Work better than new
+    B. Detect objects offset from their true position or set fault codes
+    C. Use less fuel
+    D. Disable the wipers permanently
+End of Quiz 3. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 3 — ADAS Calibration Guide                                                             Page 2 of 2
+Quiz 4 — Understanding Stability Control
+   Name: ________________________________ Date: ________________ Score: ___ / 10
+
+
+   Modules Covered
+      Traction Control
+      Stability Control
+      Launch Control Systems
+      Hill Descent
+
+
+TRACTION CONTROL
+1. Traction control primarily prevents:
+    A. Wheel spin during acceleration
+    B. Brake pad wear
+    C. Steering wheel vibration
+    D. Headlight flicker
+
+TRACTION CONTROL
+2. Traction control can reduce wheel spin by:
+    A. Increasing tire pressure
+    B. Braking the spinning wheel and/or reducing engine torque
+    C. Opening all windows
+    D. Disengaging the clutch permanently
+
+TRACTION CONTROL
+3. Traction control detects wheel spin mainly by comparing:
+    A. Oil temperature readings
+    B. Individual wheel speed sensor signals
+    C. Fuel level readings
+    D. Mirror positions
+
+STABILITY CONTROL
+4. Stability control (ESC) helps the driver by:
+    A. Keeping the vehicle heading where the driver steers during a skid
+    B. Increasing top speed
+    C. Replacing winter tires
+    D. Parking the vehicle
+
+STABILITY CONTROL
+5. Which sensor is essential for ESC to detect a skid / unwanted rotation?
+    A. Rain sensor
+    B. Yaw rate sensor
+    C. Ambient temperature sensor
+    D. Fuel pressure sensor
+
+
+
+
+Quiz 4 — Understanding Stability Control                                           Page 1 of 2
+Quiz 4 — continued
+STABILITY CONTROL
+6. To correct oversteer, ESC will typically:
+    A. Brake an individual wheel (often the outer front) to create a correcting yaw moment
+    B. Accelerate the rear wheels
+    C. Turn the steering for the driver fully
+    D. Shut off all brakes
+
+LAUNCH CONTROL SYSTEMS
+7. Launch control is designed to provide:
+    A. The slowest possible start to save fuel
+    B. Fast, repeatable standing starts with controlled RPM and wheel spin
+    C. Automatic parking
+    D. Hill holding only
+
+LAUNCH CONTROL SYSTEMS
+8. During launch control activation, the system typically holds:
+    A. Engine RPM at a preset launch limit until the clutch/brake is released
+    B. The wipers on high speed
+    C. Cabin temperature constant
+    D. The fuel cap open
+
+HILL DESCENT
+9. Hill descent control helps on steep downhill grades by:
+    A. Automatically braking individual wheels to hold a low set speed
+    B. Increasing downhill speed
+    C. Disengaging all brakes
+    D. Raising engine RPM to redline
+
+HILL DESCENT
+10. While hill descent is active, the driver can usually adjust target speed with:
+    A. The mirror switch
+    B. Cruise control speed switches, and override with brake/accelerator
+    C. The horn
+    D. The headlight switch
+End of Quiz 4. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 4 — Understanding Stability Control                                                     Page 2 of 2
+Quiz 5 — Safety and Comfort Systems
+  Name: ________________________________ Date: ________________ Score: ___ / 10
+
+
+  Modules Covered
+      Windshield Wiper Systems
+      Rain Sensor Technology
+      Heads Up Display Systems
+      Tire Pressure Monitoring
+      Wireless Phone Charging
+      Mobilizer Systems
+      Keyless Entry
+      Keyless Entry System Diagnosis
+      Cruise Control
+      Radar Cruise Control
+      Autonomous Parking Systems
+
+
+WINDSHIELD WIPER SYSTEMS
+1. The wiper park position is controlled so that blades:
+    A. Stop in the middle of the windshield
+    B. Return to and stop at the base of the windshield when switched off
+    C. Keep moving slowly forever
+    D. Lift off the glass at speed
+
+RAIN SENSOR TECHNOLOGY
+2. A rain sensor detects rain on the windshield mainly by:
+    A. Measuring tire grip
+    B. Changes in infrared light reflected within the glass
+    C. Listening for thunder
+    D. Weighing the wiper motor
+
+HEADS UP DISPLAY SYSTEMS
+3. A head-up display (HUD) helps the driver by:
+    A. Projecting key information in the driver's forward line of sight
+    B. Replacing the instrument cluster fuse
+    C. Heating the windshield
+    D. Dimming all road signs
+
+TIRE PRESSURE MONITORING
+4. A direct TPMS system measures tire pressure using:
+    A. Wheel speed differences only
+    B. A pressure sensor in each wheel/valve
+    C. The driver's visual check
+    D. Brake temperature
+
+
+
+
+Quiz 5 — Safety and Comfort Systems                                               Page 1 of 2
+Quiz 5 — continued
+WIRELESS PHONE CHARGING
+5. Wireless phone charging in a vehicle works by:
+    A. A hidden USB cable
+    B. Inductive power transfer from a charging pad to the phone
+    C. Solar panels in the seat
+    D. The alternator touching the phone
+
+MOBILIZER SYSTEMS
+6. An immobilizer (mobilizer) system prevents starting unless:
+    A. The headlights are on
+    B. A correctly coded key/transponder is recognised
+    C. The radio code is entered daily
+    D. All doors are open
+
+KEYLESS ENTRY
+7. Keyless entry / passive entry allows locking and unlocking when:
+    A. The fob is nearby and a door handle sensor/switch is touched or pulled
+    B. The key is inserted in the ignition only
+    C. The battery is disconnected
+    D. The vehicle is moving
+
+KEYLESS ENTRY SYSTEM DIAGNOSIS
+8. A keyless entry system fails on one door only. The best first check is:
+    A. Replace the engine ECU
+    B. That door's handle sensor, wiring, and connector, plus fault codes
+    C. Replace all tires
+    D. Drain the fuel tank
+
+RADAR CRUISE CONTROL
+9. Radar (adaptive) cruise control differs from conventional cruise control because it:
+    A. Only works when parked
+    B. Automatically adjusts speed to keep a set distance from the vehicle ahead
+    C. Removes the brake pedal
+    D. Cannot be cancelled by braking
+
+AUTONOMOUS PARKING SYSTEMS
+10. An autonomous / self-parking system typically uses ultrasonic sensors to:
+    A. Find and measure a suitable parking space, then assist steering into it
+    B. Measure engine oil level
+    C. Tune the radio
+    D. Test the battery
+
+Note: Cruise Control principles are covered within Q9 — conventional cruise holds a set speed only, without distance control. End
+of Quiz 5. Target: 9 / 10.
+
+
+
+
+Quiz 5 — Safety and Comfort Systems                                                                                   Page 2 of 2
+Quiz 6 — SRS Airbag Essentials
+  Name: ________________________________ Date: ________________ Score: ___ / 10
+
+
+  Modules Covered
+      SRS Airbag Safety
+      SRS Airbag Operation
+      SRS Pre-Tensioners
+
+
+SRS AIRBAG SAFETY
+1. Before working on or near SRS components, you should:
+    A. Disconnect the battery and wait the manufacturer-specified time
+    B. Probe airbag circuits with a test lamp
+    C. Keep the ignition on
+    D. Short the airbag connector to ground
+
+SRS AIRBAG SAFETY
+2. Why must you never use an ohmmeter on a live airbag inflator circuit?
+    A. It will flat the vehicle battery
+    B. Meter current could deploy the airbag
+    C. It will erase fault codes
+    D. It will damage the tires
+
+SRS AIRBAG SAFETY
+3. An undeployed airbag module should be carried and stored:
+    A. With the trim cover facing toward your body
+    B. With the trim cover facing away/up, on a clear bench, never stacked
+    C. In a hot oven to dry it
+    D. Loose in a toolbox with tools
+
+SRS AIRBAG OPERATION
+4. The SRS control unit decides to deploy by evaluating signals from:
+    A. Crash / acceleration and safing sensors
+    B. The radio volume control
+    C. The fuel gauge only
+    D. The wiper switch
+
+SRS AIRBAG OPERATION
+5. The airbag inflates because the inflator:
+    A. Uses compressed air from the tires
+    B. Rapidly generates gas when ignited by the deployment signal
+    C. Is pumped up by the driver
+    D. Fills slowly over several minutes
+
+
+
+
+Quiz 6 — SRS Airbag Essentials                                                    Page 1 of 2
+Quiz 6 — continued
+SRS AIRBAG OPERATION
+6. After deployment begins, a frontal airbag inflates fully in approximately:
+    A. 5 seconds
+    B. Tens of milliseconds
+    C. 2 minutes
+    D. 1 hour
+
+SRS AIRBAG OPERATION
+7. The SRS warning lamp staying on after the bulb check indicates:
+    A. Normal operation with no faults
+    B. A fault in the SRS system that needs diagnosis
+    C. Low fuel
+    D. High beam is on
+
+SRS PRE-TENSIONERS
+8. A seatbelt pre-tensioner works in a crash to:
+    A. Loosen the belt for comfort
+    B. Rapidly remove belt slack so the occupant is held firmly
+    C. Release the buckle automatically
+    D. Adjust belt height
+
+SRS PRE-TENSIONERS
+9. Most pre-tensioners are activated by:
+    A. The driver pulling a lever
+    B. A pyrotechnic charge (or motor) triggered by the SRS control unit
+    C. Wind pressure at speed
+    D. The seat heater
+
+SRS PRE-TENSIONERS
+10. After a crash in which a pre-tensioner fired, the correct action is to:
+    A. Reuse it if the belt still clicks
+    B. Replace it as a single-use deployed component, following manufacturer procedure
+    C. Reset it with a hammer tap
+    D. Ignore it and clear codes only
+
+End of Quiz 6. Check your score in the separate Answer Key at the back. Target: 9 / 10.
+
+
+
+
+Quiz 6 — SRS Airbag Essentials                                                            Page 2 of 2
+  STOP — PRINTING BREAK
+
+
+
+
+Answer Key
+Separate section — Quiz 1 through Quiz 6.
+Print the quizzes without this section if you want a clean test copy. Each quiz key gives the correct letter, a brief
+explanation, and a retake date / second-score line.
+
+Target: 9 / 10 before moving on.
+
+
+
+
+Driver Assist Pop Quizzes — Practice Material                                                       Answer Key Divider
+Answer Key — Quiz 1: Passive Assist Technology
+Retake date: ________________ Second score: ___ / 10
+
+1. B — The forward camera detects vehicles, pedestrians, and lane markings ahead.
+
+2. C — Warning comes first; braking support follows if the driver does not respond.
+
+3. B — Dirt, fog, and heavy rain obscure the camera and reduce detection.
+
+4. B — Passive means warn only; active systems add steering correction.
+
+5. B — Lamp/chime plus wheel or seat vibration is the typical passive alert.
+6. A — Signalling suppresses the warning for an intended lane change.
+
+7. C — Blind spot radar sensors sit at the rear bumper corners.
+
+8. A — A mirror indicator warns, often with a chime if you signal toward the vehicle.
+9. B — Cross traffic alert is designed for reversing out with limited side visibility.
+
+10. B — It warns of vehicles approaching from either side behind you.
+
+
+
+
+Answer Key — Quiz 1                                                                      Separate Key Section
+Answer Key — Quiz 2: Advanced Driver Assist System
+Retake date: ________________ Second score: ___ / 10
+
+1. B — ADAS assists the driver; it does not remove the need for attention.
+
+2. B — Sense, process/decide, then warn or act is the core ADAS cycle.
+
+3. B — Ultrasonic range is short, ideal for parking and low speeds.
+4. A — Radar uses the Doppler shift of reflected radio waves for target speed.
+
+5. B — Cameras classify objects — signs, pedestrians, lane lines — radar cannot.
+
+6. A — LIDAR times laser pulse reflections (time of flight) to build a 3D map.
+
+7. B — Localization is the vehicle's precise position in its environment/map.
+
+8. B — V2X means vehicle-to-everything: vehicles, infrastructure, and networks.
+
+9. B — AI interprets sensor data, predicts behaviour, and supports decisions.
+
+10. B — Sensor fusion combines multiple sensors into one reliable picture.
+
+
+
+
+Answer Key — Quiz 2                                                                Separate Key Section
+Answer Key — Quiz 3: ADAS Calibration Guide
+Retake date: ________________ Second score: ___ / 10
+
+1. B — Windshield replacement or camera refit changes aim, so calibrate.
+
+2. B — Static calibration is stationary with targets at specified positions.
+
+3. B — A level floor, correct lighting, and target space are required.
+
+4. B — Dynamic calibration completes during a specified road drive.
+5. B — All-round vision stitches multiple camera images into a bird's-eye view.
+
+6. A — Wrong rear calibration distorts the image and misplaces guide lines.
+
+7. A — Radar calibration aligns aim to the vehicle's thrust line.
+8. A — Bumper, bracket, or collision work can move the radar — check calibration.
+
+9. A — The scan tool starts the routine and reads values and fault codes.
+
+10. B — Skipped calibration can offset detection or set fault codes.
+
+
+
+
+Answer Key — Quiz 3                                                                 Separate Key Section
+Answer Key — Quiz 4: Understanding Stability Control
+Retake date: ________________ Second score: ___ / 10
+
+1. A — Traction control limits driven wheel spin during acceleration.
+2. B — It brakes the spinning wheel and/or reduces engine torque.
+
+3. B — Differing wheel speeds reveal a spinning wheel.
+
+4. A — ESC keeps the vehicle heading where the driver steers in a skid.
+5. B — The yaw rate sensor detects unwanted rotation about the vertical axis.
+
+6. A — Braking an individual wheel creates a correcting yaw moment.
+
+7. B — Launch control gives fast, repeatable starts with controlled RPM/spin.
+
+8. A — It holds a preset launch RPM until release.
+9. A — Hill descent brakes individual wheels to hold a low set speed downhill.
+
+10. B — Cruise switches adjust target speed; pedals override the system.
+
+
+
+
+Answer Key — Quiz 4                                                              Separate Key Section
+Answer Key — Quiz 5: Safety and Comfort Systems
+Retake date: ________________ Second score: ___ / 10
+
+1. B — Park control returns blades to the base of the windshield at switch-off.
+
+2. B — Rain sensors use changes in infrared reflection inside the glass.
+
+3. A — HUD projects key information in the forward line of sight.
+
+4. B — Direct TPMS uses a pressure sensor in each wheel.
+
+5. B — Wireless charging transfers power inductively from pad to phone.
+6. B — The immobilizer allows starting only with a recognised coded key.
+
+7. A — Passive entry works when the fob is near and the handle is touched/pulled.
+
+8. B — One-door failure points to that handle, wiring, connector, and fault codes.
+9. B — Radar cruise keeps a set distance; conventional cruise holds speed only.
+
+10. A — Ultrasonic sensors find/measure the space for assisted parking.
+
+
+
+
+Answer Key — Quiz 5                                                                  Separate Key Section
+Answer Key — Quiz 6: SRS Airbag Essentials
+Retake date: ________________ Second score: ___ / 10
+
+1. A — Disconnect the battery and wait the specified time before SRS work.
+
+2. B — Ohmmeter current can fire the inflator — never probe it that way.
+
+3. B — Carry/store undeployed modules cover facing away/up, clear and unstacked.
+4. A — Crash/acceleration and safing sensor signals drive the deployment decision.
+
+5. B — The inflator rapidly generates gas when ignited.
+
+6. B — Full inflation takes tens of milliseconds.
+
+7. B — A lamp staying on after bulb check means an SRS fault is stored.
+
+8. B — Pre-tensioners remove belt slack instantly in a crash.
+
+9. B — Most are pyrotechnic (some motor-driven), fired by the SRS unit.
+
+10. B — A fired pre-tensioner is single-use — replace per manufacturer procedure.
+
+End of Answer Key. Practice Material — Driver Assist Pop Quizzes, 6 quizzes, 60 questions.
+
+
+
+
+Answer Key — Quiz 6                                                                          Separate Key Section
+

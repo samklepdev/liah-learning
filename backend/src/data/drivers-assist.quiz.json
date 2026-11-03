@@ -1,0 +1,1779 @@
+{
+  "slug": "drivers-assist",
+  "title": "Drivers Assist",
+  "courses": [
+    {
+      "position": 1,
+      "slug": "drivers-assist-passive-assist-technology",
+      "title": "Passive Assist Technology",
+      "moduleTitles": [
+        "Collision Avoidance Camera Type",
+        "Lane Departure Passive Type",
+        "Blind Spot and Cross Traffic Alerts"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "What does a forward-facing collision avoidance camera primarily detect ahead of the vehicle?",
+          "moduleTitle": "Collision Avoidance Camera Type",
+          "explanation": "The forward camera detects vehicles, pedestrians, and lane markings ahead.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Tire pressure and tread depth",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Vehicles, pedestrians, and lane markings",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Exhaust gas composition",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Brake fluid level",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "In a camera-type collision avoidance system, what usually happens first as a collision risk rises?",
+          "moduleTitle": "Collision Avoidance Camera Type",
+          "explanation": "Warning comes first; braking support follows if the driver does not respond.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The airbags deploy",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The engine stalls",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A visual/audible warning is given, then braking support if needed",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "The headlights turn off",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Which condition most reduces forward camera collision detection accuracy?",
+          "moduleTitle": "Collision Avoidance Camera Type",
+          "explanation": "Dirt, fog, and heavy rain obscure the camera and reduce detection.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A clean, dry windshield",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Dirt, fog, or heavy rain obscuring the camera view",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Driving in daylight",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Correct tire pressures",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A passive lane departure system differs from an active system because it:",
+          "moduleTitle": "Lane Departure Passive Type",
+          "explanation": "Passive means warn only; active systems add steering correction.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Steers the vehicle back into the lane automatically",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Only warns the driver and does not apply steering correction",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Brakes the vehicle to a stop",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Changes lanes for the driver",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "How does a passive lane departure system typically alert the driver?",
+          "moduleTitle": "Lane Departure Passive Type",
+          "explanation": "Lamp/chime plus wheel or seat vibration is the typical passive alert.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Horn, high beams, and hazard lights",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Warning lamp/chime and often steering wheel or seat vibration",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Cutting fuel to the engine",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Locking the steering wheel",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A passive lane departure system will normally NOT warn when:",
+          "moduleTitle": "Lane Departure Passive Type",
+          "explanation": "Signalling suppresses the warning for an intended lane change.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The turn signal is on for an intended lane change",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The vehicle is travelling in a straight line",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Lane markings are clearly visible",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The driver is awake",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Blind spot monitoring sensors are most commonly located:",
+          "moduleTitle": "Blind Spot and Cross Traffic Alerts",
+          "explanation": "Blind spot radar sensors sit at the rear bumper corners.",
+          "options": [
+            {
+              "label": "A",
+              "body": "In the front grille",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "On the roof",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "At the rear bumper corners",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Inside the exhaust pipe",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "When a vehicle is detected in the blind spot, the driver is usually warned by:",
+          "moduleTitle": "Blind Spot and Cross Traffic Alerts",
+          "explanation": "A mirror indicator warns, often with a chime if you signal toward the vehicle.",
+          "options": [
+            {
+              "label": "A",
+              "body": "An indicator in or near the side mirror, often with a chime if signalling",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The brake pedal pulsing",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The wipers activating",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A drop in engine RPM",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Rear cross traffic alert is most useful when:",
+          "moduleTitle": "Blind Spot and Cross Traffic Alerts",
+          "explanation": "Cross traffic alert is designed for reversing out with limited side visibility.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cruising on a highway",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Reversing out of a parking space with limited side visibility",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Idling at a traffic light",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Driving up a steep hill",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Rear cross traffic alert warns about:",
+          "moduleTitle": "Blind Spot and Cross Traffic Alerts",
+          "explanation": "It warns of vehicles approaching from either side behind you.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Low engine oil pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Vehicles approaching from the left or right behind the vehicle",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A flat front tire only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Pedestrians directly in front of the grille",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "slug": "drivers-assist-advanced-driver-assist-system",
+      "title": "Advanced Driver Assist System",
+      "moduleTitles": [
+        "Introducing Advanced Driver Assist Systems",
+        "Understanding the Operation Principles of ADAS",
+        "Ultrasonic ADAS Sensors Explained",
+        "Radar Technology in Depth",
+        "Understanding ADAS Camera Systems",
+        "Automotive LIDAR Explained",
+        "Principles of Automated Vehicle Localization",
+        "Connected Vehicles",
+        "The Autonomous Vehicle Brain ADAS and Artificial Intelligence"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "ADAS features are best described as systems that:",
+          "moduleTitle": "Introducing Advanced Driver Assist Systems",
+          "explanation": "ADAS assists the driver; it does not remove the need for attention.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Replace the driver completely on all roads",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Assist the driver with sensing, warnings, and partial control tasks",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only control the audio system",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Remove the need for driver attention",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "The basic ADAS operating cycle is:",
+          "moduleTitle": "Understanding the Operation Principles of ADAS",
+          "explanation": "Sense, process/decide, then warn or act is the core ADAS cycle.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Charge, discharge, repeat",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Sense, process/decide, then warn or act",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Heat, cool, lubricate",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Start, idle, shut off",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Ultrasonic sensors are best suited to:",
+          "moduleTitle": "Ultrasonic ADAS Sensors Explained",
+          "explanation": "Ultrasonic range is short, ideal for parking and low speeds.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Long-range highway target tracking",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Short-range, low-speed detection such as parking",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Reading traffic signs",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Measuring exhaust temperature",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Automotive radar determines a target's speed mainly by using:",
+          "moduleTitle": "Radar Technology in Depth",
+          "explanation": "Radar uses the Doppler shift of reflected radio waves for target speed.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The Doppler effect on reflected radio waves",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The colour of the target vehicle",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Tire rotation speed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Ambient light level",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A key strength of ADAS cameras compared with radar is:",
+          "moduleTitle": "Understanding ADAS Camera Systems",
+          "explanation": "Cameras classify objects — signs, pedestrians, lane lines — radar cannot.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Seeing through dense fog",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Classifying what an object is, such as a sign, pedestrian, or lane line",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Measuring distance most accurately at long range",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Working with the lens fully blocked",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "LIDAR builds a 3D view of surroundings by:",
+          "moduleTitle": "Automotive LIDAR Explained",
+          "explanation": "LIDAR times laser pulse reflections (time of flight) to build a 3D map.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Timing reflected laser pulses (time of flight)",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Listening for engine sounds",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Measuring brake pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Reading GPS signals only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Vehicle localization means determining:",
+          "moduleTitle": "Principles of Automated Vehicle Localization",
+          "explanation": "Localization is the vehicle's precise position in its environment/map.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The driver's home address",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The vehicle's precise position within its environment/map",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The nearest fuel station price",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Tire manufacturing location",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "V2X communication allows a vehicle to exchange information with:",
+          "moduleTitle": "Connected Vehicles",
+          "explanation": "V2X means vehicle-to-everything: vehicles, infrastructure, and networks.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only its own radio",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Other vehicles, infrastructure, and networks",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The exhaust system",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Manual paper maps",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "In an autonomous/ADAS control unit, artificial intelligence is mainly used to:",
+          "moduleTitle": "The Autonomous Vehicle Brain ADAS and Artificial Intelligence",
+          "explanation": "AI interprets sensor data, predicts behaviour, and supports decisions.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Inflate the tires",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Interpret sensor data, predict behaviour, and support driving decisions",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Replace all sensors",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Charge the 12V battery",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Sensor fusion means:",
+          "moduleTitle": "The Autonomous Vehicle Brain ADAS and Artificial Intelligence",
+          "explanation": "Sensor fusion combines multiple sensors into one reliable picture.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Melting sensors together during repair",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Combining camera, radar, and other sensor inputs into one reliable picture",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Using only one sensor for every task",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Turning sensors off at highway speed",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "slug": "drivers-assist-adas-calibration-guide",
+      "title": "ADAS Calibration Guide",
+      "moduleTitles": [
+        "ADAS Front Camera Calibration",
+        "ADAS Rear Camera and All Round Vision Calibration",
+        "ADAS Front Radar Calibration"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Front camera calibration is typically required after:",
+          "moduleTitle": "ADAS Front Camera Calibration",
+          "explanation": "Windshield replacement or camera refit changes aim, so calibrate.",
+          "options": [
+            {
+              "label": "A",
+              "body": "An oil change",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Windshield replacement or camera removal/refit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A tire rotation only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Refuelling",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Static camera calibration is performed:",
+          "moduleTitle": "ADAS Front Camera Calibration",
+          "explanation": "Static calibration is stationary with targets at specified positions.",
+          "options": [
+            {
+              "label": "A",
+              "body": "While driving at highway speed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Stationary, using targets placed at specified positions",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "With the camera disconnected",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only at night",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Before static calibration, the workshop area should be:",
+          "moduleTitle": "ADAS Front Camera Calibration",
+          "explanation": "A level floor, correct lighting, and target space are required.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Sloped and cluttered",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Level, with correct lighting and space for targets",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Dark with the vehicle on a lift at full height",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Outdoors in heavy rain",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Dynamic camera calibration differs because it is completed:",
+          "moduleTitle": "ADAS Front Camera Calibration",
+          "explanation": "Dynamic calibration completes during a specified road drive.",
+          "options": [
+            {
+              "label": "A",
+              "body": "On a dynamometer only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "During a specified road drive while the system learns lane markings",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "With the engine off",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Without a scan tool connected",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "All-round (360-degree) vision systems create a bird's-eye view by:",
+          "moduleTitle": "ADAS Rear Camera and All Round Vision Calibration",
+          "explanation": "All-round vision stitches multiple camera images into a bird's-eye view.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Using a single roof antenna",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Stitching together images from multiple cameras",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Using only the rear camera zoomed out",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Projecting a hologram",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "If rear camera calibration is incorrect, the most likely symptom is:",
+          "moduleTitle": "ADAS Rear Camera and All Round Vision Calibration",
+          "explanation": "Wrong rear calibration distorts the image and misplaces guide lines.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Distorted image or parking guide lines that do not match vehicle path",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Engine misfire",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Low brake fluid warning",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Horn failure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Front radar calibration mainly ensures:",
+          "moduleTitle": "ADAS Front Radar Calibration",
+          "explanation": "Radar calibration aligns aim to the vehicle's thrust line.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The radar aims correctly relative to the vehicle's thrust line",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The radio receives FM stations",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The headlights are brighter",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Tire balance is correct",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Front radar calibration should be checked after:",
+          "moduleTitle": "ADAS Front Radar Calibration",
+          "explanation": "Bumper, bracket, or collision work can move the radar — check calibration.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Front bumper / radar bracket repair or collision work",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Cabin filter replacement",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Spark plug replacement",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A software-free wash",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A scan tool is used during radar calibration to:",
+          "moduleTitle": "ADAS Front Radar Calibration",
+          "explanation": "The scan tool starts the routine and reads values and fault codes.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Start the calibration routine and read alignment values / fault codes",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Inflate the tires",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Bleed the brakes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Program keys only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "If calibration is skipped after windshield replacement, the lane/forward systems may:",
+          "moduleTitle": "ADAS Front Camera Calibration",
+          "explanation": "Skipped calibration can offset detection or set fault codes.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Work better than new",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Detect objects offset from their true position or set fault codes",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Use less fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disable the wipers permanently",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "slug": "drivers-assist-understanding-stability-control",
+      "title": "Understanding Stability Control",
+      "moduleTitles": [
+        "Traction Control",
+        "Stability Control",
+        "Launch Control Systems",
+        "Hill Descent"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Traction control primarily prevents:",
+          "moduleTitle": "Traction Control",
+          "explanation": "Traction control limits driven wheel spin during acceleration.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Wheel spin during acceleration",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Brake pad wear",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Steering wheel vibration",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Headlight flicker",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Traction control can reduce wheel spin by:",
+          "moduleTitle": "Traction Control",
+          "explanation": "It brakes the spinning wheel and/or reduces engine torque.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Increasing tire pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Braking the spinning wheel and/or reducing engine torque",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Opening all windows",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disengaging the clutch permanently",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Traction control detects wheel spin mainly by comparing:",
+          "moduleTitle": "Traction Control",
+          "explanation": "Differing wheel speeds reveal a spinning wheel.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Oil temperature readings",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Individual wheel speed sensor signals",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fuel level readings",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Mirror positions",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Stability control (ESC) helps the driver by:",
+          "moduleTitle": "Stability Control",
+          "explanation": "ESC keeps the vehicle heading where the driver steers in a skid.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Keeping the vehicle heading where the driver steers during a skid",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Increasing top speed",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Replacing winter tires",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Parking the vehicle",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Which sensor is essential for ESC to detect a skid / unwanted rotation?",
+          "moduleTitle": "Stability Control",
+          "explanation": "The yaw rate sensor detects unwanted rotation about the vertical axis.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Rain sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Yaw rate sensor",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Ambient temperature sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel pressure sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "To correct oversteer, ESC will typically:",
+          "moduleTitle": "Stability Control",
+          "explanation": "Braking an individual wheel creates a correcting yaw moment.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Brake an individual wheel (often the outer front) to create a correcting yaw moment",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Accelerate the rear wheels",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Turn the steering for the driver fully",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Shut off all brakes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Launch control is designed to provide:",
+          "moduleTitle": "Launch Control Systems",
+          "explanation": "Launch control gives fast, repeatable starts with controlled RPM/spin.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The slowest possible start to save fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Fast, repeatable standing starts with controlled RPM and wheel spin",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Automatic parking",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Hill holding only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "During launch control activation, the system typically holds:",
+          "moduleTitle": "Launch Control Systems",
+          "explanation": "It holds a preset launch RPM until release.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Engine RPM at a preset launch limit until the clutch/brake is released",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The wipers on high speed",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Cabin temperature constant",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The fuel cap open",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Hill descent control helps on steep downhill grades by:",
+          "moduleTitle": "Hill Descent",
+          "explanation": "Hill descent brakes individual wheels to hold a low set speed downhill.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Automatically braking individual wheels to hold a low set speed",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Increasing downhill speed",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Disengaging all brakes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Raising engine RPM to redline",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "While hill descent is active, the driver can usually adjust target speed with:",
+          "moduleTitle": "Hill Descent",
+          "explanation": "Cruise switches adjust target speed; pedals override the system.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The mirror switch",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Cruise control speed switches, and override with brake/accelerator",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The horn",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The headlight switch",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "slug": "drivers-assist-safety-and-comfort-systems",
+      "title": "Safety and Comfort Systems",
+      "moduleTitles": [
+        "Windshield Wiper Systems",
+        "Rain Sensor Technology",
+        "Heads Up Display Systems",
+        "Tire Pressure Monitoring",
+        "Wireless Phone Charging",
+        "Mobilizer Systems",
+        "Keyless Entry",
+        "Keyless Entry System Diagnosis",
+        "Cruise Control",
+        "Radar Cruise Control",
+        "Autonomous Parking Systems"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "The wiper park position is controlled so that blades:",
+          "moduleTitle": "Windshield Wiper Systems",
+          "explanation": "Park control returns blades to the base of the windshield at switch-off.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Stop in the middle of the windshield",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Return to and stop at the base of the windshield when switched off",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Keep moving slowly forever",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Lift off the glass at speed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A rain sensor detects rain on the windshield mainly by:",
+          "moduleTitle": "Rain Sensor Technology",
+          "explanation": "Rain sensors use changes in infrared reflection inside the glass.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Measuring tire grip",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Changes in infrared light reflected within the glass",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Listening for thunder",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Weighing the wiper motor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A head-up display (HUD) helps the driver by:",
+          "moduleTitle": "Heads Up Display Systems",
+          "explanation": "HUD projects key information in the forward line of sight.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Projecting key information in the driver's forward line of sight",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Replacing the instrument cluster fuse",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Heating the windshield",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Dimming all road signs",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A direct TPMS system measures tire pressure using:",
+          "moduleTitle": "Tire Pressure Monitoring",
+          "explanation": "Direct TPMS uses a pressure sensor in each wheel.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Wheel speed differences only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A pressure sensor in each wheel/valve",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The driver's visual check",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Brake temperature",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Wireless phone charging in a vehicle works by:",
+          "moduleTitle": "Wireless Phone Charging",
+          "explanation": "Wireless charging transfers power inductively from pad to phone.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A hidden USB cable",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Inductive power transfer from a charging pad to the phone",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Solar panels in the seat",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The alternator touching the phone",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "An immobilizer (mobilizer) system prevents starting unless:",
+          "moduleTitle": "Mobilizer Systems",
+          "explanation": "The immobilizer allows starting only with a recognised coded key.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The headlights are on",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A correctly coded key/transponder is recognised",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The radio code is entered daily",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "All doors are open",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Keyless entry / passive entry allows locking and unlocking when:",
+          "moduleTitle": "Keyless Entry",
+          "explanation": "Passive entry works when the fob is near and the handle is touched/pulled.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The fob is nearby and a door handle sensor/switch is touched or pulled",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The key is inserted in the ignition only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The battery is disconnected",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The vehicle is moving",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A keyless entry system fails on one door only. The best first check is:",
+          "moduleTitle": "Keyless Entry System Diagnosis",
+          "explanation": "One-door failure points to that handle, wiring, connector, and fault codes.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Replace the engine ECU",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "That door's handle sensor, wiring, and connector, plus fault codes",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Replace all tires",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Drain the fuel tank",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Radar (adaptive) cruise control differs from conventional cruise control because it:",
+          "moduleTitle": "Radar Cruise Control",
+          "explanation": "Radar cruise keeps a set distance; conventional cruise holds speed only.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only works when parked",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Automatically adjusts speed to keep a set distance from the vehicle ahead",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removes the brake pedal",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cannot be cancelled by braking",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "An autonomous / self-parking system typically uses ultrasonic sensors to:",
+          "moduleTitle": "Autonomous Parking Systems",
+          "explanation": "Ultrasonic sensors find/measure the space for assisted parking.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Find and measure a suitable parking space, then assist steering into it",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Measure engine oil level",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Tune the radio",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Test the battery",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "slug": "drivers-assist-srs-airbag-essentials",
+      "title": "SRS Airbag Essentials",
+      "moduleTitles": [
+        "SRS Airbag Safety",
+        "SRS Airbag Operation",
+        "SRS Pre-Tensioners"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Before working on or near SRS components, you should:",
+          "moduleTitle": "SRS Airbag Safety",
+          "explanation": "Disconnect the battery and wait the specified time before SRS work.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Disconnect the battery and wait the manufacturer-specified time",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Probe airbag circuits with a test lamp",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Keep the ignition on",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Short the airbag connector to ground",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Why must you never use an ohmmeter on a live airbag inflator circuit?",
+          "moduleTitle": "SRS Airbag Safety",
+          "explanation": "Ohmmeter current can fire the inflator — never probe it that way.",
+          "options": [
+            {
+              "label": "A",
+              "body": "It will flat the vehicle battery",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Meter current could deploy the airbag",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It will erase fault codes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It will damage the tires",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "An undeployed airbag module should be carried and stored:",
+          "moduleTitle": "SRS Airbag Safety",
+          "explanation": "Carry/store undeployed modules cover facing away/up, clear and unstacked.",
+          "options": [
+            {
+              "label": "A",
+              "body": "With the trim cover facing toward your body",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "With the trim cover facing away/up, on a clear bench, never stacked",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "In a hot oven to dry it",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Loose in a toolbox with tools",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "The SRS control unit decides to deploy by evaluating signals from:",
+          "moduleTitle": "SRS Airbag Operation",
+          "explanation": "Crash/acceleration and safing sensor signals drive the deployment decision.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Crash / acceleration and safing sensors",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "The radio volume control",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "The fuel gauge only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The wiper switch",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "The airbag inflates because the inflator:",
+          "moduleTitle": "SRS Airbag Operation",
+          "explanation": "The inflator rapidly generates gas when ignited.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Uses compressed air from the tires",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rapidly generates gas when ignited by the deployment signal",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Is pumped up by the driver",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fills slowly over several minutes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "After deployment begins, a frontal airbag inflates fully in approximately:",
+          "moduleTitle": "SRS Airbag Operation",
+          "explanation": "Full inflation takes tens of milliseconds.",
+          "options": [
+            {
+              "label": "A",
+              "body": "5 seconds",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Tens of milliseconds",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "2 minutes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "1 hour",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "The SRS warning lamp staying on after the bulb check indicates:",
+          "moduleTitle": "SRS Airbag Operation",
+          "explanation": "A lamp staying on after bulb check means an SRS fault is stored.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal operation with no faults",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A fault in the SRS system that needs diagnosis",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "High beam is on",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A seatbelt pre-tensioner works in a crash to:",
+          "moduleTitle": "SRS Pre-Tensioners",
+          "explanation": "Pre-tensioners remove belt slack instantly in a crash.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Loosen the belt for comfort",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Rapidly remove belt slack so the occupant is held firmly",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Release the buckle automatically",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Adjust belt height",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Most pre-tensioners are activated by:",
+          "moduleTitle": "SRS Pre-Tensioners",
+          "explanation": "Most are pyrotechnic (some motor-driven), fired by the SRS unit.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The driver pulling a lever",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A pyrotechnic charge (or motor) triggered by the SRS control unit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Wind pressure at speed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The seat heater",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "After a crash in which a pre-tensioner fired, the correct action is to:",
+          "moduleTitle": "SRS Pre-Tensioners",
+          "explanation": "A fired pre-tensioner is single-use — replace per manufacturer procedure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Reuse it if the belt still clicks",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Replace it as a single-use deployed component, following manufacturer procedure",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Reset it with a hammer tap",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Ignore it and clear codes only",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

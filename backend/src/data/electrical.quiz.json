@@ -1,0 +1,4717 @@
+{
+  "slug": "electrical",
+  "title": "Electrical",
+  "courses": [
+    {
+      "position": 1,
+      "slug": "electrical-mastering-electric-principles",
+      "title": "Mastering Electric Principles",
+      "moduleTitles": [
+        "Electronic Theory",
+        "Conductivity and Ohm's Laws",
+        "Understanding Electrical Principles Water Analogy",
+        "Practical Use of Ohm's Laws",
+        "Elements That Every Circuit Must Have",
+        "Understanding Circuit Protection Series and Partial Circuits"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In conventional current flow theory, current is said to flow:",
+          "moduleTitle": "Electronic Theory",
+          "explanation": "Conventional flow is described as positive to negative through the external circuit; electron flow is the opposite direction.",
+          "options": [
+            {
+              "label": "A",
+              "body": "From negative to positive through the load",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "From positive to negative through the external circuit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only inside the battery",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "From ground directly to the load",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "An atom with electrons that move easily between atoms is best described as:",
+          "moduleTitle": "Electronic Theory",
+          "explanation": "Conductors have free electrons that move easily, allowing current flow.",
+          "options": [
+            {
+              "label": "A",
+              "body": "An insulator",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A semiconductor only when cold",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A conductor",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "A capacitor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "According to Ohm's Law, if voltage stays the same and resistance doubles, current will:",
+          "moduleTitle": "Conductivity and Ohm's Laws",
+          "explanation": "I = V / R, so doubling R at fixed V halves current.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Double",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Stay the same",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Fall to half",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Increase four times",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A 12 V circuit has 4 ohms of resistance. How much current flows?",
+          "moduleTitle": "Conductivity and Ohm's Laws",
+          "explanation": "I = 12 / 4 = 3 A.",
+          "options": [
+            {
+              "label": "A",
+              "body": "0.33 A",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "3 A",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "16 A",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "48 A",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "In the water analogy for electricity, water pressure is most like:",
+          "moduleTitle": "Understanding Electrical Principles Water Analogy",
+          "explanation": "Pressure pushes water as voltage pushes charge through a circuit.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Resistance",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Current flow",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Voltage",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Capacitance",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "In the water analogy, a partly closed valve that restricts flow is most like:",
+          "moduleTitle": "Understanding Electrical Principles Water Analogy",
+          "explanation": "Restriction to flow models resistance restricting current.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A battery",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Resistance in the circuit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A fuse",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Voltage drop only at the source",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A bulb draws 2 A from a 12 V supply. Its resistance is:",
+          "moduleTitle": "Practical Use of Ohm's Laws",
+          "explanation": "R = V / I = 12 / 2 = 6 ohms.",
+          "options": [
+            {
+              "label": "A",
+              "body": "24 ohms",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "10 ohms",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "6 ohms",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "0.17 ohms",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A motor uses 120 W on a 12 V system. Approximately how much current does it draw?",
+          "moduleTitle": "Practical Use of Ohm's Laws",
+          "explanation": "I = P / V = 120 / 12 = 10 A.",
+          "options": [
+            {
+              "label": "A",
+              "body": "0.1 A",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "10 A",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "12 A",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "1440 A",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Which set lists elements every complete circuit must have?",
+          "moduleTitle": "Elements That Every Circuit Must Have",
+          "explanation": "A working circuit needs a power source, protection, a load, conductors and a return path, usually with control.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Source, protection, load and return path",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Only a battery and a switch",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Relay, sensor and module only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuse, capacitor and resistor only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "In a series circuit, if one load opens, what happens?",
+          "moduleTitle": "Understanding Circuit Protection Series and Partial Circuits",
+          "explanation": "A series path has one route for current, so an open stops current everywhere in that path.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Other loads work brighter",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Current stops through the whole series path",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Voltage doubles at each load",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Resistance falls to zero",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "slug": "electrical-essential-multimeter-skills",
+      "title": "Essential Multimeter Skills",
+      "moduleTitles": [
+        "Fundamental Multimeter Functions",
+        "Measuring Amps and Volts and Resistance",
+        "Understanding Duty Cycles and PWM",
+        "Testing Diodes and Continuity"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "To measure voltage, the meter leads are connected:",
+          "moduleTitle": "Fundamental Multimeter Functions",
+          "explanation": "A voltmeter connects in parallel across the part being measured.",
+          "options": [
+            {
+              "label": "A",
+              "body": "In series with the load",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "In parallel across the component or circuit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "With power off across a fuse only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Red to ground only, black removed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Before measuring resistance on a component, you should:",
+          "moduleTitle": "Fundamental Multimeter Functions",
+          "explanation": "Resistance is measured on an unpowered, preferably isolated component, or readings will be wrong and the meter may be damaged.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Leave the circuit powered",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Disconnect power and isolate the component where needed",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Set the meter to amps",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Short the leads together permanently",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "To measure current with a standard multimeter, the meter is placed:",
+          "moduleTitle": "Measuring Amps and Volts and Resistance",
+          "explanation": "Current measurement puts the meter in series so circuit current flows through it, within its rating.",
+          "options": [
+            {
+              "label": "A",
+              "body": "In parallel with the load",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "In series in the circuit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Across the battery posts",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "On the resistance scale",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A meter on the 20 V DC scale reads 12.6 on a resting battery. This indicates:",
+          "moduleTitle": "Measuring Amps and Volts and Resistance",
+          "explanation": "About 12.6 V at rest is the expected fully charged lead-acid battery voltage.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A discharged battery",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Approximately full charge at rest",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Overcharging",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "An open cell in every case",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "When checking resistance, infinite or OL on the display most likely means:",
+          "moduleTitle": "Measuring Amps and Volts and Resistance",
+          "explanation": "OL means overload/open - no measurable continuity within the selected range.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Zero resistance",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An open circuit or resistance beyond the range",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A short to ground",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Correct continuity",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Duty cycle describes:",
+          "moduleTitle": "Understanding Duty Cycles and PWM",
+          "explanation": "Duty cycle is on-time as a percentage of the total cycle time.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Battery voltage only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The percentage of time a signal is on during one cycle",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The frequency in hertz only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Resistance of a solenoid",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A PWM solenoid at 75% duty cycle is:",
+          "moduleTitle": "Understanding Duty Cycles and PWM",
+          "explanation": "75% duty means energised for 75% of each cycle.",
+          "options": [
+            {
+              "label": "A",
+              "body": "On 25% of the time",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Off all the time",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "On 75% of the time",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "Operating only on AC",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "If frequency increases but duty cycle stays the same, what happens?",
+          "moduleTitle": "Understanding Duty Cycles and PWM",
+          "explanation": "Higher frequency shortens cycle time; the percentage on stays the same.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Each cycle gets shorter, but the on proportion stays the same",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Duty becomes voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Current must fall to zero",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The signal becomes DC",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "In diode test mode, a good silicon diode tested in forward bias typically shows about:",
+          "moduleTitle": "Testing Diodes and Continuity",
+          "explanation": "A silicon diode drops roughly 0.5-0.7 V when forward biased.",
+          "options": [
+            {
+              "label": "A",
+              "body": "0 V",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "0.5 to 0.7 V",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "12 V",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "OL in both directions",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A continuity beeper sounding does NOT by itself prove:",
+          "moduleTitle": "Testing Diodes and Continuity",
+          "explanation": "Continuity only shows a path exists; a single strand can beep yet drop voltage badly under load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The path has very high resistance",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The circuit can carry full load current without voltage drop",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The fuse is the correct rating",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The battery is charged",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "slug": "electrical-advanced-multimeter-skills",
+      "title": "Advanced Multimeter Skills",
+      "moduleTitles": [
+        "Getting the Most From a Multimeter",
+        "Advanced Multimeter Functions"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Using a meter's MIN/MAX recording is most useful for:",
+          "moduleTitle": "Getting the Most From a Multimeter",
+          "explanation": "MIN/MAX captures the lowest and highest values seen during monitoring, helping find intermittents.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Polishing terminals",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Catching intermittent voltage drops or glitches over time",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Measuring tyre pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replacing a fuse rating",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Why select a manual range instead of autoranging during a fast-changing test?",
+          "moduleTitle": "Getting the Most From a Multimeter",
+          "explanation": "Fixing the range stops the meter hunting between ranges while the value changes quickly.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Autoranging always reads AC",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Manual range avoids range-hunting delays and unstable readings",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Manual range increases battery voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It disables the leads",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A low-impedance meter mode is preferred when checking for unwanted 'ghost' voltage because it:",
+          "moduleTitle": "Getting the Most From a Multimeter",
+          "explanation": "Low impedance loads the circuit, so capacitively coupled ghost voltage disappears while real supply remains.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Raises circuit voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Loads the circuit slightly so induced voltage collapses",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Measures resistance with power on",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disables continuity",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Relative (REL) mode is used to:",
+          "moduleTitle": "Getting the Most From a Multimeter",
+          "explanation": "REL subtracts a reference, such as lead resistance, from later readings.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Zero out lead resistance or a reference value",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Convert AC to DC",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Test diodes only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Increase the fuse rating",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "When measuring a small parasitic draw, the best practice is to:",
+          "moduleTitle": "Getting the Most From a Multimeter",
+          "explanation": "Keeping the circuit intact with a clamp or shunt avoids waking modules and losing settings.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Open the circuit suddenly and lose module memory settings where avoidable",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Use an inductive clamp or a shunt method that keeps the circuit powered while modules sleep",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Rev the engine continuously",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disconnect every module at once",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A meter with True RMS is important when measuring:",
+          "moduleTitle": "Advanced Multimeter Functions",
+          "explanation": "True RMS gives accurate AC readings on distorted or non-sine waveforms.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only pure DC battery voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Non-sinusoidal AC waveforms accurately",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Resistance of a bulb",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Continuity",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Frequency measurement on a multimeter reports:",
+          "moduleTitle": "Advanced Multimeter Functions",
+          "explanation": "Frequency is measured in hertz, the number of cycles per second.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Duty cycle only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Cycles per second in hertz",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Voltage drop in millivolts",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Diode forward voltage",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A bar graph on a digital meter helps the technician to:",
+          "moduleTitle": "Advanced Multimeter Functions",
+          "explanation": "The fast-updating bar graph shows trends and flicker the numeric display misses.",
+          "options": [
+            {
+              "label": "A",
+              "body": "See rapid fluctuations that digits update too slowly to show",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Read tyre tread depth",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Charge the battery",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Decode CAN messages",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Using a temperature probe with a multimeter is useful for:",
+          "moduleTitle": "Advanced Multimeter Functions",
+          "explanation": "Temperature comparison finds restrictions, poor connections and cooling faults.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Checking a thermostat, radiator or connector for abnormal heating",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Setting ignition timing",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Measuring current directly",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Testing CAN resistance",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Capacitance mode on a multimeter should be used:",
+          "moduleTitle": "Advanced Multimeter Functions",
+          "explanation": "Capacitors must be discharged and isolated before capacitance testing for safety and accuracy.",
+          "options": [
+            {
+              "label": "A",
+              "body": "On a live 12 V circuit",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "On a discharged, isolated capacitor",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "While cranking only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Instead of a scope for all waveforms",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "slug": "electrical-diagnosing-circuit-faults",
+      "title": "Diagnosing Circuit Faults",
+      "moduleTitles": [
+        "Open and Short Circuits",
+        "Terminal Tension and Back Probing",
+        "Wire Repair Best Practice",
+        "Locating Harness Faults",
+        "What is Voltage Drop",
+        "Signal Circuit Voltage Drop Checks",
+        "Using Voltage Drops as an Electrical Diagnostic Tool"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "A short to ground before the load will most likely:",
+          "moduleTitle": "Open and Short Circuits",
+          "explanation": "A pre-load short to ground creates excessive current, opening the fuse or protection.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Reduce voltage drop across the load to normal",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Blow the fuse or trip protection",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Make the load brighter",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Increase resistance in a controlled way",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "An open circuit is best defined as:",
+          "moduleTitle": "Open and Short Circuits",
+          "explanation": "An open is a break in the path so current cannot flow.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Too much current",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A break that stops current flow in the path",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A path to ground after the load",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low resistance everywhere",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Back probing a sealed connector is preferred to piercing insulation because it:",
+          "moduleTitle": "Terminal Tension and Back Probing",
+          "explanation": "Back probing tests the circuit without breaking insulation and inviting corrosion.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Damages the weather seal",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Avoids exposing copper to corrosion",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increases terminal drag",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Bypasses the fuse",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Poor terminal tension (drag) can cause:",
+          "moduleTitle": "Terminal Tension and Back Probing",
+          "explanation": "Loose terminals make poor contact, causing intermittents, voltage drop and heat.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Perfect signal transfer",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Intermittent opens and heat at the connection",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Higher fuel pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A stronger ground",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "The preferred repair for a critical harness wire is generally:",
+          "moduleTitle": "Wire Repair Best Practice",
+          "explanation": "A sealed solder or crimp splice restores strength, conductivity and corrosion protection.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Twist wires and tape only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Solder or sealed crimp splice with heat-shrink, following manufacturer guidance",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Any household connector",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Leave strands cut if most remain",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A wiggle test while monitoring a meter or scope helps to:",
+          "moduleTitle": "Locating Harness Faults",
+          "explanation": "Moving the harness while watching readings exposes movement-sensitive faults.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Set fuse ratings",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Reveal intermittent opens or shorts when the harness moves",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Charge a battery",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Measure tread wear",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Voltage drop is:",
+          "moduleTitle": "What is Voltage Drop",
+          "explanation": "Voltage drop is the voltage consumed across resistance while current flows.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Voltage used as current passes through resistance in a loaded circuit",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Battery voltage with everything off only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Voltage created by a magnet",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The same as an open circuit voltage reading",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Voltage drop testing must be done:",
+          "moduleTitle": "What is Voltage Drop",
+          "explanation": "No current means no meaningful voltage drop, so the circuit must be loaded and operating.",
+          "options": [
+            {
+              "label": "A",
+              "body": "With the circuit off and disconnected",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "With the circuit operating under load",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only with an ohmmeter",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "After removing the load",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "On a 5 V sensor signal circuit, an unwanted drop is most concerning because:",
+          "moduleTitle": "Signal Circuit Voltage Drop Checks",
+          "explanation": "Low-current signal circuits need accuracy; even small unwanted drops distort sensor information.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Signal circuits carry high starter current",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Small drops represent a large percentage error in the signal",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It only affects the ground side",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Modules ignore signal voltage",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A ground side voltage drop of 0.8 V on a cranking circuit indicates:",
+          "moduleTitle": "Using Voltage Drops as an Electrical Diagnostic Tool",
+          "explanation": "A high ground drop under load points to resistance in cables, connections or ground points.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A perfect ground",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Excessive resistance in the ground path",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low battery state of charge only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A faulty starter relay rating",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "slug": "electrical-wiring-harness-fundamentals",
+      "title": "Wiring Harness Fundamentals",
+      "moduleTitles": [
+        "Automotive Cable Selection",
+        "Automotive Cable Size",
+        "Automotive Cable Crimping",
+        "DETSC Connectors",
+        "Understanding Automotive Soldering",
+        "Automotive Soldering Best Practice"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "When selecting replacement cable, the most important factors are:",
+          "moduleTitle": "Automotive Cable Selection",
+          "explanation": "Cable must carry the current over its length and suit heat, oil and abrasion conditions.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Colour only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Current capacity, length, insulation and environment",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Price only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Diameter of the connector shell only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A cable run near exhaust heat requires:",
+          "moduleTitle": "Automotive Cable Selection",
+          "explanation": "Heat-rated insulation prevents melting, shorting and premature failure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Thinner insulation",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Insulation rated for the higher temperature",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No protection at all",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Household flex cable",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "If a circuit's cable is too thin for its length and current, the result is:",
+          "moduleTitle": "Automotive Cable Size",
+          "explanation": "Undersized cable has more resistance, causing drop and heat under load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Less voltage drop",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Excessive voltage drop and heating",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Higher charging voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "No effect if the fuse is large",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Doubling a cable's length, with the same gauge and current, will:",
+          "moduleTitle": "Automotive Cable Size",
+          "explanation": "Longer conductors have more resistance, so drop increases.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Halve its resistance",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Increase total resistance and voltage drop",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Remove voltage drop",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Increase fuse rating automatically",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A correct crimp should:",
+          "moduleTitle": "Automotive Cable Crimping",
+          "explanation": "A good crimp is gas-tight, mechanically strong and does not damage strands.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cut most strands for a tight fit",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Compress the terminal evenly, gripping conductor and insulation support without cutting strands",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Be loose enough to rotate",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Be covered without inspection",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "The pull test after crimping checks:",
+          "moduleTitle": "Automotive Cable Crimping",
+          "explanation": "A gentle pull confirms the terminal is securely attached.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Insulation colour",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Mechanical strength of the crimp joint",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Battery voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuse rating",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A sealed automotive connector's weather seals are there to:",
+          "moduleTitle": "DETSC Connectors",
+          "explanation": "Seals protect against water ingress and corrosion at the connection.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Increase resistance",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Keep moisture and contamination out of the terminal area",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Make terminals looser",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replace terminal locks",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A terminal position assurance (TPA) lock does what?",
+          "moduleTitle": "DETSC Connectors",
+          "explanation": "TPA secondary locks keep terminals from backing out.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Raises system voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Confirms and holds terminals fully seated in the housing",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Tests the circuit",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Acts as a fuse",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "In soldering, flux is used to:",
+          "moduleTitle": "Understanding Automotive Soldering",
+          "explanation": "Flux removes oxides so solder bonds properly to the conductors.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Insulate the finished joint permanently",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Clean oxides and help solder flow and wet the metals",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Cool the joint",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Increase resistance",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A dull, grainy solder joint that moved while cooling is called a:",
+          "moduleTitle": "Automotive Soldering Best Practice",
+          "explanation": "Movement or insufficient heat makes a weak, high-resistance cold joint.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Cold / dry joint, and it should be remade",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Perfect joint",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Crimp joint",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Sealed joint",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "slug": "electrical-automotive-relays-explained",
+      "title": "Automotive Relays Explained",
+      "moduleTitles": [
+        "Automotive Relays",
+        "Circuit Relays",
+        "Monitored Relay Circuits"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "A relay allows:",
+          "moduleTitle": "Automotive Relays",
+          "explanation": "The coil (low current) controls contacts that switch the high-current load circuit.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A high-current circuit to be controlled by a low-current switch or module",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Voltage to be created without a source",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Resistance to disappear",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A fuse to be bypassed safely",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "On a typical ISO relay, terminals 85 and 86 are:",
+          "moduleTitle": "Automotive Relays",
+          "explanation": "85 and 86 are the relay coil connections.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The load contacts",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The coil terminals",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Both grounds only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The fuse terminals",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "On a typical 4-pin relay, terminal 30 is commonly:",
+          "moduleTitle": "Automotive Relays",
+          "explanation": "Terminal 30 is the common contact, usually the power feed to the contacts.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Coil ground",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Common contact feed (power in)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Signal ground",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Diode cathode only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "When the coil is energised on a normally open relay, terminals 30 and 87:",
+          "moduleTitle": "Automotive Relays",
+          "explanation": "Energising the coil closes 30 to 87 on a normally open relay.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Disconnect",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Connect, feeding the load",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Both go to ground",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Become the coil",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A relay that clicks but the load does not work could have:",
+          "moduleTitle": "Circuit Relays",
+          "explanation": "Clicking proves coil operation, not that the contacts carry current cleanly.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only a good contact set",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Burnt or high-resistance contacts",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Too much terminal tension",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A charged battery in every case",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Testing a relay circuit is best done by checking:",
+          "moduleTitle": "Circuit Relays",
+          "explanation": "All four legs - control and load sides - must be verified, ideally loaded.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Coil feed, coil ground/control, contact feed and output under load",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Colour of the relay only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Fuse rating only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Battery brand",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A suppression diode or resistor across a relay coil is used to:",
+          "moduleTitle": "Circuit Relays",
+          "explanation": "Suppression protects electronics from the inductive kickback when the coil de-energises.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Increase coil current sharply",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Control the voltage spike when the coil switches off",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Act as the load",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replace the contacts",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "In a monitored relay circuit, the control module can detect a fault by:",
+          "moduleTitle": "Monitored Relay Circuits",
+          "explanation": "Modules monitor feedback voltage or current and set a fault if it does not match the commanded state.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Guessing",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Watching expected voltage/current feedback on the circuit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Measuring tyre pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Reading the relay colour",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "If a module commands a relay on but sees no voltage change on the monitor line, it will likely:",
+          "moduleTitle": "Monitored Relay Circuits",
+          "explanation": "A mismatch between command and feedback triggers diagnostic trouble codes and possibly a fallback.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Ignore it forever",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Log a circuit fault",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increase alternator output",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disable the brakes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "An open in a monitored relay's coil circuit would be detected as:",
+          "moduleTitle": "Monitored Relay Circuits",
+          "explanation": "The module expects current or a voltage change; an open prevents it and is flagged.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal operation",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "No coil current / incorrect feedback when commanded",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "High fuel trim",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low oil pressure",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "slug": "electrical-vehicle-lighting-technology",
+      "title": "Vehicle Lighting Technology",
+      "moduleTitles": [
+        "Introduction to Automotive Lighting",
+        "Incandescent and Halogen Lighting Technology",
+        "High Intensity Discharge Lighting Technology",
+        "LED Lighting Technology",
+        "Laser Lighting Technology"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "A headlamp circuit fault causing one dim lamp most often points to:",
+          "moduleTitle": "Introduction to Automotive Lighting",
+          "explanation": "One dim lamp usually means voltage drop or a poor ground in that branch.",
+          "options": [
+            {
+              "label": "A",
+              "body": "High resistance or poor ground on that lamp's circuit",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Excess alternator voltage for all lamps",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Correct operation",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low fuel level",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Daytime running lights are intended to:",
+          "moduleTitle": "Introduction to Automotive Lighting",
+          "explanation": "DRLs improve daytime conspicuity, often at reduced intensity.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Replace headlamps at night",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Make the vehicle more visible during the day",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increase battery drain as a test",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Signal braking",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A halogen bulb should not be touched with bare fingers because:",
+          "moduleTitle": "Incandescent and Halogen Lighting Technology",
+          "explanation": "Skin oils cause uneven heating of the quartz envelope and early failure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Fingerprints change its colour",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Oils create hot spots that shorten bulb life",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It will not fit afterwards",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It becomes an LED",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "In an incandescent bulb, light is produced by:",
+          "moduleTitle": "Incandescent and Halogen Lighting Technology",
+          "explanation": "Current heats the filament to incandescence.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A gas arc",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Heating a filament until it glows",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A laser diode",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A phosphor only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "HID lamps produce light by:",
+          "moduleTitle": "High Intensity Discharge Lighting Technology",
+          "explanation": "HID uses an arc discharge, requiring a ballast/igniter for high starting voltage.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A heated filament",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An electric arc through xenon gas and metal salts",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A single LED chip",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Burning a wick",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "The ballast in an HID system is needed to:",
+          "moduleTitle": "High Intensity Discharge Lighting Technology",
+          "explanation": "The ballast/igniter starts the arc and controls current once lit.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Lower voltage to 3 V only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Provide high ignition voltage and then regulate lamp current",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Charge the battery",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Control the wipers",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A key advantage of LED lighting is:",
+          "moduleTitle": "LED Lighting Technology",
+          "explanation": "LEDs are efficient, durable and switch instantly, though they need proper drivers and heat management.",
+          "options": [
+            {
+              "label": "A",
+              "body": "High heat at the lens in all designs",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Low current draw, long life and instant on",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "It never needs a driver circuit",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "It works with any voltage without control",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "If polarity is reversed to a standard LED lamp, it will typically:",
+          "moduleTitle": "LED Lighting Technology",
+          "explanation": "LEDs are diodes, so reverse polarity blocks normal operation.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Work brighter",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Not light, because LEDs allow current in one direction",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Become a halogen lamp",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Blow every fuse instantly in all cases",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Laser headlights actually produce white light visible on the road by:",
+          "moduleTitle": "Laser Lighting Technology",
+          "explanation": "Laser diodes stimulate a phosphor, producing bright white light with safety controls.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Shining a raw blue laser directly with no conversion",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Using laser diodes to excite a phosphor that emits white light",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Burning fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Reflecting sunlight only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Compared with LED, a main claimed benefit of laser high beam is:",
+          "moduleTitle": "Laser Lighting Technology",
+          "explanation": "Laser systems achieve long range from a compact source, usually supplementing LED high beam.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Lower cost in every vehicle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Longer range from a very small, intense light source",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No electronics needed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Wider use as brake lights",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "slug": "electrical-understanding-sensors",
+      "title": "Understanding Sensors",
+      "moduleTitles": [
+        "Electronic Components",
+        "Piezo Resistive Sensor Explained",
+        "Piezo Electric Sensor Explained",
+        "Capacitive Sensing",
+        "Ultrasonic Sensor Technology"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "A thermistor used for temperature sensing changes what with temperature?",
+          "moduleTitle": "Electronic Components",
+          "explanation": "Thermistors change resistance with temperature; most automotive ones are NTC.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Its resistance",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Its capacitance only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "System voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuse rating",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "An NTC thermistor's resistance as temperature rises:",
+          "moduleTitle": "Electronic Components",
+          "explanation": "Negative temperature coefficient means resistance falls as temperature rises.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Increases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Decreases",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Stays exactly the same",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Becomes infinite",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A piezo resistive sensor works because applied pressure:",
+          "moduleTitle": "Piezo Resistive Sensor Explained",
+          "explanation": "Strain changes the resistance of the sensing element, converted to a signal voltage.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Changes the resistance of a silicon diaphragm element",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Creates a large AC voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Melts a filament",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Opens a switch only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "MAP and many pressure sensors using piezo resistive elements typically output:",
+          "moduleTitle": "Piezo Resistive Sensor Explained",
+          "explanation": "Pressure changes the bridge output voltage in proportion to pressure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A varying analogue voltage proportional to pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Only a beep",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "CAN messages with no voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A fixed 12 V at all pressures",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A piezo electric sensor differs because it:",
+          "moduleTitle": "Piezo Electric Sensor Explained",
+          "explanation": "Piezoelectric materials generate charge under stress, ideal for knock and dynamic events.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Generates a charge/voltage when mechanically stressed",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Needs no movement or vibration ever to produce a signal",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Measures only static pressure perfectly with no decay",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Is a type of fuse",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A knock sensor is a common example of:",
+          "moduleTitle": "Piezo Electric Sensor Explained",
+          "explanation": "Knock sensors use piezoelectric elements to convert vibration into a voltage signal.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A capacitive touch sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A piezoelectric sensor",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A halogen sensor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "An ultrasonic parking sensor only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Capacitive sensing detects change in:",
+          "moduleTitle": "Capacitive Sensing",
+          "explanation": "Movement or material change alters capacitance, which electronics convert to a signal.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Magnetism only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Capacitance as distance or dielectric changes",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Exhaust temperature",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuel pressure directly",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Capacitive sensors are commonly used for:",
+          "moduleTitle": "Capacitive Sensing",
+          "explanation": "Capacitance suits non-contact level, occupancy and proximity detection.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Crankshaft teeth only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Occupant detection, fluid level and touch/proximity sensing",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Ignition spark generation",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Starter current",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Ultrasonic parking sensors measure distance by:",
+          "moduleTitle": "Ultrasonic Sensor Technology",
+          "explanation": "Distance is calculated from the time of flight of the reflected ultrasonic pulse.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Timing an echo of a high-frequency sound pulse",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Measuring resistance of air",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Reading GPS only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Timing a light flash",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A dirty or ice-covered ultrasonic sensor may cause:",
+          "moduleTitle": "Ultrasonic Sensor Technology",
+          "explanation": "Contamination blocks or distorts the pulse, causing unreliable detection.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Perfect long-range detection",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "False or missed distance warnings",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Higher engine power",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A blown headlamp fuse",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 9,
+      "slug": "electrical-master-control-modules",
+      "title": "Master Control Modules",
+      "moduleTitles": [
+        "Circuit Operation and Voltage Dividers",
+        "Pull Up and Pull Down Circuits",
+        "Control Module Logics and Programming",
+        "Pass Through Communications"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "A voltage divider with two equal resistors fed by 10 V will have about how much at the midpoint?",
+          "moduleTitle": "Circuit Operation and Voltage Dividers",
+          "explanation": "Equal resistors split the supply equally, giving half at the junction.",
+          "options": [
+            {
+              "label": "A",
+              "body": "10 V",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "0 V",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "5 V",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "20 V",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Many sensor circuits work as voltage dividers where the sensor changes:",
+          "moduleTitle": "Circuit Operation and Voltage Dividers",
+          "explanation": "As sensor resistance changes, the divider ratio and signal voltage change.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only the wire colour",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Resistance, changing the signal voltage the module reads",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Battery capacity",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Fuse rating",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "In a pull-up circuit, the module's internal resistor pulls the signal:",
+          "moduleTitle": "Pull Up and Pull Down Circuits",
+          "explanation": "The pull-up holds the line high until the device pulls it toward ground.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Toward ground at all times",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Toward reference voltage, and the sensor/switch pulls it down",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "To battery negative only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "To AC voltage",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "In a pull-down circuit, with the switch open the signal at the module is typically:",
+          "moduleTitle": "Pull Up and Pull Down Circuits",
+          "explanation": "A pull-down resistor holds the input low until a device pulls it high.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Pulled to ground / low",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Pulled to 12 V",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Floating with no control",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Shorted to the starter circuit",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "If a pull-up type sensor circuit is shorted to ground, the signal will read:",
+          "moduleTitle": "Pull Up and Pull Down Circuits",
+          "explanation": "A short to ground overcomes the pull-up and holds the signal low.",
+          "options": [
+            {
+              "label": "A",
+              "body": "High at all times",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Low at all times",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Normal varying signal",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Exactly half supply always",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A control module makes decisions by following the pattern:",
+          "moduleTitle": "Control Module Logics and Programming",
+          "explanation": "Modules read inputs, process them using logic/maps, then command outputs.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Input - process - output",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Output only, with no inputs",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Guess and ignore sensors",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Charge - discharge - park",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "After replacing certain modules, what may be required before the vehicle works correctly?",
+          "moduleTitle": "Control Module Logics and Programming",
+          "explanation": "Many modules need software, VIN/configuration coding and relearns.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Nothing in any case",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Programming, coding and/or configuration to the vehicle",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only washing the vehicle",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A larger fuse",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A module that loses its ground may cause:",
+          "moduleTitle": "Control Module Logics and Programming",
+          "explanation": "Poor power or ground makes module behaviour erratic and can affect a whole network.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Perfect operation",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Multiple unrelated-looking faults and communication errors",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Higher compression",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Better fuel economy guaranteed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Pass-through programming (J2534 style) means:",
+          "moduleTitle": "Pass Through Communications",
+          "explanation": "software A pass-through interface lets a PC and OEM software reprogram modules via the DLC.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Programming a module through the diagnostic connector using a pass-through device and manufacturer software",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Passing a wire through a bulkhead",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Skipping software updates",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Using a test light as a module",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "During module programming, the most critical supply requirement is:",
+          "moduleTitle": "Pass Through Communications",
+          "explanation": "Voltage must stay stable throughout programming or the module can be corrupted.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Radio volume up",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Stable battery voltage maintained with a suitable power supply",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Lights flashing",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Engine revving at all times",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "slug": "electrical-electrical-waveforms-explained",
+      "title": "Electrical Waveforms Explained",
+      "moduleTitles": [
+        "Oscilloscope Essentials",
+        "Current Limiting Technology",
+        "Pulse Width Modulation Explained",
+        "Interpreting Position Sensor Waveforms",
+        "Interpreting Sensor Pressure Waveforms",
+        "Interpreting Primary Ignition Waveforms",
+        "Interpreting Secondary Ignition Waveforms"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "On an oscilloscope, the vertical axis represents:",
+          "moduleTitle": "Oscilloscope Essentials",
+          "explanation": "Vertical is voltage (amplitude); horizontal is time.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Time",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Voltage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Resistance",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Temperature",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "If the time base is set too slow for a fast signal, the waveform may:",
+          "moduleTitle": "Oscilloscope Essentials",
+          "explanation": "A slow time base squeezes cycles together so detail is hidden.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Always be more accurate",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Be compressed and lose detail",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Turn into DC",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Damage the sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "Current limiting in a driver circuit protects it by:",
+          "moduleTitle": "Current Limiting Technology",
+          "explanation": "Limiting protects module drivers from overheating on overload or short.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Allowing unlimited current",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Capping current to a safe level if a load shorts or overloads",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removing the ground permanently",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Increasing voltage without limit",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Pulse width modulation controls average power by:",
+          "moduleTitle": "Pulse Width Modulation Explained",
+          "explanation": "Changing duty cycle changes average voltage/current delivered to the load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Changing only wire size",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Varying the on-time / duty cycle of a fixed-frequency signal",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removing the ground",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Using AC mains voltage",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A Hall-effect crank position sensor normally produces:",
+          "moduleTitle": "Interpreting Position Sensor Waveforms",
+          "explanation": "Hall sensors switch digitally, giving a square wave.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A clean square-wave switching between low and high",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "A sine wave growing with speed only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "No signal when cranking",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A random noise pattern when good",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "An inductive (variable reluctance) crank sensor produces:",
+          "moduleTitle": "Interpreting Position Sensor Waveforms",
+          "explanation": "VR sensors generate AC; faster rotation means higher frequency and amplitude.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A square wave of constant height",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "An AC sine-like wave whose amplitude and frequency rise with speed",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A steady 5 V DC",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A PWM lamp signal",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A missing or distorted tooth gap in a crank waveform will affect:",
+          "moduleTitle": "Interpreting Position Sensor Waveforms",
+          "explanation": "The gap is the reference; distortion can cause sync and misfire faults.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only the radio",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The module's ability to locate crank position / TDC reference",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Tyre balance",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Alternator ripple only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "An in-cylinder pressure waveform can reveal:",
+          "moduleTitle": "Interpreting Sensor Pressure Waveforms",
+          "explanation": "Pressure traces show compression, power, exhaust and intake events.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only battery state",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Valve timing, sealing and pumping problems from pressure changes",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Radio codes",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Wheel alignment",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "On a primary ignition waveform, the dwell section is when:",
+          "moduleTitle": "Interpreting Primary Ignition Waveforms",
+          "explanation": "Dwell is coil-on time, building the magnetic field and primary current.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The coil is switched off and spark occurs",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Current is building in the coil primary",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The plug lead is disconnected",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The battery is removed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "On a secondary waveform, a very high firing line with a short burn line can indicate:",
+          "moduleTitle": "Interpreting Secondary Ignition Waveforms",
+          "explanation": "High resistance demands higher firing voltage and leaves less energy for spark duration.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A rich, easy-to-fire mixture in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "High secondary resistance such as a wide plug gap or open lead",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A perfect low-resistance path",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Low compression only",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 11,
+      "slug": "electrical-advanced-oscilloscope-techniques",
+      "title": "Advanced Oscilloscope Techniques",
+      "moduleTitles": [
+        "Relative Compression Testing"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Relative compression testing compares cylinders by watching:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "Each compression stroke loads the starter; a weak cylinder draws less current.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Starter current draw or battery voltage dip as each cylinder comes up on compression",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Fuel pressure only",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Exhaust colour",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Spark colour only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Relative compression is performed during:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "The engine is cranked without starting so starter load reflects compression.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Highway driving",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Cranking with fuelling/ignition disabled as directed",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Idle only with AC on",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Charging",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "On a starter-current relative compression trace, a noticeably lower current peak for one cylinder suggests:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "Less compression means less starter load, so a smaller current hump.",
+          "options": [
+            {
+              "label": "A",
+              "body": "That cylinder has higher compression than the others",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "That cylinder has lower compression than the others",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A fault in the radio",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Normal variation that proves a valve fault by itself",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A sync signal (for example cylinder 1 ignition or injection) is used during relative compression to:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "Sync links each peak in firing order to a specific cylinder.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Charge the battery",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Identify which peak belongs to which cylinder",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increase compression",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disable the scope",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Relative compression tells you:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "It is a comparison test; a low cylinder needs follow-up testing for cause and absolute value.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The exact psi of each cylinder",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "How cylinders compare with each other, not absolute pressure",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The cause of low compression by itself",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Valve clearance in millimetres",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Before a relative compression test, an important check is:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "A weak battery or starter distorts the pattern and can mimic compression differences.",
+          "options": [
+            {
+              "label": "A",
+              "body": "That the battery and starter circuit are in good condition and fully charged",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "That the fuel tank is empty",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "That all tyres match",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "That the AC is on full",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "If ALL cylinders show evenly low starter current humps, suspect:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "A uniform pattern points to a common cause rather than one cylinder.",
+          "options": [
+            {
+              "label": "A",
+              "body": "One burnt valve only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A generally weak battery/starter, incorrect cranking speed, or a global engine issue - not one cylinder",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A single faulty plug lead",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A blocked radio aerial",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A follow-up test after finding one low cylinder on relative compression is:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "Wet/dry compression and leakage testing locate rings, valves or gasket leakage.",
+          "options": [
+            {
+              "label": "A",
+              "body": "No follow-up needed",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A conventional compression test and/or cylinder leakage test on that cylinder",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A wheel alignment",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A parasitic draw test only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Using battery voltage (instead of a current clamp) for relative compression works because:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "Higher starter load pulls battery voltage down, creating a corresponding voltage trace.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Voltage rises on compression",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Battery voltage dips as starter load rises on each compression stroke",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Voltage stays perfectly flat",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The alternator charges while cranking",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Disabling fuel and ignition before cranking for the test is important to:",
+          "moduleTitle": "Relative Compression Testing",
+          "explanation": "Preventing a start keeps cranking even and safe for comparison.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Stop the engine starting and to get a clean, even cranking pattern",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Drain the battery faster",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Test the radio",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Heat the starter",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 12,
+      "slug": "electrical-testing-and-charging-batteries",
+      "title": "Testing and Charging Batteries",
+      "moduleTitles": [
+        "Battery Lead Flooded",
+        "Lithium Battery Technology",
+        "Battery Testing Maintenance and Recharge",
+        "Locating Parasitic Drain",
+        "Smart Battery Charger Technology"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In a flooded lead-acid battery, the electrolyte is:",
+          "moduleTitle": "Battery Lead Flooded",
+          "explanation": "Flooded lead-acid cells use sulphuric acid electrolyte covering lead plates.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Pure water only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Dilute sulphuric acid",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Engine oil",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Lithium polymer gel in every case",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A fully charged flooded cell has a specific gravity of about:",
+          "moduleTitle": "Battery Lead Flooded",
+          "explanation": "Around 1.265-1.280 at reference temperature indicates full charge.",
+          "options": [
+            {
+              "label": "A",
+              "body": "1.000",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "1.265 - 1.280",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "2.500",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "0.900",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "A key difference of lithium 12 V / EV batteries compared with lead-acid is:",
+          "moduleTitle": "Lithium Battery Technology",
+          "explanation": "Lithium chemistry needs BMS protection against overcharge, over-discharge and thermal issues.",
+          "options": [
+            {
+              "label": "A",
+              "body": "They need no management at all",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "They require a battery management system to monitor cell voltage, temperature and current",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "They use sulphuric acid and lead only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "They cannot be recharged",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Lithium batteries generally offer, for the same capacity:",
+          "moduleTitle": "Lithium Battery Technology",
+          "explanation": "Lithium packs store more energy per kilogram.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Greater weight than lead-acid",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Lower weight and higher energy density",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No voltage at rest",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Unlimited short-circuit safety",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "A conductance battery test estimates:",
+          "moduleTitle": "Battery Testing Maintenance and Recharge",
+          "explanation": "Conductance testing infers health and CCA capability without a full load test.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only terminal colour",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Battery capacity / cranking ability from its internal conductance",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Exact remaining years of life",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Alternator diode pattern only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "Before load testing a battery, you should ensure it is:",
+          "moduleTitle": "Battery Testing Maintenance and Recharge",
+          "explanation": "Testing a discharged or badly connected battery gives misleading failures.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Fully discharged",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Reasonably charged and terminals are clean and tight",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removed and shaken",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Filled with tap water to the top",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A parasitic drain test is performed:",
+          "moduleTitle": "Locating Parasitic Drain",
+          "explanation": "Normal sleep current is measured after the vehicle fully powers down.",
+          "options": [
+            {
+              "label": "A",
+              "body": "With all modules awake and doors being opened repeatedly",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "After modules have gone to sleep, measuring key-off current draw",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only while cranking",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "With the engine at full revs",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "To locate which circuit causes excess parasitic drain, a good method is:",
+          "moduleTitle": "Locating Parasitic Drain",
+          "explanation": "Fuse voltage-drop or sequential fuse removal isolates the draining branch without waking modules where possible.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Remove the battery",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Measure voltage drop across fuses or pull fuses one at a time while watching draw fall",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Replace the starter first",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Disconnect the alternator belt only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A smart charger differs from a basic charger because it:",
+          "moduleTitle": "Smart Battery Charger Technology",
+          "explanation": "Smart chargers bulk, absorb and float, and often have AGM/lithium modes and maintenance.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Always charges at maximum rate",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Uses multi-stage charging and can adapt rate and mode to battery condition and type",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Never switches off",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only works on lithium batteries",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Charging a deeply discharged AGM battery with the wrong mode may:",
+          "moduleTitle": "Smart Battery Charger Technology",
+          "explanation": "Battery type settings matter; AGM and lithium have different voltage limits.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Have no effect ever",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Undercharge it or damage it if voltage limits are wrong",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Convert it to flooded type",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Increase its CCA permanently",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 13,
+      "slug": "electrical-understanding-charging-systems",
+      "title": "Understanding Charging Systems",
+      "moduleTitles": [
+        "Alternators Explained",
+        "Alternators Current Reflections",
+        "Alternator Voltage Recirculation",
+        "Best Practice Alternator Testing Guide"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "An alternator produces electricity by:",
+          "moduleTitle": "Alternators Explained",
+          "explanation": "The rotating rotor field induces AC in the stator, rectified to DC.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Spinning a magnetic field inside stationary stator windings",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "A battery inside the housing",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Burning fuel in the rotor",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A permanent DC motor only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "The rectifier (diode pack) in an alternator:",
+          "moduleTitle": "Alternators Explained",
+          "explanation": "Diodes rectify stator AC into usable DC output.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Converts AC from the stator to DC for the vehicle",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Converts DC to AC for the headlights",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Regulates fuel pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Stores charge like a battery",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "The voltage regulator controls charging by:",
+          "moduleTitle": "Alternators Explained",
+          "explanation": "More field current makes a stronger field and higher output.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Changing stator size",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Controlling rotor field current",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Opening the battery terminals",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Changing engine compression",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Excessive AC ripple in alternator output most likely indicates:",
+          "moduleTitle": "Alternators Current Reflections",
+          "explanation": "Failed diodes/windings let AC ripple through and reduce output.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A healthy diode pack in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A faulty diode or stator winding",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low tyre pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A good regulator only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Ripple can be checked with:",
+          "moduleTitle": "Alternators Current Reflections",
+          "explanation": "A scope pattern or AC voltage measurement reveals abnormal ripple.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A scope on the output or a meter on AC volts",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "A torque wrench",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "A hydrometer only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A timing light only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "If charging voltage is too high for a long period, a likely result is:",
+          "moduleTitle": "Alternator Voltage Recirculation",
+          "explanation": "Overvoltage damages the battery and sensitive electronics.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Battery undercharge",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Battery overheating, gassing and damage to electronics",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Improved bulb life",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Lower current everywhere",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A loose or slipping drive belt can cause:",
+          "moduleTitle": "Alternator Voltage Recirculation",
+          "explanation": "The alternator cannot reach required speed/output if the belt slips.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Overcharging at idle",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Low/intermittent charging, noise and battery warning under load",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Perfect charging",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Higher compression",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "A correct charging test sequence starts with:",
+          "moduleTitle": "Best Practice Alternator Testing Guide",
+          "explanation": "A weak battery or bad connection mimics alternator failure, so basics come first.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Replacing the alternator immediately",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Checking battery condition, terminals, belt and grounds first",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Removing all fuses",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Testing at full revs only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "Charging voltage on a conventional 12 V system at running idle is commonly about:",
+          "moduleTitle": "Best Practice Alternator Testing Guide",
+          "explanation": "Conventional systems regulate roughly in the mid-13 to mid-14 volt range; smart systems vary.",
+          "options": [
+            {
+              "label": "A",
+              "body": "6 V",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "12.0 V exactly with no rise",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "13.5 - 14.5 V (system dependent)",
+              "isCorrect": true
+            },
+            {
+              "label": "D",
+              "body": "18 - 20 V",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "Voltage drop testing the alternator output and ground paths under load finds:",
+          "moduleTitle": "Best Practice Alternator Testing Guide",
+          "explanation": "Loaded drop tests reveal cable and connection resistance between alternator and battery.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only open circuits with no current",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "High resistance that a voltage-at-battery reading alone can hide",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Correct belt tension",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Diode colour",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 14,
+      "slug": "electrical-smart-charging-technology",
+      "title": "Smart Charging Technology",
+      "moduleTitles": [
+        "Charging Systems ECM Controlled",
+        "ECM Controlled Charging Diagnostics"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "In an ECM-controlled charging system, the module varies alternator output to:",
+          "moduleTitle": "Charging Systems ECM Controlled",
+          "explanation": "Smart control balances charge needs with engine load and emissions/economy targets.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Keep voltage at maximum always",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Match electrical load, battery state, temperature and fuel-economy goals",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Disable charging on deceleration only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Run the starter motor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "Smart charging may deliberately lower voltage during steady cruise because:",
+          "moduleTitle": "Charging Systems ECM Controlled",
+          "explanation": "Reducing field when charge is not needed cuts engine drag.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The battery is faulty in all such cases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A fully charged battery needs less, and reducing alternator load saves fuel",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The alternator has failed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The regulator is removed",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "During deceleration, some smart systems increase charging voltage to:",
+          "moduleTitle": "Charging Systems ECM Controlled",
+          "explanation": "Raising output on overrun uses vehicle momentum to recharge the battery.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Waste energy deliberately with no benefit",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Recover energy (regenerative-style charging) while engine braking",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Cool the battery",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Test the headlights",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "A battery current sensor on the negative lead allows the module to:",
+          "moduleTitle": "Charging Systems ECM Controlled",
+          "explanation": "Current, voltage and temperature data let the module estimate state of charge and health.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Measure battery temperature only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Monitor charge/discharge current to calculate battery state",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Control the starter directly",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Read tyre pressure",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "If the communication/control line to a smart alternator fails, many systems will:",
+          "moduleTitle": "Charging Systems ECM Controlled",
+          "explanation": "Most designs fail-safe to a conventional default voltage so the vehicle stays powered.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Stop charging forever in all designs",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Default to a fixed fallback charging voltage",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Charge at 20 V",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Turn off the engine",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "When diagnosing smart charging, a measured 12.8 V while running does NOT automatically mean failure because:",
+          "moduleTitle": "ECM Controlled Charging Diagnostics",
+          "explanation": "Commanded voltage varies; compare scan data, command and battery state before condemning parts.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Voltage is never measurable",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The module may be intentionally commanding a lower voltage at that moment",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The meter is always wrong",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Alternators do not charge at idle",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "The first scan-tool checks for a smart charging complaint should include:",
+          "moduleTitle": "ECM Controlled Charging Diagnostics",
+          "explanation": "Desired vs actual generator data shows whether control or the alternator is at fault.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only fault codes for the radio",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Battery state data, commanded/desired voltage, generator feedback and related codes",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Airbag codes only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Wheel speed only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "After replacing a battery on a smart charging vehicle, you may need to:",
+          "moduleTitle": "ECM Controlled Charging Diagnostics",
+          "explanation": "Battery registration resets learned age/type data; without it charging can be wrong.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Do nothing in every case",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Register/reset the battery monitoring system so charging adapts to the new battery",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fit a larger alternator",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Remove the current sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A faulty battery temperature or current sensor input can cause:",
+          "moduleTitle": "ECM Controlled Charging Diagnostics",
+          "explanation": "Bad inputs lead the module to command inappropriate charging.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Correct charging in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Incorrect charging voltage decisions and warning lights",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "A flat tyre",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Misfire on one cylinder only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "A voltage drop in the alternator ground on a smart system can cause:",
+          "moduleTitle": "ECM Controlled Charging Diagnostics",
+          "explanation": "Ground resistance affects both output and sensing, mimicking alternator failure.",
+          "options": [
+            {
+              "label": "A",
+              "body": "No symptoms",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "The module to misread or the alternator to undercharge despite a good unit",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Overcharging guaranteed",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Better fuel economy",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 15,
+      "slug": "electrical-mastering-starter-systems",
+      "title": "Mastering Starter Systems",
+      "moduleTitles": [
+        "Starter Motor Explained",
+        "Direct Current Motors",
+        "Starter Circuit Voltage Drop Testing",
+        "Starter Stop Battery Technology",
+        "Start Stop Operations"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "The starter solenoid has two main jobs:",
+          "moduleTitle": "Starter Motor Explained",
+          "explanation": "The solenoid shifts the pinion into mesh and switches heavy motor current.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Charge the battery and run the lights",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Engage the pinion with the ring gear and close the motor contacts",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Regulate voltage and control fuel",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Cool the motor and time the spark",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A single click and no crank most often points to:",
+          "moduleTitle": "Starter Motor Explained",
+          "explanation": "The signal is arriving (click) but heavy current is not turning the motor.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A perfect starter circuit",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Poor heavy-current contacts, low battery, bad connections or a seized/faulty motor - not the signal alone",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low fuel pressure only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A faulty oxygen sensor",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "In a DC starter motor, torque is produced by:",
+          "moduleTitle": "Direct Current Motors",
+          "explanation": "Current in the armature and field creates magnetic forces that rotate the armature.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Magnetic interaction between armature and field windings/coils",
+              "isCorrect": true
+            },
+            {
+              "label": "B",
+              "body": "Hydraulic pressure",
+              "isCorrect": false
+            },
+            {
+              "label": "C",
+              "body": "Exhaust pulses",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Capacitor discharge only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "Worn brushes or a dirty commutator in a DC motor cause:",
+          "moduleTitle": "Direct Current Motors",
+          "explanation": "Poor brush contact interrupts armature current.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Higher torque",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Intermittent or no operation and arcing",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Better cranking in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Overcharging",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "Starter circuit voltage drop tests are done:",
+          "moduleTitle": "Starter Circuit Voltage Drop Testing",
+          "explanation": "High starter current reveals resistance; drops are measured during cranking.",
+          "options": [
+            {
+              "label": "A",
+              "body": "With the circuit disconnected and an ohmmeter",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "While cranking, measuring across each cable and connection",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only after removing the starter",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "With the battery disconnected",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "A 0.9 V drop across the positive starter cable while cranking indicates:",
+          "moduleTitle": "Starter Circuit Voltage Drop Testing",
+          "explanation": "That drop is far above a healthy cable's small drop under cranking load.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A good cable",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Excessive resistance in that cable or its connections",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Low compression",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A faulty ignition switch only",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "Total starter circuit drop (positive plus ground) should generally be:",
+          "moduleTitle": "Starter Circuit Voltage Drop Testing",
+          "explanation": "Excess total drop starves the starter of voltage; always compare with manufacturer specs.",
+          "options": [
+            {
+              "label": "A",
+              "body": "As high as possible",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Kept low - typically under about 0.5 V total in a healthy system (check specifications)",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Exactly battery voltage",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Ignored if the engine starts once",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "Start-stop vehicles need enhanced batteries (AGM/EFB) because they must handle:",
+          "moduleTitle": "Starter Stop Battery Technology",
+          "explanation": "Start-stop duty cycles a normal flooded battery too hard, shortening its life.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Only one start per day",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Frequent restarts and deeper cycling while supporting loads engine-off",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "No charging at all",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Higher tyre loads",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "A start-stop system will typically inhibit auto-stop when:",
+          "moduleTitle": "Start Stop Operations",
+          "explanation": "Inhibit conditions protect battery, emissions, comfort and safety.",
+          "options": [
+            {
+              "label": "A",
+              "body": "The cabin is at a comfortable temperature and battery is full in all cases",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Battery state is low, engine is cold, or a large electrical/HVAC load demands the engine",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The vehicle is stopped at lights with all conditions met",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The brake pedal is pressed normally",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "On restart, a start-stop system needs:",
+          "moduleTitle": "Start Stop Operations",
+          "explanation": "Reinforced starters, suitable batteries and control logic make restarts quick and reliable.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A conventional slow crank with no support",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A starter/battery and management system designed for fast, repeated restarts",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "The driver to use a hand crank",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "The alternator disconnected",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 16,
+      "slug": "electrical-modern-vehicle-networks",
+      "title": "Modern Vehicle Networks",
+      "moduleTitles": [
+        "Low Speed Bus",
+        "CAN High Speed Bus",
+        "Understanding Flex Ray",
+        "MOST Bus",
+        "LIN Bus"
+      ],
+      "questionCount": 10,
+      "questions": [
+        {
+          "position": 1,
+          "prompt": "Low-speed / fault-tolerant CAN is typically used for:",
+          "moduleTitle": "Low Speed Bus",
+          "explanation": "Low-speed CAN suits doors, seats, lighting and other body systems.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Engine torque control at the fastest rates",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Body and comfort functions where speed is less critical",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Only fibre-optic audio",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Starter motor current",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "prompt": "A feature of fault-tolerant low-speed CAN is that it can:",
+          "moduleTitle": "Low Speed Bus",
+          "explanation": "Fault-tolerant transceivers can operate single-wire in limited faults.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Never fault",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Continue communicating on one wire in some fault conditions",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Run without power",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Replace the battery",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "prompt": "High-speed CAN uses two wires, CAN-H and CAN-L, which carry:",
+          "moduleTitle": "CAN High Speed Bus",
+          "explanation": "Differential signalling rejects common-mode noise.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Identical 12 V signals",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Differential signals that are mirror images, improving noise immunity",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "One power and one ground only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Audio left and right",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "prompt": "With the system off, resistance between CAN-H and CAN-L on a healthy terminated high-speed bus is about:",
+          "moduleTitle": "CAN High Speed Bus",
+          "explanation": "Two 120-ohm terminators in parallel measure about 60 ohms.",
+          "options": [
+            {
+              "label": "A",
+              "body": "0 ohms",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "60 ohms",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "120 ohms only at one end measured alone on the bus",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Infinite in all cases",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "prompt": "If CAN-H is shorted to ground, the likely result is:",
+          "moduleTitle": "CAN High Speed Bus",
+          "explanation": "A short collapses differential signalling and modules cannot communicate reliably.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Normal communication",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Loss or severe disruption of communication on that bus",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Faster messages",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Better diagnostics",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "prompt": "FlexRay was designed for:",
+          "moduleTitle": "Understanding Flex Ray",
+          "explanation": "FlexRay provides time-determined, redundant communication for critical systems.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Low-cost single-wire body switches only",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Deterministic, high-speed, fault-tolerant communication for chassis/safety systems",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Fibre-optic entertainment only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Battery charging",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "prompt": "A key FlexRay concept is:",
+          "moduleTitle": "Understanding Flex Ray",
+          "explanation": "Time-triggered slots guarantee when critical messages are sent.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Messages sent only when a switch is pressed, with no timing",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Static time slots in a repeating cycle for guaranteed message timing",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Random voltage on one wire",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "No synchronisation between nodes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "prompt": "MOST bus is a network mainly used for:",
+          "moduleTitle": "MOST Bus",
+          "explanation": "MOST carries audio, video and infotainment data around a ring.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Engine injection timing",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Infotainment / multimedia data, often over optical fibre",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "ABS wheel speed only",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Starter control",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "prompt": "In a MOST ring, an open or broken fibre at one point will:",
+          "moduleTitle": "MOST Bus",
+          "explanation": "A ring break stops data circulating past the break.",
+          "options": [
+            {
+              "label": "A",
+              "body": "Have no effect",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "Interrupt the ring and can take down the infotainment network",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "Increase radio volume",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "Only affect one speaker wire",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "position": 10,
+          "prompt": "LIN bus is best described as:",
+          "moduleTitle": "LIN Bus",
+          "explanation": "LIN handles simple body slaves under a master module at low cost.",
+          "options": [
+            {
+              "label": "A",
+              "body": "A dual-wire high-speed safety network",
+              "isCorrect": false
+            },
+            {
+              "label": "B",
+              "body": "A low-cost single-wire sub-bus where a master controls slave nodes such as switches, motors and sensors",
+              "isCorrect": true
+            },
+            {
+              "label": "C",
+              "body": "An optical ring for video",
+              "isCorrect": false
+            },
+            {
+              "label": "D",
+              "body": "A starter cable network",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
