@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import { quizApi, type CourseSummary } from '../quiz/api';
+import { PassBadge } from '../quiz/PassBadge';
 import { useCatalog } from '../quiz/useCatalog';
 
 type State =
@@ -66,6 +67,7 @@ export function SubjectCoursesPage() {
               <Link to={`/courses/${c.slug}/quiz`}>{c.title}</Link>
             </div>
             <div className="course-score">
+              <PassBadge bestScore={c.bestScore} passScore={c.passScore} />
               {c.bestScore === null ? (
                 <span className="course-untaken">Not attempted</span>
               ) : (

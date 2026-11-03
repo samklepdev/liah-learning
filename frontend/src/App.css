@@ -116,6 +116,18 @@
 .course-passed { color: var(--success); }
 .course-below { color: var(--warning); }
 
+.course-badge {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--success);
+  background: color-mix(in srgb, var(--success) 14%, transparent);
+}
+
 .quiz-page { max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; text-align: left; }
 
 .quiz-header {

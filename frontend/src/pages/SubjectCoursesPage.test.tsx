@@ -68,4 +68,46 @@ describe('SubjectCoursesPage', () => {
     // A single attempt should not read "1 attempts".
     expect(score).not.toHaveTextContent('attempts');
   });
+
+  test('shows a Passed badge once the best score meets the target', async () => {
+    listCourses.mockResolvedValue({
+      courses: [makeCourse({ bestScore: 9, attemptCount: 1 })],
+    });
+    renderPage();
+
+    expect(await screen.findByText('Passed')).toBeInTheDocument();
+  });
+
+  test('shows no badge while the best score is below the target', async () => {
+    listCourses.mockResolvedValue({
+      courses: [makeCourse({ bestScore: 8, attemptCount: 3 })],
+    });
+    renderPage();
+
+    // Await something that does render, so a missing badge is a real absence
+    // rather than an assertion that ran before the fetch resolved.
+    await screen.findByText(/Best 8\/10/);
+    expect(screen.queryByText('Passed')).not.toBeInTheDocument();
+  });
+
+  test('shows no badge for a course that has never been attempted', async () => {
+    renderPage();
+
+    await screen.findByText('Not attempted');
+    expect(screen.queryByText('Passed')).not.toBeInTheDocument();
+  });
+
+  // Passing is not a lock: a passed quiz stays open for unlimited retakes.
+  test('keeps the quiz link available after a pass', async () => {
+    listCourses.mockResolvedValue({
+      courses: [makeCourse({ bestScore: 10, attemptCount: 1 })],
+    });
+    renderPage();
+
+    const link = await screen.findByRole('link', { name: 'Tire and Rim Essentials' });
+    expect(link).toHaveAttribute(
+      'href',
+      '/courses/chassis-tire-and-rim-essentials/quiz',
+    );
+  });
 });
