@@ -39,8 +39,40 @@ export async function findOpenAttempt(
 }
 
 /**
+ * Creates an open attempt, or returns null if this user already has one for
+ * this course. The conflict target matches the partial unique index, so
+ * Postgres — not application code — decides the winner when two requests
+ * insert at once.
+ */
+export async function insertOpenAttempt(
+  userId: string,
+  courseId: string,
+): Promise<AttemptRow | null> {
+  const [row] = await db
+    .insert(attempts)
+    .values({ userId, courseId })
+    // `where` — not `targetWhere`. onConflictDoNothing only accepts
+    // { target, where }, and silently drops targetWhere, which produces
+    // `ON CONFLICT (cols) DO NOTHING` with no predicate. Postgres then fails
+    // with "no unique or exclusion constraint matching the ON CONFLICT
+    // specification", because the index is partial.
+    .onConflictDoNothing({
+      target: [attempts.userId, attempts.courseId],
+      where: isNull(attempts.submittedAt),
+    })
+    .returning();
+
+  return row ?? null;
+}
+
+/**
  * Returns the caller's unfinished attempt if one exists, otherwise creates one.
- * A partial unique index guarantees at most one open attempt per user+course.
+ *
+ * Must not be a read-then-write: the quiz page fires this twice per mount
+ * (React StrictMode double-invokes effects), and two requests that both read
+ * "no open attempt" would both insert, tripping the one-open-attempt index and
+ * surfacing as a 500 on retake. The insert is therefore atomic, and losing the
+ * race just means re-reading whoever won.
  */
 export async function startOrResumeAttempt(
   userId: string,
@@ -49,8 +81,22 @@ export async function startOrResumeAttempt(
   const existing = await findOpenAttempt(userId, courseId);
   if (existing) return { attempt: existing, created: false };
 
-  const [row] = await db.insert(attempts).values({ userId, courseId }).returning();
-  return { attempt: row!, created: true };
+  const created = await insertOpenAttempt(userId, courseId);
+  if (created) return { attempt: created, created: true };
+
+  // Conflict: a concurrent request created it between our read and our insert.
+  const winner = await findOpenAttempt(userId, courseId);
+  if (winner) return { attempt: winner, created: false };
+
+  // Neither inserted nor findable. Only reachable if the row was submitted in
+  // the same instant, which would make a fresh attempt the right answer.
+  const retried = await insertOpenAttempt(userId, courseId);
+  if (retried) return { attempt: retried, created: true };
+
+  throw new Error(
+    `Could not open an attempt for user ${userId} on course ${courseId}: ` +
+      'insert conflicted but no open attempt exists.',
+  );
 }
 
 export async function findAttemptById(id: string): Promise<AttemptRow | null> {
