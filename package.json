@@ -18,7 +18,10 @@
     "db:generate": "npm run db:generate -w backend",
     "typecheck": "npm run typecheck -w backend && npm run build -w frontend",
     "quiz:parse": "npm run quiz:parse -w backend --",
-    "quiz:seed": "npm run quiz:seed -w backend"
+    "quiz:seed": "npm run quiz:seed -w backend",
+    "test": "npm run test -w backend && npm run test -w frontend",
+    "test:api": "npm run test -w backend",
+    "test:web": "npm run test -w frontend"
   },
   "keywords": [],
   "author": "Sam Klepper",
