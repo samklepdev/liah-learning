@@ -41,7 +41,9 @@ describe('AppRouter', () => {
     at('/no/such/page');
 
     expect(screen.getByText('404')).toBeInTheDocument();
-    expect(screen.queryByRole('heading', { name: 'Sign in' })).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole('heading', { name: 'Sign in to your account' }),
+    ).not.toBeInTheDocument();
   });
 
   test('a real route signed out still asks for sign-in', () => {
@@ -55,7 +57,7 @@ describe('AppRouter', () => {
 
     at('/courses');
 
-    expect(screen.getByRole('heading', { name: 'Sign in' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Sign in to your account' })).toBeInTheDocument();
     expect(screen.queryByText('404')).not.toBeInTheDocument();
   });
 });
