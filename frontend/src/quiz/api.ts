@@ -56,6 +56,12 @@ export type GradedQuestion = {
   options: GradedOption[];
 };
 
+/** The caller's record on one course. bestScore is null when never submitted. */
+export type CourseHistory = {
+  bestScore: number | null;
+  attemptCount: number;
+};
+
 export type GradedAttempt = {
   id: string;
   courseSlug: string;
@@ -101,7 +107,8 @@ export const quizApi = {
   listCourses: (subject: string) =>
     request<{ courses: CourseSummary[] }>(`/courses?subject=${encodeURIComponent(subject)}`),
 
-  getQuiz: (slug: string) => request<{ quiz: Quiz }>(`/courses/${slug}/quiz`),
+  getQuiz: (slug: string) =>
+    request<{ quiz: Quiz; history: CourseHistory }>(`/courses/${slug}/quiz`),
 
   startAttempt: (slug: string) =>
     request<{ attempt: { id: string } }>(`/courses/${slug}/attempts`, { method: 'POST' }),

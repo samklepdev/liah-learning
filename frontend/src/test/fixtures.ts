@@ -1,4 +1,5 @@
 import type {
+  CourseHistory,
   CourseSummary,
   GradedAttempt,
   GradedQuestion,
@@ -43,6 +44,12 @@ export function makeCourse(overrides: Partial<CourseSummary> = {}): CourseSummar
     attemptCount: 0,
     ...overrides,
   };
+}
+
+export function makeCourseHistory(
+  overrides: Partial<CourseHistory> = {},
+): CourseHistory {
+  return { bestScore: null, attemptCount: 0, ...overrides };
 }
 
 /**

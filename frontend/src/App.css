@@ -135,6 +135,17 @@
   font-size: 0.8rem; opacity: 0.75; margin-bottom: 0.5rem;
 }
 
+.quiz-history {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--accent-bg);
+  font-size: 0.8rem;
+}
+
 .progress-track {
   height: 6px; border-radius: 3px;
   background: var(--border); margin-bottom: 1.5rem; overflow: hidden;

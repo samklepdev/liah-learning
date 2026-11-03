@@ -2,7 +2,7 @@ import { describe, expect, test, vi, beforeEach } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router';
-import { makeQuiz } from '../test/fixtures';
+import { makeCourseHistory, makeQuiz } from '../test/fixtures';
 import { QuizPage } from './QuizPage';
 
 const quiz = makeQuiz();
@@ -29,7 +29,7 @@ vi.mock('../quiz/api', async (importOriginal) => {
 });
 
 beforeEach(() => {
-  getQuiz.mockResolvedValue({ quiz });
+  getQuiz.mockResolvedValue({ quiz, history: makeCourseHistory() });
   startAttempt.mockResolvedValue({ attempt: { id: 'attempt-1' } });
   getAttempt.mockResolvedValue({
     attempt: {
@@ -176,5 +176,34 @@ describe('QuizPage', () => {
     );
     expect(screen.queryByText('RESULTS PAGE')).not.toBeInTheDocument();
     expect(screen.getByText('Review before submitting')).toBeInTheDocument();
+  });
+
+  test('shows no history banner on a first attempt', async () => {
+    renderPage();
+    await screen.findByText('Question 1 of 3');
+
+    expect(screen.queryByText(/Best /)).not.toBeInTheDocument();
+  });
+
+  test('shows the best score and badge when retaking a passed quiz', async () => {
+    getQuiz.mockResolvedValue({
+      quiz,
+      history: makeCourseHistory({ bestScore: 3, attemptCount: 2 }),
+    });
+    renderPage();
+
+    expect(await screen.findByText('Passed')).toBeInTheDocument();
+    expect(screen.getByText('Best 3/3 · 2 attempts')).toBeInTheDocument();
+  });
+
+  test('shows the best score without a badge when the quiz is not yet passed', async () => {
+    getQuiz.mockResolvedValue({
+      quiz,
+      history: makeCourseHistory({ bestScore: 2, attemptCount: 1 }),
+    });
+    renderPage();
+
+    expect(await screen.findByText('Best 2/3 · 1 attempt')).toBeInTheDocument();
+    expect(screen.queryByText('Passed')).not.toBeInTheDocument();
   });
 });

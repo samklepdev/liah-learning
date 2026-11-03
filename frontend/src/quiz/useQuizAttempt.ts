@@ -1,5 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
-import { quizApi, type GradedAttempt, type OpenAttempt, type Quiz } from './api';
+import {
+  quizApi,
+  type CourseHistory,
+  type GradedAttempt,
+  type OpenAttempt,
+  type Quiz,
+} from './api';
 
 /**
  * What the loader produced, tagged with the slug it belongs to. Keying on slug
@@ -13,6 +19,7 @@ type LoadState =
       kind: 'ready';
       slug: string;
       quiz: Quiz;
+      history: CourseHistory;
       attemptId: string;
       answers: Record<string, string>;
       /** Question index, or `quiz.questions.length` for the review step. */
@@ -22,6 +29,7 @@ type LoadState =
 
 export type QuizAttemptState = {
   quiz: Quiz | null;
+  history: CourseHistory | null;
   attemptId: string | null;
   loading: boolean;
   /** Fatal: the quiz could not be loaded at all. */
@@ -59,7 +67,7 @@ export function useQuizAttempt(slug: string): QuizAttemptState {
 
     void (async () => {
       try {
-        const [{ quiz }, { attempt }] = await Promise.all([
+        const [{ quiz, history }, { attempt }] = await Promise.all([
           quizApi.getQuiz(slug),
           quizApi.startAttempt(slug),
         ]);
@@ -72,6 +80,7 @@ export function useQuizAttempt(slug: string): QuizAttemptState {
           kind: 'ready',
           slug,
           quiz,
+          history,
           attemptId: attempt.id,
           answers:
             'answers' in existing
@@ -158,6 +167,7 @@ export function useQuizAttempt(slug: string): QuizAttemptState {
 
   return {
     quiz: current?.kind === 'ready' ? current.quiz : null,
+    history: current?.kind === 'ready' ? current.history : null,
     attemptId,
     loading,
     error: current?.kind === 'error' ? current.message : null,
