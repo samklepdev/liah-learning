@@ -4,7 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <title>LIAH Learning</title>
+    <!--
+      Resolve the theme before first paint. React mounts too late: without
+      this, a dark-mode visitor sees a white flash on every load. Kept inline
+      and tiny on purpose — it must run before the stylesheet paints.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('liah.theme');
+          var dark =
+            stored === 'dark' ||
+            (stored !== 'light' &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        } catch (e) {
+          // Storage blocked (private mode, partitioned context) — fall back to light.
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
