@@ -73,3 +73,50 @@ test('GET quiz 404s for an unknown course', async () => {
   });
   assert.equal(res.status, 404);
 });
+
+/** The quiz payload's per-user history block. */
+async function fetchHistory(sessionCookie: string) {
+  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/quiz`, {
+    headers: { cookie: sessionCookie },
+  });
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { history: Record<string, unknown> };
+  return body.history;
+}
+
+/** Starts an attempt and returns its id. Answers nothing, so it scores zero. */
+async function startAttempt(sessionCookie: string): Promise<string> {
+  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+    method: 'POST',
+    headers: { cookie: sessionCookie },
+  });
+  const { attempt } = (await res.json()) as { attempt: { id: string } };
+  return attempt.id;
+}
+
+test('GET quiz reports no history before the first attempt', async () => {
+  assert.deepEqual(await fetchHistory(cookie), { bestScore: null, attemptCount: 0 });
+});
+
+test('GET quiz counts a submitted attempt in the history', async () => {
+  const id = await startAttempt(cookie);
+  const res = await fetch(`${baseUrl}/api/attempts/${id}/submit`, {
+    method: 'POST',
+    headers: { cookie },
+  });
+  assert.equal(res.status, 200);
+
+  // Nothing was answered, so the score is a genuine zero — distinct from the
+  // null above, which means "never attempted".
+  assert.deepEqual(await fetchHistory(cookie), { bestScore: 0, attemptCount: 1 });
+});
+
+test('GET quiz does not count an attempt still in progress', async () => {
+  await startAttempt(cookie);
+  assert.deepEqual(await fetchHistory(cookie), { bestScore: 0, attemptCount: 1 });
+});
+
+test("GET quiz does not leak another user's history", async () => {
+  const { cookie: otherCookie } = await registerTestUser(baseUrl, 'quiz-other@example.com');
+  assert.deepEqual(await fetchHistory(otherCookie), { bestScore: null, attemptCount: 0 });
+});

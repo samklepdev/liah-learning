@@ -210,6 +210,35 @@ export async function findBestScoreBefore(
   return row?.best === null || row?.best === undefined ? null : Number(row.best);
 }
 
+/**
+ * The caller's record on one course: best submitted score and how many
+ * submissions. Submitted attempts only, matching listCoursesBySubject — an
+ * attempt still open is not a result yet and must not inflate the count.
+ *
+ * bestScore is null for a course never submitted, which callers must not
+ * conflate with a score of zero.
+ */
+export async function findCourseHistory(
+  userId: string,
+  courseId: string,
+): Promise<{ bestScore: number | null; attemptCount: number }> {
+  const [row] = await db
+    .select({ best: max(attempts.score), submitted: count(attempts.id) })
+    .from(attempts)
+    .where(
+      and(
+        eq(attempts.userId, userId),
+        eq(attempts.courseId, courseId),
+        isNotNull(attempts.submittedAt),
+      ),
+    );
+
+  return {
+    bestScore: row?.best === null || row?.best === undefined ? null : Number(row.best),
+    attemptCount: Number(row?.submitted ?? 0),
+  };
+}
+
 export async function findGradedAttempt(attemptId: string): Promise<GradedAttempt | null> {
   const attempt = await findAttemptById(attemptId);
   if (!attempt || attempt.submittedAt === null) return null;
