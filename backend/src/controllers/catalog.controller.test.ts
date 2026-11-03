@@ -60,3 +60,13 @@ test('GET /api/courses 404s for an unknown subject', async () => {
   const res = await fetch(`${baseUrl}/api/courses?subject=nope`);
   assert.equal(res.status, 404);
 });
+
+test('an unknown /api route answers with JSON, not the SPA fallback', async () => {
+  // The notFound handler is scoped to /api so the SPA fallback can own every
+  // other path. If that scoping is lost, unknown API routes start returning
+  // index.html and the frontend's error handling breaks silently.
+  const res = await fetch(`${baseUrl}/api/nope`);
+  assert.equal(res.status, 404);
+  assert.match(res.headers.get('content-type') ?? '', /application\/json/);
+  assert.deepEqual(await res.json(), { error: 'Not found' });
+});
