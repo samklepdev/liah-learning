@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
 import { CoursesPage } from './pages/CoursesPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 import { QuizPage } from './pages/QuizPage';
 import { ResultsPage } from './pages/ResultsPage';
 
@@ -42,6 +43,7 @@ export function AppRouter() {
             </RequireAuth>
           }
         />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

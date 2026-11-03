@@ -226,3 +226,47 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   padding: 0.55rem 1rem; border-radius: 0.5rem;
   border: 1px solid currentColor; text-decoration: none; color: inherit;
 }
+
+.notfound-page {
+  max-width: 32rem;
+  margin: 5rem auto;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+.notfound-code {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  opacity: 0.35;
+  font-variant-numeric: tabular-nums;
+}
+
+.notfound-page h1 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.notfound-path {
+  font-size: 0.875rem;
+  opacity: 0.75;
+  margin: 0 0 1.75rem;
+  overflow-wrap: anywhere;
+}
+
+.notfound-path code {
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.3rem;
+  background: rgb(128 128 128 / 0.18);
+  font-size: 0.85em;
+}
+
+.notfound-page .primary {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  color: inherit;
+}
