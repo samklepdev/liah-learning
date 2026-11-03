@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import { quizApi, type CourseSummary } from '../quiz/api';
 import { PassBadge } from '../quiz/PassBadge';
+import { hasPassed } from '../quiz/passed';
 import { useCatalog } from '../quiz/useCatalog';
 
 type State =
@@ -72,7 +73,9 @@ export function SubjectCoursesPage() {
                 <span className="course-untaken">Not attempted</span>
               ) : (
                 <span
-                  className={c.bestScore >= c.passScore ? 'course-passed' : 'course-below'}
+                  className={
+                    hasPassed(c.bestScore, c.passScore) ? 'course-passed' : 'course-below'
+                  }
                 >
                   Best {c.bestScore}/{c.questionCount}
                   {c.attemptCount > 1 ? ` · ${c.attemptCount} attempts` : ''}

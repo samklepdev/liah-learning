@@ -1,3 +1,5 @@
+import { hasPassed } from './passed';
+
 /**
  * A pass marker for a course row. Renders nothing unless the best score meets
  * the target, so callers never branch on the rule themselves.
@@ -13,7 +15,7 @@ export function PassBadge({
   bestScore: number | null;
   passScore: number;
 }) {
-  if (bestScore === null || bestScore < passScore) return null;
+  if (!hasPassed(bestScore, passScore)) return null;
 
   return (
     <span className="course-badge">
