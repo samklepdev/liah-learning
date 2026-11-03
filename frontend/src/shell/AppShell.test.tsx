@@ -88,6 +88,43 @@ describe('AppShell — top navbar', () => {
   });
 });
 
+describe('AppShell — theme toggle', () => {
+  test('cycles light, dark, system and applies it to the document', async () => {
+    renderAt();
+    await nav();
+
+    // Starts on system, since nothing is stored.
+    const button = screen.getByRole('button', { name: /^Theme: System/ });
+    expect(document.documentElement.dataset.theme).toBe('light');
+
+    await userEvent.click(button);
+    expect(screen.getByRole('button', { name: /^Theme: Light/ })).toBeInTheDocument();
+    expect(document.documentElement.dataset.theme).toBe('light');
+
+    await userEvent.click(screen.getByRole('button', { name: /^Theme: Light/ }));
+    expect(screen.getByRole('button', { name: /^Theme: Dark/ })).toBeInTheDocument();
+    expect(document.documentElement.dataset.theme).toBe('dark');
+
+    await userEvent.click(screen.getByRole('button', { name: /^Theme: Dark/ }));
+    expect(screen.getByRole('button', { name: /^Theme: System/ })).toBeInTheDocument();
+  });
+
+  test('a chosen theme survives a remount', async () => {
+    const first = renderAt();
+    await nav();
+    await userEvent.click(screen.getByRole('button', { name: /^Theme: System/ }));
+    await userEvent.click(screen.getByRole('button', { name: /^Theme: Light/ }));
+    expect(document.documentElement.dataset.theme).toBe('dark');
+    first.unmount();
+
+    renderAt();
+    expect(
+      await screen.findByRole('button', { name: /^Theme: Dark/ }),
+    ).toBeInTheDocument();
+    expect(document.documentElement.dataset.theme).toBe('dark');
+  });
+});
+
 describe('AppShell — collapse', () => {
   test('starts open and the toggle collapses it', async () => {
     renderAt();

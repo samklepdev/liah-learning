@@ -1,9 +1,37 @@
 import { Link, Outlet, useLocation } from 'react-router';
 import { useAuth } from '../auth/useAuth';
 import type { CatalogContext } from '../quiz/useCatalog';
+import { AutoThemeIcon, MoonIcon, SunIcon } from './icons';
 import { SidebarNav } from './SidebarNav';
 import { useSidebar } from './useSidebar';
 import { useSubjectNav } from './useSubjectNav';
+import { useTheme, type ThemePref } from './useTheme';
+
+const THEME_LABEL: Record<ThemePref, string> = {
+  light: 'Light',
+  dark: 'Dark',
+  system: 'System',
+};
+
+function ThemeToggle() {
+  const { pref, cycle } = useTheme();
+  const Icon = pref === 'light' ? SunIcon : pref === 'dark' ? MoonIcon : AutoThemeIcon;
+
+  return (
+    <button
+      type="button"
+      className="theme-toggle"
+      onClick={cycle}
+      // The accessible name states the current setting and what comes next,
+      // because the icon alone cannot convey three states.
+      aria-label={`Theme: ${THEME_LABEL[pref]}. Change theme`}
+      title={`Theme: ${THEME_LABEL[pref]}`}
+    >
+      <Icon className="theme-icon" />
+      <span className="theme-label">{THEME_LABEL[pref]}</span>
+    </button>
+  );
+}
 
 /**
  * Persistent chrome for every signed-in route: a top navbar, a collapsible
@@ -51,6 +79,7 @@ export function AppShell() {
         {/* The signed-in identity lives in the sidebar footer, so the navbar
             carries only the action. */}
         <div className="topnav-right">
+          <ThemeToggle />
           {user && (
             <button type="button" className="topnav-signout" onClick={() => void logout()}>
               Sign out

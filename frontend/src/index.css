@@ -1,3 +1,46 @@
+/* Poppins, self-hosted — the typeface liahwellnesscenter.com uses. Latin
+   subset only, woff2 only (~40KB for all five faces). Licence in
+   ./assets/fonts/OFL.txt. Vite fingerprints these URLs at build time.
+
+   `font-display: swap` renders in the fallback immediately and swaps when
+   Poppins arrives, so text is never invisible while the font loads. */
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/poppins-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/poppins-400-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./assets/fonts/poppins-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./assets/fonts/poppins-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./assets/fonts/poppins-700.woff2') format('woff2');
+}
+
 /* Palette taken from liahwellnesscenter.com:
    #AD6243 terracotta (links, buttons, icons), #4C3128 deep brown (headings),
    #FFF6F0 warm cream (tinted surfaces), #E3E3E3 borders, #5F5F5F body text. */
@@ -21,12 +64,13 @@
   --shadow:
     rgba(76, 49, 40, 0.1) 0 10px 15px -3px, rgba(76, 49, 40, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Poppins', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Poppins', system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
+  /* Poppins runs small and wide for its point size, so 16px reads closer to
+     the scaffold's 18px system font, and it needs no extra letter-spacing. */
+  font: 16px/150% var(--sans);
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
@@ -34,16 +78,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
 }
 
 /* Dark mode derived from the same hues: the brown becomes the ground, and the
-   terracotta is lifted to #d08a66 so it still carries contrast on it. */
-@media (prefers-color-scheme: dark) {
-  :root {
+   terracotta is lifted to #d08a66 so it still carries contrast on it.
+
+   Keyed off data-theme rather than a prefers-color-scheme query: an inline
+   script in index.html resolves the OS setting (or a stored preference) to a
+   concrete light/dark value before first paint, so a manual choice can
+   override the OS and dark users get no flash of light. */
+:root[data-theme='dark'] {
     --text: #c6b8b1;
     --text-h: #f7f0eb;
     --bg: #1c1512;
@@ -61,12 +105,12 @@
     --danger-bg: rgba(239, 122, 114, 0.14);
     --social-bg: rgba(36, 26, 22, 0.6);
     --shadow:
-      rgba(0, 0, 0, 0.45) 0 10px 15px -3px, rgba(0, 0, 0, 0.3) 0 4px 6px -2px;
-  }
+    rgba(0, 0, 0, 0.45) 0 10px 15px -3px, rgba(0, 0, 0, 0.3) 0 4px 6px -2px;
+  color-scheme: dark;
+}
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+:root[data-theme='light'] {
+  color-scheme: light;
 }
 
 /* Full width, no frame. The 1126px centred column with border-inline and

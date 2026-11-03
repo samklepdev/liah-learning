@@ -475,3 +475,28 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
     background: rgb(0 0 0 / 0.45);
   }
 }
+
+/* Theme toggle */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.6rem;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 0.45rem;
+}
+.theme-toggle:hover { background: var(--accent-bg); border-color: var(--accent-border); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.theme-icon { width: 1.05rem; height: 1.05rem; flex: 0 0 auto; opacity: 0.85; }
+
+@media (max-width: 30rem) {
+  /* Keep the icon, drop the word, so the navbar still fits. */
+  .theme-label { display: none; }
+}
