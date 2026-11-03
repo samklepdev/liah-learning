@@ -1,52 +1,31 @@
-import { useEffect, useState } from 'react';
-import { Link, Outlet } from 'react-router';
+import { Link, Outlet, useLocation } from 'react-router';
 import { useAuth } from '../auth/useAuth';
-import { quizApi, type SubjectSummary } from '../quiz/api';
 import type { CatalogContext } from '../quiz/useCatalog';
 import { SidebarNav } from './SidebarNav';
 import { useSidebar } from './useSidebar';
-
-type State =
-  | { kind: 'ready'; subjects: SubjectSummary[] }
-  | { kind: 'error'; message: string };
+import { useSubjectNav } from './useSubjectNav';
 
 /**
- * Persistent chrome for every signed-in page: a collapsible sidebar of
- * subjects, a top bar, and the routed content. Subjects are fetched once here
- * — navigating between subjects or into a quiz must not refetch the nav.
+ * Persistent chrome for every signed-in route: a top navbar, a collapsible
+ * sidebar of subjects, and the routed content. Subjects are fetched once here,
+ * so moving between subjects or into a quiz never refetches the nav.
  */
 export function AppShell() {
   const { user, logout } = useAuth();
+  const { pathname } = useLocation();
   const { collapsed, toggle, close } = useSidebar();
-  const [state, setState] = useState<State | null>(null);
 
-  useEffect(() => {
-    let cancelled = false;
+  // Read from the path rather than useParams: this is a pathless layout route,
+  // so the child route's :subjectSlug is not in its own params.
+  const subjectSlug = pathname.startsWith('/subjects/')
+    ? pathname.split('/')[2] || undefined
+    : undefined;
 
-    void (async () => {
-      try {
-        const { subjects } = await quizApi.listSubjects();
-        if (!cancelled) setState({ kind: 'ready', subjects });
-      } catch (err) {
-        if (!cancelled) {
-          setState({
-            kind: 'error',
-            message: err instanceof Error ? err.message : 'Could not load subjects',
-          });
-        }
-      }
-    })();
-
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  const subjects = state?.kind === 'ready' ? state.subjects : [];
+  const nav = useSubjectNav(subjectSlug);
 
   return (
     <div className={collapsed ? 'shell collapsed' : 'shell'}>
-      <header className="shell-topbar">
+      <header className="topnav">
         <button
           type="button"
           className="sidebar-toggle"
@@ -55,17 +34,25 @@ export function AppShell() {
           aria-controls="app-sidebar"
           aria-label={collapsed ? 'Open sidebar' : 'Close sidebar'}
         >
-          <span aria-hidden="true">{collapsed ? '☰' : '✕'}</span>
+          <span className="toggle-bars" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </span>
         </button>
 
-        <Link to="/subjects" className="shell-brand">
+        <Link to="/subjects" className="topnav-brand">
+          <span className="topnav-mark" aria-hidden="true">
+            L
+          </span>
           LIAH Learning
         </Link>
 
-        <div className="shell-user">
-          {user && <span className="shell-email">{user.email}</span>}
+        {/* The signed-in identity lives in the sidebar footer, so the navbar
+            carries only the action. */}
+        <div className="topnav-right">
           {user && (
-            <button type="button" onClick={() => void logout()}>
+            <button type="button" className="topnav-signout" onClick={() => void logout()}>
               Sign out
             </button>
           )}
@@ -73,27 +60,15 @@ export function AppShell() {
       </header>
 
       <div className="shell-body">
-        {/* Kept mounted while collapsed so the open/close transition can run and
-            focus order stays stable; hidden from assistive tech when closed. */}
         <aside id="app-sidebar" className="shell-sidebar" hidden={collapsed}>
-          {state?.kind === 'error' ? (
-            <p role="alert" className="sidebar-empty">
-              {state.message}
-            </p>
-          ) : (
-            <SidebarNav subjects={subjects} onNavigate={close} />
-          )}
+          <SidebarNav nav={nav} userEmail={user?.email} onNavigate={close} />
         </aside>
 
-        {/* Tapping the dimmed area closes the drawer on narrow screens. */}
+        {/* Only visible on narrow screens, where the sidebar overlays content. */}
         {!collapsed && <div className="shell-scrim" onClick={close} aria-hidden="true" />}
 
         <main className="shell-main">
-          {state === null ? (
-            <div className="auth-loading">Loading…</div>
-          ) : (
-            <Outlet context={{ subjects } satisfies CatalogContext} />
-          )}
+          <Outlet context={{ subjects: nav.subjects } satisfies CatalogContext} />
         </main>
       </div>
     </div>

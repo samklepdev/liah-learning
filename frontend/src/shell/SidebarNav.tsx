@@ -1,39 +1,126 @@
-import { NavLink } from 'react-router';
-import type { SubjectSummary } from '../quiz/api';
+import { useId } from 'react';
+import { NavLink, useLocation } from 'react-router';
+import { BookIcon, ChevronRightIcon, SubjectIcon } from './icons';
+import type { SubjectNavState } from './useSubjectNav';
 
 /**
- * The sidebar's contents. `onNavigate` lets the shell close the drawer after a
- * selection on narrow screens, where the sidebar overlays the content.
+ * One subject: a disclosure button whose panel lists that subject's quizzes.
+ * Hand-rolled rather than a component library — a real <button> already gives
+ * Enter/Space activation and focus handling, so what's left is aria-expanded
+ * and aria-controls pointing at the panel.
  */
-export function SidebarNav({
-  subjects,
+function SubjectGroup({
+  slug,
+  title,
+  courseCount,
+  nav,
+  isCurrent,
   onNavigate,
 }: {
-  subjects: SubjectSummary[];
+  slug: string;
+  title: string;
+  courseCount: number;
+  nav: SubjectNavState;
+  isCurrent: boolean;
   onNavigate?: () => void;
 }) {
-  const linkClass = ({ isActive }: { isActive: boolean }) =>
-    isActive ? 'subject-link active' : 'subject-link';
+  const panelId = useId();
+  const open = nav.isOpen(slug);
+  const quizzes = nav.courses[slug];
+
+  return (
+    <li className="nav-group">
+      <button
+        type="button"
+        className={isCurrent ? 'nav-item current' : 'nav-item'}
+        aria-expanded={open}
+        aria-controls={panelId}
+        onClick={() => nav.toggle(slug)}
+      >
+        <SubjectIcon slug={slug} className="nav-icon" />
+        <span className="nav-label">{title}</span>
+        <span className="nav-count">{courseCount}</span>
+        <ChevronRightIcon className={open ? 'nav-chevron open' : 'nav-chevron'} />
+      </button>
+
+      <ul id={panelId} className="nav-panel" hidden={!open}>
+        {quizzes === undefined && <li className="nav-panel-note">Loading…</li>}
+
+        {quizzes?.length === 0 && <li className="nav-panel-note">No quizzes yet</li>}
+
+        {quizzes?.map((c) => (
+          <li key={c.id}>
+            <NavLink
+              to={`/courses/${c.slug}/quiz`}
+              onClick={onNavigate}
+              className={({ isActive }: { isActive: boolean }) =>
+                isActive ? 'nav-sublink active' : 'nav-sublink'
+              }
+            >
+              <span className="nav-sublink-pos">{c.position}</span>
+              <span>{c.title}</span>
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </li>
+  );
+}
+
+export function SidebarNav({
+  nav,
+  userEmail,
+  onNavigate,
+}: {
+  nav: SubjectNavState;
+  userEmail?: string;
+  onNavigate?: () => void;
+}) {
+  const { pathname } = useLocation();
+
+  const itemClass = ({ isActive }: { isActive: boolean }) =>
+    isActive ? 'nav-item current' : 'nav-item';
 
   return (
     <nav className="sidebar-nav" aria-label="Subjects">
-      <p className="label">Subjects</p>
+      <ul className="nav-list">
+        <li>
+          <NavLink to="/subjects" onClick={onNavigate} end className={itemClass}>
+            <BookIcon className="nav-icon" />
+            <span className="nav-label">All subjects</span>
+          </NavLink>
+        </li>
 
-      {subjects.length === 0 ? (
-        <p className="sidebar-empty">No subjects imported yet.</p>
-      ) : (
-        <ul>
-          {subjects.map((s) => (
-            <li key={s.id}>
-              <NavLink to={`/subjects/${s.slug}`} className={linkClass} onClick={onNavigate}>
-                <span className="subject-title">{s.title}</span>
-                <span className="subject-count" title={`${s.courseCount} quizzes`}>
-                  {s.courseCount}
-                </span>
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        {nav.error && (
+          <li role="alert" className="nav-panel-note">
+            {nav.error}
+          </li>
+        )}
+
+        {!nav.error && !nav.loading && nav.subjects.length === 0 && (
+          <li className="nav-panel-note">No subjects imported yet</li>
+        )}
+
+        {nav.subjects.map((s) => (
+          <SubjectGroup
+            key={s.id}
+            slug={s.slug}
+            title={s.title}
+            courseCount={s.courseCount}
+            nav={nav}
+            isCurrent={pathname.startsWith(`/subjects/${s.slug}`)}
+            onNavigate={onNavigate}
+          />
+        ))}
+      </ul>
+
+      {userEmail && (
+        <div className="sidebar-footer">
+          <span className="sidebar-avatar" aria-hidden="true">
+            {userEmail.charAt(0).toUpperCase()}
+          </span>
+          <span className="sidebar-footer-email">{userEmail}</span>
+        </div>
       )}
     </nav>
   );
