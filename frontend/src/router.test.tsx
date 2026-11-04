@@ -13,7 +13,7 @@ function at(path: string) {
 
 beforeEach(() => {
   useAuth.mockReturnValue({
-    user: { id: 'u1', email: 'a@b.com', createdAt: '2026-11-02T12:00:00.000Z' },
+    user: { id: 'u1', email: 'a@b.com', role: 'user', createdAt: '2026-11-02T12:00:00.000Z' },
     loading: false,
     login: vi.fn(),
     register: vi.fn(),
@@ -59,5 +59,19 @@ describe('AppRouter', () => {
 
     expect(screen.getByRole('heading', { name: 'Sign in to your account' })).toBeInTheDocument();
     expect(screen.queryByText('404')).not.toBeInTheDocument();
+  });
+
+  test('a non-admin hitting /admin/users sees the 404 page, not the users table', () => {
+    useAuth.mockReturnValue({
+      user: { id: 'u1', email: 'a@b.com', role: 'user', createdAt: '2026-11-02T12:00:00.000Z' },
+      loading: false,
+      login: vi.fn(),
+      register: vi.fn(),
+      logout: vi.fn(),
+    });
+
+    at('/admin/users');
+
+    expect(screen.getByText('404')).toBeInTheDocument();
   });
 });

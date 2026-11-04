@@ -79,10 +79,11 @@ describe('AppShell — top navbar', () => {
       'href',
       '/subjects',
     );
-    // Identity shows once, in the sidebar footer — not duplicated in the navbar.
     const sidebar = await nav();
     expect(within(sidebar).getByText('tech@example.com')).toBeInTheDocument();
 
+    // Sign out lives inside the account menu, named by the user's email.
+    await userEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
     await userEvent.click(screen.getByRole('button', { name: 'Sign out' }));
     expect(logout).toHaveBeenCalled();
   });

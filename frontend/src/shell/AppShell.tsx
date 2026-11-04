@@ -1,6 +1,7 @@
 import { Link, Outlet, useLocation } from 'react-router';
 import { useAuth } from '../auth/useAuth';
 import type { CatalogContext } from '../quiz/useCatalog';
+import { AccountMenu } from './AccountMenu';
 import { AutoThemeIcon, MoonIcon, SunIcon } from './icons';
 import { SidebarNav } from './SidebarNav';
 import { useSidebar } from './useSidebar';
@@ -76,14 +77,10 @@ export function AppShell() {
           LIAH Learning
         </Link>
 
-        {/* The signed-in identity lives in the sidebar footer, so the navbar
-            carries only the action. */}
         <div className="topnav-right">
           <ThemeToggle />
           {user && (
-            <button type="button" className="topnav-signout" onClick={() => void logout()}>
-              Sign out
-            </button>
+            <AccountMenu email={user.email} role={user.role} onLogout={() => void logout()} />
           )}
         </div>
       </header>

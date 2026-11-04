@@ -2,6 +2,8 @@ import { type ReactNode } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
+import { AdminImportPage } from './pages/admin/AdminImportPage';
+import { AdminUsersPage } from './pages/admin/AdminUsersPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { QuizPage } from './pages/QuizPage';
 import { ResultsPage } from './pages/ResultsPage';
@@ -12,6 +14,18 @@ function RequireAuth({ children }: { children: ReactNode }) {
   const { user, loading } = useAuth();
   if (loading) return <div className="auth-loading">Loading…</div>;
   if (!user) return <LoginForm />;
+  return <>{children}</>;
+}
+
+/**
+ * Renders the 404 page, not a 403, for a signed-in non-admin — a non-admin
+ * should not be able to tell an admin route exists. Signed-out also 404s
+ * rather than prompting sign-in, for the same reason.
+ */
+export function RequireAdmin({ children }: { children: ReactNode }) {
+  const { user, loading } = useAuth();
+  if (loading) return <div className="auth-loading">Loading…</div>;
+  if (!user || user.role !== 'admin') return <NotFoundPage />;
   return <>{children}</>;
 }
 
@@ -37,6 +51,22 @@ export function AppRouter() {
           <Route path="/subjects/:subjectSlug" element={<SubjectCoursesPage />} />
           <Route path="/courses/:slug/quiz" element={<QuizPage />} />
           <Route path="/courses/:slug/results/:attemptId" element={<ResultsPage />} />
+          <Route
+            path="/admin/users"
+            element={
+              <RequireAdmin>
+                <AdminUsersPage />
+              </RequireAdmin>
+            }
+          />
+          <Route
+            path="/admin/import"
+            element={
+              <RequireAdmin>
+                <AdminImportPage />
+              </RequireAdmin>
+            }
+          />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />

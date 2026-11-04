@@ -82,9 +82,8 @@ export async function login(req: Request, res: Response): Promise<void> {
 
   // Fresh session on every login — prevents session fixation.
   await startSession(res, existing.id);
-  res.json({
-    user: { id: existing.id, email: existing.email, createdAt: existing.createdAt },
-  });
+  const { passwordHash: _passwordHash, ...user } = existing;
+  res.json({ user });
 }
 
 /**

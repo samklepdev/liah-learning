@@ -16,6 +16,9 @@ export const users = pgTable('users', {
   /** Always stored lowercased and trimmed; see normalizeEmail(). */
   email: text('email').notNull().unique(),
   passwordHash: text('password_hash').notNull(),
+  /** 'user' or 'admin'. Promoted via the admin users page; the first admin is
+   *  set directly in the database. */
+  role: text('role').$type<'user' | 'admin'>().notNull().default('user'),
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
 });
 

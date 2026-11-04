@@ -1,6 +1,7 @@
 export type User = {
   id: string;
   email: string;
+  role: 'user' | 'admin';
   createdAt: string;
 };
 
@@ -21,13 +22,19 @@ export class ApiError extends Error {
   }
 }
 
-async function request<T>(path: string, init?: RequestInit): Promise<T> {
+export async function request<T>(path: string, init?: RequestInit): Promise<T> {
+  // A FormData body (file uploads) must not get a JSON Content-Type — the
+  // browser needs to set its own multipart boundary.
+  const isFormData = init?.body instanceof FormData;
+
   const res = await fetch(`/api${path}`, {
     ...init,
     // Same-origin in dev thanks to the Vite proxy, but stated explicitly so the
     // session cookie still travels if the API is ever moved to its own origin.
     credentials: 'include',
-    headers: { 'Content-Type': 'application/json', ...init?.headers },
+    headers: isFormData
+      ? init?.headers
+      : { 'Content-Type': 'application/json', ...init?.headers },
   });
 
   if (res.status === 204) return undefined as T;
