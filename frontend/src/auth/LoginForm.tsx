@@ -75,7 +75,7 @@ export function LoginForm() {
             </p>
           )}
 
-          <button type="submit" className="auth-submit" disabled={submitting}>
+          <button type="submit" className="auth-submit" disabled={submitting} aria-busy={submitting}>
             {submitting ? 'Working…' : mode === 'login' ? 'Sign in' : 'Sign up'}
           </button>
         </form>

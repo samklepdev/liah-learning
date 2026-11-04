@@ -77,7 +77,12 @@ export function AdminImportPage() {
           </p>
         )}
 
-        <button type="submit" className="auth-submit" disabled={busy || !file || !subjectTitle.trim()}>
+        <button
+          type="submit"
+          className="auth-submit"
+          disabled={busy || !file || !subjectTitle.trim()}
+          aria-busy={busy}
+        >
           {busy ? 'Working…' : 'Parse'}
         </button>
       </form>
@@ -98,7 +103,13 @@ export function AdminImportPage() {
           <p>
             Parsed {result.summary.courses} courses, {result.summary.questions} questions.
           </p>
-          <button type="button" className="auth-submit" disabled={busy} onClick={() => void confirm()}>
+          <button
+            type="button"
+            className="auth-submit"
+            disabled={busy}
+            aria-busy={busy}
+            onClick={() => void confirm()}
+          >
             Confirm import
           </button>
         </div>

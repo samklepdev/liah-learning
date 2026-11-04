@@ -121,6 +121,13 @@
 
 .auth-submit:disabled {
   opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Only an in-flight submit gets the progress cursor — a button disabled for
+   an unrelated reason (e.g. a required field not filled in yet) should not
+   look like it's already working. */
+.auth-submit:disabled[aria-busy='true'] {
   cursor: progress;
 }
 
