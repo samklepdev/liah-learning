@@ -38,3 +38,20 @@ export async function findUserByEmailWithHash(
 
   return user ?? null;
 }
+
+/** Includes the password hash — only the change-password path should call this. */
+export async function findUserByIdWithHash(
+  id: string,
+): Promise<(PublicUser & { passwordHash: string }) | null> {
+  const [user] = await db
+    .select({ ...publicColumns, passwordHash: users.passwordHash })
+    .from(users)
+    .where(eq(users.id, id))
+    .limit(1);
+
+  return user ?? null;
+}
+
+export async function updatePasswordHash(id: string, passwordHash: string): Promise<void> {
+  await db.update(users).set({ passwordHash }).where(eq(users.id, id));
+}

@@ -133,6 +133,25 @@ export function AutoThemeIcon({ className }: IconProps) {
   );
 }
 
+export function UserIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <circle cx="12" cy="8" r="3.2" />
+      <path d="M5 19.5a7 7 0 0114 0" />
+    </svg>
+  );
+}
+
+export function SignOutIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M9 4.5H6A1.5 1.5 0 004.5 6v12A1.5 1.5 0 006 19.5h3" />
+      <path d="M14 15l4.5-3-4.5-3" />
+      <path d="M18.5 12h-10" />
+    </svg>
+  );
+}
+
 const BY_SLUG: Record<string, (p: IconProps) => React.ReactElement> = {
   chassis: WheelIcon,
   diagnostics: GaugeIcon,

@@ -574,6 +574,12 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .import-errors { color: var(--warning); }
 .import-success { color: var(--success); margin-top: 1rem; }
 
+.profile-details { margin: 1rem 0 2rem; }
+.profile-details dt { font-size: 0.8rem; opacity: 0.65; margin-top: 0.75rem; }
+.profile-details dd { margin: 0.15rem 0 0; font-size: 1rem; }
+.profile-form { max-width: 24rem; margin-top: 1rem; }
+.profile-success { color: var(--success); margin-top: 1rem; }
+
 .sidebar-footer {
   display: flex;
   align-items: center;
@@ -698,6 +704,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   align-items: center;
   gap: 0.4rem;
   width: 100%;
+  box-sizing: border-box;
   padding: 0.4rem 0.6rem;
   border-radius: 0.35rem;
   font: inherit;

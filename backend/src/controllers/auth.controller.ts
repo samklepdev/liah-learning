@@ -8,8 +8,13 @@ import {
   sessionCookieOptions,
 } from '../lib/cookies.ts';
 import { generateToken, hashToken } from '../lib/tokens.ts';
-import { deleteSession, insertSession } from '../models/session.model.ts';
-import { createUser, findUserByEmailWithHash } from '../models/user.model.ts';
+import { deleteSession, deleteSessionsForUser, insertSession } from '../models/session.model.ts';
+import {
+  createUser,
+  findUserByEmailWithHash,
+  findUserByIdWithHash,
+  updatePasswordHash,
+} from '../models/user.model.ts';
 
 const credentials = z.object({
   email: z.string().trim().toLowerCase().pipe(z.email()),
@@ -97,6 +102,43 @@ export async function logout(req: Request, res: Response): Promise<void> {
     await deleteSession(hashToken(token));
   }
   res.clearCookie(SESSION_COOKIE, clearSessionCookieOptions());
+  res.status(204).end();
+}
+
+const changePasswordBody = z.object({
+  currentPassword: z.string().min(1, 'Current password is required'),
+  newPassword: credentials.shape.password,
+});
+
+/**
+ * Changes the signed-in user's password. Requires the current password.
+ * Revokes every other session for this user, then issues a fresh session for
+ * the current request so this device stays signed in.
+ * @param req
+ * @param res
+ */
+export async function changePassword(req: Request, res: Response): Promise<void> {
+  const parsed = changePasswordBody.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: z.prettifyError(parsed.error) });
+    return;
+  }
+  const { currentPassword, newPassword } = parsed.data;
+
+  const existing = await findUserByIdWithHash(req.user!.id);
+  const ok = existing ? await argon2.verify(existing.passwordHash, currentPassword) : false;
+
+  if (!existing || !ok) {
+    res.status(401).json({ error: 'Current password is incorrect' });
+    return;
+  }
+
+  const passwordHash = await argon2.hash(newPassword, { type: argon2.argon2id });
+  await updatePasswordHash(existing.id, passwordHash);
+
+  await deleteSessionsForUser(existing.id);
+  await startSession(res, existing.id);
+
   res.status(204).end();
 }
 

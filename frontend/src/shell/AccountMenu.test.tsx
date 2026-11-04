@@ -23,24 +23,27 @@ describe('AccountMenu', () => {
     expect(screen.getByText('Sign out')).not.toBeVisible();
   });
 
-  test('a plain user sees Sign out but no admin links', () => {
+  test('a plain user sees Profile and Sign out but no admin links', () => {
     renderMenu('user');
     fireEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
 
+    expect(screen.getByRole('link', { name: 'Profile' })).toBeVisible();
     expect(screen.getByText('Sign out')).toBeVisible();
     expect(screen.queryByText('Admin · Users')).not.toBeInTheDocument();
     expect(screen.queryByText('Admin · Import')).not.toBeInTheDocument();
   });
 
-  test('an admin sees Sign out first, then the admin links', () => {
+  test('Profile comes before Sign out, which comes before the admin links', () => {
     renderMenu('admin');
     fireEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
 
     const items = screen.getAllByRole('listitem').map((li) => li.textContent);
+    const profileIndex = items.findIndex((t) => t?.includes('Profile'));
     const signOutIndex = items.findIndex((t) => t?.includes('Sign out'));
     const usersIndex = items.findIndex((t) => t?.includes('Admin · Users'));
     const importIndex = items.findIndex((t) => t?.includes('Admin · Import'));
 
+    expect(profileIndex).toBeLessThan(signOutIndex);
     expect(signOutIndex).toBeLessThan(usersIndex);
     expect(usersIndex).toBeLessThan(importIndex);
   });
@@ -51,6 +54,19 @@ describe('AccountMenu', () => {
     fireEvent.click(screen.getByText('Sign out'));
 
     expect(onLogout).toHaveBeenCalled();
+    expect(screen.getByRole('button', { name: /tech@example.com/ })).toHaveAttribute(
+      'aria-expanded',
+      'false',
+    );
+  });
+
+  test('clicking Profile links to /profile and closes the panel', () => {
+    renderMenu();
+    fireEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
+    const link = screen.getByRole('link', { name: 'Profile' });
+    expect(link).toHaveAttribute('href', '/profile');
+
+    fireEvent.click(link);
     expect(screen.getByRole('button', { name: /tech@example.com/ })).toHaveAttribute(
       'aria-expanded',
       'false',
