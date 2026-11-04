@@ -1,7 +1,7 @@
-import { execFileSync } from 'node:child_process';
 import type { Request, Response } from 'express';
 import multer from 'multer';
 import { z } from 'zod';
+import { extractPdfText } from '../lib/pdf-text.ts';
 import { parseQuizPack, QuizParseError, slugify, type ParsedSubject } from '../lib/quiz-parser.ts';
 import { seedSubject } from '../scripts/seed-quizzes.ts';
 
@@ -11,19 +11,14 @@ export const uploadPdf = multer({ limits: { fileSize: 10 * 1024 * 1024 } }).sing
 const titleBody = z.object({ subjectTitle: z.string().trim().min(1) });
 
 /**
- * Runs pdftotext on a real PDF upload. A .txt upload (used by tests, which
- * post pre-extracted text to avoid a pdftotext/poppler dependency in CI) is
- * used as-is.
+ * A .txt upload (used by tests, which post pre-extracted text to avoid a
+ * pdftotext/poppler dependency in CI) is used as-is.
  */
 function extractText(file: Express.Multer.File): string {
   if (file.originalname.toLowerCase().endsWith('.txt')) {
     return file.buffer.toString('utf8');
   }
-  return execFileSync('pdftotext', ['-layout', '-', '-'], {
-    input: file.buffer,
-    encoding: 'utf8',
-    maxBuffer: 32 * 1024 * 1024,
-  });
+  return extractPdfText(file.buffer);
 }
 
 export async function parseImport(req: Request, res: Response): Promise<void> {
