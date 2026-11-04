@@ -38,13 +38,15 @@ test('updatePasswordHash persists the new hash', async () => {
   assert.equal(found?.passwordHash, 'new-hash');
 });
 
-test('createUser stores an optional name and role', async () => {
-  const user = await createUser('with-name@example.com', 'hash', 'Jane Doe', 'admin');
-  assert.equal(user?.name, 'Jane Doe');
+test('createUser stores an optional first/last name and role', async () => {
+  const user = await createUser('with-name@example.com', 'hash', 'Jane', 'Doe', 'admin');
+  assert.equal(user?.firstName, 'Jane');
+  assert.equal(user?.lastName, 'Doe');
   assert.equal(user?.role, 'admin');
 });
 
-test('createUser defaults name to null when omitted', async () => {
+test('createUser defaults first/last name to null when omitted', async () => {
   const user = await createUser('no-name@example.com', 'hash');
-  assert.equal(user?.name, null);
+  assert.equal(user?.firstName, null);
+  assert.equal(user?.lastName, null);
 });
