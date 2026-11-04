@@ -1,6 +1,7 @@
 import { Link, Outlet, useLocation } from 'react-router';
 import { useAuth } from '../auth/useAuth';
 import type { CatalogContext } from '../quiz/useCatalog';
+import { AdminMenu } from './AdminMenu';
 import { AutoThemeIcon, MoonIcon, SunIcon } from './icons';
 import { SidebarNav } from './SidebarNav';
 import { useSidebar } from './useSidebar';
@@ -79,6 +80,7 @@ export function AppShell() {
         {/* The signed-in identity lives in the sidebar footer, so the navbar
             carries only the action. */}
         <div className="topnav-right">
+          {user?.role === 'admin' && <AdminMenu />}
           <ThemeToggle />
           {user && (
             <button type="button" className="topnav-signout" onClick={() => void logout()}>
@@ -90,7 +92,7 @@ export function AppShell() {
 
       <div className="shell-body">
         <aside id="app-sidebar" className="shell-sidebar" hidden={collapsed}>
-          <SidebarNav nav={nav} userEmail={user?.email} userRole={user?.role} onNavigate={close} />
+          <SidebarNav nav={nav} userEmail={user?.email} onNavigate={close} />
         </aside>
 
         {/* Only visible on narrow screens, where the sidebar overlays content. */}

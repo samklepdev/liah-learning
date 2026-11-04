@@ -564,8 +564,6 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   opacity: 0.6;
 }
 
-.nav-divider { height: 1px; margin: 0.6rem 0.75rem; background: var(--border); list-style: none; }
-
 .admin-page { max-width: 56rem; margin: 2rem auto; padding: 0 1.25rem; text-align: left; }
 .admin-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
 .admin-table th, .admin-table td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
@@ -643,6 +641,52 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .theme-icon { width: 1.05rem; height: 1.05rem; flex: 0 0 auto; opacity: 0.85; }
+
+/* Admin menu */
+
+.admin-menu { position: relative; }
+
+.admin-menu-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.6rem;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 0.45rem;
+}
+.admin-menu-trigger:hover { background: var(--accent-bg); border-color: var(--accent-border); }
+.admin-menu-trigger:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.admin-menu-panel {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  min-width: 9rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 0.12);
+  z-index: 10;
+}
+
+.admin-menu-panel a {
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.35rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.admin-menu-panel a:hover,
+.admin-menu-panel a.active { background: var(--accent-bg); }
 
 @media (max-width: 30rem) {
   /* Keep the icon, drop the word, so the navbar still fits. */
