@@ -3,11 +3,12 @@ import { db } from '../db/index.ts';
 import { users, type User } from './schema.ts';
 
 /** The user shape that is safe to send to a client — never the password hash. */
-export type PublicUser = Pick<User, 'id' | 'email' | 'role' | 'createdAt'>;
+export type PublicUser = Pick<User, 'id' | 'email' | 'name' | 'role' | 'createdAt'>;
 
 const publicColumns = {
   id: users.id,
   email: users.email,
+  name: users.name,
   role: users.role,
   createdAt: users.createdAt,
 };
@@ -16,10 +17,12 @@ const publicColumns = {
 export async function createUser(
   email: string,
   passwordHash: string,
+  name?: string | null,
+  role?: 'user' | 'admin',
 ): Promise<PublicUser | null> {
   const [user] = await db
     .insert(users)
-    .values({ email, passwordHash })
+    .values({ email, passwordHash, name: name ?? null, role: role ?? 'user' })
     .onConflictDoNothing({ target: users.email })
     .returning(publicColumns);
 

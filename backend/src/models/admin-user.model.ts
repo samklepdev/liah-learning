@@ -6,6 +6,7 @@ import type { PublicUser } from './user.model.ts';
 const publicColumns = {
   id: users.id,
   email: users.email,
+  name: users.name,
   role: users.role,
   createdAt: users.createdAt,
 };

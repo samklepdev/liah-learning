@@ -15,11 +15,11 @@ function appWith(user: PublicUser | undefined) {
 }
 
 function adminUser(): PublicUser {
-  return { id: 'u1', email: 'admin@example.com', role: 'admin', createdAt: new Date() };
+  return { id: 'u1', email: 'admin@example.com', name: null, role: 'admin', createdAt: new Date() };
 }
 
 function plainUser(): PublicUser {
-  return { id: 'u2', email: 'user@example.com', role: 'user', createdAt: new Date() };
+  return { id: 'u2', email: 'user@example.com', name: null, role: 'user', createdAt: new Date() };
 }
 
 test('requireAdmin passes through for an admin', async () => {

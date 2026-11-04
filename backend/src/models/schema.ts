@@ -15,6 +15,8 @@ export const users = pgTable('users', {
   id: uuid('id').primaryKey().defaultRandom(),
   /** Always stored lowercased and trimmed; see normalizeEmail(). */
   email: text('email').notNull().unique(),
+  /** Only set for admin-seeded users today; self-registered users have none. */
+  name: text('name'),
   passwordHash: text('password_hash').notNull(),
   /** 'user' or 'admin'. Promoted via the admin users page; the first admin is
    *  set directly in the database. */
