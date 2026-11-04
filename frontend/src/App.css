@@ -558,8 +558,12 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .admin-table th, .admin-table td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
 .admin-actions { display: flex; gap: 0.5rem; }
 
-.import-form { display: flex; flex-direction: column; gap: 0.5rem; max-width: 24rem; margin-top: 1rem; }
-.import-errors, .import-preview { margin-top: 1.5rem; }
+/* .auth-form/.auth-fields/.auth-submit/.auth-error supply the joined-field,
+   accent-button look shared with the sign-in screen; this just narrows the
+   column to match that form's width instead of the page's full 56rem. */
+.import-form { max-width: 24rem; margin-top: 1rem; }
+.import-errors { margin-top: 1.5rem; }
+.import-preview { max-width: 24rem; margin-top: 1.5rem; }
 .import-errors { color: var(--warning); }
 .import-success { color: var(--success); margin-top: 1rem; }
 
