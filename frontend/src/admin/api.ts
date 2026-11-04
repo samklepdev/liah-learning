@@ -24,12 +24,19 @@ export type ImportSummary = { courses: number; questions: number };
 
 export type ImportedUserRow = {
   row: number;
-  name: string | null;
+  firstName: string | null;
+  lastName: string | null;
   email: string;
   role: 'user' | 'admin';
 };
 export type ImportRowError = { row: number; message: string };
-export type ConfirmedUser = { email: string; name: string | null; role: 'user' | 'admin'; password: string };
+export type ConfirmedUser = {
+  email: string;
+  firstName: string | null;
+  lastName: string | null;
+  role: 'user' | 'admin';
+  password: string;
+};
 export type SkippedUser = { email: string; reason: string };
 
 export const adminApi = {
