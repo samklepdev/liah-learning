@@ -2,6 +2,7 @@ import { type ReactNode } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
+import { AdminImportPage } from './pages/admin/AdminImportPage';
 import { AdminUsersPage } from './pages/admin/AdminUsersPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { QuizPage } from './pages/QuizPage';
@@ -55,6 +56,14 @@ export function AppRouter() {
             element={
               <RequireAdmin>
                 <AdminUsersPage />
+              </RequireAdmin>
+            }
+          />
+          <Route
+            path="/admin/import"
+            element={
+              <RequireAdmin>
+                <AdminImportPage />
               </RequireAdmin>
             }
           />
