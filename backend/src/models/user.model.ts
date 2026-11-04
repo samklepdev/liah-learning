@@ -3,11 +3,12 @@ import { db } from '../db/index.ts';
 import { users, type User } from './schema.ts';
 
 /** The user shape that is safe to send to a client — never the password hash. */
-export type PublicUser = Pick<User, 'id' | 'email' | 'createdAt'>;
+export type PublicUser = Pick<User, 'id' | 'email' | 'role' | 'createdAt'>;
 
 const publicColumns = {
   id: users.id,
   email: users.email,
+  role: users.role,
   createdAt: users.createdAt,
 };
 
