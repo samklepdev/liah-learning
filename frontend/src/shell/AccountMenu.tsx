@@ -1,11 +1,11 @@
 import { useId, useState } from 'react';
 import { NavLink } from 'react-router';
-import { CogIcon } from './icons';
+import { CogIcon, UserIcon } from './icons';
 
 /**
- * The signed-in user's menu in the top navbar: account actions first (sign
- * out today, a profile page later), then admin-only links after a divider.
- * One disclosure rather than two separate controls, since both are "things
+ * The signed-in user's menu in the top navbar: account actions first
+ * (Profile, Sign out), then admin-only links after a divider. One
+ * disclosure rather than two separate controls, since both are "things
  * about you as a signed-in user" — admin-ness is just an extra fact about
  * that user, not a different kind of menu.
  *
@@ -45,6 +45,12 @@ export function AccountMenu({
       </button>
 
       <ul id={panelId} className="account-menu-panel" hidden={!open}>
+        <li>
+          <NavLink to="/profile" className="account-menu-item" onClick={() => setOpen(false)}>
+            <UserIcon className="nav-icon" />
+            Profile
+          </NavLink>
+        </li>
         <li>
           <button
             type="button"

@@ -133,6 +133,15 @@ export function AutoThemeIcon({ className }: IconProps) {
   );
 }
 
+export function UserIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <circle cx="12" cy="8" r="3.2" />
+      <path d="M5 19.5a7 7 0 0114 0" />
+    </svg>
+  );
+}
+
 const BY_SLUG: Record<string, (p: IconProps) => React.ReactElement> = {
   chassis: WheelIcon,
   diagnostics: GaugeIcon,
