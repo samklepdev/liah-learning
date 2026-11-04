@@ -90,7 +90,7 @@ export function AppShell() {
 
       <div className="shell-body">
         <aside id="app-sidebar" className="shell-sidebar" hidden={collapsed}>
-          <SidebarNav nav={nav} userEmail={user?.email} onNavigate={close} />
+          <SidebarNav nav={nav} userEmail={user?.email} userRole={user?.role} onNavigate={close} />
         </aside>
 
         {/* Only visible on narrow screens, where the sidebar overlays content. */}

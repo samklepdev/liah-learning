@@ -1,6 +1,6 @@
 import { useId } from 'react';
 import { NavLink, useLocation } from 'react-router';
-import { BookIcon, ChevronRightIcon, SubjectIcon } from './icons';
+import { BookIcon, ChevronRightIcon, CogIcon, SubjectIcon } from './icons';
 import { hasPassed } from '../quiz/passed';
 import type { SubjectNavState } from './useSubjectNav';
 
@@ -76,10 +76,12 @@ function SubjectGroup({
 export function SidebarNav({
   nav,
   userEmail,
+  userRole,
   onNavigate,
 }: {
   nav: SubjectNavState;
   userEmail?: string;
+  userRole?: 'user' | 'admin';
   onNavigate?: () => void;
 }) {
   const { pathname } = useLocation();
@@ -118,6 +120,24 @@ export function SidebarNav({
             onNavigate={onNavigate}
           />
         ))}
+
+        {userRole === 'admin' && (
+          <>
+            <li className="nav-divider" role="separator" />
+            <li>
+              <NavLink to="/admin/users" onClick={onNavigate} className={itemClass}>
+                <CogIcon className="nav-icon" />
+                <span className="nav-label">Admin · Users</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/admin/import" onClick={onNavigate} className={itemClass}>
+                <CogIcon className="nav-icon" />
+                <span className="nav-label">Admin · Import</span>
+              </NavLink>
+            </li>
+          </>
+        )}
       </ul>
 
       {userEmail && (

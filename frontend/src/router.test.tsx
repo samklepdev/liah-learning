@@ -13,7 +13,7 @@ function at(path: string) {
 
 beforeEach(() => {
   useAuth.mockReturnValue({
-    user: { id: 'u1', email: 'a@b.com', createdAt: '2026-11-02T12:00:00.000Z' },
+    user: { id: 'u1', email: 'a@b.com', role: 'user', createdAt: '2026-11-02T12:00:00.000Z' },
     loading: false,
     login: vi.fn(),
     register: vi.fn(),

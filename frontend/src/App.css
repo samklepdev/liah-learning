@@ -564,6 +564,8 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   opacity: 0.6;
 }
 
+.nav-divider { height: 1px; margin: 0.6rem 0.75rem; background: var(--border); list-style: none; }
+
 .sidebar-footer {
   display: flex;
   align-items: center;
