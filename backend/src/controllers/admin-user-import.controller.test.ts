@@ -101,3 +101,73 @@ test('POST /api/admin/users/import/confirm skips an already-registered email', a
   assert.deepEqual(body.created, []);
   assert.equal(body.skipped[0]?.email, 'existing@example.com');
 });
+
+test('a 150-row parse-then-confirm round trip creates every row', async () => {
+  const cookie = await adminCookie();
+  const csvLines = ['Name,Email,Role'];
+  for (let i = 0; i < 150; i++) {
+    csvLines.push(`User ${i},user${i}@example.com,user`);
+  }
+
+  const parseRes = await fetch(`${baseUrl}/api/admin/users/import/parse`, {
+    method: 'POST',
+    headers: { cookie },
+    body: csvForm(csvLines.join('\n') + '\n'),
+  });
+  assert.equal(parseRes.status, 200);
+  const parsed = (await parseRes.json()) as {
+    rows: Array<{ row: number; name: string | null; email: string; role: string }>;
+    errors: unknown[];
+  };
+  assert.equal(parsed.rows.length, 150);
+  assert.deepEqual(parsed.errors, []);
+
+  const confirmRes = await fetch(`${baseUrl}/api/admin/users/import/confirm`, {
+    method: 'POST',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ rows: parsed.rows }),
+  });
+  assert.equal(confirmRes.status, 200);
+  const confirmed = (await confirmRes.json()) as { created: unknown[]; skipped: unknown[] };
+  assert.equal(confirmed.created.length, 150);
+  assert.deepEqual(confirmed.skipped, []);
+});
+
+test('POST /api/admin/users/import/confirm rejects more than 200 rows', async () => {
+  const cookie = await adminCookie();
+  const rows = Array.from({ length: 201 }, (_, i) => ({
+    row: i + 2,
+    name: `User ${i}`,
+    email: `user${i}@example.com`,
+    role: 'user' as const,
+  }));
+
+  const res = await fetch(`${baseUrl}/api/admin/users/import/confirm`, {
+    method: 'POST',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ rows }),
+  });
+  assert.equal(res.status, 400);
+});
+
+test('a 200-row body over 100KB still succeeds under the 2mb carve-out', async () => {
+  const cookie = await adminCookie();
+  const padding = 'x'.repeat(2000);
+  const rows = Array.from({ length: 200 }, (_, i) => ({
+    row: i + 2,
+    name: `User ${padding}${i}`,
+    email: `user${i}-${padding}@example.com`.toLowerCase(),
+    role: 'user' as const,
+  }));
+
+  const body = JSON.stringify({ rows });
+  assert.ok(Buffer.byteLength(body) > 100 * 1024, 'test body should exceed 100KB');
+  assert.ok(Buffer.byteLength(body) < 2 * 1024 * 1024, 'test body should stay under 2MB');
+
+  const res = await fetch(`${baseUrl}/api/admin/users/import/confirm`, {
+    method: 'POST',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body,
+  });
+  assert.equal(res.status, 200);
+});

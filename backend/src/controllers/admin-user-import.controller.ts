@@ -22,21 +22,26 @@ export function parseImport(req: Request, res: Response): void {
   } catch {
     // pdftotext failed on a malformed/corrupt PDF — same 422 handling as
     // admin-import.controller.ts's parseImport.
-    res.status(422).json({ errors: [{ row: 0, message: 'Could not extract text from the uploaded file.' }] });
+    res.status(422).json({
+      error: 'Could not extract text from the uploaded file.',
+      errors: [{ row: 0, message: 'Could not extract text from the uploaded file.' }],
+    });
     return;
   }
   res.json(result);
 }
 
 const confirmBody = z.object({
-  rows: z.array(
-    z.object({
-      row: z.number(),
-      name: z.string().nullable(),
-      email: z.string().trim().toLowerCase().pipe(z.email()),
-      role: z.enum(['user', 'admin']),
-    }),
-  ),
+  rows: z
+    .array(
+      z.object({
+        row: z.number(),
+        name: z.string().nullable(),
+        email: z.string().trim().toLowerCase().pipe(z.email()),
+        role: z.enum(['user', 'admin']),
+      }),
+    )
+    .max(200, 'A single import is limited to 200 rows. Split larger files and import in batches.'),
 });
 
 /** 9 random bytes -> 12 base64url characters, ~72 bits of entropy. */

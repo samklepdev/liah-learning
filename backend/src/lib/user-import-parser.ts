@@ -79,20 +79,22 @@ function parseSpreadsheet(buffer: Buffer): ParseResult {
     else rows.push(result.row);
   });
 
+  if (rows.length === 0 && errors.length === 0) {
+    errors.push({ row: 0, message: 'File has no data rows.' });
+  }
+
   return { rows, errors };
 }
 
 /** PDF text (and the .txt fixtures that stand in for it in tests) has no
  *  header: every line is `Name, Email, Role` with Role optional. */
 function parsePdfLines(text: string): ParseResult {
-  const lines = text
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter((line) => line !== '');
+  const lines = text.split(/\r?\n/).map((line) => line.trim());
 
   const rows: ParsedUserRow[] = [];
   const errors: RowError[] = [];
   lines.forEach((line, i) => {
+    if (line === '') return;
     const rowNumber = i + 1;
     const cells = line.split(',').map((cell) => cell.trim());
     const [name = '', email = '', role = ''] = cells;
@@ -100,6 +102,10 @@ function parsePdfLines(text: string): ParseResult {
     if ('error' in result) errors.push(result.error);
     else rows.push(result.row);
   });
+
+  if (rows.length === 0 && errors.length === 0) {
+    errors.push({ row: 0, message: 'File has no data rows.' });
+  }
 
   return { rows, errors };
 }
