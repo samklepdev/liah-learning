@@ -68,6 +68,8 @@ export function AdminUsersPage() {
     setImportBusy(true);
     setImportError(null);
     setImportResults(null);
+    setParsedRows([]);
+    setParseErrors([]);
     try {
       const { rows, errors } = await adminApi.parseUserImport(importFile);
       setParsedRows(rows);
@@ -107,7 +109,7 @@ export function AdminUsersPage() {
           <div className="auth-fields">
             <input
               type="file"
-              accept=".xlsx,.csv,.pdf"
+              accept=".xlsx,.csv"
               onChange={(e) => setImportFile(e.target.files?.[0] ?? null)}
               aria-label="User list file"
             />
@@ -178,6 +180,18 @@ export function AdminUsersPage() {
             {importResults.created.length > 0 && (
               <>
                 <h3>Created</h3>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const header = 'email,name,role,password';
+                    const lines = importResults.created.map(
+                      (u) => `${u.email},${u.name ?? ''},${u.role},${u.password}`,
+                    );
+                    void navigator.clipboard.writeText([header, ...lines].join('\n'));
+                  }}
+                >
+                  Copy all as CSV
+                </button>
                 <table className="admin-table">
                   <thead>
                     <tr>

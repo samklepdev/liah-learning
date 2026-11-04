@@ -133,6 +133,36 @@ describe('AdminUsersPage', () => {
     await waitFor(() => expect(listUsers).toHaveBeenCalledTimes(2));
   });
 
+  test('copying created users writes an email,name,role,password CSV to the clipboard', async () => {
+    const writeText = vi.fn();
+    Object.assign(navigator, { clipboard: { writeText } });
+
+    parseUserImport.mockResolvedValue({
+      rows: [{ row: 2, name: 'Jane Doe', email: 'jane@example.com', role: 'user' }],
+      errors: [],
+    });
+    confirmUserImport.mockResolvedValue({
+      created: [{ email: 'jane@example.com', name: 'Jane Doe', role: 'user', password: 'abc123' }],
+      skipped: [],
+    });
+    render(<AdminUsersPage />);
+    await screen.findByText('admin@example.com');
+
+    selectImportFile();
+    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
+    await screen.findByRole('button', { name: /confirm import/i });
+
+    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
+    await screen.findByText('abc123');
+
+    fireEvent.click(screen.getByRole('button', { name: /copy all as csv/i }));
+
+    expect(writeText).toHaveBeenCalledTimes(1);
+    const written = writeText.mock.calls[0][0] as string;
+    expect(written).toContain('jane@example.com');
+    expect(written).toContain('abc123');
+  });
+
   test('Confirm import is disabled when there are no valid rows', async () => {
     parseUserImport.mockResolvedValue({ rows: [], errors: [{ row: 1, message: 'bad row' }] });
     render(<AdminUsersPage />);
