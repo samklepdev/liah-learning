@@ -47,7 +47,10 @@ function parseSpreadsheet(buffer: Buffer): ParseResult {
     return { rows: [], errors: [{ row: 0, message: 'No sheet found in file.' }] };
   }
 
-  const cellRows = utils.sheet_to_json<unknown[]>(sheet, { header: 1, blankrows: false });
+  // Keep blank rows in the array (default blankrows behavior) so row indices
+  // stay aligned to physical spreadsheet position; skip them explicitly below
+  // instead of letting SheetJS drop them before numbering is derived.
+  const cellRows = utils.sheet_to_json<unknown[]>(sheet, { header: 1 });
   const [header, ...dataRows] = cellRows;
   if (!header) {
     return { rows: [], errors: [{ row: 0, message: 'File has no header row.' }] };
@@ -65,6 +68,9 @@ function parseSpreadsheet(buffer: Buffer): ParseResult {
   const errors: RowError[] = [];
   dataRows.forEach((cells, i) => {
     const rowNumber = i + 2; // +1 for 1-indexing, +1 for the header row
+    const isBlank = cells.every((cell) => cell === undefined || cell === null || String(cell).trim() === '');
+    if (isBlank) return;
+
     const name = nameIdx === -1 ? '' : String(cells[nameIdx] ?? '');
     const email = String(cells[emailIdx] ?? '');
     const role = roleIdx === -1 ? '' : String(cells[roleIdx] ?? '');

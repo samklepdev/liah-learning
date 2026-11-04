@@ -89,6 +89,20 @@ test('parses PDF-style text (comma-separated, no header) via a .txt upload', () 
   ]);
 });
 
+test('keeps row numbers aligned to the physical file when a blank row is skipped', () => {
+  const buffer = xlsxBuffer([
+    ['Name', 'Email'],
+    ['Jane Doe', 'jane@example.com'],
+    [],
+    ['Bad Row', 'not-an-email'],
+  ]);
+  const { rows, errors } = parseUserRows({ buffer, originalname: 'students.xlsx' });
+
+  assert.deepEqual(rows, [{ row: 2, name: 'Jane Doe', email: 'jane@example.com', role: 'user' }]);
+  assert.equal(errors.length, 1);
+  assert.equal(errors[0]?.row, 4);
+});
+
 test('rejects an unsupported file extension', () => {
   const { rows, errors } = parseUserRows({
     buffer: Buffer.from('whatever'),
