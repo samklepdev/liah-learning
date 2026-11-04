@@ -1,3 +1,5 @@
+.vercel
+
 ### Node ###
 # Logs
 logs
@@ -157,3 +159,4 @@ sketch
 
 # Brainstorming visual companion scratch files
 .superpowers/
+.env*
