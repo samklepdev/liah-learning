@@ -3,23 +3,31 @@ import { z } from 'zod';
 import { extractPdfText } from './pdf-text.ts';
 
 export type Role = 'user' | 'admin';
-export type ParsedUserRow = { row: number; name: string | null; email: string; role: Role };
+export type ParsedUserRow = {
+  row: number;
+  firstName: string | null;
+  lastName: string | null;
+  email: string;
+  role: Role;
+};
 export type RowError = { row: number; message: string };
 export type ParseResult = { rows: ParsedUserRow[]; errors: RowError[] };
 
 const rowSchema = z.object({
-  name: z.string().trim().min(1).optional(),
+  firstName: z.string().trim().min(1).optional(),
+  lastName: z.string().trim().min(1).optional(),
   email: z.string().trim().toLowerCase().pipe(z.email()),
   role: z.enum(['user', 'admin']).optional(),
 });
 
-/** Validates one raw {name, email, role} triple into a row or a row error. */
+/** Validates one raw {firstName, lastName, email, role} quadruple into a row or a row error. */
 function validateRow(
   rowNumber: number,
-  raw: { name: string; email: string; role: string },
+  raw: { firstName: string; lastName: string; email: string; role: string },
 ): { row: ParsedUserRow } | { error: RowError } {
   const parsed = rowSchema.safeParse({
-    name: raw.name.trim() === '' ? undefined : raw.name,
+    firstName: raw.firstName.trim() === '' ? undefined : raw.firstName,
+    lastName: raw.lastName.trim() === '' ? undefined : raw.lastName,
     email: raw.email,
     role: raw.role.trim() === '' ? undefined : raw.role.trim().toLowerCase(),
   });
@@ -31,7 +39,8 @@ function validateRow(
   return {
     row: {
       row: rowNumber,
-      name: parsed.data.name ?? null,
+      firstName: parsed.data.firstName ?? null,
+      lastName: parsed.data.lastName ?? null,
       email: parsed.data.email,
       role: parsed.data.role ?? 'user',
     },
@@ -57,7 +66,8 @@ function parseSpreadsheet(buffer: Buffer): ParseResult {
   }
 
   const normalizedHeader = header.map((h) => String(h ?? '').trim().toLowerCase());
-  const nameIdx = normalizedHeader.indexOf('name');
+  const firstNameIdx = normalizedHeader.indexOf('first name');
+  const lastNameIdx = normalizedHeader.indexOf('last name');
   const emailIdx = normalizedHeader.indexOf('email');
   const roleIdx = normalizedHeader.indexOf('role');
   if (emailIdx === -1) {
@@ -71,10 +81,11 @@ function parseSpreadsheet(buffer: Buffer): ParseResult {
     const isBlank = cells.every((cell) => cell === undefined || cell === null || String(cell).trim() === '');
     if (isBlank) return;
 
-    const name = nameIdx === -1 ? '' : String(cells[nameIdx] ?? '');
+    const firstName = firstNameIdx === -1 ? '' : String(cells[firstNameIdx] ?? '');
+    const lastName = lastNameIdx === -1 ? '' : String(cells[lastNameIdx] ?? '');
     const email = String(cells[emailIdx] ?? '');
     const role = roleIdx === -1 ? '' : String(cells[roleIdx] ?? '');
-    const result = validateRow(rowNumber, { name, email, role });
+    const result = validateRow(rowNumber, { firstName, lastName, email, role });
     if ('error' in result) errors.push(result.error);
     else rows.push(result.row);
   });
@@ -87,7 +98,7 @@ function parseSpreadsheet(buffer: Buffer): ParseResult {
 }
 
 /** PDF text (and the .txt fixtures that stand in for it in tests) has no
- *  header: every line is `Name, Email, Role` with Role optional. */
+ *  header: every line is `First Name, Last Name, Email, Role` with role optional. */
 function parsePdfLines(text: string): ParseResult {
   const lines = text.split(/\r?\n/).map((line) => line.trim());
 
@@ -97,8 +108,8 @@ function parsePdfLines(text: string): ParseResult {
     if (line === '') return;
     const rowNumber = i + 1;
     const cells = line.split(',').map((cell) => cell.trim());
-    const [name = '', email = '', role = ''] = cells;
-    const result = validateRow(rowNumber, { name, email, role });
+    const [firstName = '', lastName = '', email = '', role = ''] = cells;
+    const result = validateRow(rowNumber, { firstName, lastName, email, role });
     if ('error' in result) errors.push(result.error);
     else rows.push(result.row);
   });
