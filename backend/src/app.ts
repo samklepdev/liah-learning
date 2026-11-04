@@ -64,3 +64,6 @@ if (env.SERVE_FRONTEND) {
 
 app.use(notFound);
 app.use(errorHandler);
+
+// Vercel's Node Express runtime requires a default export.
+export default app;
