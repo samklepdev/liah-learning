@@ -90,3 +90,64 @@ test('POST /api/admin/import/parse 404s for a non-admin', async () => {
   });
   assert.equal(res.status, 404);
 });
+
+test('POST /api/admin/import/confirm seeds the parsed subject', async () => {
+  const cookie = await adminCookie();
+  const form = new FormData();
+  form.append(
+    'pdf',
+    new Blob([chassisFixtureAsPdfText()], { type: 'text/plain' }),
+    'chassis.txt',
+  );
+  form.append('subjectTitle', 'Chassis');
+
+  const parseRes = await fetch(`${baseUrl}/api/admin/import/parse`, {
+    method: 'POST',
+    headers: { cookie },
+    body: form,
+  });
+  const { subject } = (await parseRes.json()) as { subject: unknown };
+
+  const confirmRes = await fetch(`${baseUrl}/api/admin/import/confirm`, {
+    method: 'POST',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ subject }),
+  });
+  assert.equal(confirmRes.status, 200);
+  const body = (await confirmRes.json()) as { courses: number; questions: number };
+  assert.equal(body.courses, 11);
+  assert.equal(body.questions, 110);
+});
+
+test('POST /api/admin/import/confirm is idempotent on re-import', async () => {
+  const cookie = await adminCookie();
+  const form = new FormData();
+  form.append(
+    'pdf',
+    new Blob([chassisFixtureAsPdfText()], { type: 'text/plain' }),
+    'chassis.txt',
+  );
+  form.append('subjectTitle', 'Chassis');
+  const { subject } = (await (
+    await fetch(`${baseUrl}/api/admin/import/parse`, {
+      method: 'POST',
+      headers: { cookie },
+      body: form,
+    })
+  ).json()) as { subject: unknown };
+
+  const confirm = () =>
+    fetch(`${baseUrl}/api/admin/import/confirm`, {
+      method: 'POST',
+      headers: { cookie, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ subject }),
+    });
+
+  await confirm();
+  const second = await confirm();
+  assert.equal(second.status, 200);
+
+  const list = await fetch(`${baseUrl}/api/subjects`);
+  const body = (await list.json()) as { subjects: unknown[] };
+  assert.equal(body.subjects.length, 1);
+});
