@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation } from 'react-router';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router';
 import { useAuth } from '../auth/useAuth';
 import type { CatalogContext } from '../quiz/useCatalog';
 import { AccountMenu } from './AccountMenu';
@@ -42,7 +42,16 @@ function ThemeToggle() {
 export function AppShell() {
   const { user, logout } = useAuth();
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   const { collapsed, toggle, close } = useSidebar();
+
+  // Logging out clears the user but doesn't change the route, so without
+  // this the login form renders in place at whatever page you logged out
+  // from (e.g. mid-quiz) instead of a sane landing page.
+  async function handleLogout() {
+    await logout();
+    navigate('/');
+  }
 
   // Read from the path rather than useParams: this is a pathless layout route,
   // so the child route's :subjectSlug is not in its own params.
@@ -80,7 +89,7 @@ export function AppShell() {
         <div className="topnav-right">
           <ThemeToggle />
           {user && (
-            <AccountMenu email={user.email} role={user.role} onLogout={() => void logout()} />
+            <AccountMenu email={user.email} role={user.role} onLogout={() => void handleLogout()} />
           )}
         </div>
       </header>
