@@ -25,3 +25,16 @@ export function requireAuth(req: Request, res: Response, next: NextFunction) {
   }
   next();
 }
+
+/**
+ * Gates a route behind an admin session. Must run after requireAuth (or at
+ * least after attachUser). Answers 404, not 403 — a non-admin should not be
+ * able to tell an admin route exists.
+ */
+export function requireAdmin(req: Request, res: Response, next: NextFunction) {
+  if (!req.user || req.user.role !== 'admin') {
+    res.status(404).json({ error: 'Not found' });
+    return;
+  }
+  next();
+}
