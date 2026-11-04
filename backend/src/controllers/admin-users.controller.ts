@@ -1,7 +1,13 @@
 import type { Request, Response } from 'express';
 import { z } from 'zod';
 import { param } from '../lib/http.ts';
-import { deleteUserById, listUsers, setUserRole } from '../models/admin-user.model.ts';
+import { listAttemptsForUser } from '../models/admin-attempt.model.ts';
+import {
+  deleteUserById,
+  findUserById,
+  listUsers,
+  setUserRole,
+} from '../models/admin-user.model.ts';
 
 const roleBody = z.object({ role: z.enum(['user', 'admin']) });
 
@@ -46,4 +52,15 @@ export async function deleteUser(req: Request, res: Response): Promise<void> {
     return;
   }
   res.status(204).end();
+}
+
+export async function getUserAttempts(req: Request, res: Response): Promise<void> {
+  const id = param(req, 'id');
+  const user = await findUserById(id);
+  if (!user) {
+    res.status(404).json({ error: 'User not found' });
+    return;
+  }
+  const attempts = await listAttemptsForUser(id);
+  res.json({ attempts });
 }

@@ -92,3 +92,27 @@ test('DELETE rejects an admin deleting themselves', async () => {
   });
   assert.equal(res.status, 400);
 });
+
+test("GET /api/admin/users/:id/attempts lists that user's attempts", async () => {
+  const { cookie } = await makeAdmin('admin@example.com');
+  const { userId } = await registerTestUser(baseUrl, 'student@example.com');
+
+  // The student has no course content seeded in this test's empty DB, so this
+  // only exercises the empty-list path — content-bearing cases are covered by
+  // the quiz/attempt lifecycle tests elsewhere.
+  const res = await fetch(`${baseUrl}/api/admin/users/${userId}/attempts`, {
+    headers: { cookie },
+  });
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { attempts: unknown[] };
+  assert.deepEqual(body.attempts, []);
+});
+
+test('GET /api/admin/users/:id/attempts 404s for an unknown user', async () => {
+  const { cookie } = await makeAdmin('admin@example.com');
+  const res = await fetch(
+    `${baseUrl}/api/admin/users/00000000-0000-0000-0000-000000000000/attempts`,
+    { headers: { cookie } },
+  );
+  assert.equal(res.status, 404);
+});
