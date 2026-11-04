@@ -704,6 +704,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   align-items: center;
   gap: 0.4rem;
   width: 100%;
+  box-sizing: border-box;
   padding: 0.4rem 0.6rem;
   border-radius: 0.35rem;
   font: inherit;
