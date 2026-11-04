@@ -2,6 +2,7 @@ import { type ReactNode } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
+import { AdminUsersPage } from './pages/admin/AdminUsersPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { QuizPage } from './pages/QuizPage';
 import { ResultsPage } from './pages/ResultsPage';
@@ -49,6 +50,14 @@ export function AppRouter() {
           <Route path="/subjects/:subjectSlug" element={<SubjectCoursesPage />} />
           <Route path="/courses/:slug/quiz" element={<QuizPage />} />
           <Route path="/courses/:slug/results/:attemptId" element={<ResultsPage />} />
+          <Route
+            path="/admin/users"
+            element={
+              <RequireAdmin>
+                <AdminUsersPage />
+              </RequireAdmin>
+            }
+          />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />

@@ -566,6 +566,11 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .nav-divider { height: 1px; margin: 0.6rem 0.75rem; background: var(--border); list-style: none; }
 
+.admin-page { max-width: 56rem; margin: 2rem auto; padding: 0 1.25rem; text-align: left; }
+.admin-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.admin-table th, .admin-table td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+.admin-actions { display: flex; gap: 0.5rem; }
+
 .sidebar-footer {
   display: flex;
   align-items: center;
