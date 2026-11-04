@@ -34,8 +34,12 @@ export function ProfilePage() {
       <dl className="profile-details">
         <dt>Email</dt>
         <dd>{user?.email}</dd>
-        <dt>Role</dt>
-        <dd>{user?.role}</dd>
+        {user?.role === 'admin' && (
+          <>
+            <dt>Role</dt>
+            <dd>{user.role}</dd>
+          </>
+        )}
       </dl>
 
       <h2>Change password</h2>

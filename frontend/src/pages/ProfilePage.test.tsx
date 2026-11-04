@@ -24,10 +24,24 @@ beforeEach(() => {
 });
 
 describe('ProfilePage', () => {
-  test("shows the signed-in user's email and role", () => {
+  test('shows the email, but not a Role row, for a plain user', () => {
     render(<ProfilePage />);
     expect(screen.getByText('student@example.com')).toBeInTheDocument();
-    expect(screen.getByText('user')).toBeInTheDocument();
+    expect(screen.queryByText('Role')).not.toBeInTheDocument();
+  });
+
+  test('shows the Role row for an admin', () => {
+    useAuth.mockReturnValue({
+      user: {
+        id: 'u2',
+        email: 'admin@example.com',
+        role: 'admin',
+        createdAt: '2026-11-01T00:00:00Z',
+      },
+    });
+    render(<ProfilePage />);
+    expect(screen.getByText('Role')).toBeInTheDocument();
+    expect(screen.getByText('admin')).toBeInTheDocument();
   });
 
   test('submitting calls changePassword, shows a success message, and clears the fields', async () => {
