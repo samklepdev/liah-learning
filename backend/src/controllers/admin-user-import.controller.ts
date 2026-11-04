@@ -36,7 +36,8 @@ const confirmBody = z.object({
     .array(
       z.object({
         row: z.number(),
-        name: z.string().nullable(),
+        firstName: z.string().nullable(),
+        lastName: z.string().nullable(),
         email: z.string().trim().toLowerCase().pipe(z.email()),
         role: z.enum(['user', 'admin']),
       }),
@@ -56,19 +57,31 @@ export async function confirmImport(req: Request, res: Response): Promise<void> 
     return;
   }
 
-  const created: Array<{ email: string; name: string | null; role: string; password: string }> = [];
+  const created: Array<{
+    email: string;
+    firstName: string | null;
+    lastName: string | null;
+    role: string;
+    password: string;
+  }> = [];
   const skipped: Array<{ email: string; reason: string }> = [];
 
   for (const row of parsed.data.rows) {
     const password = generatePassword();
     const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
-    const user = await createUser(row.email, passwordHash, row.name, row.role);
+    const user = await createUser(row.email, passwordHash, row.firstName, row.lastName, row.role);
 
     if (!user) {
       skipped.push({ email: row.email, reason: 'already registered' });
       continue;
     }
-    created.push({ email: user.email, name: user.name, role: user.role, password });
+    created.push({
+      email: user.email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      role: user.role,
+      password,
+    });
   }
 
   res.json({ created, skipped });
