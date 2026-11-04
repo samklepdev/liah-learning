@@ -29,14 +29,16 @@ beforeEach(() => {
       {
         id: 'me',
         email: 'admin@example.com',
-        name: null,
+        firstName: null,
+        lastName: null,
         role: 'admin',
         createdAt: '2026-11-01T00:00:00Z',
       },
       {
         id: 'u2',
         email: 'student@example.com',
-        name: null,
+        firstName: null,
+        lastName: null,
         role: 'user',
         createdAt: '2026-11-02T00:00:00Z',
       },
@@ -86,7 +88,7 @@ describe('AdminUsersPage', () => {
   });
 
   function selectImportFile() {
-    const file = new File(['Name,Email\nJane,jane@example.com'], 'students.csv', {
+    const file = new File(['First Name,Last Name,Email\nJane,Doe,jane@example.com'], 'students.csv', {
       type: 'text/csv',
     });
     const input = screen.getByLabelText(/user list file/i) as HTMLInputElement;
@@ -95,7 +97,7 @@ describe('AdminUsersPage', () => {
 
   test('parsing a file shows a preview with row errors', async () => {
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, name: 'Jane Doe', email: 'jane@example.com', role: 'user' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
       errors: [{ row: 3, message: 'Row 3: invalid email' }],
     });
     render(<AdminUsersPage />);
@@ -111,11 +113,13 @@ describe('AdminUsersPage', () => {
 
   test('confirming an import shows generated passwords and reloads the user list', async () => {
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, name: 'Jane Doe', email: 'jane@example.com', role: 'user' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [{ email: 'jane@example.com', name: 'Jane Doe', role: 'user', password: 'abc123' }],
+      created: [
+        { email: 'jane@example.com', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' },
+      ],
       skipped: [],
     });
     render(<AdminUsersPage />);
@@ -138,11 +142,13 @@ describe('AdminUsersPage', () => {
     Object.assign(navigator, { clipboard: { writeText } });
 
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, name: 'Jane Doe', email: 'jane@example.com', role: 'user' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [{ email: 'jane@example.com', name: 'Jane Doe', role: 'user', password: 'abc123' }],
+      created: [
+        { email: 'jane@example.com', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' },
+      ],
       skipped: [],
     });
     render(<AdminUsersPage />);

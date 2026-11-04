@@ -148,7 +148,8 @@ export function AdminUsersPage() {
             <table className="admin-table">
               <thead>
                 <tr>
-                  <th>Name</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
                   <th>Email</th>
                   <th>Role</th>
                 </tr>
@@ -156,7 +157,8 @@ export function AdminUsersPage() {
               <tbody>
                 {parsedRows.map((r) => (
                   <tr key={r.row}>
-                    <td>{r.name ?? '—'}</td>
+                    <td>{r.firstName ?? '—'}</td>
+                    <td>{r.lastName ?? '—'}</td>
                     <td>{r.email}</td>
                     <td>{r.role}</td>
                   </tr>
@@ -183,9 +185,9 @@ export function AdminUsersPage() {
                 <button
                   type="button"
                   onClick={() => {
-                    const header = 'email,name,role,password';
+                    const header = 'email,firstName,lastName,role,password';
                     const lines = importResults.created.map(
-                      (u) => `${u.email},${u.name ?? ''},${u.role},${u.password}`,
+                      (u) => `${u.email},${u.firstName ?? ''},${u.lastName ?? ''},${u.role},${u.password}`,
                     );
                     void navigator.clipboard.writeText([header, ...lines].join('\n'));
                   }}
@@ -196,7 +198,8 @@ export function AdminUsersPage() {
                   <thead>
                     <tr>
                       <th>Email</th>
-                      <th>Name</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
                       <th>Role</th>
                       <th>Password</th>
                     </tr>
@@ -205,7 +208,8 @@ export function AdminUsersPage() {
                     {importResults.created.map((u) => (
                       <tr key={u.email}>
                         <td>{u.email}</td>
-                        <td>{u.name ?? '—'}</td>
+                        <td>{u.firstName ?? '—'}</td>
+                        <td>{u.lastName ?? '—'}</td>
                         <td>{u.role}</td>
                         <td>{u.password}</td>
                       </tr>
@@ -243,7 +247,8 @@ export function AdminUsersPage() {
           <thead>
             <tr>
               <th>Email</th>
-              <th>Name</th>
+              <th>First Name</th>
+              <th>Last Name</th>
               <th>Role</th>
               <th>Joined</th>
               <th>Actions</th>
@@ -255,7 +260,8 @@ export function AdminUsersPage() {
               return (
                 <tr key={u.id}>
                   <td>{u.email}</td>
-                  <td>{u.name ?? '—'}</td>
+                  <td>{u.firstName ?? '—'}</td>
+                  <td>{u.lastName ?? '—'}</td>
                   <td>{u.role}</td>
                   <td>{new Date(u.createdAt).toLocaleDateString()}</td>
                   <td className="admin-actions">
