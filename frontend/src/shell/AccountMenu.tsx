@@ -1,6 +1,6 @@
 import { useId, useState } from 'react';
 import { NavLink } from 'react-router';
-import { CogIcon, UserIcon } from './icons';
+import { CogIcon, SignOutIcon, UserIcon } from './icons';
 
 /**
  * The signed-in user's menu in the top navbar: account actions first
@@ -60,6 +60,7 @@ export function AccountMenu({
               onLogout();
             }}
           >
+            <SignOutIcon className="nav-icon" />
             Sign out
           </button>
         </li>
