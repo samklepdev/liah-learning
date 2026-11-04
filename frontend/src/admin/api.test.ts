@@ -55,4 +55,36 @@ describe('adminApi', () => {
     // No explicit Content-Type: the browser must set the multipart boundary.
     expect(call[1].headers).toBeUndefined();
   });
+
+  test('parseUserImport posts multipart form data to the import/parse endpoint', async () => {
+    (fetch as unknown as ReturnType<typeof vi.fn>).mockResolvedValue({
+      status: 200,
+      ok: true,
+      json: async () => ({ rows: [], errors: [] }),
+    });
+
+    const file = new File(['Name,Email\nA,a@example.com'], 'students.csv', { type: 'text/csv' });
+    await adminApi.parseUserImport(file);
+
+    const call = (fetch as unknown as ReturnType<typeof vi.fn>).mock.calls[0];
+    expect(call[0]).toBe('/api/admin/users/import/parse');
+    expect(call[1].body).toBeInstanceOf(FormData);
+    expect(call[1].headers).toBeUndefined();
+  });
+
+  test('confirmUserImport posts the rows to the import/confirm endpoint', async () => {
+    (fetch as unknown as ReturnType<typeof vi.fn>).mockResolvedValue({
+      status: 200,
+      ok: true,
+      json: async () => ({ created: [], skipped: [] }),
+    });
+
+    const rows = [{ row: 2, name: 'Jane', email: 'jane@example.com', role: 'user' as const }];
+    await adminApi.confirmUserImport(rows);
+
+    expect(fetch).toHaveBeenCalledWith(
+      '/api/admin/users/import/confirm',
+      expect.objectContaining({ method: 'POST', body: JSON.stringify({ rows }) }),
+    );
+  });
 });
