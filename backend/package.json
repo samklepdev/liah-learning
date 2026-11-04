@@ -13,7 +13,8 @@
     "test": "node --import tsx --env-file=.env.test --test --test-concurrency=1 \"src/**/*.test.ts\"",
     "db:push:test": "node --env-file=.env.test ../node_modules/drizzle-kit/bin.cjs push",
     "quiz:parse": "tsx src/scripts/parse-quiz-pdf.ts",
-    "quiz:seed": "node --import tsx --env-file-if-exists=.env src/scripts/seed-quizzes.ts"
+    "quiz:seed": "node --import tsx --env-file-if-exists=.env src/scripts/seed-quizzes.ts",
+    "seed:admin": "node --import tsx --env-file-if-exists=.env src/scripts/seed-admin.ts"
   },
   "dependencies": {
     "argon2": "^0.44.0",
