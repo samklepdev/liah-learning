@@ -10,6 +10,11 @@ const parseUserImport = vi.fn();
 const confirmUserImport = vi.fn();
 const useAuth = vi.fn();
 
+const toastSuccess = vi.fn();
+vi.mock('react-hot-toast', () => ({
+  default: { success: (message: string) => toastSuccess(message) },
+}));
+
 vi.mock('../../auth/useAuth', () => ({ useAuth: () => useAuth() }));
 vi.mock('../../admin/api', () => ({
   adminApi: {
@@ -49,6 +54,7 @@ beforeEach(() => {
   deleteUser.mockResolvedValue(undefined);
   parseUserImport.mockReset();
   confirmUserImport.mockReset();
+  toastSuccess.mockReset();
 });
 
 describe('AdminUsersPage', () => {
@@ -85,6 +91,7 @@ describe('AdminUsersPage', () => {
     await waitFor(() =>
       expect(screen.queryByText('student@example.com')).not.toBeInTheDocument(),
     );
+    expect(toastSuccess).toHaveBeenCalledWith('User deleted');
   });
 
   function selectImportFile() {
@@ -135,6 +142,33 @@ describe('AdminUsersPage', () => {
     expect(await screen.findByText('abc123')).toBeInTheDocument();
     // listUsers is called once on mount, once more after a successful import.
     await waitFor(() => expect(listUsers).toHaveBeenCalledTimes(2));
+    expect(toastSuccess).toHaveBeenCalledWith('1 user created');
+  });
+
+  test('a mixed import summarizes created and skipped counts in the toast', async () => {
+    parseUserImport.mockResolvedValue({
+      rows: [
+        { row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' },
+        { row: 3, firstName: 'John', lastName: 'Roe', email: 'john@example.com', role: 'user' },
+      ],
+      errors: [],
+    });
+    confirmUserImport.mockResolvedValue({
+      created: [
+        { email: 'jane@example.com', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' },
+      ],
+      skipped: [{ email: 'john@example.com', reason: 'already registered' }],
+    });
+    render(<AdminUsersPage />);
+    await screen.findByText('admin@example.com');
+
+    selectImportFile();
+    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
+    await screen.findByRole('button', { name: /confirm import/i });
+
+    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
+
+    await waitFor(() => expect(toastSuccess).toHaveBeenCalledWith('1 user created, 1 skipped'));
   });
 
   test('copying created users writes an email,name,role,password CSV to the clipboard', async () => {

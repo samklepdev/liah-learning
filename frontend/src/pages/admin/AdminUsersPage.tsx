@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
 import {
   adminApi,
   type AdminUser,
@@ -10,6 +11,11 @@ import {
 import { useAuth } from '../../auth/useAuth';
 
 type ImportResults = { created: ConfirmedUser[]; skipped: SkippedUser[] };
+
+function importSummary(created: number, skipped: number): string {
+  const createdPart = `${created} user${created === 1 ? '' : 's'} created`;
+  return skipped > 0 ? `${createdPart}, ${skipped} skipped` : createdPart;
+}
 
 export function AdminUsersPage() {
   const { user: me } = useAuth();
@@ -55,6 +61,7 @@ export function AdminUsersPage() {
     setBusyId(target.id);
     try {
       await adminApi.deleteUser(target.id);
+      toast.success('User deleted');
       setUsers((prev) => prev.filter((u) => u.id !== target.id));
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to delete user');
@@ -87,6 +94,7 @@ export function AdminUsersPage() {
     setImportError(null);
     try {
       const results = await adminApi.confirmUserImport(parsedRows);
+      toast.success(importSummary(results.created.length, results.skipped.length));
       setImportResults(results);
       setParsedRows([]);
       setParseErrors([]);
