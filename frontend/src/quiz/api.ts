@@ -62,6 +62,19 @@ export type CourseHistory = {
   attemptCount: number;
 };
 
+export type ProgressCourse = {
+  courseId: string;
+  courseTitle: string;
+  courseSlug: string;
+  subjectSlug: string;
+  passScore: number;
+  questionCount: number;
+  bestScore: number;
+  attemptCount: number;
+  lastAttemptId: string;
+  lastSubmittedAt: string;
+};
+
 export type GradedAttempt = {
   id: string;
   courseSlug: string;
@@ -124,4 +137,6 @@ export const quizApi = {
 
   submit: (attemptId: string) =>
     request<{ attempt: GradedAttempt }>(`/attempts/${attemptId}/submit`, { method: 'POST' }),
+
+  getMyProgress: () => request<{ courses: ProgressCourse[] }>('/me/progress'),
 };

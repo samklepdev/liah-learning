@@ -3,6 +3,7 @@ import type {
   CourseSummary,
   GradedAttempt,
   GradedQuestion,
+  ProgressCourse,
   Quiz,
   QuizQuestion,
 } from '../quiz/api';
@@ -88,6 +89,22 @@ export function makeGradedAttempt(overrides: Partial<GradedAttempt> = {}): Grade
     submittedAt: '2026-11-02T12:00:00.000Z',
     modulesToReview: ['Module 2'],
     questions,
+    ...overrides,
+  };
+}
+
+export function makeProgressRow(overrides: Partial<ProgressCourse> = {}): ProgressCourse {
+  return {
+    courseId: 'course-1',
+    courseTitle: 'Tire and Rim Essentials',
+    courseSlug: 'chassis-tire-and-rim-essentials',
+    subjectSlug: 'chassis',
+    passScore: 9,
+    questionCount: 10,
+    bestScore: 8,
+    attemptCount: 2,
+    lastAttemptId: 'attempt-1',
+    lastSubmittedAt: '2026-11-02T12:00:00.000Z',
     ...overrides,
   };
 }
