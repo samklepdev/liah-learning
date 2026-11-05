@@ -625,12 +625,11 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .import-errors { color: var(--warning); }
 .import-success { color: var(--success); margin-top: 1rem; }
 
-.profile-page { max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; text-align: left; }
-.profile-details { max-width: 24rem; margin: 1rem auto 2rem; }
+.profile-page { max-width: 26rem; margin: 2rem auto; padding: 0 1.25rem; text-align: left; }
+.profile-details { margin: 1rem 0 2rem; }
 .profile-details dt { font-size: 0.8rem; opacity: 0.65; margin-top: 0.75rem; }
 .profile-details dd { margin: 0.15rem 0 0; font-size: 1rem; }
-.profile-details + .auth-submit { display: block; max-width: 24rem; margin: 0 auto; }
-.profile-form { max-width: 24rem; margin: 1rem auto 0; }
+.profile-form { margin-top: 1rem; }
 .profile-actions {
   display: flex;
   gap: 0.75rem;
