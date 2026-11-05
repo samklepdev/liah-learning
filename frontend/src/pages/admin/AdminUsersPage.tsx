@@ -208,10 +208,10 @@ export function AdminUsersPage() {
                   .slice((previewPager.page - 1) * PAGE_SIZE, previewPager.page * PAGE_SIZE)
                   .map((r) => (
                     <tr key={r.row}>
-                      <td>{r.firstName ?? '—'}</td>
-                      <td>{r.lastName ?? '—'}</td>
-                      <td>{r.email}</td>
-                      <td>{r.role}</td>
+                      <td data-label="First Name">{r.firstName ?? '—'}</td>
+                      <td data-label="Last Name">{r.lastName ?? '—'}</td>
+                      <td data-label="Email">{r.email}</td>
+                      <td data-label="Role">{r.role}</td>
                     </tr>
                   ))}
               </tbody>
@@ -268,11 +268,11 @@ export function AdminUsersPage() {
                       .slice((createdPager.page - 1) * PAGE_SIZE, createdPager.page * PAGE_SIZE)
                       .map((u) => (
                         <tr key={u.email}>
-                          <td>{u.email}</td>
-                          <td>{u.firstName ?? '—'}</td>
-                          <td>{u.lastName ?? '—'}</td>
-                          <td>{u.role}</td>
-                          <td>{u.password}</td>
+                          <td data-label="Email">{u.email}</td>
+                          <td data-label="First Name">{u.firstName ?? '—'}</td>
+                          <td data-label="Last Name">{u.lastName ?? '—'}</td>
+                          <td data-label="Role">{u.role}</td>
+                          <td data-label="Password">{u.password}</td>
                         </tr>
                       ))}
                   </tbody>
@@ -339,11 +339,11 @@ export function AdminUsersPage() {
               return (
                 <Fragment key={u.id}>
                   <tr>
-                    <td>{u.email}</td>
-                    <td>{u.firstName ?? '—'}</td>
-                    <td>{u.lastName ?? '—'}</td>
-                    <td>{u.role}</td>
-                    <td>{new Date(u.createdAt).toLocaleDateString()}</td>
+                    <td data-label="Email">{u.email}</td>
+                    <td data-label="First Name">{u.firstName ?? '—'}</td>
+                    <td data-label="Last Name">{u.lastName ?? '—'}</td>
+                    <td data-label="Role">{u.role}</td>
+                    <td data-label="Joined">{new Date(u.createdAt).toLocaleDateString()}</td>
                     <td className="admin-actions">
                       <button
                         type="button"
