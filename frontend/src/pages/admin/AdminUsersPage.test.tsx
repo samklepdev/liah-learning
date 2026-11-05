@@ -27,6 +27,16 @@ vi.mock('../../admin/api', () => ({
   },
 }));
 
+const sampleAttempt = {
+  id: 'a1',
+  courseTitle: 'CPR Basics',
+  courseSlug: 'cpr-basics',
+  subjectSlug: 'first-aid',
+  score: 8,
+  startedAt: '2026-10-01T00:00:00Z',
+  submittedAt: '2026-10-01T01:00:00Z',
+};
+
 beforeEach(() => {
   useAuth.mockReturnValue({ user: { id: 'me', email: 'admin@example.com', role: 'admin' } });
   listUsers.mockResolvedValue({
@@ -213,5 +223,57 @@ describe('AdminUsersPage', () => {
 
     await screen.findByText(/bad row/i);
     expect(screen.queryByRole('button', { name: /confirm import/i })).not.toBeInTheDocument();
+  });
+
+  test('expanding a row fetches and shows the user\'s attempts, collapsing hides them', async () => {
+    getUserAttempts.mockResolvedValue({ attempts: [sampleAttempt] });
+    render(<AdminUsersPage />);
+    await screen.findByText('student@example.com');
+    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+
+    fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
+
+    await waitFor(() => expect(getUserAttempts).toHaveBeenCalledWith('u2'));
+    expect(await screen.findByText('CPR Basics')).toBeInTheDocument();
+    expect(screen.getByText('Completed')).toBeInTheDocument();
+
+    fireEvent.click(within(studentRow).getByRole('button', { name: /hide attempts/i }));
+    expect(screen.queryByText('CPR Basics')).not.toBeInTheDocument();
+  });
+
+  test('re-expanding a row reuses the cached attempts instead of refetching', async () => {
+    getUserAttempts.mockResolvedValue({ attempts: [sampleAttempt] });
+    render(<AdminUsersPage />);
+    await screen.findByText('student@example.com');
+    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+
+    fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
+    await screen.findByText('CPR Basics');
+    fireEvent.click(within(studentRow).getByRole('button', { name: /hide attempts/i }));
+    fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
+
+    await screen.findByText('CPR Basics');
+    expect(getUserAttempts).toHaveBeenCalledTimes(1);
+  });
+
+  test('shows "No attempts yet." for a user with no attempts', async () => {
+    render(<AdminUsersPage />);
+    await screen.findByText('student@example.com');
+    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+
+    fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
+
+    expect(await screen.findByText('No attempts yet.')).toBeInTheDocument();
+  });
+
+  test('shows an error message when fetching attempts fails', async () => {
+    getUserAttempts.mockRejectedValue(new Error('Network error'));
+    render(<AdminUsersPage />);
+    await screen.findByText('student@example.com');
+    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+
+    fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
+
+    expect(await screen.findByText('Network error')).toBeInTheDocument();
   });
 });
