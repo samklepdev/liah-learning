@@ -19,14 +19,14 @@ beforeEach(async () => {
   await resetDb();
 });
 
-test('POST /api/auth/login returns the role, not just id/email/createdAt', async () => {
-  await fetch(`${baseUrl}/api/auth/register`, {
+test('POST /api/v1/auth/login returns the role, not just id/email/createdAt', async () => {
+  await fetch(`${baseUrl}/api/v1/auth/register`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: 'login-role@example.com', password: 'test-password-123' }),
   });
 
-  const res = await fetch(`${baseUrl}/api/auth/login`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: 'login-role@example.com', password: 'test-password-123' }),
@@ -37,10 +37,10 @@ test('POST /api/auth/login returns the role, not just id/email/createdAt', async
   assert.equal(body.user.passwordHash, undefined);
 });
 
-test('PATCH /api/auth/password rejects a wrong current password', async () => {
+test('PATCH /api/v1/auth/password rejects a wrong current password', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'pw-wrong@example.com');
 
-  const res = await fetch(`${baseUrl}/api/auth/password`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/password`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ currentPassword: 'not-the-password', newPassword: 'new-password-123' }),
@@ -48,10 +48,10 @@ test('PATCH /api/auth/password rejects a wrong current password', async () => {
   assert.equal(res.status, 401);
 });
 
-test('PATCH /api/auth/password rejects a too-short new password', async () => {
+test('PATCH /api/v1/auth/password rejects a too-short new password', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'pw-short@example.com');
 
-  const res = await fetch(`${baseUrl}/api/auth/password`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/password`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ currentPassword: 'test-password-123', newPassword: 'short' }),
@@ -59,8 +59,8 @@ test('PATCH /api/auth/password rejects a too-short new password', async () => {
   assert.equal(res.status, 400);
 });
 
-test('PATCH /api/auth/password requires a session', async () => {
-  const res = await fetch(`${baseUrl}/api/auth/password`, {
+test('PATCH /api/v1/auth/password requires a session', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/auth/password`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ currentPassword: 'test-password-123', newPassword: 'new-password-123' }),
@@ -68,18 +68,18 @@ test('PATCH /api/auth/password requires a session', async () => {
   assert.equal(res.status, 401);
 });
 
-test('PATCH /api/auth/password changes the password, revokes other sessions, keeps this one', async () => {
+test('PATCH /api/v1/auth/password changes the password, revokes other sessions, keeps this one', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'pw-change@example.com');
 
   // A second "device": log in again to get an independent session cookie.
-  const loginRes = await fetch(`${baseUrl}/api/auth/login`, {
+  const loginRes = await fetch(`${baseUrl}/api/v1/auth/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: 'pw-change@example.com', password: 'test-password-123' }),
   });
   const otherCookie = loginRes.headers.get('set-cookie')!.split(';')[0]!;
 
-  const res = await fetch(`${baseUrl}/api/auth/password`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/password`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ currentPassword: 'test-password-123', newPassword: 'new-password-456' }),
@@ -88,19 +88,19 @@ test('PATCH /api/auth/password changes the password, revokes other sessions, kee
   const newCookie = res.headers.get('set-cookie')!.split(';')[0]!;
 
   // The other device's session is revoked.
-  const otherMe = await fetch(`${baseUrl}/api/auth/me`, { headers: { cookie: otherCookie } });
+  const otherMe = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie: otherCookie } });
   assert.equal(otherMe.status, 401);
 
   // This device's *old* cookie is revoked too (it was swapped for a fresh one).
-  const oldMe = await fetch(`${baseUrl}/api/auth/me`, { headers: { cookie } });
+  const oldMe = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie } });
   assert.equal(oldMe.status, 401);
 
   // This device continues on the newly issued cookie.
-  const newMe = await fetch(`${baseUrl}/api/auth/me`, { headers: { cookie: newCookie } });
+  const newMe = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie: newCookie } });
   assert.equal(newMe.status, 200);
 
   // The new password actually works for a fresh login.
-  const relogin = await fetch(`${baseUrl}/api/auth/login`, {
+  const relogin = await fetch(`${baseUrl}/api/v1/auth/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: 'pw-change@example.com', password: 'new-password-456' }),
@@ -108,8 +108,8 @@ test('PATCH /api/auth/password changes the password, revokes other sessions, kee
   assert.equal(relogin.status, 200);
 });
 
-test('PATCH /api/auth/name requires a session', async () => {
-  const res = await fetch(`${baseUrl}/api/auth/name`, {
+test('PATCH /api/v1/auth/name requires a session', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/auth/name`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
@@ -117,10 +117,10 @@ test('PATCH /api/auth/name requires a session', async () => {
   assert.equal(res.status, 401);
 });
 
-test('PATCH /api/auth/name updates and returns the user', async () => {
+test('PATCH /api/v1/auth/name updates and returns the user', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'name-update@example.com');
 
-  const res = await fetch(`${baseUrl}/api/auth/name`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/name`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
@@ -131,15 +131,15 @@ test('PATCH /api/auth/name updates and returns the user', async () => {
   assert.equal(body.user.lastName, 'Doe');
 });
 
-test('PATCH /api/auth/name clears a name when given blank strings', async () => {
+test('PATCH /api/v1/auth/name clears a name when given blank strings', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'name-clear@example.com');
-  await fetch(`${baseUrl}/api/auth/name`, {
+  await fetch(`${baseUrl}/api/v1/auth/name`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
   });
 
-  const res = await fetch(`${baseUrl}/api/auth/name`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/name`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ firstName: '', lastName: '' }),
@@ -150,15 +150,15 @@ test('PATCH /api/auth/name clears a name when given blank strings', async () => 
   assert.equal(body.user.lastName, null);
 });
 
-test('PATCH /api/auth/name with only firstName in the body does not clear lastName', async () => {
+test('PATCH /api/v1/auth/name with only firstName in the body does not clear lastName', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'name-partial@example.com');
-  await fetch(`${baseUrl}/api/auth/name`, {
+  await fetch(`${baseUrl}/api/v1/auth/name`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
   });
 
-  const res = await fetch(`${baseUrl}/api/auth/name`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/name`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ firstName: 'Janet' }),
@@ -169,10 +169,10 @@ test('PATCH /api/auth/name with only firstName in the body does not clear lastNa
   assert.equal(body.user.lastName, 'Doe');
 });
 
-test('PATCH /api/auth/name rejects a name over 100 characters', async () => {
+test('PATCH /api/v1/auth/name rejects a name over 100 characters', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'name-too-long@example.com');
 
-  const res = await fetch(`${baseUrl}/api/auth/name`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/name`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ firstName: 'a'.repeat(101) }),
@@ -180,15 +180,15 @@ test('PATCH /api/auth/name rejects a name over 100 characters', async () => {
   assert.equal(res.status, 400);
 });
 
-test('PATCH /api/auth/name with an empty body leaves both names unchanged', async () => {
+test('PATCH /api/v1/auth/name with an empty body leaves both names unchanged', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'name-empty-body@example.com');
-  await fetch(`${baseUrl}/api/auth/name`, {
+  await fetch(`${baseUrl}/api/v1/auth/name`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
   });
 
-  const res = await fetch(`${baseUrl}/api/auth/name`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/name`, {
     method: 'PATCH',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({}),

@@ -6,7 +6,7 @@ beforeEach(() => {
 });
 
 describe('adminApi', () => {
-  test('listUsers GETs /api/admin/users', async () => {
+  test('listUsers GETs /api/v1/admin/users', async () => {
     (fetch as unknown as ReturnType<typeof vi.fn>).mockResolvedValue({
       status: 200,
       ok: true,
@@ -16,7 +16,7 @@ describe('adminApi', () => {
     await adminApi.listUsers();
 
     expect(fetch).toHaveBeenCalledWith(
-      '/api/admin/users',
+      '/api/v1/admin/users',
       expect.objectContaining({ credentials: 'include' }),
     );
   });
@@ -31,7 +31,7 @@ describe('adminApi', () => {
     await adminApi.setRole('u1', 'admin');
 
     expect(fetch).toHaveBeenCalledWith(
-      '/api/admin/users/u1/role',
+      '/api/v1/admin/users/u1/role',
       expect.objectContaining({
         method: 'PATCH',
         body: JSON.stringify({ role: 'admin' }),
@@ -50,7 +50,7 @@ describe('adminApi', () => {
     await adminApi.parseImport(file, 'Chassis');
 
     const call = (fetch as unknown as ReturnType<typeof vi.fn>).mock.calls[0];
-    expect(call[0]).toBe('/api/admin/import/parse');
+    expect(call[0]).toBe('/api/v1/admin/import/parse');
     expect(call[1].body).toBeInstanceOf(FormData);
     // No explicit Content-Type: the browser must set the multipart boundary.
     expect(call[1].headers).toBeUndefined();
@@ -67,7 +67,7 @@ describe('adminApi', () => {
     await adminApi.parseUserImport(file);
 
     const call = (fetch as unknown as ReturnType<typeof vi.fn>).mock.calls[0];
-    expect(call[0]).toBe('/api/admin/users/import/parse');
+    expect(call[0]).toBe('/api/v1/admin/users/import/parse');
     expect(call[1].body).toBeInstanceOf(FormData);
     expect(call[1].headers).toBeUndefined();
   });
@@ -85,7 +85,7 @@ describe('adminApi', () => {
     await adminApi.confirmUserImport(rows);
 
     expect(fetch).toHaveBeenCalledWith(
-      '/api/admin/users/import/confirm',
+      '/api/v1/admin/users/import/confirm',
       expect.objectContaining({ method: 'POST', body: JSON.stringify({ rows }) }),
     );
   });

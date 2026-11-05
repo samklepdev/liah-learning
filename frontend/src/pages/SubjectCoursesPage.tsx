@@ -100,6 +100,17 @@ export function SubjectsIndexPage() {
         {subjects.length} {subjects.length === 1 ? 'subject' : 'subjects'} available. Pick
         one to see its quizzes.
       </p>
+
+      <ul>
+        {subjects.map((s) => (
+          <li key={s.id} className="course-row">
+            <Link to={`/subjects/${s.slug}`}>{s.title}</Link>
+            <span className="course-score course-untaken">
+              {s.courseCount} {s.courseCount === 1 ? 'quiz' : 'quizzes'}
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import { authRouter } from './auth.routes.ts';
 import { catalogRouter } from './catalog.routes.ts';
 import { quizRouter } from './quiz.routes.ts';
 
-/** Everything under /api. Mounted once in app.ts. */
+/** Everything under /api/v1. Mounted once in app.ts. */
 export const apiRouter = Router();
 
 apiRouter.get('/health', (_req: Request, res: Response) => {

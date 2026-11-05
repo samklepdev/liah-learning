@@ -35,12 +35,12 @@ async function takeQuiz(
   course: ParsedCourse,
   correctCount: number,
 ): Promise<{ id: string; score: number }> {
-  const quizRes = await fetch(`${baseUrl}/api/courses/${slug}/quiz`, {
+  const quizRes = await fetch(`${baseUrl}/api/v1/courses/${slug}/quiz`, {
     headers: { cookie: sessionCookie },
   });
   const { quiz } = (await quizRes.json()) as any;
 
-  const startRes = await fetch(`${baseUrl}/api/courses/${slug}/attempts`, {
+  const startRes = await fetch(`${baseUrl}/api/v1/courses/${slug}/attempts`, {
     method: 'POST',
     headers: { cookie: sessionCookie },
   });
@@ -52,14 +52,14 @@ async function takeQuiz(
     const label = i < correctCount ? correctLabel : correctLabel === 'A' ? 'B' : 'A';
     const option = q.options.find((o: any) => o.label === label);
 
-    await fetch(`${baseUrl}/api/attempts/${attempt.id}/answers/${q.id}`, {
+    await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}/answers/${q.id}`, {
       method: 'PUT',
       headers: { cookie: sessionCookie, 'Content-Type': 'application/json' },
       body: JSON.stringify({ optionId: option.id }),
     });
   }
 
-  const submitRes = await fetch(`${baseUrl}/api/attempts/${attempt.id}/submit`, {
+  const submitRes = await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}/submit`, {
     method: 'POST',
     headers: { cookie: sessionCookie },
   });
@@ -68,13 +68,13 @@ async function takeQuiz(
 }
 
 test('GET /me/progress requires a session', async () => {
-  const res = await fetch(`${baseUrl}/api/me/progress`);
+  const res = await fetch(`${baseUrl}/api/v1/me/progress`);
   assert.equal(res.status, 401);
 });
 
 test('an unattempted account sees an empty list', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'fresh@example.com');
-  const res = await fetch(`${baseUrl}/api/me/progress`, { headers: { cookie } });
+  const res = await fetch(`${baseUrl}/api/v1/me/progress`, { headers: { cookie } });
   assert.equal(res.status, 200);
   const body = (await res.json()) as { courses: unknown[] };
   assert.deepEqual(body.courses, []);
@@ -86,7 +86,7 @@ test('tracks best score and attempt count independently of the most recent attem
   await takeQuiz(cookie, SLUG_1, course1, 8);
   const second = await takeQuiz(cookie, SLUG_1, course1, 5);
 
-  const res = await fetch(`${baseUrl}/api/me/progress`, { headers: { cookie } });
+  const res = await fetch(`${baseUrl}/api/v1/me/progress`, { headers: { cookie } });
   const body = (await res.json()) as { courses: any[] };
   assert.equal(body.courses.length, 1);
   const row = body.courses[0];
@@ -103,7 +103,7 @@ test('lists multiple courses, newest completion first', async () => {
   await takeQuiz(cookie, SLUG_1, course1, 6);
   await takeQuiz(cookie, SLUG_2, course2, 9);
 
-  const res = await fetch(`${baseUrl}/api/me/progress`, { headers: { cookie } });
+  const res = await fetch(`${baseUrl}/api/v1/me/progress`, { headers: { cookie } });
   const body = (await res.json()) as { courses: any[] };
   assert.equal(body.courses.length, 2);
   assert.equal(body.courses[0].courseSlug, SLUG_2, 'most recently completed course comes first');
@@ -116,7 +116,7 @@ test("one user's progress never includes another user's attempts", async () => {
 
   await takeQuiz(other.cookie, SLUG_1, course1, 7);
 
-  const res = await fetch(`${baseUrl}/api/me/progress`, { headers: { cookie: mine.cookie } });
+  const res = await fetch(`${baseUrl}/api/v1/me/progress`, { headers: { cookie: mine.cookie } });
   const body = (await res.json()) as { courses: unknown[] };
   assert.deepEqual(body.courses, []);
 });
@@ -124,12 +124,12 @@ test("one user's progress never includes another user's attempts", async () => {
 test('an open, unsubmitted attempt does not appear', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'inprogress@example.com');
 
-  await fetch(`${baseUrl}/api/courses/${SLUG_1}/attempts`, {
+  await fetch(`${baseUrl}/api/v1/courses/${SLUG_1}/attempts`, {
     method: 'POST',
     headers: { cookie },
   });
 
-  const res = await fetch(`${baseUrl}/api/me/progress`, { headers: { cookie } });
+  const res = await fetch(`${baseUrl}/api/v1/me/progress`, { headers: { cookie } });
   const body = (await res.json()) as { courses: unknown[] };
   assert.deepEqual(body.courses, []);
 });

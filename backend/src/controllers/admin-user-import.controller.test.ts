@@ -33,12 +33,12 @@ function csvForm(csv: string, filename = 'students.csv') {
   return form;
 }
 
-test('POST /api/admin/users/import/parse returns rows and errors for a csv', async () => {
+test('POST /api/v1/admin/users/import/parse returns rows and errors for a csv', async () => {
   const cookie = await adminCookie();
   const csv =
     'First Name,Last Name,Email,Role\nJane,Doe,jane@example.com,admin\nBad Row,X,not-an-email,\n';
 
-  const res = await fetch(`${baseUrl}/api/admin/users/import/parse`, {
+  const res = await fetch(`${baseUrl}/api/v1/admin/users/import/parse`, {
     method: 'POST',
     headers: { cookie },
     body: csvForm(csv),
@@ -53,9 +53,9 @@ test('POST /api/admin/users/import/parse returns rows and errors for a csv', asy
   assert.equal(body.errors.length, 1);
 });
 
-test('POST /api/admin/users/import/parse 404s for a non-admin', async () => {
+test('POST /api/v1/admin/users/import/parse 404s for a non-admin', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'plain@example.com');
-  const res = await fetch(`${baseUrl}/api/admin/users/import/parse`, {
+  const res = await fetch(`${baseUrl}/api/v1/admin/users/import/parse`, {
     method: 'POST',
     headers: { cookie },
     body: csvForm('First Name,Email\nA,a@example.com\n'),
@@ -63,13 +63,13 @@ test('POST /api/admin/users/import/parse 404s for a non-admin', async () => {
   assert.equal(res.status, 404);
 });
 
-test('POST /api/admin/users/import/confirm creates users with a hashed password', async () => {
+test('POST /api/v1/admin/users/import/confirm creates users with a hashed password', async () => {
   const cookie = await adminCookie();
   const rows = [
     { row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'admin' as const },
   ];
 
-  const res = await fetch(`${baseUrl}/api/admin/users/import/confirm`, {
+  const res = await fetch(`${baseUrl}/api/v1/admin/users/import/confirm`, {
     method: 'POST',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ rows }),
@@ -97,14 +97,14 @@ test('POST /api/admin/users/import/confirm creates users with a hashed password'
   assert.notEqual(stored?.passwordHash, body.created[0]?.password);
 });
 
-test('POST /api/admin/users/import/confirm skips an already-registered email', async () => {
+test('POST /api/v1/admin/users/import/confirm skips an already-registered email', async () => {
   const cookie = await adminCookie();
   await registerTestUser(baseUrl, 'existing@example.com');
 
   const rows = [
     { row: 2, firstName: null, lastName: null, email: 'existing@example.com', role: 'user' as const },
   ];
-  const res = await fetch(`${baseUrl}/api/admin/users/import/confirm`, {
+  const res = await fetch(`${baseUrl}/api/v1/admin/users/import/confirm`, {
     method: 'POST',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ rows }),
@@ -122,7 +122,7 @@ test('a 150-row parse-then-confirm round trip creates every row', async () => {
     csvLines.push(`User,${i},user${i}@example.com,user`);
   }
 
-  const parseRes = await fetch(`${baseUrl}/api/admin/users/import/parse`, {
+  const parseRes = await fetch(`${baseUrl}/api/v1/admin/users/import/parse`, {
     method: 'POST',
     headers: { cookie },
     body: csvForm(csvLines.join('\n') + '\n'),
@@ -135,7 +135,7 @@ test('a 150-row parse-then-confirm round trip creates every row', async () => {
   assert.equal(parsed.rows.length, 150);
   assert.deepEqual(parsed.errors, []);
 
-  const confirmRes = await fetch(`${baseUrl}/api/admin/users/import/confirm`, {
+  const confirmRes = await fetch(`${baseUrl}/api/v1/admin/users/import/confirm`, {
     method: 'POST',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ rows: parsed.rows }),
@@ -146,7 +146,7 @@ test('a 150-row parse-then-confirm round trip creates every row', async () => {
   assert.deepEqual(confirmed.skipped, []);
 });
 
-test('POST /api/admin/users/import/confirm rejects more than 200 rows', async () => {
+test('POST /api/v1/admin/users/import/confirm rejects more than 200 rows', async () => {
   const cookie = await adminCookie();
   const rows = Array.from({ length: 201 }, (_, i) => ({
     row: i + 2,
@@ -156,7 +156,7 @@ test('POST /api/admin/users/import/confirm rejects more than 200 rows', async ()
     role: 'user' as const,
   }));
 
-  const res = await fetch(`${baseUrl}/api/admin/users/import/confirm`, {
+  const res = await fetch(`${baseUrl}/api/v1/admin/users/import/confirm`, {
     method: 'POST',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ rows }),
@@ -179,7 +179,7 @@ test('a 200-row body over 100KB still succeeds under the 2mb carve-out', async (
   assert.ok(Buffer.byteLength(body) > 100 * 1024, 'test body should exceed 100KB');
   assert.ok(Buffer.byteLength(body) < 2 * 1024 * 1024, 'test body should stay under 2MB');
 
-  const res = await fetch(`${baseUrl}/api/admin/users/import/confirm`, {
+  const res = await fetch(`${baseUrl}/api/v1/admin/users/import/confirm`, {
     method: 'POST',
     headers: { cookie, 'Content-Type': 'application/json' },
     body,
