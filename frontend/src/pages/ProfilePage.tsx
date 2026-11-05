@@ -84,7 +84,7 @@ export function ProfilePage() {
 
   if (!isEditing) {
     return (
-      <div className="admin-page">
+      <div className="profile-page">
         <h1>Profile</h1>
 
         <dl className="profile-details">
@@ -110,7 +110,7 @@ export function ProfilePage() {
   }
 
   return (
-    <div className="admin-page">
+    <div className="profile-page">
       <h1>Profile</h1>
 
       <form onSubmit={(e) => void handleSave(e)} className="auth-form profile-form">

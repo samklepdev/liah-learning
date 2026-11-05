@@ -78,6 +78,20 @@ describe('AdminUsersPage', () => {
     expect(screen.getByText('student@example.com')).toBeInTheDocument();
   });
 
+  test('labels each cell in the main users table for the mobile card layout', async () => {
+    render(<AdminUsersPage />);
+    const row = (await screen.findByText('student@example.com')).closest('tr')!;
+    const cells = within(row).getAllByRole('cell');
+    expect(cells.map((c) => c.getAttribute('data-label'))).toEqual([
+      'Email',
+      'First Name',
+      'Last Name',
+      'Role',
+      'Joined',
+      null,
+    ]);
+  });
+
   test("disables promote/demote and delete for the signed-in admin's own row", async () => {
     render(<AdminUsersPage />);
     await screen.findByText('admin@example.com');
@@ -245,6 +259,57 @@ describe('AdminUsersPage', () => {
     fireEvent.click(within(skippedSection).getByRole('button', { name: 'Next' }));
 
     expect(await screen.findByText(/skipped20@example.com/)).toBeInTheDocument();
+  });
+
+  test('labels each cell in the import preview table for the mobile card layout', async () => {
+    parseUserImport.mockResolvedValue({
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      errors: [],
+    });
+    render(<AdminUsersPage />);
+    await screen.findByText('admin@example.com');
+
+    selectImportFile();
+    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
+
+    const row = (await screen.findByText('jane@example.com')).closest('tr')!;
+    const cells = within(row).getAllByRole('cell');
+    expect(cells.map((c) => c.getAttribute('data-label'))).toEqual([
+      'First Name',
+      'Last Name',
+      'Email',
+      'Role',
+    ]);
+  });
+
+  test('labels each cell in the import results "Created" table for the mobile card layout', async () => {
+    parseUserImport.mockResolvedValue({
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      errors: [],
+    });
+    confirmUserImport.mockResolvedValue({
+      created: [
+        { email: 'jane@example.com', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' },
+      ],
+      skipped: [],
+    });
+    render(<AdminUsersPage />);
+    await screen.findByText('admin@example.com');
+
+    selectImportFile();
+    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
+    await screen.findByRole('button', { name: /confirm import/i });
+    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
+
+    const row = (await screen.findByText('abc123')).closest('tr')!;
+    const cells = within(row).getAllByRole('cell');
+    expect(cells.map((c) => c.getAttribute('data-label'))).toEqual([
+      'Email',
+      'First Name',
+      'Last Name',
+      'Role',
+      'Password',
+    ]);
   });
 
   function selectImportFile() {

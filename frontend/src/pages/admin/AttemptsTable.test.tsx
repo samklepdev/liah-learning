@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { AttemptsTable } from './AttemptsTable';
 import type { AdminAttempt } from '../../admin/api';
 
@@ -59,5 +59,18 @@ describe('AttemptsTable', () => {
     render(<AttemptsTable attempts={[notStarted]} />);
     expect(screen.getByText('Not started')).toBeInTheDocument();
     expect(screen.queryByText('In progress')).not.toBeInTheDocument();
+  });
+
+  test('labels each cell with its column name for the mobile card layout', () => {
+    render(<AttemptsTable attempts={[completed]} />);
+    const row = screen.getByText('CPR Basics').closest('tr')!;
+    const cells = within(row).getAllByRole('cell');
+    expect(cells.map((c) => c.getAttribute('data-label'))).toEqual([
+      'Subject',
+      'Course',
+      'Score',
+      'Status',
+      'Date',
+    ]);
   });
 });

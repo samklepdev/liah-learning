@@ -28,11 +28,11 @@ export function AttemptsTable({ attempts }: { attempts: AdminAttempt[] }) {
       <tbody>
         {attempts.map((attempt) => (
           <tr key={attempt.id}>
-            <td>{attempt.subjectSlug}</td>
-            <td>{attempt.courseTitle}</td>
-            <td>{formatScore(attempt)}</td>
-            <td>{formatStatus(attempt)}</td>
-            <td>{formatDate(attempt)}</td>
+            <td data-label="Subject">{attempt.subjectSlug}</td>
+            <td data-label="Course">{attempt.courseTitle}</td>
+            <td data-label="Score">{formatScore(attempt)}</td>
+            <td data-label="Status">{formatStatus(attempt)}</td>
+            <td data-label="Date">{formatDate(attempt)}</td>
           </tr>
         ))}
       </tbody>
