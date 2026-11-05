@@ -73,6 +73,7 @@ export function ProfilePage() {
             onChange={(e) => setFirstName(e.target.value)}
             placeholder="First name"
             aria-label="First name"
+            autoComplete="given-name"
           />
           <input
             type="text"
@@ -80,6 +81,7 @@ export function ProfilePage() {
             onChange={(e) => setLastName(e.target.value)}
             placeholder="Last name"
             aria-label="Last name"
+            autoComplete="family-name"
           />
         </div>
 
