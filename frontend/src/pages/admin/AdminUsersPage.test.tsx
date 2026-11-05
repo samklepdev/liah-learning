@@ -18,7 +18,7 @@ vi.mock('react-hot-toast', () => ({
 vi.mock('../../auth/useAuth', () => ({ useAuth: () => useAuth() }));
 vi.mock('../../admin/api', () => ({
   adminApi: {
-    listUsers: () => listUsers(),
+    listUsers: (page: number) => listUsers(page),
     setRole: (id: string, role: string) => setRole(id, role),
     deleteUser: (id: string) => deleteUser(id),
     getUserAttempts: (id: string) => getUserAttempts(id),
@@ -41,7 +41,7 @@ const sampleAttempt = {
 beforeEach(() => {
   useAuth.mockReturnValue({ user: { id: 'me', email: 'admin@example.com', role: 'admin' } });
   listUsers.mockResolvedValue({
-    users: [
+    items: [
       {
         id: 'me',
         email: 'admin@example.com',
@@ -59,6 +59,9 @@ beforeEach(() => {
         createdAt: '2026-11-02T00:00:00Z',
       },
     ],
+    total: 2,
+    page: 1,
+    pageSize: 20,
   });
   getUserAttempts.mockResolvedValue({ attempts: [] });
   setRole.mockResolvedValue({ user: { id: 'u2', email: 'student@example.com', role: 'admin' } });
@@ -103,6 +106,54 @@ describe('AdminUsersPage', () => {
       expect(screen.queryByText('student@example.com')).not.toBeInTheDocument(),
     );
     expect(toastSuccess).toHaveBeenCalledWith('User deleted');
+  });
+
+  test('clicking Next requests the next page and updates the table', async () => {
+    listUsers.mockImplementation((page: number) =>
+      Promise.resolve(
+        page === 1
+          ? {
+              items: [
+                {
+                  id: 'me',
+                  email: 'admin@example.com',
+                  firstName: null,
+                  lastName: null,
+                  role: 'admin',
+                  createdAt: '2026-11-01T00:00:00Z',
+                },
+              ],
+              total: 25,
+              page: 1,
+              pageSize: 20,
+            }
+          : {
+              items: [
+                {
+                  id: 'u2',
+                  email: 'student@example.com',
+                  firstName: null,
+                  lastName: null,
+                  role: 'user',
+                  createdAt: '2026-11-02T00:00:00Z',
+                },
+              ],
+              total: 25,
+              page: 2,
+              pageSize: 20,
+            },
+      ),
+    );
+    render(<AdminUsersPage />);
+    await screen.findByText('admin@example.com');
+    expect(screen.getByText('Page 1 of 2')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: 'Next' }));
+
+    await waitFor(() => expect(listUsers).toHaveBeenCalledWith(2));
+    expect(await screen.findByText('student@example.com')).toBeInTheDocument();
+    expect(screen.queryByText('admin@example.com')).not.toBeInTheDocument();
+    expect(screen.getByText('Page 2 of 2')).toBeInTheDocument();
   });
 
   function selectImportFile() {

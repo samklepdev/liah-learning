@@ -10,6 +10,8 @@ import {
   type SkippedUser,
 } from '../../admin/api';
 import { useAuth } from '../../auth/useAuth';
+import { Pager } from '../../shared/Pager';
+import { usePager } from '../../shared/usePager';
 import { ChevronRightIcon, TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
 import { AttemptsTable } from './AttemptsTable';
 import { UserAttemptsModal } from './UserAttemptsModal';
@@ -24,6 +26,8 @@ function importSummary(created: number, skipped: number): string {
 export function AdminUsersPage() {
   const { user: me } = useAuth();
   const [users, setUsers] = useState<AdminUser[]>([]);
+  const [total, setTotal] = useState(0);
+  const pager = usePager(total);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [busyId, setBusyId] = useState<string | null>(null);
@@ -41,18 +45,21 @@ export function AdminUsersPage() {
   const [importBusy, setImportBusy] = useState(false);
   const [importError, setImportError] = useState<string | null>(null);
 
-  const load = useCallback(() => {
+  const load = useCallback((page: number) => {
     setLoading(true);
     adminApi
-      .listUsers()
-      .then((res) => setUsers(res.users))
+      .listUsers(page)
+      .then((res) => {
+        setUsers(res.items);
+        setTotal(res.total);
+      })
       .catch((err: unknown) => setError(err instanceof Error ? err.message : 'Failed to load'))
       .finally(() => setLoading(false));
   }, []);
 
   useEffect(() => {
-    load();
-  }, [load]);
+    load(pager.page);
+  }, [load, pager.page]);
 
   const toggleRole = async (target: AdminUser) => {
     setBusyId(target.id);
@@ -73,6 +80,7 @@ export function AdminUsersPage() {
       await adminApi.deleteUser(target.id);
       toast.success('User deleted');
       setUsers((prev) => prev.filter((u) => u.id !== target.id));
+      setTotal((prev) => prev - 1);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to delete user');
     } finally {
@@ -129,7 +137,7 @@ export function AdminUsersPage() {
       setParsedRows([]);
       setParseErrors([]);
       setImportFile(null);
-      load();
+      load(pager.page);
     } catch (err) {
       setImportError(err instanceof Error ? err.message : 'Import failed');
     } finally {
@@ -376,6 +384,17 @@ export function AdminUsersPage() {
             })}
           </tbody>
         </table>
+      )}
+
+      {!loading && (
+        <Pager
+          page={pager.page}
+          totalPages={pager.totalPages}
+          canPrev={pager.canPrev}
+          canNext={pager.canNext}
+          onPrev={pager.prev}
+          onNext={pager.next}
+        />
       )}
 
       {modalUserId && (
