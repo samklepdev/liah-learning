@@ -48,10 +48,13 @@ export function AppShell() {
 
   // Logging out clears the user but doesn't change the route, so without
   // this the login form renders in place at whatever page you logged out
-  // from (e.g. mid-quiz) instead of a sane landing page.
+  // from (e.g. mid-quiz) instead of a sane landing page. Navigate straight
+  // to /subjects (replacing, not pushing, so Back doesn't return to the
+  // page you just signed out of) rather than through "/" — one hop instead
+  // of two.
   async function handleLogout() {
     await logout();
-    navigate('/');
+    navigate('/subjects', { replace: true });
   }
 
   // Read from the path rather than useParams: this is a pathless layout route,
