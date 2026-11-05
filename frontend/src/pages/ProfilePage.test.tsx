@@ -124,4 +124,52 @@ describe('ProfilePage', () => {
 
     expect(await screen.findAllByRole('alert')).toHaveLength(1);
   });
+
+  test('inputs are pre-filled from the current user', () => {
+    useAuth.mockReturnValue({
+      user: {
+        id: 'u1',
+        email: 'student@example.com',
+        firstName: 'Jane',
+        lastName: 'Doe',
+        role: 'user',
+        createdAt: '2026-11-01T00:00:00Z',
+      },
+      updateUser,
+    });
+    render(<ProfilePage />);
+
+    expect(screen.getByLabelText('First name')).toHaveValue('Jane');
+    expect(screen.getByLabelText('Last name')).toHaveValue('Doe');
+  });
+
+  test('clearing the first name and submitting calls updateName with an empty string', async () => {
+    useAuth.mockReturnValue({
+      user: {
+        id: 'u1',
+        email: 'student@example.com',
+        firstName: 'Jane',
+        lastName: 'Doe',
+        role: 'user',
+        createdAt: '2026-11-01T00:00:00Z',
+      },
+      updateUser,
+    });
+    updateName.mockResolvedValue({
+      user: {
+        id: 'u1',
+        email: 'student@example.com',
+        firstName: null,
+        lastName: 'Doe',
+        role: 'user',
+        createdAt: '2026-11-01T00:00:00Z',
+      },
+    });
+    render(<ProfilePage />);
+
+    fireEvent.change(screen.getByLabelText('First name'), { target: { value: '' } });
+    fireEvent.click(screen.getByRole('button', { name: /save name/i }));
+
+    await waitFor(() => expect(updateName).toHaveBeenCalledWith('', 'Doe'));
+  });
 });
