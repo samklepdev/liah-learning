@@ -1,7 +1,8 @@
-import { useCallback, useEffect, useState } from 'react';
+import { Fragment, useCallback, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import {
   adminApi,
+  type AdminAttempt,
   type AdminUser,
   type ConfirmedUser,
   type ImportedUserRow,
@@ -9,7 +10,9 @@ import {
   type SkippedUser,
 } from '../../admin/api';
 import { useAuth } from '../../auth/useAuth';
-import { TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
+import { ChevronRightIcon, TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
+import { AttemptsTable } from './AttemptsTable';
+import { UserAttemptsModal } from './UserAttemptsModal';
 
 type ImportResults = { created: ConfirmedUser[]; skipped: SkippedUser[] };
 
@@ -24,6 +27,12 @@ export function AdminUsersPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [busyId, setBusyId] = useState<string | null>(null);
+
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [attemptsById, setAttemptsById] = useState<Record<string, AdminAttempt[]>>({});
+  const [attemptsLoading, setAttemptsLoading] = useState<string | null>(null);
+  const [attemptsError, setAttemptsError] = useState<string | null>(null);
+  const [modalUserId, setModalUserId] = useState<string | null>(null);
 
   const [importFile, setImportFile] = useState<File | null>(null);
   const [parsedRows, setParsedRows] = useState<ImportedUserRow[]>([]);
@@ -68,6 +77,26 @@ export function AdminUsersPage() {
       setError(err instanceof Error ? err.message : 'Failed to delete user');
     } finally {
       setBusyId(null);
+    }
+  };
+
+  const toggleAttempts = async (target: AdminUser) => {
+    if (expandedId === target.id) {
+      setExpandedId(null);
+      return;
+    }
+    setExpandedId(target.id);
+    setAttemptsError(null);
+    if (attemptsById[target.id]) return;
+
+    setAttemptsLoading(target.id);
+    try {
+      const { attempts } = await adminApi.getUserAttempts(target.id);
+      setAttemptsById((prev) => ({ ...prev, [target.id]: attempts }));
+    } catch (err) {
+      setAttemptsError(err instanceof Error ? err.message : 'Failed to load attempts');
+    } finally {
+      setAttemptsLoading(null);
     }
   };
 
@@ -267,43 +296,94 @@ export function AdminUsersPage() {
             {users.map((u) => {
               const isSelf = u.id === me?.id;
               return (
-                <tr key={u.id}>
-                  <td>{u.email}</td>
-                  <td>{u.firstName ?? '—'}</td>
-                  <td>{u.lastName ?? '—'}</td>
-                  <td>{u.role}</td>
-                  <td>{new Date(u.createdAt).toLocaleDateString()}</td>
-                  <td className="admin-actions">
-                    <button
-                      type="button"
-                      className="icon-button"
-                      disabled={isSelf || busyId === u.id}
-                      onClick={() => void toggleRole(u)}
-                      aria-label={u.role === 'admin' ? 'Make user' : 'Make admin'}
-                      title={u.role === 'admin' ? 'Make user' : 'Make admin'}
-                    >
-                      {u.role === 'admin' ? (
-                        <UserMinusIcon className="icon-button-icon" />
-                      ) : (
-                        <UserIcon className="icon-button-icon" />
-                      )}
-                    </button>
-                    <button
-                      type="button"
-                      className="icon-button"
-                      disabled={isSelf || busyId === u.id}
-                      onClick={() => void remove(u)}
-                      aria-label="Delete"
-                      title="Delete"
-                    >
-                      <TrashIcon className="icon-button-icon" />
-                    </button>
-                  </td>
-                </tr>
+                <Fragment key={u.id}>
+                  <tr>
+                    <td>{u.email}</td>
+                    <td>{u.firstName ?? '—'}</td>
+                    <td>{u.lastName ?? '—'}</td>
+                    <td>{u.role}</td>
+                    <td>{new Date(u.createdAt).toLocaleDateString()}</td>
+                    <td className="admin-actions">
+                      <button
+                        type="button"
+                        className="icon-button"
+                        onClick={() => void toggleAttempts(u)}
+                        aria-label={expandedId === u.id ? 'Hide attempts' : 'View attempts'}
+                        title={expandedId === u.id ? 'Hide attempts' : 'View attempts'}
+                      >
+                        <ChevronRightIcon
+                          className={
+                            expandedId === u.id ? 'attempts-toggle-icon open' : 'attempts-toggle-icon'
+                          }
+                        />
+                      </button>
+                      <button
+                        type="button"
+                        className="icon-button"
+                        disabled={isSelf || busyId === u.id}
+                        onClick={() => void toggleRole(u)}
+                        aria-label={u.role === 'admin' ? 'Make user' : 'Make admin'}
+                        title={u.role === 'admin' ? 'Make user' : 'Make admin'}
+                      >
+                        {u.role === 'admin' ? (
+                          <UserMinusIcon className="icon-button-icon" />
+                        ) : (
+                          <UserIcon className="icon-button-icon" />
+                        )}
+                      </button>
+                      <button
+                        type="button"
+                        className="icon-button"
+                        disabled={isSelf || busyId === u.id}
+                        onClick={() => void remove(u)}
+                        aria-label="Delete"
+                        title="Delete"
+                      >
+                        <TrashIcon className="icon-button-icon" />
+                      </button>
+                    </td>
+                  </tr>
+                  {expandedId === u.id && (
+                    <tr className="admin-attempts-row">
+                      <td colSpan={6}>
+                        {attemptsLoading === u.id ? (
+                          <p>Loading attempts…</p>
+                        ) : attemptsError ? (
+                          <p role="alert" className="auth-error">
+                            {attemptsError}
+                          </p>
+                        ) : (attemptsById[u.id]?.length ?? 0) === 0 ? (
+                          <p>No attempts yet.</p>
+                        ) : (
+                          <>
+                            <AttemptsTable attempts={attemptsById[u.id]!.slice(0, 5)} />
+                            {attemptsById[u.id]!.length > 5 && (
+                              <button
+                                type="button"
+                                className="auth-submit-secondary"
+                                onClick={() => setModalUserId(u.id)}
+                              >
+                                View all {attemptsById[u.id]!.length} attempts
+                              </button>
+                            )}
+                          </>
+                        )}
+                      </td>
+                    </tr>
+                  )}
+                </Fragment>
               );
             })}
           </tbody>
         </table>
+      )}
+
+      {modalUserId && (
+        <UserAttemptsModal
+          userLabel={users.find((u) => u.id === modalUserId)?.email ?? ''}
+          attempts={attemptsById[modalUserId] ?? []}
+          onClose={() => setModalUserId(null)}
+        />
       )}
     </div>
   );

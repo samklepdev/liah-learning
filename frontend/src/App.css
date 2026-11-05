@@ -574,6 +574,47 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .icon-button-icon { width: 1.05rem; height: 1.05rem; flex: 0 0 auto; }
 
+.attempts-toggle-icon { transition: transform 0.15s ease; }
+.attempts-toggle-icon.open { transform: rotate(90deg); }
+
+.admin-attempts-row td { padding: 0.75rem 0.75rem 1rem; background: var(--accent-bg); }
+
+.admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.admin-modal {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  max-width: 40rem;
+  width: 90%;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-modal-header h2 { font-size: 1.1rem; margin: 0; }
+
+.admin-modal-body {
+  padding: 0 1.25rem 1.25rem;
+  overflow-y: auto;
+}
+
 /* .auth-form/.auth-fields/.auth-submit/.auth-error supply the joined-field,
    accent-button look shared with the sign-in screen; this just narrows the
    column to match that form's width instead of the page's full 56rem. */
