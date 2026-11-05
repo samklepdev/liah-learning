@@ -20,5 +20,5 @@ apiRouter.use('/admin', requireAuth, requireAdmin, adminRouter);
 
 // Example of a gated route — anything behind requireAuth gets req.user.
 apiRouter.get('/me/dashboard', requireAuth, (req: Request, res: Response) => {
-  res.json({ message: `Welcome back, ${req.user!.email}` });
+  res.json({ message: `Welcome back, ${req.user!.username}` });
 });

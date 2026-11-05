@@ -11,15 +11,21 @@ import { generateToken, hashToken } from '../lib/tokens.ts';
 import { deleteSession, deleteSessionsForUser, insertSession } from '../models/session.model.ts';
 import {
   createUser,
-  findUserByEmailWithHash,
+  findUserByUsernameWithHash,
   findUserByIdWithHash,
   updatePasswordHash,
   updateName,
 } from '../models/user.model.ts';
 
-const credentials = z.object({
-  email: z.string().trim().toLowerCase().pipe(z.email()),
+const registerBody = z.object({
+  firstName: z.string().trim().min(1, 'First name is required').max(100),
+  lastName: z.string().trim().min(1, 'Last name is required').max(100),
   password: z.string().min(8, 'Password must be at least 8 characters').max(256),
+});
+
+const loginBody = z.object({
+  username: z.string().trim().min(1),
+  password: z.string().min(1).max(256),
 });
 
 /**
@@ -45,20 +51,15 @@ async function startSession(res: Response, userId: string): Promise<void> {
  * @param res
  */
 export async function register(req: Request, res: Response): Promise<void> {
-  const parsed = credentials.safeParse(req.body);
+  const parsed = registerBody.safeParse(req.body);
   if (!parsed.success) {
     res.status(400).json({ error: z.prettifyError(parsed.error) });
     return;
   }
-  const { email, password } = parsed.data;
+  const { firstName, lastName, password } = parsed.data;
 
   const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
-  const user = await createUser(email, passwordHash);
-
-  if (!user) {
-    res.status(409).json({ error: 'That email is already registered' });
-    return;
-  }
+  const user = await createUser(firstName, lastName, passwordHash);
 
   await startSession(res, user.id);
   res.status(201).json({ user });
@@ -70,19 +71,19 @@ export async function register(req: Request, res: Response): Promise<void> {
  * @param res
  */
 export async function login(req: Request, res: Response): Promise<void> {
-  const parsed = credentials.safeParse(req.body);
+  const parsed = loginBody.safeParse(req.body);
   if (!parsed.success) {
     // Deliberately vague: don't reveal which field failed on a login attempt.
-    res.status(401).json({ error: 'Invalid email or password' });
+    res.status(401).json({ error: 'Invalid username or password' });
     return;
   }
-  const { email, password } = parsed.data;
+  const { username, password } = parsed.data;
 
-  const existing = await findUserByEmailWithHash(email);
+  const existing = await findUserByUsernameWithHash(username);
   const ok = await argon2.verify(existing?.passwordHash ?? DUMMY_HASH, password);
 
   if (!existing || !ok) {
-    res.status(401).json({ error: 'Invalid email or password' });
+    res.status(401).json({ error: 'Invalid username or password' });
     return;
   }
 
@@ -108,7 +109,7 @@ export async function logout(req: Request, res: Response): Promise<void> {
 
 const changePasswordBody = z.object({
   currentPassword: z.string().min(1, 'Current password is required'),
-  newPassword: credentials.shape.password,
+  newPassword: registerBody.shape.password,
 });
 
 /**
