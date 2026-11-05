@@ -35,7 +35,18 @@ export function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/subjects" replace />} />
+        {/* Signed in, "/" is just a bounce to /subjects. Signed out, it's the
+            sign-out landing page — RequireAuth renders the login form here
+            instead of redirecting, so the address bar reads "/" rather than
+            keeping whatever page you signed out from. */}
+        <Route
+          path="/"
+          element={
+            <RequireAuth>
+              <Navigate to="/subjects" replace />
+            </RequireAuth>
+          }
+        />
         {/* Kept so older links and bookmarks don't land on the 404 page. */}
         <Route path="/courses" element={<Navigate to="/subjects" replace />} />
 

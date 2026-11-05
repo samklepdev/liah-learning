@@ -25,7 +25,7 @@ vi.mock('./api', () => ({
 }));
 
 describe('signing out', () => {
-  test('leaves the page you signed out from, landing on /subjects', async () => {
+  test('leaves the page you signed out from, landing on "/"', async () => {
     window.history.pushState({}, '', '/profile');
     render(
       <AuthProvider>
@@ -39,6 +39,23 @@ describe('signing out', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Sign out' }));
 
     await waitFor(() => expect(screen.getByRole('heading', { name: /sign in/i })).toBeInTheDocument());
-    expect(window.location.pathname).toBe('/subjects');
+    expect(window.location.pathname).toBe('/');
+  });
+
+  test('leaves "/subjects" itself, landing on "/" rather than staying put', async () => {
+    window.history.pushState({}, '', '/subjects');
+    render(
+      <AuthProvider>
+        <AppRouter />
+      </AuthProvider>,
+    );
+
+    await screen.findByRole('navigation', { name: 'Subjects' });
+
+    await userEvent.click(screen.getByRole('button', { name: /a@b.com/ }));
+    await userEvent.click(screen.getByRole('button', { name: 'Sign out' }));
+
+    await waitFor(() => expect(screen.getByRole('heading', { name: /sign in/i })).toBeInTheDocument());
+    expect(window.location.pathname).toBe('/');
   });
 });
