@@ -106,6 +106,16 @@ export function BookIcon({ className }: IconProps) {
   );
 }
 
+/** Bar chart / progress. */
+export function ChartIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M4.5 19.5h15" />
+      <path d="M7 19.5v-6M12 19.5v-10M17 19.5v-4" />
+    </svg>
+  );
+}
+
 export function SunIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className}>

@@ -6,6 +6,7 @@ import { AdminImportPage } from './pages/admin/AdminImportPage';
 import { AdminUsersPage } from './pages/admin/AdminUsersPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ProfilePage } from './pages/ProfilePage';
+import { ProgressPage } from './pages/ProgressPage';
 import { QuizPage } from './pages/QuizPage';
 import { ResultsPage } from './pages/ResultsPage';
 import { SubjectCoursesPage, SubjectsIndexPage } from './pages/SubjectCoursesPage';
@@ -53,6 +54,7 @@ export function AppRouter() {
           <Route path="/courses/:slug/quiz" element={<QuizPage />} />
           <Route path="/courses/:slug/results/:attemptId" element={<ResultsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/progress" element={<ProgressPage />} />
           <Route
             path="/admin/users"
             element={

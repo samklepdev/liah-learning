@@ -5,6 +5,7 @@ import { findQuizByCourseSlug } from '../models/quiz.model.ts';
 import {
   findAttemptById,
   findGradedAttempt,
+  findMyProgress,
   findOptionForQuestion,
   listAnswers,
   saveAnswer,
@@ -108,4 +109,9 @@ export async function putAnswer(req: Request, res: Response): Promise<void> {
 
   await saveAnswer(attempt.id, param(req, 'questionId'), parsed.data.optionId, option.isCorrect);
   res.status(204).end();
+}
+
+export async function getMyProgress(req: Request, res: Response): Promise<void> {
+  const courses = await findMyProgress(req.user!.id);
+  res.json({ courses });
 }

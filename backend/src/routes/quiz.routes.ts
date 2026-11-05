@@ -11,3 +11,4 @@ quizRouter.post('/courses/:slug/attempts', requireAuth, attempt.startAttempt);
 quizRouter.get('/attempts/:id', requireAuth, attempt.getAttempt);
 quizRouter.put('/attempts/:id/answers/:questionId', requireAuth, attempt.putAnswer);
 quizRouter.post('/attempts/:id/submit', requireAuth, attempt.submit);
+quizRouter.get('/me/progress', requireAuth, attempt.getMyProgress);

@@ -301,6 +301,16 @@ describe('AppShell — subject disclosure', () => {
     );
   });
 
+  test('links to my progress', async () => {
+    renderAt();
+    const sidebar = await nav();
+
+    expect(within(sidebar).getByRole('link', { name: 'My Progress' })).toHaveAttribute(
+      'href',
+      '/progress',
+    );
+  });
+
   test('reports a subject-load failure without breaking the page', async () => {
     listSubjects.mockRejectedValue(new ApiError('subjects down', 500));
     renderAt();
