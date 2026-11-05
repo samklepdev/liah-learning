@@ -6,17 +6,17 @@ beforeEach(() => {
 });
 
 describe('adminApi', () => {
-  test('listUsers GETs /api/v1/admin/users', async () => {
+  test('listUsers GETs /api/v1/admin/users with the requested page', async () => {
     (fetch as unknown as ReturnType<typeof vi.fn>).mockResolvedValue({
       status: 200,
       ok: true,
-      json: async () => ({ users: [] }),
+      json: async () => ({ items: [], total: 0, page: 2, pageSize: 20 }),
     });
 
-    await adminApi.listUsers();
+    await adminApi.listUsers(2);
 
     expect(fetch).toHaveBeenCalledWith(
-      '/api/v1/admin/users',
+      '/api/v1/admin/users?page=2',
       expect.objectContaining({ credentials: 'include' }),
     );
   });
