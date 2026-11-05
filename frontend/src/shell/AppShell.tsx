@@ -48,10 +48,12 @@ export function AppShell() {
 
   // Logging out clears the user but doesn't change the route, so without
   // this the login form renders in place at whatever page you logged out
-  // from (e.g. mid-quiz) instead of a sane landing page.
+  // from (e.g. mid-quiz). "/" is signed out's landing page (see router.tsx),
+  // so this always leaves the address bar showing "/" with the login form,
+  // never the page you signed out of. `replace` so Back doesn't return to it.
   async function handleLogout() {
     await logout();
-    navigate('/');
+    navigate('/', { replace: true });
   }
 
   // Read from the path rather than useParams: this is a pathless layout route,
