@@ -148,8 +148,8 @@ export function me(req: Request, res: Response): void {
 }
 
 const nameBody = z.object({
-  firstName: z.string().trim().optional(),
-  lastName: z.string().trim().optional(),
+  firstName: z.string().trim().max(100).optional(),
+  lastName: z.string().trim().max(100).optional(),
 });
 
 /**
@@ -177,5 +177,9 @@ export async function updateNameHandler(req: Request, res: Response): Promise<vo
   }
 
   const user = await updateName(req.user!.id, updates);
+  if (!user) {
+    res.status(401).json({ error: 'Not authenticated' });
+    return;
+  }
   res.json({ user });
 }

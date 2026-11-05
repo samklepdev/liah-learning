@@ -169,6 +169,17 @@ test('PATCH /api/auth/name with only firstName in the body does not clear lastNa
   assert.equal(body.user.lastName, 'Doe');
 });
 
+test('PATCH /api/auth/name rejects a name over 100 characters', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'name-too-long@example.com');
+
+  const res = await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'a'.repeat(101) }),
+  });
+  assert.equal(res.status, 400);
+});
+
 test('PATCH /api/auth/name with an empty body leaves both names unchanged', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'name-empty-body@example.com');
   await fetch(`${baseUrl}/api/auth/name`, {
