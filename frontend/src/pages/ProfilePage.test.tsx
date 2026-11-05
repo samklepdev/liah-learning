@@ -6,7 +6,11 @@ const changePassword = vi.fn();
 const updateName = vi.fn();
 const updateUser = vi.fn();
 const useAuth = vi.fn();
+const toastSuccess = vi.fn();
 
+vi.mock('react-hot-toast', () => ({
+  default: { success: (message: string) => toastSuccess(message) },
+}));
 vi.mock('../auth/useAuth', () => ({ useAuth: () => useAuth() }));
 vi.mock('../auth/api', () => ({
   MIN_PASSWORD_LENGTH: 8,
@@ -46,6 +50,7 @@ beforeEach(() => {
   changePassword.mockReset();
   updateName.mockReset();
   updateUser.mockReset();
+  toastSuccess.mockReset();
 });
 
 describe('ProfilePage', () => {
@@ -118,7 +123,7 @@ describe('ProfilePage', () => {
         expect.objectContaining({ firstName: 'Jane', lastName: 'Doe' }),
       ),
     );
-    expect(await screen.findByText('Profile updated.')).toBeInTheDocument();
+    await waitFor(() => expect(toastSuccess).toHaveBeenCalledWith('Profile updated.'));
     expect(screen.queryByLabelText('First name')).not.toBeInTheDocument();
   });
 
@@ -145,7 +150,7 @@ describe('ProfilePage', () => {
 
     await waitFor(() => expect(updateName).toHaveBeenCalledWith('Jane', 'Doe'));
     await waitFor(() => expect(changePassword).toHaveBeenCalledWith('old-pass-123', 'new-pass-456'));
-    expect(await screen.findByText('Profile updated.')).toBeInTheDocument();
+    await waitFor(() => expect(toastSuccess).toHaveBeenCalledWith('Profile updated.'));
     expect(screen.queryByLabelText('Current password')).not.toBeInTheDocument();
   });
 

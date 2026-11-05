@@ -1,4 +1,5 @@
 import { useState, type SubmitEvent } from 'react';
+import toast from 'react-hot-toast';
 import { authApi, MIN_PASSWORD_LENGTH } from '../auth/api';
 import { useAuth } from '../auth/useAuth';
 
@@ -13,7 +14,6 @@ export function ProfilePage() {
   const [nameError, setNameError] = useState<string | null>(null);
   const [passwordError, setPasswordError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
-  const [justSaved, setJustSaved] = useState(false);
 
   function startEditing() {
     setFirstName(user?.firstName ?? '');
@@ -22,7 +22,6 @@ export function ProfilePage() {
     setNewPassword('');
     setNameError(null);
     setPasswordError(null);
-    setJustSaved(false);
     setIsEditing(true);
   }
 
@@ -79,7 +78,7 @@ export function ProfilePage() {
       setCurrentPassword('');
       setNewPassword('');
       setIsEditing(false);
-      setJustSaved(true);
+      toast.success('Profile updated.');
     }
   }
 
@@ -102,8 +101,6 @@ export function ProfilePage() {
             </>
           )}
         </dl>
-
-        {justSaved && <p className="profile-success">Profile updated.</p>}
 
         <button type="button" className="auth-submit" onClick={startEditing}>
           Edit profile
