@@ -153,9 +153,11 @@ const nameBody = z.object({
 });
 
 /**
- * Updates the signed-in user's first/last name. An omitted or blank field
- * clears that name — unlike the import flow's validation, this is an edit
- * surface where un-setting a name back to blank is a legitimate action.
+ * Updates the signed-in user's first/last name. This is a true partial
+ * update: a field omitted from the body is left untouched, while a field
+ * present but blank clears that name — unlike the import flow's validation,
+ * this is an edit surface where un-setting a name back to blank is a
+ * legitimate action.
  * @param req
  * @param res
  */
@@ -166,9 +168,14 @@ export async function updateNameHandler(req: Request, res: Response): Promise<vo
     return;
   }
 
-  const firstName = parsed.data.firstName === '' || parsed.data.firstName === undefined ? null : parsed.data.firstName;
-  const lastName = parsed.data.lastName === '' || parsed.data.lastName === undefined ? null : parsed.data.lastName;
+  const updates: { firstName?: string | null; lastName?: string | null } = {};
+  if ('firstName' in parsed.data) {
+    updates.firstName = parsed.data.firstName === '' ? null : parsed.data.firstName;
+  }
+  if ('lastName' in parsed.data) {
+    updates.lastName = parsed.data.lastName === '' ? null : parsed.data.lastName;
+  }
 
-  const user = await updateName(req.user!.id, firstName, lastName);
+  const user = await updateName(req.user!.id, updates);
   res.json({ user });
 }

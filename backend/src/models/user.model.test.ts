@@ -53,14 +53,28 @@ test('createUser defaults first/last name to null when omitted', async () => {
 
 test('updateName sets first and last name', async () => {
   const user = await createUser('rename@example.com', 'hash');
-  const updated = await updateName(user!.id, 'Jane', 'Doe');
+  const updated = await updateName(user!.id, { firstName: 'Jane', lastName: 'Doe' });
   assert.equal(updated?.firstName, 'Jane');
   assert.equal(updated?.lastName, 'Doe');
 });
 
 test('updateName clears a name back to null', async () => {
   const user = await createUser('clear-name@example.com', 'hash', 'Jane', 'Doe');
-  const updated = await updateName(user!.id, null, null);
+  const updated = await updateName(user!.id, { firstName: null, lastName: null });
   assert.equal(updated?.firstName, null);
   assert.equal(updated?.lastName, null);
+});
+
+test('updateName with only firstName leaves lastName untouched', async () => {
+  const user = await createUser('partial-update@example.com', 'hash', 'Jane', 'Doe');
+  const updated = await updateName(user!.id, { firstName: 'Janet' });
+  assert.equal(updated?.firstName, 'Janet');
+  assert.equal(updated?.lastName, 'Doe');
+});
+
+test('updateName with no keys leaves both names untouched and returns the current user', async () => {
+  const user = await createUser('empty-update@example.com', 'hash', 'Jane', 'Doe');
+  const updated = await updateName(user!.id, {});
+  assert.equal(updated?.firstName, 'Jane');
+  assert.equal(updated?.lastName, 'Doe');
 });

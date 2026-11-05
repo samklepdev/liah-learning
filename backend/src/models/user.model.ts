@@ -37,17 +37,22 @@ export async function createUser(
   return user ?? null;
 }
 
-/** Used by the profile name-edit form — either field may be cleared to null. */
+/**
+ * Used by the profile name-edit form. Only the columns present in `updates`
+ * are written — an omitted key leaves that column untouched, while an
+ * explicit `null` clears it. This is a true partial update: callers must
+ * only include the keys they actually intend to change.
+ */
 export async function updateName(
   id: string,
-  firstName: string | null,
-  lastName: string | null,
+  updates: { firstName?: string | null; lastName?: string | null },
 ): Promise<PublicUser | null> {
-  const [user] = await db
-    .update(users)
-    .set({ firstName, lastName })
-    .where(eq(users.id, id))
-    .returning(publicColumns);
+  if (Object.keys(updates).length === 0) {
+    const [user] = await db.select(publicColumns).from(users).where(eq(users.id, id)).limit(1);
+    return user ?? null;
+  }
+
+  const [user] = await db.update(users).set(updates).where(eq(users.id, id)).returning(publicColumns);
 
   return user ?? null;
 }
