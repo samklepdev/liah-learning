@@ -1,4 +1,5 @@
 import { useState, type SubmitEvent } from 'react';
+import liahLogo from '../assets/liah-logo.png';
 import { MIN_PASSWORD_LENGTH } from './api';
 import { useAuth } from './useAuth';
 
@@ -29,9 +30,7 @@ export function LoginForm() {
     <div className="auth-page">
       <div className="auth-card">
         <header className="auth-head">
-          <span className="auth-mark" aria-hidden="true">
-            L
-          </span>
+          <img src={liahLogo} alt="LIAH Learning" className="auth-mark" />
           <h1>{mode === 'login' ? 'Sign in to your account' : 'Create your account'}</h1>
         </header>
 
