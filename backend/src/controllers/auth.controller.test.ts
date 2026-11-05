@@ -107,3 +107,94 @@ test('PATCH /api/auth/password changes the password, revokes other sessions, kee
   });
   assert.equal(relogin.status, 200);
 });
+
+test('PATCH /api/auth/name requires a session', async () => {
+  const res = await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
+  });
+  assert.equal(res.status, 401);
+});
+
+test('PATCH /api/auth/name updates and returns the user', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'name-update@example.com');
+
+  const res = await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
+  });
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { user: { firstName: string | null; lastName: string | null } };
+  assert.equal(body.user.firstName, 'Jane');
+  assert.equal(body.user.lastName, 'Doe');
+});
+
+test('PATCH /api/auth/name clears a name when given blank strings', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'name-clear@example.com');
+  await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
+  });
+
+  const res = await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: '', lastName: '' }),
+  });
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { user: { firstName: string | null; lastName: string | null } };
+  assert.equal(body.user.firstName, null);
+  assert.equal(body.user.lastName, null);
+});
+
+test('PATCH /api/auth/name with only firstName in the body does not clear lastName', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'name-partial@example.com');
+  await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
+  });
+
+  const res = await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'Janet' }),
+  });
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { user: { firstName: string | null; lastName: string | null } };
+  assert.equal(body.user.firstName, 'Janet');
+  assert.equal(body.user.lastName, 'Doe');
+});
+
+test('PATCH /api/auth/name rejects a name over 100 characters', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'name-too-long@example.com');
+
+  const res = await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'a'.repeat(101) }),
+  });
+  assert.equal(res.status, 400);
+});
+
+test('PATCH /api/auth/name with an empty body leaves both names unchanged', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'name-empty-body@example.com');
+  await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'Jane', lastName: 'Doe' }),
+  });
+
+  const res = await fetch(`${baseUrl}/api/auth/name`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({}),
+  });
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { user: { firstName: string | null; lastName: string | null } };
+  assert.equal(body.user.firstName, 'Jane');
+  assert.equal(body.user.lastName, 'Doe');
+});

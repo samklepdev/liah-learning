@@ -1,7 +1,7 @@
 import { test, before, after, beforeEach } from 'node:test';
 import assert from 'node:assert/strict';
 import { resetDb, closeDb } from '../test/helpers/db.ts';
-import { createUser, findUserByIdWithHash, updatePasswordHash } from './user.model.ts';
+import { createUser, findUserByIdWithHash, updatePasswordHash, updateName } from './user.model.ts';
 
 before(async () => {
   await resetDb();
@@ -36,4 +36,45 @@ test('updatePasswordHash persists the new hash', async () => {
   await updatePasswordHash(user!.id, 'new-hash');
   const found = await findUserByIdWithHash(user!.id);
   assert.equal(found?.passwordHash, 'new-hash');
+});
+
+test('createUser stores an optional first/last name and role', async () => {
+  const user = await createUser('with-name@example.com', 'hash', 'Jane', 'Doe', 'admin');
+  assert.equal(user?.firstName, 'Jane');
+  assert.equal(user?.lastName, 'Doe');
+  assert.equal(user?.role, 'admin');
+});
+
+test('createUser defaults first/last name to null when omitted', async () => {
+  const user = await createUser('no-name@example.com', 'hash');
+  assert.equal(user?.firstName, null);
+  assert.equal(user?.lastName, null);
+});
+
+test('updateName sets first and last name', async () => {
+  const user = await createUser('rename@example.com', 'hash');
+  const updated = await updateName(user!.id, { firstName: 'Jane', lastName: 'Doe' });
+  assert.equal(updated?.firstName, 'Jane');
+  assert.equal(updated?.lastName, 'Doe');
+});
+
+test('updateName clears a name back to null', async () => {
+  const user = await createUser('clear-name@example.com', 'hash', 'Jane', 'Doe');
+  const updated = await updateName(user!.id, { firstName: null, lastName: null });
+  assert.equal(updated?.firstName, null);
+  assert.equal(updated?.lastName, null);
+});
+
+test('updateName with only firstName leaves lastName untouched', async () => {
+  const user = await createUser('partial-update@example.com', 'hash', 'Jane', 'Doe');
+  const updated = await updateName(user!.id, { firstName: 'Janet' });
+  assert.equal(updated?.firstName, 'Janet');
+  assert.equal(updated?.lastName, 'Doe');
+});
+
+test('updateName with no keys leaves both names untouched and returns the current user', async () => {
+  const user = await createUser('empty-update@example.com', 'hash', 'Jane', 'Doe');
+  const updated = await updateName(user!.id, {});
+  assert.equal(updated?.firstName, 'Jane');
+  assert.equal(updated?.lastName, 'Doe');
 });

@@ -9,3 +9,4 @@ authRouter.post('/login', auth.login);
 authRouter.post('/logout', auth.logout);
 authRouter.get('/me', requireAuth, auth.me);
 authRouter.patch('/password', requireAuth, auth.changePassword);
+authRouter.patch('/name', requireAuth, auth.updateNameHandler);

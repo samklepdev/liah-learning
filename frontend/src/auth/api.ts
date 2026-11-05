@@ -1,6 +1,8 @@
 export type User = {
   id: string;
   email: string;
+  firstName: string | null;
+  lastName: string | null;
   role: 'user' | 'admin';
   createdAt: string;
 };
@@ -68,6 +70,12 @@ export const authApi = {
     request<void>('/auth/password', {
       method: 'PATCH',
       body: JSON.stringify({ currentPassword, newPassword }),
+    }),
+
+  updateName: (firstName: string, lastName: string) =>
+    request<{ user: User }>('/auth/name', {
+      method: 'PATCH',
+      body: JSON.stringify({ firstName, lastName }),
     }),
 
   logout: () => request<void>('/auth/logout', { method: 'POST' }),

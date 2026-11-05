@@ -28,6 +28,7 @@ if (env.CORS_ORIGIN) {
 // body-parser skips a second json() call once a request's body is already
 // parsed, so mounting this narrower, larger-limit parser first lets it win
 // for just this one path without loosening the limit everywhere else.
+app.use('/api/admin/users/import/confirm', express.json({ limit: '2mb' }));
 app.use('/api/admin/import/confirm', express.json({ limit: '2mb' }));
 app.use(express.json({ limit: '100kb' }));
 app.use(cookieParser());
