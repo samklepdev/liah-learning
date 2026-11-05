@@ -18,7 +18,7 @@ let close: () => Promise<void>;
 let cookie: string;
 
 async function getQuiz(): Promise<any> {
-  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/quiz`, { headers: { cookie } });
+  const res = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/quiz`, { headers: { cookie } });
   return ((await res.json()) as any).quiz;
 }
 
@@ -35,12 +35,12 @@ after(async () => {
 });
 
 test('POST attempts requires a session', async () => {
-  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, { method: 'POST' });
+  const res = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, { method: 'POST' });
   assert.equal(res.status, 401);
 });
 
 test('POST attempts starts an attempt, and repeating resumes the same one', async () => {
-  const first = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const first = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie },
   });
@@ -48,7 +48,7 @@ test('POST attempts starts an attempt, and repeating resumes the same one', asyn
   const a = (await first.json()) as { attempt: { id: string; submittedAt: string | null } };
   assert.equal(a.attempt.submittedAt, null);
 
-  const second = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const second = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie },
   });
@@ -67,11 +67,11 @@ test('two concurrent starts yield one attempt, not a 500', async () => {
   const racer = await registerTestUser(baseUrl, 'racer@example.com');
 
   const [a, b] = await Promise.all([
-    fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+    fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
       method: 'POST',
       headers: { cookie: racer.cookie },
     }),
-    fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+    fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
       method: 'POST',
       headers: { cookie: racer.cookie },
     }),
@@ -116,7 +116,7 @@ test('submitting frees the slot, so a retake can start — the 500 path', async 
   const first = await insertOpenAttempt(owner.userId, quiz.courseId);
   assert.ok(first);
 
-  const submitted = await fetch(`${baseUrl}/api/attempts/${first.id}/submit`, {
+  const submitted = await fetch(`${baseUrl}/api/v1/attempts/${first.id}/submit`, {
     method: 'POST',
     headers: { cookie: owner.cookie },
   });
@@ -131,25 +131,25 @@ test('submitting frees the slot, so a retake can start — the 500 path', async 
 test('retaking through the API returns 201 for a fresh attempt', async () => {
   const owner = await registerTestUser(baseUrl, 'retaker2@example.com');
 
-  const started = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const started = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie: owner.cookie },
   });
   assert.equal(started.status, 201);
   const { attempt } = (await started.json()) as { attempt: { id: string } };
 
-  await fetch(`${baseUrl}/api/attempts/${attempt.id}/submit`, {
+  await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}/submit`, {
     method: 'POST',
     headers: { cookie: owner.cookie },
   });
 
   // Retake: the quiz page fires this twice per mount under StrictMode.
   const [a, b] = await Promise.all([
-    fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+    fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
       method: 'POST',
       headers: { cookie: owner.cookie },
     }),
-    fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+    fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
       method: 'POST',
       headers: { cookie: owner.cookie },
     }),
@@ -166,7 +166,7 @@ test('retaking through the API returns 201 for a fresh attempt', async () => {
 
 test('PUT answer saves a selection and is idempotent', async () => {
   const quiz = await getQuiz();
-  const res0 = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const res0 = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie },
   });
@@ -174,7 +174,7 @@ test('PUT answer saves a selection and is idempotent', async () => {
 
   const q = quiz.questions[0];
   const save = async (optionId: string) =>
-    fetch(`${baseUrl}/api/attempts/${attempt.id}/answers/${q.id}`, {
+    fetch(`${baseUrl}/api/v1/attempts/${attempt.id}/answers/${q.id}`, {
       method: 'PUT',
       headers: { cookie, 'Content-Type': 'application/json' },
       body: JSON.stringify({ optionId }),
@@ -183,7 +183,7 @@ test('PUT answer saves a selection and is idempotent', async () => {
   assert.equal((await save(q.options[1].id)).status, 204);
   assert.equal((await save(q.options[0].id)).status, 204);
 
-  const res = await fetch(`${baseUrl}/api/attempts/${attempt.id}`, { headers: { cookie } });
+  const res = await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}`, { headers: { cookie } });
   assert.equal(res.status, 200);
   const body = (await res.json()) as {
     attempt: { answers: Array<{ questionId: string; optionId: string }> };
@@ -194,14 +194,14 @@ test('PUT answer saves a selection and is idempotent', async () => {
 
 test('PUT answer rejects an option that belongs to another question', async () => {
   const quiz = await getQuiz();
-  const res0 = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const res0 = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie },
   });
   const { attempt } = (await res0.json()) as { attempt: { id: string } };
 
   const res = await fetch(
-    `${baseUrl}/api/attempts/${attempt.id}/answers/${quiz.questions[0].id}`,
+    `${baseUrl}/api/v1/attempts/${attempt.id}/answers/${quiz.questions[0].id}`,
     {
       method: 'PUT',
       headers: { cookie, 'Content-Type': 'application/json' },
@@ -213,33 +213,33 @@ test('PUT answer rejects an option that belongs to another question', async () =
 
 test("an in-progress attempt's answers do not reveal correctness", async () => {
   const quiz = await getQuiz();
-  const res0 = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const res0 = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie },
   });
   const { attempt } = (await res0.json()) as { attempt: { id: string } };
-  await fetch(`${baseUrl}/api/attempts/${attempt.id}/answers/${quiz.questions[0].id}`, {
+  await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}/answers/${quiz.questions[0].id}`, {
     method: 'PUT',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ optionId: quiz.questions[0].options[0].id }),
   });
 
   const raw = await (
-    await fetch(`${baseUrl}/api/attempts/${attempt.id}`, { headers: { cookie } })
+    await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}`, { headers: { cookie } })
   ).text();
   assert.ok(!raw.includes('isCorrect'), 'in-progress attempt leaked correctness');
   assert.ok(!raw.includes('explanation'), 'in-progress attempt leaked explanations');
 });
 
 test("another user's attempt is a 404", async () => {
-  const res0 = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const res0 = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie },
   });
   const { attempt } = (await res0.json()) as { attempt: { id: string } };
 
   const other = await registerTestUser(baseUrl, 'intruder@example.com');
-  const res = await fetch(`${baseUrl}/api/attempts/${attempt.id}`, {
+  const res = await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}`, {
     headers: { cookie: other.cookie },
   });
   assert.equal(res.status, 404);

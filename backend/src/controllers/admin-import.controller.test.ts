@@ -36,7 +36,7 @@ function chassisFixtureAsPdfText(): string {
   return readFileSync(new URL('../test/fixtures/chassis.txt', import.meta.url), 'utf8');
 }
 
-test('POST /api/admin/import/parse returns a summary for a good pack', async () => {
+test('POST /api/v1/admin/import/parse returns a summary for a good pack', async () => {
   const cookie = await adminCookie();
   const form = new FormData();
   form.append(
@@ -46,7 +46,7 @@ test('POST /api/admin/import/parse returns a summary for a good pack', async () 
   );
   form.append('subjectTitle', 'Chassis');
 
-  const res = await fetch(`${baseUrl}/api/admin/import/parse`, {
+  const res = await fetch(`${baseUrl}/api/v1/admin/import/parse`, {
     method: 'POST',
     headers: { cookie },
     body: form,
@@ -57,7 +57,7 @@ test('POST /api/admin/import/parse returns a summary for a good pack', async () 
   assert.equal(body.summary.questions, 110);
 });
 
-test('POST /api/admin/import/parse 422s with errors for a malformed pack', async () => {
+test('POST /api/v1/admin/import/parse 422s with errors for a malformed pack', async () => {
   const cookie = await adminCookie();
   const malformed = readFileSync(
     new URL('../test/fixtures/malformed.txt', import.meta.url),
@@ -67,7 +67,7 @@ test('POST /api/admin/import/parse 422s with errors for a malformed pack', async
   form.append('pdf', new Blob([malformed], { type: 'text/plain' }), 'bad.txt');
   form.append('subjectTitle', 'Bad');
 
-  const res = await fetch(`${baseUrl}/api/admin/import/parse`, {
+  const res = await fetch(`${baseUrl}/api/v1/admin/import/parse`, {
     method: 'POST',
     headers: { cookie },
     body: form,
@@ -77,13 +77,13 @@ test('POST /api/admin/import/parse 422s with errors for a malformed pack', async
   assert.equal(body.errors.length, 1);
 });
 
-test('POST /api/admin/import/parse 404s for a non-admin', async () => {
+test('POST /api/v1/admin/import/parse 404s for a non-admin', async () => {
   const { cookie } = await registerTestUser(baseUrl, 'plain@example.com');
   const form = new FormData();
   form.append('pdf', new Blob(['x'], { type: 'text/plain' }), 'x.txt');
   form.append('subjectTitle', 'X');
 
-  const res = await fetch(`${baseUrl}/api/admin/import/parse`, {
+  const res = await fetch(`${baseUrl}/api/v1/admin/import/parse`, {
     method: 'POST',
     headers: { cookie },
     body: form,
@@ -91,7 +91,7 @@ test('POST /api/admin/import/parse 404s for a non-admin', async () => {
   assert.equal(res.status, 404);
 });
 
-test('POST /api/admin/import/confirm seeds the parsed subject', async () => {
+test('POST /api/v1/admin/import/confirm seeds the parsed subject', async () => {
   const cookie = await adminCookie();
   const form = new FormData();
   form.append(
@@ -101,14 +101,14 @@ test('POST /api/admin/import/confirm seeds the parsed subject', async () => {
   );
   form.append('subjectTitle', 'Chassis');
 
-  const parseRes = await fetch(`${baseUrl}/api/admin/import/parse`, {
+  const parseRes = await fetch(`${baseUrl}/api/v1/admin/import/parse`, {
     method: 'POST',
     headers: { cookie },
     body: form,
   });
   const { subject } = (await parseRes.json()) as { subject: unknown };
 
-  const confirmRes = await fetch(`${baseUrl}/api/admin/import/confirm`, {
+  const confirmRes = await fetch(`${baseUrl}/api/v1/admin/import/confirm`, {
     method: 'POST',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ subject }),
@@ -119,7 +119,7 @@ test('POST /api/admin/import/confirm seeds the parsed subject', async () => {
   assert.equal(body.questions, 110);
 });
 
-test('POST /api/admin/import/confirm is idempotent on re-import', async () => {
+test('POST /api/v1/admin/import/confirm is idempotent on re-import', async () => {
   const cookie = await adminCookie();
   const form = new FormData();
   form.append(
@@ -129,7 +129,7 @@ test('POST /api/admin/import/confirm is idempotent on re-import', async () => {
   );
   form.append('subjectTitle', 'Chassis');
   const { subject } = (await (
-    await fetch(`${baseUrl}/api/admin/import/parse`, {
+    await fetch(`${baseUrl}/api/v1/admin/import/parse`, {
       method: 'POST',
       headers: { cookie },
       body: form,
@@ -137,7 +137,7 @@ test('POST /api/admin/import/confirm is idempotent on re-import', async () => {
   ).json()) as { subject: unknown };
 
   const confirm = () =>
-    fetch(`${baseUrl}/api/admin/import/confirm`, {
+    fetch(`${baseUrl}/api/v1/admin/import/confirm`, {
       method: 'POST',
       headers: { cookie, 'Content-Type': 'application/json' },
       body: JSON.stringify({ subject }),
@@ -147,7 +147,7 @@ test('POST /api/admin/import/confirm is idempotent on re-import', async () => {
   const second = await confirm();
   assert.equal(second.status, 200);
 
-  const list = await fetch(`${baseUrl}/api/subjects`);
+  const list = await fetch(`${baseUrl}/api/v1/subjects`);
   const body = (await list.json()) as { subjects: unknown[] };
   assert.equal(body.subjects.length, 1);
 });

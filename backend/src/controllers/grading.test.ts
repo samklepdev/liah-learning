@@ -18,12 +18,12 @@ let cookie: string;
 
 /** Answers `correctCount` questions correctly and the rest wrong. Returns the attempt id. */
 async function takeQuiz(sessionCookie: string, correctCount: number): Promise<string> {
-  const quizRes = await fetch(`${baseUrl}/api/courses/${SLUG}/quiz`, {
+  const quizRes = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/quiz`, {
     headers: { cookie: sessionCookie },
   });
   const { quiz } = (await quizRes.json()) as any;
 
-  const startRes = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const startRes = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie: sessionCookie },
   });
@@ -35,7 +35,7 @@ async function takeQuiz(sessionCookie: string, correctCount: number): Promise<st
     const label = i < correctCount ? correctLabel : correctLabel === 'A' ? 'B' : 'A';
     const option = q.options.find((o: any) => o.label === label);
 
-    const res = await fetch(`${baseUrl}/api/attempts/${attempt.id}/answers/${q.id}`, {
+    const res = await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}/answers/${q.id}`, {
       method: 'PUT',
       headers: { cookie: sessionCookie, 'Content-Type': 'application/json' },
       body: JSON.stringify({ optionId: option.id }),
@@ -60,7 +60,7 @@ after(async () => {
 test('submitting scores against the answer key', async () => {
   const attemptId = await takeQuiz(cookie, 8);
 
-  const res = await fetch(`${baseUrl}/api/attempts/${attemptId}/submit`, {
+  const res = await fetch(`${baseUrl}/api/v1/attempts/${attemptId}/submit`, {
     method: 'POST',
     headers: { cookie },
   });
@@ -75,7 +75,7 @@ test('submitting scores against the answer key', async () => {
 });
 
 test('the graded result carries explanations and modules to review', async () => {
-  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const res = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie },
   });
@@ -84,23 +84,23 @@ test('the graded result carries explanations and modules to review', async () =>
 
   // Answer only question 1, correctly; the other nine stay blank.
   const quiz = (await (
-    await fetch(`${baseUrl}/api/courses/${SLUG}/quiz`, { headers: { cookie } })
+    await fetch(`${baseUrl}/api/v1/courses/${SLUG}/quiz`, { headers: { cookie } })
   ).json()) as any;
   const q1 = quiz.quiz.questions[0];
   const correct = course1.questions[0]!.options.find((o) => o.isCorrect)!.label;
-  await fetch(`${baseUrl}/api/attempts/${fresh.id}/answers/${q1.id}`, {
+  await fetch(`${baseUrl}/api/v1/attempts/${fresh.id}/answers/${q1.id}`, {
     method: 'PUT',
     headers: { cookie, 'Content-Type': 'application/json' },
     body: JSON.stringify({ optionId: q1.options.find((o: any) => o.label === correct).id }),
   });
 
-  await fetch(`${baseUrl}/api/attempts/${fresh.id}/submit`, {
+  await fetch(`${baseUrl}/api/v1/attempts/${fresh.id}/submit`, {
     method: 'POST',
     headers: { cookie },
   });
 
   const graded = (await (
-    await fetch(`${baseUrl}/api/attempts/${fresh.id}`, { headers: { cookie } })
+    await fetch(`${baseUrl}/api/v1/attempts/${fresh.id}`, { headers: { cookie } })
   ).json()) as any;
 
   assert.equal(graded.attempt.score, 1, 'unanswered questions count as wrong');
@@ -121,13 +121,13 @@ test('the graded result carries explanations and modules to review', async () =>
 
 test('submitting twice is idempotent and does not regrade', async () => {
   const attemptId = await takeQuiz(cookie, 5);
-  const first = await fetch(`${baseUrl}/api/attempts/${attemptId}/submit`, {
+  const first = await fetch(`${baseUrl}/api/v1/attempts/${attemptId}/submit`, {
     method: 'POST',
     headers: { cookie },
   });
   const a = (await first.json()) as any;
 
-  const second = await fetch(`${baseUrl}/api/attempts/${attemptId}/submit`, {
+  const second = await fetch(`${baseUrl}/api/v1/attempts/${attemptId}/submit`, {
     method: 'POST',
     headers: { cookie },
   });
@@ -138,14 +138,14 @@ test('submitting twice is idempotent and does not regrade', async () => {
 });
 
 test("another user cannot submit someone else's attempt", async () => {
-  const quizRes = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const quizRes = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie },
   });
   const { attempt } = (await quizRes.json()) as any;
 
   const other = await registerTestUser(baseUrl, 'thief@example.com');
-  const res = await fetch(`${baseUrl}/api/attempts/${attempt.id}/submit`, {
+  const res = await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}/submit`, {
     method: 'POST',
     headers: { cookie: other.cookie },
   });

@@ -19,7 +19,7 @@ export async function registerTestUser(
   baseUrl: string,
   email: string,
 ): Promise<{ cookie: string; userId: string }> {
-  const res = await fetch(`${baseUrl}/api/auth/register`, {
+  const res = await fetch(`${baseUrl}/api/v1/auth/register`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password: 'test-password-123' }),

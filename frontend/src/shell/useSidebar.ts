@@ -33,7 +33,15 @@ export function useSidebar(): {
   }, []);
 
   const toggle = useCallback(() => persist(!collapsed), [collapsed, persist]);
-  const close = useCallback(() => persist(true), [persist]);
+  // Navigating (e.g. picking a quiz) should only collapse the sidebar on
+  // narrow viewports, where it's an overlay covering the content — see the
+  // `max-width: 48rem` breakpoint in App.css. On desktop it sits in normal
+  // flow, so auto-closing it there would just be annoying.
+  const close = useCallback(() => {
+    if (window.matchMedia('(max-width: 48rem)').matches) {
+      persist(true);
+    }
+  }, [persist]);
 
   return { collapsed, toggle, close };
 }

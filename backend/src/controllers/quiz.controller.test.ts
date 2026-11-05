@@ -28,12 +28,12 @@ after(async () => {
 });
 
 test('GET quiz requires a session', async () => {
-  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/quiz`);
+  const res = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/quiz`);
   assert.equal(res.status, 401);
 });
 
 test('GET quiz returns ten questions in order with four options each', async () => {
-  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/quiz`, { headers: { cookie } });
+  const res = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/quiz`, { headers: { cookie } });
   assert.equal(res.status, 200);
   const { quiz } = (await res.json()) as { quiz: Record<string, any> };
 
@@ -55,7 +55,7 @@ test('GET quiz returns ten questions in order with four options each', async () 
 });
 
 test('GET quiz never leaks correct answers or explanations', async () => {
-  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/quiz`, { headers: { cookie } });
+  const res = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/quiz`, { headers: { cookie } });
   const raw = await res.text();
 
   assert.ok(!raw.includes('isCorrect'), 'payload contained isCorrect');
@@ -68,7 +68,7 @@ test('GET quiz never leaks correct answers or explanations', async () => {
 });
 
 test('GET quiz 404s for an unknown course', async () => {
-  const res = await fetch(`${baseUrl}/api/courses/not-a-course/quiz`, {
+  const res = await fetch(`${baseUrl}/api/v1/courses/not-a-course/quiz`, {
     headers: { cookie },
   });
   assert.equal(res.status, 404);
@@ -76,7 +76,7 @@ test('GET quiz 404s for an unknown course', async () => {
 
 /** The quiz payload's per-user history block. */
 async function fetchHistory(sessionCookie: string) {
-  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/quiz`, {
+  const res = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/quiz`, {
     headers: { cookie: sessionCookie },
   });
   assert.equal(res.status, 200);
@@ -86,7 +86,7 @@ async function fetchHistory(sessionCookie: string) {
 
 /** Starts an attempt and returns its id. Answers nothing, so it scores zero. */
 async function startAttempt(sessionCookie: string): Promise<string> {
-  const res = await fetch(`${baseUrl}/api/courses/${SLUG}/attempts`, {
+  const res = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
     headers: { cookie: sessionCookie },
   });
@@ -100,7 +100,7 @@ test('GET quiz reports no history before the first attempt', async () => {
 
 test('GET quiz counts a submitted attempt in the history', async () => {
   const id = await startAttempt(cookie);
-  const res = await fetch(`${baseUrl}/api/attempts/${id}/submit`, {
+  const res = await fetch(`${baseUrl}/api/v1/attempts/${id}/submit`, {
     method: 'POST',
     headers: { cookie },
   });

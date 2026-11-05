@@ -80,12 +80,12 @@ export function QuizPage() {
       )}
 
       <div className="quiz-nav">
-        <button type="button" onClick={state.back} disabled={index === 0}>
+        <button type="button" className="primary" onClick={state.back} disabled={index === 0}>
           Back
         </button>
         <span className="quiz-saving">{state.saving ? 'Saving…' : ''}</span>
         {!onReview && (
-          <button type="button" onClick={state.next}>
+          <button type="button" className="primary" onClick={state.next}>
             {index === total - 1 ? 'Review' : 'Next'}
           </button>
         )}
