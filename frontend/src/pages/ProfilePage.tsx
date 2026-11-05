@@ -4,68 +4,119 @@ import { useAuth } from '../auth/useAuth';
 
 export function ProfilePage() {
   const { user, updateUser } = useAuth();
-  const [firstName, setFirstName] = useState(user?.firstName ?? '');
-  const [lastName, setLastName] = useState(user?.lastName ?? '');
-  const [nameError, setNameError] = useState<string | null>(null);
-  const [nameSuccess, setNameSuccess] = useState(false);
-  const [nameSubmitting, setNameSubmitting] = useState(false);
 
+  const [isEditing, setIsEditing] = useState(false);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
-  const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState(false);
+  const [nameError, setNameError] = useState<string | null>(null);
+  const [passwordError, setPasswordError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [justSaved, setJustSaved] = useState(false);
 
-  async function handleNameSubmit(e: SubmitEvent<HTMLFormElement>) {
+  function startEditing() {
+    setFirstName(user?.firstName ?? '');
+    setLastName(user?.lastName ?? '');
+    setCurrentPassword('');
+    setNewPassword('');
+    setNameError(null);
+    setPasswordError(null);
+    setJustSaved(false);
+    setIsEditing(true);
+  }
+
+  function cancelEditing() {
+    setCurrentPassword('');
+    setNewPassword('');
+    setNameError(null);
+    setPasswordError(null);
+    setIsEditing(false);
+  }
+
+  async function handleSave(e: SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     setNameError(null);
-    setNameSuccess(false);
-    setNameSubmitting(true);
-    try {
-      const { user: updated } = await authApi.updateName(firstName, lastName);
-      updateUser(updated);
-      setNameSuccess(true);
-    } catch (err) {
-      setNameError(err instanceof Error ? err.message : 'Something went wrong');
-    } finally {
-      setNameSubmitting(false);
+    setPasswordError(null);
+
+    const bothPasswordFieldsFilled = currentPassword !== '' && newPassword !== '';
+    const onePasswordFieldFilled = (currentPassword !== '') !== (newPassword !== '');
+    if (onePasswordFieldFilled) {
+      setPasswordError('Enter both current and new password to change it, or leave both blank.');
+      return;
+    }
+
+    setSubmitting(true);
+    const [nameResult, passwordResult] = await Promise.allSettled([
+      authApi.updateName(firstName, lastName),
+      bothPasswordFieldsFilled
+        ? authApi.changePassword(currentPassword, newPassword)
+        : Promise.resolve(null),
+    ]);
+    setSubmitting(false);
+
+    let nameOk = false;
+    if (nameResult.status === 'fulfilled') {
+      updateUser(nameResult.value.user);
+      nameOk = true;
+    } else {
+      setNameError(nameResult.reason instanceof Error ? nameResult.reason.message : 'Something went wrong');
+    }
+
+    let passwordOk = true;
+    if (bothPasswordFieldsFilled) {
+      if (passwordResult.status === 'fulfilled') {
+        passwordOk = true;
+      } else {
+        passwordOk = false;
+        setPasswordError(
+          passwordResult.reason instanceof Error ? passwordResult.reason.message : 'Something went wrong',
+        );
+      }
+    }
+
+    if (nameOk && passwordOk) {
+      setCurrentPassword('');
+      setNewPassword('');
+      setIsEditing(false);
+      setJustSaved(true);
     }
   }
 
-  async function handleSubmit(e: SubmitEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setError(null);
-    setSuccess(false);
-    setSubmitting(true);
-    try {
-      await authApi.changePassword(currentPassword, newPassword);
-      setCurrentPassword('');
-      setNewPassword('');
-      setSuccess(true);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Something went wrong');
-    } finally {
-      setSubmitting(false);
-    }
+  if (!isEditing) {
+    return (
+      <div className="admin-page">
+        <h1>Profile</h1>
+
+        <dl className="profile-details">
+          <dt>First name</dt>
+          <dd>{user?.firstName ?? '—'}</dd>
+          <dt>Last name</dt>
+          <dd>{user?.lastName ?? '—'}</dd>
+          <dt>Email</dt>
+          <dd>{user?.email}</dd>
+          {user?.role === 'admin' && (
+            <>
+              <dt>Role</dt>
+              <dd>{user.role}</dd>
+            </>
+          )}
+        </dl>
+
+        {justSaved && <p className="profile-success">Profile updated.</p>}
+
+        <button type="button" className="auth-submit" onClick={startEditing}>
+          Edit profile
+        </button>
+      </div>
+    );
   }
 
   return (
     <div className="admin-page">
       <h1>Profile</h1>
 
-      <dl className="profile-details">
-        <dt>Email</dt>
-        <dd>{user?.email}</dd>
-        {user?.role === 'admin' && (
-          <>
-            <dt>Role</dt>
-            <dd>{user.role}</dd>
-          </>
-        )}
-      </dl>
-
-      <h2>Edit name</h2>
-      <form onSubmit={(e) => void handleNameSubmit(e)} className="auth-form profile-form">
+      <form onSubmit={(e) => void handleSave(e)} className="auth-form profile-form">
         <div className="auth-fields">
           <input
             type="text"
@@ -91,15 +142,6 @@ export function ProfilePage() {
           </p>
         )}
 
-        {nameSuccess && <p className="profile-success">Name updated.</p>}
-
-        <button type="submit" className="auth-submit" disabled={nameSubmitting} aria-busy={nameSubmitting}>
-          {nameSubmitting ? 'Working…' : 'Save name'}
-        </button>
-      </form>
-
-      <h2>Change password</h2>
-      <form onSubmit={(e) => void handleSubmit(e)} className="auth-form profile-form">
         <div className="auth-fields">
           <input
             type="password"
@@ -108,7 +150,6 @@ export function ProfilePage() {
             placeholder="Current password"
             aria-label="Current password"
             autoComplete="current-password"
-            required
           />
           <input
             type="password"
@@ -118,23 +159,33 @@ export function ProfilePage() {
             aria-label="New password"
             autoComplete="new-password"
             minLength={MIN_PASSWORD_LENGTH}
-            required
           />
         </div>
 
-        <p className="auth-hint">At least {MIN_PASSWORD_LENGTH} characters.</p>
+        <p className="auth-hint">
+          Leave password fields blank to keep your current password. At least {MIN_PASSWORD_LENGTH}{' '}
+          characters.
+        </p>
 
-        {error && (
+        {passwordError && (
           <p role="alert" className="auth-error">
-            {error}
+            {passwordError}
           </p>
         )}
 
-        {success && <p className="profile-success">Password changed.</p>}
-
-        <button type="submit" className="auth-submit" disabled={submitting} aria-busy={submitting}>
-          {submitting ? 'Working…' : 'Change password'}
-        </button>
+        <div className="profile-actions">
+          <button type="submit" className="auth-submit" disabled={submitting} aria-busy={submitting}>
+            {submitting ? 'Working…' : 'Save profile'}
+          </button>
+          <button
+            type="button"
+            className="auth-submit auth-submit-secondary"
+            disabled={submitting}
+            onClick={cancelEditing}
+          >
+            Cancel
+          </button>
+        </div>
       </form>
     </div>
   );
