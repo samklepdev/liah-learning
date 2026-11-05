@@ -10,6 +10,8 @@ import {
   type SkippedUser,
 } from '../../admin/api';
 import { useAuth } from '../../auth/useAuth';
+import { Pager } from '../../shared/Pager';
+import { PAGE_SIZE, usePager } from '../../shared/usePager';
 import { ChevronRightIcon, TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
 import { AttemptsTable } from './AttemptsTable';
 import { UserAttemptsModal } from './UserAttemptsModal';
@@ -24,6 +26,8 @@ function importSummary(created: number, skipped: number): string {
 export function AdminUsersPage() {
   const { user: me } = useAuth();
   const [users, setUsers] = useState<AdminUser[]>([]);
+  const [total, setTotal] = useState(0);
+  const pager = usePager(total);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [busyId, setBusyId] = useState<string | null>(null);
@@ -36,23 +40,29 @@ export function AdminUsersPage() {
 
   const [importFile, setImportFile] = useState<File | null>(null);
   const [parsedRows, setParsedRows] = useState<ImportedUserRow[]>([]);
+  const previewPager = usePager(parsedRows.length);
   const [parseErrors, setParseErrors] = useState<ImportRowError[]>([]);
   const [importResults, setImportResults] = useState<ImportResults | null>(null);
+  const createdPager = usePager(importResults?.created.length ?? 0);
+  const skippedPager = usePager(importResults?.skipped.length ?? 0);
   const [importBusy, setImportBusy] = useState(false);
   const [importError, setImportError] = useState<string | null>(null);
 
-  const load = useCallback(() => {
+  const load = useCallback((page: number) => {
     setLoading(true);
     adminApi
-      .listUsers()
-      .then((res) => setUsers(res.users))
+      .listUsers(page)
+      .then((res) => {
+        setUsers(res.items);
+        setTotal(res.total);
+      })
       .catch((err: unknown) => setError(err instanceof Error ? err.message : 'Failed to load'))
       .finally(() => setLoading(false));
   }, []);
 
   useEffect(() => {
-    load();
-  }, [load]);
+    load(pager.page);
+  }, [load, pager.page]);
 
   const toggleRole = async (target: AdminUser) => {
     setBusyId(target.id);
@@ -73,6 +83,7 @@ export function AdminUsersPage() {
       await adminApi.deleteUser(target.id);
       toast.success('User deleted');
       setUsers((prev) => prev.filter((u) => u.id !== target.id));
+      setTotal((prev) => prev - 1);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to delete user');
     } finally {
@@ -129,7 +140,7 @@ export function AdminUsersPage() {
       setParsedRows([]);
       setParseErrors([]);
       setImportFile(null);
-      load();
+      load(pager.page);
     } catch (err) {
       setImportError(err instanceof Error ? err.message : 'Import failed');
     } finally {
@@ -193,16 +204,26 @@ export function AdminUsersPage() {
                 </tr>
               </thead>
               <tbody>
-                {parsedRows.map((r) => (
-                  <tr key={r.row}>
-                    <td>{r.firstName ?? '—'}</td>
-                    <td>{r.lastName ?? '—'}</td>
-                    <td>{r.email}</td>
-                    <td>{r.role}</td>
-                  </tr>
-                ))}
+                {parsedRows
+                  .slice((previewPager.page - 1) * PAGE_SIZE, previewPager.page * PAGE_SIZE)
+                  .map((r) => (
+                    <tr key={r.row}>
+                      <td>{r.firstName ?? '—'}</td>
+                      <td>{r.lastName ?? '—'}</td>
+                      <td>{r.email}</td>
+                      <td>{r.role}</td>
+                    </tr>
+                  ))}
               </tbody>
             </table>
+            <Pager
+              page={previewPager.page}
+              totalPages={previewPager.totalPages}
+              canPrev={previewPager.canPrev}
+              canNext={previewPager.canNext}
+              onPrev={previewPager.prev}
+              onNext={previewPager.next}
+            />
             <button
               type="button"
               className="auth-submit"
@@ -243,29 +264,49 @@ export function AdminUsersPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {importResults.created.map((u) => (
-                      <tr key={u.email}>
-                        <td>{u.email}</td>
-                        <td>{u.firstName ?? '—'}</td>
-                        <td>{u.lastName ?? '—'}</td>
-                        <td>{u.role}</td>
-                        <td>{u.password}</td>
-                      </tr>
-                    ))}
+                    {importResults.created
+                      .slice((createdPager.page - 1) * PAGE_SIZE, createdPager.page * PAGE_SIZE)
+                      .map((u) => (
+                        <tr key={u.email}>
+                          <td>{u.email}</td>
+                          <td>{u.firstName ?? '—'}</td>
+                          <td>{u.lastName ?? '—'}</td>
+                          <td>{u.role}</td>
+                          <td>{u.password}</td>
+                        </tr>
+                      ))}
                   </tbody>
                 </table>
+                <Pager
+                  page={createdPager.page}
+                  totalPages={createdPager.totalPages}
+                  canPrev={createdPager.canPrev}
+                  canNext={createdPager.canNext}
+                  onPrev={createdPager.prev}
+                  onNext={createdPager.next}
+                />
               </>
             )}
             {importResults.skipped.length > 0 && (
               <>
                 <h3>Skipped</h3>
                 <ul>
-                  {importResults.skipped.map((s) => (
-                    <li key={s.email}>
-                      {s.email}: {s.reason}
-                    </li>
-                  ))}
+                  {importResults.skipped
+                    .slice((skippedPager.page - 1) * PAGE_SIZE, skippedPager.page * PAGE_SIZE)
+                    .map((s) => (
+                      <li key={s.email}>
+                        {s.email}: {s.reason}
+                      </li>
+                    ))}
                 </ul>
+                <Pager
+                  page={skippedPager.page}
+                  totalPages={skippedPager.totalPages}
+                  canPrev={skippedPager.canPrev}
+                  canNext={skippedPager.canNext}
+                  onPrev={skippedPager.prev}
+                  onNext={skippedPager.next}
+                />
               </>
             )}
           </div>
@@ -376,6 +417,17 @@ export function AdminUsersPage() {
             })}
           </tbody>
         </table>
+      )}
+
+      {!loading && (
+        <Pager
+          page={pager.page}
+          totalPages={pager.totalPages}
+          canPrev={pager.canPrev}
+          canNext={pager.canNext}
+          onPrev={pager.prev}
+          onNext={pager.next}
+        />
       )}
 
       {modalUserId && (

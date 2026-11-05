@@ -1,8 +1,10 @@
 import type { Request, Response } from 'express';
 import { z } from 'zod';
 import { param } from '../lib/http.ts';
+import { PAGE_SIZE, parsePage } from '../lib/pagination.ts';
 import { listAttemptsForUser } from '../models/admin-attempt.model.ts';
 import {
+  countUsers,
   deleteUserById,
   findUserById,
   listUsers,
@@ -11,9 +13,10 @@ import {
 
 const roleBody = z.object({ role: z.enum(['user', 'admin']) });
 
-export async function getUsers(_req: Request, res: Response): Promise<void> {
-  const users = await listUsers();
-  res.json({ users });
+export async function getUsers(req: Request, res: Response): Promise<void> {
+  const page = parsePage(req);
+  const [items, total] = await Promise.all([listUsers(page), countUsers()]);
+  res.json({ items, total, page, pageSize: PAGE_SIZE });
 }
 
 export async function patchUserRole(req: Request, res: Response): Promise<void> {

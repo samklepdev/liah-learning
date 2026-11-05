@@ -2,6 +2,13 @@ import { request, type User } from '../auth/api';
 
 export type AdminUser = User;
 
+export type Page<T> = {
+  items: T[];
+  total: number;
+  page: number;
+  pageSize: number;
+};
+
 export type AdminAttempt = {
   id: string;
   courseTitle: string;
@@ -41,7 +48,7 @@ export type ConfirmedUser = {
 export type SkippedUser = { email: string; reason: string };
 
 export const adminApi = {
-  listUsers: () => request<{ users: AdminUser[] }>('/admin/users'),
+  listUsers: (page: number) => request<Page<AdminUser>>(`/admin/users?page=${page}`),
 
   setRole: (id: string, role: 'user' | 'admin') =>
     request<{ user: AdminUser }>(`/admin/users/${id}/role`, {
