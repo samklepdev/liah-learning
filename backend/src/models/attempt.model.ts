@@ -1,4 +1,4 @@
-import { and, asc, count, eq, isNotNull, isNull, max, ne } from 'drizzle-orm';
+import { and, asc, count, desc, eq, isNotNull, isNull, max, ne } from 'drizzle-orm';
 import { db } from '../db/index.ts';
 import {
   attemptAnswers,
@@ -330,4 +330,83 @@ export async function findGradedAttempt(attemptId: string): Promise<GradedAttemp
     modulesToReview,
     questions: graded,
   };
+}
+
+export type ProgressRow = {
+  courseId: string;
+  courseTitle: string;
+  courseSlug: string;
+  subjectSlug: string;
+  passScore: number;
+  questionCount: number;
+  bestScore: number;
+  attemptCount: number;
+  lastAttemptId: string;
+  lastSubmittedAt: Date;
+};
+
+/**
+ * One row per course the caller has at least one submitted attempt for,
+ * newest last-completed first. A course never submitted does not appear.
+ */
+export async function findMyProgress(userId: string): Promise<ProgressRow[]> {
+  const aggregates = await db
+    .select({
+      courseId: attempts.courseId,
+      courseTitle: courses.title,
+      courseSlug: courses.slug,
+      subjectSlug: subjects.slug,
+      passScore: courses.passScore,
+      questionCount: courses.questionCount,
+      bestScore: max(attempts.score),
+      attemptCount: count(attempts.id),
+    })
+    .from(attempts)
+    .innerJoin(courses, eq(courses.id, attempts.courseId))
+    .innerJoin(subjects, eq(subjects.id, courses.subjectId))
+    .where(and(eq(attempts.userId, userId), isNotNull(attempts.submittedAt)))
+    .groupBy(
+      attempts.courseId,
+      courses.title,
+      courses.slug,
+      subjects.slug,
+      courses.passScore,
+      courses.questionCount,
+    );
+
+  if (aggregates.length === 0) return [];
+
+  // Newest first, so the first row seen per course below is that course's
+  // most recent submitted attempt. Simpler than a SQL window function, and
+  // this scans one caller's own attempts — never a large set.
+  const submitted = await db
+    .select({ courseId: attempts.courseId, id: attempts.id, submittedAt: attempts.submittedAt })
+    .from(attempts)
+    .where(and(eq(attempts.userId, userId), isNotNull(attempts.submittedAt)))
+    .orderBy(desc(attempts.submittedAt));
+
+  const lastByCourse = new Map<string, { id: string; submittedAt: Date }>();
+  for (const row of submitted) {
+    if (!lastByCourse.has(row.courseId)) {
+      lastByCourse.set(row.courseId, { id: row.id, submittedAt: row.submittedAt! });
+    }
+  }
+
+  return aggregates
+    .map((row) => {
+      const last = lastByCourse.get(row.courseId)!;
+      return {
+        courseId: row.courseId,
+        courseTitle: row.courseTitle,
+        courseSlug: row.courseSlug,
+        subjectSlug: row.subjectSlug,
+        passScore: row.passScore,
+        questionCount: row.questionCount,
+        bestScore: Number(row.bestScore),
+        attemptCount: Number(row.attemptCount),
+        lastAttemptId: last.id,
+        lastSubmittedAt: last.submittedAt,
+      };
+    })
+    .sort((a, b) => b.lastSubmittedAt.getTime() - a.lastSubmittedAt.getTime());
 }
