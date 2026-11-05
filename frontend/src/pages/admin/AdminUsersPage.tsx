@@ -9,6 +9,7 @@ import {
   type SkippedUser,
 } from '../../admin/api';
 import { useAuth } from '../../auth/useAuth';
+import { TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
 
 type ImportResults = { created: ConfirmedUser[]; skipped: SkippedUser[] };
 
@@ -275,17 +276,27 @@ export function AdminUsersPage() {
                   <td className="admin-actions">
                     <button
                       type="button"
+                      className="icon-button"
                       disabled={isSelf || busyId === u.id}
                       onClick={() => void toggleRole(u)}
+                      aria-label={u.role === 'admin' ? 'Make user' : 'Make admin'}
+                      title={u.role === 'admin' ? 'Make user' : 'Make admin'}
                     >
-                      {u.role === 'admin' ? 'Make user' : 'Make admin'}
+                      {u.role === 'admin' ? (
+                        <UserMinusIcon className="icon-button-icon" />
+                      ) : (
+                        <UserIcon className="icon-button-icon" />
+                      )}
                     </button>
                     <button
                       type="button"
+                      className="icon-button"
                       disabled={isSelf || busyId === u.id}
                       onClick={() => void remove(u)}
+                      aria-label="Delete"
+                      title="Delete"
                     >
-                      Delete
+                      <TrashIcon className="icon-button-icon" />
                     </button>
                   </td>
                 </tr>
