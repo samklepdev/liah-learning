@@ -1,5 +1,6 @@
-import { eq } from 'drizzle-orm';
+import { count, eq } from 'drizzle-orm';
 import { db } from '../db/index.ts';
+import { PAGE_SIZE } from '../lib/pagination.ts';
 import { users } from './schema.ts';
 import type { PublicUser } from './user.model.ts';
 
@@ -12,8 +13,18 @@ const publicColumns = {
   createdAt: users.createdAt,
 };
 
-export async function listUsers(): Promise<PublicUser[]> {
-  return db.select(publicColumns).from(users).orderBy(users.createdAt);
+export async function listUsers(page: number): Promise<PublicUser[]> {
+  return db
+    .select(publicColumns)
+    .from(users)
+    .orderBy(users.createdAt)
+    .limit(PAGE_SIZE)
+    .offset((page - 1) * PAGE_SIZE);
+}
+
+export async function countUsers(): Promise<number> {
+  const [row] = await db.select({ value: count() }).from(users);
+  return Number(row?.value ?? 0);
 }
 
 export async function findUserById(id: string): Promise<PublicUser | null> {
