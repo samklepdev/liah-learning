@@ -13,9 +13,9 @@ import {
 
 export const users = pgTable('users', {
   id: uuid('id').primaryKey().defaultRandom(),
-  /** Always stored lowercased and trimmed; see normalizeEmail(). */
-  email: text('email').notNull().unique(),
-  /** Only set for admin-seeded users today; self-registered users have none. */
+  /** Generated at creation time from first/last name; see buildBaseUsername() in lib/username.ts. */
+  username: text('username').notNull().unique(),
+  /** Required at every creation path; left nullable so the profile edit form can still blank it later. */
   firstName: text('first_name'),
   lastName: text('last_name'),
   passwordHash: text('password_hash').notNull(),
