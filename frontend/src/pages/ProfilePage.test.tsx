@@ -3,12 +3,17 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { ProfilePage } from './ProfilePage';
 
 const changePassword = vi.fn();
+const updateName = vi.fn();
+const updateUser = vi.fn();
 const useAuth = vi.fn();
 
 vi.mock('../auth/useAuth', () => ({ useAuth: () => useAuth() }));
 vi.mock('../auth/api', () => ({
   MIN_PASSWORD_LENGTH: 8,
-  authApi: { changePassword: (a: string, b: string) => changePassword(a, b) },
+  authApi: {
+    changePassword: (a: string, b: string) => changePassword(a, b),
+    updateName: (a: string, b: string) => updateName(a, b),
+  },
 }));
 
 beforeEach(() => {
@@ -16,11 +21,16 @@ beforeEach(() => {
     user: {
       id: 'u1',
       email: 'student@example.com',
+      firstName: null,
+      lastName: null,
       role: 'user',
       createdAt: '2026-11-01T00:00:00Z',
     },
+    updateUser,
   });
   changePassword.mockReset();
+  updateName.mockReset();
+  updateUser.mockReset();
 });
 
 describe('ProfilePage', () => {
@@ -78,5 +88,40 @@ describe('ProfilePage', () => {
 
     expect(await screen.findByRole('alert')).toHaveTextContent('Current password is incorrect');
     expect(screen.getByLabelText('Current password')).toHaveValue('wrong-pass');
+  });
+
+  test('editing your name calls updateName and updates the cached user', async () => {
+    updateName.mockResolvedValue({
+      user: {
+        id: 'u1',
+        email: 'student@example.com',
+        firstName: 'Jane',
+        lastName: 'Doe',
+        role: 'user',
+        createdAt: '2026-11-01T00:00:00Z',
+      },
+    });
+    render(<ProfilePage />);
+
+    fireEvent.change(screen.getByLabelText('First name'), { target: { value: 'Jane' } });
+    fireEvent.change(screen.getByLabelText('Last name'), { target: { value: 'Doe' } });
+    fireEvent.click(screen.getByRole('button', { name: /save name/i }));
+
+    await waitFor(() => expect(updateName).toHaveBeenCalledWith('Jane', 'Doe'));
+    await waitFor(() =>
+      expect(updateUser).toHaveBeenCalledWith(
+        expect.objectContaining({ firstName: 'Jane', lastName: 'Doe' }),
+      ),
+    );
+    expect(await screen.findByText('Name updated.')).toBeInTheDocument();
+  });
+
+  test('a failed name update shows an error', async () => {
+    updateName.mockRejectedValue(new Error('Something went wrong'));
+    render(<ProfilePage />);
+
+    fireEvent.click(screen.getByRole('button', { name: /save name/i }));
+
+    expect(await screen.findAllByRole('alert')).toHaveLength(1);
   });
 });
