@@ -156,6 +156,34 @@ describe('AdminUsersPage', () => {
     expect(screen.getByText('Page 2 of 2')).toBeInTheDocument();
   });
 
+  function manyImportRows(count: number) {
+    return Array.from({ length: count }, (_, i) => ({
+      row: i + 2,
+      firstName: `First${i}`,
+      lastName: `Last${i}`,
+      email: `user${i}@example.com`,
+      role: 'user' as const,
+    }));
+  }
+
+  test('paginates the import preview table when there are more than one page of rows', async () => {
+    parseUserImport.mockResolvedValue({ rows: manyImportRows(25), errors: [] });
+    render(<AdminUsersPage />);
+    await screen.findByText('admin@example.com');
+
+    selectImportFile();
+    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
+
+    expect(await screen.findByText('user0@example.com')).toBeInTheDocument();
+    expect(screen.queryByText('user20@example.com')).not.toBeInTheDocument();
+
+    const previewSection = screen.getByText('user0@example.com').closest('.import-preview') as HTMLElement;
+    fireEvent.click(within(previewSection).getByRole('button', { name: 'Next' }));
+
+    expect(await screen.findByText('user20@example.com')).toBeInTheDocument();
+    expect(screen.queryByText('user0@example.com')).not.toBeInTheDocument();
+  });
+
   function selectImportFile() {
     const file = new File(['First Name,Last Name,Email\nJane,Doe,jane@example.com'], 'students.csv', {
       type: 'text/csv',

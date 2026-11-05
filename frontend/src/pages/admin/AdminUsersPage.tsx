@@ -11,7 +11,7 @@ import {
 } from '../../admin/api';
 import { useAuth } from '../../auth/useAuth';
 import { Pager } from '../../shared/Pager';
-import { usePager } from '../../shared/usePager';
+import { PAGE_SIZE, usePager } from '../../shared/usePager';
 import { ChevronRightIcon, TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
 import { AttemptsTable } from './AttemptsTable';
 import { UserAttemptsModal } from './UserAttemptsModal';
@@ -40,6 +40,7 @@ export function AdminUsersPage() {
 
   const [importFile, setImportFile] = useState<File | null>(null);
   const [parsedRows, setParsedRows] = useState<ImportedUserRow[]>([]);
+  const previewPager = usePager(parsedRows.length);
   const [parseErrors, setParseErrors] = useState<ImportRowError[]>([]);
   const [importResults, setImportResults] = useState<ImportResults | null>(null);
   const [importBusy, setImportBusy] = useState(false);
@@ -201,16 +202,26 @@ export function AdminUsersPage() {
                 </tr>
               </thead>
               <tbody>
-                {parsedRows.map((r) => (
-                  <tr key={r.row}>
-                    <td>{r.firstName ?? '—'}</td>
-                    <td>{r.lastName ?? '—'}</td>
-                    <td>{r.email}</td>
-                    <td>{r.role}</td>
-                  </tr>
-                ))}
+                {parsedRows
+                  .slice((previewPager.page - 1) * PAGE_SIZE, previewPager.page * PAGE_SIZE)
+                  .map((r) => (
+                    <tr key={r.row}>
+                      <td>{r.firstName ?? '—'}</td>
+                      <td>{r.lastName ?? '—'}</td>
+                      <td>{r.email}</td>
+                      <td>{r.role}</td>
+                    </tr>
+                  ))}
               </tbody>
             </table>
+            <Pager
+              page={previewPager.page}
+              totalPages={previewPager.totalPages}
+              canPrev={previewPager.canPrev}
+              canNext={previewPager.canNext}
+              onPrev={previewPager.prev}
+              onNext={previewPager.next}
+            />
             <button
               type="button"
               className="auth-submit"
