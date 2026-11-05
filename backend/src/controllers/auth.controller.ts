@@ -14,6 +14,7 @@ import {
   findUserByEmailWithHash,
   findUserByIdWithHash,
   updatePasswordHash,
+  updateName,
 } from '../models/user.model.ts';
 
 const credentials = z.object({
@@ -144,4 +145,30 @@ export async function changePassword(req: Request, res: Response): Promise<void>
 
 export function me(req: Request, res: Response): void {
   res.json({ user: req.user });
+}
+
+const nameBody = z.object({
+  firstName: z.string().trim().optional(),
+  lastName: z.string().trim().optional(),
+});
+
+/**
+ * Updates the signed-in user's first/last name. An omitted or blank field
+ * clears that name — unlike the import flow's validation, this is an edit
+ * surface where un-setting a name back to blank is a legitimate action.
+ * @param req
+ * @param res
+ */
+export async function updateNameHandler(req: Request, res: Response): Promise<void> {
+  const parsed = nameBody.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: z.prettifyError(parsed.error) });
+    return;
+  }
+
+  const firstName = parsed.data.firstName === '' || parsed.data.firstName === undefined ? null : parsed.data.firstName;
+  const lastName = parsed.data.lastName === '' || parsed.data.lastName === undefined ? null : parsed.data.lastName;
+
+  const user = await updateName(req.user!.id, firstName, lastName);
+  res.json({ user });
 }

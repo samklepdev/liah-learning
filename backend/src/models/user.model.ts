@@ -37,6 +37,21 @@ export async function createUser(
   return user ?? null;
 }
 
+/** Used by the profile name-edit form — either field may be cleared to null. */
+export async function updateName(
+  id: string,
+  firstName: string | null,
+  lastName: string | null,
+): Promise<PublicUser | null> {
+  const [user] = await db
+    .update(users)
+    .set({ firstName, lastName })
+    .where(eq(users.id, id))
+    .returning(publicColumns);
+
+  return user ?? null;
+}
+
 /** Includes the password hash — only the login path should call this. */
 export async function findUserByEmailWithHash(
   email: string,

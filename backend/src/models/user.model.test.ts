@@ -1,7 +1,7 @@
 import { test, before, after, beforeEach } from 'node:test';
 import assert from 'node:assert/strict';
 import { resetDb, closeDb } from '../test/helpers/db.ts';
-import { createUser, findUserByIdWithHash, updatePasswordHash } from './user.model.ts';
+import { createUser, findUserByIdWithHash, updatePasswordHash, updateName } from './user.model.ts';
 
 before(async () => {
   await resetDb();
@@ -49,4 +49,18 @@ test('createUser defaults first/last name to null when omitted', async () => {
   const user = await createUser('no-name@example.com', 'hash');
   assert.equal(user?.firstName, null);
   assert.equal(user?.lastName, null);
+});
+
+test('updateName sets first and last name', async () => {
+  const user = await createUser('rename@example.com', 'hash');
+  const updated = await updateName(user!.id, 'Jane', 'Doe');
+  assert.equal(updated?.firstName, 'Jane');
+  assert.equal(updated?.lastName, 'Doe');
+});
+
+test('updateName clears a name back to null', async () => {
+  const user = await createUser('clear-name@example.com', 'hash', 'Jane', 'Doe');
+  const updated = await updateName(user!.id, null, null);
+  assert.equal(updated?.firstName, null);
+  assert.equal(updated?.lastName, null);
 });
