@@ -43,6 +43,8 @@ export function AdminUsersPage() {
   const previewPager = usePager(parsedRows.length);
   const [parseErrors, setParseErrors] = useState<ImportRowError[]>([]);
   const [importResults, setImportResults] = useState<ImportResults | null>(null);
+  const createdPager = usePager(importResults?.created.length ?? 0);
+  const skippedPager = usePager(importResults?.skipped.length ?? 0);
   const [importBusy, setImportBusy] = useState(false);
   const [importError, setImportError] = useState<string | null>(null);
 
@@ -262,29 +264,49 @@ export function AdminUsersPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {importResults.created.map((u) => (
-                      <tr key={u.email}>
-                        <td>{u.email}</td>
-                        <td>{u.firstName ?? '—'}</td>
-                        <td>{u.lastName ?? '—'}</td>
-                        <td>{u.role}</td>
-                        <td>{u.password}</td>
-                      </tr>
-                    ))}
+                    {importResults.created
+                      .slice((createdPager.page - 1) * PAGE_SIZE, createdPager.page * PAGE_SIZE)
+                      .map((u) => (
+                        <tr key={u.email}>
+                          <td>{u.email}</td>
+                          <td>{u.firstName ?? '—'}</td>
+                          <td>{u.lastName ?? '—'}</td>
+                          <td>{u.role}</td>
+                          <td>{u.password}</td>
+                        </tr>
+                      ))}
                   </tbody>
                 </table>
+                <Pager
+                  page={createdPager.page}
+                  totalPages={createdPager.totalPages}
+                  canPrev={createdPager.canPrev}
+                  canNext={createdPager.canNext}
+                  onPrev={createdPager.prev}
+                  onNext={createdPager.next}
+                />
               </>
             )}
             {importResults.skipped.length > 0 && (
               <>
                 <h3>Skipped</h3>
                 <ul>
-                  {importResults.skipped.map((s) => (
-                    <li key={s.email}>
-                      {s.email}: {s.reason}
-                    </li>
-                  ))}
+                  {importResults.skipped
+                    .slice((skippedPager.page - 1) * PAGE_SIZE, skippedPager.page * PAGE_SIZE)
+                    .map((s) => (
+                      <li key={s.email}>
+                        {s.email}: {s.reason}
+                      </li>
+                    ))}
                 </ul>
+                <Pager
+                  page={skippedPager.page}
+                  totalPages={skippedPager.totalPages}
+                  canPrev={skippedPager.canPrev}
+                  canNext={skippedPager.canNext}
+                  onPrev={skippedPager.prev}
+                  onNext={skippedPager.next}
+                />
               </>
             )}
           </div>

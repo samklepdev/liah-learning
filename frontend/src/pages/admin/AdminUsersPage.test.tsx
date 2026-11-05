@@ -184,6 +184,69 @@ describe('AdminUsersPage', () => {
     expect(screen.queryByText('user0@example.com')).not.toBeInTheDocument();
   });
 
+  function manyConfirmedUsers(count: number) {
+    return Array.from({ length: count }, (_, i) => ({
+      email: `created${i}@example.com`,
+      firstName: `First${i}`,
+      lastName: `Last${i}`,
+      role: 'user' as const,
+      password: `pw${i}`,
+    }));
+  }
+
+  function manySkippedUsers(count: number) {
+    return Array.from({ length: count }, (_, i) => ({
+      email: `skipped${i}@example.com`,
+      reason: 'already registered',
+    }));
+  }
+
+  test('paginates the import results "Created" table when there are more than one page', async () => {
+    parseUserImport.mockResolvedValue({
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      errors: [],
+    });
+    confirmUserImport.mockResolvedValue({ created: manyConfirmedUsers(25), skipped: [] });
+    render(<AdminUsersPage />);
+    await screen.findByText('admin@example.com');
+
+    selectImportFile();
+    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
+    await screen.findByRole('button', { name: /confirm import/i });
+    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
+
+    expect(await screen.findByText('created0@example.com')).toBeInTheDocument();
+    expect(screen.queryByText('created20@example.com')).not.toBeInTheDocument();
+
+    const createdSection = screen.getByText('Created').closest('.import-results') as HTMLElement;
+    fireEvent.click(within(createdSection).getByRole('button', { name: 'Next' }));
+
+    expect(await screen.findByText('created20@example.com')).toBeInTheDocument();
+  });
+
+  test('paginates the import results "Skipped" list when there are more than one page', async () => {
+    parseUserImport.mockResolvedValue({
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      errors: [],
+    });
+    confirmUserImport.mockResolvedValue({ created: [], skipped: manySkippedUsers(25) });
+    render(<AdminUsersPage />);
+    await screen.findByText('admin@example.com');
+
+    selectImportFile();
+    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
+    await screen.findByRole('button', { name: /confirm import/i });
+    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
+
+    expect(await screen.findByText(/skipped0@example.com/)).toBeInTheDocument();
+    expect(screen.queryByText(/skipped20@example.com/)).not.toBeInTheDocument();
+
+    const skippedSection = screen.getByText('Skipped').closest('.import-results') as HTMLElement;
+    fireEvent.click(within(skippedSection).getByRole('button', { name: 'Next' }));
+
+    expect(await screen.findByText(/skipped20@example.com/)).toBeInTheDocument();
+  });
+
   function selectImportFile() {
     const file = new File(['First Name,Last Name,Email\nJane,Doe,jane@example.com'], 'students.csv', {
       type: 'text/csv',
