@@ -1,4 +1,5 @@
 import { Link, Outlet, useLocation, useNavigate } from 'react-router';
+import liahLogo from '../assets/liah-logo.png';
 import { useAuth } from '../auth/useAuth';
 import type { CatalogContext } from '../quiz/useCatalog';
 import { AccountMenu } from './AccountMenu';
@@ -80,9 +81,7 @@ export function AppShell() {
         </button>
 
         <Link to="/subjects" className="topnav-brand">
-          <span className="topnav-mark" aria-hidden="true">
-            L
-          </span>
+          <img src={liahLogo} alt="" className="topnav-mark" />
           LIAH Learning
         </Link>
 
