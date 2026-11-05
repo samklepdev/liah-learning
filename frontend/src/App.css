@@ -796,3 +796,75 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   /* Keep the icon, drop the word, so the navbar still fits. */
   .theme-label { display: none; }
 }
+
+/* ---- Phone-width layout (≤40rem) ---- */
+
+@media (max-width: 40rem) {
+  /* Admin tables become a card per row instead of scrolling sideways. */
+  .admin-table thead {
+    display: none;
+  }
+
+  .admin-table tr {
+    display: block;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+  }
+
+  .admin-table tbody tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .admin-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.3rem 0;
+    border-bottom: none;
+  }
+
+  .admin-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    opacity: 0.7;
+    flex: 0 0 auto;
+  }
+
+  /* The actions cell has no single label/value pair — render its icon
+     buttons left-aligned instead of space-between, with no label. */
+  .admin-table td.admin-actions {
+    justify-content: flex-start;
+  }
+
+  .admin-table td.admin-actions::before {
+    content: none;
+  }
+
+  /* The expandable attempts sub-row holds a nested table or paragraph, not
+     a label/value pair — fall back to plain block layout. */
+  .admin-attempts-row td {
+    display: block;
+  }
+
+  /* Two-button rows get full-width stacked buttons instead of being
+     squeezed side-by-side. */
+  .profile-actions,
+  .results-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Tighten the navbar so brand + toggle + theme switch + account menu
+     all fit without overlap down to 360px. */
+  .topnav {
+    gap: 0.5rem;
+    padding: 0 0.6rem;
+  }
+
+  .topnav-brand {
+    gap: 0.35rem;
+  }
+}
