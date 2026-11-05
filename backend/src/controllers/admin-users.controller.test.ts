@@ -38,9 +38,20 @@ test('GET /api/v1/admin/users lists users for an admin', async () => {
 
   const res = await fetch(`${baseUrl}/api/v1/admin/users`, { headers: { cookie } });
   assert.equal(res.status, 200);
-  const body = (await res.json()) as { users: Array<{ email: string }> };
-  const emails = body.users.map((u) => u.email).sort();
+  const body = (await res.json()) as { items: Array<{ email: string }> };
+  const emails = body.items.map((u) => u.email).sort();
   assert.deepEqual(emails, ['admin@example.com', 'student@example.com']);
+});
+
+test('GET /api/v1/admin/users includes pagination metadata', async () => {
+  const { cookie } = await makeAdmin('admin@example.com');
+  await registerTestUser(baseUrl, 'student@example.com');
+
+  const res = await fetch(`${baseUrl}/api/v1/admin/users`, { headers: { cookie } });
+  const body = (await res.json()) as { total: number; page: number; pageSize: number };
+  assert.equal(body.total, 2);
+  assert.equal(body.page, 1);
+  assert.equal(body.pageSize, 20);
 });
 
 test('PATCH role promotes a user to admin', async () => {
@@ -79,8 +90,8 @@ test('DELETE removes a user', async () => {
   assert.equal(res.status, 204);
 
   const list = await fetch(`${baseUrl}/api/v1/admin/users`, { headers: { cookie } });
-  const body = (await list.json()) as { users: Array<{ email: string }> };
-  assert.equal(body.users.some((u) => u.email === 'student@example.com'), false);
+  const body = (await list.json()) as { items: Array<{ email: string }> };
+  assert.equal(body.items.some((u) => u.email === 'student@example.com'), false);
 });
 
 test('DELETE rejects an admin deleting themselves', async () => {
