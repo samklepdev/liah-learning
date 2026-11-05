@@ -35,6 +35,7 @@ const sampleAttempt = {
   score: 8,
   startedAt: '2026-10-01T00:00:00Z',
   submittedAt: '2026-10-01T01:00:00Z',
+  answeredCount: 10,
 };
 
 beforeEach(() => {
@@ -275,6 +276,19 @@ describe('AdminUsersPage', () => {
     fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
 
     expect(await screen.findByText('Network error')).toBeInTheDocument();
+  });
+
+  test('shows "Not started" for an open attempt with no saved answers', async () => {
+    getUserAttempts.mockResolvedValue({
+      attempts: [{ ...sampleAttempt, submittedAt: null, score: null, answeredCount: 0 }],
+    });
+    render(<AdminUsersPage />);
+    await screen.findByText('student@example.com');
+    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+
+    fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
+
+    expect(await screen.findByText('Not started')).toBeInTheDocument();
   });
 
   function manyAttempts(count: number) {

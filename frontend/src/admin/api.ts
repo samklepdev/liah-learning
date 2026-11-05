@@ -10,6 +10,7 @@ export type AdminAttempt = {
   score: number | null;
   startedAt: string;
   submittedAt: string | null;
+  answeredCount: number;
 };
 
 /**

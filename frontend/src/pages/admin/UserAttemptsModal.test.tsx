@@ -11,6 +11,7 @@ const attempt: AdminAttempt = {
   score: 8,
   startedAt: '2026-10-01T00:00:00Z',
   submittedAt: '2026-10-01T01:00:00Z',
+  answeredCount: 10,
 };
 
 describe('UserAttemptsModal', () => {

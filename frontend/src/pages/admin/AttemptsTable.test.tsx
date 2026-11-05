@@ -11,6 +11,7 @@ const completed: AdminAttempt = {
   score: 8,
   startedAt: '2026-10-01T00:00:00Z',
   submittedAt: '2026-10-01T01:00:00Z',
+  answeredCount: 10,
 };
 
 const inProgress: AdminAttempt = {
@@ -21,6 +22,18 @@ const inProgress: AdminAttempt = {
   score: null,
   startedAt: '2026-10-02T00:00:00Z',
   submittedAt: null,
+  answeredCount: 3,
+};
+
+const notStarted: AdminAttempt = {
+  id: 'a3',
+  courseTitle: 'Fire Safety',
+  courseSlug: 'fire-safety',
+  subjectSlug: 'first-aid',
+  score: null,
+  startedAt: '2026-10-03T00:00:00Z',
+  submittedAt: null,
+  answeredCount: 0,
 };
 
 describe('AttemptsTable', () => {
@@ -40,5 +53,11 @@ describe('AttemptsTable', () => {
   test('shows a dash for score when the attempt has not been submitted', () => {
     render(<AttemptsTable attempts={[inProgress]} />);
     expect(screen.getByText('—')).toBeInTheDocument();
+  });
+
+  test('shows "Not started" for an open attempt with no saved answers', () => {
+    render(<AttemptsTable attempts={[notStarted]} />);
+    expect(screen.getByText('Not started')).toBeInTheDocument();
+    expect(screen.queryByText('In progress')).not.toBeInTheDocument();
   });
 });

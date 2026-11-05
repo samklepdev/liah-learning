@@ -5,7 +5,8 @@ function formatScore(attempt: AdminAttempt): string {
 }
 
 function formatStatus(attempt: AdminAttempt): string {
-  return attempt.submittedAt ? 'Completed' : 'In progress';
+  if (attempt.submittedAt) return 'Completed';
+  return attempt.answeredCount > 0 ? 'In progress' : 'Not started';
 }
 
 function formatDate(attempt: AdminAttempt): string {
