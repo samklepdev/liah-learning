@@ -12,6 +12,7 @@ import {
 import { useAuth } from '../../auth/useAuth';
 import { ChevronRightIcon, TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
 import { AttemptsTable } from './AttemptsTable';
+import { UserAttemptsModal } from './UserAttemptsModal';
 
 type ImportResults = { created: ConfirmedUser[]; skipped: SkippedUser[] };
 
@@ -31,6 +32,7 @@ export function AdminUsersPage() {
   const [attemptsById, setAttemptsById] = useState<Record<string, AdminAttempt[]>>({});
   const [attemptsLoading, setAttemptsLoading] = useState<string | null>(null);
   const [attemptsError, setAttemptsError] = useState<string | null>(null);
+  const [modalUserId, setModalUserId] = useState<string | null>(null);
 
   const [importFile, setImportFile] = useState<File | null>(null);
   const [parsedRows, setParsedRows] = useState<ImportedUserRow[]>([]);
@@ -353,7 +355,18 @@ export function AdminUsersPage() {
                         ) : (attemptsById[u.id]?.length ?? 0) === 0 ? (
                           <p>No attempts yet.</p>
                         ) : (
-                          <AttemptsTable attempts={attemptsById[u.id]!.slice(0, 5)} />
+                          <>
+                            <AttemptsTable attempts={attemptsById[u.id]!.slice(0, 5)} />
+                            {attemptsById[u.id]!.length > 5 && (
+                              <button
+                                type="button"
+                                className="auth-submit-secondary"
+                                onClick={() => setModalUserId(u.id)}
+                              >
+                                View all {attemptsById[u.id]!.length} attempts
+                              </button>
+                            )}
+                          </>
                         )}
                       </td>
                     </tr>
@@ -363,6 +376,14 @@ export function AdminUsersPage() {
             })}
           </tbody>
         </table>
+      )}
+
+      {modalUserId && (
+        <UserAttemptsModal
+          userLabel={users.find((u) => u.id === modalUserId)?.email ?? ''}
+          attempts={attemptsById[modalUserId] ?? []}
+          onClose={() => setModalUserId(null)}
+        />
       )}
     </div>
   );

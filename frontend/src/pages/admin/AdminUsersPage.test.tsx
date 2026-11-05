@@ -276,4 +276,52 @@ describe('AdminUsersPage', () => {
 
     expect(await screen.findByText('Network error')).toBeInTheDocument();
   });
+
+  function manyAttempts(count: number) {
+    return Array.from({ length: count }, (_, i) => ({
+      ...sampleAttempt,
+      id: `a${i + 1}`,
+      courseTitle: `Course ${i + 1}`,
+    }));
+  }
+
+  test('caps the inline list at 5 and shows a "view all" button for more', async () => {
+    getUserAttempts.mockResolvedValue({ attempts: manyAttempts(6) });
+    render(<AdminUsersPage />);
+    await screen.findByText('student@example.com');
+    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+
+    fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
+
+    await screen.findByText('Course 1');
+    expect(screen.queryByText('Course 6')).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /view all 6 attempts/i })).toBeInTheDocument();
+  });
+
+  test('does not show "view all" when there are 5 or fewer attempts', async () => {
+    getUserAttempts.mockResolvedValue({ attempts: manyAttempts(5) });
+    render(<AdminUsersPage />);
+    await screen.findByText('student@example.com');
+    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+
+    fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
+
+    await screen.findByText('Course 1');
+    expect(screen.queryByRole('button', { name: /view all/i })).not.toBeInTheDocument();
+  });
+
+  test('clicking "view all" opens a modal with the full attempt list, closable', async () => {
+    getUserAttempts.mockResolvedValue({ attempts: manyAttempts(6) });
+    render(<AdminUsersPage />);
+    await screen.findByText('student@example.com');
+    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+
+    fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
+    fireEvent.click(await screen.findByRole('button', { name: /view all 6 attempts/i }));
+
+    expect(await screen.findByText('Course 6')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /close/i }));
+    expect(screen.queryByText('Course 6')).not.toBeInTheDocument();
+  });
 });
