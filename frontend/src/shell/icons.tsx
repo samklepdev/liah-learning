@@ -142,6 +142,28 @@ export function UserIcon({ className }: IconProps) {
   );
 }
 
+export function TrashIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M5 7h14" />
+      <path d="M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2" />
+      <path d="M7 7l1 13a1 1 0 001 1h6a1 1 0 001-1l1-13" />
+      <path d="M10 11v6M14 11v6" />
+    </svg>
+  );
+}
+
+/** A person with a minus sign: demoting an admin back to a plain user. */
+export function UserMinusIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <circle cx="10" cy="8" r="3.2" />
+      <path d="M3.5 19.5a6.8 6.8 0 0113 0" />
+      <path d="M16.5 12.5h5" />
+    </svg>
+  );
+}
+
 export function SignOutIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className}>
