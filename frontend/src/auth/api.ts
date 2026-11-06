@@ -3,7 +3,7 @@ export { ApiError, request };
 
 export type User = {
   id: string;
-  email: string;
+  username: string;
   firstName: string | null;
   lastName: string | null;
   role: 'user' | 'admin';
@@ -20,16 +20,16 @@ export const MIN_PASSWORD_LENGTH = 8;
 export const authApi = {
   me: () => request<{ user: User }>('/auth/me'),
 
-  login: (email: string, password: string) =>
+  login: (username: string, password: string) =>
     request<{ user: User }>('/auth/login', {
       method: 'POST',
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ username, password }),
     }),
 
-  register: (email: string, password: string) =>
+  register: (firstName: string, lastName: string, password: string) =>
     request<{ user: User }>('/auth/register', {
       method: 'POST',
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ firstName, lastName, password }),
     }),
 
   changePassword: (currentPassword: string, newPassword: string) =>
