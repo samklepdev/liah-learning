@@ -605,6 +605,8 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   flex-direction: column;
 }
 
+.admin-modal.admin-import-modal { max-width: 48rem; }
+
 .admin-modal-header {
   display: flex;
   align-items: center;
@@ -623,10 +625,11 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 /* .auth-form/.auth-fields/.auth-submit/.auth-error supply the joined-field,
    accent-button look shared with the sign-in screen; this just narrows the
    column to match that form's width instead of the page's full 56rem. */
+.admin-user-actions { display: flex; gap: 0.75rem; margin: 1rem 0 1.5rem; }
 .import-form { max-width: 24rem; margin-top: 1rem; }
 .admin-add-user-form { max-width: 24rem; margin-top: 1rem; }
 .import-errors { margin-top: 1.5rem; }
-.import-preview { max-width: 24rem; margin-top: 1.5rem; }
+.import-preview { margin-top: 1.5rem; }
 .import-errors { color: var(--warning); }
 .import-success { color: var(--success); margin-top: 1rem; }
 
