@@ -1,5 +1,6 @@
 import { type ReactNode } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
+import { ForcedPasswordChangeForm } from './auth/ForcedPasswordChangeForm';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
 import { AdminImportPage } from './pages/admin/AdminImportPage';
@@ -16,6 +17,17 @@ function RequireAuth({ children }: { children: ReactNode }) {
   const { user, loading } = useAuth();
   if (loading) return <div className="auth-loading">Loading…</div>;
   if (!user) return <LoginForm />;
+  return <>{children}</>;
+}
+
+/**
+ * Blocks every signed-in route — admin routes included — behind the forced
+ * password-change form while mustChangePassword is true. Sits inside
+ * RequireAuth, so it only ever runs once a user is known.
+ */
+function RequireFreshPassword({ children }: { children: ReactNode }) {
+  const { user } = useAuth();
+  if (user?.mustChangePassword) return <ForcedPasswordChangeForm />;
   return <>{children}</>;
 }
 
@@ -43,7 +55,9 @@ export function AppRouter() {
           path="/"
           element={
             <RequireAuth>
-              <Navigate to="/subjects" replace />
+              <RequireFreshPassword>
+                <Navigate to="/subjects" replace />
+              </RequireFreshPassword>
             </RequireAuth>
           }
         />
@@ -56,7 +70,9 @@ export function AppRouter() {
         <Route
           element={
             <RequireAuth>
-              <AppShell />
+              <RequireFreshPassword>
+                <AppShell />
+              </RequireFreshPassword>
             </RequireAuth>
           }
         >
