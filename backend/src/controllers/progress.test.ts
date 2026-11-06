@@ -1,9 +1,12 @@
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { eq } from 'drizzle-orm';
+import { db } from '../db/index.ts';
 import { resetDb, closeDb } from '../test/helpers/db.ts';
 import { startTestServer, registerTestUser } from '../test/helpers/server.ts';
 import { seedSubject } from '../scripts/seed-quizzes.ts';
+import { courses } from '../models/schema.ts';
 import type { ParsedCourse, ParsedSubject } from '../lib/quiz-parser.ts';
 
 const subject: ParsedSubject = JSON.parse(
@@ -132,4 +135,21 @@ test('an open, unsubmitted attempt does not appear', async () => {
   const res = await fetch(`${baseUrl}/api/v1/me/progress`, { headers: { cookie } });
   const body = (await res.json()) as { courses: unknown[] };
   assert.deepEqual(body.courses, []);
+});
+
+test('a soft-deleted course still appears in progress history', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'historic');
+  await takeQuiz(cookie, SLUG_1, course1, 9);
+
+  const [course] = await db.select({ id: courses.id }).from(courses).where(eq(courses.slug, SLUG_1));
+  await db
+    .update(courses)
+    .set({ isActive: false, deletedAt: new Date() })
+    .where(eq(courses.id, course!.id));
+
+  const res = await fetch(`${baseUrl}/api/v1/me/progress`, { headers: { cookie } });
+  const body = (await res.json()) as { courses: Array<{ courseSlug: string }> };
+  assert.equal(body.courses.some((c) => c.courseSlug === SLUG_1), true);
+
+  await db.update(courses).set({ isActive: true, deletedAt: null }).where(eq(courses.id, course!.id));
 });

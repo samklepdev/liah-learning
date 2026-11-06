@@ -193,6 +193,16 @@ export function SignOutIcon({ className }: IconProps) {
   );
 }
 
+/** Circular arrow: restoring a soft-deleted row. */
+export function RestoreIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M4.5 12a7.5 7.5 0 1113-5.5" />
+      <path d="M4.5 4.5v5h5" />
+    </svg>
+  );
+}
+
 const BY_SLUG: Record<string, (p: IconProps) => React.ReactElement> = {
   chassis: WheelIcon,
   diagnostics: GaugeIcon,

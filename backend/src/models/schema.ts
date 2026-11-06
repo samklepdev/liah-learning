@@ -26,6 +26,11 @@ export const users = pgTable('users', {
    *  password; cleared the first time the user successfully changes it. */
   mustChangePassword: boolean('must_change_password').notNull().default(false),
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  /** Soft-delete flag. false blocks login, kills existing sessions, and hides
+   *  the user from every admin listing. See deletedAt. */
+  isActive: boolean('is_active').notNull().default(true),
+  /** Set together with isActive — non-null exactly when isActive is false. */
+  deletedAt: timestamp('deleted_at', { withTimezone: true }),
 });
 
 export const sessions = pgTable(
@@ -67,6 +72,11 @@ export const courses = pgTable(
     title: text('title').notNull(),
     passScore: integer('pass_score').notNull().default(9),
     questionCount: integer('question_count').notNull().default(10),
+    /** Soft-delete flag. false hides the course from the active catalog
+     *  (listSubjects/listCoursesBySubject); a learner's own attempt history
+     *  is unaffected. See deletedAt. */
+    isActive: boolean('is_active').notNull().default(true),
+    deletedAt: timestamp('deleted_at', { withTimezone: true }),
   },
   (t) => [unique('courses_subject_position_unique').on(t.subjectId, t.position)],
 );

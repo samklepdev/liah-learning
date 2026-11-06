@@ -4,10 +4,13 @@ import { param } from '../lib/http.ts';
 import { PAGE_SIZE, parsePage } from '../lib/pagination.ts';
 import { listAttemptsForUser } from '../models/admin-attempt.model.ts';
 import {
+  countDeletedUsers,
   countUsers,
   deleteUserById,
   findUserById,
+  listDeletedUsers,
   listUsers,
+  restoreUserById,
   setUserRole,
 } from '../models/admin-user.model.ts';
 import { createUser, findUserByName, INITIAL_PASSWORD } from '../models/user.model.ts';
@@ -44,6 +47,22 @@ export async function getUsers(req: Request, res: Response): Promise<void> {
   const page = parsePage(req);
   const [items, total] = await Promise.all([listUsers(page), countUsers()]);
   res.json({ items, total, page, pageSize: PAGE_SIZE });
+}
+
+export async function getDeletedUsers(req: Request, res: Response): Promise<void> {
+  const page = parsePage(req);
+  const [items, total] = await Promise.all([listDeletedUsers(page), countDeletedUsers()]);
+  res.json({ items, total, page, pageSize: PAGE_SIZE });
+}
+
+export async function restoreUserHandler(req: Request, res: Response): Promise<void> {
+  const id = param(req, 'id');
+  const user = await restoreUserById(id);
+  if (!user) {
+    res.status(404).json({ error: 'Deleted user not found' });
+    return;
+  }
+  res.json({ user });
 }
 
 export async function patchUserRole(req: Request, res: Response): Promise<void> {

@@ -30,7 +30,7 @@ describe('AccountMenu', () => {
     expect(screen.getByRole('link', { name: 'Profile' })).toBeVisible();
     expect(screen.getByText('Sign out')).toBeVisible();
     expect(screen.queryByText('Admin · Users')).not.toBeInTheDocument();
-    expect(screen.queryByText('Admin · Import')).not.toBeInTheDocument();
+    expect(screen.queryByText('Admin · Courses')).not.toBeInTheDocument();
   });
 
   test('Profile comes before Sign out, which comes before the admin links', () => {
@@ -41,11 +41,11 @@ describe('AccountMenu', () => {
     const profileIndex = items.findIndex((t) => t?.includes('Profile'));
     const signOutIndex = items.findIndex((t) => t?.includes('Sign out'));
     const usersIndex = items.findIndex((t) => t?.includes('Admin · Users'));
-    const importIndex = items.findIndex((t) => t?.includes('Admin · Import'));
+    const coursesIndex = items.findIndex((t) => t?.includes('Admin · Courses'));
 
     expect(profileIndex).toBeLessThan(signOutIndex);
     expect(signOutIndex).toBeLessThan(usersIndex);
-    expect(usersIndex).toBeLessThan(importIndex);
+    expect(usersIndex).toBeLessThan(coursesIndex);
   });
 
   test('clicking Sign out calls onLogout and closes the panel', () => {

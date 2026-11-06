@@ -26,7 +26,13 @@ export async function findUserBySessionId(id: string): Promise<PublicUser | null
     })
     .from(sessions)
     .innerJoin(users, eq(users.id, sessions.userId))
-    .where(and(eq(sessions.id, id), gt(sessions.expiresAt, new Date())))
+    .where(
+      and(
+        eq(sessions.id, id),
+        gt(sessions.expiresAt, new Date()),
+        eq(users.isActive, true),
+      ),
+    )
     .limit(1);
 
   return row ?? null;

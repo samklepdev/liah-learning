@@ -3,12 +3,13 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import { ForcedPasswordChangeForm } from './auth/ForcedPasswordChangeForm';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
-import { AdminImportPage } from './pages/admin/AdminImportPage';
+import { AdminCoursesPage } from './pages/admin/AdminCoursesPage';
 import { AdminUsersPage } from './pages/admin/AdminUsersPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { ProgressPage } from './pages/ProgressPage';
 import { QuizPage } from './pages/QuizPage';
+import { RecycleBinPage } from './pages/admin/RecycleBinPage';
 import { ResultsPage } from './pages/ResultsPage';
 import { SubjectCoursesPage, SubjectsIndexPage } from './pages/SubjectCoursesPage';
 import { AppShell } from './shell/AppShell';
@@ -91,10 +92,18 @@ export function AppRouter() {
             }
           />
           <Route
-            path="/admin/import"
+            path="/admin/courses"
             element={
               <RequireAdmin>
-                <AdminImportPage />
+                <AdminCoursesPage />
+              </RequireAdmin>
+            }
+          />
+          <Route
+            path="/admin/recycle-bin"
+            element={
+              <RequireAdmin>
+                <RecycleBinPage />
               </RequireAdmin>
             }
           />

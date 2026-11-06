@@ -1,9 +1,12 @@
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { eq } from 'drizzle-orm';
+import { db } from '../db/index.ts';
 import { resetDb, closeDb } from '../test/helpers/db.ts';
 import { startTestServer, registerTestUser } from '../test/helpers/server.ts';
 import { seedSubject } from '../scripts/seed-quizzes.ts';
+import { courses } from '../models/schema.ts';
 import type { ParsedSubject } from '../lib/quiz-parser.ts';
 
 const subject: ParsedSubject = JSON.parse(
@@ -69,4 +72,40 @@ test('an unknown /api/v1 route answers with JSON, not the SPA fallback', async (
   assert.equal(res.status, 404);
   assert.match(res.headers.get('content-type') ?? '', /application\/json/);
   assert.deepEqual(await res.json(), { error: 'Not found' });
+});
+
+test('GET /api/v1/courses excludes a soft-deleted course', async () => {
+  const [course] = await db
+    .select({ id: courses.id })
+    .from(courses)
+    .where(eq(courses.slug, 'chassis-tire-and-rim-essentials'));
+  await db
+    .update(courses)
+    .set({ isActive: false, deletedAt: new Date() })
+    .where(eq(courses.id, course!.id));
+
+  const res = await fetch(`${baseUrl}/api/v1/courses?subject=chassis`);
+  const body = (await res.json()) as { courses: Array<{ slug: string }> };
+  assert.equal(body.courses.length, 10);
+  assert.equal(body.courses.some((c) => c.slug === 'chassis-tire-and-rim-essentials'), false);
+
+  // Reset so later tests in this file see the full seeded set again.
+  await db.update(courses).set({ isActive: true, deletedAt: null }).where(eq(courses.id, course!.id));
+});
+
+test('GET /api/v1/subjects excludes a soft-deleted course from the count', async () => {
+  const [course] = await db
+    .select({ id: courses.id })
+    .from(courses)
+    .where(eq(courses.slug, 'chassis-tire-and-rim-essentials'));
+  await db
+    .update(courses)
+    .set({ isActive: false, deletedAt: new Date() })
+    .where(eq(courses.id, course!.id));
+
+  const res = await fetch(`${baseUrl}/api/v1/subjects`);
+  const body = (await res.json()) as { subjects: Array<{ courseCount: number }> };
+  assert.equal(body.subjects[0]?.courseCount, 10);
+
+  await db.update(courses).set({ isActive: true, deletedAt: null }).where(eq(courses.id, course!.id));
 });

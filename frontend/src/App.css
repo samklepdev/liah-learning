@@ -560,6 +560,18 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .admin-actions { display: flex; gap: 0.5rem; }
 .admin-pager { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
 
+.recycle-bin-tabs { display: flex; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+.recycle-bin-tab {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.45rem;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.recycle-bin-tab:hover { background: var(--accent-bg); }
+.recycle-bin-tab.active { background: var(--accent-bg); border-color: var(--accent-border); font-weight: 600; }
+
 .icon-button {
   display: inline-flex;
   align-items: center;
