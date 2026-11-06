@@ -8,6 +8,7 @@
     "backend": {
       "root": "backend",
       "entrypoint": "src/app.ts",
+      "buildCommand": "npm run db:migrate:deploy && npm run build",
       "functions": {
         "src/app.ts": {
           "includeFiles": "node_modules/argon2/prebuilds/**"

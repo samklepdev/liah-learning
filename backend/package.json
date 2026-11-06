@@ -9,6 +9,8 @@
     "start": "node --env-file-if-exists=.env dist/index.js",
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
+    "db:migrate": "drizzle-kit migrate",
+    "db:migrate:deploy": "node scripts/migrate-on-deploy.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "node --import tsx --env-file=.env.test --test --test-concurrency=1 \"src/**/*.test.ts\"",
     "db:push:test": "node --env-file=.env.test ../node_modules/drizzle-kit/bin.cjs push",
