@@ -30,7 +30,7 @@ function mockUser(
   useAuth.mockReturnValue({
     user: {
       id: 'u1',
-      email: 'student@example.com',
+      username: 'student',
       firstName: null,
       lastName: null,
       role: 'user',
@@ -54,9 +54,9 @@ beforeEach(() => {
 });
 
 describe('ProfilePage', () => {
-  test('shows the email and em-dash name fields, but not a Role row, for a plain user', () => {
+  test('shows the username and em-dash name fields, but not a Role row, for a plain user', () => {
     render(<ProfilePage />);
-    expect(screen.getByText('student@example.com')).toBeInTheDocument();
+    expect(screen.getByText('student')).toBeInTheDocument();
     expect(screen.getAllByText('—')).toHaveLength(2);
     expect(screen.queryByText('Role')).not.toBeInTheDocument();
   });
@@ -102,7 +102,7 @@ describe('ProfilePage', () => {
     updateName.mockResolvedValue({
       user: {
         id: 'u1',
-        email: 'student@example.com',
+        username: 'student',
         firstName: 'Jane',
         lastName: 'Doe',
         role: 'user',
@@ -131,7 +131,7 @@ describe('ProfilePage', () => {
     updateName.mockResolvedValue({
       user: {
         id: 'u1',
-        email: 'student@example.com',
+        username: 'student',
         firstName: 'Jane',
         lastName: 'Doe',
         role: 'user',
@@ -172,7 +172,7 @@ describe('ProfilePage', () => {
     updateName.mockResolvedValue({
       user: {
         id: 'u1',
-        email: 'student@example.com',
+        username: 'student',
         firstName: 'Jane',
         lastName: 'Doe',
         role: 'user',
@@ -215,7 +215,7 @@ describe('ProfilePage', () => {
     updateName.mockResolvedValue({
       user: {
         id: 'u1',
-        email: 'student@example.com',
+        username: 'student',
         firstName: null,
         lastName: 'Doe',
         role: 'user',

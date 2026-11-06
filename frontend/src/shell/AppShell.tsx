@@ -90,14 +90,14 @@ export function AppShell() {
         <div className="topnav-right">
           <ThemeToggle />
           {user && (
-            <AccountMenu email={user.email} role={user.role} onLogout={() => void handleLogout()} />
+            <AccountMenu username={user.username} role={user.role} onLogout={() => void handleLogout()} />
           )}
         </div>
       </header>
 
       <div className="shell-body">
         <aside id="app-sidebar" className="shell-sidebar" hidden={collapsed}>
-          <SidebarNav nav={nav} userEmail={user?.email} onNavigate={close} />
+          <SidebarNav nav={nav} username={user?.username} onNavigate={close} />
         </aside>
 
         {/* Only visible on narrow screens, where the sidebar overlays content. */}

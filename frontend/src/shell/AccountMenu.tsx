@@ -13,11 +13,11 @@ import { CogIcon, SignOutIcon, UserIcon } from './icons';
  * a click outside and Tab away, without a document-level listener.
  */
 export function AccountMenu({
-  email,
+  username,
   role,
   onLogout,
 }: {
-  email: string;
+  username: string;
   role: 'user' | 'admin';
   onLogout: () => void;
 }) {
@@ -39,9 +39,9 @@ export function AccountMenu({
         onClick={() => setOpen((v) => !v)}
       >
         <span className="account-avatar" aria-hidden="true">
-          {email.charAt(0).toUpperCase()}
+          {username.charAt(0).toUpperCase()}
         </span>
-        <span className="account-email">{email}</span>
+        <span className="account-email">{username}</span>
       </button>
 
       <ul id={panelId} className="account-menu-panel" hidden={!open}>

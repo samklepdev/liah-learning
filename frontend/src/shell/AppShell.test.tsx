@@ -24,7 +24,7 @@ vi.mock('../quiz/api', async (importOriginal) => {
 
 vi.mock('../auth/useAuth', () => ({
   useAuth: () => ({
-    user: { id: 'u1', email: 'tech@example.com', createdAt: '2026-11-02T12:00:00.000Z' },
+    user: { id: 'u1', username: 'techsmith', createdAt: '2026-11-02T12:00:00.000Z' },
     loading: false,
     login: vi.fn(),
     register: vi.fn(),
@@ -80,10 +80,10 @@ describe('AppShell — top navbar', () => {
       '/subjects',
     );
     const sidebar = await nav();
-    expect(within(sidebar).getByText('tech@example.com')).toBeInTheDocument();
+    expect(within(sidebar).getByText('techsmith')).toBeInTheDocument();
 
-    // Sign out lives inside the account menu, named by the user's email.
-    await userEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
+    // Sign out lives inside the account menu, named by the user's username.
+    await userEvent.click(screen.getByRole('button', { name: /techsmith/ }));
     await userEvent.click(screen.getByRole('button', { name: 'Sign out' }));
     expect(logout).toHaveBeenCalled();
   });

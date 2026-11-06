@@ -7,7 +7,7 @@ function renderMenu(role: 'user' | 'admin' = 'user') {
   const onLogout = vi.fn();
   render(
     <MemoryRouter>
-      <AccountMenu email="tech@example.com" role={role} onLogout={onLogout} />
+      <AccountMenu username="techsmith" role={role} onLogout={onLogout} />
     </MemoryRouter>,
   );
   return { onLogout };
@@ -16,7 +16,7 @@ function renderMenu(role: 'user' | 'admin' = 'user') {
 describe('AccountMenu', () => {
   test('the panel starts closed', () => {
     renderMenu();
-    expect(screen.getByRole('button', { name: /tech@example.com/ })).toHaveAttribute(
+    expect(screen.getByRole('button', { name: /techsmith/ })).toHaveAttribute(
       'aria-expanded',
       'false',
     );
@@ -25,7 +25,7 @@ describe('AccountMenu', () => {
 
   test('a plain user sees Profile and Sign out but no admin links', () => {
     renderMenu('user');
-    fireEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
+    fireEvent.click(screen.getByRole('button', { name: /techsmith/ }));
 
     expect(screen.getByRole('link', { name: 'Profile' })).toBeVisible();
     expect(screen.getByText('Sign out')).toBeVisible();
@@ -35,7 +35,7 @@ describe('AccountMenu', () => {
 
   test('Profile comes before Sign out, which comes before the admin links', () => {
     renderMenu('admin');
-    fireEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
+    fireEvent.click(screen.getByRole('button', { name: /techsmith/ }));
 
     const items = screen.getAllByRole('listitem').map((li) => li.textContent);
     const profileIndex = items.findIndex((t) => t?.includes('Profile'));
@@ -50,11 +50,11 @@ describe('AccountMenu', () => {
 
   test('clicking Sign out calls onLogout and closes the panel', () => {
     const { onLogout } = renderMenu();
-    fireEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
+    fireEvent.click(screen.getByRole('button', { name: /techsmith/ }));
     fireEvent.click(screen.getByText('Sign out'));
 
     expect(onLogout).toHaveBeenCalled();
-    expect(screen.getByRole('button', { name: /tech@example.com/ })).toHaveAttribute(
+    expect(screen.getByRole('button', { name: /techsmith/ })).toHaveAttribute(
       'aria-expanded',
       'false',
     );
@@ -62,12 +62,12 @@ describe('AccountMenu', () => {
 
   test('clicking Profile links to /profile and closes the panel', () => {
     renderMenu();
-    fireEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
+    fireEvent.click(screen.getByRole('button', { name: /techsmith/ }));
     const link = screen.getByRole('link', { name: 'Profile' });
     expect(link).toHaveAttribute('href', '/profile');
 
     fireEvent.click(link);
-    expect(screen.getByRole('button', { name: /tech@example.com/ })).toHaveAttribute(
+    expect(screen.getByRole('button', { name: /techsmith/ })).toHaveAttribute(
       'aria-expanded',
       'false',
     );
@@ -75,10 +75,10 @@ describe('AccountMenu', () => {
 
   test('clicking an admin link closes the panel', () => {
     renderMenu('admin');
-    fireEvent.click(screen.getByRole('button', { name: /tech@example.com/ }));
+    fireEvent.click(screen.getByRole('button', { name: /techsmith/ }));
     fireEvent.click(screen.getByRole('link', { name: /Admin · Users/ }));
 
-    expect(screen.getByRole('button', { name: /tech@example.com/ })).toHaveAttribute(
+    expect(screen.getByRole('button', { name: /techsmith/ })).toHaveAttribute(
       'aria-expanded',
       'false',
     );
