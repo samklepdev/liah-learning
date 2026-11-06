@@ -57,26 +57,6 @@ export async function createUser(
   throw new Error(`Could not generate a unique username for base "${base}" after ${MAX_USERNAME_ATTEMPTS} attempts`);
 }
 
-/**
- * Used by the profile name-edit form. Only the columns present in `updates`
- * are written — an omitted key leaves that column untouched, while an
- * explicit `null` clears it. This is a true partial update: callers must
- * only include the keys they actually intend to change.
- */
-export async function updateName(
-  id: string,
-  updates: { firstName?: string | null; lastName?: string | null },
-): Promise<PublicUser | null> {
-  if (Object.keys(updates).length === 0) {
-    const [user] = await db.select(publicColumns).from(users).where(eq(users.id, id)).limit(1);
-    return user ?? null;
-  }
-
-  const [user] = await db.update(users).set(updates).where(eq(users.id, id)).returning(publicColumns);
-
-  return user ?? null;
-}
-
 /** Case-insensitive exact match on first+last name — used by the admin
  *  import's dedup check. Returns null if either name is unset on a row. */
 export async function findUserByName(firstName: string, lastName: string): Promise<PublicUser | null> {
