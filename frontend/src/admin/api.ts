@@ -42,12 +42,17 @@ export type ConfirmedUser = {
   firstName: string | null;
   lastName: string | null;
   role: 'user' | 'admin';
-  password: string;
 };
 export type SkippedUser = { firstName: string | null; lastName: string | null; reason: string };
 
 export const adminApi = {
   listUsers: (page: number) => request<Page<AdminUser>>(`/admin/users?page=${page}`),
+
+  createUser: (firstName: string, lastName: string, role: 'user' | 'admin') =>
+    request<{ user: AdminUser }>('/admin/users', {
+      method: 'POST',
+      body: JSON.stringify({ firstName, lastName, role }),
+    }),
 
   setRole: (id: string, role: 'user' | 'admin') =>
     request<{ user: AdminUser }>(`/admin/users/${id}/role`, {
