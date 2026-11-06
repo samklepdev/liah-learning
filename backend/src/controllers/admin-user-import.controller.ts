@@ -74,7 +74,7 @@ export async function confirmImport(req: Request, res: Response): Promise<void> 
 
     const password = generatePassword();
     const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
-    const user = await createUser(row.firstName, row.lastName, passwordHash, row.role);
+    const user = await createUser(row.firstName, row.lastName, passwordHash, row.role, true);
 
     created.push({
       username: user.username,

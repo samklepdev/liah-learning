@@ -22,6 +22,9 @@ export const users = pgTable('users', {
   /** 'user' or 'admin'. Promoted via the admin users page; the first admin is
    *  set directly in the database. */
   role: text('role').$type<'user' | 'admin'>().notNull().default('user'),
+  /** Set true when an admin creates the account with the shared initial
+   *  password; cleared the first time the user successfully changes it. */
+  mustChangePassword: boolean('must_change_password').notNull().default(false),
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
 });
 

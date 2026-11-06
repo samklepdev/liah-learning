@@ -4,7 +4,17 @@ import { buildBaseUsername } from '../lib/username.ts';
 import { users, type User } from './schema.ts';
 
 /** The user shape that is safe to send to a client — never the password hash. */
-export type PublicUser = Pick<User, 'id' | 'username' | 'firstName' | 'lastName' | 'role' | 'createdAt'>;
+export type PublicUser = Pick<
+  User,
+  'id' | 'username' | 'firstName' | 'lastName' | 'role' | 'mustChangePassword' | 'createdAt'
+>;
+
+/** Fixed initial password for every admin-created account (single-add and
+ *  bulk import). A shared secret is a weaker guarantee than a random
+ *  per-user password, which is why every admin-created account also gets
+ *  mustChangePassword: true — the exposure window is bounded to "before
+ *  the user's first login." */
+export const INITIAL_PASSWORD = 'liahwellness';
 
 const publicColumns = {
   id: users.id,
@@ -12,6 +22,7 @@ const publicColumns = {
   firstName: users.firstName,
   lastName: users.lastName,
   role: users.role,
+  mustChangePassword: users.mustChangePassword,
   createdAt: users.createdAt,
 };
 
@@ -27,7 +38,8 @@ export async function createUser(
   firstName: string,
   lastName: string,
   passwordHash: string,
-  role: 'user' | 'admin' = 'user',
+  role: 'user' | 'admin',
+  mustChangePassword: boolean,
 ): Promise<PublicUser> {
   const base = buildBaseUsername(firstName, lastName);
 
@@ -35,7 +47,7 @@ export async function createUser(
     const username = attempt === 1 ? base : `${base}${attempt}`;
     const [user] = await db
       .insert(users)
-      .values({ username, passwordHash, firstName, lastName, role })
+      .values({ username, passwordHash, firstName, lastName, role, mustChangePassword })
       .onConflictDoNothing({ target: users.username })
       .returning(publicColumns);
 
@@ -110,4 +122,8 @@ export async function findUserByIdWithHash(
 
 export async function updatePasswordHash(id: string, passwordHash: string): Promise<void> {
   await db.update(users).set({ passwordHash }).where(eq(users.id, id));
+}
+
+export async function clearMustChangePassword(id: string): Promise<void> {
+  await db.update(users).set({ mustChangePassword: false }).where(eq(users.id, id));
 }

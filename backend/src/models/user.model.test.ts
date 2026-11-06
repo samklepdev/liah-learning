@@ -8,6 +8,8 @@ import {
   findUserByName,
   updatePasswordHash,
   updateName,
+  clearMustChangePassword,
+  INITIAL_PASSWORD,
 } from './user.model.ts';
 
 before(async () => {
@@ -22,25 +24,25 @@ beforeEach(async () => {
   await resetDb();
 });
 
-test('createUser defaults role to "user"', async () => {
-  const user = await createUser('Role', 'Default', 'hash');
+test('createUser stores the given role', async () => {
+  const user = await createUser('Role', 'Default', 'hash', 'user', false);
   assert.equal(user.role, 'user');
 });
 
 test('createUser generates a username from first/last name', async () => {
-  const user = await createUser('Jane', 'Doe', 'hash');
+  const user = await createUser('Jane', 'Doe', 'hash', 'user', false);
   assert.equal(user.username, 'jdoe');
 });
 
 test('createUser appends a number when the base username is taken', async () => {
-  const first = await createUser('Jane', 'Doe', 'hash');
-  const second = await createUser('Jane', 'Doe', 'hash');
+  const first = await createUser('Jane', 'Doe', 'hash', 'user', false);
+  const second = await createUser('Jane', 'Doe', 'hash', 'user', false);
   assert.equal(first.username, 'jdoe');
   assert.equal(second.username, 'jdoe2');
 });
 
 test('findUserByUsernameWithHash returns the hash for a known user', async () => {
-  const user = await createUser('Hash', 'Lookup', 'some-hash');
+  const user = await createUser('Hash', 'Lookup', 'some-hash', 'user', false);
   const found = await findUserByUsernameWithHash(user.username);
   assert.equal(found?.passwordHash, 'some-hash');
 });
@@ -51,7 +53,7 @@ test('findUserByUsernameWithHash returns null for an unknown username', async ()
 });
 
 test('findUserByIdWithHash returns the hash for a known user', async () => {
-  const user = await createUser('Hash', 'Lookup2', 'some-hash');
+  const user = await createUser('Hash', 'Lookup2', 'some-hash', 'user', false);
   const found = await findUserByIdWithHash(user.id);
   assert.equal(found?.passwordHash, 'some-hash');
 });
@@ -62,7 +64,7 @@ test('findUserByIdWithHash returns null for an unknown id', async () => {
 });
 
 test('findUserByName matches case-insensitively', async () => {
-  await createUser('Jane', 'Doe', 'hash');
+  await createUser('Jane', 'Doe', 'hash', 'user', false);
   const found = await findUserByName('jane', 'DOE');
   assert.equal(found?.firstName, 'Jane');
 });
@@ -73,43 +75,62 @@ test('findUserByName returns null when no match exists', async () => {
 });
 
 test('updatePasswordHash persists the new hash', async () => {
-  const user = await createUser('Update', 'Hash', 'old-hash');
+  const user = await createUser('Update', 'Hash', 'old-hash', 'user', false);
   await updatePasswordHash(user.id, 'new-hash');
   const found = await findUserByIdWithHash(user.id);
   assert.equal(found?.passwordHash, 'new-hash');
 });
 
 test('createUser stores first/last name and role', async () => {
-  const user = await createUser('Jane', 'Doe', 'hash', 'admin');
+  const user = await createUser('Jane', 'Doe', 'hash', 'admin', false);
   assert.equal(user.firstName, 'Jane');
   assert.equal(user.lastName, 'Doe');
   assert.equal(user.role, 'admin');
 });
 
 test('updateName sets first and last name', async () => {
-  const user = await createUser('Rename', 'Me', 'hash');
+  const user = await createUser('Rename', 'Me', 'hash', 'user', false);
   const updated = await updateName(user.id, { firstName: 'Jane', lastName: 'Doe' });
   assert.equal(updated?.firstName, 'Jane');
   assert.equal(updated?.lastName, 'Doe');
 });
 
 test('updateName clears a name back to null', async () => {
-  const user = await createUser('Clear', 'Name', 'hash');
+  const user = await createUser('Clear', 'Name', 'hash', 'user', false);
   const updated = await updateName(user.id, { firstName: null, lastName: null });
   assert.equal(updated?.firstName, null);
   assert.equal(updated?.lastName, null);
 });
 
 test('updateName with only firstName leaves lastName untouched', async () => {
-  const user = await createUser('Partial', 'Update', 'hash');
+  const user = await createUser('Partial', 'Update', 'hash', 'user', false);
   const updated = await updateName(user.id, { firstName: 'Janet' });
   assert.equal(updated?.firstName, 'Janet');
   assert.equal(updated?.lastName, 'Update');
 });
 
 test('updateName with no keys leaves both names untouched and returns the current user', async () => {
-  const user = await createUser('Empty', 'Update', 'hash');
+  const user = await createUser('Empty', 'Update', 'hash', 'user', false);
   const updated = await updateName(user.id, {});
   assert.equal(updated?.firstName, 'Empty');
   assert.equal(updated?.lastName, 'Update');
+});
+
+test('createUser persists mustChangePassword', async () => {
+  const forced = await createUser('Must', 'Change', 'hash', 'user', true);
+  assert.equal(forced.mustChangePassword, true);
+
+  const free = await createUser('No', 'Force', 'hash', 'user', false);
+  assert.equal(free.mustChangePassword, false);
+});
+
+test('clearMustChangePassword flips the flag to false', async () => {
+  const user = await createUser('Clear', 'Flag', 'hash', 'user', true);
+  await clearMustChangePassword(user.id);
+  const found = await findUserByIdWithHash(user.id);
+  assert.equal(found?.mustChangePassword, false);
+});
+
+test('INITIAL_PASSWORD is the fixed shared password', () => {
+  assert.equal(INITIAL_PASSWORD, 'liahwellness');
 });

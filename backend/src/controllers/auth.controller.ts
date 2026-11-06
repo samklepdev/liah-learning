@@ -59,7 +59,7 @@ export async function register(req: Request, res: Response): Promise<void> {
   const { firstName, lastName, password } = parsed.data;
 
   const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
-  const user = await createUser(firstName, lastName, passwordHash);
+  const user = await createUser(firstName, lastName, passwordHash, 'user', false);
 
   await startSession(res, user.id);
   res.status(201).json({ user });
