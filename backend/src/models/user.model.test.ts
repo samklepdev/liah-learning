@@ -7,7 +7,6 @@ import {
   findUserByUsernameWithHash,
   findUserByName,
   updatePasswordHash,
-  updateName,
   clearMustChangePassword,
   INITIAL_PASSWORD,
 } from './user.model.ts';
@@ -86,34 +85,6 @@ test('createUser stores first/last name and role', async () => {
   assert.equal(user.firstName, 'Jane');
   assert.equal(user.lastName, 'Doe');
   assert.equal(user.role, 'admin');
-});
-
-test('updateName sets first and last name', async () => {
-  const user = await createUser('Rename', 'Me', 'hash', 'user', false);
-  const updated = await updateName(user.id, { firstName: 'Jane', lastName: 'Doe' });
-  assert.equal(updated?.firstName, 'Jane');
-  assert.equal(updated?.lastName, 'Doe');
-});
-
-test('updateName clears a name back to null', async () => {
-  const user = await createUser('Clear', 'Name', 'hash', 'user', false);
-  const updated = await updateName(user.id, { firstName: null, lastName: null });
-  assert.equal(updated?.firstName, null);
-  assert.equal(updated?.lastName, null);
-});
-
-test('updateName with only firstName leaves lastName untouched', async () => {
-  const user = await createUser('Partial', 'Update', 'hash', 'user', false);
-  const updated = await updateName(user.id, { firstName: 'Janet' });
-  assert.equal(updated?.firstName, 'Janet');
-  assert.equal(updated?.lastName, 'Update');
-});
-
-test('updateName with no keys leaves both names untouched and returns the current user', async () => {
-  const user = await createUser('Empty', 'Update', 'hash', 'user', false);
-  const updated = await updateName(user.id, {});
-  assert.equal(updated?.firstName, 'Empty');
-  assert.equal(updated?.lastName, 'Update');
 });
 
 test('createUser persists mustChangePassword', async () => {

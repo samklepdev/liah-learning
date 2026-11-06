@@ -14,7 +14,6 @@ import {
   findUserByUsernameWithHash,
   findUserByIdWithHash,
   updatePasswordHash,
-  updateName,
   clearMustChangePassword,
 } from '../models/user.model.ts';
 
@@ -148,41 +147,4 @@ export async function changePassword(req: Request, res: Response): Promise<void>
 
 export function me(req: Request, res: Response): void {
   res.json({ user: req.user });
-}
-
-const nameBody = z.object({
-  firstName: z.string().trim().max(100).optional(),
-  lastName: z.string().trim().max(100).optional(),
-});
-
-/**
- * Updates the signed-in user's first/last name. This is a true partial
- * update: a field omitted from the body is left untouched, while a field
- * present but blank clears that name — unlike the import flow's validation,
- * this is an edit surface where un-setting a name back to blank is a
- * legitimate action.
- * @param req
- * @param res
- */
-export async function updateNameHandler(req: Request, res: Response): Promise<void> {
-  const parsed = nameBody.safeParse(req.body);
-  if (!parsed.success) {
-    res.status(400).json({ error: z.prettifyError(parsed.error) });
-    return;
-  }
-
-  const updates: { firstName?: string | null; lastName?: string | null } = {};
-  if ('firstName' in parsed.data) {
-    updates.firstName = parsed.data.firstName === '' ? null : parsed.data.firstName;
-  }
-  if ('lastName' in parsed.data) {
-    updates.lastName = parsed.data.lastName === '' ? null : parsed.data.lastName;
-  }
-
-  const user = await updateName(req.user!.id, updates);
-  if (!user) {
-    res.status(401).json({ error: 'Not authenticated' });
-    return;
-  }
-  res.json({ user });
 }
