@@ -26,7 +26,7 @@ before(async () => {
   await resetDb();
   await seedSubject(subject);
   ({ baseUrl, close } = await startTestServer());
-  ({ cookie } = await registerTestUser(baseUrl, 'attempt@example.com'));
+  ({ cookie } = await registerTestUser(baseUrl, 'attempt'));
 });
 
 after(async () => {
@@ -64,7 +64,7 @@ test('two concurrent starts yield one attempt, not a 500', async () => {
   //
   // A fresh user is essential: with an attempt already open, both requests
   // take the resume path and the race never happens.
-  const racer = await registerTestUser(baseUrl, 'racer@example.com');
+  const racer = await registerTestUser(baseUrl, 'racer');
 
   const [a, b] = await Promise.all([
     fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
@@ -89,7 +89,7 @@ test('the atomic insert refuses a second open attempt', async () => {
   // Deterministic cover for the conflict branch, rather than hoping to win a
   // race: the second insert must come back null, not throw, so the caller can
   // re-read the winner.
-  const { userId } = await registerTestUser(baseUrl, 'atomic@example.com');
+  const { userId } = await registerTestUser(baseUrl, 'atomic');
   const quiz = await findQuizByCourseSlug(SLUG);
   assert.ok(quiz);
 
@@ -109,7 +109,7 @@ test('submitting frees the slot, so a retake can start — the 500 path', async 
   // This is the exact sequence that returned an internal server error: finish
   // a quiz, then hit Retake. The index is partial on submitted_at IS NULL, so
   // submitting must free the slot for a fresh attempt.
-  const owner = await registerTestUser(baseUrl, 'retaker@example.com');
+  const owner = await registerTestUser(baseUrl, 'retaker');
   const quiz = await findQuizByCourseSlug(SLUG);
   assert.ok(quiz);
 
@@ -129,7 +129,7 @@ test('submitting frees the slot, so a retake can start — the 500 path', async 
 });
 
 test('retaking through the API returns 201 for a fresh attempt', async () => {
-  const owner = await registerTestUser(baseUrl, 'retaker2@example.com');
+  const owner = await registerTestUser(baseUrl, 'retaker2');
 
   const started = await fetch(`${baseUrl}/api/v1/courses/${SLUG}/attempts`, {
     method: 'POST',
@@ -238,7 +238,7 @@ test("another user's attempt is a 404", async () => {
   });
   const { attempt } = (await res0.json()) as { attempt: { id: string } };
 
-  const other = await registerTestUser(baseUrl, 'intruder@example.com');
+  const other = await registerTestUser(baseUrl, 'intruder');
   const res = await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}`, {
     headers: { cookie: other.cookie },
   });

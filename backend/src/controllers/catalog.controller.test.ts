@@ -46,7 +46,7 @@ test('GET /api/v1/courses returns courses in order, no best score when anonymous
 });
 
 test('GET /api/v1/courses includes bestScore for a signed-in user', async () => {
-  const { cookie } = await registerTestUser(baseUrl, 'catalog@example.com');
+  const { cookie } = await registerTestUser(baseUrl, 'catalog');
   const res = await fetch(`${baseUrl}/api/v1/courses?subject=chassis`, {
     headers: { cookie },
   });
