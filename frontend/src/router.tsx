@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import { ForcedPasswordChangeForm } from './auth/ForcedPasswordChangeForm';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
+import { AdminCoursesPage } from './pages/admin/AdminCoursesPage';
 import { AdminImportPage } from './pages/admin/AdminImportPage';
 import { AdminUsersPage } from './pages/admin/AdminUsersPage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -95,6 +96,14 @@ export function AppRouter() {
             element={
               <RequireAdmin>
                 <AdminImportPage />
+              </RequireAdmin>
+            }
+          />
+          <Route
+            path="/admin/courses"
+            element={
+              <RequireAdmin>
+                <AdminCoursesPage />
               </RequireAdmin>
             }
           />

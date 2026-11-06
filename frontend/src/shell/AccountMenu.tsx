@@ -80,6 +80,12 @@ export function AccountMenu({
                 Admin · Import
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/admin/courses" className="account-menu-item" onClick={() => setOpen(false)}>
+                <CogIcon className="nav-icon" />
+                Admin · Courses
+              </NavLink>
+            </li>
           </>
         )}
       </ul>
