@@ -39,11 +39,5 @@ export const authApi = {
       body: JSON.stringify({ currentPassword, newPassword }),
     }),
 
-  updateName: (firstName: string, lastName: string) =>
-    request<{ user: User }>('/auth/name', {
-      method: 'PATCH',
-      body: JSON.stringify({ firstName, lastName }),
-    }),
-
   logout: () => request<void>('/auth/logout', { method: 'POST' }),
 };
