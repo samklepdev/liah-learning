@@ -21,6 +21,7 @@ function adminUser(): PublicUser {
     firstName: null,
     lastName: null,
     role: 'admin',
+    mustChangePassword: false,
     createdAt: new Date(),
   };
 }
@@ -32,6 +33,7 @@ function plainUser(): PublicUser {
     firstName: null,
     lastName: null,
     role: 'user',
+    mustChangePassword: false,
     createdAt: new Date(),
   };
 }
