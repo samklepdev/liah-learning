@@ -1,7 +1,10 @@
 import { test, before, after, beforeEach } from 'node:test';
 import assert from 'node:assert/strict';
+import { eq } from 'drizzle-orm';
+import { db } from '../db/index.ts';
 import { resetDb, closeDb } from '../test/helpers/db.ts';
 import { startTestServer, registerTestUser } from '../test/helpers/server.ts';
+import { users } from '../models/schema.ts';
 
 let baseUrl: string;
 let close: () => Promise<void>;
@@ -159,4 +162,28 @@ test('PATCH /api/v1/auth/password clears mustChangePassword', async () => {
   const afterMe = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie: newCookie } });
   const after = (await afterMe.json()) as { user: { mustChangePassword: boolean } };
   assert.equal(after.user.mustChangePassword, false);
+});
+
+test('POST /api/v1/auth/login rejects an inactive user', async () => {
+  const { username, userId } = await registerTestUser(baseUrl, 'Inactive');
+  await db.update(users).set({ isActive: false, deletedAt: new Date() }).where(eq(users.id, userId));
+
+  const res = await fetch(`${baseUrl}/api/v1/auth/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username, password: 'test-password-123' }),
+  });
+  assert.equal(res.status, 401);
+});
+
+test('GET /api/v1/auth/me 401s once the session owner is deactivated', async () => {
+  const { cookie, userId } = await registerTestUser(baseUrl, 'Deactivated');
+
+  const before = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie } });
+  assert.equal(before.status, 200);
+
+  await db.update(users).set({ isActive: false, deletedAt: new Date() }).where(eq(users.id, userId));
+
+  const after = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie } });
+  assert.equal(after.status, 401);
 });

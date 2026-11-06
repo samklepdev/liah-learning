@@ -81,7 +81,7 @@ export async function findUserByUsernameWithHash(
   const [user] = await db
     .select({ ...publicColumns, passwordHash: users.passwordHash })
     .from(users)
-    .where(eq(users.username, username))
+    .where(and(eq(users.username, username), eq(users.isActive, true)))
     .limit(1);
 
   return user ?? null;
