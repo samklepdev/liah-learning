@@ -21,6 +21,7 @@ export async function findUserBySessionId(id: string): Promise<PublicUser | null
       firstName: users.firstName,
       lastName: users.lastName,
       role: users.role,
+      mustChangePassword: users.mustChangePassword,
       createdAt: users.createdAt,
     })
     .from(sessions)

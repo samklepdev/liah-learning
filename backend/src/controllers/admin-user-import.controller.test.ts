@@ -63,7 +63,7 @@ test('POST /api/v1/admin/users/import/parse 404s for a non-admin', async () => {
   assert.equal(res.status, 404);
 });
 
-test('POST /api/v1/admin/users/import/confirm creates users with a hashed password', async () => {
+test('POST /api/v1/admin/users/import/confirm creates users with the shared initial password', async () => {
   const cookie = await adminCookie();
   const rows = [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'admin' as const }];
 
@@ -74,13 +74,7 @@ test('POST /api/v1/admin/users/import/confirm creates users with a hashed passwo
   });
   assert.equal(res.status, 200);
   const body = (await res.json()) as {
-    created: Array<{
-      username: string;
-      firstName: string | null;
-      lastName: string | null;
-      role: string;
-      password: string;
-    }>;
+    created: Array<{ username: string; firstName: string | null; lastName: string | null; role: string }>;
     skipped: unknown[];
   };
   assert.equal(body.created.length, 1);
@@ -88,11 +82,18 @@ test('POST /api/v1/admin/users/import/confirm creates users with a hashed passwo
   assert.equal(body.created[0]?.firstName, 'Jane');
   assert.equal(body.created[0]?.lastName, 'Doe');
   assert.equal(body.created[0]?.role, 'admin');
-  assert.ok(body.created[0]?.password && body.created[0].password.length > 0);
   assert.deepEqual(body.skipped, []);
+  assert.equal('password' in (body.created[0] ?? {}), false);
 
   const stored = await findUserByUsernameWithHash('jdoe');
-  assert.notEqual(stored?.passwordHash, body.created[0]?.password);
+  assert.equal(stored?.mustChangePassword, true);
+
+  const login = await fetch(`${baseUrl}/api/v1/auth/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username: 'jdoe', password: 'liahwellness' }),
+  });
+  assert.equal(login.status, 200);
 });
 
 test('POST /api/v1/admin/users/import/confirm skips a row matching an existing user by name', async () => {

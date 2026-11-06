@@ -12,7 +12,7 @@ import { createUser } from '../models/user.model.ts';
  */
 export async function seedAdmin(firstName: string, lastName: string, password: string): Promise<string> {
   const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
-  const user = await createUser(firstName, lastName, passwordHash, 'admin');
+  const user = await createUser(firstName, lastName, passwordHash, 'admin', false);
   return user.username;
 }
 

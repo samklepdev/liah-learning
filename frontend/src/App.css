@@ -58,7 +58,8 @@
   flex-direction: column;
 }
 
-.auth-form input {
+.auth-form input,
+.auth-form select {
   padding: 0.6rem 0.75rem;
   font: inherit;
   border: 1px solid var(--border);
@@ -69,10 +70,12 @@
 
 /* Round the outer corners only, and collapse the shared edge, so the pair
    reads as one control. */
-.auth-fields input:first-child {
+.auth-fields input:first-child,
+.auth-fields select:first-child {
   border-radius: 0.5rem 0.5rem 0 0;
 }
-.auth-fields input:last-child {
+.auth-fields input:last-child,
+.auth-fields select:last-child {
   margin-top: -1px;
   border-radius: 0 0 0.5rem 0.5rem;
 }
@@ -83,7 +86,8 @@
 }
 
 /* The focused field lifts above its neighbour so its ring is unbroken. */
-.auth-form input:focus-visible {
+.auth-form input:focus-visible,
+.auth-form select:focus-visible {
   position: relative;
   z-index: 1;
   outline: 2px solid var(--accent);
@@ -601,6 +605,8 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   flex-direction: column;
 }
 
+.admin-modal.admin-import-modal { max-width: 48rem; }
+
 .admin-modal-header {
   display: flex;
   align-items: center;
@@ -619,9 +625,12 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 /* .auth-form/.auth-fields/.auth-submit/.auth-error supply the joined-field,
    accent-button look shared with the sign-in screen; this just narrows the
    column to match that form's width instead of the page's full 56rem. */
+.admin-user-actions { display: flex; gap: 0.75rem; margin: 1rem 0 1.5rem; }
+.admin-user-actions .auth-submit { width: auto; }
 .import-form { max-width: 24rem; margin-top: 1rem; }
+.admin-add-user-form { max-width: 24rem; margin-top: 1rem; }
 .import-errors { margin-top: 1.5rem; }
-.import-preview { max-width: 24rem; margin-top: 1.5rem; }
+.import-preview { margin-top: 1.5rem; }
 .import-errors { color: var(--warning); }
 .import-success { color: var(--success); margin-top: 1rem; }
 

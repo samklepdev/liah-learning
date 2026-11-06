@@ -127,3 +127,66 @@ test('GET /api/v1/admin/users/:id/attempts 404s for an unknown user', async () =
   );
   assert.equal(res.status, 404);
 });
+
+test('POST /api/v1/admin/users creates a user with the shared initial password', async () => {
+  const { cookie } = await makeAdmin('Admin');
+
+  const res = await fetch(`${baseUrl}/api/v1/admin/users`, {
+    method: 'POST',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'New', lastName: 'Person', role: 'user' }),
+  });
+  assert.equal(res.status, 201);
+  const body = (await res.json()) as {
+    user: { username: string; firstName: string; lastName: string; role: string; mustChangePassword: boolean };
+  };
+  assert.equal(body.user.username, 'nperson');
+  assert.equal(body.user.firstName, 'New');
+  assert.equal(body.user.lastName, 'Person');
+  assert.equal(body.user.role, 'user');
+  assert.equal(body.user.mustChangePassword, true);
+  assert.equal('password' in body.user, false);
+
+  const login = await fetch(`${baseUrl}/api/v1/auth/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username: 'nperson', password: 'liahwellness' }),
+  });
+  assert.equal(login.status, 200);
+});
+
+test('POST /api/v1/admin/users rejects a duplicate name', async () => {
+  const { cookie } = await makeAdmin('Admin');
+  await registerTestUser(baseUrl, 'Existing');
+
+  const res = await fetch(`${baseUrl}/api/v1/admin/users`, {
+    method: 'POST',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'Test', lastName: 'Existing', role: 'user' }),
+  });
+  assert.equal(res.status, 400);
+  const body = (await res.json()) as { error: string };
+  assert.equal(body.error, 'A user with this name already exists');
+});
+
+test('POST /api/v1/admin/users rejects a missing last name', async () => {
+  const { cookie } = await makeAdmin('Admin');
+
+  const res = await fetch(`${baseUrl}/api/v1/admin/users`, {
+    method: 'POST',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'Solo', lastName: '', role: 'user' }),
+  });
+  assert.equal(res.status, 400);
+});
+
+test('POST /api/v1/admin/users 404s for a non-admin', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'Plain');
+
+  const res = await fetch(`${baseUrl}/api/v1/admin/users`, {
+    method: 'POST',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'New', lastName: 'Person', role: 'user' }),
+  });
+  assert.equal(res.status, 404);
+});

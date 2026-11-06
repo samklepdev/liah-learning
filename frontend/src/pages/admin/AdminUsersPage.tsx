@@ -1,27 +1,14 @@
 import { Fragment, useCallback, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
-import {
-  adminApi,
-  type AdminAttempt,
-  type AdminUser,
-  type ConfirmedUser,
-  type ImportedUserRow,
-  type ImportRowError,
-  type SkippedUser,
-} from '../../admin/api';
+import { adminApi, type AdminAttempt, type AdminUser } from '../../admin/api';
 import { useAuth } from '../../auth/useAuth';
 import { Pager } from '../../shared/Pager';
-import { PAGE_SIZE, usePager } from '../../shared/usePager';
+import { usePager } from '../../shared/usePager';
 import { ChevronRightIcon, TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
+import { AddUserModal } from './AddUserModal';
 import { AttemptsTable } from './AttemptsTable';
+import { ImportUsersModal } from './ImportUsersModal';
 import { UserAttemptsModal } from './UserAttemptsModal';
-
-type ImportResults = { created: ConfirmedUser[]; skipped: SkippedUser[] };
-
-function importSummary(created: number, skipped: number): string {
-  const createdPart = `${created} user${created === 1 ? '' : 's'} created`;
-  return skipped > 0 ? `${createdPart}, ${skipped} skipped` : createdPart;
-}
 
 export function AdminUsersPage() {
   const { user: me } = useAuth();
@@ -38,15 +25,8 @@ export function AdminUsersPage() {
   const [attemptsError, setAttemptsError] = useState<string | null>(null);
   const [modalUserId, setModalUserId] = useState<string | null>(null);
 
-  const [importFile, setImportFile] = useState<File | null>(null);
-  const [parsedRows, setParsedRows] = useState<ImportedUserRow[]>([]);
-  const previewPager = usePager(parsedRows.length);
-  const [parseErrors, setParseErrors] = useState<ImportRowError[]>([]);
-  const [importResults, setImportResults] = useState<ImportResults | null>(null);
-  const createdPager = usePager(importResults?.created.length ?? 0);
-  const skippedPager = usePager(importResults?.skipped.length ?? 0);
-  const [importBusy, setImportBusy] = useState(false);
-  const [importError, setImportError] = useState<string | null>(null);
+  const [showAddUser, setShowAddUser] = useState(false);
+  const [showImport, setShowImport] = useState(false);
 
   const load = useCallback((page: number) => {
     setLoading(true);
@@ -111,205 +91,26 @@ export function AdminUsersPage() {
     }
   };
 
-  const parseFile = async () => {
-    if (!importFile) return;
-    setImportBusy(true);
-    setImportError(null);
-    setImportResults(null);
-    setParsedRows([]);
-    setParseErrors([]);
-    try {
-      const { rows, errors } = await adminApi.parseUserImport(importFile);
-      setParsedRows(rows);
-      setParseErrors(errors);
-    } catch (err) {
-      setImportError(err instanceof Error ? err.message : 'Parse failed');
-    } finally {
-      setImportBusy(false);
-    }
-  };
-
-  const confirmImport = async () => {
-    if (parsedRows.length === 0) return;
-    setImportBusy(true);
-    setImportError(null);
-    try {
-      const results = await adminApi.confirmUserImport(parsedRows);
-      toast.success(importSummary(results.created.length, results.skipped.length));
-      setImportResults(results);
-      setParsedRows([]);
-      setParseErrors([]);
-      setImportFile(null);
-      load(pager.page);
-    } catch (err) {
-      setImportError(err instanceof Error ? err.message : 'Import failed');
-    } finally {
-      setImportBusy(false);
-    }
-  };
-
   return (
     <div className="admin-page">
       <h1>Users</h1>
 
-      <section className="admin-import-users">
-        <h2>Seed users from a file</h2>
-        <div className="auth-form import-form">
-          <div className="auth-fields">
-            <input
-              type="file"
-              accept=".xlsx,.csv"
-              onChange={(e) => setImportFile(e.target.files?.[0] ?? null)}
-              aria-label="User list file"
-            />
-          </div>
-
-          {importError && (
-            <p role="alert" className="auth-error">
-              {importError}
-            </p>
-          )}
-
-          <button
-            type="button"
-            className="auth-submit"
-            disabled={importBusy || !importFile}
-            aria-busy={importBusy}
-            onClick={() => void parseFile()}
-          >
-            {importBusy ? 'Working…' : 'Parse'}
-          </button>
-        </div>
-
-        {parseErrors.length > 0 && (
-          <div className="import-errors" role="alert">
-            <h3>Row errors</h3>
-            <ul>
-              {parseErrors.map((e) => (
-                <li key={e.row}>{e.message}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {parsedRows.length > 0 && (
-          <div className="import-preview">
-            <table className="admin-table">
-              <thead>
-                <tr>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Role</th>
-                </tr>
-              </thead>
-              <tbody>
-                {parsedRows
-                  .slice((previewPager.page - 1) * PAGE_SIZE, previewPager.page * PAGE_SIZE)
-                  .map((r) => (
-                    <tr key={r.row}>
-                      <td data-label="First Name">{r.firstName}</td>
-                      <td data-label="Last Name">{r.lastName}</td>
-                      <td data-label="Role">{r.role}</td>
-                    </tr>
-                  ))}
-              </tbody>
-            </table>
-            <Pager
-              page={previewPager.page}
-              totalPages={previewPager.totalPages}
-              canPrev={previewPager.canPrev}
-              canNext={previewPager.canNext}
-              onPrev={previewPager.prev}
-              onNext={previewPager.next}
-            />
-            <button
-              type="button"
-              className="auth-submit"
-              disabled={importBusy}
-              aria-busy={importBusy}
-              onClick={() => void confirmImport()}
-            >
-              Confirm import
-            </button>
-          </div>
-        )}
-
-        {importResults && (
-          <div className="import-results">
-            {importResults.created.length > 0 && (
-              <>
-                <h3>Created</h3>
-                <button
-                  type="button"
-                  onClick={() => {
-                    const header = 'username,firstName,lastName,role,password';
-                    const lines = importResults.created.map(
-                      (u) => `${u.username},${u.firstName ?? ''},${u.lastName ?? ''},${u.role},${u.password}`,
-                    );
-                    void navigator.clipboard.writeText([header, ...lines].join('\n'));
-                  }}
-                >
-                  Copy all as CSV
-                </button>
-                <table className="admin-table">
-                  <thead>
-                    <tr>
-                      <th>Username</th>
-                      <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>Role</th>
-                      <th>Password</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {importResults.created
-                      .slice((createdPager.page - 1) * PAGE_SIZE, createdPager.page * PAGE_SIZE)
-                      .map((u) => (
-                        <tr key={u.username}>
-                          <td data-label="Username">{u.username}</td>
-                          <td data-label="First Name">{u.firstName ?? '—'}</td>
-                          <td data-label="Last Name">{u.lastName ?? '—'}</td>
-                          <td data-label="Role">{u.role}</td>
-                          <td data-label="Password">{u.password}</td>
-                        </tr>
-                      ))}
-                  </tbody>
-                </table>
-                <Pager
-                  page={createdPager.page}
-                  totalPages={createdPager.totalPages}
-                  canPrev={createdPager.canPrev}
-                  canNext={createdPager.canNext}
-                  onPrev={createdPager.prev}
-                  onNext={createdPager.next}
-                />
-              </>
-            )}
-            {importResults.skipped.length > 0 && (
-              <>
-                <h3>Skipped</h3>
-                <ul>
-                  {importResults.skipped
-                    .slice((skippedPager.page - 1) * PAGE_SIZE, skippedPager.page * PAGE_SIZE)
-                    .map((s, i) => (
-                      <li key={`${s.firstName ?? ''}-${s.lastName ?? ''}-${i}`}>
-                        {s.firstName} {s.lastName}: {s.reason}
-                      </li>
-                    ))}
-                </ul>
-                <Pager
-                  page={skippedPager.page}
-                  totalPages={skippedPager.totalPages}
-                  canPrev={skippedPager.canPrev}
-                  canNext={skippedPager.canNext}
-                  onPrev={skippedPager.prev}
-                  onNext={skippedPager.next}
-                />
-              </>
-            )}
-          </div>
-        )}
-      </section>
+      <div className="admin-user-actions">
+        <button
+          type="button"
+          className="auth-submit auth-submit-secondary"
+          onClick={() => setShowAddUser(true)}
+        >
+          Add user
+        </button>
+        <button
+          type="button"
+          className="auth-submit auth-submit-secondary"
+          onClick={() => setShowImport(true)}
+        >
+          Seed users from a file
+        </button>
+      </div>
 
       {error && (
         <p role="alert" className="auth-error">
@@ -434,6 +235,14 @@ export function AdminUsersPage() {
           attempts={attemptsById[modalUserId] ?? []}
           onClose={() => setModalUserId(null)}
         />
+      )}
+
+      {showAddUser && (
+        <AddUserModal onClose={() => setShowAddUser(false)} onCreated={() => load(pager.page)} />
+      )}
+
+      {showImport && (
+        <ImportUsersModal onClose={() => setShowImport(false)} onImported={() => load(pager.page)} />
       )}
     </div>
   );

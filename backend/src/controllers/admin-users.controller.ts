@@ -10,8 +10,35 @@ import {
   listUsers,
   setUserRole,
 } from '../models/admin-user.model.ts';
+import { createUser, findUserByName, INITIAL_PASSWORD } from '../models/user.model.ts';
+import argon2 from 'argon2';
 
 const roleBody = z.object({ role: z.enum(['user', 'admin']) });
+
+const createUserBody = z.object({
+  firstName: z.string().trim().min(1, 'First name is required').max(100),
+  lastName: z.string().trim().min(1, 'Last name is required').max(100),
+  role: z.enum(['user', 'admin']),
+});
+
+export async function createUserHandler(req: Request, res: Response): Promise<void> {
+  const parsed = createUserBody.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: z.prettifyError(parsed.error) });
+    return;
+  }
+  const { firstName, lastName, role } = parsed.data;
+
+  const existing = await findUserByName(firstName, lastName);
+  if (existing) {
+    res.status(400).json({ error: 'A user with this name already exists' });
+    return;
+  }
+
+  const passwordHash = await argon2.hash(INITIAL_PASSWORD, { type: argon2.argon2id });
+  const user = await createUser(firstName, lastName, passwordHash, role, true);
+  res.status(201).json({ user });
+}
 
 export async function getUsers(req: Request, res: Response): Promise<void> {
   const page = parsePage(req);

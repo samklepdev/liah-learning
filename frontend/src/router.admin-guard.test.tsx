@@ -18,13 +18,19 @@ function renderGuard() {
 
 describe('RequireAdmin', () => {
   test('renders children for an admin', () => {
-    useAuth.mockReturnValue({ user: { id: 'u1', username: 'absmith', role: 'admin' }, loading: false });
+    useAuth.mockReturnValue({
+      user: { id: 'u1', username: 'absmith', role: 'admin', mustChangePassword: false },
+      loading: false,
+    });
     renderGuard();
     expect(screen.getByText('admin content')).toBeInTheDocument();
   });
 
   test('renders the 404 page for a signed-in non-admin', () => {
-    useAuth.mockReturnValue({ user: { id: 'u1', username: 'absmith', role: 'user' }, loading: false });
+    useAuth.mockReturnValue({
+      user: { id: 'u1', username: 'absmith', role: 'user', mustChangePassword: false },
+      loading: false,
+    });
     renderGuard();
     expect(screen.getByText('404')).toBeInTheDocument();
   });

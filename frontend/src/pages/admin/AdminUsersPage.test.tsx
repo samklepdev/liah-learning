@@ -8,6 +8,7 @@ const deleteUser = vi.fn();
 const getUserAttempts = vi.fn();
 const parseUserImport = vi.fn();
 const confirmUserImport = vi.fn();
+const createUser = vi.fn();
 const useAuth = vi.fn();
 
 const toastSuccess = vi.fn();
@@ -24,6 +25,7 @@ vi.mock('../../admin/api', () => ({
     getUserAttempts: (id: string) => getUserAttempts(id),
     parseUserImport: (file: File) => parseUserImport(file),
     confirmUserImport: (rows: unknown) => confirmUserImport(rows),
+    createUser: (firstName: string, lastName: string, role: string) => createUser(firstName, lastName, role),
   },
 }));
 
@@ -68,6 +70,7 @@ beforeEach(() => {
   deleteUser.mockResolvedValue(undefined);
   parseUserImport.mockReset();
   confirmUserImport.mockReset();
+  createUser.mockReset();
   toastSuccess.mockReset();
 });
 
@@ -168,252 +171,67 @@ describe('AdminUsersPage', () => {
     expect(screen.getByText('Page 2 of 2')).toBeInTheDocument();
   });
 
-  function manyImportRows(count: number) {
-    return Array.from({ length: count }, (_, i) => ({
-      row: i + 2,
-      firstName: `First${i}`,
-      lastName: `Last${i}`,
-      role: 'user' as const,
-    }));
-  }
-
-  test('paginates the import preview table when there are more than one page of rows', async () => {
-    parseUserImport.mockResolvedValue({ rows: manyImportRows(25), errors: [] });
+  test('clicking "Add user" opens the add-user modal', async () => {
     render(<AdminUsersPage />);
     await screen.findByText('adminuser');
 
-    selectImportFile();
-    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^add user$/i }));
 
-    expect(await screen.findByText('First0')).toBeInTheDocument();
-    expect(screen.queryByText('First20')).not.toBeInTheDocument();
-
-    const previewSection = screen.getByText('First0').closest('.import-preview') as HTMLElement;
-    fireEvent.click(within(previewSection).getByRole('button', { name: 'Next' }));
-
-    expect(await screen.findByText('First20')).toBeInTheDocument();
-    expect(screen.queryByText('First0')).not.toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /add a user/i })).toBeInTheDocument();
+    expect(screen.getByLabelText(/first name/i)).toBeInTheDocument();
   });
 
-  function manyConfirmedUsers(count: number) {
-    return Array.from({ length: count }, (_, i) => ({
-      username: `created${i}`,
-      firstName: `First${i}`,
-      lastName: `Last${i}`,
-      role: 'user' as const,
-      password: `pw${i}`,
-    }));
-  }
-
-  function manySkippedUsers(count: number) {
-    return Array.from({ length: count }, (_, i) => ({
-      firstName: `Skipped${i}`,
-      lastName: 'User',
-      reason: 'already registered',
-    }));
-  }
-
-  test('paginates the import results "Created" table when there are more than one page', async () => {
-    parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
-      errors: [],
-    });
-    confirmUserImport.mockResolvedValue({ created: manyConfirmedUsers(25), skipped: [] });
-    render(<AdminUsersPage />);
-    await screen.findByText('adminuser');
-
-    selectImportFile();
-    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
-    await screen.findByRole('button', { name: /confirm import/i });
-    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
-
-    expect(await screen.findByText('created0')).toBeInTheDocument();
-    expect(screen.queryByText('created20')).not.toBeInTheDocument();
-
-    const createdSection = screen.getByText('Created').closest('.import-results') as HTMLElement;
-    fireEvent.click(within(createdSection).getByRole('button', { name: 'Next' }));
-
-    expect(await screen.findByText('created20')).toBeInTheDocument();
-  });
-
-  test('paginates the import results "Skipped" list when there are more than one page', async () => {
-    parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
-      errors: [],
-    });
-    confirmUserImport.mockResolvedValue({ created: [], skipped: manySkippedUsers(25) });
-    render(<AdminUsersPage />);
-    await screen.findByText('adminuser');
-
-    selectImportFile();
-    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
-    await screen.findByRole('button', { name: /confirm import/i });
-    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
-
-    expect(await screen.findByText(/Skipped0 User/)).toBeInTheDocument();
-    expect(screen.queryByText(/Skipped20 User/)).not.toBeInTheDocument();
-
-    const skippedSection = screen.getByText('Skipped').closest('.import-results') as HTMLElement;
-    fireEvent.click(within(skippedSection).getByRole('button', { name: 'Next' }));
-
-    expect(await screen.findByText(/Skipped20 User/)).toBeInTheDocument();
-  });
-
-  test('labels each cell in the import preview table for the mobile card layout', async () => {
-    parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
-      errors: [],
+  test('creating a user via the modal closes it and refreshes the list', async () => {
+    createUser.mockResolvedValue({
+      user: { id: 'u3', username: 'njordan', firstName: 'New', lastName: 'Jordan', role: 'user', createdAt: '2026-11-06T00:00:00Z' },
     });
     render(<AdminUsersPage />);
     await screen.findByText('adminuser');
 
-    selectImportFile();
-    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^add user$/i }));
+    const modal = within(screen.getByTestId('admin-modal-overlay'));
+    fireEvent.change(modal.getByLabelText(/first name/i), { target: { value: 'New' } });
+    fireEvent.change(modal.getByLabelText(/last name/i), { target: { value: 'Jordan' } });
+    fireEvent.click(modal.getByRole('button', { name: /create user/i }));
 
-    const row = (await screen.findByText('Jane')).closest('tr')!;
-    const cells = within(row).getAllByRole('cell');
-    expect(cells.map((c) => c.getAttribute('data-label'))).toEqual(['First Name', 'Last Name', 'Role']);
-  });
-
-  test('labels each cell in the import results "Created" table for the mobile card layout', async () => {
-    parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
-      errors: [],
-    });
-    confirmUserImport.mockResolvedValue({
-      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
-      skipped: [],
-    });
-    render(<AdminUsersPage />);
-    await screen.findByText('adminuser');
-
-    selectImportFile();
-    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
-    await screen.findByRole('button', { name: /confirm import/i });
-    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
-
-    const row = (await screen.findByText('abc123')).closest('tr')!;
-    const cells = within(row).getAllByRole('cell');
-    expect(cells.map((c) => c.getAttribute('data-label'))).toEqual([
-      'Username',
-      'First Name',
-      'Last Name',
-      'Role',
-      'Password',
-    ]);
-  });
-
-  function selectImportFile() {
-    const file = new File(['First Name,Last Name\nJane,Doe'], 'students.csv', { type: 'text/csv' });
-    const input = screen.getByLabelText(/user list file/i) as HTMLInputElement;
-    fireEvent.change(input, { target: { files: [file] } });
-  }
-
-  test('parsing a file shows a preview with row errors', async () => {
-    parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
-      errors: [{ row: 3, message: 'Row 3: last name is required' }],
-    });
-    render(<AdminUsersPage />);
-    await screen.findByText('adminuser');
-
-    selectImportFile();
-    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
-
-    expect(await screen.findByText('Jane')).toBeInTheDocument();
-    expect(screen.getByText(/row 3: last name is required/i)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /confirm import/i })).toBeEnabled();
-  });
-
-  test('confirming an import shows generated passwords and reloads the user list', async () => {
-    parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
-      errors: [],
-    });
-    confirmUserImport.mockResolvedValue({
-      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
-      skipped: [],
-    });
-    render(<AdminUsersPage />);
-    await screen.findByText('adminuser');
-
-    selectImportFile();
-    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
-    await screen.findByRole('button', { name: /confirm import/i });
-
-    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
-
-    await waitFor(() => expect(confirmUserImport).toHaveBeenCalled());
-    expect(await screen.findByText('abc123')).toBeInTheDocument();
-    // listUsers is called once on mount, once more after a successful import.
+    await waitFor(() => expect(createUser).toHaveBeenCalledWith('New', 'Jordan', 'user'));
     await waitFor(() => expect(listUsers).toHaveBeenCalledTimes(2));
-    expect(toastSuccess).toHaveBeenCalledWith('1 user created');
+    await waitFor(() =>
+      expect(screen.queryByRole('heading', { name: /add a user/i })).not.toBeInTheDocument(),
+    );
   });
 
-  test('a mixed import summarizes created and skipped counts in the toast', async () => {
-    parseUserImport.mockResolvedValue({
-      rows: [
-        { row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' },
-        { row: 3, firstName: 'John', lastName: 'Roe', role: 'user' },
-      ],
-      errors: [],
-    });
-    confirmUserImport.mockResolvedValue({
-      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
-      skipped: [{ firstName: 'John', lastName: 'Roe', reason: 'already registered' }],
-    });
+  test('clicking "Seed users from a file" opens the import modal', async () => {
     render(<AdminUsersPage />);
     await screen.findByText('adminuser');
 
-    selectImportFile();
-    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
-    await screen.findByRole('button', { name: /confirm import/i });
+    fireEvent.click(screen.getByRole('button', { name: /seed users from a file/i }));
 
-    fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
-
-    await waitFor(() => expect(toastSuccess).toHaveBeenCalledWith('1 user created, 1 skipped'));
+    expect(screen.getByRole('heading', { name: /seed users from a file/i })).toBeInTheDocument();
+    expect(screen.getByLabelText(/user list file/i)).toBeInTheDocument();
   });
 
-  test('copying created users writes a username,name,role,password CSV to the clipboard', async () => {
-    const writeText = vi.fn();
-    Object.assign(navigator, { clipboard: { writeText } });
-
+  test('confirming an import refreshes the list but leaves the modal open', async () => {
     parseUserImport.mockResolvedValue({
       rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
+      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       skipped: [],
     });
     render(<AdminUsersPage />);
     await screen.findByText('adminuser');
 
-    selectImportFile();
+    fireEvent.click(screen.getByRole('button', { name: /seed users from a file/i }));
+    const file = new File(['First Name,Last Name\nJane,Doe'], 'students.csv', { type: 'text/csv' });
+    fireEvent.change(screen.getByLabelText(/user list file/i), { target: { files: [file] } });
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
     await screen.findByRole('button', { name: /confirm import/i });
-
     fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
-    await screen.findByText('abc123');
 
-    fireEvent.click(screen.getByRole('button', { name: /copy all as csv/i }));
-
-    expect(writeText).toHaveBeenCalledTimes(1);
-    const written = writeText.mock.calls[0][0] as string;
-    expect(written).toContain('jdoe');
-    expect(written).toContain('abc123');
-  });
-
-  test('Confirm import is disabled when there are no valid rows', async () => {
-    parseUserImport.mockResolvedValue({ rows: [], errors: [{ row: 1, message: 'bad row' }] });
-    render(<AdminUsersPage />);
-    await screen.findByText('adminuser');
-
-    selectImportFile();
-    fireEvent.click(screen.getByRole('button', { name: /parse/i }));
-
-    await screen.findByText(/bad row/i);
-    expect(screen.queryByRole('button', { name: /confirm import/i })).not.toBeInTheDocument();
+    await waitFor(() => expect(listUsers).toHaveBeenCalledTimes(2));
+    expect(screen.getByRole('heading', { name: /seed users from a file/i })).toBeInTheDocument();
   });
 
   test('expanding a row fetches and shows the user\'s attempts, collapsing hides them', async () => {

@@ -15,6 +15,7 @@ import {
   findUserByIdWithHash,
   updatePasswordHash,
   updateName,
+  clearMustChangePassword,
 } from '../models/user.model.ts';
 
 const registerBody = z.object({
@@ -59,7 +60,7 @@ export async function register(req: Request, res: Response): Promise<void> {
   const { firstName, lastName, password } = parsed.data;
 
   const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
-  const user = await createUser(firstName, lastName, passwordHash);
+  const user = await createUser(firstName, lastName, passwordHash, 'user', false);
 
   await startSession(res, user.id);
   res.status(201).json({ user });
@@ -137,6 +138,7 @@ export async function changePassword(req: Request, res: Response): Promise<void>
 
   const passwordHash = await argon2.hash(newPassword, { type: argon2.argon2id });
   await updatePasswordHash(existing.id, passwordHash);
+  await clearMustChangePassword(existing.id);
 
   await deleteSessionsForUser(existing.id);
   await startSession(res, existing.id);
