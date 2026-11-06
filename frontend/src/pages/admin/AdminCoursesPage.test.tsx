@@ -4,6 +4,8 @@ import { AdminCoursesPage } from './AdminCoursesPage';
 
 const listCourses = vi.fn();
 const deleteCourse = vi.fn();
+const parseImport = vi.fn();
+const confirmImport = vi.fn();
 
 vi.mock('react-hot-toast', () => ({
   default: { success: vi.fn() },
@@ -13,6 +15,8 @@ vi.mock('../../admin/api', () => ({
   adminApi: {
     listCourses: () => listCourses(),
     deleteCourse: (id: string) => deleteCourse(id),
+    parseImport: (file: File, title: string) => parseImport(file, title),
+    confirmImport: (subject: unknown) => confirmImport(subject),
   },
 }));
 
@@ -53,5 +57,13 @@ describe('AdminCoursesPage', () => {
     await waitFor(() =>
       expect(screen.queryByText('Tire and Rim Essentials')).not.toBeInTheDocument(),
     );
+  });
+
+  test('clicking Import quiz pack opens the import modal', async () => {
+    render(<AdminCoursesPage />);
+    await screen.findByText('Tire and Rim Essentials');
+    fireEvent.click(screen.getByRole('button', { name: /import quiz pack/i }));
+
+    expect(screen.getByText('Import quiz content')).toBeInTheDocument();
   });
 });

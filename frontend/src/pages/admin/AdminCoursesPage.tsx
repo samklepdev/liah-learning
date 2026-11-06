@@ -2,12 +2,14 @@ import { useCallback, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { adminApi, type AdminCourse } from '../../admin/api';
 import { TrashIcon } from '../../shell/icons';
+import { ImportCoursesModal } from './ImportCoursesModal';
 
 export function AdminCoursesPage() {
   const [courses, setCourses] = useState<AdminCourse[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [busyId, setBusyId] = useState<string | null>(null);
+  const [showImport, setShowImport] = useState(false);
 
   const load = useCallback(() => {
     setLoading(true);
@@ -38,6 +40,16 @@ export function AdminCoursesPage() {
   return (
     <div className="admin-page">
       <h1>Courses</h1>
+
+      <div className="admin-user-actions">
+        <button
+          type="button"
+          className="auth-submit auth-submit-secondary"
+          onClick={() => setShowImport(true)}
+        >
+          Import quiz pack
+        </button>
+      </div>
 
       {error && (
         <p role="alert" className="auth-error">
@@ -83,6 +95,13 @@ export function AdminCoursesPage() {
             ))}
           </tbody>
         </table>
+      )}
+
+      {showImport && (
+        <ImportCoursesModal
+          onClose={() => setShowImport(false)}
+          onImported={() => load()}
+        />
       )}
     </div>
   );

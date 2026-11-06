@@ -75,12 +75,6 @@ export function AccountMenu({
               </NavLink>
             </li>
             <li>
-              <NavLink to="/admin/import" className="account-menu-item" onClick={() => setOpen(false)}>
-                <CogIcon className="nav-icon" />
-                Admin · Import
-              </NavLink>
-            </li>
-            <li>
               <NavLink to="/admin/courses" className="account-menu-item" onClick={() => setOpen(false)}>
                 <CogIcon className="nav-icon" />
                 Admin · Courses

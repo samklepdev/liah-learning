@@ -1,9 +1,11 @@
 import { describe, expect, test, vi, beforeEach } from 'vitest';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { AdminImportPage } from './AdminImportPage';
+import { ImportCoursesModal } from './ImportCoursesModal';
 
 const parseImport = vi.fn();
 const confirmImport = vi.fn();
+const onClose = vi.fn();
+const onImported = vi.fn();
 
 vi.mock('../../admin/api', () => ({
   adminApi: {
@@ -21,15 +23,17 @@ function selectFile() {
 beforeEach(() => {
   parseImport.mockReset();
   confirmImport.mockReset();
+  onClose.mockReset();
+  onImported.mockReset();
 });
 
-describe('AdminImportPage', () => {
+describe('ImportCoursesModal', () => {
   test('shows a summary and a Confirm button after a successful parse', async () => {
     parseImport.mockResolvedValue({
       subject: { slug: 'chassis' },
       summary: { courses: 11, questions: 110 },
     });
-    render(<AdminImportPage />);
+    render(<ImportCoursesModal onClose={onClose} onImported={onImported} />);
 
     fireEvent.change(screen.getByLabelText(/subject title/i), { target: { value: 'Chassis' } });
     selectFile();
@@ -43,7 +47,7 @@ describe('AdminImportPage', () => {
     parseImport.mockResolvedValue({
       errors: ['Course 3: cover page declared 10 questions, found 9.'],
     });
-    render(<AdminImportPage />);
+    render(<ImportCoursesModal onClose={onClose} onImported={onImported} />);
 
     fireEvent.change(screen.getByLabelText(/subject title/i), { target: { value: 'Bad' } });
     selectFile();
@@ -53,13 +57,13 @@ describe('AdminImportPage', () => {
     expect(screen.queryByRole('button', { name: /confirm import/i })).not.toBeInTheDocument();
   });
 
-  test('clicking Confirm calls confirmImport with the parsed subject', async () => {
+  test('clicking Confirm calls confirmImport and notifies the parent', async () => {
     parseImport.mockResolvedValue({
       subject: { slug: 'chassis' },
       summary: { courses: 11, questions: 110 },
     });
     confirmImport.mockResolvedValue({ courses: 11, questions: 110 });
-    render(<AdminImportPage />);
+    render(<ImportCoursesModal onClose={onClose} onImported={onImported} />);
 
     fireEvent.change(screen.getByLabelText(/subject title/i), { target: { value: 'Chassis' } });
     selectFile();
@@ -70,5 +74,12 @@ describe('AdminImportPage', () => {
 
     await waitFor(() => expect(confirmImport).toHaveBeenCalledWith({ slug: 'chassis' }));
     expect(await screen.findByText(/imported: 11 courses, 110 questions/i)).toBeInTheDocument();
+    expect(onImported).toHaveBeenCalled();
+  });
+
+  test('clicking the overlay closes the modal', () => {
+    render(<ImportCoursesModal onClose={onClose} onImported={onImported} />);
+    fireEvent.click(screen.getByTestId('admin-modal-overlay'));
+    expect(onClose).toHaveBeenCalled();
   });
 });

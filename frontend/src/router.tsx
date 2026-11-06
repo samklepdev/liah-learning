@@ -4,7 +4,6 @@ import { ForcedPasswordChangeForm } from './auth/ForcedPasswordChangeForm';
 import { LoginForm } from './auth/LoginForm';
 import { useAuth } from './auth/useAuth';
 import { AdminCoursesPage } from './pages/admin/AdminCoursesPage';
-import { AdminImportPage } from './pages/admin/AdminImportPage';
 import { AdminUsersPage } from './pages/admin/AdminUsersPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ProfilePage } from './pages/ProfilePage';
@@ -89,14 +88,6 @@ export function AppRouter() {
             element={
               <RequireAdmin>
                 <AdminUsersPage />
-              </RequireAdmin>
-            }
-          />
-          <Route
-            path="/admin/import"
-            element={
-              <RequireAdmin>
-                <AdminImportPage />
               </RequireAdmin>
             }
           />
