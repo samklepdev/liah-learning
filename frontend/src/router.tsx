@@ -10,6 +10,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { ProgressPage } from './pages/ProgressPage';
 import { QuizPage } from './pages/QuizPage';
+import { RecycleBinPage } from './pages/admin/RecycleBinPage';
 import { ResultsPage } from './pages/ResultsPage';
 import { SubjectCoursesPage, SubjectsIndexPage } from './pages/SubjectCoursesPage';
 import { AppShell } from './shell/AppShell';
@@ -104,6 +105,14 @@ export function AppRouter() {
             element={
               <RequireAdmin>
                 <AdminCoursesPage />
+              </RequireAdmin>
+            }
+          />
+          <Route
+            path="/admin/recycle-bin"
+            element={
+              <RequireAdmin>
+                <RecycleBinPage />
               </RequireAdmin>
             }
           />

@@ -86,6 +86,12 @@ export function AccountMenu({
                 Admin · Courses
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/admin/recycle-bin" className="account-menu-item" onClick={() => setOpen(false)}>
+                <CogIcon className="nav-icon" />
+                Admin · Recycle Bin
+              </NavLink>
+            </li>
           </>
         )}
       </ul>
