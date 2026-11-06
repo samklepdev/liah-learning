@@ -18,7 +18,7 @@ export async function listSubjects(): Promise<SubjectSummary[]> {
       courseCount: count(courses.id),
     })
     .from(subjects)
-    .leftJoin(courses, eq(courses.subjectId, subjects.id))
+    .leftJoin(courses, and(eq(courses.subjectId, subjects.id), eq(courses.isActive, true)))
     .groupBy(subjects.id, subjects.slug, subjects.title)
     .orderBy(asc(subjects.title));
 
@@ -74,7 +74,7 @@ export async function listCoursesBySubject(
           )
         : sql`false`,
     )
-    .where(eq(courses.subjectId, subject.id))
+    .where(and(eq(courses.subjectId, subject.id), eq(courses.isActive, true)))
     .groupBy(
       courses.id,
       courses.slug,
