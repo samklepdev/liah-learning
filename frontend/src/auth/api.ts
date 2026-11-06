@@ -7,6 +7,7 @@ export type User = {
   firstName: string | null;
   lastName: string | null;
   role: 'user' | 'admin';
+  mustChangePassword: boolean;
   createdAt: string;
 };
 
