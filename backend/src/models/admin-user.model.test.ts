@@ -16,7 +16,7 @@ beforeEach(async () => {
 
 async function seedUsers(count: number) {
   const rows = Array.from({ length: count }, (_, i) => ({
-    email: `user${String(i).padStart(3, '0')}@example.com`,
+    username: `user${String(i).padStart(3, '0')}`,
     passwordHash: 'hash',
     createdAt: new Date(Date.UTC(2026, 0, 1, 0, 0, i)),
   }));
@@ -32,8 +32,8 @@ test('listUsers returns PAGE_SIZE rows for page 1 and the remainder for page 2',
 
   assert.equal(page1.length, PAGE_SIZE);
   assert.equal(page2.length, 5);
-  assert.equal(page1[0]!.email, 'user000@example.com');
-  assert.equal(page2[0]!.email, `user${String(PAGE_SIZE).padStart(3, '0')}@example.com`);
+  assert.equal(page1[0]!.username, 'user000');
+  assert.equal(page2[0]!.username, `user${String(PAGE_SIZE).padStart(3, '0')}`);
 });
 
 test('countUsers returns the total row count regardless of page size', async () => {

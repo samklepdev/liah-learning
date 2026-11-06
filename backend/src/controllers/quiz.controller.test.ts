@@ -19,7 +19,7 @@ before(async () => {
   await resetDb();
   await seedSubject(subject);
   ({ baseUrl, close } = await startTestServer());
-  ({ cookie } = await registerTestUser(baseUrl, 'quiz@example.com'));
+  ({ cookie } = await registerTestUser(baseUrl, 'quiz'));
 });
 
 after(async () => {
@@ -117,6 +117,6 @@ test('GET quiz does not count an attempt still in progress', async () => {
 });
 
 test("GET quiz does not leak another user's history", async () => {
-  const { cookie: otherCookie } = await registerTestUser(baseUrl, 'quiz-other@example.com');
+  const { cookie: otherCookie } = await registerTestUser(baseUrl, 'quiz-other');
   assert.deepEqual(await fetchHistory(otherCookie), { bestScore: null, attemptCount: 0 });
 });

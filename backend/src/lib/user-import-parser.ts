@@ -5,30 +5,27 @@ import { extractPdfText } from './pdf-text.ts';
 export type Role = 'user' | 'admin';
 export type ParsedUserRow = {
   row: number;
-  firstName: string | null;
-  lastName: string | null;
-  email: string;
+  firstName: string;
+  lastName: string;
   role: Role;
 };
 export type RowError = { row: number; message: string };
 export type ParseResult = { rows: ParsedUserRow[]; errors: RowError[] };
 
 const rowSchema = z.object({
-  firstName: z.string().trim().min(1).optional(),
-  lastName: z.string().trim().min(1).optional(),
-  email: z.string().trim().toLowerCase().pipe(z.email()),
+  firstName: z.string().trim().min(1, 'First name is required'),
+  lastName: z.string().trim().min(1, 'Last name is required'),
   role: z.enum(['user', 'admin']).optional(),
 });
 
-/** Validates one raw {firstName, lastName, email, role} quadruple into a row or a row error. */
+/** Validates one raw {firstName, lastName, role} triple into a row or a row error. */
 function validateRow(
   rowNumber: number,
-  raw: { firstName: string; lastName: string; email: string; role: string },
+  raw: { firstName: string; lastName: string; role: string },
 ): { row: ParsedUserRow } | { error: RowError } {
   const parsed = rowSchema.safeParse({
-    firstName: raw.firstName.trim() === '' ? undefined : raw.firstName,
-    lastName: raw.lastName.trim() === '' ? undefined : raw.lastName,
-    email: raw.email,
+    firstName: raw.firstName.trim(),
+    lastName: raw.lastName.trim(),
     role: raw.role.trim() === '' ? undefined : raw.role.trim().toLowerCase(),
   });
 
@@ -39,9 +36,8 @@ function validateRow(
   return {
     row: {
       row: rowNumber,
-      firstName: parsed.data.firstName ?? null,
-      lastName: parsed.data.lastName ?? null,
-      email: parsed.data.email,
+      firstName: parsed.data.firstName,
+      lastName: parsed.data.lastName,
       role: parsed.data.role ?? 'user',
     },
   };
@@ -68,10 +64,12 @@ function parseSpreadsheet(buffer: Buffer): ParseResult {
   const normalizedHeader = header.map((h) => String(h ?? '').trim().toLowerCase());
   const firstNameIdx = normalizedHeader.indexOf('first name');
   const lastNameIdx = normalizedHeader.indexOf('last name');
-  const emailIdx = normalizedHeader.indexOf('email');
   const roleIdx = normalizedHeader.indexOf('role');
-  if (emailIdx === -1) {
-    return { rows: [], errors: [{ row: 0, message: 'File is missing an "Email" column.' }] };
+  if (firstNameIdx === -1) {
+    return { rows: [], errors: [{ row: 0, message: 'File is missing a "First Name" column.' }] };
+  }
+  if (lastNameIdx === -1) {
+    return { rows: [], errors: [{ row: 0, message: 'File is missing a "Last Name" column.' }] };
   }
 
   const rows: ParsedUserRow[] = [];
@@ -81,11 +79,10 @@ function parseSpreadsheet(buffer: Buffer): ParseResult {
     const isBlank = cells.every((cell) => cell === undefined || cell === null || String(cell).trim() === '');
     if (isBlank) return;
 
-    const firstName = firstNameIdx === -1 ? '' : String(cells[firstNameIdx] ?? '');
-    const lastName = lastNameIdx === -1 ? '' : String(cells[lastNameIdx] ?? '');
-    const email = String(cells[emailIdx] ?? '');
+    const firstName = String(cells[firstNameIdx] ?? '');
+    const lastName = String(cells[lastNameIdx] ?? '');
     const role = roleIdx === -1 ? '' : String(cells[roleIdx] ?? '');
-    const result = validateRow(rowNumber, { firstName, lastName, email, role });
+    const result = validateRow(rowNumber, { firstName, lastName, role });
     if ('error' in result) errors.push(result.error);
     else rows.push(result.row);
   });
@@ -98,7 +95,7 @@ function parseSpreadsheet(buffer: Buffer): ParseResult {
 }
 
 /** PDF text (and the .txt fixtures that stand in for it in tests) has no
- *  header: every line is `First Name, Last Name, Email, Role` with role optional. */
+ *  header: every line is `First Name, Last Name, Role` with role optional. */
 function parsePdfLines(text: string): ParseResult {
   const lines = text.split(/\r?\n/).map((line) => line.trim());
 
@@ -108,8 +105,8 @@ function parsePdfLines(text: string): ParseResult {
     if (line === '') return;
     const rowNumber = i + 1;
     const cells = line.split(',').map((cell) => cell.trim());
-    const [firstName = '', lastName = '', email = '', role = ''] = cells;
-    const result = validateRow(rowNumber, { firstName, lastName, email, role });
+    const [firstName = '', lastName = '', role = ''] = cells;
+    const result = validateRow(rowNumber, { firstName, lastName, role });
     if ('error' in result) errors.push(result.error);
     else rows.push(result.row);
   });

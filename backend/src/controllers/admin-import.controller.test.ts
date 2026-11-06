@@ -22,7 +22,7 @@ beforeEach(async () => {
 });
 
 async function adminCookie() {
-  const { cookie, userId } = await registerTestUser(baseUrl, 'admin@example.com');
+  const { cookie, userId } = await registerTestUser(baseUrl, 'admin');
   await setUserRole(userId, 'admin');
   return cookie;
 }
@@ -78,7 +78,7 @@ test('POST /api/v1/admin/import/parse 422s with errors for a malformed pack', as
 });
 
 test('POST /api/v1/admin/import/parse 404s for a non-admin', async () => {
-  const { cookie } = await registerTestUser(baseUrl, 'plain@example.com');
+  const { cookie } = await registerTestUser(baseUrl, 'plain');
   const form = new FormData();
   form.append('pdf', new Blob(['x'], { type: 'text/plain' }), 'x.txt');
   form.append('subjectTitle', 'X');

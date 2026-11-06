@@ -73,7 +73,7 @@ test('GET /me/progress requires a session', async () => {
 });
 
 test('an unattempted account sees an empty list', async () => {
-  const { cookie } = await registerTestUser(baseUrl, 'fresh@example.com');
+  const { cookie } = await registerTestUser(baseUrl, 'fresh');
   const res = await fetch(`${baseUrl}/api/v1/me/progress`, { headers: { cookie } });
   assert.equal(res.status, 200);
   const body = (await res.json()) as { courses: unknown[] };
@@ -81,7 +81,7 @@ test('an unattempted account sees an empty list', async () => {
 });
 
 test('tracks best score and attempt count independently of the most recent attempt', async () => {
-  const { cookie } = await registerTestUser(baseUrl, 'retaker@example.com');
+  const { cookie } = await registerTestUser(baseUrl, 'retaker');
 
   await takeQuiz(cookie, SLUG_1, course1, 8);
   const second = await takeQuiz(cookie, SLUG_1, course1, 5);
@@ -98,7 +98,7 @@ test('tracks best score and attempt count independently of the most recent attem
 });
 
 test('lists multiple courses, newest completion first', async () => {
-  const { cookie } = await registerTestUser(baseUrl, 'multi@example.com');
+  const { cookie } = await registerTestUser(baseUrl, 'multi');
 
   await takeQuiz(cookie, SLUG_1, course1, 6);
   await takeQuiz(cookie, SLUG_2, course2, 9);
@@ -111,8 +111,8 @@ test('lists multiple courses, newest completion first', async () => {
 });
 
 test("one user's progress never includes another user's attempts", async () => {
-  const mine = await registerTestUser(baseUrl, 'mine@example.com');
-  const other = await registerTestUser(baseUrl, 'other@example.com');
+  const mine = await registerTestUser(baseUrl, 'mine');
+  const other = await registerTestUser(baseUrl, 'other');
 
   await takeQuiz(other.cookie, SLUG_1, course1, 7);
 
@@ -122,7 +122,7 @@ test("one user's progress never includes another user's attempts", async () => {
 });
 
 test('an open, unsubmitted attempt does not appear', async () => {
-  const { cookie } = await registerTestUser(baseUrl, 'inprogress@example.com');
+  const { cookie } = await registerTestUser(baseUrl, 'inprogress');
 
   await fetch(`${baseUrl}/api/v1/courses/${SLUG_1}/attempts`, {
     method: 'POST',

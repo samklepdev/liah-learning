@@ -49,7 +49,7 @@ before(async () => {
   await resetDb();
   await seedSubject(subject);
   ({ baseUrl, close } = await startTestServer());
-  ({ cookie } = await registerTestUser(baseUrl, 'grading@example.com'));
+  ({ cookie } = await registerTestUser(baseUrl, 'grading'));
 });
 
 after(async () => {
@@ -144,7 +144,7 @@ test("another user cannot submit someone else's attempt", async () => {
   });
   const { attempt } = (await quizRes.json()) as any;
 
-  const other = await registerTestUser(baseUrl, 'thief@example.com');
+  const other = await registerTestUser(baseUrl, 'thief');
   const res = await fetch(`${baseUrl}/api/v1/attempts/${attempt.id}/submit`, {
     method: 'POST',
     headers: { cookie: other.cookie },

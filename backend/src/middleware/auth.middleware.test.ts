@@ -17,7 +17,7 @@ function appWith(user: PublicUser | undefined) {
 function adminUser(): PublicUser {
   return {
     id: 'u1',
-    email: 'admin@example.com',
+    username: 'admin',
     firstName: null,
     lastName: null,
     role: 'admin',
@@ -28,7 +28,7 @@ function adminUser(): PublicUser {
 function plainUser(): PublicUser {
   return {
     id: 'u2',
-    email: 'user@example.com',
+    username: 'plainuser',
     firstName: null,
     lastName: null,
     role: 'user',

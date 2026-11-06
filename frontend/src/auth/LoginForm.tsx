@@ -8,7 +8,9 @@ type Mode = 'login' | 'register';
 export function LoginForm() {
   const { login, register } = useAuth();
   const [mode, setMode] = useState<Mode>('login');
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -18,7 +20,7 @@ export function LoginForm() {
     setError(null);
     setSubmitting(true);
     try {
-      await (mode === 'login' ? login(email, password) : register(email, password));
+      await (mode === 'login' ? login(username, password) : register(firstName, lastName, password));
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong');
     } finally {
@@ -35,20 +37,43 @@ export function LoginForm() {
         </header>
 
         <form onSubmit={handleSubmit} className="auth-form">
-          {/* The two fields read as one control: a shared outline with the
-              shared edge collapsed, so the pair looks joined rather than
+          {/* The fields read as one control: a shared outline with the
+              shared edges collapsed, so the group looks joined rather than
               stacked. Labels are visually replaced by placeholders, so each
               input carries an aria-label for screen readers. */}
           <div className="auth-fields">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email address"
-              aria-label="Email address"
-              autoComplete="email"
-              required
-            />
+            {mode === 'login' ? (
+              <input
+                type="text"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                placeholder="Username"
+                aria-label="Username"
+                autoComplete="username"
+                required
+              />
+            ) : (
+              <>
+                <input
+                  type="text"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  placeholder="First name"
+                  aria-label="First name"
+                  autoComplete="given-name"
+                  required
+                />
+                <input
+                  type="text"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  placeholder="Last name"
+                  aria-label="Last name"
+                  autoComplete="family-name"
+                  required
+                />
+              </>
+            )}
             <input
               type="password"
               value={password}

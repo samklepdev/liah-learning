@@ -17,7 +17,7 @@ export async function findUserBySessionId(id: string): Promise<PublicUser | null
   const [row] = await db
     .select({
       id: users.id,
-      email: users.email,
+      username: users.username,
       firstName: users.firstName,
       lastName: users.lastName,
       role: users.role,

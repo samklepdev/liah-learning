@@ -1,36 +1,33 @@
 import argon2 from 'argon2';
-import { db, pool } from '../db/index.ts';
-import { users } from '../models/schema.ts';
+import { pool } from '../db/index.ts';
+import { createUser } from '../models/user.model.ts';
 
 /**
- * Upserts a user by email as an admin. Existing users are promoted and get
- * their password reset; this is the only way to create the first admin,
- * since every other path to the admin role requires an existing admin.
+ * Creates a new admin user from first/last name. Insert-only: unlike the old
+ * email-keyed version, this can't safely upsert, because the identifier
+ * (username) is generated from the name rather than supplied — re-running
+ * with the same name would either silently promote an unrelated existing
+ * user or just create a second account. Re-running this script always
+ * creates a new admin.
  */
-export async function seedAdmin(email: string, password: string): Promise<void> {
+export async function seedAdmin(firstName: string, lastName: string, password: string): Promise<string> {
   const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
-  const normalizedEmail = email.trim().toLowerCase();
-
-  await db
-    .insert(users)
-    .values({ email: normalizedEmail, passwordHash, role: 'admin' })
-    .onConflictDoUpdate({
-      target: users.email,
-      set: { passwordHash, role: 'admin' },
-    });
+  const user = await createUser(firstName, lastName, passwordHash, 'admin');
+  return user.username;
 }
 
 async function main(): Promise<void> {
-  const email = process.env.ADMIN_EMAIL;
-  const password = process.env.ADMIN_PASSWORD;
+  const firstName = process.env.ADMIN_FIRST_NAME;
+  const lastName = process.env.ADMIN_LAST_NAME;
+  const password = process.env.ADMIN_PASSWORD ?? 'liahwellness';
 
-  if (!email || !password) {
-    console.error('Set ADMIN_EMAIL and ADMIN_PASSWORD, then re-run.');
+  if (!firstName || !lastName) {
+    console.error('Set ADMIN_FIRST_NAME and ADMIN_LAST_NAME, then re-run.');
     process.exit(1);
   }
 
-  await seedAdmin(email, password);
-  console.log(`Admin ready: ${email.trim().toLowerCase()}`);
+  const username = await seedAdmin(firstName, lastName, password);
+  console.log(`Admin ready: ${username}`);
   await pool.end();
 }
 

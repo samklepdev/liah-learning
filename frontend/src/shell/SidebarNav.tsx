@@ -75,11 +75,11 @@ function SubjectGroup({
 
 export function SidebarNav({
   nav,
-  userEmail,
+  username,
   onNavigate,
 }: {
   nav: SubjectNavState;
-  userEmail?: string;
+  username?: string;
   onNavigate?: () => void;
 }) {
   const { pathname } = useLocation();
@@ -127,12 +127,12 @@ export function SidebarNav({
         ))}
       </ul>
 
-      {userEmail && (
+      {username && (
         <div className="sidebar-footer">
           <span className="sidebar-avatar" aria-hidden="true">
-            {userEmail.charAt(0).toUpperCase()}
+            {username.charAt(0).toUpperCase()}
           </span>
-          <span className="sidebar-footer-email">{userEmail}</span>
+          <span className="sidebar-footer-email">{username}</span>
         </div>
       )}
     </nav>

@@ -14,21 +14,26 @@ export async function startTestServer(): Promise<{
   };
 }
 
-/** Registers a user and returns the session cookie to send on later requests. */
+/**
+ * Registers a user and returns the session cookie to send on later requests.
+ * `label` becomes the generated user's last name (first name is always
+ * "Test"); the returned `username` is whatever createUser generated, so
+ * callers that need to log back in can use it without recomputing it.
+ */
 export async function registerTestUser(
   baseUrl: string,
-  email: string,
-): Promise<{ cookie: string; userId: string }> {
+  label: string,
+): Promise<{ cookie: string; userId: string; username: string }> {
   const res = await fetch(`${baseUrl}/api/v1/auth/register`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, password: 'test-password-123' }),
+    body: JSON.stringify({ firstName: 'Test', lastName: label, password: 'test-password-123' }),
   });
   if (res.status !== 201) {
     throw new Error(`register failed: ${res.status} ${await res.text()}`);
   }
   const setCookie = res.headers.get('set-cookie');
   if (!setCookie) throw new Error('register returned no cookie');
-  const body = (await res.json()) as { user: { id: string } };
-  return { cookie: setCookie.split(';')[0]!, userId: body.user.id };
+  const body = (await res.json()) as { user: { id: string; username: string } };
+  return { cookie: setCookie.split(';')[0]!, userId: body.user.id, username: body.user.username };
 }

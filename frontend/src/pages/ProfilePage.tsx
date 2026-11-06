@@ -92,8 +92,8 @@ export function ProfilePage() {
           <dd>{user?.firstName ?? '—'}</dd>
           <dt>Last name</dt>
           <dd>{user?.lastName ?? '—'}</dd>
-          <dt>Email</dt>
-          <dd>{user?.email}</dd>
+          <dt>Username</dt>
+          <dd>{user?.username}</dd>
           {user?.role === 'admin' && (
             <>
               <dt>Role</dt>

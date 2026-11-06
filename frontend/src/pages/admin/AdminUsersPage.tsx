@@ -199,7 +199,6 @@ export function AdminUsersPage() {
                 <tr>
                   <th>First Name</th>
                   <th>Last Name</th>
-                  <th>Email</th>
                   <th>Role</th>
                 </tr>
               </thead>
@@ -208,9 +207,8 @@ export function AdminUsersPage() {
                   .slice((previewPager.page - 1) * PAGE_SIZE, previewPager.page * PAGE_SIZE)
                   .map((r) => (
                     <tr key={r.row}>
-                      <td data-label="First Name">{r.firstName ?? '—'}</td>
-                      <td data-label="Last Name">{r.lastName ?? '—'}</td>
-                      <td data-label="Email">{r.email}</td>
+                      <td data-label="First Name">{r.firstName}</td>
+                      <td data-label="Last Name">{r.lastName}</td>
                       <td data-label="Role">{r.role}</td>
                     </tr>
                   ))}
@@ -244,9 +242,9 @@ export function AdminUsersPage() {
                 <button
                   type="button"
                   onClick={() => {
-                    const header = 'email,firstName,lastName,role,password';
+                    const header = 'username,firstName,lastName,role,password';
                     const lines = importResults.created.map(
-                      (u) => `${u.email},${u.firstName ?? ''},${u.lastName ?? ''},${u.role},${u.password}`,
+                      (u) => `${u.username},${u.firstName ?? ''},${u.lastName ?? ''},${u.role},${u.password}`,
                     );
                     void navigator.clipboard.writeText([header, ...lines].join('\n'));
                   }}
@@ -256,7 +254,7 @@ export function AdminUsersPage() {
                 <table className="admin-table">
                   <thead>
                     <tr>
-                      <th>Email</th>
+                      <th>Username</th>
                       <th>First Name</th>
                       <th>Last Name</th>
                       <th>Role</th>
@@ -267,8 +265,8 @@ export function AdminUsersPage() {
                     {importResults.created
                       .slice((createdPager.page - 1) * PAGE_SIZE, createdPager.page * PAGE_SIZE)
                       .map((u) => (
-                        <tr key={u.email}>
-                          <td data-label="Email">{u.email}</td>
+                        <tr key={u.username}>
+                          <td data-label="Username">{u.username}</td>
                           <td data-label="First Name">{u.firstName ?? '—'}</td>
                           <td data-label="Last Name">{u.lastName ?? '—'}</td>
                           <td data-label="Role">{u.role}</td>
@@ -293,9 +291,9 @@ export function AdminUsersPage() {
                 <ul>
                   {importResults.skipped
                     .slice((skippedPager.page - 1) * PAGE_SIZE, skippedPager.page * PAGE_SIZE)
-                    .map((s) => (
-                      <li key={s.email}>
-                        {s.email}: {s.reason}
+                    .map((s, i) => (
+                      <li key={`${s.firstName ?? ''}-${s.lastName ?? ''}-${i}`}>
+                        {s.firstName} {s.lastName}: {s.reason}
                       </li>
                     ))}
                 </ul>
@@ -325,7 +323,7 @@ export function AdminUsersPage() {
         <table className="admin-table">
           <thead>
             <tr>
-              <th>Email</th>
+              <th>Username</th>
               <th>First Name</th>
               <th>Last Name</th>
               <th>Role</th>
@@ -339,7 +337,7 @@ export function AdminUsersPage() {
               return (
                 <Fragment key={u.id}>
                   <tr>
-                    <td data-label="Email">{u.email}</td>
+                    <td data-label="Username">{u.username}</td>
                     <td data-label="First Name">{u.firstName ?? '—'}</td>
                     <td data-label="Last Name">{u.lastName ?? '—'}</td>
                     <td data-label="Role">{u.role}</td>
@@ -432,7 +430,7 @@ export function AdminUsersPage() {
 
       {modalUserId && (
         <UserAttemptsModal
-          userLabel={users.find((u) => u.id === modalUserId)?.email ?? ''}
+          userLabel={users.find((u) => u.id === modalUserId)?.username ?? ''}
           attempts={attemptsById[modalUserId] ?? []}
           onClose={() => setModalUserId(null)}
         />

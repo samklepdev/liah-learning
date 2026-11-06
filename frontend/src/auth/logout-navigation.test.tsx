@@ -8,7 +8,7 @@ vi.mock('./api', () => ({
   authApi: {
     me: () =>
       Promise.resolve({
-        user: { id: 'u1', email: 'a@b.com', role: 'user', createdAt: '2026-11-02T12:00:00.000Z' },
+        user: { id: 'u1', username: 'absmith', role: 'user', createdAt: '2026-11-02T12:00:00.000Z' },
       }),
     logout: () => Promise.resolve(undefined),
     login: vi.fn(),
@@ -35,7 +35,7 @@ describe('signing out', () => {
 
     await screen.findByRole('heading', { name: 'Profile' });
 
-    await userEvent.click(screen.getByRole('button', { name: /a@b.com/ }));
+    await userEvent.click(screen.getByRole('button', { name: /absmith/ }));
     await userEvent.click(screen.getByRole('button', { name: 'Sign out' }));
 
     await waitFor(() => expect(screen.getByRole('heading', { name: /sign in/i })).toBeInTheDocument());
@@ -52,7 +52,7 @@ describe('signing out', () => {
 
     await screen.findByRole('navigation', { name: 'Subjects' });
 
-    await userEvent.click(screen.getByRole('button', { name: /a@b.com/ }));
+    await userEvent.click(screen.getByRole('button', { name: /absmith/ }));
     await userEvent.click(screen.getByRole('button', { name: 'Sign out' }));
 
     await waitFor(() => expect(screen.getByRole('heading', { name: /sign in/i })).toBeInTheDocument());
