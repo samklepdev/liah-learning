@@ -96,10 +96,18 @@ export function AdminUsersPage() {
       <h1>Users</h1>
 
       <div className="admin-user-actions">
-        <button type="button" className="auth-submit-secondary" onClick={() => setShowAddUser(true)}>
+        <button
+          type="button"
+          className="auth-submit auth-submit-secondary"
+          onClick={() => setShowAddUser(true)}
+        >
           Add user
         </button>
-        <button type="button" className="auth-submit-secondary" onClick={() => setShowImport(true)}>
+        <button
+          type="button"
+          className="auth-submit auth-submit-secondary"
+          onClick={() => setShowImport(true)}
+        >
           Seed users from a file
         </button>
       </div>
