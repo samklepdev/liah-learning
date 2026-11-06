@@ -1,6 +1,29 @@
-import { request, type User } from '../auth/api';
+import { request } from '../auth/api';
 
-export type AdminUser = User;
+export type AdminUser = {
+  id: string;
+  username: string;
+  firstName: string | null;
+  lastName: string | null;
+  role: 'user' | 'admin';
+  mustChangePassword: boolean;
+  createdAt: string;
+  isActive: boolean;
+  deletedAt: string | null;
+};
+
+export type AdminCourse = {
+  id: string;
+  slug: string;
+  title: string;
+  position: number;
+  passScore: number;
+  questionCount: number;
+  subjectSlug: string;
+  subjectTitle: string;
+  isActive: boolean;
+  deletedAt: string | null;
+};
 
 export type Page<T> = {
   items: T[];
@@ -48,6 +71,9 @@ export type SkippedUser = { firstName: string | null; lastName: string | null; r
 export const adminApi = {
   listUsers: (page: number) => request<Page<AdminUser>>(`/admin/users?page=${page}`),
 
+  listDeletedUsers: (page: number) =>
+    request<Page<AdminUser>>(`/admin/users/deleted?page=${page}`),
+
   createUser: (firstName: string, lastName: string, role: 'user' | 'admin') =>
     request<{ user: AdminUser }>('/admin/users', {
       method: 'POST',
@@ -62,8 +88,20 @@ export const adminApi = {
 
   deleteUser: (id: string) => request<void>(`/admin/users/${id}`, { method: 'DELETE' }),
 
+  restoreUser: (id: string) =>
+    request<{ user: AdminUser }>(`/admin/users/${id}/restore`, { method: 'POST' }),
+
   getUserAttempts: (id: string) =>
     request<{ attempts: AdminAttempt[] }>(`/admin/users/${id}/attempts`),
+
+  listCourses: () => request<{ items: AdminCourse[] }>('/admin/courses'),
+
+  deleteCourse: (id: string) => request<void>(`/admin/courses/${id}`, { method: 'DELETE' }),
+
+  listDeletedCourses: () => request<{ items: AdminCourse[] }>('/admin/courses/deleted'),
+
+  restoreCourse: (id: string) =>
+    request<{ course: AdminCourse }>(`/admin/courses/${id}/restore`, { method: 'POST' }),
 
   parseImport: (file: File, subjectTitle: string) => {
     const form = new FormData();
