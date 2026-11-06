@@ -190,3 +190,68 @@ test('POST /api/v1/admin/users 404s for a non-admin', async () => {
   });
   assert.equal(res.status, 404);
 });
+
+test('DELETE soft-deletes a user, who appears in the recycle bin and can be restored', async () => {
+  const { cookie } = await makeAdmin('Admin');
+  const { userId, username } = await registerTestUser(baseUrl, 'Student');
+
+  const del = await fetch(`${baseUrl}/api/v1/admin/users/${userId}`, {
+    method: 'DELETE',
+    headers: { cookie },
+  });
+  assert.equal(del.status, 204);
+
+  const deletedList = await fetch(`${baseUrl}/api/v1/admin/users/deleted`, { headers: { cookie } });
+  assert.equal(deletedList.status, 200);
+  const deletedBody = (await deletedList.json()) as { items: Array<{ username: string }> };
+  assert.equal(deletedBody.items.some((u) => u.username === username), true);
+
+  const restore = await fetch(`${baseUrl}/api/v1/admin/users/${userId}/restore`, {
+    method: 'POST',
+    headers: { cookie },
+  });
+  assert.equal(restore.status, 200);
+
+  const activeList = await fetch(`${baseUrl}/api/v1/admin/users`, { headers: { cookie } });
+  const activeBody = (await activeList.json()) as { items: Array<{ username: string }> };
+  assert.equal(activeBody.items.some((u) => u.username === username), true);
+});
+
+test('DELETE 404s when the user is already deleted', async () => {
+  const { cookie } = await makeAdmin('Admin');
+  const { userId } = await registerTestUser(baseUrl, 'Student');
+
+  await fetch(`${baseUrl}/api/v1/admin/users/${userId}`, { method: 'DELETE', headers: { cookie } });
+  const second = await fetch(`${baseUrl}/api/v1/admin/users/${userId}`, {
+    method: 'DELETE',
+    headers: { cookie },
+  });
+  assert.equal(second.status, 404);
+});
+
+test('POST restore 404s for a user that is not deleted', async () => {
+  const { cookie } = await makeAdmin('Admin');
+  const { userId } = await registerTestUser(baseUrl, 'Student');
+
+  const res = await fetch(`${baseUrl}/api/v1/admin/users/${userId}/restore`, {
+    method: 'POST',
+    headers: { cookie },
+  });
+  assert.equal(res.status, 404);
+});
+
+test('a soft-deleted user is signed out immediately', async () => {
+  const { cookie: adminCookie } = await makeAdmin('Admin');
+  const { cookie: studentCookie, userId } = await registerTestUser(baseUrl, 'Student');
+
+  const before = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie: studentCookie } });
+  assert.equal(before.status, 200);
+
+  await fetch(`${baseUrl}/api/v1/admin/users/${userId}`, {
+    method: 'DELETE',
+    headers: { cookie: adminCookie },
+  });
+
+  const after = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie: studentCookie } });
+  assert.equal(after.status, 401);
+});
