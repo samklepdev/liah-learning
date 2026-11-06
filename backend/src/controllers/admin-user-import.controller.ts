@@ -1,10 +1,9 @@
-import { randomBytes } from 'node:crypto';
 import argon2 from 'argon2';
 import type { Request, Response } from 'express';
 import multer from 'multer';
 import { z } from 'zod';
 import { parseUserRows } from '../lib/user-import-parser.ts';
-import { createUser, findUserByName } from '../models/user.model.ts';
+import { createUser, findUserByName, INITIAL_PASSWORD } from '../models/user.model.ts';
 
 /** User lists are small — far below the 10MB cap on the quiz-PDF importer. */
 export const uploadFile = multer({ limits: { fileSize: 5 * 1024 * 1024 } }).single('file');
@@ -44,11 +43,6 @@ const confirmBody = z.object({
     .max(200, 'A single import is limited to 200 rows. Split larger files and import in batches.'),
 });
 
-/** 9 random bytes -> 12 base64url characters, ~72 bits of entropy. */
-function generatePassword(): string {
-  return randomBytes(9).toString('base64url');
-}
-
 export async function confirmImport(req: Request, res: Response): Promise<void> {
   const parsed = confirmBody.safeParse(req.body);
   if (!parsed.success) {
@@ -61,9 +55,10 @@ export async function confirmImport(req: Request, res: Response): Promise<void> 
     firstName: string | null;
     lastName: string | null;
     role: string;
-    password: string;
   }> = [];
   const skipped: Array<{ firstName: string | null; lastName: string | null; reason: string }> = [];
+
+  const passwordHash = await argon2.hash(INITIAL_PASSWORD, { type: argon2.argon2id });
 
   for (const row of parsed.data.rows) {
     const existing = await findUserByName(row.firstName, row.lastName);
@@ -72,8 +67,6 @@ export async function confirmImport(req: Request, res: Response): Promise<void> 
       continue;
     }
 
-    const password = generatePassword();
-    const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
     const user = await createUser(row.firstName, row.lastName, passwordHash, row.role, true);
 
     created.push({
@@ -81,7 +74,6 @@ export async function confirmImport(req: Request, res: Response): Promise<void> 
       firstName: user.firstName,
       lastName: user.lastName,
       role: user.role,
-      password,
     });
   }
 
