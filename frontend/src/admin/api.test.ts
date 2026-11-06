@@ -79,9 +79,7 @@ describe('adminApi', () => {
       json: async () => ({ created: [], skipped: [] }),
     });
 
-    const rows = [
-      { row: 2, firstName: 'Jane', lastName: null, email: 'jane@example.com', role: 'user' as const },
-    ];
+    const rows = [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' as const }];
     await adminApi.confirmUserImport(rows);
 
     expect(fetch).toHaveBeenCalledWith(

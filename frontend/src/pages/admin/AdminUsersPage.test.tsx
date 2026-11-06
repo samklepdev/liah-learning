@@ -39,12 +39,12 @@ const sampleAttempt = {
 };
 
 beforeEach(() => {
-  useAuth.mockReturnValue({ user: { id: 'me', email: 'admin@example.com', role: 'admin' } });
+  useAuth.mockReturnValue({ user: { id: 'me', username: 'adminuser', role: 'admin' } });
   listUsers.mockResolvedValue({
     items: [
       {
         id: 'me',
-        email: 'admin@example.com',
+        username: 'adminuser',
         firstName: null,
         lastName: null,
         role: 'admin',
@@ -52,7 +52,7 @@ beforeEach(() => {
       },
       {
         id: 'u2',
-        email: 'student@example.com',
+        username: 'student',
         firstName: null,
         lastName: null,
         role: 'user',
@@ -64,7 +64,7 @@ beforeEach(() => {
     pageSize: 20,
   });
   getUserAttempts.mockResolvedValue({ attempts: [] });
-  setRole.mockResolvedValue({ user: { id: 'u2', email: 'student@example.com', role: 'admin' } });
+  setRole.mockResolvedValue({ user: { id: 'u2', username: 'student', role: 'admin' } });
   deleteUser.mockResolvedValue(undefined);
   parseUserImport.mockReset();
   confirmUserImport.mockReset();
@@ -74,16 +74,16 @@ beforeEach(() => {
 describe('AdminUsersPage', () => {
   test('lists every user with their role', async () => {
     render(<AdminUsersPage />);
-    expect(await screen.findByText('admin@example.com')).toBeInTheDocument();
-    expect(screen.getByText('student@example.com')).toBeInTheDocument();
+    expect(await screen.findByText('adminuser')).toBeInTheDocument();
+    expect(screen.getByText('student')).toBeInTheDocument();
   });
 
   test('labels each cell in the main users table for the mobile card layout', async () => {
     render(<AdminUsersPage />);
-    const row = (await screen.findByText('student@example.com')).closest('tr')!;
+    const row = (await screen.findByText('student')).closest('tr')!;
     const cells = within(row).getAllByRole('cell');
     expect(cells.map((c) => c.getAttribute('data-label'))).toEqual([
-      'Email',
+      'Username',
       'First Name',
       'Last Name',
       'Role',
@@ -94,16 +94,16 @@ describe('AdminUsersPage', () => {
 
   test("disables promote/demote and delete for the signed-in admin's own row", async () => {
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
-    const ownRow = screen.getByText('admin@example.com').closest('tr')!;
+    await screen.findByText('adminuser');
+    const ownRow = screen.getByText('adminuser').closest('tr')!;
     expect(within(ownRow).getByRole('button', { name: /make user/i })).toBeDisabled();
     expect(within(ownRow).getByRole('button', { name: /delete/i })).toBeDisabled();
   });
 
   test('promoting a user calls setRole and reflects the new role', async () => {
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
     fireEvent.click(within(studentRow).getByRole('button', { name: /make admin/i }));
 
     await waitFor(() => expect(setRole).toHaveBeenCalledWith('u2', 'admin'));
@@ -111,14 +111,12 @@ describe('AdminUsersPage', () => {
 
   test('deleting a user calls deleteUser and removes the row', async () => {
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
     fireEvent.click(within(studentRow).getByRole('button', { name: /delete/i }));
 
     await waitFor(() => expect(deleteUser).toHaveBeenCalledWith('u2'));
-    await waitFor(() =>
-      expect(screen.queryByText('student@example.com')).not.toBeInTheDocument(),
-    );
+    await waitFor(() => expect(screen.queryByText('student')).not.toBeInTheDocument());
     expect(toastSuccess).toHaveBeenCalledWith('User deleted');
   });
 
@@ -130,7 +128,7 @@ describe('AdminUsersPage', () => {
               items: [
                 {
                   id: 'me',
-                  email: 'admin@example.com',
+                  username: 'adminuser',
                   firstName: null,
                   lastName: null,
                   role: 'admin',
@@ -145,7 +143,7 @@ describe('AdminUsersPage', () => {
               items: [
                 {
                   id: 'u2',
-                  email: 'student@example.com',
+                  username: 'student',
                   firstName: null,
                   lastName: null,
                   role: 'user',
@@ -159,14 +157,14 @@ describe('AdminUsersPage', () => {
       ),
     );
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
     expect(screen.getByText('Page 1 of 2')).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: 'Next' }));
 
     await waitFor(() => expect(listUsers).toHaveBeenCalledWith(2));
-    expect(await screen.findByText('student@example.com')).toBeInTheDocument();
-    expect(screen.queryByText('admin@example.com')).not.toBeInTheDocument();
+    expect(await screen.findByText('student')).toBeInTheDocument();
+    expect(screen.queryByText('adminuser')).not.toBeInTheDocument();
     expect(screen.getByText('Page 2 of 2')).toBeInTheDocument();
   });
 
@@ -175,7 +173,6 @@ describe('AdminUsersPage', () => {
       row: i + 2,
       firstName: `First${i}`,
       lastName: `Last${i}`,
-      email: `user${i}@example.com`,
       role: 'user' as const,
     }));
   }
@@ -183,24 +180,24 @@ describe('AdminUsersPage', () => {
   test('paginates the import preview table when there are more than one page of rows', async () => {
     parseUserImport.mockResolvedValue({ rows: manyImportRows(25), errors: [] });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
 
-    expect(await screen.findByText('user0@example.com')).toBeInTheDocument();
-    expect(screen.queryByText('user20@example.com')).not.toBeInTheDocument();
+    expect(await screen.findByText('First0')).toBeInTheDocument();
+    expect(screen.queryByText('First20')).not.toBeInTheDocument();
 
-    const previewSection = screen.getByText('user0@example.com').closest('.import-preview') as HTMLElement;
+    const previewSection = screen.getByText('First0').closest('.import-preview') as HTMLElement;
     fireEvent.click(within(previewSection).getByRole('button', { name: 'Next' }));
 
-    expect(await screen.findByText('user20@example.com')).toBeInTheDocument();
-    expect(screen.queryByText('user0@example.com')).not.toBeInTheDocument();
+    expect(await screen.findByText('First20')).toBeInTheDocument();
+    expect(screen.queryByText('First0')).not.toBeInTheDocument();
   });
 
   function manyConfirmedUsers(count: number) {
     return Array.from({ length: count }, (_, i) => ({
-      email: `created${i}@example.com`,
+      username: `created${i}`,
       firstName: `First${i}`,
       lastName: `Last${i}`,
       role: 'user' as const,
@@ -210,91 +207,85 @@ describe('AdminUsersPage', () => {
 
   function manySkippedUsers(count: number) {
     return Array.from({ length: count }, (_, i) => ({
-      email: `skipped${i}@example.com`,
+      firstName: `Skipped${i}`,
+      lastName: 'User',
       reason: 'already registered',
     }));
   }
 
   test('paginates the import results "Created" table when there are more than one page', async () => {
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({ created: manyConfirmedUsers(25), skipped: [] });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
     await screen.findByRole('button', { name: /confirm import/i });
     fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
 
-    expect(await screen.findByText('created0@example.com')).toBeInTheDocument();
-    expect(screen.queryByText('created20@example.com')).not.toBeInTheDocument();
+    expect(await screen.findByText('created0')).toBeInTheDocument();
+    expect(screen.queryByText('created20')).not.toBeInTheDocument();
 
     const createdSection = screen.getByText('Created').closest('.import-results') as HTMLElement;
     fireEvent.click(within(createdSection).getByRole('button', { name: 'Next' }));
 
-    expect(await screen.findByText('created20@example.com')).toBeInTheDocument();
+    expect(await screen.findByText('created20')).toBeInTheDocument();
   });
 
   test('paginates the import results "Skipped" list when there are more than one page', async () => {
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({ created: [], skipped: manySkippedUsers(25) });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
     await screen.findByRole('button', { name: /confirm import/i });
     fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
 
-    expect(await screen.findByText(/skipped0@example.com/)).toBeInTheDocument();
-    expect(screen.queryByText(/skipped20@example.com/)).not.toBeInTheDocument();
+    expect(await screen.findByText(/Skipped0 User/)).toBeInTheDocument();
+    expect(screen.queryByText(/Skipped20 User/)).not.toBeInTheDocument();
 
     const skippedSection = screen.getByText('Skipped').closest('.import-results') as HTMLElement;
     fireEvent.click(within(skippedSection).getByRole('button', { name: 'Next' }));
 
-    expect(await screen.findByText(/skipped20@example.com/)).toBeInTheDocument();
+    expect(await screen.findByText(/Skipped20 User/)).toBeInTheDocument();
   });
 
   test('labels each cell in the import preview table for the mobile card layout', async () => {
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       errors: [],
     });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
 
-    const row = (await screen.findByText('jane@example.com')).closest('tr')!;
+    const row = (await screen.findByText('Jane')).closest('tr')!;
     const cells = within(row).getAllByRole('cell');
-    expect(cells.map((c) => c.getAttribute('data-label'))).toEqual([
-      'First Name',
-      'Last Name',
-      'Email',
-      'Role',
-    ]);
+    expect(cells.map((c) => c.getAttribute('data-label'))).toEqual(['First Name', 'Last Name', 'Role']);
   });
 
   test('labels each cell in the import results "Created" table for the mobile card layout', async () => {
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [
-        { email: 'jane@example.com', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' },
-      ],
+      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
       skipped: [],
     });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
@@ -304,7 +295,7 @@ describe('AdminUsersPage', () => {
     const row = (await screen.findByText('abc123')).closest('tr')!;
     const cells = within(row).getAllByRole('cell');
     expect(cells.map((c) => c.getAttribute('data-label'))).toEqual([
-      'Email',
+      'Username',
       'First Name',
       'Last Name',
       'Role',
@@ -313,42 +304,38 @@ describe('AdminUsersPage', () => {
   });
 
   function selectImportFile() {
-    const file = new File(['First Name,Last Name,Email\nJane,Doe,jane@example.com'], 'students.csv', {
-      type: 'text/csv',
-    });
+    const file = new File(['First Name,Last Name\nJane,Doe'], 'students.csv', { type: 'text/csv' });
     const input = screen.getByLabelText(/user list file/i) as HTMLInputElement;
     fireEvent.change(input, { target: { files: [file] } });
   }
 
   test('parsing a file shows a preview with row errors', async () => {
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
-      errors: [{ row: 3, message: 'Row 3: invalid email' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
+      errors: [{ row: 3, message: 'Row 3: last name is required' }],
     });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
 
-    expect(await screen.findByText('jane@example.com')).toBeInTheDocument();
-    expect(screen.getByText(/row 3: invalid email/i)).toBeInTheDocument();
+    expect(await screen.findByText('Jane')).toBeInTheDocument();
+    expect(screen.getByText(/row 3: last name is required/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /confirm import/i })).toBeEnabled();
   });
 
   test('confirming an import shows generated passwords and reloads the user list', async () => {
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [
-        { email: 'jane@example.com', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' },
-      ],
+      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
       skipped: [],
     });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
@@ -366,19 +353,17 @@ describe('AdminUsersPage', () => {
   test('a mixed import summarizes created and skipped counts in the toast', async () => {
     parseUserImport.mockResolvedValue({
       rows: [
-        { row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' },
-        { row: 3, firstName: 'John', lastName: 'Roe', email: 'john@example.com', role: 'user' },
+        { row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' },
+        { row: 3, firstName: 'John', lastName: 'Roe', role: 'user' },
       ],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [
-        { email: 'jane@example.com', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' },
-      ],
-      skipped: [{ email: 'john@example.com', reason: 'already registered' }],
+      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
+      skipped: [{ firstName: 'John', lastName: 'Roe', reason: 'already registered' }],
     });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
@@ -389,22 +374,20 @@ describe('AdminUsersPage', () => {
     await waitFor(() => expect(toastSuccess).toHaveBeenCalledWith('1 user created, 1 skipped'));
   });
 
-  test('copying created users writes an email,name,role,password CSV to the clipboard', async () => {
+  test('copying created users writes a username,name,role,password CSV to the clipboard', async () => {
     const writeText = vi.fn();
     Object.assign(navigator, { clipboard: { writeText } });
 
     parseUserImport.mockResolvedValue({
-      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', email: 'jane@example.com', role: 'user' }],
+      rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [
-        { email: 'jane@example.com', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' },
-      ],
+      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
       skipped: [],
     });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
@@ -417,14 +400,14 @@ describe('AdminUsersPage', () => {
 
     expect(writeText).toHaveBeenCalledTimes(1);
     const written = writeText.mock.calls[0][0] as string;
-    expect(written).toContain('jane@example.com');
+    expect(written).toContain('jdoe');
     expect(written).toContain('abc123');
   });
 
   test('Confirm import is disabled when there are no valid rows', async () => {
     parseUserImport.mockResolvedValue({ rows: [], errors: [{ row: 1, message: 'bad row' }] });
     render(<AdminUsersPage />);
-    await screen.findByText('admin@example.com');
+    await screen.findByText('adminuser');
 
     selectImportFile();
     fireEvent.click(screen.getByRole('button', { name: /parse/i }));
@@ -436,8 +419,8 @@ describe('AdminUsersPage', () => {
   test('expanding a row fetches and shows the user\'s attempts, collapsing hides them', async () => {
     getUserAttempts.mockResolvedValue({ attempts: [sampleAttempt] });
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
 
     fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
 
@@ -452,8 +435,8 @@ describe('AdminUsersPage', () => {
   test('re-expanding a row reuses the cached attempts instead of refetching', async () => {
     getUserAttempts.mockResolvedValue({ attempts: [sampleAttempt] });
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
 
     fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
     await screen.findByText('CPR Basics');
@@ -466,8 +449,8 @@ describe('AdminUsersPage', () => {
 
   test('shows "No attempts yet." for a user with no attempts', async () => {
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
 
     fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
 
@@ -477,8 +460,8 @@ describe('AdminUsersPage', () => {
   test('shows an error message when fetching attempts fails', async () => {
     getUserAttempts.mockRejectedValue(new Error('Network error'));
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
 
     fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
 
@@ -490,8 +473,8 @@ describe('AdminUsersPage', () => {
       attempts: [{ ...sampleAttempt, submittedAt: null, score: null, answeredCount: 0 }],
     });
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
 
     fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
 
@@ -509,8 +492,8 @@ describe('AdminUsersPage', () => {
   test('caps the inline list at 5 and shows a "view all" button for more', async () => {
     getUserAttempts.mockResolvedValue({ attempts: manyAttempts(6) });
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
 
     fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
 
@@ -522,8 +505,8 @@ describe('AdminUsersPage', () => {
   test('does not show "view all" when there are 5 or fewer attempts', async () => {
     getUserAttempts.mockResolvedValue({ attempts: manyAttempts(5) });
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
 
     fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
 
@@ -534,8 +517,8 @@ describe('AdminUsersPage', () => {
   test('clicking "view all" opens a modal with the full attempt list, closable', async () => {
     getUserAttempts.mockResolvedValue({ attempts: manyAttempts(6) });
     render(<AdminUsersPage />);
-    await screen.findByText('student@example.com');
-    const studentRow = screen.getByText('student@example.com').closest('tr')!;
+    await screen.findByText('student');
+    const studentRow = screen.getByText('student').closest('tr')!;
 
     fireEvent.click(within(studentRow).getByRole('button', { name: /view attempts/i }));
     fireEvent.click(await screen.findByRole('button', { name: /view all 6 attempts/i }));

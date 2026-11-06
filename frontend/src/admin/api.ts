@@ -32,20 +32,19 @@ export type ImportSummary = { courses: number; questions: number };
 
 export type ImportedUserRow = {
   row: number;
-  firstName: string | null;
-  lastName: string | null;
-  email: string;
+  firstName: string;
+  lastName: string;
   role: 'user' | 'admin';
 };
 export type ImportRowError = { row: number; message: string };
 export type ConfirmedUser = {
-  email: string;
+  username: string;
   firstName: string | null;
   lastName: string | null;
   role: 'user' | 'admin';
   password: string;
 };
-export type SkippedUser = { email: string; reason: string };
+export type SkippedUser = { firstName: string | null; lastName: string | null; reason: string };
 
 export const adminApi = {
   listUsers: (page: number) => request<Page<AdminUser>>(`/admin/users?page=${page}`),
