@@ -1,6 +1,6 @@
 import { useId } from 'react';
 import { NavLink, useLocation } from 'react-router';
-import { BookIcon, ChartIcon, ChevronRightIcon, SubjectIcon } from './icons';
+import { BookIcon, ChartIcon, ChevronRightIcon, SubjectIcon, VideoIcon } from './icons';
 import { hasPassed } from '../quiz/passed';
 import type { SubjectNavState } from './useSubjectNav';
 
@@ -102,6 +102,18 @@ export function SidebarNav({
             <ChartIcon className="nav-icon" />
             <span className="nav-label">My Progress</span>
           </NavLink>
+        </li>
+        <li>
+          <a
+            href="https://dh.identifix.com/TrainingVideos/TrainingVideos"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={onNavigate}
+            className="nav-item"
+          >
+            <VideoIcon className="nav-icon" />
+            <span className="nav-label">Videos</span>
+          </a>
         </li>
 
         {nav.error && (

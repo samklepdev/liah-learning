@@ -116,6 +116,15 @@ export function ChartIcon({ className }: IconProps) {
   );
 }
 
+export function VideoIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M4.5 6.5h15v11h-15z" />
+      <path d="M19.5 8.5l3-2v10l-3-2" />
+    </svg>
+  );
+}
+
 export function SunIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className}>
