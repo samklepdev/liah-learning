@@ -1,4 +1,4 @@
-import { Fragment, useCallback, useEffect, useState } from 'react';
+import { Fragment, useCallback, useEffect, useState, type SubmitEvent } from 'react';
 import toast from 'react-hot-toast';
 import {
   adminApi,
@@ -47,6 +47,12 @@ export function AdminUsersPage() {
   const skippedPager = usePager(importResults?.skipped.length ?? 0);
   const [importBusy, setImportBusy] = useState(false);
   const [importError, setImportError] = useState<string | null>(null);
+
+  const [newFirstName, setNewFirstName] = useState('');
+  const [newLastName, setNewLastName] = useState('');
+  const [newRole, setNewRole] = useState<'user' | 'admin'>('user');
+  const [addUserBusy, setAddUserBusy] = useState(false);
+  const [addUserError, setAddUserError] = useState<string | null>(null);
 
   const load = useCallback((page: number) => {
     setLoading(true);
@@ -148,9 +154,72 @@ export function AdminUsersPage() {
     }
   };
 
+  const addUser = async (e: SubmitEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setAddUserBusy(true);
+    setAddUserError(null);
+    try {
+      await adminApi.createUser(newFirstName, newLastName, newRole);
+      toast.success('User created. Initial password: liahwellness');
+      setNewFirstName('');
+      setNewLastName('');
+      setNewRole('user');
+      load(pager.page);
+    } catch (err) {
+      setAddUserError(err instanceof Error ? err.message : 'Failed to create user');
+    } finally {
+      setAddUserBusy(false);
+    }
+  };
+
   return (
     <div className="admin-page">
       <h1>Users</h1>
+
+      <section className="admin-add-user">
+        <h2>Add a user</h2>
+        <form onSubmit={(e) => void addUser(e)} className="auth-form admin-add-user-form">
+          <div className="auth-fields">
+            <input
+              type="text"
+              value={newFirstName}
+              onChange={(e) => setNewFirstName(e.target.value)}
+              placeholder="First name"
+              aria-label="First name"
+            />
+            <input
+              type="text"
+              value={newLastName}
+              onChange={(e) => setNewLastName(e.target.value)}
+              placeholder="Last name"
+              aria-label="Last name"
+            />
+            <select
+              value={newRole}
+              onChange={(e) => setNewRole(e.target.value as 'user' | 'admin')}
+              aria-label="Role"
+            >
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+
+          {addUserError && (
+            <p role="alert" className="auth-error">
+              {addUserError}
+            </p>
+          )}
+
+          <button
+            type="submit"
+            className="auth-submit"
+            disabled={addUserBusy || !newFirstName.trim() || !newLastName.trim()}
+            aria-busy={addUserBusy}
+          >
+            {addUserBusy ? 'Working…' : 'Add user'}
+          </button>
+        </form>
+      </section>
 
       <section className="admin-import-users">
         <h2>Seed users from a file</h2>
@@ -239,12 +308,13 @@ export function AdminUsersPage() {
             {importResults.created.length > 0 && (
               <>
                 <h3>Created</h3>
+                <p>Initial password for all created users: <code>liahwellness</code></p>
                 <button
                   type="button"
                   onClick={() => {
-                    const header = 'username,firstName,lastName,role,password';
+                    const header = 'username,firstName,lastName,role';
                     const lines = importResults.created.map(
-                      (u) => `${u.username},${u.firstName ?? ''},${u.lastName ?? ''},${u.role},${u.password}`,
+                      (u) => `${u.username},${u.firstName ?? ''},${u.lastName ?? ''},${u.role}`,
                     );
                     void navigator.clipboard.writeText([header, ...lines].join('\n'));
                   }}
@@ -258,7 +328,6 @@ export function AdminUsersPage() {
                       <th>First Name</th>
                       <th>Last Name</th>
                       <th>Role</th>
-                      <th>Password</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -270,7 +339,6 @@ export function AdminUsersPage() {
                           <td data-label="First Name">{u.firstName ?? '—'}</td>
                           <td data-label="Last Name">{u.lastName ?? '—'}</td>
                           <td data-label="Role">{u.role}</td>
-                          <td data-label="Password">{u.password}</td>
                         </tr>
                       ))}
                   </tbody>

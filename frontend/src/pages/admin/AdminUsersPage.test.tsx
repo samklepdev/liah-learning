@@ -8,6 +8,7 @@ const deleteUser = vi.fn();
 const getUserAttempts = vi.fn();
 const parseUserImport = vi.fn();
 const confirmUserImport = vi.fn();
+const createUser = vi.fn();
 const useAuth = vi.fn();
 
 const toastSuccess = vi.fn();
@@ -24,6 +25,7 @@ vi.mock('../../admin/api', () => ({
     getUserAttempts: (id: string) => getUserAttempts(id),
     parseUserImport: (file: File) => parseUserImport(file),
     confirmUserImport: (rows: unknown) => confirmUserImport(rows),
+    createUser: (firstName: string, lastName: string, role: string) => createUser(firstName, lastName, role),
   },
 }));
 
@@ -68,6 +70,7 @@ beforeEach(() => {
   deleteUser.mockResolvedValue(undefined);
   parseUserImport.mockReset();
   confirmUserImport.mockReset();
+  createUser.mockReset();
   toastSuccess.mockReset();
 });
 
@@ -168,6 +171,35 @@ describe('AdminUsersPage', () => {
     expect(screen.getByText('Page 2 of 2')).toBeInTheDocument();
   });
 
+  test('adding a user calls createUser and refreshes the list', async () => {
+    createUser.mockResolvedValue({
+      user: { id: 'u3', username: 'njordan', firstName: 'New', lastName: 'Jordan', role: 'user', createdAt: '2026-11-06T00:00:00Z' },
+    });
+    render(<AdminUsersPage />);
+    await screen.findByText('adminuser');
+
+    fireEvent.change(screen.getByLabelText(/first name/i), { target: { value: 'New' } });
+    fireEvent.change(screen.getByLabelText(/last name/i), { target: { value: 'Jordan' } });
+    fireEvent.click(screen.getByRole('button', { name: /add user/i }));
+
+    await waitFor(() => expect(createUser).toHaveBeenCalledWith('New', 'Jordan', 'user'));
+    expect(toastSuccess).toHaveBeenCalledWith('User created. Initial password: liahwellness');
+    await waitFor(() => expect(listUsers).toHaveBeenCalledTimes(2));
+  });
+
+  test('a duplicate-name error from createUser shows inline and keeps the form filled', async () => {
+    createUser.mockRejectedValue(new Error('A user with this name already exists'));
+    render(<AdminUsersPage />);
+    await screen.findByText('adminuser');
+
+    fireEvent.change(screen.getByLabelText(/first name/i), { target: { value: 'Test' } });
+    fireEvent.change(screen.getByLabelText(/last name/i), { target: { value: 'Existing' } });
+    fireEvent.click(screen.getByRole('button', { name: /add user/i }));
+
+    expect(await screen.findByText('A user with this name already exists')).toBeInTheDocument();
+    expect(screen.getByLabelText(/first name/i)).toHaveValue('Test');
+  });
+
   function manyImportRows(count: number) {
     return Array.from({ length: count }, (_, i) => ({
       row: i + 2,
@@ -201,7 +233,6 @@ describe('AdminUsersPage', () => {
       firstName: `First${i}`,
       lastName: `Last${i}`,
       role: 'user' as const,
-      password: `pw${i}`,
     }));
   }
 
@@ -281,7 +312,7 @@ describe('AdminUsersPage', () => {
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
+      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       skipped: [],
     });
     render(<AdminUsersPage />);
@@ -292,14 +323,13 @@ describe('AdminUsersPage', () => {
     await screen.findByRole('button', { name: /confirm import/i });
     fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
 
-    const row = (await screen.findByText('abc123')).closest('tr')!;
+    const row = (await screen.findByText('jdoe')).closest('tr')!;
     const cells = within(row).getAllByRole('cell');
     expect(cells.map((c) => c.getAttribute('data-label'))).toEqual([
       'Username',
       'First Name',
       'Last Name',
       'Role',
-      'Password',
     ]);
   });
 
@@ -325,13 +355,13 @@ describe('AdminUsersPage', () => {
     expect(screen.getByRole('button', { name: /confirm import/i })).toBeEnabled();
   });
 
-  test('confirming an import shows generated passwords and reloads the user list', async () => {
+  test('confirming an import shows a success toast and reloads the user list', async () => {
     parseUserImport.mockResolvedValue({
       rows: [{ row: 2, firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
+      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       skipped: [],
     });
     render(<AdminUsersPage />);
@@ -344,7 +374,9 @@ describe('AdminUsersPage', () => {
     fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
 
     await waitFor(() => expect(confirmUserImport).toHaveBeenCalled());
-    expect(await screen.findByText('abc123')).toBeInTheDocument();
+    expect(await screen.findByText('jdoe')).toBeInTheDocument();
+    expect(screen.getByText(/initial password for all created users:/i)).toBeInTheDocument();
+    expect(screen.getByText('liahwellness')).toBeInTheDocument();
     // listUsers is called once on mount, once more after a successful import.
     await waitFor(() => expect(listUsers).toHaveBeenCalledTimes(2));
     expect(toastSuccess).toHaveBeenCalledWith('1 user created');
@@ -359,7 +391,7 @@ describe('AdminUsersPage', () => {
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
+      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       skipped: [{ firstName: 'John', lastName: 'Roe', reason: 'already registered' }],
     });
     render(<AdminUsersPage />);
@@ -374,7 +406,7 @@ describe('AdminUsersPage', () => {
     await waitFor(() => expect(toastSuccess).toHaveBeenCalledWith('1 user created, 1 skipped'));
   });
 
-  test('copying created users writes a username,name,role,password CSV to the clipboard', async () => {
+  test('copying created users writes a username,name,role CSV to the clipboard', async () => {
     const writeText = vi.fn();
     Object.assign(navigator, { clipboard: { writeText } });
 
@@ -383,7 +415,7 @@ describe('AdminUsersPage', () => {
       errors: [],
     });
     confirmUserImport.mockResolvedValue({
-      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user', password: 'abc123' }],
+      created: [{ username: 'jdoe', firstName: 'Jane', lastName: 'Doe', role: 'user' }],
       skipped: [],
     });
     render(<AdminUsersPage />);
@@ -394,14 +426,13 @@ describe('AdminUsersPage', () => {
     await screen.findByRole('button', { name: /confirm import/i });
 
     fireEvent.click(screen.getByRole('button', { name: /confirm import/i }));
-    await screen.findByText('abc123');
+    await screen.findByText('jdoe');
 
     fireEvent.click(screen.getByRole('button', { name: /copy all as csv/i }));
 
     expect(writeText).toHaveBeenCalledTimes(1);
     const written = writeText.mock.calls[0][0] as string;
     expect(written).toContain('jdoe');
-    expect(written).toContain('abc123');
   });
 
   test('Confirm import is disabled when there are no valid rows', async () => {
