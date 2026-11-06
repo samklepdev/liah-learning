@@ -4,7 +4,7 @@ import type { Request, Response } from 'express';
 import multer from 'multer';
 import { z } from 'zod';
 import { parseUserRows } from '../lib/user-import-parser.ts';
-import { createUser } from '../models/user.model.ts';
+import { createUser, findUserByName } from '../models/user.model.ts';
 
 /** User lists are small — far below the 10MB cap on the quiz-PDF importer. */
 export const uploadFile = multer({ limits: { fileSize: 5 * 1024 * 1024 } }).single('file');
@@ -36,9 +36,8 @@ const confirmBody = z.object({
     .array(
       z.object({
         row: z.number(),
-        firstName: z.string().nullable(),
-        lastName: z.string().nullable(),
-        email: z.string().trim().toLowerCase().pipe(z.email()),
+        firstName: z.string().trim().min(1),
+        lastName: z.string().trim().min(1),
         role: z.enum(['user', 'admin']),
       }),
     )
@@ -58,25 +57,27 @@ export async function confirmImport(req: Request, res: Response): Promise<void> 
   }
 
   const created: Array<{
-    email: string;
+    username: string;
     firstName: string | null;
     lastName: string | null;
     role: string;
     password: string;
   }> = [];
-  const skipped: Array<{ email: string; reason: string }> = [];
+  const skipped: Array<{ firstName: string | null; lastName: string | null; reason: string }> = [];
 
   for (const row of parsed.data.rows) {
-    const password = generatePassword();
-    const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
-    const user = await createUser(row.email, passwordHash, row.firstName, row.lastName, row.role);
-
-    if (!user) {
-      skipped.push({ email: row.email, reason: 'already registered' });
+    const existing = await findUserByName(row.firstName, row.lastName);
+    if (existing) {
+      skipped.push({ firstName: row.firstName, lastName: row.lastName, reason: 'already registered' });
       continue;
     }
+
+    const password = generatePassword();
+    const passwordHash = await argon2.hash(password, { type: argon2.argon2id });
+    const user = await createUser(row.firstName, row.lastName, passwordHash, row.role);
+
     created.push({
-      email: user.email,
+      username: user.username,
       firstName: user.firstName,
       lastName: user.lastName,
       role: user.role,
