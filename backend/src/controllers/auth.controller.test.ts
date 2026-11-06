@@ -220,3 +220,34 @@ test('POST /api/v1/auth/register with a duplicate name still succeeds, with a nu
   const body = (await secondRes.json()) as { user: { username: string } };
   assert.notEqual(body.user.username, first.username);
 });
+
+test('POST /api/v1/auth/register never sets mustChangePassword', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/auth/register`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ firstName: 'Fresh', lastName: 'Signup', password: 'test-password-123' }),
+  });
+  const body = (await res.json()) as { user: { mustChangePassword: boolean } };
+  assert.equal(body.user.mustChangePassword, false);
+});
+
+test('PATCH /api/v1/auth/password clears mustChangePassword', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'ForcedChange');
+  // Force the flag on directly via the model, simulating an admin-created account.
+  const meRes = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie } });
+  const { user } = (await meRes.json()) as { user: { id: string } };
+  const { pool } = await import('../db/index.ts');
+  await pool.query('update users set must_change_password = true where id = $1', [user.id]);
+
+  const res = await fetch(`${baseUrl}/api/v1/auth/password`, {
+    method: 'PATCH',
+    headers: { cookie, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ currentPassword: 'test-password-123', newPassword: 'new-password-456' }),
+  });
+  assert.equal(res.status, 204);
+
+  const newCookie = res.headers.get('set-cookie')!.split(';')[0]!;
+  const afterMe = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie: newCookie } });
+  const after = (await afterMe.json()) as { user: { mustChangePassword: boolean } };
+  assert.equal(after.user.mustChangePassword, false);
+});
