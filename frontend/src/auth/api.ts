@@ -33,6 +33,12 @@ export const authApi = {
       body: JSON.stringify({ firstName, lastName, password }),
     }),
 
+  forgotPassword: (username: string) =>
+    request<void>('/auth/forgot-password', {
+      method: 'POST',
+      body: JSON.stringify({ username }),
+    }),
+
   changePassword: (currentPassword: string, newPassword: string) =>
     request<void>('/auth/password', {
       method: 'PATCH',
