@@ -29,9 +29,9 @@ describe('AccountMenu', () => {
 
     expect(screen.getByRole('link', { name: 'Profile' })).toBeVisible();
     expect(screen.getByText('Sign out')).toBeVisible();
-    expect(screen.queryByText('Admin · Users')).not.toBeInTheDocument();
-    expect(screen.queryByText('Admin · Courses')).not.toBeInTheDocument();
-    expect(screen.queryByText('Admin · Password Requests')).not.toBeInTheDocument();
+    expect(screen.queryByText('Users')).not.toBeInTheDocument();
+    expect(screen.queryByText('Courses')).not.toBeInTheDocument();
+    expect(screen.queryByText('Password Requests')).not.toBeInTheDocument();
   });
 
   test('an admin sees the Password Requests link after Recycle Bin', () => {
@@ -39,8 +39,8 @@ describe('AccountMenu', () => {
     fireEvent.click(screen.getByRole('button', { name: /techsmith/ }));
 
     const items = screen.getAllByRole('listitem').map((li) => li.textContent);
-    const recycleBinIndex = items.findIndex((t) => t?.includes('Admin · Recycle Bin'));
-    const requestsIndex = items.findIndex((t) => t?.includes('Admin · Password Requests'));
+    const recycleBinIndex = items.findIndex((t) => t?.includes('Recycle Bin'));
+    const requestsIndex = items.findIndex((t) => t?.includes('Password Requests'));
 
     expect(recycleBinIndex).toBeLessThan(requestsIndex);
   });
@@ -52,8 +52,8 @@ describe('AccountMenu', () => {
     const items = screen.getAllByRole('listitem').map((li) => li.textContent);
     const profileIndex = items.findIndex((t) => t?.includes('Profile'));
     const signOutIndex = items.findIndex((t) => t?.includes('Sign out'));
-    const usersIndex = items.findIndex((t) => t?.includes('Admin · Users'));
-    const coursesIndex = items.findIndex((t) => t?.includes('Admin · Courses'));
+    const usersIndex = items.findIndex((t) => t === 'Users');
+    const coursesIndex = items.findIndex((t) => t === 'Courses');
 
     expect(profileIndex).toBeLessThan(signOutIndex);
     expect(signOutIndex).toBeLessThan(usersIndex);
@@ -88,7 +88,7 @@ describe('AccountMenu', () => {
   test('clicking an admin link closes the panel', () => {
     renderMenu('admin');
     fireEvent.click(screen.getByRole('button', { name: /techsmith/ }));
-    fireEvent.click(screen.getByRole('link', { name: /Admin · Users/ }));
+    fireEvent.click(screen.getByRole('link', { name: 'Users' }));
 
     expect(screen.getByRole('button', { name: /techsmith/ })).toHaveAttribute(
       'aria-expanded',
