@@ -68,6 +68,14 @@ export type ConfirmedUser = {
 };
 export type SkippedUser = { firstName: string | null; lastName: string | null; reason: string };
 
+export type PasswordResetRequest = {
+  userId: string;
+  username: string;
+  firstName: string | null;
+  lastName: string | null;
+  requestedAt: string;
+};
+
 export const adminApi = {
   listUsers: (page: number) => request<Page<AdminUser>>(`/admin/users?page=${page}`),
 
@@ -93,6 +101,13 @@ export const adminApi = {
 
   getUserAttempts: (id: string) =>
     request<{ attempts: AdminAttempt[] }>(`/admin/users/${id}/attempts`),
+
+  resetPassword: (id: string) => request<void>(`/admin/users/${id}/reset-password`, { method: 'POST' }),
+
+  listPasswordRequests: () => request<{ requests: PasswordResetRequest[] }>('/admin/password-reset-requests'),
+
+  dismissPasswordRequest: (userId: string) =>
+    request<void>(`/admin/password-reset-requests/${userId}`, { method: 'DELETE' }),
 
   listCourses: () => request<{ items: AdminCourse[] }>('/admin/courses'),
 
