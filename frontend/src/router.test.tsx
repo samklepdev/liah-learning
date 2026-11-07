@@ -118,7 +118,7 @@ describe('AppRouter', () => {
       updateUser: vi.fn(),
     });
     at('/admin/password-reset-requests');
-    expect(screen.getByText('Password Requests')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Password Requests' })).toBeInTheDocument();
   });
 
   test('a non-admin hitting /admin/password-reset-requests sees the 404 page', () => {
