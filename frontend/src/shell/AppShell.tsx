@@ -3,6 +3,7 @@ import liahLogo from '../assets/liah-logo.png';
 import { useAuth } from '../auth/useAuth';
 import type { CatalogContext } from '../quiz/useCatalog';
 import { AccountMenu } from './AccountMenu';
+import { GlobalSearch } from './GlobalSearch';
 import { AutoThemeIcon, MoonIcon, SunIcon } from './icons';
 import { SidebarNav } from './SidebarNav';
 import { useSidebar } from './useSidebar';
@@ -86,6 +87,8 @@ export function AppShell() {
           <img src={liahLogo} alt="" className="topnav-mark" />
           LIAH Learning
         </Link>
+
+        <GlobalSearch />
 
         <div className="topnav-right">
           <ThemeToggle />
