@@ -134,7 +134,7 @@ export async function resetUserPassword(req: Request, res: Response): Promise<vo
   res.status(204).end();
 }
 
-export async function getPasswordResetRequests(req: Request, res: Response): Promise<void> {
+export async function getPasswordResetRequests(_req: Request, res: Response): Promise<void> {
   const requests = await listPasswordResetRequests();
   res.json({ requests });
 }
