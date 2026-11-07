@@ -9,6 +9,7 @@ const getUserAttempts = vi.fn();
 const parseUserImport = vi.fn();
 const confirmUserImport = vi.fn();
 const createUser = vi.fn();
+const resetPassword = vi.fn();
 const useAuth = vi.fn();
 
 const toastSuccess = vi.fn();
@@ -26,6 +27,7 @@ vi.mock('../../admin/api', () => ({
     parseUserImport: (file: File) => parseUserImport(file),
     confirmUserImport: (rows: unknown) => confirmUserImport(rows),
     createUser: (firstName: string, lastName: string, role: string) => createUser(firstName, lastName, role),
+    resetPassword: (id: string) => resetPassword(id),
   },
 }));
 
@@ -71,6 +73,7 @@ beforeEach(() => {
   parseUserImport.mockReset();
   confirmUserImport.mockReset();
   createUser.mockReset();
+  resetPassword.mockReset().mockResolvedValue(undefined);
   toastSuccess.mockReset();
 });
 
@@ -79,6 +82,25 @@ describe('AdminUsersPage', () => {
     render(<AdminUsersPage />);
     expect(await screen.findByText('adminuser')).toBeInTheDocument();
     expect(screen.getByText('student')).toBeInTheDocument();
+  });
+
+  test('resetting a password calls the API and toasts a confirmation', async () => {
+    render(<AdminUsersPage />);
+    const row = (await screen.findByText('student')).closest('tr')!;
+
+    fireEvent.click(within(row).getByRole('button', { name: 'Reset password' }));
+
+    await waitFor(() => expect(resetPassword).toHaveBeenCalledWith('u2'));
+    await waitFor(() =>
+      expect(toastSuccess).toHaveBeenCalledWith('Password reset — user must set a new one at next login.'),
+    );
+  });
+
+  test('the reset-password action is disabled for your own row', async () => {
+    render(<AdminUsersPage />);
+    const row = (await screen.findByText('adminuser')).closest('tr')!;
+
+    expect(within(row).getByRole('button', { name: 'Reset password' })).toBeDisabled();
   });
 
   test('labels each cell in the main users table for the mobile card layout', async () => {

@@ -107,3 +107,7 @@ export async function updatePasswordHash(id: string, passwordHash: string): Prom
 export async function clearMustChangePassword(id: string): Promise<void> {
   await db.update(users).set({ mustChangePassword: false }).where(eq(users.id, id));
 }
+
+export async function forcePasswordChange(id: string): Promise<void> {
+  await db.update(users).set({ mustChangePassword: true }).where(eq(users.id, id));
+}

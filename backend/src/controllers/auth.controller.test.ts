@@ -5,6 +5,7 @@ import { db } from '../db/index.ts';
 import { resetDb, closeDb } from '../test/helpers/db.ts';
 import { startTestServer, registerTestUser } from '../test/helpers/server.ts';
 import { users } from '../models/schema.ts';
+import { listPasswordResetRequests } from '../models/password-reset-request.model.ts';
 
 let baseUrl: string;
 let close: () => Promise<void>;
@@ -186,4 +187,52 @@ test('GET /api/v1/auth/me 401s once the session owner is deactivated', async () 
 
   const after = await fetch(`${baseUrl}/api/v1/auth/me`, { headers: { cookie } });
   assert.equal(after.status, 401);
+});
+
+test('POST /api/v1/auth/forgot-password 204s and queues a request for a known username', async () => {
+  const { username } = await registerTestUser(baseUrl, 'Forgetful');
+
+  const res = await fetch(`${baseUrl}/api/v1/auth/forgot-password`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username }),
+  });
+  assert.equal(res.status, 204);
+
+  const requests = await listPasswordResetRequests();
+  assert.equal(requests.some((r) => r.username === username), true);
+});
+
+test('POST /api/v1/auth/forgot-password 204s without queuing anything for an unknown username', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/auth/forgot-password`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username: 'no-such-user' }),
+  });
+  assert.equal(res.status, 204);
+  assert.deepEqual(await listPasswordResetRequests(), []);
+});
+
+test('POST /api/v1/auth/forgot-password 204s on a malformed body', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/auth/forgot-password`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({}),
+  });
+  assert.equal(res.status, 204);
+});
+
+test('a second forgot-password request for the same user does not duplicate the queue entry', async () => {
+  const { username } = await registerTestUser(baseUrl, 'Forgetful2');
+
+  for (let i = 0; i < 2; i++) {
+    await fetch(`${baseUrl}/api/v1/auth/forgot-password`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username }),
+    });
+  }
+
+  const requests = await listPasswordResetRequests();
+  assert.equal(requests.filter((r) => r.username === username).length, 1);
 });

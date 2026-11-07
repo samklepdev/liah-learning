@@ -6,6 +6,7 @@ import { useAuth } from './auth/useAuth';
 import { AdminCoursesPage } from './pages/admin/AdminCoursesPage';
 import { AdminUsersPage } from './pages/admin/AdminUsersPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { PasswordRequestsPage } from './pages/admin/PasswordRequestsPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { ProgressPage } from './pages/ProgressPage';
 import { QuizPage } from './pages/QuizPage';
@@ -104,6 +105,14 @@ export function AppRouter() {
             element={
               <RequireAdmin>
                 <RecycleBinPage />
+              </RequireAdmin>
+            }
+          />
+          <Route
+            path="/admin/password-reset-requests"
+            element={
+              <RequireAdmin>
+                <PasswordRequestsPage />
               </RequireAdmin>
             }
           />
