@@ -126,6 +126,17 @@ describe('AppShell — theme toggle', () => {
   });
 });
 
+describe('AppShell — global search', () => {
+  test('renders the search bar in the top nav', async () => {
+    renderAt();
+    await nav();
+
+    expect(
+      screen.getByRole('combobox', { name: 'Search subjects and quizzes' }),
+    ).toBeInTheDocument();
+  });
+});
+
 describe('AppShell — collapse', () => {
   test('starts open and the toggle collapses it', async () => {
     renderAt();

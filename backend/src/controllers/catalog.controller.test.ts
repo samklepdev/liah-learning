@@ -109,3 +109,75 @@ test('GET /api/v1/subjects excludes a soft-deleted course from the count', async
 
   await db.update(courses).set({ isActive: true, deletedAt: null }).where(eq(courses.id, course!.id));
 });
+
+test('GET /api/v1/search matches subject and course titles', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/search?q=tire`);
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as {
+    subjects: Array<{ slug: string }>;
+    courses: Array<{ slug: string; subjectSlug: string; subjectTitle: string }>;
+  };
+  assert.equal(body.subjects.length, 0);
+  assert.equal(body.courses.length, 2);
+  assert.equal(
+    body.courses.some((c) => c.slug === 'chassis-tire-and-rim-essentials'),
+    true,
+  );
+  assert.equal(body.courses[0]?.subjectSlug, 'chassis');
+  assert.equal(body.courses[0]?.subjectTitle, 'Chassis');
+});
+
+test('GET /api/v1/search matches a subject title', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/search?q=chas`);
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { subjects: Array<{ slug: string }> };
+  assert.equal(body.subjects.length, 1);
+  assert.equal(body.subjects[0]?.slug, 'chassis');
+});
+
+test('GET /api/v1/search is case-insensitive', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/search?q=TIRE`);
+  const body = (await res.json()) as { courses: unknown[] };
+  assert.equal(body.courses.length, 2);
+});
+
+test('GET /api/v1/search excludes a soft-deleted course', async () => {
+  const [course] = await db
+    .select({ id: courses.id })
+    .from(courses)
+    .where(eq(courses.slug, 'chassis-tire-and-rim-essentials'));
+  await db
+    .update(courses)
+    .set({ isActive: false, deletedAt: new Date() })
+    .where(eq(courses.id, course!.id));
+
+  const res = await fetch(`${baseUrl}/api/v1/search?q=tire`);
+  const body = (await res.json()) as { courses: Array<{ slug: string }> };
+  assert.equal(
+    body.courses.some((c) => c.slug === 'chassis-tire-and-rim-essentials'),
+    false,
+  );
+
+  await db.update(courses).set({ isActive: true, deletedAt: null }).where(eq(courses.id, course!.id));
+});
+
+test('GET /api/v1/search treats a wildcard character literally', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/search?q=${encodeURIComponent('%')}`);
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { subjects: unknown[]; courses: unknown[] };
+  assert.equal(body.subjects.length, 0);
+  assert.equal(body.courses.length, 0);
+});
+
+test('GET /api/v1/search returns empty results for a 1-character query', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/search?q=t`);
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { subjects: unknown[]; courses: unknown[] };
+  assert.equal(body.subjects.length, 0);
+  assert.equal(body.courses.length, 0);
+});
+
+test('GET /api/v1/search 400s when q is missing', async () => {
+  const res = await fetch(`${baseUrl}/api/v1/search`);
+  assert.equal(res.status, 400);
+});
