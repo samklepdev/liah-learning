@@ -86,6 +86,16 @@ export function AccountMenu({
                 Admin · Recycle Bin
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/admin/password-reset-requests"
+                className="account-menu-item"
+                onClick={() => setOpen(false)}
+              >
+                <CogIcon className="nav-icon" />
+                Admin · Password Requests
+              </NavLink>
+            </li>
           </>
         )}
       </ul>
