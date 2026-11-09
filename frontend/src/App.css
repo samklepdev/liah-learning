@@ -446,6 +446,8 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .shell:not(.collapsed) .toggle-bars span:nth-child(2) { opacity: 0; }
 .shell:not(.collapsed) .toggle-bars span:nth-child(3) { transform: translateY(-4.5px) rotate(-45deg); }
 
+.topnav-start { flex: 1 1 0; min-width: 0; display: flex; align-items: center; gap: 0.85rem; }
+
 .topnav-brand {
   display: flex;
   align-items: center;
@@ -463,9 +465,12 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   object-fit: contain;
 }
 
-.topnav-right { margin-left: auto; display: flex; align-items: center; gap: 0.75rem; }
+.topnav-right { flex: 1 1 0; display: flex; align-items: center; justify-content: flex-end; gap: 0.75rem; }
 
-.global-search { position: relative; flex: 1 1 auto; max-width: 22rem; margin: 0 0.5rem; }
+/* Fixed-width center item between two equal-growing flex groups, so it sits
+   truly centered in the navbar regardless of how much the brand/controls
+   on either side need. */
+.global-search { position: relative; flex: 0 0 auto; width: 100%; max-width: 22rem; margin: 0 0.5rem; }
 
 .global-search-icon {
   position: absolute;
