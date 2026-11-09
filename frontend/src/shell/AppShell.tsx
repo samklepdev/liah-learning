@@ -68,25 +68,27 @@ export function AppShell() {
   return (
     <div className={collapsed ? 'shell collapsed' : 'shell'}>
       <header className="topnav">
-        <button
-          type="button"
-          className="sidebar-toggle"
-          onClick={toggle}
-          aria-expanded={!collapsed}
-          aria-controls="app-sidebar"
-          aria-label={collapsed ? 'Open sidebar' : 'Close sidebar'}
-        >
-          <span className="toggle-bars" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
-        </button>
+        <div className="topnav-start">
+          <button
+            type="button"
+            className="sidebar-toggle"
+            onClick={toggle}
+            aria-expanded={!collapsed}
+            aria-controls="app-sidebar"
+            aria-label={collapsed ? 'Open sidebar' : 'Close sidebar'}
+          >
+            <span className="toggle-bars" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </span>
+          </button>
 
-        <Link to="/subjects" className="topnav-brand">
-          <img src={liahLogo} alt="" className="topnav-mark" />
-          LIAH Learning
-        </Link>
+          <Link to="/subjects" className="topnav-brand">
+            <img src={liahLogo} alt="" className="topnav-mark" />
+            LIAH Learning
+          </Link>
+        </div>
 
         <GlobalSearch />
 
