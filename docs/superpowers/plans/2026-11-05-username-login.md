@@ -2231,7 +2231,7 @@ export function LoginForm() {
     <div className="auth-page">
       <div className="auth-card">
         <header className="auth-head">
-          <img src={liahLogo} alt="LIAH Learning" className="auth-mark" />
+          <img src={liahLogo} alt="LIAH" className="auth-mark" />
           <h1>{mode === 'login' ? 'Sign in to your account' : 'Create your account'}</h1>
         </header>
 

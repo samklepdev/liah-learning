@@ -75,7 +75,7 @@ describe('AppShell — top navbar', () => {
     renderAt();
     await nav();
 
-    expect(screen.getByRole('link', { name: /LIAH Learning/ })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /LIAH/ })).toHaveAttribute(
       'href',
       '/subjects',
     );
@@ -90,9 +90,13 @@ describe('AppShell — top navbar', () => {
 });
 
 describe('AppShell — theme toggle', () => {
+  // The toggle lives inside the account menu now, so it has to be opened
+  // first — but cycling the theme doesn't close the menu, so one open is
+  // enough for a whole sequence of clicks.
   test('cycles light, dark, system and applies it to the document', async () => {
     renderAt();
     await nav();
+    await userEvent.click(screen.getByRole('button', { name: /techsmith/ }));
 
     // Starts on system, since nothing is stored.
     const button = screen.getByRole('button', { name: /^Theme: System/ });
@@ -113,12 +117,14 @@ describe('AppShell — theme toggle', () => {
   test('a chosen theme survives a remount', async () => {
     const first = renderAt();
     await nav();
+    await userEvent.click(screen.getByRole('button', { name: /techsmith/ }));
     await userEvent.click(screen.getByRole('button', { name: /^Theme: System/ }));
     await userEvent.click(screen.getByRole('button', { name: /^Theme: Light/ }));
     expect(document.documentElement.dataset.theme).toBe('dark');
     first.unmount();
 
     renderAt();
+    await userEvent.click(await screen.findByRole('button', { name: /techsmith/ }));
     expect(
       await screen.findByRole('button', { name: /^Theme: Dark/ }),
     ).toBeInTheDocument();

@@ -1,16 +1,10 @@
 import { useState, type SubmitEvent } from 'react';
 import liahLogo from '../assets/liah-logo.png';
-import { MIN_PASSWORD_LENGTH } from './api';
 import { useAuth } from './useAuth';
 
-type Mode = 'login' | 'register';
-
 export function LoginForm() {
-  const { login, register } = useAuth();
-  const [mode, setMode] = useState<Mode>('login');
+  const { login } = useAuth();
   const [username, setUsername] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -20,7 +14,7 @@ export function LoginForm() {
     setError(null);
     setSubmitting(true);
     try {
-      await (mode === 'login' ? login(username, password) : register(firstName, lastName, password));
+      await login(username, password);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong');
     } finally {
@@ -32,8 +26,8 @@ export function LoginForm() {
     <div className="auth-page">
       <div className="auth-card">
         <header className="auth-head">
-          <img src={liahLogo} alt="LIAH Learning" className="auth-mark" />
-          <h1>{mode === 'login' ? 'Sign in to your account' : 'Create your account'}</h1>
+          <img src={liahLogo} alt="LIAH" className="auth-mark" />
+          <h1>Sign in to your account</h1>
         </header>
 
         <form onSubmit={handleSubmit} className="auth-form">
@@ -42,56 +36,25 @@ export function LoginForm() {
               stacked. Labels are visually replaced by placeholders, so each
               input carries an aria-label for screen readers. */}
           <div className="auth-fields">
-            {mode === 'login' ? (
-              <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="Username"
-                aria-label="Username"
-                autoComplete="username"
-                required
-              />
-            ) : (
-              <>
-                <input
-                  type="text"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
-                  placeholder="First name"
-                  aria-label="First name"
-                  autoComplete="given-name"
-                  required
-                />
-                <input
-                  type="text"
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
-                  placeholder="Last name"
-                  aria-label="Last name"
-                  autoComplete="family-name"
-                  required
-                />
-              </>
-            )}
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Username"
+              aria-label="Username"
+              autoComplete="username"
+              required
+            />
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
               aria-label="Password"
-              autoComplete={mode === 'login' ? 'current-password' : 'new-password'}
-              // Only constrain when choosing a password. On sign-in the server is
-              // the authority, and a native "lengthen this text" popup would just
-              // get in the way of a legitimate attempt.
-              minLength={mode === 'register' ? MIN_PASSWORD_LENGTH : undefined}
+              autoComplete="current-password"
               required
             />
           </div>
-
-          {mode === 'register' && (
-            <p className="auth-hint">At least {MIN_PASSWORD_LENGTH} characters.</p>
-          )}
 
           {error && (
             <p role="alert" className="auth-error">
@@ -100,23 +63,9 @@ export function LoginForm() {
           )}
 
           <button type="submit" className="auth-submit" disabled={submitting} aria-busy={submitting}>
-            {submitting ? 'Working…' : mode === 'login' ? 'Sign in' : 'Sign up'}
+            {submitting ? 'Working…' : 'Sign in'}
           </button>
         </form>
-
-        <p className="auth-switch">
-          {mode === 'login' ? 'Not a member yet?' : 'Already registered?'}{' '}
-          <button
-            type="button"
-            className="auth-toggle"
-            onClick={() => {
-              setMode(mode === 'login' ? 'register' : 'login');
-              setError(null);
-            }}
-          >
-            {mode === 'login' ? 'Create an account' : 'Sign in'}
-          </button>
-        </p>
       </div>
     </div>
   );

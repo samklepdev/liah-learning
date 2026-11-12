@@ -1,6 +1,13 @@
 import { useId, useState } from 'react';
 import { NavLink } from 'react-router';
-import { CogIcon, SignOutIcon, UserIcon } from './icons';
+import { AutoThemeIcon, CogIcon, MoonIcon, SignOutIcon, SunIcon, UserIcon } from './icons';
+import { useTheme, type ThemePref } from './useTheme';
+
+const THEME_LABEL: Record<ThemePref, string> = {
+  light: 'Light',
+  dark: 'Dark',
+  system: 'System',
+};
 
 /**
  * The signed-in user's menu in the top navbar: account actions first
@@ -23,6 +30,8 @@ export function AccountMenu({
 }) {
   const [open, setOpen] = useState(false);
   const panelId = useId();
+  const { pref, cycle } = useTheme();
+  const ThemeIcon = pref === 'light' ? SunIcon : pref === 'dark' ? MoonIcon : AutoThemeIcon;
 
   return (
     <div
@@ -45,6 +54,15 @@ export function AccountMenu({
       </button>
 
       <ul id={panelId} className="account-menu-panel" hidden={!open}>
+        <li>
+          {/* Cycles in place rather than closing the panel, so changing your
+              mind about the theme doesn't mean reopening the menu. */}
+          <button type="button" className="account-menu-item" onClick={cycle}>
+            <ThemeIcon className="nav-icon" />
+            {`Theme: ${THEME_LABEL[pref]}`}
+          </button>
+        </li>
+        <li className="account-menu-divider" role="separator" />
         <li>
           <NavLink to="/profile" className="account-menu-item" onClick={() => setOpen(false)}>
             <UserIcon className="nav-icon" />
