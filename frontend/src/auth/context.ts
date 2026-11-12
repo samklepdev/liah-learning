@@ -6,7 +6,6 @@ export type AuthState = {
   /** True until the initial /auth/me check settles. */
   loading: boolean;
   login: (username: string, password: string) => Promise<void>;
-  register: (firstName: string, lastName: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
   updateUser: (user: User) => void;
 };

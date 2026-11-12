@@ -446,12 +446,13 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .shell:not(.collapsed) .toggle-bars span:nth-child(2) { opacity: 0; }
 .shell:not(.collapsed) .toggle-bars span:nth-child(3) { transform: translateY(-4.5px) rotate(-45deg); }
 
-.topnav-start { flex: 1 1 0; min-width: 0; display: flex; align-items: center; gap: 0.85rem; }
+.topnav-start { flex: 0 1 auto; min-width: 0; display: flex; align-items: center; gap: 0.85rem; }
 
 .topnav-brand {
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  min-width: 0;
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--text-h);
@@ -460,17 +461,32 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .topnav-mark {
   display: block;
+  flex: 0 0 auto;
   width: 1.75rem;
   height: 1.75rem;
   object-fit: contain;
 }
 
-.topnav-right { flex: 1 1 0; display: flex; align-items: center; justify-content: flex-end; gap: 0.75rem; }
+/* Lets the wordmark truncate instead of overflowing past the navbar's
+   flexible left group and overlapping the search box or right-hand
+   controls on narrow screens. */
+.topnav-brand-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
-/* Fixed-width center item between two equal-growing flex groups, so it sits
-   truly centered in the navbar regardless of how much the brand/controls
-   on either side need. */
-.global-search { position: relative; flex: 0 0 auto; width: 100%; max-width: 22rem; margin: 0 0.5rem; }
+/* Below phone width the wordmark is dropped entirely (see the ≤40rem rule
+   below) rather than truncated, to give the search box more room — so this
+   only has to cover the narrow band of widths above that breakpoint. */
+
+.topnav-right { flex: 0 0 auto; display: flex; align-items: center; justify-content: flex-end; gap: 0.75rem; }
+
+/* The only flexible item in the navbar: grows to take up whatever room the
+   brand and account controls don't need, instead of sitting at a fixed
+   width with the results panel cramped into it. */
+.global-search { position: relative; flex: 1 1 auto; min-width: 0; max-width: 40rem; margin: 0 0.75rem; }
 
 .global-search-icon {
   position: absolute;
@@ -484,6 +500,7 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 }
 
 .global-search-input {
+  box-sizing: border-box;
   width: 100%;
   height: 2.25rem;
   padding: 0 0.75rem 0 2rem;
@@ -789,26 +806,6 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
   }
 }
 
-/* Theme toggle */
-
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.35rem 0.6rem;
-  font: inherit;
-  font-size: 0.8rem;
-  cursor: pointer;
-  color: inherit;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 0.45rem;
-}
-.theme-toggle:hover { background: var(--accent-bg); border-color: var(--accent-border); }
-.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-.theme-icon { width: 1.05rem; height: 1.05rem; flex: 0 0 auto; opacity: 0.85; }
-
 /* Account menu */
 
 .account-menu { position: relative; }
@@ -882,11 +879,6 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .account-menu-divider { height: 1px; margin: 0.35rem 0.4rem; background: var(--border); list-style: none; }
 
-@media (max-width: 30rem) {
-  /* Keep the icon, drop the word, so the navbar still fits. */
-  .theme-label { display: none; }
-}
-
 /* ---- Phone-width layout (≤40rem) ---- */
 
 @media (max-width: 40rem) {
@@ -956,5 +948,20 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
   .topnav-brand {
     gap: 0.35rem;
+  }
+
+  /* Just the mark, not the wordmark, so the search box gets the width back.
+     Visually hidden rather than removed, so the link's accessible name
+     ("LIAH Learning") is unchanged for screen reader users. */
+  .topnav-brand-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 }

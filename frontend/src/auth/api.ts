@@ -27,12 +27,6 @@ export const authApi = {
       body: JSON.stringify({ username, password }),
     }),
 
-  register: (firstName: string, lastName: string, password: string) =>
-    request<{ user: User }>('/auth/register', {
-      method: 'POST',
-      body: JSON.stringify({ firstName, lastName, password }),
-    }),
-
   changePassword: (currentPassword: string, newPassword: string) =>
     request<void>('/auth/password', {
       method: 'PATCH',

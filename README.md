@@ -1,4 +1,4 @@
-# LIAH Learning
+# LIAH
 
 An e-learning platform for LIAH Wellness — lets users browse subjects and courses, take quizzes, review their results, and track progress. Admins can import quizzes/users and review learner attempts.
 

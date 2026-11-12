@@ -35,11 +35,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setUser(user);
   }, []);
 
-  const register = useCallback(async (firstName: string, lastName: string, password: string) => {
-    const { user } = await authApi.register(firstName, lastName, password);
-    setUser(user);
-  }, []);
-
   const logout = useCallback(async () => {
     await authApi.logout();
     setUser(null);
@@ -50,8 +45,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const value = useMemo<AuthState>(
-    () => ({ user, loading, login, register, logout, updateUser }),
-    [user, loading, login, register, logout, updateUser],
+    () => ({ user, loading, login, logout, updateUser }),
+    [user, loading, login, logout, updateUser],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

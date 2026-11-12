@@ -8,6 +8,7 @@ import type { NextFunction, Request, Response } from 'express';
 import { env, isProd } from './config/env.ts';
 import { attachUser } from './middleware/auth.middleware.ts';
 import { errorHandler, notFound } from './middleware/error.middleware.ts';
+import { apiRateLimiter } from './middleware/rate-limit.middleware.ts';
 import { apiRouter } from './routes/index.ts';
 
 export const app = express();
@@ -34,7 +35,7 @@ app.use(express.json({ limit: '100kb' }));
 app.use(cookieParser());
 app.use(attachUser);
 
-app.use('/api/v1', apiRouter);
+app.use('/api/v1', apiRateLimiter, apiRouter);
 
 // Scoped to /api/v1 so an unknown API route still answers with JSON, leaving
 // everything else for the SPA fallback below.
