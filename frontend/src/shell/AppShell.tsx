@@ -7,6 +7,7 @@ import { GlobalSearch } from './GlobalSearch';
 import { SidebarNav } from './SidebarNav';
 import { useSidebar } from './useSidebar';
 import { useSubjectNav } from './useSubjectNav';
+import { Analytics } from '@vercel/analytics/react';
 
 /**
  * Persistent chrome for every signed-in route: a top navbar, a collapsible
@@ -15,7 +16,7 @@ import { useSubjectNav } from './useSubjectNav';
  */
 export function AppShell() {
   const { user, logout } = useAuth();
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
   const navigate = useNavigate();
   const { collapsed, toggle, close } = useSidebar();
 
@@ -38,6 +39,12 @@ export function AppShell() {
   const nav = useSubjectNav(subjectSlug);
 
   return (
+    <>
+    {/* Generic @vercel/analytics has no router integration, so without
+        route/path it never fires a pageview after the first load. Passing
+        them switches it to manual mode, driven by react-router's location,
+        so in-app navigations are tracked too. */}
+    <Analytics route={pathname} path={pathname + search} />
     <div className={collapsed ? 'shell collapsed' : 'shell'}>
       <header className="topnav">
         <div className="topnav-start">
@@ -84,5 +91,6 @@ export function AppShell() {
         </main>
       </div>
     </div>
+    </>
   );
 }
