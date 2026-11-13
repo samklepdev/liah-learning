@@ -615,6 +615,10 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 .nav-icon { width: 1.4rem; height: 1.4rem; flex: 0 0 auto; opacity: 0.8; }
 .nav-label { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 
+.nav-video {
+  margin-left: 1rem;
+}
+
 .nav-count {
   font-size: 0.72rem;
   font-weight: 500;
