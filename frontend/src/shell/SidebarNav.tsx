@@ -121,11 +121,11 @@ export function SidebarNav({
                 </span>
                 <br />
             <span className="nav-label">
-              Login: LutheB98
+              <strong>Login:</strong> LutheB98
             </span>
             <br />
             <span className="nav-label">
-              Password: alliance
+              <strong>Password:</strong> alliance
             </span>
         
         </li>
