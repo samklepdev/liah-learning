@@ -89,19 +89,29 @@ export function AccountMenu({
             <li>
               <NavLink to="/admin/users" className="account-menu-item" onClick={() => setOpen(false)}>
                 <CogIcon className="nav-icon" />
-                Admin · Users
+                Users
               </NavLink>
             </li>
             <li>
               <NavLink to="/admin/courses" className="account-menu-item" onClick={() => setOpen(false)}>
                 <CogIcon className="nav-icon" />
-                Admin · Courses
+                Courses
               </NavLink>
             </li>
             <li>
               <NavLink to="/admin/recycle-bin" className="account-menu-item" onClick={() => setOpen(false)}>
                 <CogIcon className="nav-icon" />
-                Admin · Recycle Bin
+                Recycle Bin
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/admin/password-reset-requests"
+                className="account-menu-item"
+                onClick={() => setOpen(false)}
+              >
+                <CogIcon className="nav-icon" />
+                Password Requests
               </NavLink>
             </li>
           </>

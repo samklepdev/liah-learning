@@ -32,7 +32,9 @@ export async function countUsers(): Promise<number> {
   return Number(row?.value ?? 0);
 }
 
-export async function findUserById(id: string): Promise<PublicUser | null> {
+export async function findUserById(
+  id: string,
+): Promise<(PublicUser & { isActive: boolean; deletedAt: Date | null }) | null> {
   const [row] = await db.select(publicColumns).from(users).where(eq(users.id, id)).limit(1);
   return row ?? null;
 }

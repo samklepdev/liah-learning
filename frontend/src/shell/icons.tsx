@@ -212,6 +212,17 @@ export function RestoreIcon({ className }: IconProps) {
   );
 }
 
+/** A key: resetting a password. */
+export function KeyIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <circle cx="8" cy="15" r="3.2" />
+      <path d="M10.3 12.7L19 4" />
+      <path d="M15.5 8.5l2.5 2.5M18 6l2.5 2.5" />
+    </svg>
+  );
+}
+
 const BY_SLUG: Record<string, (p: IconProps) => React.ReactElement> = {
   chassis: WheelIcon,
   diagnostics: GaugeIcon,

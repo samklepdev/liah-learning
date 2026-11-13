@@ -87,4 +87,41 @@ describe('adminApi', () => {
       expect.objectContaining({ method: 'POST', body: JSON.stringify({ rows }) }),
     );
   });
+
+  test('resetPassword POSTs to the reset-password endpoint', async () => {
+    (fetch as unknown as ReturnType<typeof vi.fn>).mockResolvedValue({ status: 204, ok: true, json: async () => ({}) });
+
+    await adminApi.resetPassword('u1');
+
+    expect(fetch).toHaveBeenCalledWith(
+      '/api/v1/admin/users/u1/reset-password',
+      expect.objectContaining({ method: 'POST' }),
+    );
+  });
+
+  test('listPasswordRequests GETs the password-reset-requests endpoint', async () => {
+    (fetch as unknown as ReturnType<typeof vi.fn>).mockResolvedValue({
+      status: 200,
+      ok: true,
+      json: async () => ({ requests: [] }),
+    });
+
+    await adminApi.listPasswordRequests();
+
+    expect(fetch).toHaveBeenCalledWith(
+      '/api/v1/admin/password-reset-requests',
+      expect.objectContaining({ credentials: 'include' }),
+    );
+  });
+
+  test('dismissPasswordRequest DELETEs the request for the given user', async () => {
+    (fetch as unknown as ReturnType<typeof vi.fn>).mockResolvedValue({ status: 204, ok: true, json: async () => ({}) });
+
+    await adminApi.dismissPasswordRequest('u1');
+
+    expect(fetch).toHaveBeenCalledWith(
+      '/api/v1/admin/password-reset-requests/u1',
+      expect.objectContaining({ method: 'DELETE' }),
+    );
+  });
 });

@@ -8,6 +8,7 @@ import {
   findUserByName,
   updatePasswordHash,
   clearMustChangePassword,
+  forcePasswordChange,
   INITIAL_PASSWORD,
 } from './user.model.ts';
 
@@ -100,6 +101,13 @@ test('clearMustChangePassword flips the flag to false', async () => {
   await clearMustChangePassword(user.id);
   const found = await findUserByIdWithHash(user.id);
   assert.equal(found?.mustChangePassword, false);
+});
+
+test('forcePasswordChange flips the flag to true', async () => {
+  const user = await createUser('Force', 'Flag', 'hash', 'user', false);
+  await forcePasswordChange(user.id);
+  const found = await findUserByIdWithHash(user.id);
+  assert.equal(found?.mustChangePassword, true);
 });
 
 test('INITIAL_PASSWORD is the fixed shared password', () => {

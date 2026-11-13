@@ -107,4 +107,22 @@ describe('AppRouter', () => {
 
     expect(screen.getByText('Set your password')).toBeInTheDocument();
   });
+
+  test('an admin can reach /admin/password-reset-requests', () => {
+    useAuth.mockReturnValue({
+      user: { id: 'u1', username: 'adminuser', role: 'admin', mustChangePassword: false, createdAt: '2026-11-02T12:00:00.000Z' },
+      loading: false,
+      login: vi.fn(),
+      register: vi.fn(),
+      logout: vi.fn(),
+      updateUser: vi.fn(),
+    });
+    at('/admin/password-reset-requests');
+    expect(screen.getByRole('heading', { name: 'Password Requests' })).toBeInTheDocument();
+  });
+
+  test('a non-admin hitting /admin/password-reset-requests sees the 404 page', () => {
+    at('/admin/password-reset-requests');
+    expect(screen.getByText('404')).toBeInTheDocument();
+  });
 });
