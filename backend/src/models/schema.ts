@@ -50,8 +50,20 @@ export const sessions = pgTable(
   (table) => [index('sessions_user_id_idx').on(table.userId)],
 );
 
+/** One pending "forgot password" request per user. userId is unique so a
+ *  repeat request updates requestedAt instead of creating a second row. */
+export const passwordResetRequests = pgTable('password_reset_requests', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  userId: uuid('user_id')
+    .notNull()
+    .unique()
+    .references(() => users.id, { onDelete: 'cascade' }),
+  requestedAt: timestamp('requested_at', { withTimezone: true }).notNull().defaultNow(),
+});
+
 export type User = typeof users.$inferSelect;
 export type Session = typeof sessions.$inferSelect;
+export type PasswordResetRequestRow = typeof passwordResetRequests.$inferSelect;
 
 export const subjects = pgTable('subjects', {
   id: uuid('id').primaryKey().defaultRandom(),

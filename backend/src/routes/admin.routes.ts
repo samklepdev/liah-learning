@@ -13,6 +13,7 @@ adminRouter.get('/users/:id/attempts', adminUsers.getUserAttempts);
 adminRouter.patch('/users/:id/role', adminUsers.patchUserRole);
 adminRouter.delete('/users/:id', adminUsers.deleteUser);
 adminRouter.post('/users/:id/restore', adminUsers.restoreUserHandler);
+adminRouter.post('/users/:id/reset-password', adminUsers.resetUserPassword);
 adminRouter.post('/users/import/parse', adminUserImport.uploadFile, adminUserImport.parseImport);
 adminRouter.post('/users/import/confirm', adminUserImport.confirmImport);
 adminRouter.use('/import', adminImportRouter);

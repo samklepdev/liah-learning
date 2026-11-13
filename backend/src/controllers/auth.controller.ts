@@ -16,6 +16,7 @@ import {
   updatePasswordHash,
   clearMustChangePassword,
 } from '../models/user.model.ts';
+import { upsertPasswordResetRequest } from '../models/password-reset-request.model.ts';
 
 const registerBody = z.object({
   firstName: z.string().trim().min(1, 'First name is required').max(100),
@@ -104,6 +105,22 @@ export async function logout(req: Request, res: Response): Promise<void> {
     await deleteSession(hashToken(token));
   }
   res.clearCookie(SESSION_COOKIE, clearSessionCookieOptions());
+  res.status(204).end();
+}
+
+const forgotPasswordBody = z.object({ username: z.string().trim().min(1) });
+
+/**
+ * Always 204s, whether or not the username exists or is active — the
+ * response must never let a signed-out caller distinguish a real account
+ * from a made-up one.
+ */
+export async function forgotPassword(req: Request, res: Response): Promise<void> {
+  const parsed = forgotPasswordBody.safeParse(req.body);
+  if (parsed.success) {
+    const user = await findUserByUsernameWithHash(parsed.data.username);
+    if (user) await upsertPasswordResetRequest(user.id);
+  }
   res.status(204).end();
 }
 

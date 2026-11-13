@@ -13,7 +13,15 @@ import {
   restoreUserById,
   setUserRole,
 } from '../models/admin-user.model.ts';
-import { createUser, findUserByName, INITIAL_PASSWORD } from '../models/user.model.ts';
+import {
+  createUser,
+  findUserByName,
+  forcePasswordChange,
+  INITIAL_PASSWORD,
+  updatePasswordHash,
+} from '../models/user.model.ts';
+import { deleteSessionsForUser } from '../models/session.model.ts';
+import { deletePasswordResetRequest } from '../models/password-reset-request.model.ts';
 import argon2 from 'argon2';
 
 const roleBody = z.object({ role: z.enum(['user', 'admin']) });
@@ -100,6 +108,29 @@ export async function deleteUser(req: Request, res: Response): Promise<void> {
     res.status(404).json({ error: 'User not found' });
     return;
   }
+  res.status(204).end();
+}
+
+export async function resetUserPassword(req: Request, res: Response): Promise<void> {
+  const id = param(req, 'id');
+
+  if (id === req.user!.id) {
+    res.status(400).json({ error: 'Use the change-password form to update your own password' });
+    return;
+  }
+
+  const target = await findUserById(id);
+  if (!target || !target.isActive) {
+    res.status(404).json({ error: 'User not found' });
+    return;
+  }
+
+  const passwordHash = await argon2.hash(INITIAL_PASSWORD, { type: argon2.argon2id });
+  await updatePasswordHash(id, passwordHash);
+  await forcePasswordChange(id);
+  await deleteSessionsForUser(id);
+  await deletePasswordResetRequest(id);
+
   res.status(204).end();
 }
 
