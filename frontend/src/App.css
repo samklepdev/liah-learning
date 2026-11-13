@@ -483,6 +483,19 @@ button.primary { padding: 0.6rem 1rem; border-radius: 0.5rem; cursor: pointer; }
 
 .topnav-right { flex: 0 0 auto; display: flex; align-items: center; justify-content: flex-end; gap: 0.75rem; }
 
+/* Desktop only: once the search box grows to its max-width, there's no
+   item left to absorb the remaining space, so without this the account
+   menu sits bunched up next to the search box instead of at the far
+   right edge. space-between puts that leftover space around the search
+   box instead, pinning the logo and account menu to opposite ends.
+   Left untouched below the tablet breakpoint, where the navbar is
+   already tight and this gap doesn't occur. */
+@media (min-width: 48.0625rem) {
+  .topnav {
+    justify-content: space-between;
+  }
+}
+
 /* The only flexible item in the navbar: grows to take up whatever room the
    brand and account controls don't need, instead of sitting at a fixed
    width with the results panel cramped into it. */
