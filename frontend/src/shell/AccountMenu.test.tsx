@@ -31,6 +31,18 @@ describe('AccountMenu', () => {
     expect(screen.getByText('Sign out')).toBeVisible();
     expect(screen.queryByText('Admin · Users')).not.toBeInTheDocument();
     expect(screen.queryByText('Admin · Courses')).not.toBeInTheDocument();
+    expect(screen.queryByText('Admin · Password Requests')).not.toBeInTheDocument();
+  });
+
+  test('an admin sees the Password Requests link after Recycle Bin', () => {
+    renderMenu('admin');
+    fireEvent.click(screen.getByRole('button', { name: /techsmith/ }));
+
+    const items = screen.getAllByRole('listitem').map((li) => li.textContent);
+    const recycleBinIndex = items.findIndex((t) => t?.includes('Admin · Recycle Bin'));
+    const requestsIndex = items.findIndex((t) => t?.includes('Admin · Password Requests'));
+
+    expect(recycleBinIndex).toBeLessThan(requestsIndex);
   });
 
   test('Profile comes before Sign out, which comes before the admin links', () => {

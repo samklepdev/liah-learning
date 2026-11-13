@@ -4,7 +4,7 @@ import { adminApi, type AdminAttempt, type AdminUser } from '../../admin/api';
 import { useAuth } from '../../auth/useAuth';
 import { Pager } from '../../shared/Pager';
 import { usePager } from '../../shared/usePager';
-import { ChevronRightIcon, TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
+import { ChevronRightIcon, KeyIcon, TrashIcon, UserIcon, UserMinusIcon } from '../../shell/icons';
 import { AddUserModal } from './AddUserModal';
 import { AttemptsTable } from './AttemptsTable';
 import { ImportUsersModal } from './ImportUsersModal';
@@ -66,6 +66,18 @@ export function AdminUsersPage() {
       setTotal((prev) => prev - 1);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to delete user');
+    } finally {
+      setBusyId(null);
+    }
+  };
+
+  const resetPassword = async (target: AdminUser) => {
+    setBusyId(target.id);
+    try {
+      await adminApi.resetPassword(target.id);
+      toast.success('Password reset — user must set a new one at next login.');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to reset password');
     } finally {
       setBusyId(null);
     }
@@ -170,6 +182,16 @@ export function AdminUsersPage() {
                         ) : (
                           <UserIcon className="icon-button-icon" />
                         )}
+                      </button>
+                      <button
+                        type="button"
+                        className="icon-button"
+                        disabled={isSelf || busyId === u.id}
+                        onClick={() => void resetPassword(u)}
+                        aria-label="Reset password"
+                        title="Reset password"
+                      >
+                        <KeyIcon className="icon-button-icon" />
                       </button>
                       <button
                         type="button"

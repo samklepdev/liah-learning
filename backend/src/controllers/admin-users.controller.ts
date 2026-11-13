@@ -21,7 +21,7 @@ import {
   updatePasswordHash,
 } from '../models/user.model.ts';
 import { deleteSessionsForUser } from '../models/session.model.ts';
-import { deletePasswordResetRequest } from '../models/password-reset-request.model.ts';
+import { deletePasswordResetRequest, listPasswordResetRequests } from '../models/password-reset-request.model.ts';
 import argon2 from 'argon2';
 
 const roleBody = z.object({ role: z.enum(['user', 'admin']) });
@@ -131,6 +131,17 @@ export async function resetUserPassword(req: Request, res: Response): Promise<vo
   await deleteSessionsForUser(id);
   await deletePasswordResetRequest(id);
 
+  res.status(204).end();
+}
+
+export async function getPasswordResetRequests(req: Request, res: Response): Promise<void> {
+  const requests = await listPasswordResetRequests();
+  res.json({ requests });
+}
+
+export async function dismissPasswordResetRequest(req: Request, res: Response): Promise<void> {
+  const userId = param(req, 'userId');
+  await deletePasswordResetRequest(userId);
   res.status(204).end();
 }
 

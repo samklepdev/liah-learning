@@ -335,6 +335,80 @@ test('POST .../reset-password 404s for a non-admin', async () => {
   assert.equal(res.status, 404);
 });
 
+test('GET .../password-reset-requests lists a pending request', async () => {
+  const { cookie } = await makeAdmin('Admin');
+  const { username } = await registerTestUser(baseUrl, 'Forgetful');
+
+  await fetch(`${baseUrl}/api/v1/auth/forgot-password`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username }),
+  });
+
+  const res = await fetch(`${baseUrl}/api/v1/admin/password-reset-requests`, { headers: { cookie } });
+  assert.equal(res.status, 200);
+  const body = (await res.json()) as { requests: Array<{ username: string }> };
+  assert.equal(body.requests.some((r) => r.username === username), true);
+});
+
+test('GET .../password-reset-requests 404s for a non-admin', async () => {
+  const { cookie } = await registerTestUser(baseUrl, 'Plain');
+  const res = await fetch(`${baseUrl}/api/v1/admin/password-reset-requests`, { headers: { cookie } });
+  assert.equal(res.status, 404);
+});
+
+test('DELETE .../password-reset-requests/:userId dismisses a pending request', async () => {
+  const { cookie } = await makeAdmin('Admin');
+  const { userId, username } = await registerTestUser(baseUrl, 'Forgetful');
+
+  await fetch(`${baseUrl}/api/v1/auth/forgot-password`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username }),
+  });
+
+  const del = await fetch(`${baseUrl}/api/v1/admin/password-reset-requests/${userId}`, {
+    method: 'DELETE',
+    headers: { cookie },
+  });
+  assert.equal(del.status, 204);
+
+  const list = await fetch(`${baseUrl}/api/v1/admin/password-reset-requests`, { headers: { cookie } });
+  const body = (await list.json()) as { requests: Array<{ username: string }> };
+  assert.equal(body.requests.some((r) => r.username === username), false);
+});
+
+test('DELETE .../password-reset-requests/:userId is a no-op when there is nothing pending', async () => {
+  const { cookie } = await makeAdmin('Admin');
+  const { userId } = await registerTestUser(baseUrl, 'NeverAsked');
+
+  const res = await fetch(`${baseUrl}/api/v1/admin/password-reset-requests/${userId}`, {
+    method: 'DELETE',
+    headers: { cookie },
+  });
+  assert.equal(res.status, 204);
+});
+
+test('resetting a password also clears the pending request for that user', async () => {
+  const { cookie } = await makeAdmin('Admin');
+  const { userId, username } = await registerTestUser(baseUrl, 'Forgetful');
+
+  await fetch(`${baseUrl}/api/v1/auth/forgot-password`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username }),
+  });
+
+  await fetch(`${baseUrl}/api/v1/admin/users/${userId}/reset-password`, {
+    method: 'POST',
+    headers: { cookie },
+  });
+
+  const list = await fetch(`${baseUrl}/api/v1/admin/password-reset-requests`, { headers: { cookie } });
+  const body = (await list.json()) as { requests: Array<{ username: string }> };
+  assert.equal(body.requests.some((r) => r.username === username), false);
+});
+
 test('a soft-deleted user is signed out immediately', async () => {
   const { cookie: adminCookie } = await makeAdmin('Admin');
   const { cookie: studentCookie, userId } = await registerTestUser(baseUrl, 'Student');
