@@ -8,6 +8,7 @@ import { SidebarNav } from './SidebarNav';
 import { useSidebar } from './useSidebar';
 import { useSubjectNav } from './useSubjectNav';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 /**
  * Persistent chrome for every signed-in route: a top navbar, a collapsible
@@ -45,6 +46,7 @@ export function AppShell() {
         them switches it to manual mode, driven by react-router's location,
         so in-app navigations are tracked too. */}
     <Analytics route={pathname} path={pathname + search} />
+    <SpeedInsights />
     <div className={collapsed ? 'shell collapsed' : 'shell'}>
       <header className="topnav">
         <div className="topnav-start">
